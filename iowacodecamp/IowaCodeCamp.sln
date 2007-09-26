@@ -1,8 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "d:\IowaCodeCamp\Web\", "Web\", "{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\IowaCodeCamp\Web\", "Web\", "{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}"
 	ProjectSection(WebsiteProperties) = preProject
+		ProjectReferences = "{D46614D6-06DC-4A00-A546-7244655DDAEA}|IowaCodeCamp.Common.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Web"
 		Debug.AspNetCompiler.PhysicalPath = "Web\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
@@ -21,13 +22,58 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "d:\IowaCodeCamp\Web\", "Web
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IowaCodeCamp.Tests", "Tests\IowaCodeCamp.Tests.csproj", "{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IowaCodeCamp.Common", "Common\IowaCodeCamp.Common.csproj", "{D46614D6-06DC-4A00-A546-7244655DDAEA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Debug|.NET.ActiveCfg = Debug|.NET
 		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Debug|.NET.Build.0 = Debug|.NET
+		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Release|.NET.ActiveCfg = Debug|.NET
+		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Release|.NET.Build.0 = Debug|.NET
+		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Release|.NET.ActiveCfg = Release|Any CPU
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Release|.NET.ActiveCfg = Release|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D46614D6-06DC-4A00-A546-7244655DDAEA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

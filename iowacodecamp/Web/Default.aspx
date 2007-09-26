@@ -1,15 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<%@ Page Language="C#" MasterPageFile="~/Masters/Default.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" Title="Untitled Page" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="phMain" Runat="Server">
+</asp:Content>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Untitled Page</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="server" />
-        <div>
-        </div>
-    </form>
-</body>
-</html>
