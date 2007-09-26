@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assemblies Version="805306377">
+  <Assembly Name="AjaxControlToolkit, Version=1.0.10920.32880, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" Image="19950719-a137-4d65-bc40-7382201e18d5" Timestamp="633259305840000000" />
+  <Assembly Name="System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="670c840d-1c58-41ef-8926-636e0b365f21" Timestamp="632980677713586542" XmlDocIndexTimestamp="632959995120000000" />
+  <Assembly Name="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="49f4424a-1752-44ca-920c-f045e6b58cf4" Timestamp="632980677711714530" XmlDocIndexTimestamp="632959995120000000" />
+  <Assembly Name="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Image="f74f3d0f-f2ae-418b-b3a0-a49503a7918f" Timestamp="632980677720606587" XmlDocIndexTimestamp="632959995140000000" />
+  <Assembly Name="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Image="d1c0ec72-32ea-4f96-b74b-40868897ade7" Timestamp="633049305920000000" />
+  <Assembly Name="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Image="1dbbf22e-7b22-42d6-a17a-7be21b0ff66c" Timestamp="633049305940000000" />
+</Assemblies>
