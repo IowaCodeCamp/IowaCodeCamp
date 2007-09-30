@@ -1,7 +1,6 @@
 using System;
 using System.Data;
 using System.Configuration;
-using System.Collections;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
@@ -9,10 +8,10 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 
-public partial class _Default : BasePage
+/// <summary>
+/// Summary description for BasePage
+/// </summary>
+public class BasePage : Page
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
-
-    }
+    
 }

@@ -28,12 +28,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SubSonic, Version=2.0.3.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependecies\SubSonic.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Generated\AllStructs.cs" />
+    <Compile Include="Generated\EventX.cs" />
+    <Compile Include="Generated\EventXController.cs" />
+    <Compile Include="Generated\StoredProcedures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Component Include="Dependecies\SubSonic.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Generated\Database\IowaCodeCamp_Data_2007_9_29.sql" />
+    <None Include="Generated\Database\IowaCodeCamp_Schema_2007_9_29.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
