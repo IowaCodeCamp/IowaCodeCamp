@@ -90,7 +90,7 @@ namespace IowaCodeCamp.Common
 	    /// Inserts a record, can be used with the Object Data Source
 	    /// </summary>
         [DataObjectMethod(DataObjectMethodType.Insert, true)]
-	    public void Insert(string EventName,DateTime StartOn,DateTime EndOn,DateTime CreatedOn,string CreatedBy,DateTime ModifiedOn,string ModifiedBy,bool IsDeleted)
+	    public void Insert(string EventName,DateTime StartOn,DateTime EndOn,string Description,bool IsActive,DateTime CreatedOn,string CreatedBy,DateTime ModifiedOn,string ModifiedBy,bool IsDeleted)
 	    {
 		    EventX item = new EventX();
 		    
@@ -99,6 +99,10 @@ namespace IowaCodeCamp.Common
             item.StartOn = StartOn;
             
             item.EndOn = EndOn;
+            
+            item.Description = Description;
+            
+            item.IsActive = IsActive;
             
             item.CreatedOn = CreatedOn;
             
@@ -119,7 +123,7 @@ namespace IowaCodeCamp.Common
 	    /// Updates a record, can be used with the Object Data Source
 	    /// </summary>
         [DataObjectMethod(DataObjectMethodType.Update, true)]
-	    public void Update(int Id,string EventName,DateTime StartOn,DateTime EndOn,DateTime CreatedOn,string CreatedBy,DateTime ModifiedOn,string ModifiedBy,bool IsDeleted)
+	    public void Update(int Id,string EventName,DateTime StartOn,DateTime EndOn,string Description,bool IsActive,DateTime CreatedOn,string CreatedBy,DateTime ModifiedOn,string ModifiedBy,bool IsDeleted)
 	    {
 		    EventX item = new EventX();
 		    
@@ -130,6 +134,10 @@ namespace IowaCodeCamp.Common
 				item.StartOn = StartOn;
 				
 				item.EndOn = EndOn;
+				
+				item.Description = Description;
+				
+				item.IsActive = IsActive;
 				
 				item.CreatedOn = CreatedOn;
 				

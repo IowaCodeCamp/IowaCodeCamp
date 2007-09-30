@@ -150,6 +150,33 @@ namespace IowaCodeCamp.Common
 				colvarEndOn.ForeignKeyTableName = "";
 				schema.Columns.Add(colvarEndOn);
 				
+				TableSchema.TableColumn colvarDescription = new TableSchema.TableColumn(schema);
+				colvarDescription.ColumnName = "Description";
+				colvarDescription.DataType = DbType.String;
+				colvarDescription.MaxLength = -1;
+				colvarDescription.AutoIncrement = false;
+				colvarDescription.IsNullable = false;
+				colvarDescription.IsPrimaryKey = false;
+				colvarDescription.IsForeignKey = false;
+				colvarDescription.IsReadOnly = false;
+				colvarDescription.DefaultSetting = @"";
+				colvarDescription.ForeignKeyTableName = "";
+				schema.Columns.Add(colvarDescription);
+				
+				TableSchema.TableColumn colvarIsActive = new TableSchema.TableColumn(schema);
+				colvarIsActive.ColumnName = "IsActive";
+				colvarIsActive.DataType = DbType.Boolean;
+				colvarIsActive.MaxLength = 0;
+				colvarIsActive.AutoIncrement = false;
+				colvarIsActive.IsNullable = false;
+				colvarIsActive.IsPrimaryKey = false;
+				colvarIsActive.IsForeignKey = false;
+				colvarIsActive.IsReadOnly = false;
+				
+						colvarIsActive.DefaultSetting = @"((1))";
+				colvarIsActive.ForeignKeyTableName = "";
+				schema.Columns.Add(colvarIsActive);
+				
 				TableSchema.TableColumn colvarCreatedOn = new TableSchema.TableColumn(schema);
 				colvarCreatedOn.ColumnName = "CreatedOn";
 				colvarCreatedOn.DataType = DbType.DateTime;
@@ -271,6 +298,26 @@ namespace IowaCodeCamp.Common
 		}
 
 		  
+		[XmlAttribute("Description")]
+		public string Description 
+		{
+			get { return GetColumnValue<string>("Description"); }
+
+			set { SetColumnValue("Description", value); }
+
+		}
+
+		  
+		[XmlAttribute("IsActive")]
+		public bool IsActive 
+		{
+			get { return GetColumnValue<bool>("IsActive"); }
+
+			set { SetColumnValue("IsActive", value); }
+
+		}
+
+		  
 		[XmlAttribute("CreatedOn")]
 		public DateTime CreatedOn 
 		{
@@ -338,7 +385,7 @@ namespace IowaCodeCamp.Common
 		/// <summary>
 		/// Inserts a record, can be used with the Object Data Source
 		/// </summary>
-		public static void Insert(string varEventName,DateTime varStartOn,DateTime varEndOn,DateTime varCreatedOn,string varCreatedBy,DateTime varModifiedOn,string varModifiedBy,bool varIsDeleted)
+		public static void Insert(string varEventName,DateTime varStartOn,DateTime varEndOn,string varDescription,bool varIsActive,DateTime varCreatedOn,string varCreatedBy,DateTime varModifiedOn,string varModifiedBy,bool varIsDeleted)
 		{
 			EventX item = new EventX();
 			
@@ -347,6 +394,10 @@ namespace IowaCodeCamp.Common
 			item.StartOn = varStartOn;
 			
 			item.EndOn = varEndOn;
+			
+			item.Description = varDescription;
+			
+			item.IsActive = varIsActive;
 			
 			item.CreatedOn = varCreatedOn;
 			
@@ -369,7 +420,7 @@ namespace IowaCodeCamp.Common
 		/// <summary>
 		/// Updates a record, can be used with the Object Data Source
 		/// </summary>
-		public static void Update(int varId,string varEventName,DateTime varStartOn,DateTime varEndOn,DateTime varCreatedOn,string varCreatedBy,DateTime varModifiedOn,string varModifiedBy,bool varIsDeleted)
+		public static void Update(int varId,string varEventName,DateTime varStartOn,DateTime varEndOn,string varDescription,bool varIsActive,DateTime varCreatedOn,string varCreatedBy,DateTime varModifiedOn,string varModifiedBy,bool varIsDeleted)
 		{
 			EventX item = new EventX();
 			
@@ -380,6 +431,10 @@ namespace IowaCodeCamp.Common
 				item.StartOn = varStartOn;
 				
 				item.EndOn = varEndOn;
+				
+				item.Description = varDescription;
+				
+				item.IsActive = varIsActive;
 				
 				item.CreatedOn = varCreatedOn;
 				
@@ -406,6 +461,8 @@ namespace IowaCodeCamp.Common
 			 public static string EventName = @"EventName";
 			 public static string StartOn = @"StartOn";
 			 public static string EndOn = @"EndOn";
+			 public static string Description = @"Description";
+			 public static string IsActive = @"IsActive";
 			 public static string CreatedOn = @"CreatedOn";
 			 public static string CreatedBy = @"CreatedBy";
 			 public static string ModifiedOn = @"ModifiedOn";
