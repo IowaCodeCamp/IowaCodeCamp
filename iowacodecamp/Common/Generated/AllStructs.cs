@@ -20,6 +20,8 @@ namespace IowaCodeCamp.Common
 		
 		public static string EventX = @"Event";
         
+		public static string User = @"User";
+        
 	}
 
 	#endregion
