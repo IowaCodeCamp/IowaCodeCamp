@@ -7,8 +7,8 @@
     <ProjectGuid>{D46614D6-06DC-4A00-A546-7244655DDAEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IowaCodeCamp.Common</RootNamespace>
-    <AssemblyName>IowaCodeCamp.Common</AssemblyName>
+    <RootNamespace>IowaCodeCamp</RootNamespace>
+    <AssemblyName>IowaCodeCamp</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

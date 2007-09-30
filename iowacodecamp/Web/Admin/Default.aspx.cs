@@ -1,7 +1,6 @@
 using System;
-using IowaCodeCamp.Common;
 
-public partial class _Default : BasePage
+public partial class Admin_Default : BasePage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
