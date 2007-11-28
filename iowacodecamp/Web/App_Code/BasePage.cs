@@ -14,6 +14,12 @@ public class BasePage : Page
         base.OnLoad(e);
     }
 
+    public bool IsFirstPost
+    {
+        get { return !IsPostBack; }
+    }
+
+
     protected int EventID
     {
         get { return Convert.ToInt32(Session["EventID"] ?? 0); }

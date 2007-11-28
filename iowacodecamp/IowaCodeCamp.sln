@@ -1,8 +1,14 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\IowaCodeCamp\Web\", "Web\", "{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}"
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Items", "Build Items", "{C689DA98-0FDC-4D6F-BBF4-956BD5D4EC0F}"
+	ProjectSection(SolutionItems) = preProject
+		iccgen.cmd = iccgen.cmd
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{E9AA6A67-7BAB-4EEF-AD01-75AE4B74D1B0}"
 	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
 		ProjectReferences = "{D46614D6-06DC-4A00-A546-7244655DDAEA}|IowaCodeCamp.Common.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Web"
 		Debug.AspNetCompiler.PhysicalPath = "Web\"
@@ -23,25 +29,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\IowaCodeCamp\Web\", "Web
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IowaCodeCamp.Tests", "Tests\IowaCodeCamp.Tests.csproj", "{F1DF6A1F-34FD-40E1-8B72-8A2BE5879159}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IowaCodeCamp", "Common\IowaCodeCamp.csproj", "{D46614D6-06DC-4A00-A546-7244655DDAEA}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Items", "Build Items", "{C689DA98-0FDC-4D6F-BBF4-956BD5D4EC0F}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
-	ProjectSection(SolutionItems) = preProject
-		iccgen.cmd = iccgen.cmd
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

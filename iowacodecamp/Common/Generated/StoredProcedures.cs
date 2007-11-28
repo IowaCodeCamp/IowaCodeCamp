@@ -12,7 +12,7 @@ using System.Xml.Serialization;
 using SubSonic; 
 using SubSonic.Utilities;
 
-namespace IowaCodeCamp.Common{
+namespace IowaCodeCamp{
     public partial class Procs{
         
     }

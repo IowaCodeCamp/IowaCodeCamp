@@ -1,7 +1,7 @@
-/****** Object:  User [devuser]    Script Date: 09/30/2007 09:38:18 ******/
+/****** Object:  User [devuser]    Script Date: 09/30/2007 14:12:28 ******/
 IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = N'devuser')
 CREATE USER [devuser] FOR LOGIN [devuser] WITH DEFAULT_SCHEMA=[dbo]
-/****** Object:  Table [dbo].[User]    Script Date: 09/30/2007 09:38:18 ******/
+/****** Object:  Table [dbo].[User]    Script Date: 09/30/2007 14:12:28 ******/
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[User]') AND type in (N'U'))
@@ -22,7 +22,7 @@ CREATE TABLE [dbo].[User](
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 END
-/****** Object:  Table [dbo].[Event]    Script Date: 09/30/2007 09:38:18 ******/
+/****** Object:  Table [dbo].[Event]    Script Date: 09/30/2007 14:12:29 ******/
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Event]') AND type in (N'U'))
