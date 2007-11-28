@@ -1,6 +1,6 @@
 using System;
 
-public partial class _Default : BasePage
+public partial class Admin_CreateEvent : BasePage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -10,5 +10,6 @@ public partial class _Default : BasePage
 
     private void LoadData()
     {
+        
     }
 }
