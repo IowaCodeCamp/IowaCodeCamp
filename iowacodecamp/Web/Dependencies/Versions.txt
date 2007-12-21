@@ -1,4 +1,0 @@
-SubSonic				2.0.3.0
-AjaxControlToolkit		3.5.11119.0 (Dependencies)
-System.Web.Extensions	3.5.0.0 (GAC)
-FreeTextBox				3.1.6.34851
