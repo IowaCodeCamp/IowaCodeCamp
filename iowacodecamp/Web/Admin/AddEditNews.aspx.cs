@@ -11,13 +11,14 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-public partial class _Default : System.Web.UI.Page
+public partial class Admin_AddEditNews : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
-        {
 
-        }
+    }
+    protected void UpdateEvent_Click(object sender, EventArgs e)
+    {
+        string x = Request.Form["editor"];
     }
 }

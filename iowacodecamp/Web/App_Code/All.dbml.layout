@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="All">
+  <DataContextMoniker Name="/AllDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f5d32c1b-8acf-4b67-aca5-519591b4eb69" absoluteBounds="0.75, 0.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/AllDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31559954-2c7e-410c-bc1a-95246216692b" absoluteBounds="0.76499999999999968, 1.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="41fdafd4-87f1-4ee2-92c4-b7e6bc41cd12" absoluteBounds="5.125, 0.875, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/AllDataContext/Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eee7656a-e6a4-4956-85f9-d43e6b38fe76" absoluteBounds="5.1400000000000006, 1.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4700ce59-cea0-4227-be75-b36c72aede30" absoluteBounds="3.875, 5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/AllDataContext/News" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1170d09c-43b6-4cd4-b872-7cc5ba4c5f68" absoluteBounds="3.89, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
