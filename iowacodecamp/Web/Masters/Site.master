@@ -13,139 +13,138 @@
 
     <asp:ContentPlaceHolder id="headPH" runat="server">
     </asp:ContentPlaceHolder>
+    
 </head>
-<body>
-    <form id="form1" runat="server"></form>
-    <div>
-
-    </div>
+<body>   
     
-    
-<!--actual content from index.html-->
-<div id="upbg"></div>
+    <!--actual content from index.html-->
+    <div id="upbg"></div>
 
-<div id="outer">
+    <div id="outer">
 
+	    <div id="header">
+		    <div id="headercontent">
+			    <h1>Iowa Code Camp</h1>
+			    <h2>Cedar Rapids, Iowa</h2>
+			    <br />
+		    </div>
+	    </div>
+	    
+	    <div id="headercontentright">
+	        <h1>Spring '08</h1>
+	    </div>
 
-	<div id="header">
-		<div id="headercontent">
-			<h1>Iowa Code Camp<sup>'08</sup></h1>
-			<h2>Cedar Rapids, Iowa</h2>
-		</div>
-	</div>
+	    <!--form method="post" action="">
+		    <div id="search">
+			    <input type="text" class="text" maxlength="64" name="keywords" value="No search yet" style="color:Gray;" />
+			    <input type="submit" class="submit" value="Search" />
+		    </div>
+	    </form-->
 
+        <!--uncomment this to show a picture banner-->
+	    <!--div id="headerpic"></div-->
+    	
+	    <div id="menu">
+		    <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
+		    <!-- class="active" use this for the active menu item-->
+		    <ul>
+			    <li><a href='<%=ResolveClientUrl("~/Sessions.aspx") %>'>Sessions</a></li>
+			    <li><a href='<%=ResolveClientUrl("~/Speakers.aspx") %>'>Speakers</a></li>
+			    <li><a href='<%=ResolveClientUrl("~/History.aspx") %>'>History</a></li>
+			    <li><a href='<%=ResolveClientUrl("~/Location.aspx") %>'>Location</a></li>
+			    <li><a href='<%=ResolveClientUrl("~/About.aspx") %>'>About</a></li>
+		    </ul>
+	    </div>
+	    <div id="menubottom"></div>
 
-	<form method="post" action="">
-		<div id="search">
-			<input type="text" class="text" maxlength="64" name="keywords" />
-			<input type="submit" class="submit" value="Search" />
-		</div>
-	</form>
+        <form id="form1" runat="server">
+        	
+	        <div id="content">
 
-    <!--uncomment this to show a picture banner-->
-	<!--div id="headerpic"></div-->
+		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
+		        <div id="normalcontent">
+			        <h3><strong>2008 Code Camp in Cedar Rapids, Iowa</strong></h3>
+			        <div class="contentarea">
+				        <!-- Normal content area start -->
+        				
+				        <asp:ContentPlaceHolder id="normalPH" runat="server">
 
-	
-	<div id="menu">
-		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
-		<ul>
-			<li><a href='<%=ResolveClientUrl("~/") %>'>Home</a></li>
-			<li><a href='<%=ResolveClientUrl("~/Sessions.aspx") %>' class="active">Sessions</a></li>
-			<li><a href='<%=ResolveClientUrl("~/Speakers.aspx") %>'>Speakers</a></li>
-			<li><a href='<%=ResolveClientUrl("~/History.aspx") %>'>History</a></li>
-			<li><a href='<%=ResolveClientUrl("~/Location.aspx") %>'>Location</a></li>
-			<li><a href='<%=ResolveClientUrl("~/About.aspx") %>'>About</a></li>
-			
-		</ul>
-	</div>
-	<div id="menubottom"></div>
+				            <img src="images/pic1.jpg" class="left" alt="A chinese lion statue" />
+            								            <p>Zenlike<sup>1.0</sup> is a free, lightweight, tableless, fluid W3C-compliant website design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design</a>. All photos came from <a href="http://www.pdphoto.org/">PDPhoto</a> and the background texture is from <a href="http://www.mayang.com/textures/">Mayang's texture site</a>. You're free to dissect, manipulate and use it to your heart's content. We only ask that you link back to <a href="http://www.nodethirtythree.com/">our site</a> in some way. If you find this design useful, feel free to let us know :)</p>				            <p>You can find more of our free work at this site or <a href="http://www.nodethirtythree.com/">our site</a>, or some of our commercial work on <a href="http://www.4templates.com/?aff=n33">4Templates.com</a>, a commercial website template site.</p>
 
-	
-	<div id="content">
+                        </asp:ContentPlaceHolder>
+				        <!-- Normal content area end -->
+			        </div>
+		        </div>
 
-		<!-- Normal content: Stuff that's not going to be put in the left or right column. -->
-		<div id="normalcontent">
-			<h3><strong>Code Camp in Cedar Rapids, Iowa</strong><sup>2008</sup></h3>
-			<div class="contentarea">
-				<!-- Normal content area start -->
-				
-				<asp:ContentPlaceHolder id="normalPH" runat="server">
-
-				<img src="images/pic1.jpg" class="left" alt="A chinese lion statue" />
-								<p>Zenlike<sup>1.0</sup> is a free, lightweight, tableless, fluid W3C-compliant website design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design</a>. All photos came from <a href="http://www.pdphoto.org/">PDPhoto</a> and the background texture is from <a href="http://www.mayang.com/textures/">Mayang's texture site</a>. You're free to dissect, manipulate and use it to your heart's content. We only ask that you link back to <a href="http://www.nodethirtythree.com/">our site</a> in some way. If you find this design useful, feel free to let us know :)</p>				<p>You can find more of our free work at this site or <a href="http://www.nodethirtythree.com/">our site</a>, or some of our commercial work on <a href="http://www.4templates.com/?aff=n33">4Templates.com</a>, a commercial website template site.</p>
-
-                </asp:ContentPlaceHolder>
-				<!-- Normal content area end -->
-			</div>
-		</div>
-
-	
-		<div class="divider1"></div>
-
-
-		<!-- Primary content: Stuff that goes in the primary content column (by default, the left column) -->
-		<div id="primarycontainer">
-			<div id="primarycontent">
-				<!-- Primary content area start -->
-				<asp:ContentPlaceHolder id="primaryPH" runat="server">
-		
-				<div class="post">
-					<h4>Lorem Ipsum Veroeros</h4>
-					<div class="contentarea">
-						<div class="details">Posted by <a href="#">Jane Doe</a> on September 25, 2006</div>	
-						<p>Volutpat at varius sed sollicitudin et, arcu. Vivamus viverra. Nullam turpis. Vestibulum sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros. Cras lobortis commodo metus. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Quisque augue tortor, facilisis sit amet, aliquam, suscipit vitae, cursus sed, arcu lorem ipsum dolor sit amet.</p>
-						<ul class="controls">
-							<li><a href="#" class="printerfriendly">Printer Friendly</a></li>
-							<li><a href="#" class="comments">Comments (18)</a></li>
-							<li><a href="#" class="more">Read More</a></li>				
-						</ul>
-					</div>
-				</div>
-		
-				<div class="divider2"></div>
-		
-                </asp:ContentPlaceHolder>
-				<!-- Primary content area end -->
-			</div>
-		</div>
-
-		
-		<!-- Secondary content: Stuff that goes in the secondary content column (by default, the narrower right column) -->
-		<div id="secondarycontent">
-			<!-- Secondary content area start -->
-			<asp:ContentPlaceHolder id="secondaryPH" runat="server">
-			
-			<!-- HINT: Set any div's class to "box" to encapsulate it in (you guessed it) a box -->
-			<div class="box">
-				<h4>Blandit Veroeros</h4>
-				<div class="contentarea">
-					<img src="images/pic2.jpg" class="left" alt="Random foliage" />
-					<p>Sed etiam et lorem ipsum nulla vero et lobortis felis sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros etiam <a href="#">sed commodo</a>.</p>
-				</div>
-			</div>
-		
-			<div>
-				<h4>Links</h4>
-				<div class="contentarea">
-					<ul class="linklist">
-						<li><a href="http://www.crineta.org">CRIneta</a></li>						<li><a href="http://www.twincitiescodecamp.com">Twin Cities Code Camp</a></li>						<li><a href="#">Vivamus viverra nullam</a></li>
-					</ul>
-				</div>
-			</div>
-
-            </asp:ContentPlaceHolder>
-			<!-- Secondary content area end -->
-		</div>
+        	
+		        <div class="divider1"></div>
 
 
-	</div>
+		        <!-- Primary content: Stuff that goes in the primary content column (by default, the left column) -->
+		        <div id="primarycontainer">
+			        <div id="primarycontent">
+				        <!-- Primary content area start -->
+				        <asp:ContentPlaceHolder id="primaryPH" runat="server">
+        		
+				        <div class="post">
+					        <h4>Lorem Ipsum Veroeros</h4>
+					        <div class="contentarea">
+						        <div class="details">Posted by <a href="#">Jane Doe</a> on September 25, 2006</div>	
+						        <p>Volutpat at varius sed sollicitudin et, arcu. Vivamus viverra. Nullam turpis. Vestibulum sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros. Cras lobortis commodo metus. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Quisque augue tortor, facilisis sit amet, aliquam, suscipit vitae, cursus sed, arcu lorem ipsum dolor sit amet.</p>
+						        <ul class="controls">
+							        <li><a href="#" class="printerfriendly">Printer Friendly</a></li>
+							        <li><a href="#" class="comments">Comments (18)</a></li>
+							        <li><a href="#" class="more">Read More</a></li>				
+						        </ul>
+					        </div>
+				        </div>
+        		
+				        <div class="divider2"></div>
+        		
+                        </asp:ContentPlaceHolder>
+				        <!-- Primary content area end -->
+			        </div>
+		        </div>
 
-	<div id="footer">
-			<div class="left">&copy; 2008 Iowa Code Camp. All rights reserved.</div>
-			<div class="right">Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design</a></div>
-	</div>
-	
-</div>    
+        		
+		        <!-- Secondary content: Stuff that goes in the secondary content column (by default, the narrower right column) -->
+		        <div id="secondarycontent">
+			        <!-- Secondary content area start -->
+			        <asp:ContentPlaceHolder id="secondaryPH" runat="server">
+        			
+			        <!-- HINT: Set any div's class to "box" to encapsulate it in (you guessed it) a box -->
+			        <div class="box">
+				        <h4>Blandit Veroeros</h4>
+				        <div class="contentarea">
+					        <img src="images/pic2.jpg" class="left" alt="Random foliage" />
+					        <p>Sed etiam et lorem ipsum nulla vero et lobortis felis sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros etiam <a href="#">sed commodo</a>.</p>
+				        </div>
+			        </div>
+        		
+			        <div>
+				        <h4>Links</h4>
+				        <div class="contentarea">
+					        <ul class="linklist">
+						        <li><a href="http://www.crineta.org">CRIneta</a></li>						        <li><a href="http://www.twincitiescodecamp.com">Twin Cities Code Camp</a></li>						        <li><a href="#">Vivamus viverra nullam</a></li>
+					        </ul>
+				        </div>
+			        </div>
+
+                    </asp:ContentPlaceHolder>
+			        <!-- Secondary content area end -->
+		        </div>
+
+	        </div><!--end content-->
+
+        </form>
+
+        <div id="footer">
+            <div class="left">&copy; 2008 Iowa Code Camp. All rights reserved.</div>
+            <div class="right"><!--Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design--></a></div>
+        </div>
+    	
+    </div> <!--end outer-->   
 
 </body>
 </html>

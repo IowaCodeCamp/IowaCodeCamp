@@ -2,7 +2,7 @@
 
 	zenlike1.0 by nodethirtythree design
 	http://www.nodethirtythree.com
-
+	
 */
 
 *
@@ -13,7 +13,7 @@ margin: 0em;
 
 body
 {
-background: #000000 url('../Images/bg1.jpg');
+background: #D8D8BF /*url('../Images/bg1.jpg')*/;
 padding: 35px 0px 35px 0px;
 }
 
@@ -60,14 +60,14 @@ h3
 {
 font-size: 1.7em;
 padding-right: 34px;
-background-image: url('../Images/db1.gif');
+/*background-image: url('../Images/db1.gif');*/
 }
 
 h4
 {
 font-size: 1.2em;
 padding-right: 28px;
-background-image: url('../Images/db2.gif');
+/*background-image: url('../Images/db2.gif');*/
 }
 
 .contentarea
@@ -180,7 +180,7 @@ top: 0px;
 left: 0px;
 width: 100%;
 height: 275px;
-background: #fff url('../Images/bg2.jpg') repeat-x;
+/*background: #97694F url('../Images/bg2.jpg') repeat-x;*/
 z-index: 1;
 }
 
@@ -219,7 +219,7 @@ padding: 0em 2.0em 1.3em 2.0em;
 {
 font-weight: normal;
 color: #fff;
-font-size: 2.5em;
+font-size: 3em;
 }
 
 #headercontent h1 sup
@@ -234,7 +234,16 @@ font-weight: normal;
 color: #aaa;
 }
 
-#search
+#headercontentright
+{
+position: absolute;
+top: 5.5em;
+right: 2.0em;
+padding-right: 0.0em;
+color: #777;
+}
+
+/*#search
 {
 position: absolute;
 top: 5.5em;
@@ -263,7 +272,7 @@ padding: 0.25em;
 font-size: 0.8em;
 color: #F2F3DE;
 vertical-align: middle;
-}
+}*/
 
 #headerpic
 {
@@ -280,6 +289,7 @@ background: #7F8400 url('../Images/menubg.gif') repeat-x top left;
 height: 3.5em;
 padding: 0em 1.0em 0em 1.0em;
 margin-bottom: 2px;
+font-size: 10pt;
 }
 
 #menu ul
