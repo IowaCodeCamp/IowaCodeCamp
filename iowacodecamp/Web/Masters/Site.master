@@ -24,7 +24,7 @@
 
 	    <div id="header">
 		    <div id="headercontent">
-			    <h1>Iowa Code Camp</h1>
+			    <h1><a href='<%=ResolveClientUrl("~/") %>' style="text-decoration:none;">Iowa Code Camp</a></h1>
 			    <h2>Cedar Rapids, Iowa</h2>
 			    <br />
 		    </div>
