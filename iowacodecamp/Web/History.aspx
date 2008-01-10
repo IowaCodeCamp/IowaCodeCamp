@@ -3,8 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-    This going to be our first Code Camp in Iowa, but there is a lot of history with the .Net community in Iowa.<br />
-    Check out the <a href="http://www.crineta.org">CRIneta.org</a> and the <a href="http://iadnug.org">Iowa .Net User Group</a>.
+    This will be our first Code Camp in Iowa, but there are thriving developer communities in Iowa.<br />
+    Check out <a href="http://www.crineta.org">CRIneta.org</a>, 
+    <a href="http://iadnug.org">Iowa .Net User Group</a> and 
+    <a href="http://www.iowaruby.org/">Iowa Ruby Brigade</a>.
     
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
