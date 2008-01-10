@@ -1,13 +1,12 @@
 <%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Masters_Site" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Iowa Code Camp</title>
-    <meta name="keywords" content="Iowa, Cedar Rapids, Iowa, Chris Sutton, Iowa City" />
+    <meta name="keywords" content="Iowa, Cedar Rapids, Iowa, Chris Sutton, Coralville, Des Moines, Iowa City" />
     <meta name="description" content="Site for Code Camps across Iowa" />
     <link rel="stylesheet" type="text/css" href="../Styles/Default.css" />
 
@@ -24,8 +23,8 @@
 
 	    <div id="header">
 		    <div id="headercontent">
-			    <h1><a href='<%=ResolveClientUrl("~/") %>' style="text-decoration:none;">Iowa Code Camp</a></h1>
-			    <h2>Eastern and Central Iowa</h2>
+			    <h1><a href='<%=ResolveUrl("~/") %>' style="text-decoration:none;">Iowa Code Camp</a></h1>
+			    <h2>Code Camps for Iowa</h2>
 			    <br />
 		    </div>
 	    </div>
@@ -50,6 +49,7 @@
 		    <ul>
 			    <li><a href='<%=ResolveClientUrl("~/Sessions.aspx") %>'>Sessions</a></li>
 			    <li><a href='<%=ResolveClientUrl("~/Speakers.aspx") %>'>Speakers</a></li>
+			    <li><a href='<%=ResolveClientUrl("~/Contributors.aspx") %>'>Contributors</a></li>
 			    <li><a href='<%=ResolveClientUrl("~/History.aspx") %>'>History</a></li>
 			    <li><a href='<%=ResolveClientUrl("~/Location.aspx") %>'>Location</a></li>
 			    <li><a href='<%=ResolveClientUrl("~/About.aspx") %>'>About</a></li>
@@ -63,7 +63,7 @@
 
 		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
 		        <div id="normalcontent">
-			        <h3><strong>2008 Code Camp in Cedar Rapids, Iowa</strong></h3>
+			        <h3><strong>2008 Code Camp in Iowa City, Iowa</strong></h3>
 			        <div class="contentarea">
 				        <!-- Normal content area start -->
         				
@@ -141,7 +141,7 @@
 
         <div id="footer">
             <div class="left">&copy; 2008 Iowa Code Camp. All rights reserved.</div>
-            <div class="right"><!--Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design--></a></div>
+            <div class="right"><!--Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design></a--></div>
         </div>
     	
     </div> <!--end outer-->   

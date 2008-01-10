@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<p>Code Camp Speakers for April 26th or May 3rd of 2008.</p>
+<p>Code Camp Speakers for May 3rd of 2008.</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
