@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="Location.aspx.cs" Inherits="Location" Title="Iowa Code Camp - Location" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
+<script type="text/javascript">
+    $(document).ready(function()
+    {$("#location").addClass("active");});
+</script>
     <!--script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script-->
 
     <!--style type="text/css">

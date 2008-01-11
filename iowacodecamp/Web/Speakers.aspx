@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="Speakers.aspx.cs" Inherits="Speakers" Title="Iowa Code Camp - Speakers" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
+<script type="text/javascript">
+    $(document).ready(function()
+    {$("#speakers").addClass("active");});
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <p>Code Camp Speakers for May 3rd of 2008.</p>

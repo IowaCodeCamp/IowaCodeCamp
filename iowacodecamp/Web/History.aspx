@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="History.aspx.cs" Inherits="History" Title="Iowa Code Camp - History" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
+<script type="text/javascript">
+    $(document).ready(function()
+    {$("#history").addClass("active");});
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
     This will be our first Code Camp in Iowa, but there are thriving developer communities in Iowa.<br />
