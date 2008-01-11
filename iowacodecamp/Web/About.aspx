@@ -12,9 +12,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 If you are interested in the philosopy behind Code Camps read 
 <a href="http://blogs.msdn.com/trobbins/archive/2004/12/12/280181.aspx" target="_blank">Thom Robbins post</a> about it.
+
+     <br /><br />
+<h4>Main ideas</h4>
+<br />
+<ul style="padding-left:30px;">
+    <li>By developers for developers</li>
+    <li>Free (for attendees)</li>
+    <li>All about the code</li>
+    <li>Community ownership of code</li>
+    <li>Never during work hours</li>
+</ul>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-<p>test</p>
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 
