@@ -47,12 +47,12 @@
 		    <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
 		    <!-- class="active" use this for the active menu item-->
 		    <ul>
-			    <li><a href='<%=ResolveClientUrl("~/Sessions.aspx") %>'>Sessions</a></li>
-			    <li><a href='<%=ResolveClientUrl("~/Speakers.aspx") %>'>Speakers</a></li>
-			    <li><a href='<%=ResolveClientUrl("~/Contributors.aspx") %>'>Contributors</a></li>
-			    <li><a href='<%=ResolveClientUrl("~/History.aspx") %>'>History</a></li>
-			    <li><a href='<%=ResolveClientUrl("~/Location.aspx") %>'>Location</a></li>
-			    <li><a href='<%=ResolveClientUrl("~/About.aspx") %>'>About</a></li>
+			    <li><a href='<%=ResolveUrl("~/Sessions.aspx") %>'>Sessions</a></li>
+			    <li><a href='<%=ResolveUrl("~/Speakers.aspx") %>'>Speakers</a></li>
+			    <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>'>Contributors</a></li>
+			    <li><a href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li>
+			    <li><a href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
+			    <li><a href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
 		    </ul>
 	    </div>
 	    <div id="menubottom"></div>
