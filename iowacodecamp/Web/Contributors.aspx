@@ -1,6 +1,10 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="Contributors.aspx.cs" Inherits="Contributors" Title="Iowa Code Camp - Contributors" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
+<script type="text/javascript">
+    $(document).ready(function()
+    {$("#contributors").addClass("active");});
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <br />
@@ -22,7 +26,7 @@
 </ul>
 <br />
 <p>
-    Want to get your organization on here?  Email Greg Wilson for more information at javier [at] lozanotek.com
+    Want to get your organization on here?  Email Javier Lozano for more information at javier [at] lozanotek.com
 </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">

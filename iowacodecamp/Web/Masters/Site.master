@@ -9,9 +9,29 @@
     <meta name="keywords" content="Iowa, Cedar Rapids, Iowa, Chris Sutton, Coralville, Des Moines, Iowa City" />
     <meta name="description" content="Site for Code Camps across Iowa" />
     <link rel="stylesheet" type="text/css" href="../Styles/Default.css" />
+    <script src='<%=ResolveUrl("~/Scripts/jquery-1.2.1.pack.js")%>' type="text/javascript"></script>
 
     <asp:ContentPlaceHolder id="headPH" runat="server">
     </asp:ContentPlaceHolder>
+    
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            var menuColor = null;
+            $("#menu a").hover(
+                function ()
+                {
+                    menuColor = $(this).css("color");
+                    $(this).css({ color:"black", textDecoration:"none" });
+                },
+                function ()
+                {
+                    $(this).css({ color: menuColor });
+                }
+            );//end hover
+            
+        });//end ready    
+    </script>
     
 </head>
 <body>   
@@ -47,12 +67,13 @@
 		    <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
 		    <!-- class="active" use this for the active menu item-->
 		    <ul>
-			    <li><a href='<%=ResolveUrl("~/Sessions.aspx") %>'>Sessions</a></li>
-			    <li><a href='<%=ResolveUrl("~/Speakers.aspx") %>'>Speakers</a></li>
-			    <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>'>Contributors</a></li>
-			    <li><a href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li>
-			    <li><a href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
-			    <li><a href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
+			    <li><a id="sessions" href='<%=ResolveUrl("~/Sessions.aspx") %>'>Sessions</a></li>
+			    <li><a id="speakers" href='<%=ResolveUrl("~/Speakers.aspx") %>'>Speakers</a></li>
+			    <li><a id="schedule" href='<%=ResolveUrl("~/Schedule.aspx") %>'>Schedule</a></li>
+			    <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>' id="contributors">Contributors</a></li>
+			    <li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li>
+			    <li><a id="location" href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
+			    <li><a id="about" href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
 		    </ul>
 	    </div>
 	    <div id="menubottom"></div>
