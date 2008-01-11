@@ -7,7 +7,7 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<p>Code Camp Speakers for May 3rd of 2008.</p>
+<h4>Want to speak?  Contact Greg Wilson at greg [at] solidrockstable.com</h4>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
