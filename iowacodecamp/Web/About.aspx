@@ -15,8 +15,8 @@ If you are interested in the philosopy behind Code Camps read
 
      <br /><br />
 <h4>Main ideas</h4>
-<br />
-<ul style="padding-left:30px;">
+<br /><br />
+<ul style="padding-left:20px;">
     <li>By developers for developers</li>
     <li>Free (for attendees)</li>
     <li>All about the code</li>
