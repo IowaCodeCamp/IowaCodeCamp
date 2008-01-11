@@ -7,7 +7,7 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-We are planning on having 4 tracks/rooms, each track will have 5 timeslots, giving us a total of 20 total sessions.
+We have 4 tracks, each track will have 5 timeslots giving us a total of 20 sessions.
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 </asp:Content>
