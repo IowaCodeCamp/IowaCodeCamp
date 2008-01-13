@@ -18,14 +18,15 @@
         <ItemTemplate>
         <div class="post">
             <h4><%#Eval("Title") %></h4>
-                <div class="contentarea">
-                    <div class="details">
-                        Posted by <a href='<%#Eval("Site") %>' target="_blank"><%#Eval("Author") %></a> 
-                        on <%#((DateTime)Eval("CreatedOn")).ToHumanOrdinalized()%> </div>
+            <div class="contentarea">
+                <div class="details">
+                    Posted by <a href='<%#Eval("Site") %>' target="_blank"><%#Eval("Author") %></a> 
+                    on <%#((DateTime)Eval("CreatedOn")).ToHumanOrdinalized()%>
                 </div>
-                <%#Eval("NewsContent") %>
-                
-            <div class="divider2" />
+            </div>
+            <%#Eval("NewsContent") %>
+            
+            <div class="divider2"></div>
         </div>
         </ItemTemplate>
     </asp:ListView>

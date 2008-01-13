@@ -17,7 +17,8 @@ public partial class _Default : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-
+            viewNews.DataSource = NewsItem.GetMostRecentNewsItem();
+            viewNews.DataBind();
         }
     }
 }
