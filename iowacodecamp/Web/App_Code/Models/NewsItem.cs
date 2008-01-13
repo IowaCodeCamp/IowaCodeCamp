@@ -37,18 +37,18 @@ public partial class NewsItem
     public static object GetMostRecentNewsItem()
     {
         var newsItems = (from n in new ICCData().NewsItems
-                        let Author = n.User.FirstName + " " + n.User.LastName
-                        orderby n.CreatedOn descending
-                        select new
-                        {
-                            n.Id,
-                            n.Title,
-                            n.NewsContent,
-                            n.CreatedOn,
-                            n.User.UserName,
-                            n.User.Site,
-                            Author
-                        }).First();
+                         let Author = n.User.FirstName + " " + n.User.LastName
+                         orderby n.CreatedOn descending
+                         select new
+                         {
+                             n.Id,
+                             n.Title,
+                             n.NewsContent,
+                             n.CreatedOn,
+                             n.User.UserName,
+                             n.User.Site,
+                             Author
+                         }).Take(1);
 
         return newsItems;
     }
