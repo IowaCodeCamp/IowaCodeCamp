@@ -7,32 +7,30 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<br />
-<h4>Organizations</h4>
-<br />
-<ul style="padding-left:30px;">
-    <li><a href="http://www.its.uiowa.edu">University of Iowa: ITS</a></li>
-    <li><a href="http://www.microsoft.com">Microsoft</a></li>
-    <li><a href="http://www.qci.com/">QCI</a></li>
-    <li>Tek Systems - Pending</li>
-    
-</ul>
-<br />
-
-<h4>Individuals</h4>
-<br />
-<ul style="padding-left:30px;">
-    <li>Javier Lozano</li>
-    <li>Chris Sutton</li>
-    <li>Greg Wilson</li>
-</ul>
-<br />
 <p>
-    Want to get your organization on here?  Email Javier Lozano for more information at javier [at] lozanotek.com
+    Want your organization on here?  Email Javier Lozano for more information at javier [at] lozanotek dot com
 </p>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+    <h4>Organizations</h4>
+    <br />
+    <ul style="padding-left:20px;">
+        <li><a href="http://www.its.uiowa.edu">University of Iowa: ITS</a></li>
+        <li><a href="http://www.microsoft.com">Microsoft</a></li>
+        <li><a href="http://www.qci.com/">QCI</a></li>
+        <li>Tek Systems - Pending</li>
+    </ul>
+    <br />
+
+    <h4>Individuals</h4>
+    <br />
+    <ul style="padding-left:20px;">
+        <li>Javier Lozano</li>
+        <li>Chris Sutton</li>
+        <li>Greg Wilson</li>
+    </ul>
+    <br />
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
-</asp:Content>
+
 

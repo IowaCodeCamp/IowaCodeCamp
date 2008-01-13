@@ -32,5 +32,3 @@
 	
 </asp:Content>
 
-<asp:Content ID="Content6" ContentPlaceHolderID="secondaryPH" Runat="Server">
-</asp:Content>

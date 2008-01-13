@@ -7,7 +7,7 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h4>Want to speak?  Contact Greg Wilson at greg [at] solidrockstable.com</h4>
+<p>Want to speak?  Contact Greg Wilson at greg [at] solidrockstable dot com</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
@@ -72,7 +72,5 @@
 
 	<div class="divider2"></div>
 
-</asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
 
