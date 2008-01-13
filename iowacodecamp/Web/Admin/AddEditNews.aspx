@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="AddEditNews.aspx.cs" Inherits="Admin_AddEditNews" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="AddEditNews.aspx.cs" Inherits="Admin_AddEditNews" Title="ICC - Admin - News" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
     
@@ -12,16 +12,11 @@
 
     <asp:TextBox ID="NewsTitle" runat="server" Width="200px"></asp:TextBox>
     <br /><br />
-    <textarea id="editor" name="editor" rows="20" cols="75">
     
-    </textarea>
+    <fck:FCKeditor ID="PostContentEditor" runat="server" BasePath="~/FckEditor/" Height="500px" ToolbarStartExpanded="false">
+	</fck:FCKeditor>
     
     <br />
-    
-    <script type="text/javascript">
-
-
-    </script>
     
     <asp:Button ID ="UpdateEvent" runat="server" Text="Submit" 
         onclick="UpdateEvent_Click" />

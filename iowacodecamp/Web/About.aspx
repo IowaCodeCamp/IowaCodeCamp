@@ -10,8 +10,14 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
+    This will be our first Code Camp in Iowa, but there are thriving developer communities in Iowa.<br />
+    Check out <a href="http://www.crineta.org">CRIneta.org</a>, 
+    <a href="http://iadnug.org">Iowa .Net User Group</a> and 
+    <a href="http://www.iowaruby.org/">Iowa Ruby Brigade</a>.
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 If you are interested in the philosopy behind Code Camps read 
-<a href="http://blogs.msdn.com/trobbins/archive/2004/12/12/280181.aspx" target="_blank">Thom Robbins post</a> about it.
+<a href="http://blogs.msdn.com/trobbins/archive/2004/12/12/280181.aspx" target="_blank">Thom Robbins' post</a> about it.
 
      <br /><br />
 <h4>Main ideas</h4>
@@ -23,10 +29,6 @@ If you are interested in the philosopy behind Code Camps read
     <li>Community ownership of code</li>
     <li>Never during work hours</li>
 </ul>
-
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 

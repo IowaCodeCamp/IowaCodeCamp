@@ -49,11 +49,12 @@
 		    <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
 		    <!-- class="active" use this for the active menu item-->
 		    <ul>
+		        <li><a id="news" href='<%=ResolveUrl("~/News.aspx") %>'>News</a></li>
 			    <li><a id="sessions" href='<%=ResolveUrl("~/Sessions.aspx") %>'>Sessions</a></li>
 			    <li><a id="speakers" href='<%=ResolveUrl("~/Speakers.aspx") %>'>Speakers</a></li>
 			    <li><a id="schedule" href='<%=ResolveUrl("~/Schedule.aspx") %>'>Schedule</a></li>
 			    <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>' id="contributors">Contributors</a></li>
-			    <li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li>
+			    <!--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li-->
 			    <li><a id="location" href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
 			    <li><a id="about" href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
 		    </ul>

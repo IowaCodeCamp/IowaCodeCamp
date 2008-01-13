@@ -13,8 +13,9 @@
 <ul style="padding-left:30px;">
     <li><a href="http://www.its.uiowa.edu">University of Iowa: ITS</a></li>
     <li><a href="http://www.microsoft.com">Microsoft</a></li>
+    <li><a href="http://www.qci.com/">QCI</a></li>
     <li>Tek Systems - Pending</li>
-    <li>QCI - Pending</li>
+    
 </ul>
 <br />
 
