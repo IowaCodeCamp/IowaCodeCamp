@@ -7,44 +7,25 @@
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="primaryPH" Runat="Server">
+
 	<div class="post">
-		<h4>Central and Eastern Iowa are joining together</h4>
+		<h4>New Facility - University Conference Center</h4>
 		<div class="contentarea">
-			<div class="details">Posted by <a href="#">Chris Sutton</a> on January 9th, 2008</div>	
-			<p><a href="http://www.its.uiowa.edu/">University of Iowa: ITS</a>, 
-			the <a href="http://iadnug.org">Iowa .Net User Group</a> and <a href="http://crineta.org">CRIneta</a> 
-			are joining forces to make this Code Camp an excellent experience.</p>
+			<div class="details">Posted by <a href="#">Chris Sutton</a> on January 11th, 2008</div>	
+			<p><a href="http://www.its.uiowa.edu">ITS</a> at the <a href="http://uiowa.edu">University of Iowa</a> is letting us use 
+			their new conference center on May 3rd for the Code Camp. They are our first major 
+			contributors and want to thank them for the facility.</p>
 			
-			<p>Please stay tuned as we nail down the details of this event.</p>
-			
-			<ul class="controls">
+			<!--ul class="controls">
 				<li><a href="#" class="printerfriendly">Printer Friendly</a></li>
 				<li><a href="#" class="comments">Comments (0)</a></li>
 				<li><a href="#" class="more">Read More</a></li>				
-			</ul>
+			</ul-->
 		</div>
 	</div>
 
 	<div class="divider2"></div>
-	<div class="post">
-		<h4>Iowa's First Code Camp!</h4>
-		<div class="contentarea">
-			<div class="details">Posted by <a href="#">Chris Sutton</a> on December 22, 2007</div>	
-			<p>Iowa is running its first ever Code Camp. We are looking to run it in Cedar Rapids or the Iowa City/Coraville area.  
-			Our target date is May 3rd of 2008.</p>
-			
-			<p>Are you interested in helping out?  We need speakers, sponsors, people to help coordinate the event and a 
-			great facility. Contact me at christophersutton &lt;at&gt; yahoo. com if you would be interested in helping.</p>
-			
-			<ul class="controls">
-				<li><a href="#" class="printerfriendly">Printer Friendly</a></li>
-				<li><a href="#" class="comments">Comments (0)</a></li>
-				<li><a href="#" class="more">Read More</a></li>				
-			</ul>
-		</div>
-	</div>
-
-	<div class="divider2"></div>
+    
 </asp:Content>
 
 <asp:Content ID="Content6" ContentPlaceHolderID="secondaryPH" Runat="Server">

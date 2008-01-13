@@ -19,6 +19,6 @@ public partial class Admin_AddEditNews : System.Web.UI.Page
     }
     protected void UpdateEvent_Click(object sender, EventArgs e)
     {
-        string x = Request.Form["editor"];
+        string s = PostContentEditor.Value;
     }
 }
