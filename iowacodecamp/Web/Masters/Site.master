@@ -67,8 +67,9 @@
 
 		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
 		        <div id="normalcontent">
-			        <h3><strong>2008 Code Camp in Iowa City, Iowa</strong></h3>
+			        <h3>Iowa's first Code Camp - May 3<sup>rd</sup>, 2008</h3>
 			        <div class="contentarea">
+			        
 				        <!-- Normal content area start -->
         				
 				        <asp:ContentPlaceHolder id="normalPH" runat="server">
@@ -117,23 +118,52 @@
 			        <!-- Secondary content area start -->
 			        <asp:ContentPlaceHolder id="secondaryPH" runat="server">
         			
-			        <!-- HINT: Set any div's class to "box" to encapsulate it in (you guessed it) a box -->
-			        <div class="box">
-				        <h4>Blandit Veroeros</h4>
-				        <div class="contentarea">
-					        <img src="images/pic2.jpg" class="left" alt="Random foliage" />
-					        <p>Sed etiam et lorem ipsum nulla vero et lobortis felis sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros etiam <a href="#">sed commodo</a>.</p>
-				        </div>
+                <div class="box">
+                    <h4>When?</h4>
+                    <ul style="padding-left:20px;">
+                    <li>Saturday</li>
+                    
+                    <li><b>May 3<sup>rd</sup></b></li>
+                    </ul>
+                </div>
+        			
+                <div class="box">
+                <!--University Capitol Centre, Conference Center, 2nd floor (Old Capitol Mall-downtown Iowa City)-->
+
+                    <h4>Where?</h4>
+                    <ul style="padding-left:20px;">
+                    <li>
+                    Conference Center at the <br />Old Capitol Mall
+                    </li>
+                    <li>Iowa City, Iowa</li>
+                    <li>
+                        <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
+                        Map it
+                        </a>
+                    </li>
+                    <li><a href='<%=ResolveUrl("~/Location.aspx") %>'> More Information?</a></li>
+                    </ul>
+                </div>
+                
+		        <div>
+			        <h4>Links</h4>
+			        <div class="contentarea">
+				        <ul class="linklist">
+				            <li><a href="http://www.its.uiowa.edu">University of Iowa:ITS</a></li>
+				            <li><a href="http://www.iadnug.org">Iowa .Net User Group</a></li>
+					        <li><a href="http://www.crineta.org">CRIneta</a></li>					        <li><a href="http://www.twincitiescodecamp.com">Twin Cities Code Camp</a></li>				        </ul>
 			        </div>
+		        </div>        			
+		        
+		        <!--div class="box">
+			        <h4>Blandit Veroeros</h4>
+			        <div class="contentarea">
+				        <img src="images/pic2.jpg" class="left" alt="Random foliage" />
+				        <p>Sed etiam et lorem ipsum nulla vero et lobortis felis sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros etiam <a href="#">sed commodo</a>.</p>
+			        </div>
+		        </div-->
         		
-			        <div>
-				        <h4>Links</h4>
-				        <div class="contentarea">
-					        <ul class="linklist">
-						        <li><a href="http://www.crineta.org">CRIneta</a></li>						        <li><a href="http://www.twincitiescodecamp.com">Twin Cities Code Camp</a></li>						        <li><a href="#">Vivamus viverra nullam</a></li>
-					        </ul>
-				        </div>
-			        </div>
+
 
                     </asp:ContentPlaceHolder>
 			        <!-- Secondary content area end -->

@@ -29,6 +29,5 @@
         //map.LoadMap(new VELatLong(41.659018,-91.53483, 10, VEAltitudeMode.RelativeToGround), 10, VEMapStyle.Road, false, VEMapMode.Mode2D, true, 1);
     </script-->
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
-</asp:Content>
+
 

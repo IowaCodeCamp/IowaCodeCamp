@@ -16,10 +16,6 @@
     <a href="http://www.iowaruby.org/">Iowa Ruby Brigade</a>.
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-If you are interested in the philosopy behind Code Camps read 
-<a href="http://blogs.msdn.com/trobbins/archive/2004/12/12/280181.aspx" target="_blank">Thom Robbins' post</a> about it.
-
-     <br /><br />
 <h4>Main ideas</h4>
 <br /><br />
 <ul style="padding-left:20px;">
@@ -29,8 +25,10 @@ If you are interested in the philosopy behind Code Camps read
     <li>Community ownership of code</li>
     <li>Never during work hours</li>
 </ul>
-</asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
+<br /><br />
+If you are interested in the philosopy behind Code Camps read 
+<a href="http://blogs.msdn.com/trobbins/archive/2004/12/12/280181.aspx" target="_blank">Thom Robbins' post</a> about it.
 
 </asp:Content>
+
 
