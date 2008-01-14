@@ -27,7 +27,7 @@ public partial class NewsItem
                         orderby n.CreatedOn descending
                         select new 
                         {   
-                            n.Id, n.Title, n.NewsContent, n.CreatedOn, 
+                            n.Id, n.Title, n.Content, n.CreatedOn, 
                             n.User.UserName, n.User.Site, Author
                         };
 
@@ -43,7 +43,7 @@ public partial class NewsItem
                          {
                              n.Id,
                              n.Title,
-                             n.NewsContent,
+                             n.Content,
                              n.CreatedOn,
                              n.User.UserName,
                              n.User.Site,
@@ -51,5 +51,22 @@ public partial class NewsItem
                          }).Take(1);
 
         return newsItems;
+    }
+
+    public static bool CreatePost(string PostTitle, string Post, int AuthorID, DateTime DatePosted)
+    {
+        NewsItem item = new NewsItem() 
+        {
+            Title = PostTitle, Content = Post, UserId = AuthorID, 
+            CreatedOn=DatePosted, ModifiedOn = DatePosted,
+            CreatedBy = "Chris", ModifiedBy = "Chris"
+        };
+
+        var ctx = new ICCData();
+        
+        ctx.NewsItems.InsertOnSubmit(item);
+
+        ctx.SubmitChanges();
+        return true;
     }
 }

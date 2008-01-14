@@ -11,19 +11,11 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-public partial class Admin_AddEditNews : System.Web.UI.Page
+public partial class SignOut : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
-    }
-
-    protected void UpdateEvent_Click(object sender, EventArgs e)
-    {
-        if (NewsItem.CreatePost(NewsTitle.Text, PostContentEditor.Value, 1, DateTime.Now))
-        {
-            NewsTitle.Text = "";
-            PostContentEditor.Value = "";
-        }
+        FormsAuthentication.SignOut();
+        Response.Redirect("~/Default.aspx");
     }
 }

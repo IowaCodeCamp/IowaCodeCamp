@@ -21,7 +21,7 @@
                     on <%#((DateTime)Eval("CreatedOn")).ToHumanOrdinalized()%>
                 </div>
             </div>
-            <%#Eval("NewsContent") %>
+            <%#Eval("Content") %>
             
             <div class="divider2"></div>
         </div>

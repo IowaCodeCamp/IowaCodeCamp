@@ -7,7 +7,6 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<p>Please mark May 3<sup>rd</sup> on you calendars for our first ever Iowa Code Camp.</p>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
@@ -24,7 +23,7 @@
                     on <%#((DateTime)Eval("CreatedOn")).ToHumanOrdinalized()%>
                 </div>
             </div>
-            <%#Eval("NewsContent") %>
+            <%#Eval("Content") %>
             
             <div class="divider2"></div>
         </div>
