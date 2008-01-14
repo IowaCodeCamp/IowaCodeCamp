@@ -29,15 +29,21 @@ public partial class ICCData : System.Data.Linq.DataContext
 	
   #region Extensibility Method Definitions
   partial void OnCreated();
-  partial void InsertNewsItem(NewsItem instance);
-  partial void UpdateNewsItem(NewsItem instance);
-  partial void DeleteNewsItem(NewsItem instance);
   partial void InsertEvent(Event instance);
   partial void UpdateEvent(Event instance);
   partial void DeleteEvent(Event instance);
+  partial void InsertNewsItem(NewsItem instance);
+  partial void UpdateNewsItem(NewsItem instance);
+  partial void DeleteNewsItem(NewsItem instance);
   partial void InsertUser(User instance);
   partial void UpdateUser(User instance);
   partial void DeleteUser(User instance);
+  partial void InsertUserRole(UserRole instance);
+  partial void UpdateUserRole(UserRole instance);
+  partial void DeleteUserRole(UserRole instance);
+  partial void InsertRole(Role instance);
+  partial void UpdateRole(Role instance);
+  partial void DeleteRole(Role instance);
   #endregion
 	
 	public ICCData() : 
@@ -70,19 +76,19 @@ public partial class ICCData : System.Data.Linq.DataContext
 		OnCreated();
 	}
 	
-	public System.Data.Linq.Table<NewsItem> NewsItems
-	{
-		get
-		{
-			return this.GetTable<NewsItem>();
-		}
-	}
-	
 	public System.Data.Linq.Table<Event> Events
 	{
 		get
 		{
 			return this.GetTable<Event>();
+		}
+	}
+	
+	public System.Data.Linq.Table<NewsItem> NewsItems
+	{
+		get
+		{
+			return this.GetTable<NewsItem>();
 		}
 	}
 	
@@ -93,299 +99,20 @@ public partial class ICCData : System.Data.Linq.DataContext
 			return this.GetTable<User>();
 		}
 	}
-}
-
-[Table(Name="dbo.NewsItems")]
-public partial class NewsItem : INotifyPropertyChanging, INotifyPropertyChanged
-{
 	
-	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-	
-	private int _Id;
-	
-	private int _UserId;
-	
-	private string _Title;
-	
-	private string _NewsContent;
-	
-	private System.DateTime _CreatedOn;
-	
-	private string _CreatedBy;
-	
-	private System.DateTime _ModifiedOn;
-	
-	private string _ModifiedBy;
-	
-	private bool _IsDeleted;
-	
-	private EntityRef<User> _User;
-	
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdChanging(int value);
-    partial void OnIdChanged();
-    partial void OnUserIdChanging(int value);
-    partial void OnUserIdChanged();
-    partial void OnTitleChanging(string value);
-    partial void OnTitleChanged();
-    partial void OnNewsContentChanging(string value);
-    partial void OnNewsContentChanged();
-    partial void OnCreatedOnChanging(System.DateTime value);
-    partial void OnCreatedOnChanged();
-    partial void OnCreatedByChanging(string value);
-    partial void OnCreatedByChanged();
-    partial void OnModifiedOnChanging(System.DateTime value);
-    partial void OnModifiedOnChanged();
-    partial void OnModifiedByChanging(string value);
-    partial void OnModifiedByChanged();
-    partial void OnIsDeletedChanging(bool value);
-    partial void OnIsDeletedChanged();
-    #endregion
-	
-	public NewsItem()
-	{
-		this._User = default(EntityRef<User>);
-		OnCreated();
-	}
-	
-	[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-	public int Id
+	public System.Data.Linq.Table<UserRole> UserRoles
 	{
 		get
 		{
-			return this._Id;
-		}
-		set
-		{
-			if ((this._Id != value))
-			{
-				this.OnIdChanging(value);
-				this.SendPropertyChanging();
-				this._Id = value;
-				this.SendPropertyChanged("Id");
-				this.OnIdChanged();
-			}
+			return this.GetTable<UserRole>();
 		}
 	}
 	
-	[Column(Storage="_UserId", DbType="Int NOT NULL")]
-	public int UserId
+	public System.Data.Linq.Table<Role> Roles
 	{
 		get
 		{
-			return this._UserId;
-		}
-		set
-		{
-			if ((this._UserId != value))
-			{
-				if (this._User.HasLoadedOrAssignedValue)
-				{
-					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-				}
-				this.OnUserIdChanging(value);
-				this.SendPropertyChanging();
-				this._UserId = value;
-				this.SendPropertyChanged("UserId");
-				this.OnUserIdChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_Title", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-	public string Title
-	{
-		get
-		{
-			return this._Title;
-		}
-		set
-		{
-			if ((this._Title != value))
-			{
-				this.OnTitleChanging(value);
-				this.SendPropertyChanging();
-				this._Title = value;
-				this.SendPropertyChanged("Title");
-				this.OnTitleChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_NewsContent", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
-	public string NewsContent
-	{
-		get
-		{
-			return this._NewsContent;
-		}
-		set
-		{
-			if ((this._NewsContent != value))
-			{
-				this.OnNewsContentChanging(value);
-				this.SendPropertyChanging();
-				this._NewsContent = value;
-				this.SendPropertyChanged("NewsContent");
-				this.OnNewsContentChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
-	public System.DateTime CreatedOn
-	{
-		get
-		{
-			return this._CreatedOn;
-		}
-		set
-		{
-			if ((this._CreatedOn != value))
-			{
-				this.OnCreatedOnChanging(value);
-				this.SendPropertyChanging();
-				this._CreatedOn = value;
-				this.SendPropertyChanged("CreatedOn");
-				this.OnCreatedOnChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-	public string CreatedBy
-	{
-		get
-		{
-			return this._CreatedBy;
-		}
-		set
-		{
-			if ((this._CreatedBy != value))
-			{
-				this.OnCreatedByChanging(value);
-				this.SendPropertyChanging();
-				this._CreatedBy = value;
-				this.SendPropertyChanged("CreatedBy");
-				this.OnCreatedByChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
-	public System.DateTime ModifiedOn
-	{
-		get
-		{
-			return this._ModifiedOn;
-		}
-		set
-		{
-			if ((this._ModifiedOn != value))
-			{
-				this.OnModifiedOnChanging(value);
-				this.SendPropertyChanging();
-				this._ModifiedOn = value;
-				this.SendPropertyChanged("ModifiedOn");
-				this.OnModifiedOnChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-	public string ModifiedBy
-	{
-		get
-		{
-			return this._ModifiedBy;
-		}
-		set
-		{
-			if ((this._ModifiedBy != value))
-			{
-				this.OnModifiedByChanging(value);
-				this.SendPropertyChanging();
-				this._ModifiedBy = value;
-				this.SendPropertyChanged("ModifiedBy");
-				this.OnModifiedByChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-	public bool IsDeleted
-	{
-		get
-		{
-			return this._IsDeleted;
-		}
-		set
-		{
-			if ((this._IsDeleted != value))
-			{
-				this.OnIsDeletedChanging(value);
-				this.SendPropertyChanging();
-				this._IsDeleted = value;
-				this.SendPropertyChanged("IsDeleted");
-				this.OnIsDeletedChanged();
-			}
-		}
-	}
-	
-	[Association(Name="User_NewsItem", Storage="_User", ThisKey="UserId", IsForeignKey=true)]
-	public User User
-	{
-		get
-		{
-			return this._User.Entity;
-		}
-		set
-		{
-			User previousValue = this._User.Entity;
-			if (((previousValue != value) 
-						|| (this._User.HasLoadedOrAssignedValue == false)))
-			{
-				this.SendPropertyChanging();
-				if ((previousValue != null))
-				{
-					this._User.Entity = null;
-					previousValue.NewsItems.Remove(this);
-				}
-				this._User.Entity = value;
-				if ((value != null))
-				{
-					value.NewsItems.Add(this);
-					this._UserId = value.Id;
-				}
-				else
-				{
-					this._UserId = default(int);
-				}
-				this.SendPropertyChanged("User");
-			}
-		}
-	}
-	
-	public event PropertyChangingEventHandler PropertyChanging;
-	
-	public event PropertyChangedEventHandler PropertyChanged;
-	
-	protected virtual void SendPropertyChanging()
-	{
-		if ((this.PropertyChanging != null))
-		{
-			this.PropertyChanging(this, emptyChangingEventArgs);
-		}
-	}
-	
-	protected virtual void SendPropertyChanged(String propertyName)
-	{
-		if ((this.PropertyChanged != null))
-		{
-			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			return this.GetTable<Role>();
 		}
 	}
 }
@@ -692,6 +419,301 @@ public partial class Event : INotifyPropertyChanging, INotifyPropertyChanged
 	}
 }
 
+[Table(Name="dbo.NewsItems")]
+public partial class NewsItem : INotifyPropertyChanging, INotifyPropertyChanged
+{
+	
+	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+	
+	private int _Id;
+	
+	private int _UserId;
+	
+	private string _Title;
+	
+	private string _Content;
+	
+	private System.DateTime _CreatedOn;
+	
+	private string _CreatedBy;
+	
+	private System.DateTime _ModifiedOn;
+	
+	private string _ModifiedBy;
+	
+	private bool _IsDeleted;
+	
+	private EntityRef<User> _User;
+	
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnUserIdChanging(int value);
+    partial void OnUserIdChanged();
+    partial void OnTitleChanging(string value);
+    partial void OnTitleChanged();
+    partial void OnContentChanging(string value);
+    partial void OnContentChanged();
+    partial void OnCreatedOnChanging(System.DateTime value);
+    partial void OnCreatedOnChanged();
+    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedOnChanging(System.DateTime value);
+    partial void OnModifiedOnChanged();
+    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanged();
+    partial void OnIsDeletedChanging(bool value);
+    partial void OnIsDeletedChanged();
+    #endregion
+	
+	public NewsItem()
+	{
+		this._User = default(EntityRef<User>);
+		OnCreated();
+	}
+	
+	[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public int Id
+	{
+		get
+		{
+			return this._Id;
+		}
+		set
+		{
+			if ((this._Id != value))
+			{
+				this.OnIdChanging(value);
+				this.SendPropertyChanging();
+				this._Id = value;
+				this.SendPropertyChanged("Id");
+				this.OnIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_UserId", DbType="Int NOT NULL")]
+	public int UserId
+	{
+		get
+		{
+			return this._UserId;
+		}
+		set
+		{
+			if ((this._UserId != value))
+			{
+				if (this._User.HasLoadedOrAssignedValue)
+				{
+					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+				}
+				this.OnUserIdChanging(value);
+				this.SendPropertyChanging();
+				this._UserId = value;
+				this.SendPropertyChanged("UserId");
+				this.OnUserIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Title", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string Title
+	{
+		get
+		{
+			return this._Title;
+		}
+		set
+		{
+			if ((this._Title != value))
+			{
+				this.OnTitleChanging(value);
+				this.SendPropertyChanging();
+				this._Title = value;
+				this.SendPropertyChanged("Title");
+				this.OnTitleChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Content", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+	public string Content
+	{
+		get
+		{
+			return this._Content;
+		}
+		set
+		{
+			if ((this._Content != value))
+			{
+				this.OnContentChanging(value);
+				this.SendPropertyChanging();
+				this._Content = value;
+				this.SendPropertyChanged("Content");
+				this.OnContentChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime CreatedOn
+	{
+		get
+		{
+			return this._CreatedOn;
+		}
+		set
+		{
+			if ((this._CreatedOn != value))
+			{
+				this.OnCreatedOnChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedOn = value;
+				this.SendPropertyChanged("CreatedOn");
+				this.OnCreatedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string CreatedBy
+	{
+		get
+		{
+			return this._CreatedBy;
+		}
+		set
+		{
+			if ((this._CreatedBy != value))
+			{
+				this.OnCreatedByChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedBy = value;
+				this.SendPropertyChanged("CreatedBy");
+				this.OnCreatedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime ModifiedOn
+	{
+		get
+		{
+			return this._ModifiedOn;
+		}
+		set
+		{
+			if ((this._ModifiedOn != value))
+			{
+				this.OnModifiedOnChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedOn = value;
+				this.SendPropertyChanged("ModifiedOn");
+				this.OnModifiedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string ModifiedBy
+	{
+		get
+		{
+			return this._ModifiedBy;
+		}
+		set
+		{
+			if ((this._ModifiedBy != value))
+			{
+				this.OnModifiedByChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedBy = value;
+				this.SendPropertyChanged("ModifiedBy");
+				this.OnModifiedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+	public bool IsDeleted
+	{
+		get
+		{
+			return this._IsDeleted;
+		}
+		set
+		{
+			if ((this._IsDeleted != value))
+			{
+				this.OnIsDeletedChanging(value);
+				this.SendPropertyChanging();
+				this._IsDeleted = value;
+				this.SendPropertyChanged("IsDeleted");
+				this.OnIsDeletedChanged();
+			}
+		}
+	}
+	
+	[Association(Name="User_NewsItem", Storage="_User", ThisKey="UserId", IsForeignKey=true)]
+	public User User
+	{
+		get
+		{
+			return this._User.Entity;
+		}
+		set
+		{
+			User previousValue = this._User.Entity;
+			if (((previousValue != value) 
+						|| (this._User.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._User.Entity = null;
+					previousValue.NewsItems.Remove(this);
+				}
+				this._User.Entity = value;
+				if ((value != null))
+				{
+					value.NewsItems.Add(this);
+					this._UserId = value.Id;
+				}
+				else
+				{
+					this._UserId = default(int);
+				}
+				this.SendPropertyChanged("User");
+			}
+		}
+	}
+	
+	public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	
+	protected virtual void SendPropertyChanging()
+	{
+		if ((this.PropertyChanging != null))
+		{
+			this.PropertyChanging(this, emptyChangingEventArgs);
+		}
+	}
+	
+	protected virtual void SendPropertyChanged(String propertyName)
+	{
+		if ((this.PropertyChanged != null))
+		{
+			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+}
+
 [Table(Name="dbo.Users")]
 public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 {
@@ -723,6 +745,8 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 	private bool _IsDeleted;
 	
 	private EntitySet<NewsItem> _NewsItems;
+	
+	private EntitySet<UserRole> _UserRoles;
 	
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -757,6 +781,7 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 	public User()
 	{
 		this._NewsItems = new EntitySet<NewsItem>(new Action<NewsItem>(this.attach_NewsItems), new Action<NewsItem>(this.detach_NewsItems));
+		this._UserRoles = new EntitySet<UserRole>(new Action<UserRole>(this.attach_UserRoles), new Action<UserRole>(this.detach_UserRoles));
 		OnCreated();
 	}
 	
@@ -1013,6 +1038,19 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
+	[Association(Name="User_UserRole", Storage="_UserRoles", OtherKey="UserId")]
+	public EntitySet<UserRole> UserRoles
+	{
+		get
+		{
+			return this._UserRoles;
+		}
+		set
+		{
+			this._UserRoles.Assign(value);
+		}
+	}
+	
 	public event PropertyChangingEventHandler PropertyChanging;
 	
 	public event PropertyChangedEventHandler PropertyChanged;
@@ -1043,6 +1081,588 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		this.SendPropertyChanging();
 		entity.User = null;
+	}
+	
+	private void attach_UserRoles(UserRole entity)
+	{
+		this.SendPropertyChanging();
+		entity.User = this;
+	}
+	
+	private void detach_UserRoles(UserRole entity)
+	{
+		this.SendPropertyChanging();
+		entity.User = null;
+	}
+}
+
+[Table(Name="dbo.UserRoles")]
+public partial class UserRole : INotifyPropertyChanging, INotifyPropertyChanged
+{
+	
+	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+	
+	private int _Id;
+	
+	private int _RoleId;
+	
+	private int _UserId;
+	
+	private System.DateTime _CreatedOn;
+	
+	private string _CreatedBy;
+	
+	private System.DateTime _ModifiedOn;
+	
+	private string _ModifiedBy;
+	
+	private bool _IsDeleted;
+	
+	private EntityRef<User> _User;
+	
+	private EntityRef<Role> _Role;
+	
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnRoleIdChanging(int value);
+    partial void OnRoleIdChanged();
+    partial void OnUserIdChanging(int value);
+    partial void OnUserIdChanged();
+    partial void OnCreatedOnChanging(System.DateTime value);
+    partial void OnCreatedOnChanged();
+    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedOnChanging(System.DateTime value);
+    partial void OnModifiedOnChanged();
+    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanged();
+    partial void OnIsDeletedChanging(bool value);
+    partial void OnIsDeletedChanged();
+    #endregion
+	
+	public UserRole()
+	{
+		this._User = default(EntityRef<User>);
+		this._Role = default(EntityRef<Role>);
+		OnCreated();
+	}
+	
+	[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public int Id
+	{
+		get
+		{
+			return this._Id;
+		}
+		set
+		{
+			if ((this._Id != value))
+			{
+				this.OnIdChanging(value);
+				this.SendPropertyChanging();
+				this._Id = value;
+				this.SendPropertyChanged("Id");
+				this.OnIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_RoleId", DbType="Int NOT NULL")]
+	public int RoleId
+	{
+		get
+		{
+			return this._RoleId;
+		}
+		set
+		{
+			if ((this._RoleId != value))
+			{
+				if (this._Role.HasLoadedOrAssignedValue)
+				{
+					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+				}
+				this.OnRoleIdChanging(value);
+				this.SendPropertyChanging();
+				this._RoleId = value;
+				this.SendPropertyChanged("RoleId");
+				this.OnRoleIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_UserId", DbType="Int NOT NULL")]
+	public int UserId
+	{
+		get
+		{
+			return this._UserId;
+		}
+		set
+		{
+			if ((this._UserId != value))
+			{
+				if (this._User.HasLoadedOrAssignedValue)
+				{
+					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+				}
+				this.OnUserIdChanging(value);
+				this.SendPropertyChanging();
+				this._UserId = value;
+				this.SendPropertyChanged("UserId");
+				this.OnUserIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime CreatedOn
+	{
+		get
+		{
+			return this._CreatedOn;
+		}
+		set
+		{
+			if ((this._CreatedOn != value))
+			{
+				this.OnCreatedOnChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedOn = value;
+				this.SendPropertyChanged("CreatedOn");
+				this.OnCreatedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string CreatedBy
+	{
+		get
+		{
+			return this._CreatedBy;
+		}
+		set
+		{
+			if ((this._CreatedBy != value))
+			{
+				this.OnCreatedByChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedBy = value;
+				this.SendPropertyChanged("CreatedBy");
+				this.OnCreatedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime ModifiedOn
+	{
+		get
+		{
+			return this._ModifiedOn;
+		}
+		set
+		{
+			if ((this._ModifiedOn != value))
+			{
+				this.OnModifiedOnChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedOn = value;
+				this.SendPropertyChanged("ModifiedOn");
+				this.OnModifiedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string ModifiedBy
+	{
+		get
+		{
+			return this._ModifiedBy;
+		}
+		set
+		{
+			if ((this._ModifiedBy != value))
+			{
+				this.OnModifiedByChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedBy = value;
+				this.SendPropertyChanged("ModifiedBy");
+				this.OnModifiedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+	public bool IsDeleted
+	{
+		get
+		{
+			return this._IsDeleted;
+		}
+		set
+		{
+			if ((this._IsDeleted != value))
+			{
+				this.OnIsDeletedChanging(value);
+				this.SendPropertyChanging();
+				this._IsDeleted = value;
+				this.SendPropertyChanged("IsDeleted");
+				this.OnIsDeletedChanged();
+			}
+		}
+	}
+	
+	[Association(Name="User_UserRole", Storage="_User", ThisKey="UserId", IsForeignKey=true)]
+	public User User
+	{
+		get
+		{
+			return this._User.Entity;
+		}
+		set
+		{
+			User previousValue = this._User.Entity;
+			if (((previousValue != value) 
+						|| (this._User.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._User.Entity = null;
+					previousValue.UserRoles.Remove(this);
+				}
+				this._User.Entity = value;
+				if ((value != null))
+				{
+					value.UserRoles.Add(this);
+					this._UserId = value.Id;
+				}
+				else
+				{
+					this._UserId = default(int);
+				}
+				this.SendPropertyChanged("User");
+			}
+		}
+	}
+	
+	[Association(Name="Role_UserRole", Storage="_Role", ThisKey="RoleId", IsForeignKey=true)]
+	public Role Role
+	{
+		get
+		{
+			return this._Role.Entity;
+		}
+		set
+		{
+			Role previousValue = this._Role.Entity;
+			if (((previousValue != value) 
+						|| (this._Role.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._Role.Entity = null;
+					previousValue.UserRoles.Remove(this);
+				}
+				this._Role.Entity = value;
+				if ((value != null))
+				{
+					value.UserRoles.Add(this);
+					this._RoleId = value.Id;
+				}
+				else
+				{
+					this._RoleId = default(int);
+				}
+				this.SendPropertyChanged("Role");
+			}
+		}
+	}
+	
+	public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	
+	protected virtual void SendPropertyChanging()
+	{
+		if ((this.PropertyChanging != null))
+		{
+			this.PropertyChanging(this, emptyChangingEventArgs);
+		}
+	}
+	
+	protected virtual void SendPropertyChanged(String propertyName)
+	{
+		if ((this.PropertyChanged != null))
+		{
+			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+}
+
+[Table(Name="dbo.Roles")]
+public partial class Role : INotifyPropertyChanging, INotifyPropertyChanged
+{
+	
+	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+	
+	private int _Id;
+	
+	private string _Name;
+	
+	private string _Description;
+	
+	private System.DateTime _CreatedOn;
+	
+	private string _CreatedBy;
+	
+	private System.DateTime _ModifiedOn;
+	
+	private string _ModifiedBy;
+	
+	private bool _IsDeleted;
+	
+	private EntitySet<UserRole> _UserRoles;
+	
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    partial void OnDescriptionChanging(string value);
+    partial void OnDescriptionChanged();
+    partial void OnCreatedOnChanging(System.DateTime value);
+    partial void OnCreatedOnChanged();
+    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedOnChanging(System.DateTime value);
+    partial void OnModifiedOnChanged();
+    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanged();
+    partial void OnIsDeletedChanging(bool value);
+    partial void OnIsDeletedChanged();
+    #endregion
+	
+	public Role()
+	{
+		this._UserRoles = new EntitySet<UserRole>(new Action<UserRole>(this.attach_UserRoles), new Action<UserRole>(this.detach_UserRoles));
+		OnCreated();
+	}
+	
+	[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public int Id
+	{
+		get
+		{
+			return this._Id;
+		}
+		set
+		{
+			if ((this._Id != value))
+			{
+				this.OnIdChanging(value);
+				this.SendPropertyChanging();
+				this._Id = value;
+				this.SendPropertyChanged("Id");
+				this.OnIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Name", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string Name
+	{
+		get
+		{
+			return this._Name;
+		}
+		set
+		{
+			if ((this._Name != value))
+			{
+				this.OnNameChanging(value);
+				this.SendPropertyChanging();
+				this._Name = value;
+				this.SendPropertyChanged("Name");
+				this.OnNameChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Description", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+	public string Description
+	{
+		get
+		{
+			return this._Description;
+		}
+		set
+		{
+			if ((this._Description != value))
+			{
+				this.OnDescriptionChanging(value);
+				this.SendPropertyChanging();
+				this._Description = value;
+				this.SendPropertyChanged("Description");
+				this.OnDescriptionChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime CreatedOn
+	{
+		get
+		{
+			return this._CreatedOn;
+		}
+		set
+		{
+			if ((this._CreatedOn != value))
+			{
+				this.OnCreatedOnChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedOn = value;
+				this.SendPropertyChanged("CreatedOn");
+				this.OnCreatedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string CreatedBy
+	{
+		get
+		{
+			return this._CreatedBy;
+		}
+		set
+		{
+			if ((this._CreatedBy != value))
+			{
+				this.OnCreatedByChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedBy = value;
+				this.SendPropertyChanged("CreatedBy");
+				this.OnCreatedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime ModifiedOn
+	{
+		get
+		{
+			return this._ModifiedOn;
+		}
+		set
+		{
+			if ((this._ModifiedOn != value))
+			{
+				this.OnModifiedOnChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedOn = value;
+				this.SendPropertyChanged("ModifiedOn");
+				this.OnModifiedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string ModifiedBy
+	{
+		get
+		{
+			return this._ModifiedBy;
+		}
+		set
+		{
+			if ((this._ModifiedBy != value))
+			{
+				this.OnModifiedByChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedBy = value;
+				this.SendPropertyChanged("ModifiedBy");
+				this.OnModifiedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+	public bool IsDeleted
+	{
+		get
+		{
+			return this._IsDeleted;
+		}
+		set
+		{
+			if ((this._IsDeleted != value))
+			{
+				this.OnIsDeletedChanging(value);
+				this.SendPropertyChanging();
+				this._IsDeleted = value;
+				this.SendPropertyChanged("IsDeleted");
+				this.OnIsDeletedChanged();
+			}
+		}
+	}
+	
+	[Association(Name="Role_UserRole", Storage="_UserRoles", OtherKey="RoleId")]
+	public EntitySet<UserRole> UserRoles
+	{
+		get
+		{
+			return this._UserRoles;
+		}
+		set
+		{
+			this._UserRoles.Assign(value);
+		}
+	}
+	
+	public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	
+	protected virtual void SendPropertyChanging()
+	{
+		if ((this.PropertyChanging != null))
+		{
+			this.PropertyChanging(this, emptyChangingEventArgs);
+		}
+	}
+	
+	protected virtual void SendPropertyChanged(String propertyName)
+	{
+		if ((this.PropertyChanged != null))
+		{
+			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+	
+	private void attach_UserRoles(UserRole entity)
+	{
+		this.SendPropertyChanging();
+		entity.Role = this;
+	}
+	
+	private void detach_UserRoles(UserRole entity)
+	{
+		this.SendPropertyChanging();
+		entity.Role = null;
 	}
 }
 #pragma warning restore 1591

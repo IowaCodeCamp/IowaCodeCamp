@@ -53,7 +53,7 @@
 			    <li><a id="sessions" href='<%=ResolveUrl("~/Sessions.aspx") %>'>Sessions</a></li>
 			    <li><a id="speakers" href='<%=ResolveUrl("~/Speakers.aspx") %>'>Speakers</a></li>
 			    <li><a id="schedule" href='<%=ResolveUrl("~/Schedule.aspx") %>'>Schedule</a></li>
-			    <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>' id="contributors">Contributors</a></li>
+			    <li><a id="contributors" href='<%=ResolveUrl("~/Contributors.aspx") %>'>Contributors</a></li>
 			    <!--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li-->
 			    <li><a id="location" href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
 			    <li><a id="about" href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
@@ -67,7 +67,7 @@
 
 		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
 		        <div id="normalcontent">
-			        <h3>Iowa's first Code Camp - May 3<sup>rd</sup>, 2008</h3>
+			        <h3>Iowa's First Code Camp - May 3<sup>rd</sup>, 2008</h3>
 			        <div class="contentarea">
 			        
 				        <!-- Normal content area start -->
@@ -112,11 +112,30 @@
 			        </div>
 		        </div>
 
-        		
 		        <!-- Secondary content: Stuff that goes in the secondary content column (by default, the narrower right column) -->
 		        <div id="secondarycontent">
 			        <!-- Secondary content area start -->
+                    
+                        <asp:LoginView ID="LoginView1" runat="server">
+                        <LoggedInTemplate>
+                            <div class="box">
+                                <ul>
+                                    <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a></li>
+                                    <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/AddEditNews.aspx") %>'>Post News</a></li>
+                                </ul>
+                            </div>
+                        </LoggedInTemplate>
+                        <AnonymousTemplate>
+                            <div class="box">
+			                    <a href='<%=ResolveUrl("~/SignIn.aspx") %>' style="text-decoration:none;">Sign In</a>
+                             </div>
+                        </AnonymousTemplate>
+                        </asp:LoginView>
+                    
+                    
 			        <asp:ContentPlaceHolder id="secondaryPH" runat="server">
+			        
+
         			
                 <div class="box">
                     <h4>When?</h4>
@@ -150,8 +169,8 @@
 			        <div class="contentarea">
 				        <ul class="linklist">
 				            <li><a href="http://www.its.uiowa.edu">University of Iowa:ITS</a></li>
-				            <li><a href="http://www.iadnug.org">Iowa .Net User Group</a></li>
-					        <li><a href="http://www.crineta.org">CRIneta</a></li>					        <li><a href="http://www.twincitiescodecamp.com">Twin Cities Code Camp</a></li>				        </ul>
+				            <li><a href="http://www.crineta.org">CRIneta</a></li>
+				            <li><a href="http://www.iadnug.org">Iowa .Net User Group</a></li>					        <li><a href="http://www.twincitiescodecamp.com">Twin Cities Code Camp</a></li>				        </ul>
 			        </div>
 		        </div>        			
 		        
