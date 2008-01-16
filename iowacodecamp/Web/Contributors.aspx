@@ -16,9 +16,9 @@
     <h4>Organizations</h4>
     <br />
     <ul style="padding-left:20px;">
-        <li><a href="http://www.its.uiowa.edu">University of Iowa: ITS</a></li>
-        <li><a href="http://www.microsoft.com">Microsoft</a></li>
-        <li><a href="http://www.qci.com/">QCI</a></li>
+        <li><a href="http://www.its.uiowa.edu" target="_blank">University of Iowa: ITS</a></li>
+        <li><a href="http://www.microsoft.com" target="_blank">Microsoft</a></li>
+        <li><a href="http://www.qci.com/" target="_blank">QCI</a></li>
         <li>Tek Systems - Pending</li>
     </ul>
     <br />
@@ -26,9 +26,9 @@
     <h4>Individuals</h4>
     <br />
     <ul style="padding-left:20px;">
-        <li>Javier Lozano</li>
-        <li>Chris Sutton</li>
-        <li>Greg Wilson</li>
+        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors</li>
+        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility/Website/Logistics</li>
+        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
     </ul>
     <br />
 </asp:Content>
