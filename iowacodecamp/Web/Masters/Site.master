@@ -119,9 +119,12 @@
                     <asp:LoginView ID="LoginView1" runat="server">
                     <LoggedInTemplate>
                         <div class="box">
-                            <ul>
-                                <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a></li>
+                            <a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a>
+                            <br /><br />
+                            <h4>Admin</h4>
+                            <ul style="padding-left:20px;">
                                 <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/AddEditNews.aspx") %>'>Post News</a></li>
+                                <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ViewUsers.aspx") %>'>View Users</a></li>
                             </ul>
                         </div>
                     </LoggedInTemplate>

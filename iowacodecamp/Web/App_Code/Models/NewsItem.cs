@@ -55,11 +55,13 @@ public partial class NewsItem
 
     public static bool CreatePost(string PostTitle, string Post, int AuthorID, DateTime DatePosted)
     {
+        //context should be hidden behind an interface probably
+        string uname = HttpContext.Current.User.Identity.Name;
         NewsItem item = new NewsItem() 
         {
             Title = PostTitle, Content = Post, UserId = AuthorID, 
-            CreatedOn=DatePosted, ModifiedOn = DatePosted,
-            CreatedBy = "Chris", ModifiedBy = "Chris"
+            CreatedOn = DatePosted, ModifiedOn = DatePosted,
+            CreatedBy = uname, ModifiedBy = uname
         };
 
         var ctx = new ICCData();

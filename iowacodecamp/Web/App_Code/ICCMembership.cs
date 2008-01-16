@@ -154,12 +154,6 @@ public class ICCMembership : MembershipProvider
 
     public override bool ValidateUser(string username, string password)
     {
-        ICCData ctx = new ICCData();
-        var matches = from u in ctx.Users
-                   where u.UserName == username && u.Password == password
-                   select u;
-        if (matches.Count() == 1)
-            return true;
-        return false;
+        return User.Validate(username, password);
     }
 }
