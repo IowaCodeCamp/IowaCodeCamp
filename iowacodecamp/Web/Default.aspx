@@ -3,7 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-    <p>Please mark May 3<sup>rd</sup> on you calendars for our first ever Iowa Code Camp.</p>
+    <div class="details" style="width:100%">
+        <b><%=Event.NumberOfDaysLeft%> days left</b>
+    </div>
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="primaryPH" Runat="Server">
