@@ -2,12 +2,6 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ICCData">
   <DataContextMoniker Name="/ICCData" />
   <nestedChildShapes>
-    <classShape Id="78cbfc69-7ea1-430c-8ce7-280b0a5a2016" absoluteBounds="7.125, 0.75, 2, 2.9247054036458331">
-      <DataClassMoniker Name="/ICCData/Event" />
-      <nestedChildShapes>
-        <elementListCompartment Id="4ebffb24-bf57-44fb-9774-aa4d378f92d3" absoluteBounds="7.14, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="10280214-99b2-4c4a-8e68-2bb8984a3459" absoluteBounds="4, 0.75, 2, 2.5401025390625">
       <DataClassMoniker Name="/ICCData/NewsItem" />
       <nestedChildShapes>
@@ -46,12 +40,18 @@
         <elementListCompartment Id="f6962527-3f78-4638-ab7e-077499ee233e" absoluteBounds="4.265, 5.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.25 : 6.54890055338542); (3.125 : 6.54890055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.25 : 6.54890055338542); (3.125 : 6.54890055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/Role/Role_UserRole" />
       <nodes>
         <classShapeMoniker Id="a8ed2313-7f4d-4412-8ba9-d10b79a4f35c" />
         <classShapeMoniker Id="a10950b6-779c-4d23-8d09-082ad42b0b47" />
       </nodes>
     </associationConnector>
+    <classShape Id="30cd374c-4765-4f97-9edf-f92c4a7716fc" absoluteBounds="7, 0.875, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/ICCData/Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6bad5ea6-fc1d-4a33-97e8-53e98ba96ea4" absoluteBounds="7.015, 1.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

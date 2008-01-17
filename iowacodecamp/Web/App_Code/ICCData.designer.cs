@@ -29,9 +29,6 @@ public partial class ICCData : System.Data.Linq.DataContext
 	
   #region Extensibility Method Definitions
   partial void OnCreated();
-  partial void InsertEvent(Event instance);
-  partial void UpdateEvent(Event instance);
-  partial void DeleteEvent(Event instance);
   partial void InsertNewsItem(NewsItem instance);
   partial void UpdateNewsItem(NewsItem instance);
   partial void DeleteNewsItem(NewsItem instance);
@@ -44,6 +41,9 @@ public partial class ICCData : System.Data.Linq.DataContext
   partial void InsertRole(Role instance);
   partial void UpdateRole(Role instance);
   partial void DeleteRole(Role instance);
+  partial void InsertEvent(Event instance);
+  partial void UpdateEvent(Event instance);
+  partial void DeleteEvent(Event instance);
   #endregion
 	
 	public ICCData() : 
@@ -74,14 +74,6 @@ public partial class ICCData : System.Data.Linq.DataContext
 			base(connection, mappingSource)
 	{
 		OnCreated();
-	}
-	
-	public System.Data.Linq.Table<Event> Events
-	{
-		get
-		{
-			return this.GetTable<Event>();
-		}
 	}
 	
 	public System.Data.Linq.Table<NewsItem> NewsItems
@@ -115,306 +107,12 @@ public partial class ICCData : System.Data.Linq.DataContext
 			return this.GetTable<Role>();
 		}
 	}
-}
-
-[Table(Name="dbo.Events")]
-public partial class Event : INotifyPropertyChanging, INotifyPropertyChanged
-{
 	
-	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-	
-	private int _ID;
-	
-	private string _EventName;
-	
-	private System.DateTime _StartOn;
-	
-	private System.DateTime _EndOn;
-	
-	private string _Description;
-	
-	private bool _IsActive;
-	
-	private System.DateTime _CreatedOn;
-	
-	private string _CreatedBy;
-	
-	private System.DateTime _ModifiedOn;
-	
-	private string _ModifiedBy;
-	
-	private bool _IsDeleted;
-	
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIDChanging(int value);
-    partial void OnIDChanged();
-    partial void OnEventNameChanging(string value);
-    partial void OnEventNameChanged();
-    partial void OnStartOnChanging(System.DateTime value);
-    partial void OnStartOnChanged();
-    partial void OnEndOnChanging(System.DateTime value);
-    partial void OnEndOnChanged();
-    partial void OnDescriptionChanging(string value);
-    partial void OnDescriptionChanged();
-    partial void OnIsActiveChanging(bool value);
-    partial void OnIsActiveChanged();
-    partial void OnCreatedOnChanging(System.DateTime value);
-    partial void OnCreatedOnChanged();
-    partial void OnCreatedByChanging(string value);
-    partial void OnCreatedByChanged();
-    partial void OnModifiedOnChanging(System.DateTime value);
-    partial void OnModifiedOnChanged();
-    partial void OnModifiedByChanging(string value);
-    partial void OnModifiedByChanged();
-    partial void OnIsDeletedChanging(bool value);
-    partial void OnIsDeletedChanged();
-    #endregion
-	
-	public Event()
-	{
-		OnCreated();
-	}
-	
-	[Column(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-	public int ID
+	public System.Data.Linq.Table<Event> Events
 	{
 		get
 		{
-			return this._ID;
-		}
-		set
-		{
-			if ((this._ID != value))
-			{
-				this.OnIDChanging(value);
-				this.SendPropertyChanging();
-				this._ID = value;
-				this.SendPropertyChanged("ID");
-				this.OnIDChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_EventName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-	public string EventName
-	{
-		get
-		{
-			return this._EventName;
-		}
-		set
-		{
-			if ((this._EventName != value))
-			{
-				this.OnEventNameChanging(value);
-				this.SendPropertyChanging();
-				this._EventName = value;
-				this.SendPropertyChanged("EventName");
-				this.OnEventNameChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_StartOn", DbType="DateTime NOT NULL")]
-	public System.DateTime StartOn
-	{
-		get
-		{
-			return this._StartOn;
-		}
-		set
-		{
-			if ((this._StartOn != value))
-			{
-				this.OnStartOnChanging(value);
-				this.SendPropertyChanging();
-				this._StartOn = value;
-				this.SendPropertyChanged("StartOn");
-				this.OnStartOnChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_EndOn", DbType="DateTime NOT NULL")]
-	public System.DateTime EndOn
-	{
-		get
-		{
-			return this._EndOn;
-		}
-		set
-		{
-			if ((this._EndOn != value))
-			{
-				this.OnEndOnChanging(value);
-				this.SendPropertyChanging();
-				this._EndOn = value;
-				this.SendPropertyChanged("EndOn");
-				this.OnEndOnChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_Description", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
-	public string Description
-	{
-		get
-		{
-			return this._Description;
-		}
-		set
-		{
-			if ((this._Description != value))
-			{
-				this.OnDescriptionChanging(value);
-				this.SendPropertyChanging();
-				this._Description = value;
-				this.SendPropertyChanged("Description");
-				this.OnDescriptionChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_IsActive", DbType="Bit NOT NULL")]
-	public bool IsActive
-	{
-		get
-		{
-			return this._IsActive;
-		}
-		set
-		{
-			if ((this._IsActive != value))
-			{
-				this.OnIsActiveChanging(value);
-				this.SendPropertyChanging();
-				this._IsActive = value;
-				this.SendPropertyChanged("IsActive");
-				this.OnIsActiveChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
-	public System.DateTime CreatedOn
-	{
-		get
-		{
-			return this._CreatedOn;
-		}
-		set
-		{
-			if ((this._CreatedOn != value))
-			{
-				this.OnCreatedOnChanging(value);
-				this.SendPropertyChanging();
-				this._CreatedOn = value;
-				this.SendPropertyChanged("CreatedOn");
-				this.OnCreatedOnChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-	public string CreatedBy
-	{
-		get
-		{
-			return this._CreatedBy;
-		}
-		set
-		{
-			if ((this._CreatedBy != value))
-			{
-				this.OnCreatedByChanging(value);
-				this.SendPropertyChanging();
-				this._CreatedBy = value;
-				this.SendPropertyChanged("CreatedBy");
-				this.OnCreatedByChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
-	public System.DateTime ModifiedOn
-	{
-		get
-		{
-			return this._ModifiedOn;
-		}
-		set
-		{
-			if ((this._ModifiedOn != value))
-			{
-				this.OnModifiedOnChanging(value);
-				this.SendPropertyChanging();
-				this._ModifiedOn = value;
-				this.SendPropertyChanged("ModifiedOn");
-				this.OnModifiedOnChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-	public string ModifiedBy
-	{
-		get
-		{
-			return this._ModifiedBy;
-		}
-		set
-		{
-			if ((this._ModifiedBy != value))
-			{
-				this.OnModifiedByChanging(value);
-				this.SendPropertyChanging();
-				this._ModifiedBy = value;
-				this.SendPropertyChanged("ModifiedBy");
-				this.OnModifiedByChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-	public bool IsDeleted
-	{
-		get
-		{
-			return this._IsDeleted;
-		}
-		set
-		{
-			if ((this._IsDeleted != value))
-			{
-				this.OnIsDeletedChanging(value);
-				this.SendPropertyChanging();
-				this._IsDeleted = value;
-				this.SendPropertyChanged("IsDeleted");
-				this.OnIsDeletedChanged();
-			}
-		}
-	}
-	
-	public event PropertyChangingEventHandler PropertyChanging;
-	
-	public event PropertyChangedEventHandler PropertyChanged;
-	
-	protected virtual void SendPropertyChanging()
-	{
-		if ((this.PropertyChanging != null))
-		{
-			this.PropertyChanging(this, emptyChangingEventArgs);
-		}
-	}
-	
-	protected virtual void SendPropertyChanged(String propertyName)
-	{
-		if ((this.PropertyChanged != null))
-		{
-			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			return this.GetTable<Event>();
 		}
 	}
 }
@@ -1663,6 +1361,380 @@ public partial class Role : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		this.SendPropertyChanging();
 		entity.Role = null;
+	}
+}
+
+[Table(Name="dbo.Events")]
+public partial class Event : INotifyPropertyChanging, INotifyPropertyChanged
+{
+	
+	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+	
+	private int _ID;
+	
+	private string _EventKey;
+	
+	private string _EventName;
+	
+	private System.DateTime _StartOn;
+	
+	private System.DateTime _EndOn;
+	
+	private string _Description;
+	
+	private int _MaxAttendees;
+	
+	private string _LocationName;
+	
+	private bool _IsActive;
+	
+	private System.DateTime _CreatedOn;
+	
+	private string _CreatedBy;
+	
+	private System.DateTime _ModifiedOn;
+	
+	private string _ModifiedBy;
+	
+	private bool _IsDeleted;
+	
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnEventKeyChanging(string value);
+    partial void OnEventKeyChanged();
+    partial void OnEventNameChanging(string value);
+    partial void OnEventNameChanged();
+    partial void OnStartOnChanging(System.DateTime value);
+    partial void OnStartOnChanged();
+    partial void OnEndOnChanging(System.DateTime value);
+    partial void OnEndOnChanged();
+    partial void OnDescriptionChanging(string value);
+    partial void OnDescriptionChanged();
+    partial void OnMaxAttendeesChanging(int value);
+    partial void OnMaxAttendeesChanged();
+    partial void OnLocationNameChanging(string value);
+    partial void OnLocationNameChanged();
+    partial void OnIsActiveChanging(bool value);
+    partial void OnIsActiveChanged();
+    partial void OnCreatedOnChanging(System.DateTime value);
+    partial void OnCreatedOnChanged();
+    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedOnChanging(System.DateTime value);
+    partial void OnModifiedOnChanged();
+    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanged();
+    partial void OnIsDeletedChanging(bool value);
+    partial void OnIsDeletedChanged();
+    #endregion
+	
+	public Event()
+	{
+		OnCreated();
+	}
+	
+	[Column(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public int ID
+	{
+		get
+		{
+			return this._ID;
+		}
+		set
+		{
+			if ((this._ID != value))
+			{
+				this.OnIDChanging(value);
+				this.SendPropertyChanging();
+				this._ID = value;
+				this.SendPropertyChanged("ID");
+				this.OnIDChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_EventKey", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string EventKey
+	{
+		get
+		{
+			return this._EventKey;
+		}
+		set
+		{
+			if ((this._EventKey != value))
+			{
+				this.OnEventKeyChanging(value);
+				this.SendPropertyChanging();
+				this._EventKey = value;
+				this.SendPropertyChanged("EventKey");
+				this.OnEventKeyChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_EventName", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string EventName
+	{
+		get
+		{
+			return this._EventName;
+		}
+		set
+		{
+			if ((this._EventName != value))
+			{
+				this.OnEventNameChanging(value);
+				this.SendPropertyChanging();
+				this._EventName = value;
+				this.SendPropertyChanged("EventName");
+				this.OnEventNameChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_StartOn", DbType="DateTime NOT NULL")]
+	public System.DateTime StartOn
+	{
+		get
+		{
+			return this._StartOn;
+		}
+		set
+		{
+			if ((this._StartOn != value))
+			{
+				this.OnStartOnChanging(value);
+				this.SendPropertyChanging();
+				this._StartOn = value;
+				this.SendPropertyChanged("StartOn");
+				this.OnStartOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_EndOn", DbType="DateTime NOT NULL")]
+	public System.DateTime EndOn
+	{
+		get
+		{
+			return this._EndOn;
+		}
+		set
+		{
+			if ((this._EndOn != value))
+			{
+				this.OnEndOnChanging(value);
+				this.SendPropertyChanging();
+				this._EndOn = value;
+				this.SendPropertyChanged("EndOn");
+				this.OnEndOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Description", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+	public string Description
+	{
+		get
+		{
+			return this._Description;
+		}
+		set
+		{
+			if ((this._Description != value))
+			{
+				this.OnDescriptionChanging(value);
+				this.SendPropertyChanging();
+				this._Description = value;
+				this.SendPropertyChanged("Description");
+				this.OnDescriptionChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_MaxAttendees", DbType="Int NOT NULL")]
+	public int MaxAttendees
+	{
+		get
+		{
+			return this._MaxAttendees;
+		}
+		set
+		{
+			if ((this._MaxAttendees != value))
+			{
+				this.OnMaxAttendeesChanging(value);
+				this.SendPropertyChanging();
+				this._MaxAttendees = value;
+				this.SendPropertyChanged("MaxAttendees");
+				this.OnMaxAttendeesChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_LocationName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string LocationName
+	{
+		get
+		{
+			return this._LocationName;
+		}
+		set
+		{
+			if ((this._LocationName != value))
+			{
+				this.OnLocationNameChanging(value);
+				this.SendPropertyChanging();
+				this._LocationName = value;
+				this.SendPropertyChanged("LocationName");
+				this.OnLocationNameChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_IsActive", DbType="Bit NOT NULL")]
+	public bool IsActive
+	{
+		get
+		{
+			return this._IsActive;
+		}
+		set
+		{
+			if ((this._IsActive != value))
+			{
+				this.OnIsActiveChanging(value);
+				this.SendPropertyChanging();
+				this._IsActive = value;
+				this.SendPropertyChanged("IsActive");
+				this.OnIsActiveChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime CreatedOn
+	{
+		get
+		{
+			return this._CreatedOn;
+		}
+		set
+		{
+			if ((this._CreatedOn != value))
+			{
+				this.OnCreatedOnChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedOn = value;
+				this.SendPropertyChanged("CreatedOn");
+				this.OnCreatedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string CreatedBy
+	{
+		get
+		{
+			return this._CreatedBy;
+		}
+		set
+		{
+			if ((this._CreatedBy != value))
+			{
+				this.OnCreatedByChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedBy = value;
+				this.SendPropertyChanged("CreatedBy");
+				this.OnCreatedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime ModifiedOn
+	{
+		get
+		{
+			return this._ModifiedOn;
+		}
+		set
+		{
+			if ((this._ModifiedOn != value))
+			{
+				this.OnModifiedOnChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedOn = value;
+				this.SendPropertyChanged("ModifiedOn");
+				this.OnModifiedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string ModifiedBy
+	{
+		get
+		{
+			return this._ModifiedBy;
+		}
+		set
+		{
+			if ((this._ModifiedBy != value))
+			{
+				this.OnModifiedByChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedBy = value;
+				this.SendPropertyChanged("ModifiedBy");
+				this.OnModifiedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+	public bool IsDeleted
+	{
+		get
+		{
+			return this._IsDeleted;
+		}
+		set
+		{
+			if ((this._IsDeleted != value))
+			{
+				this.OnIsDeletedChanging(value);
+				this.SendPropertyChanging();
+				this._IsDeleted = value;
+				this.SendPropertyChanged("IsDeleted");
+				this.OnIsDeletedChanged();
+			}
+		}
+	}
+	
+	public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	
+	protected virtual void SendPropertyChanging()
+	{
+		if ((this.PropertyChanging != null))
+		{
+			this.PropertyChanging(this, emptyChangingEventArgs);
+		}
+	}
+	
+	protected virtual void SendPropertyChanged(String propertyName)
+	{
+		if ((this.PropertyChanged != null))
+		{
+			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
 	}
 }
 #pragma warning restore 1591
