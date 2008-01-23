@@ -7,7 +7,7 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<p>Want to speak?  Contact Greg Wilson at greg [at] solidrockstable dot com</p>
+<p>Want to speak?  Contact Greg Wilson at greg [a-t] solidrockstable d0t com</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
