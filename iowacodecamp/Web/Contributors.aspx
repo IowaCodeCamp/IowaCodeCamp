@@ -8,7 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <p>
-    Want your organization on here?  Email Javier Lozano for more information at javier [at] lozanotek dot com
+    Want your organization on here?  Email Javier Lozano for more information at javier [a-t] lozanotek d0t com
 </p>
 
 </asp:Content>
@@ -29,6 +29,7 @@
         <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors</li>
         <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility/Website/Logistics</li>
         <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
+        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Marketing</li>
     </ul>
     <br />
 </asp:Content>

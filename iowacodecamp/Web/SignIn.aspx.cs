@@ -17,4 +17,19 @@ public partial class SignIn : System.Web.UI.Page
     {
         
     }
+    protected void MainSignIn_Load(object sender, EventArgs e)
+    {
+        Button buttonLogon = MainSignIn.FindControl("LoginButton") as Button;
+        if (buttonLogon != null) Form.DefaultButton = buttonLogon.UniqueID;
+
+        TextBox txtUserName = MainSignIn.FindControl("UserName") as TextBox;
+        TextBox txtPassword = MainSignIn.FindControl("Password") as TextBox;
+        if (txtUserName != null && txtPassword != null)
+        {
+            if (string.IsNullOrEmpty(txtUserName.Text))
+                txtUserName.Focus();
+            else
+                txtPassword.Focus();
+        }
+    }
 }
