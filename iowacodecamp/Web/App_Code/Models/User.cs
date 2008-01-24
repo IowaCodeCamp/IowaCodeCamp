@@ -16,14 +16,14 @@ using System.Security;
 /// </summary>
 public partial class User
 {
-    public static bool Validate(string username, string password)
+    public static bool Validate(string email, string password)
     {
-        username = username ?? "";
+        email = email ?? "";
         password = password ?? "";
 
         ICCData ctx = new ICCData();
         var matches = from u in ctx.Users
-                      where u.UserName == username && u.Password == password
+                      where u.Email == email && u.Password == password
                       select u;
         if (matches.Count() == 1)
             return true;
@@ -50,7 +50,7 @@ public partial class User
 
         var u = new User() 
         {
-            FirstName = FirstName, LastName = LastName, UserName = UserName, 
+            FirstName = FirstName, LastName = LastName,
             Password = pass.ToString(), Email = Email, Site = Site,
             CreatedOn = DateTime.Now, 
             CreatedBy = HttpContext.Current.User.Identity.Name,

@@ -41,6 +41,9 @@ public partial class ICCData : System.Data.Linq.DataContext
   partial void InsertEvent(Event instance);
   partial void UpdateEvent(Event instance);
   partial void DeleteEvent(Event instance);
+  partial void InsertAttendance(Attendance instance);
+  partial void UpdateAttendance(Attendance instance);
+  partial void DeleteAttendance(Attendance instance);
   partial void InsertUser(User instance);
   partial void UpdateUser(User instance);
   partial void DeleteUser(User instance);
@@ -105,6 +108,14 @@ public partial class ICCData : System.Data.Linq.DataContext
 		get
 		{
 			return this.GetTable<Event>();
+		}
+	}
+	
+	public System.Data.Linq.Table<Attendance> Attendances
+	{
+		get
+		{
+			return this.GetTable<Attendance>();
 		}
 	}
 	
@@ -988,7 +999,7 @@ public partial class Event : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 	
-	private int _ID;
+	private int _Id;
 	
 	private string _EventKey;
 	
@@ -1016,12 +1027,14 @@ public partial class Event : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	private bool _IsDeleted;
 	
+	private EntitySet<Attendance> _Attendances;
+	
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnIDChanging(int value);
-    partial void OnIDChanged();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
     partial void OnEventKeyChanging(string value);
     partial void OnEventKeyChanged();
     partial void OnEventNameChanging(string value);
@@ -1052,25 +1065,26 @@ public partial class Event : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	public Event()
 	{
+		this._Attendances = new EntitySet<Attendance>(new Action<Attendance>(this.attach_Attendances), new Action<Attendance>(this.detach_Attendances));
 		OnCreated();
 	}
 	
-	[Column(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-	public int ID
+	[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public int Id
 	{
 		get
 		{
-			return this._ID;
+			return this._Id;
 		}
 		set
 		{
-			if ((this._ID != value))
+			if ((this._Id != value))
 			{
-				this.OnIDChanging(value);
+				this.OnIdChanging(value);
 				this.SendPropertyChanging();
-				this._ID = value;
-				this.SendPropertyChanged("ID");
-				this.OnIDChanged();
+				this._Id = value;
+				this.SendPropertyChanged("Id");
+				this.OnIdChanged();
 			}
 		}
 	}
@@ -1335,6 +1349,343 @@ public partial class Event : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
+	[Association(Name="Event_Attendance", Storage="_Attendances", OtherKey="EventId")]
+	public EntitySet<Attendance> Attendances
+	{
+		get
+		{
+			return this._Attendances;
+		}
+		set
+		{
+			this._Attendances.Assign(value);
+		}
+	}
+	
+	public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	
+	protected virtual void SendPropertyChanging()
+	{
+		if ((this.PropertyChanging != null))
+		{
+			this.PropertyChanging(this, emptyChangingEventArgs);
+		}
+	}
+	
+	protected virtual void SendPropertyChanged(String propertyName)
+	{
+		if ((this.PropertyChanged != null))
+		{
+			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+	
+	private void attach_Attendances(Attendance entity)
+	{
+		this.SendPropertyChanging();
+		entity.Event = this;
+	}
+	
+	private void detach_Attendances(Attendance entity)
+	{
+		this.SendPropertyChanging();
+		entity.Event = null;
+	}
+}
+
+[Table(Name="dbo.Attendance")]
+public partial class Attendance : INotifyPropertyChanging, INotifyPropertyChanged
+{
+	
+	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+	
+	private int _Id;
+	
+	private int _EventId;
+	
+	private int _UserId;
+	
+	private System.DateTime _CreatedOn;
+	
+	private string _CreatedBy;
+	
+	private System.DateTime _ModifiedOn;
+	
+	private string _ModifiedBy;
+	
+	private bool _IsDeleted;
+	
+	private EntityRef<Event> _Event;
+	
+	private EntityRef<User> _User;
+	
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnEventIdChanging(int value);
+    partial void OnEventIdChanged();
+    partial void OnUserIdChanging(int value);
+    partial void OnUserIdChanged();
+    partial void OnCreatedOnChanging(System.DateTime value);
+    partial void OnCreatedOnChanged();
+    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedOnChanging(System.DateTime value);
+    partial void OnModifiedOnChanged();
+    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanged();
+    partial void OnIsDeletedChanging(bool value);
+    partial void OnIsDeletedChanged();
+    #endregion
+	
+	public Attendance()
+	{
+		this._Event = default(EntityRef<Event>);
+		this._User = default(EntityRef<User>);
+		OnCreated();
+	}
+	
+	[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public int Id
+	{
+		get
+		{
+			return this._Id;
+		}
+		set
+		{
+			if ((this._Id != value))
+			{
+				this.OnIdChanging(value);
+				this.SendPropertyChanging();
+				this._Id = value;
+				this.SendPropertyChanged("Id");
+				this.OnIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_EventId", DbType="Int NOT NULL")]
+	public int EventId
+	{
+		get
+		{
+			return this._EventId;
+		}
+		set
+		{
+			if ((this._EventId != value))
+			{
+				if (this._Event.HasLoadedOrAssignedValue)
+				{
+					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+				}
+				this.OnEventIdChanging(value);
+				this.SendPropertyChanging();
+				this._EventId = value;
+				this.SendPropertyChanged("EventId");
+				this.OnEventIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_UserId", DbType="Int NOT NULL")]
+	public int UserId
+	{
+		get
+		{
+			return this._UserId;
+		}
+		set
+		{
+			if ((this._UserId != value))
+			{
+				if (this._User.HasLoadedOrAssignedValue)
+				{
+					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+				}
+				this.OnUserIdChanging(value);
+				this.SendPropertyChanging();
+				this._UserId = value;
+				this.SendPropertyChanged("UserId");
+				this.OnUserIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime CreatedOn
+	{
+		get
+		{
+			return this._CreatedOn;
+		}
+		set
+		{
+			if ((this._CreatedOn != value))
+			{
+				this.OnCreatedOnChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedOn = value;
+				this.SendPropertyChanged("CreatedOn");
+				this.OnCreatedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string CreatedBy
+	{
+		get
+		{
+			return this._CreatedBy;
+		}
+		set
+		{
+			if ((this._CreatedBy != value))
+			{
+				this.OnCreatedByChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedBy = value;
+				this.SendPropertyChanged("CreatedBy");
+				this.OnCreatedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime ModifiedOn
+	{
+		get
+		{
+			return this._ModifiedOn;
+		}
+		set
+		{
+			if ((this._ModifiedOn != value))
+			{
+				this.OnModifiedOnChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedOn = value;
+				this.SendPropertyChanged("ModifiedOn");
+				this.OnModifiedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string ModifiedBy
+	{
+		get
+		{
+			return this._ModifiedBy;
+		}
+		set
+		{
+			if ((this._ModifiedBy != value))
+			{
+				this.OnModifiedByChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedBy = value;
+				this.SendPropertyChanged("ModifiedBy");
+				this.OnModifiedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+	public bool IsDeleted
+	{
+		get
+		{
+			return this._IsDeleted;
+		}
+		set
+		{
+			if ((this._IsDeleted != value))
+			{
+				this.OnIsDeletedChanging(value);
+				this.SendPropertyChanging();
+				this._IsDeleted = value;
+				this.SendPropertyChanged("IsDeleted");
+				this.OnIsDeletedChanged();
+			}
+		}
+	}
+	
+	[Association(Name="Event_Attendance", Storage="_Event", ThisKey="EventId", IsForeignKey=true)]
+	public Event Event
+	{
+		get
+		{
+			return this._Event.Entity;
+		}
+		set
+		{
+			Event previousValue = this._Event.Entity;
+			if (((previousValue != value) 
+						|| (this._Event.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._Event.Entity = null;
+					previousValue.Attendances.Remove(this);
+				}
+				this._Event.Entity = value;
+				if ((value != null))
+				{
+					value.Attendances.Add(this);
+					this._EventId = value.Id;
+				}
+				else
+				{
+					this._EventId = default(int);
+				}
+				this.SendPropertyChanged("Event");
+			}
+		}
+	}
+	
+	[Association(Name="User_Attendance", Storage="_User", ThisKey="UserId", IsForeignKey=true)]
+	public User User
+	{
+		get
+		{
+			return this._User.Entity;
+		}
+		set
+		{
+			User previousValue = this._User.Entity;
+			if (((previousValue != value) 
+						|| (this._User.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._User.Entity = null;
+					previousValue.Attendances.Remove(this);
+				}
+				this._User.Entity = value;
+				if ((value != null))
+				{
+					value.Attendances.Add(this);
+					this._UserId = value.Id;
+				}
+				else
+				{
+					this._UserId = default(int);
+				}
+				this.SendPropertyChanged("User");
+			}
+		}
+	}
+	
 	public event PropertyChangingEventHandler PropertyChanging;
 	
 	public event PropertyChangedEventHandler PropertyChanged;
@@ -1368,15 +1719,15 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	private string _LastName;
 	
-	private string _UserName;
-	
 	private string _Password;
+	
+	private string _PasswordSalt;
 	
 	private string _Email;
 	
 	private string _Site;
 	
-	private string _Bio;
+	private string _Comments;
 	
 	private string _City;
 	
@@ -1398,6 +1749,8 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	private EntitySet<UserRole> _UserRoles;
 	
+	private EntitySet<Attendance> _Attendances;
+	
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1408,16 +1761,16 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
     partial void OnFirstNameChanged();
     partial void OnLastNameChanging(string value);
     partial void OnLastNameChanged();
-    partial void OnUserNameChanging(string value);
-    partial void OnUserNameChanged();
     partial void OnPasswordChanging(string value);
     partial void OnPasswordChanged();
+    partial void OnPasswordSaltChanging(string value);
+    partial void OnPasswordSaltChanged();
     partial void OnEmailChanging(string value);
     partial void OnEmailChanged();
     partial void OnSiteChanging(string value);
     partial void OnSiteChanged();
-    partial void OnBioChanging(string value);
-    partial void OnBioChanged();
+    partial void OnCommentsChanging(string value);
+    partial void OnCommentsChanged();
     partial void OnCityChanging(string value);
     partial void OnCityChanged();
     partial void OnRegionChanging(string value);
@@ -1440,6 +1793,7 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		this._NewsItems = new EntitySet<NewsItem>(new Action<NewsItem>(this.attach_NewsItems), new Action<NewsItem>(this.detach_NewsItems));
 		this._UserRoles = new EntitySet<UserRole>(new Action<UserRole>(this.attach_UserRoles), new Action<UserRole>(this.detach_UserRoles));
+		this._Attendances = new EntitySet<Attendance>(new Action<Attendance>(this.attach_Attendances), new Action<Attendance>(this.detach_Attendances));
 		OnCreated();
 	}
 	
@@ -1503,27 +1857,7 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
-	[Column(Storage="_UserName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-	public string UserName
-	{
-		get
-		{
-			return this._UserName;
-		}
-		set
-		{
-			if ((this._UserName != value))
-			{
-				this.OnUserNameChanging(value);
-				this.SendPropertyChanging();
-				this._UserName = value;
-				this.SendPropertyChanged("UserName");
-				this.OnUserNameChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_Password", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	[Column(Storage="_Password", DbType="NVarChar(256) NOT NULL", CanBeNull=false)]
 	public string Password
 	{
 		get
@@ -1539,6 +1873,26 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 				this._Password = value;
 				this.SendPropertyChanged("Password");
 				this.OnPasswordChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_PasswordSalt", DbType="NVarChar(256) NOT NULL", CanBeNull=false)]
+	public string PasswordSalt
+	{
+		get
+		{
+			return this._PasswordSalt;
+		}
+		set
+		{
+			if ((this._PasswordSalt != value))
+			{
+				this.OnPasswordSaltChanging(value);
+				this.SendPropertyChanging();
+				this._PasswordSalt = value;
+				this.SendPropertyChanged("PasswordSalt");
+				this.OnPasswordSaltChanged();
 			}
 		}
 	}
@@ -1583,22 +1937,22 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
-	[Column(Storage="_Bio", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
-	public string Bio
+	[Column(Storage="_Comments", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+	public string Comments
 	{
 		get
 		{
-			return this._Bio;
+			return this._Comments;
 		}
 		set
 		{
-			if ((this._Bio != value))
+			if ((this._Comments != value))
 			{
-				this.OnBioChanging(value);
+				this.OnCommentsChanging(value);
 				this.SendPropertyChanging();
-				this._Bio = value;
-				this.SendPropertyChanged("Bio");
-				this.OnBioChanged();
+				this._Comments = value;
+				this.SendPropertyChanged("Comments");
+				this.OnCommentsChanged();
 			}
 		}
 	}
@@ -1789,6 +2143,19 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
+	[Association(Name="User_Attendance", Storage="_Attendances", OtherKey="UserId")]
+	public EntitySet<Attendance> Attendances
+	{
+		get
+		{
+			return this._Attendances;
+		}
+		set
+		{
+			this._Attendances.Assign(value);
+		}
+	}
+	
 	public event PropertyChangingEventHandler PropertyChanging;
 	
 	public event PropertyChangedEventHandler PropertyChanged;
@@ -1828,6 +2195,18 @@ public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 	}
 	
 	private void detach_UserRoles(UserRole entity)
+	{
+		this.SendPropertyChanging();
+		entity.User = null;
+	}
+	
+	private void attach_Attendances(Attendance entity)
+	{
+		this.SendPropertyChanging();
+		entity.User = this;
+	}
+	
+	private void detach_Attendances(Attendance entity)
 	{
 		this.SendPropertyChanging();
 		entity.User = null;
