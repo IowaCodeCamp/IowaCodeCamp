@@ -33,11 +33,6 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
             </td>
             <td><asp:TextBox ID="Email" runat="server" Width="300px"></asp:TextBox></td>
         </tr>
-        <tr>
-            <td>User Name<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                    ErrorMessage="User Name is required" ControlToValidate="UserName" Display="Dynamic">*</asp:RequiredFieldValidator></td>
-            <td><asp:TextBox ID="UserName" runat="server" Width="300px"></asp:TextBox></td>
-        </tr>
         
         <tr>
             <td>Password<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 

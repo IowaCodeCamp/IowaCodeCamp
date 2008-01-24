@@ -53,12 +53,12 @@ public class ICCRoles : RoleProvider
         throw new NotImplementedException();
     }
 
-    public override string[] GetRolesForUser(string username)
+    public override string[] GetRolesForUser(string email)
     {
-        username = (username ?? "").Trim();
+        email = email ?? "";
         ICCData ctx = new ICCData();
         //get userid
-        int MyUserID = ctx.Users.Where(u => u.UserName == username).First().Id;
+        int MyUserID = ctx.Users.Where(u => u.Email == email).First().Id;
 
         //get user roles
         var UserRoles = ctx.UserRoles.Where(ur => ur.UserId == MyUserID);

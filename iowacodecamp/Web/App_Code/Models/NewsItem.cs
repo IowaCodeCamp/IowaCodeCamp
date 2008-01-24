@@ -27,8 +27,7 @@ public partial class NewsItem
                         orderby n.CreatedOn descending
                         select new 
                         {   
-                            n.Id, n.Title, n.Content, n.CreatedOn, 
-                            n.User.UserName, n.User.Site, Author
+                            n.Id, n.Title, n.Content, n.CreatedOn, n.User.Site, Author
                         };
 
         return newsItems;
@@ -45,7 +44,6 @@ public partial class NewsItem
                              n.Title,
                              n.Content,
                              n.CreatedOn,
-                             n.User.UserName,
                              n.User.Site,
                              Author
                          }).Take(1);
