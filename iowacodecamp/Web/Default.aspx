@@ -3,9 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-    <div class="details" style="width:100%">
-        <b><%=Event.NumberOfDaysLeft%> days left</b>
-    </div>
+
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="primaryPH" Runat="Server">
@@ -31,6 +29,8 @@
     </asp:ListView>
 	
 	Want More <a href='<%=ResolveUrl("~/News.aspx") %>'>News</a>?
+	<br /><br />
+	Help spread the word and <a href='<%=ResolveUrl("~/Files/IowaCodeCampFlyer.pdf") %>' target="_blank">download the flyer</a> 
 	
 </asp:Content>
 
