@@ -17,4 +17,11 @@ public partial class Register : System.Web.UI.Page
     {
 
     }
+    protected void RegisterLink_Click(object sender, EventArgs e)
+    {
+        if (Page.IsValid)
+        {
+
+        }
+    }
 }

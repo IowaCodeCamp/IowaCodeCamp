@@ -32,9 +32,6 @@ public partial class ICCData : System.Data.Linq.DataContext
   partial void InsertNewsItem(NewsItem instance);
   partial void UpdateNewsItem(NewsItem instance);
   partial void DeleteNewsItem(NewsItem instance);
-  partial void InsertUser(User instance);
-  partial void UpdateUser(User instance);
-  partial void DeleteUser(User instance);
   partial void InsertUserRole(UserRole instance);
   partial void UpdateUserRole(UserRole instance);
   partial void DeleteUserRole(UserRole instance);
@@ -44,6 +41,9 @@ public partial class ICCData : System.Data.Linq.DataContext
   partial void InsertEvent(Event instance);
   partial void UpdateEvent(Event instance);
   partial void DeleteEvent(Event instance);
+  partial void InsertUser(User instance);
+  partial void UpdateUser(User instance);
+  partial void DeleteUser(User instance);
   #endregion
 	
 	public ICCData() : 
@@ -84,14 +84,6 @@ public partial class ICCData : System.Data.Linq.DataContext
 		}
 	}
 	
-	public System.Data.Linq.Table<User> Users
-	{
-		get
-		{
-			return this.GetTable<User>();
-		}
-	}
-	
 	public System.Data.Linq.Table<UserRole> UserRoles
 	{
 		get
@@ -113,6 +105,14 @@ public partial class ICCData : System.Data.Linq.DataContext
 		get
 		{
 			return this.GetTable<Event>();
+		}
+	}
+	
+	public System.Data.Linq.Table<User> Users
+	{
+		get
+		{
+			return this.GetTable<User>();
 		}
 	}
 }
@@ -412,388 +412,6 @@ public partial class NewsItem : INotifyPropertyChanging, INotifyPropertyChanged
 	}
 }
 
-[Table(Name="dbo.Users")]
-public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
-{
-	
-	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-	
-	private int _Id;
-	
-	private string _FirstName;
-	
-	private string _LastName;
-	
-	private string _UserName;
-	
-	private string _Password;
-	
-	private string _Email;
-	
-	private string _Site;
-	
-	private System.DateTime _CreatedOn;
-	
-	private string _CreatedBy;
-	
-	private System.DateTime _ModifiedOn;
-	
-	private string _ModifiedBy;
-	
-	private bool _IsDeleted;
-	
-	private EntitySet<NewsItem> _NewsItems;
-	
-	private EntitySet<UserRole> _UserRoles;
-	
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdChanging(int value);
-    partial void OnIdChanged();
-    partial void OnFirstNameChanging(string value);
-    partial void OnFirstNameChanged();
-    partial void OnLastNameChanging(string value);
-    partial void OnLastNameChanged();
-    partial void OnUserNameChanging(string value);
-    partial void OnUserNameChanged();
-    partial void OnPasswordChanging(string value);
-    partial void OnPasswordChanged();
-    partial void OnEmailChanging(string value);
-    partial void OnEmailChanged();
-    partial void OnSiteChanging(string value);
-    partial void OnSiteChanged();
-    partial void OnCreatedOnChanging(System.DateTime value);
-    partial void OnCreatedOnChanged();
-    partial void OnCreatedByChanging(string value);
-    partial void OnCreatedByChanged();
-    partial void OnModifiedOnChanging(System.DateTime value);
-    partial void OnModifiedOnChanged();
-    partial void OnModifiedByChanging(string value);
-    partial void OnModifiedByChanged();
-    partial void OnIsDeletedChanging(bool value);
-    partial void OnIsDeletedChanged();
-    #endregion
-	
-	public User()
-	{
-		this._NewsItems = new EntitySet<NewsItem>(new Action<NewsItem>(this.attach_NewsItems), new Action<NewsItem>(this.detach_NewsItems));
-		this._UserRoles = new EntitySet<UserRole>(new Action<UserRole>(this.attach_UserRoles), new Action<UserRole>(this.detach_UserRoles));
-		OnCreated();
-	}
-	
-	[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-	public int Id
-	{
-		get
-		{
-			return this._Id;
-		}
-		set
-		{
-			if ((this._Id != value))
-			{
-				this.OnIdChanging(value);
-				this.SendPropertyChanging();
-				this._Id = value;
-				this.SendPropertyChanged("Id");
-				this.OnIdChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_FirstName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-	public string FirstName
-	{
-		get
-		{
-			return this._FirstName;
-		}
-		set
-		{
-			if ((this._FirstName != value))
-			{
-				this.OnFirstNameChanging(value);
-				this.SendPropertyChanging();
-				this._FirstName = value;
-				this.SendPropertyChanged("FirstName");
-				this.OnFirstNameChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_LastName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-	public string LastName
-	{
-		get
-		{
-			return this._LastName;
-		}
-		set
-		{
-			if ((this._LastName != value))
-			{
-				this.OnLastNameChanging(value);
-				this.SendPropertyChanging();
-				this._LastName = value;
-				this.SendPropertyChanged("LastName");
-				this.OnLastNameChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_UserName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-	public string UserName
-	{
-		get
-		{
-			return this._UserName;
-		}
-		set
-		{
-			if ((this._UserName != value))
-			{
-				this.OnUserNameChanging(value);
-				this.SendPropertyChanging();
-				this._UserName = value;
-				this.SendPropertyChanged("UserName");
-				this.OnUserNameChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_Password", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-	public string Password
-	{
-		get
-		{
-			return this._Password;
-		}
-		set
-		{
-			if ((this._Password != value))
-			{
-				this.OnPasswordChanging(value);
-				this.SendPropertyChanging();
-				this._Password = value;
-				this.SendPropertyChanged("Password");
-				this.OnPasswordChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_Email", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-	public string Email
-	{
-		get
-		{
-			return this._Email;
-		}
-		set
-		{
-			if ((this._Email != value))
-			{
-				this.OnEmailChanging(value);
-				this.SendPropertyChanging();
-				this._Email = value;
-				this.SendPropertyChanged("Email");
-				this.OnEmailChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_Site", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
-	public string Site
-	{
-		get
-		{
-			return this._Site;
-		}
-		set
-		{
-			if ((this._Site != value))
-			{
-				this.OnSiteChanging(value);
-				this.SendPropertyChanging();
-				this._Site = value;
-				this.SendPropertyChanged("Site");
-				this.OnSiteChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
-	public System.DateTime CreatedOn
-	{
-		get
-		{
-			return this._CreatedOn;
-		}
-		set
-		{
-			if ((this._CreatedOn != value))
-			{
-				this.OnCreatedOnChanging(value);
-				this.SendPropertyChanging();
-				this._CreatedOn = value;
-				this.SendPropertyChanged("CreatedOn");
-				this.OnCreatedOnChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-	public string CreatedBy
-	{
-		get
-		{
-			return this._CreatedBy;
-		}
-		set
-		{
-			if ((this._CreatedBy != value))
-			{
-				this.OnCreatedByChanging(value);
-				this.SendPropertyChanging();
-				this._CreatedBy = value;
-				this.SendPropertyChanged("CreatedBy");
-				this.OnCreatedByChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
-	public System.DateTime ModifiedOn
-	{
-		get
-		{
-			return this._ModifiedOn;
-		}
-		set
-		{
-			if ((this._ModifiedOn != value))
-			{
-				this.OnModifiedOnChanging(value);
-				this.SendPropertyChanging();
-				this._ModifiedOn = value;
-				this.SendPropertyChanged("ModifiedOn");
-				this.OnModifiedOnChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-	public string ModifiedBy
-	{
-		get
-		{
-			return this._ModifiedBy;
-		}
-		set
-		{
-			if ((this._ModifiedBy != value))
-			{
-				this.OnModifiedByChanging(value);
-				this.SendPropertyChanging();
-				this._ModifiedBy = value;
-				this.SendPropertyChanged("ModifiedBy");
-				this.OnModifiedByChanged();
-			}
-		}
-	}
-	
-	[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
-	public bool IsDeleted
-	{
-		get
-		{
-			return this._IsDeleted;
-		}
-		set
-		{
-			if ((this._IsDeleted != value))
-			{
-				this.OnIsDeletedChanging(value);
-				this.SendPropertyChanging();
-				this._IsDeleted = value;
-				this.SendPropertyChanged("IsDeleted");
-				this.OnIsDeletedChanged();
-			}
-		}
-	}
-	
-	[Association(Name="User_NewsItem", Storage="_NewsItems", OtherKey="UserId")]
-	public EntitySet<NewsItem> NewsItems
-	{
-		get
-		{
-			return this._NewsItems;
-		}
-		set
-		{
-			this._NewsItems.Assign(value);
-		}
-	}
-	
-	[Association(Name="User_UserRole", Storage="_UserRoles", OtherKey="UserId")]
-	public EntitySet<UserRole> UserRoles
-	{
-		get
-		{
-			return this._UserRoles;
-		}
-		set
-		{
-			this._UserRoles.Assign(value);
-		}
-	}
-	
-	public event PropertyChangingEventHandler PropertyChanging;
-	
-	public event PropertyChangedEventHandler PropertyChanged;
-	
-	protected virtual void SendPropertyChanging()
-	{
-		if ((this.PropertyChanging != null))
-		{
-			this.PropertyChanging(this, emptyChangingEventArgs);
-		}
-	}
-	
-	protected virtual void SendPropertyChanged(String propertyName)
-	{
-		if ((this.PropertyChanged != null))
-		{
-			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-		}
-	}
-	
-	private void attach_NewsItems(NewsItem entity)
-	{
-		this.SendPropertyChanging();
-		entity.User = this;
-	}
-	
-	private void detach_NewsItems(NewsItem entity)
-	{
-		this.SendPropertyChanging();
-		entity.User = null;
-	}
-	
-	private void attach_UserRoles(UserRole entity)
-	{
-		this.SendPropertyChanging();
-		entity.User = this;
-	}
-	
-	private void detach_UserRoles(UserRole entity)
-	{
-		this.SendPropertyChanging();
-		entity.User = null;
-	}
-}
-
 [Table(Name="dbo.UserRoles")]
 public partial class UserRole : INotifyPropertyChanging, INotifyPropertyChanged
 {
@@ -816,9 +434,9 @@ public partial class UserRole : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	private bool _IsDeleted;
 	
-	private EntityRef<User> _User;
-	
 	private EntityRef<Role> _Role;
+	
+	private EntityRef<User> _User;
 	
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -844,8 +462,8 @@ public partial class UserRole : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	public UserRole()
 	{
-		this._User = default(EntityRef<User>);
 		this._Role = default(EntityRef<Role>);
+		this._User = default(EntityRef<User>);
 		OnCreated();
 	}
 	
@@ -1017,40 +635,6 @@ public partial class UserRole : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
-	[Association(Name="User_UserRole", Storage="_User", ThisKey="UserId", IsForeignKey=true)]
-	public User User
-	{
-		get
-		{
-			return this._User.Entity;
-		}
-		set
-		{
-			User previousValue = this._User.Entity;
-			if (((previousValue != value) 
-						|| (this._User.HasLoadedOrAssignedValue == false)))
-			{
-				this.SendPropertyChanging();
-				if ((previousValue != null))
-				{
-					this._User.Entity = null;
-					previousValue.UserRoles.Remove(this);
-				}
-				this._User.Entity = value;
-				if ((value != null))
-				{
-					value.UserRoles.Add(this);
-					this._UserId = value.Id;
-				}
-				else
-				{
-					this._UserId = default(int);
-				}
-				this.SendPropertyChanged("User");
-			}
-		}
-	}
-	
 	[Association(Name="Role_UserRole", Storage="_Role", ThisKey="RoleId", IsForeignKey=true)]
 	public Role Role
 	{
@@ -1081,6 +665,40 @@ public partial class UserRole : INotifyPropertyChanging, INotifyPropertyChanged
 					this._RoleId = default(int);
 				}
 				this.SendPropertyChanged("Role");
+			}
+		}
+	}
+	
+	[Association(Name="User_UserRole", Storage="_User", ThisKey="UserId", IsForeignKey=true)]
+	public User User
+	{
+		get
+		{
+			return this._User.Entity;
+		}
+		set
+		{
+			User previousValue = this._User.Entity;
+			if (((previousValue != value) 
+						|| (this._User.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._User.Entity = null;
+					previousValue.UserRoles.Remove(this);
+				}
+				this._User.Entity = value;
+				if ((value != null))
+				{
+					value.UserRoles.Add(this);
+					this._UserId = value.Id;
+				}
+				else
+				{
+					this._UserId = default(int);
+				}
+				this.SendPropertyChanged("User");
 			}
 		}
 	}
@@ -1735,6 +1353,484 @@ public partial class Event : INotifyPropertyChanging, INotifyPropertyChanged
 		{
 			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 		}
+	}
+}
+
+[Table(Name="dbo.Users")]
+public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
+{
+	
+	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+	
+	private int _Id;
+	
+	private string _FirstName;
+	
+	private string _LastName;
+	
+	private string _UserName;
+	
+	private string _Password;
+	
+	private string _Email;
+	
+	private string _Site;
+	
+	private string _Bio;
+	
+	private string _City;
+	
+	private string _Region;
+	
+	private string _Country;
+	
+	private System.DateTime _CreatedOn;
+	
+	private string _CreatedBy;
+	
+	private System.DateTime _ModifiedOn;
+	
+	private string _ModifiedBy;
+	
+	private bool _IsDeleted;
+	
+	private EntitySet<NewsItem> _NewsItems;
+	
+	private EntitySet<UserRole> _UserRoles;
+	
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnFirstNameChanging(string value);
+    partial void OnFirstNameChanged();
+    partial void OnLastNameChanging(string value);
+    partial void OnLastNameChanged();
+    partial void OnUserNameChanging(string value);
+    partial void OnUserNameChanged();
+    partial void OnPasswordChanging(string value);
+    partial void OnPasswordChanged();
+    partial void OnEmailChanging(string value);
+    partial void OnEmailChanged();
+    partial void OnSiteChanging(string value);
+    partial void OnSiteChanged();
+    partial void OnBioChanging(string value);
+    partial void OnBioChanged();
+    partial void OnCityChanging(string value);
+    partial void OnCityChanged();
+    partial void OnRegionChanging(string value);
+    partial void OnRegionChanged();
+    partial void OnCountryChanging(string value);
+    partial void OnCountryChanged();
+    partial void OnCreatedOnChanging(System.DateTime value);
+    partial void OnCreatedOnChanged();
+    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedOnChanging(System.DateTime value);
+    partial void OnModifiedOnChanged();
+    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanged();
+    partial void OnIsDeletedChanging(bool value);
+    partial void OnIsDeletedChanged();
+    #endregion
+	
+	public User()
+	{
+		this._NewsItems = new EntitySet<NewsItem>(new Action<NewsItem>(this.attach_NewsItems), new Action<NewsItem>(this.detach_NewsItems));
+		this._UserRoles = new EntitySet<UserRole>(new Action<UserRole>(this.attach_UserRoles), new Action<UserRole>(this.detach_UserRoles));
+		OnCreated();
+	}
+	
+	[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public int Id
+	{
+		get
+		{
+			return this._Id;
+		}
+		set
+		{
+			if ((this._Id != value))
+			{
+				this.OnIdChanging(value);
+				this.SendPropertyChanging();
+				this._Id = value;
+				this.SendPropertyChanged("Id");
+				this.OnIdChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_FirstName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string FirstName
+	{
+		get
+		{
+			return this._FirstName;
+		}
+		set
+		{
+			if ((this._FirstName != value))
+			{
+				this.OnFirstNameChanging(value);
+				this.SendPropertyChanging();
+				this._FirstName = value;
+				this.SendPropertyChanged("FirstName");
+				this.OnFirstNameChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_LastName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string LastName
+	{
+		get
+		{
+			return this._LastName;
+		}
+		set
+		{
+			if ((this._LastName != value))
+			{
+				this.OnLastNameChanging(value);
+				this.SendPropertyChanging();
+				this._LastName = value;
+				this.SendPropertyChanged("LastName");
+				this.OnLastNameChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_UserName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string UserName
+	{
+		get
+		{
+			return this._UserName;
+		}
+		set
+		{
+			if ((this._UserName != value))
+			{
+				this.OnUserNameChanging(value);
+				this.SendPropertyChanging();
+				this._UserName = value;
+				this.SendPropertyChanged("UserName");
+				this.OnUserNameChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Password", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string Password
+	{
+		get
+		{
+			return this._Password;
+		}
+		set
+		{
+			if ((this._Password != value))
+			{
+				this.OnPasswordChanging(value);
+				this.SendPropertyChanging();
+				this._Password = value;
+				this.SendPropertyChanged("Password");
+				this.OnPasswordChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Email", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string Email
+	{
+		get
+		{
+			return this._Email;
+		}
+		set
+		{
+			if ((this._Email != value))
+			{
+				this.OnEmailChanging(value);
+				this.SendPropertyChanging();
+				this._Email = value;
+				this.SendPropertyChanged("Email");
+				this.OnEmailChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Site", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+	public string Site
+	{
+		get
+		{
+			return this._Site;
+		}
+		set
+		{
+			if ((this._Site != value))
+			{
+				this.OnSiteChanging(value);
+				this.SendPropertyChanging();
+				this._Site = value;
+				this.SendPropertyChanged("Site");
+				this.OnSiteChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Bio", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+	public string Bio
+	{
+		get
+		{
+			return this._Bio;
+		}
+		set
+		{
+			if ((this._Bio != value))
+			{
+				this.OnBioChanging(value);
+				this.SendPropertyChanging();
+				this._Bio = value;
+				this.SendPropertyChanged("Bio");
+				this.OnBioChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_City", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string City
+	{
+		get
+		{
+			return this._City;
+		}
+		set
+		{
+			if ((this._City != value))
+			{
+				this.OnCityChanging(value);
+				this.SendPropertyChanging();
+				this._City = value;
+				this.SendPropertyChanged("City");
+				this.OnCityChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Region", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string Region
+	{
+		get
+		{
+			return this._Region;
+		}
+		set
+		{
+			if ((this._Region != value))
+			{
+				this.OnRegionChanging(value);
+				this.SendPropertyChanging();
+				this._Region = value;
+				this.SendPropertyChanged("Region");
+				this.OnRegionChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_Country", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+	public string Country
+	{
+		get
+		{
+			return this._Country;
+		}
+		set
+		{
+			if ((this._Country != value))
+			{
+				this.OnCountryChanging(value);
+				this.SendPropertyChanging();
+				this._Country = value;
+				this.SendPropertyChanged("Country");
+				this.OnCountryChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime CreatedOn
+	{
+		get
+		{
+			return this._CreatedOn;
+		}
+		set
+		{
+			if ((this._CreatedOn != value))
+			{
+				this.OnCreatedOnChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedOn = value;
+				this.SendPropertyChanged("CreatedOn");
+				this.OnCreatedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string CreatedBy
+	{
+		get
+		{
+			return this._CreatedBy;
+		}
+		set
+		{
+			if ((this._CreatedBy != value))
+			{
+				this.OnCreatedByChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedBy = value;
+				this.SendPropertyChanged("CreatedBy");
+				this.OnCreatedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
+	public System.DateTime ModifiedOn
+	{
+		get
+		{
+			return this._ModifiedOn;
+		}
+		set
+		{
+			if ((this._ModifiedOn != value))
+			{
+				this.OnModifiedOnChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedOn = value;
+				this.SendPropertyChanged("ModifiedOn");
+				this.OnModifiedOnChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+	public string ModifiedBy
+	{
+		get
+		{
+			return this._ModifiedBy;
+		}
+		set
+		{
+			if ((this._ModifiedBy != value))
+			{
+				this.OnModifiedByChanging(value);
+				this.SendPropertyChanging();
+				this._ModifiedBy = value;
+				this.SendPropertyChanged("ModifiedBy");
+				this.OnModifiedByChanged();
+			}
+		}
+	}
+	
+	[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+	public bool IsDeleted
+	{
+		get
+		{
+			return this._IsDeleted;
+		}
+		set
+		{
+			if ((this._IsDeleted != value))
+			{
+				this.OnIsDeletedChanging(value);
+				this.SendPropertyChanging();
+				this._IsDeleted = value;
+				this.SendPropertyChanged("IsDeleted");
+				this.OnIsDeletedChanged();
+			}
+		}
+	}
+	
+	[Association(Name="User_NewsItem", Storage="_NewsItems", OtherKey="UserId")]
+	public EntitySet<NewsItem> NewsItems
+	{
+		get
+		{
+			return this._NewsItems;
+		}
+		set
+		{
+			this._NewsItems.Assign(value);
+		}
+	}
+	
+	[Association(Name="User_UserRole", Storage="_UserRoles", OtherKey="UserId")]
+	public EntitySet<UserRole> UserRoles
+	{
+		get
+		{
+			return this._UserRoles;
+		}
+		set
+		{
+			this._UserRoles.Assign(value);
+		}
+	}
+	
+	public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	
+	protected virtual void SendPropertyChanging()
+	{
+		if ((this.PropertyChanging != null))
+		{
+			this.PropertyChanging(this, emptyChangingEventArgs);
+		}
+	}
+	
+	protected virtual void SendPropertyChanged(String propertyName)
+	{
+		if ((this.PropertyChanged != null))
+		{
+			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+	
+	private void attach_NewsItems(NewsItem entity)
+	{
+		this.SendPropertyChanging();
+		entity.User = this;
+	}
+	
+	private void detach_NewsItems(NewsItem entity)
+	{
+		this.SendPropertyChanging();
+		entity.User = null;
+	}
+	
+	private void attach_UserRoles(UserRole entity)
+	{
+		this.SendPropertyChanging();
+		entity.User = this;
+	}
+	
+	private void detach_UserRoles(UserRole entity)
+	{
+		this.SendPropertyChanging();
+		entity.User = null;
 	}
 }
 #pragma warning restore 1591

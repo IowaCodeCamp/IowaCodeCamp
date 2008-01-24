@@ -63,6 +63,7 @@
 			    <li><a id="location" href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
 			    <li><a id="about" href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
 		    </ul>
+		    <div style="float:right;"><br /><b><%=Event.NumberOfDaysLeft%></b> days left</div>
 	    </div>
 	    <div id="menubottom"></div>
 
@@ -143,26 +144,17 @@
                     
 			        <asp:ContentPlaceHolder id="secondaryPH" runat="server">
 			        
-
         			
                     <div class="box">
-                        <h4>When</h4>
+                        <h4>Details</h4>
                         <ul style="padding-left:20px;">
-                        <li>Saturday</li>
-                        
-                        <li><b>May 3<sup>rd</sup></b></li>
+                            <li>Saturday, May 3<sup>rd</sup></li>
+                            <li>Free</li>
+                            <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>'>Want to sponsor</a>?</li>
                         </ul>
                     </div>
                     
-                    <div class="box">
-                        <h4>Cost</h4>
-                        <ul style="padding-left:20px;">
-                        <li>Free</li>
-                        
-                        <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>'>Want to sponsor</a>?</li>
-                        </ul>
-                    </div>
-            			
+           			
                     <div class="box">
                     <!--University Capitol Centre, Conference Center, 2nd floor (Old Capitol Mall-downtown Iowa City)-->
 
@@ -185,9 +177,10 @@
 			            <h4>Links</h4>
 			            <div class="contentarea">
 				            <ul class="linklist">
-				                <li><a href="http://www.its.uiowa.edu">University of Iowa:ITS</a></li>
-				                <li><a href="http://www.crineta.org">CRIneta</a></li>
-				                <li><a href="http://www.iadnug.org">Iowa .Net User Group</a></li>					            <li><a href="http://www.twincitiescodecamp.com">Twin Cities Code Camp</a></li>				            </ul>
+				                <li><a href="http://www.its.uiowa.edu" target="_blank">University of Iowa : ITS</a></li>
+				                <li><a href="http://crineta.org" target="_blank">CRIneta</a></li>
+				                <li><a href="http://iadnug.org" target="_blank">Iowa .Net User Group</a></li>				            </ul>
+				            <br />
 			            </div>
 		            </div>        			
     		        
