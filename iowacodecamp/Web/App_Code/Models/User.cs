@@ -10,58 +10,96 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Security;
+using System.Security.Cryptography;
+using System.Text;
 
-/// <summary>
-/// Summary description for Users
-/// </summary>
-public partial class User
+namespace Models
 {
-    public static bool Validate(string email, string password)
+
+    /// <summary>
+    /// Summary description for Users
+    /// </summary>
+    public partial class User
     {
-        email = email ?? "";
-        password = password ?? "";
-
-        ICCData ctx = new ICCData();
-        var matches = from u in ctx.Users
-                      where u.Email == email && u.Password == password
-                      select u;
-        if (matches.Count() == 1)
-            return true;
-        return false;
-
-
-        //look up the user by username
-
-        //hash up the username
-
-        //add in the salt, where?
-
-        //compare the username hash with the hash in the row you found
-
-    }
-
-    public static bool Create(string UserName, string Password, string Email, string Site,
-        string FirstName, string LastName)
-    {
-        //overkill
-        SecureString pass = new SecureString();
-        FormsAuthentication.HashPasswordForStoringInConfigFile(Password, "SHA1")
-            .ToCharArray().ToList().ForEach(c=>pass.AppendChar(c));
-
-        var u = new User() 
+        public static bool Validate(string email, string password)
         {
-            FirstName = FirstName, LastName = LastName,
-            Password = pass.ToString(), Email = Email, Site = Site,
-            CreatedOn = DateTime.Now, 
-            CreatedBy = HttpContext.Current.User.Identity.Name,
-            ModifiedOn = DateTime.Now,
-            ModifiedBy = HttpContext.Current.User.Identity.Name
-        };
+            email = email ?? "";
+            password = password ?? "";
 
-        var ctx = new ICCData();
-        ctx.Users.InsertOnSubmit(u);
-        ctx.SubmitChanges();
+            ICCData ctx = new ICCData();
+            var matches = from u in ctx.Users
+                          where u.Email == email
+                          select u;
+            if (matches.Count() < 1)
+                return false;
 
-        return true;
+            string passwordHash = CreatePasswordHash(password, matches.First().PasswordSalt);
+            return passwordHash == matches.First().Password;
+        }
+
+        public static bool Create(string FirstName, string LastName, string Password, string Email, string Site, 
+            string Comments, string City, string Region, string Country)
+        {
+            string NewSalt = CreateSalt();
+
+            var u = new User()
+            {
+                FirstName = FirstName,
+                LastName = LastName,
+                Password = CreatePasswordHash(Password, NewSalt),
+                PasswordSalt = NewSalt,
+                Email = Email,
+                Site = Site,
+                Comments = Comments,
+                City = City,
+                Region = Region,
+                Country = Country,
+                CreatedOn = DateTime.Now,
+                CreatedBy = HttpContext.Current.User.Identity.Name,
+                ModifiedOn = DateTime.Now,
+                ModifiedBy = HttpContext.Current.User.Identity.Name
+            };
+
+            var ctx = new ICCData();
+            ctx.Users.InsertOnSubmit(u);
+            ctx.SubmitChanges();
+
+            return true;
+        }
+
+
+        /// <summary>
+        /// Create salt for encrypting user passwords.  
+        /// Original Source: http://davidhayden.com/blog/dave/archive/2004/02/16/157.aspx
+        /// used from codecampserver
+        /// </summary>
+        /// <returns></returns>
+        public static string CreateSalt()
+        {
+            int size = 64;
+            //Generate a cryptographic random number.
+            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            byte[] buff = new byte[size];
+            rng.GetBytes(buff);
+
+            // Return a Base64 string representation of the random number.
+            return Convert.ToBase64String(buff);
+        }
+
+        /// <summary>
+        /// Create a password hash based on a password and salt.  
+        /// Adapted from: http://davidhayden.com/blog/dave/archive/2004/02/16/157.aspx
+        /// used from codecampserver
+        /// </summary>
+        /// <returns></returns>
+        public static string CreatePasswordHash(string pwd, string salt)
+        {
+            string saltAndPwd = String.Concat(pwd, salt);
+
+            HashAlgorithm algorithm = SHA1.Create();
+            byte[] hash = algorithm.ComputeHash(Encoding.UTF8.GetBytes(saltAndPwd));
+
+            return Convert.ToBase64String(hash);
+        }
     }
 }

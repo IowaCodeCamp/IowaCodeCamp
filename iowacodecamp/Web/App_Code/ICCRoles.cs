@@ -56,7 +56,7 @@ public class ICCRoles : RoleProvider
     public override string[] GetRolesForUser(string email)
     {
         email = email ?? "";
-        ICCData ctx = new ICCData();
+        Models.ICCData ctx = new Models.ICCData();
         //get userid
         int MyUserID = ctx.Users.Where(u => u.Email == email).First().Id;
 

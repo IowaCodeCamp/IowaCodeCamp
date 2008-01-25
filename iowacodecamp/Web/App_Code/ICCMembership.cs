@@ -39,8 +39,6 @@ public class ICCMembership : MembershipProvider
 
     public override MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, out MembershipCreateStatus status)
     {
-        User.Create(username, password, email, "", "", "");
-
         throw new NotImplementedException();
     }
 
@@ -156,6 +154,6 @@ public class ICCMembership : MembershipProvider
 
     public override bool ValidateUser(string username, string password)
     {
-        return User.Validate(username, password);
+        return Models.User.Validate(username, password);
     }
 }

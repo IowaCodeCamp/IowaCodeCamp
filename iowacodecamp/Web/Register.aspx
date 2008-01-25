@@ -37,17 +37,17 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
         <tr>
             <td>Password<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
                     ErrorMessage="Password is required" ControlToValidate="Password" Display="Dynamic">*</asp:RequiredFieldValidator></td>
-            <td><asp:TextBox ID="Password" runat="server" Width="300px"></asp:TextBox></td>
+            <td><asp:TextBox ID="Password" runat="server" Width="300px" TextMode="Password"></asp:TextBox></td>
         </tr>
         
         <tr>
             <td>Confirm Password
                 <asp:CompareValidator ID="CompareValidator1" runat="server" 
                     ErrorMessage="The passwords need to match :)" Display="Dynamic" 
-                    ControlToCompare="ConfirmPassword" ControlToValidate="Password" k
+                    ControlToCompare="ConfirmPassword" ControlToValidate="Password" 
                     ValidationGroup="reg">*</asp:CompareValidator>
             </td>
-            <td><asp:TextBox ID="ConfirmPassword" runat="server" Width="300px"></asp:TextBox></td>
+            <td><asp:TextBox ID="ConfirmPassword" runat="server" Width="300px" TextMode="Password"></asp:TextBox></td>
         </tr>
         
         <tr>
@@ -55,9 +55,21 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
             <td><asp:TextBox ID="Site" runat="server" Width="300px"></asp:TextBox></td>
         </tr>
         <tr>
-            <td>Bio (or other message) </td>
+            <td>City</td>
+            <td><asp:TextBox ID="City" runat="server" Width="300px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>Region</td>
+            <td><asp:TextBox ID="Region" runat="server" Width="300px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td><asp:TextBox ID="Country" runat="server" Width="300px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>Bio/Comments </td>
             <td>
-                <fck:FCKeditor ID="Bio" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">
+                <fck:FCKeditor ID="Comments" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">
                 </fck:FCKeditor>
             </td>
         </tr>        

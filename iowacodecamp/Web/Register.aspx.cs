@@ -21,7 +21,9 @@ public partial class Register : System.Web.UI.Page
     {
         if (Page.IsValid)
         {
-
+            if (Models.User.Create(FirstName.Text, LastName.Text, Password.Text, Email.Text,
+                Site.Text, Comments.Value, City.Text, Region.Text, Country.Text))
+            { Response.Redirect("~/SignIn.aspx"); }
         }
     }
 }

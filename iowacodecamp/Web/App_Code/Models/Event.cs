@@ -10,19 +10,23 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-/// <summary>
-/// Summary description for Event
-/// </summary>
-public partial class Event
+
+namespace Models
 {
-    public static int? NumberOfDaysLeft
+    /// <summary>
+    /// Summary description for Event
+    /// </summary>
+    public partial class Event
     {
-        get
+        public static int? NumberOfDaysLeft
         {
-            DateTime today = DateTime.Now;
-            int days = (DateTime.Parse("5/3/2008 8:00 AM") - today).Days;
-            if (days < 0) return null;
-            return days;
+            get
+            {
+                DateTime today = DateTime.Now;
+                int days = (DateTime.Parse("5/3/2008 8:00 AM") - today).Days;
+                if (days < 0) return null;
+                return days;
+            }
         }
     }
 }
