@@ -15,9 +15,7 @@
 		<h4>Jason Bock</h4>
 		<div class="contentarea">
 
-			<p>Write better code</p>
-			
-			<p>Reflection</p>
+			<p>Writing better code</p>
 
 		</div>
 	</div>
@@ -29,8 +27,6 @@
 		<div class="contentarea">
 
 			<p>MVC Framework</p>
-			
-			<p>VB 9</p>
 
 		</div>
 	</div>
@@ -41,9 +37,8 @@
 		<h4>Tim Barcz</h4>
 		<div class="contentarea">
 
-			<p>TBD</p>
+			<p>Monorail/ActiveRecord</p>
 			
-
 		</div>
 	</div>
 	
@@ -53,14 +48,83 @@
 		<h4>Ed Hill</h4>
 		<div class="contentarea">
 
-			<p>Project Maui</p>
-			<p>Rails</p>
+			<p>Project Maui/Rails</p>
 			
 		</div>
 	</div>
 
 	<div class="divider2"></div>
 	
+	<div class="post">
+		<h4>Jeff Brand</h4>
+		<div class="contentarea">
+
+			<p>Silverlight 2.0</p>
+			
+		</div>
+	</div>
+
+	<div class="divider2"></div>
+	
+	<div class="post">
+		<h4>Greg Wilson</h4>
+		<div class="contentarea">
+
+			<p>Becoming "The SQL guy" in your organization</p>
+			
+		</div>
+	</div>
+
+	<div class="divider2"></div>
+	
+	<div class="post">
+		<h4>Arian Kulp</h4>
+		<div class="contentarea">
+
+			<p>Linq</p>
+			
+		</div>
+	</div>
+
+	<div class="divider2"></div>
+	
+	<div class="post">
+		<h4>Sam David</h4>
+		<div class="contentarea">
+
+			<p>Java Persistence, particularly JPA</p>
+			
+		</div>
+	</div>
+
+	<div class="divider2"></div>
+	
+	<div class="post">
+		<h4>Joe Hummel</h4>
+		<div class="contentarea">
+
+			<p>Overview of HPC and Windows Computer Cluster Server, 
+			multi-core programming with VC++ and OpenMP, 
+			multi-core programming with C# and PFx (TPL), 
+			cluster-wide programming with unmanaged VC++ and MPI - 
+			will be bringing a small demonstration cluster</p>
+			
+		</div>
+	</div>
+
+	<div class="divider2"></div>
+	
+	<div class="post">
+		<h4>Claudio Lassala</h4>
+		<div class="contentarea">
+
+			<p>TBD</p>
+			
+		</div>
+	</div>
+
+	<div class="divider2"></div>
+
     <div class="post">
 		<h4>Javier Lozano</h4>
 		<div class="contentarea">
