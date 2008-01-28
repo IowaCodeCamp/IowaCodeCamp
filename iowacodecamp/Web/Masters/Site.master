@@ -73,7 +73,7 @@
 
 		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
 		        <div id="normalcontent">
-			        <h3>Iowa's First Code Camp - May 3<sup>rd</sup>, 2008</h3>
+			        <h3>May 3<sup>rd</sup>, 2008 - Iowa's First Code Camp</h3>
 			        <div class="contentarea">
 			        
 				        <!-- Normal content area start -->
@@ -204,7 +204,7 @@
 
         <div id="footer">
             <div class="left">&copy; 2008 Iowa Code Camp. All rights reserved.</div>
-            <div class="right"><!--Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design></a--></div>
+            <div class="right">Design by <a href="http://www.nodethirtythree.com/" target="_blank">NodeThirtyThree Design</a></div>
         </div>
     	
     </div> <!--end outer-->   

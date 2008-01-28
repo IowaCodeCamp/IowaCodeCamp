@@ -1736,6 +1736,8 @@ namespace Models
 		
 		private string _Country;
 		
+		private bool _IsValidated;
+		
 		private System.DateTime _CreatedOn;
 		
 		private string _CreatedBy;
@@ -1778,6 +1780,8 @@ namespace Models
     partial void OnRegionChanged();
     partial void OnCountryChanging(string value);
     partial void OnCountryChanged();
+    partial void OnIsValidatedChanging(bool value);
+    partial void OnIsValidatedChanged();
     partial void OnCreatedOnChanging(System.DateTime value);
     partial void OnCreatedOnChanged();
     partial void OnCreatedByChanging(string value);
@@ -2014,6 +2018,26 @@ namespace Models
 					this._Country = value;
 					this.SendPropertyChanged("Country");
 					this.OnCountryChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_IsValidated", DbType="Bit NOT NULL")]
+		public bool IsValidated
+		{
+			get
+			{
+				return this._IsValidated;
+			}
+			set
+			{
+				if ((this._IsValidated != value))
+				{
+					this.OnIsValidatedChanging(value);
+					this.SendPropertyChanging();
+					this._IsValidated = value;
+					this.SendPropertyChanged("IsValidated");
+					this.OnIsValidatedChanged();
 				}
 			}
 		}
