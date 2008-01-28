@@ -9,6 +9,12 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
     <div class="box" style="margin-left:40px;">
     
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="reg" />
+    <p style="text-align:center;">
+    
+    Passwords are <b>salted</b> and <b>hashed</b>.<br />
+    We'll only use your email to let you know about developer events.
+    </p>
+    <br />
     <table cellpadding="1" cellspacing="4">
         <tr>
             <td style="width:140px;"></td>
@@ -33,7 +39,6 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
             </td>
             <td><asp:TextBox ID="Email" runat="server" Width="300px"></asp:TextBox></td>
         </tr>
-        
         <tr>
             <td>Password<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
                     ErrorMessage="Password is required" ControlToValidate="Password" Display="Dynamic">*</asp:RequiredFieldValidator></td>

@@ -54,6 +54,7 @@ namespace Models
                 City = City,
                 Region = Region,
                 Country = Country,
+                IsValidated = false,
                 CreatedOn = DateTime.Now,
                 CreatedBy = HttpContext.Current.User.Identity.Name,
                 ModifiedOn = DateTime.Now,
