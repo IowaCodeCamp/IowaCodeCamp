@@ -27,6 +27,7 @@ public partial class Register : System.Web.UI.Page
                 //Models.Email.SendValidationEmail();
                 Response.Redirect("~/SignIn.aspx");
             }
+            
         }
     }
 }
