@@ -58,21 +58,6 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Event_Attendance" Member="Attendances" OtherKey="EventId" Type="Attendance" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Attendance" Member="Attendances">
-    <Type Name="Attendance">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="EventId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Event_Attendance" Member="Event" ThisKey="EventId" Type="Event" IsForeignKey="true" />
-      <Association Name="User_Attendance" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Users" Member="Users">
@@ -96,7 +81,51 @@
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="User_NewsItem" Member="NewsItems" OtherKey="UserId" Type="NewsItem" />
       <Association Name="User_UserRole" Member="UserRoles" OtherKey="UserId" Type="UserRole" />
-      <Association Name="User_Attendance" Member="Attendances" OtherKey="UserId" Type="Attendance" />
+      <Association Name="User_Speaker" Member="Speakers" OtherKey="UserId" Type="Speaker" />
+      <Association Name="User_Attendee" Member="Attendees" OtherKey="UserId" Type="Attendee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Speakers" Member="Speakers">
+    <Type Name="Speaker">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SessionId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="User_Speaker" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="Session_Speaker" Member="Session" ThisKey="SessionId" Type="Session" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Attendees" Member="Attendees">
+    <Type Name="Attendee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SessionId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="User_Attendee" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="Session_Attendee" Member="Session" ThisKey="SessionId" Type="Session" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sessions" Member="Sessions">
+    <Type Name="Session">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Abstract" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Session_Speaker" Member="Speakers" OtherKey="SessionId" Type="Speaker" />
+      <Association Name="Session_Attendee" Member="Attendees" OtherKey="SessionId" Type="Attendee" />
     </Type>
   </Table>
 </Database>

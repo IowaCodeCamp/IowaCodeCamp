@@ -15,7 +15,6 @@ using System.Text;
 
 namespace Models
 {
-
     /// <summary>
     /// Summary description for Users
     /// </summary>
@@ -43,21 +42,16 @@ namespace Models
             if (!IsEmailUnique(Email))
                 return false;
 
-            string NewSalt = CreateSalt();
-
             var u = new User()
             {
                 FirstName = FirstName, LastName = LastName,
-                Password = CreatePasswordHash(Password, NewSalt), PasswordSalt = NewSalt,
                 Email = Email, Site = Site,
                 City = City, Region = Region, Country = Country,
                 Comments = Comments,
-                IsValidated = false,
-                CreatedOn = DateTime.Now,
-                CreatedBy = HttpContext.Current.User.Identity.Name,
-                ModifiedOn = DateTime.Now,
-                ModifiedBy = HttpContext.Current.User.Identity.Name
+                IsValidated = false
             };
+
+            SetPassword(u, Password);
 
             var ctx = new ICCData();
             ctx.Users.InsertOnSubmit(u);
@@ -66,6 +60,37 @@ namespace Models
             return true;
         }
 
+        # region Extensibility Partials
+
+        partial void OnValidate(System.Data.Linq.ChangeAction action)
+        {
+            //existing
+            if (Id > 1)
+                SetModified();
+            else//new
+                SetCreated(); SetModified();
+        }
+
+        private void SetCreated()
+        {
+            this.CreatedOn = DateTime.Now;
+            this.CreatedBy = HttpContext.Current.User.Identity.Name;
+        }
+
+        private void SetModified()
+        {
+            this.ModifiedOn = DateTime.Now;
+            this.ModifiedBy = HttpContext.Current.User.Identity.Name;
+        }
+
+        #endregion
+
+        private static void SetPassword(User CurrentUser, string Password)
+        {
+            string NewSalt = CreateSalt();
+            CurrentUser.Password = CreatePasswordHash(Password, NewSalt);
+            CurrentUser.PasswordSalt = NewSalt;
+        }
 
         /// <summary>
         /// Create salt for encrypting user passwords.  
@@ -73,7 +98,7 @@ namespace Models
         /// used from codecampserver
         /// </summary>
         /// <returns></returns>
-        public static string CreateSalt()
+        private static string CreateSalt()
         {
             int size = 64;
             //Generate a cryptographic random number.
@@ -91,7 +116,7 @@ namespace Models
         /// used from codecampserver
         /// </summary>
         /// <returns></returns>
-        public static string CreatePasswordHash(string pwd, string salt)
+        private static string CreatePasswordHash(string pwd, string salt)
         {
             string saltAndPassword = String.Concat(pwd, salt);
 
