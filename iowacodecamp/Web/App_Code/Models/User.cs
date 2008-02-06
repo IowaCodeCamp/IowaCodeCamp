@@ -40,20 +40,18 @@ namespace Models
         public static bool Create(string FirstName, string LastName, string Password, string Email, string Site, 
             string Comments, string City, string Region, string Country)
         {
+            if (!IsEmailUnique(Email))
+                return false;
+
             string NewSalt = CreateSalt();
 
             var u = new User()
             {
-                FirstName = FirstName,
-                LastName = LastName,
-                Password = CreatePasswordHash(Password, NewSalt),
-                PasswordSalt = NewSalt,
-                Email = Email,
-                Site = Site,
+                FirstName = FirstName, LastName = LastName,
+                Password = CreatePasswordHash(Password, NewSalt), PasswordSalt = NewSalt,
+                Email = Email, Site = Site,
+                City = City, Region = Region, Country = Country,
                 Comments = Comments,
-                City = City,
-                Region = Region,
-                Country = Country,
                 IsValidated = false,
                 CreatedOn = DateTime.Now,
                 CreatedBy = HttpContext.Current.User.Identity.Name,
@@ -95,12 +93,21 @@ namespace Models
         /// <returns></returns>
         public static string CreatePasswordHash(string pwd, string salt)
         {
-            string saltAndPwd = String.Concat(pwd, salt);
+            string saltAndPassword = String.Concat(pwd, salt);
 
             HashAlgorithm algorithm = SHA1.Create();
-            byte[] hash = algorithm.ComputeHash(Encoding.UTF8.GetBytes(saltAndPwd));
+            byte[] hash = algorithm.ComputeHash(Encoding.UTF8.GetBytes(saltAndPassword));
 
             return Convert.ToBase64String(hash);
+        }
+
+
+        public static bool IsEmailUnique(string Email)
+        {
+            if (new ICCData().Users.Where(u => string.Compare(u.Email, Email, true) == 0).Count() > 0)
+                return false;
+
+            return true;
         }
     }
 }

@@ -50,6 +50,11 @@ If you are interested in the philosopy behind Code Camps read
     The hosting is at <a href="http://discountasp.net">DiscountASP.net</a> and the domain names are 
     through <a href="http://godaddy.com">Go Daddy</a>.
 </div>
+<br />
+<div>
+    This is just for fun, but if you are into Facebook 
+    you can <a href="http://www.facebook.com/event.php?eid=6513503655">join the group</a>.
+</div>
 
 </asp:Content>
 

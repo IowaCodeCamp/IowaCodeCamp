@@ -19,7 +19,7 @@
         <li><a href="http://www.its.uiowa.edu" target="_blank">University of Iowa: ITS</a></li>
         <li><a href="http://www.microsoft.com" target="_blank">Microsoft</a></li>
         <li><a href="http://www.qci.com/" target="_blank">QCI</a></li>
-        <li>Tek Systems - Pending</li>
+        <li>Tek Systems</li>
     </ul>
     <br />
 
