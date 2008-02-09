@@ -42,15 +42,24 @@ namespace Models
     partial void InsertEvent(Event instance);
     partial void UpdateEvent(Event instance);
     partial void DeleteEvent(Event instance);
+    partial void InsertAttendee(Attendee instance);
+    partial void UpdateAttendee(Attendee instance);
+    partial void DeleteAttendee(Attendee instance);
     partial void InsertUser(User instance);
     partial void UpdateUser(User instance);
     partial void DeleteUser(User instance);
     partial void InsertSpeaker(Speaker instance);
     partial void UpdateSpeaker(Speaker instance);
     partial void DeleteSpeaker(Speaker instance);
-    partial void InsertAttendee(Attendee instance);
-    partial void UpdateAttendee(Attendee instance);
-    partial void DeleteAttendee(Attendee instance);
+    partial void InsertTimeslot(Timeslot instance);
+    partial void UpdateTimeslot(Timeslot instance);
+    partial void DeleteTimeslot(Timeslot instance);
+    partial void InsertRoom(Room instance);
+    partial void UpdateRoom(Room instance);
+    partial void DeleteRoom(Room instance);
+    partial void InsertUserEvent(UserEvent instance);
+    partial void UpdateUserEvent(UserEvent instance);
+    partial void DeleteUserEvent(UserEvent instance);
     partial void InsertSession(Session instance);
     partial void UpdateSession(Session instance);
     partial void DeleteSession(Session instance);
@@ -118,6 +127,14 @@ namespace Models
 			}
 		}
 		
+		public System.Data.Linq.Table<Attendee> Attendees
+		{
+			get
+			{
+				return this.GetTable<Attendee>();
+			}
+		}
+		
 		public System.Data.Linq.Table<User> Users
 		{
 			get
@@ -134,11 +151,27 @@ namespace Models
 			}
 		}
 		
-		public System.Data.Linq.Table<Attendee> Attendees
+		public System.Data.Linq.Table<Timeslot> Timeslots
 		{
 			get
 			{
-				return this.GetTable<Attendee>();
+				return this.GetTable<Timeslot>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Room> Rooms
+		{
+			get
+			{
+				return this.GetTable<Room>();
+			}
+		}
+		
+		public System.Data.Linq.Table<UserEvent> UserEvents
+		{
+			get
+			{
+				return this.GetTable<UserEvent>();
 			}
 		}
 		
@@ -1050,6 +1083,12 @@ namespace Models
 		
 		private bool _IsDeleted;
 		
+		private EntitySet<Timeslot> _Timeslots;
+		
+		private EntitySet<Room> _Rooms;
+		
+		private EntitySet<UserEvent> _UserEvents;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1086,6 +1125,9 @@ namespace Models
 		
 		public Event()
 		{
+			this._Timeslots = new EntitySet<Timeslot>(new Action<Timeslot>(this.attach_Timeslots), new Action<Timeslot>(this.detach_Timeslots));
+			this._Rooms = new EntitySet<Room>(new Action<Room>(this.attach_Rooms), new Action<Room>(this.detach_Rooms));
+			this._UserEvents = new EntitySet<UserEvent>(new Action<UserEvent>(this.attach_UserEvents), new Action<UserEvent>(this.detach_UserEvents));
 			OnCreated();
 		}
 		
@@ -1369,6 +1411,393 @@ namespace Models
 			}
 		}
 		
+		[Association(Name="Event_Timeslot", Storage="_Timeslots", OtherKey="EventId")]
+		public EntitySet<Timeslot> Timeslots
+		{
+			get
+			{
+				return this._Timeslots;
+			}
+			set
+			{
+				this._Timeslots.Assign(value);
+			}
+		}
+		
+		[Association(Name="Event_Room", Storage="_Rooms", OtherKey="EventId")]
+		public EntitySet<Room> Rooms
+		{
+			get
+			{
+				return this._Rooms;
+			}
+			set
+			{
+				this._Rooms.Assign(value);
+			}
+		}
+		
+		[Association(Name="Event_UserEvent", Storage="_UserEvents", OtherKey="EventId")]
+		public EntitySet<UserEvent> UserEvents
+		{
+			get
+			{
+				return this._UserEvents;
+			}
+			set
+			{
+				this._UserEvents.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Timeslots(Timeslot entity)
+		{
+			this.SendPropertyChanging();
+			entity.Event = this;
+		}
+		
+		private void detach_Timeslots(Timeslot entity)
+		{
+			this.SendPropertyChanging();
+			entity.Event = null;
+		}
+		
+		private void attach_Rooms(Room entity)
+		{
+			this.SendPropertyChanging();
+			entity.Event = this;
+		}
+		
+		private void detach_Rooms(Room entity)
+		{
+			this.SendPropertyChanging();
+			entity.Event = null;
+		}
+		
+		private void attach_UserEvents(UserEvent entity)
+		{
+			this.SendPropertyChanging();
+			entity.Event = this;
+		}
+		
+		private void detach_UserEvents(UserEvent entity)
+		{
+			this.SendPropertyChanging();
+			entity.Event = null;
+		}
+	}
+	
+	[Table(Name="dbo.Attendees")]
+	public partial class Attendee : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private int _UserId;
+		
+		private int _SessionId;
+		
+		private System.DateTime _CreatedOn;
+		
+		private string _CreatedBy;
+		
+		private System.DateTime _ModifiedOn;
+		
+		private string _ModifiedBy;
+		
+		private bool _IsDeleted;
+		
+		private EntityRef<User> _User;
+		
+		private EntityRef<Session> _Session;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnUserIdChanging(int value);
+    partial void OnUserIdChanged();
+    partial void OnSessionIdChanging(int value);
+    partial void OnSessionIdChanged();
+    partial void OnCreatedOnChanging(System.DateTime value);
+    partial void OnCreatedOnChanged();
+    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedOnChanging(System.DateTime value);
+    partial void OnModifiedOnChanged();
+    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanged();
+    partial void OnIsDeletedChanging(bool value);
+    partial void OnIsDeletedChanged();
+    #endregion
+		
+		public Attendee()
+		{
+			this._User = default(EntityRef<User>);
+			this._Session = default(EntityRef<Session>);
+			OnCreated();
+		}
+		
+		[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_UserId", DbType="Int NOT NULL")]
+		public int UserId
+		{
+			get
+			{
+				return this._UserId;
+			}
+			set
+			{
+				if ((this._UserId != value))
+				{
+					if (this._User.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnUserIdChanging(value);
+					this.SendPropertyChanging();
+					this._UserId = value;
+					this.SendPropertyChanged("UserId");
+					this.OnUserIdChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_SessionId", DbType="Int NOT NULL")]
+		public int SessionId
+		{
+			get
+			{
+				return this._SessionId;
+			}
+			set
+			{
+				if ((this._SessionId != value))
+				{
+					if (this._Session.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnSessionIdChanging(value);
+					this.SendPropertyChanging();
+					this._SessionId = value;
+					this.SendPropertyChanged("SessionId");
+					this.OnSessionIdChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
+		public System.DateTime CreatedOn
+		{
+			get
+			{
+				return this._CreatedOn;
+			}
+			set
+			{
+				if ((this._CreatedOn != value))
+				{
+					this.OnCreatedOnChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedOn = value;
+					this.SendPropertyChanged("CreatedOn");
+					this.OnCreatedOnChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
+		public System.DateTime ModifiedOn
+		{
+			get
+			{
+				return this._ModifiedOn;
+			}
+			set
+			{
+				if ((this._ModifiedOn != value))
+				{
+					this.OnModifiedOnChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedOn = value;
+					this.SendPropertyChanged("ModifiedOn");
+					this.OnModifiedOnChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+		public bool IsDeleted
+		{
+			get
+			{
+				return this._IsDeleted;
+			}
+			set
+			{
+				if ((this._IsDeleted != value))
+				{
+					this.OnIsDeletedChanging(value);
+					this.SendPropertyChanging();
+					this._IsDeleted = value;
+					this.SendPropertyChanged("IsDeleted");
+					this.OnIsDeletedChanged();
+				}
+			}
+		}
+		
+		[Association(Name="User_Attendee", Storage="_User", ThisKey="UserId", IsForeignKey=true)]
+		public User User
+		{
+			get
+			{
+				return this._User.Entity;
+			}
+			set
+			{
+				User previousValue = this._User.Entity;
+				if (((previousValue != value) 
+							|| (this._User.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._User.Entity = null;
+						previousValue.Attendees.Remove(this);
+					}
+					this._User.Entity = value;
+					if ((value != null))
+					{
+						value.Attendees.Add(this);
+						this._UserId = value.Id;
+					}
+					else
+					{
+						this._UserId = default(int);
+					}
+					this.SendPropertyChanged("User");
+				}
+			}
+		}
+		
+		[Association(Name="Session_Attendee", Storage="_Session", ThisKey="SessionId", IsForeignKey=true)]
+		public Session Session
+		{
+			get
+			{
+				return this._Session.Entity;
+			}
+			set
+			{
+				Session previousValue = this._Session.Entity;
+				if (((previousValue != value) 
+							|| (this._Session.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Session.Entity = null;
+						previousValue.Attendees.Remove(this);
+					}
+					this._Session.Entity = value;
+					if ((value != null))
+					{
+						value.Attendees.Add(this);
+						this._SessionId = value.Id;
+					}
+					else
+					{
+						this._SessionId = default(int);
+					}
+					this.SendPropertyChanged("Session");
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -1402,6 +1831,8 @@ namespace Models
 		
 		private string _LastName;
 		
+		private string _DisplayName;
+		
 		private string _Password;
 		
 		private string _PasswordSalt;
@@ -1411,6 +1842,8 @@ namespace Models
 		private string _Site;
 		
 		private string _Comments;
+		
+		private string _Organization;
 		
 		private string _City;
 		
@@ -1434,9 +1867,11 @@ namespace Models
 		
 		private EntitySet<UserRole> _UserRoles;
 		
+		private EntitySet<Attendee> _Attendees;
+		
 		private EntitySet<Speaker> _Speakers;
 		
-		private EntitySet<Attendee> _Attendees;
+		private EntitySet<UserEvent> _UserEvents;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1448,6 +1883,8 @@ namespace Models
     partial void OnFirstNameChanged();
     partial void OnLastNameChanging(string value);
     partial void OnLastNameChanged();
+    partial void OnDisplayNameChanging(string value);
+    partial void OnDisplayNameChanged();
     partial void OnPasswordChanging(string value);
     partial void OnPasswordChanged();
     partial void OnPasswordSaltChanging(string value);
@@ -1458,6 +1895,8 @@ namespace Models
     partial void OnSiteChanged();
     partial void OnCommentsChanging(string value);
     partial void OnCommentsChanged();
+    partial void OnOrganizationChanging(string value);
+    partial void OnOrganizationChanged();
     partial void OnCityChanging(string value);
     partial void OnCityChanged();
     partial void OnRegionChanging(string value);
@@ -1482,8 +1921,9 @@ namespace Models
 		{
 			this._NewsItems = new EntitySet<NewsItem>(new Action<NewsItem>(this.attach_NewsItems), new Action<NewsItem>(this.detach_NewsItems));
 			this._UserRoles = new EntitySet<UserRole>(new Action<UserRole>(this.attach_UserRoles), new Action<UserRole>(this.detach_UserRoles));
-			this._Speakers = new EntitySet<Speaker>(new Action<Speaker>(this.attach_Speakers), new Action<Speaker>(this.detach_Speakers));
 			this._Attendees = new EntitySet<Attendee>(new Action<Attendee>(this.attach_Attendees), new Action<Attendee>(this.detach_Attendees));
+			this._Speakers = new EntitySet<Speaker>(new Action<Speaker>(this.attach_Speakers), new Action<Speaker>(this.detach_Speakers));
+			this._UserEvents = new EntitySet<UserEvent>(new Action<UserEvent>(this.attach_UserEvents), new Action<UserEvent>(this.detach_UserEvents));
 			OnCreated();
 		}
 		
@@ -1543,6 +1983,26 @@ namespace Models
 					this._LastName = value;
 					this.SendPropertyChanged("LastName");
 					this.OnLastNameChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_DisplayName", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string DisplayName
+		{
+			get
+			{
+				return this._DisplayName;
+			}
+			set
+			{
+				if ((this._DisplayName != value))
+				{
+					this.OnDisplayNameChanging(value);
+					this.SendPropertyChanging();
+					this._DisplayName = value;
+					this.SendPropertyChanged("DisplayName");
+					this.OnDisplayNameChanged();
 				}
 			}
 		}
@@ -1643,6 +2103,26 @@ namespace Models
 					this._Comments = value;
 					this.SendPropertyChanged("Comments");
 					this.OnCommentsChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_Organization", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string Organization
+		{
+			get
+			{
+				return this._Organization;
+			}
+			set
+			{
+				if ((this._Organization != value))
+				{
+					this.OnOrganizationChanging(value);
+					this.SendPropertyChanging();
+					this._Organization = value;
+					this.SendPropertyChanged("Organization");
+					this.OnOrganizationChanged();
 				}
 			}
 		}
@@ -1853,6 +2333,19 @@ namespace Models
 			}
 		}
 		
+		[Association(Name="User_Attendee", Storage="_Attendees", OtherKey="UserId")]
+		public EntitySet<Attendee> Attendees
+		{
+			get
+			{
+				return this._Attendees;
+			}
+			set
+			{
+				this._Attendees.Assign(value);
+			}
+		}
+		
 		[Association(Name="User_Speaker", Storage="_Speakers", OtherKey="UserId")]
 		public EntitySet<Speaker> Speakers
 		{
@@ -1866,16 +2359,16 @@ namespace Models
 			}
 		}
 		
-		[Association(Name="User_Attendee", Storage="_Attendees", OtherKey="UserId")]
-		public EntitySet<Attendee> Attendees
+		[Association(Name="User_UserEvent", Storage="_UserEvents", OtherKey="UserId")]
+		public EntitySet<UserEvent> UserEvents
 		{
 			get
 			{
-				return this._Attendees;
+				return this._UserEvents;
 			}
 			set
 			{
-				this._Attendees.Assign(value);
+				this._UserEvents.Assign(value);
 			}
 		}
 		
@@ -1923,6 +2416,18 @@ namespace Models
 			entity.User = null;
 		}
 		
+		private void attach_Attendees(Attendee entity)
+		{
+			this.SendPropertyChanging();
+			entity.User = this;
+		}
+		
+		private void detach_Attendees(Attendee entity)
+		{
+			this.SendPropertyChanging();
+			entity.User = null;
+		}
+		
 		private void attach_Speakers(Speaker entity)
 		{
 			this.SendPropertyChanging();
@@ -1935,13 +2440,13 @@ namespace Models
 			entity.User = null;
 		}
 		
-		private void attach_Attendees(Attendee entity)
+		private void attach_UserEvents(UserEvent entity)
 		{
 			this.SendPropertyChanging();
 			entity.User = this;
 		}
 		
-		private void detach_Attendees(Attendee entity)
+		private void detach_UserEvents(UserEvent entity)
 		{
 			this.SendPropertyChanging();
 			entity.User = null;
@@ -2260,17 +2765,21 @@ namespace Models
 		}
 	}
 	
-	[Table(Name="dbo.Attendees")]
-	public partial class Attendee : INotifyPropertyChanging, INotifyPropertyChanged
+	[Table(Name="dbo.Timeslots")]
+	public partial class Timeslot : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _Id;
 		
-		private int _UserId;
+		private string _FriendlyName;
 		
-		private int _SessionId;
+		private System.DateTime _StartAt;
+		
+		private System.DateTime _EndAt;
+		
+		private int _EventId;
 		
 		private System.DateTime _CreatedOn;
 		
@@ -2282,9 +2791,7 @@ namespace Models
 		
 		private bool _IsDeleted;
 		
-		private EntityRef<User> _User;
-		
-		private EntityRef<Session> _Session;
+		private EntityRef<Event> _Event;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -2292,10 +2799,14 @@ namespace Models
     partial void OnCreated();
     partial void OnIdChanging(int value);
     partial void OnIdChanged();
-    partial void OnUserIdChanging(int value);
-    partial void OnUserIdChanged();
-    partial void OnSessionIdChanging(int value);
-    partial void OnSessionIdChanged();
+    partial void OnFriendlyNameChanging(string value);
+    partial void OnFriendlyNameChanged();
+    partial void OnStartAtChanging(System.DateTime value);
+    partial void OnStartAtChanged();
+    partial void OnEndAtChanging(System.DateTime value);
+    partial void OnEndAtChanged();
+    partial void OnEventIdChanging(int value);
+    partial void OnEventIdChanged();
     partial void OnCreatedOnChanging(System.DateTime value);
     partial void OnCreatedOnChanged();
     partial void OnCreatedByChanging(string value);
@@ -2308,10 +2819,9 @@ namespace Models
     partial void OnIsDeletedChanged();
     #endregion
 		
-		public Attendee()
+		public Timeslot()
 		{
-			this._User = default(EntityRef<User>);
-			this._Session = default(EntityRef<Session>);
+			this._Event = default(EntityRef<Event>);
 			OnCreated();
 		}
 		
@@ -2335,50 +2845,86 @@ namespace Models
 			}
 		}
 		
-		[Column(Storage="_UserId", DbType="Int NOT NULL")]
-		public int UserId
+		[Column(Storage="_FriendlyName", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string FriendlyName
 		{
 			get
 			{
-				return this._UserId;
+				return this._FriendlyName;
 			}
 			set
 			{
-				if ((this._UserId != value))
+				if ((this._FriendlyName != value))
 				{
-					if (this._User.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnUserIdChanging(value);
+					this.OnFriendlyNameChanging(value);
 					this.SendPropertyChanging();
-					this._UserId = value;
-					this.SendPropertyChanged("UserId");
-					this.OnUserIdChanged();
+					this._FriendlyName = value;
+					this.SendPropertyChanged("FriendlyName");
+					this.OnFriendlyNameChanged();
 				}
 			}
 		}
 		
-		[Column(Storage="_SessionId", DbType="Int NOT NULL")]
-		public int SessionId
+		[Column(Storage="_StartAt", DbType="DateTime NOT NULL")]
+		public System.DateTime StartAt
 		{
 			get
 			{
-				return this._SessionId;
+				return this._StartAt;
 			}
 			set
 			{
-				if ((this._SessionId != value))
+				if ((this._StartAt != value))
 				{
-					if (this._Session.HasLoadedOrAssignedValue)
+					this.OnStartAtChanging(value);
+					this.SendPropertyChanging();
+					this._StartAt = value;
+					this.SendPropertyChanged("StartAt");
+					this.OnStartAtChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_EndAt", DbType="DateTime NOT NULL")]
+		public System.DateTime EndAt
+		{
+			get
+			{
+				return this._EndAt;
+			}
+			set
+			{
+				if ((this._EndAt != value))
+				{
+					this.OnEndAtChanging(value);
+					this.SendPropertyChanging();
+					this._EndAt = value;
+					this.SendPropertyChanged("EndAt");
+					this.OnEndAtChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_EventId", DbType="Int NOT NULL")]
+		public int EventId
+		{
+			get
+			{
+				return this._EventId;
+			}
+			set
+			{
+				if ((this._EventId != value))
+				{
+					if (this._Event.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.OnSessionIdChanging(value);
+					this.OnEventIdChanging(value);
 					this.SendPropertyChanging();
-					this._SessionId = value;
-					this.SendPropertyChanged("SessionId");
-					this.OnSessionIdChanged();
+					this._EventId = value;
+					this.SendPropertyChanged("EventId");
+					this.OnEventIdChanged();
 				}
 			}
 		}
@@ -2483,7 +3029,590 @@ namespace Models
 			}
 		}
 		
-		[Association(Name="User_Attendee", Storage="_User", ThisKey="UserId", IsForeignKey=true)]
+		[Association(Name="Event_Timeslot", Storage="_Event", ThisKey="EventId", IsForeignKey=true)]
+		public Event Event
+		{
+			get
+			{
+				return this._Event.Entity;
+			}
+			set
+			{
+				Event previousValue = this._Event.Entity;
+				if (((previousValue != value) 
+							|| (this._Event.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Event.Entity = null;
+						previousValue.Timeslots.Remove(this);
+					}
+					this._Event.Entity = value;
+					if ((value != null))
+					{
+						value.Timeslots.Add(this);
+						this._EventId = value.Id;
+					}
+					else
+					{
+						this._EventId = default(int);
+					}
+					this.SendPropertyChanged("Event");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[Table(Name="dbo.Rooms")]
+	public partial class Room : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _RoomName;
+		
+		private int _EventId;
+		
+		private System.DateTime _CreatedOn;
+		
+		private string _CreatedBy;
+		
+		private System.DateTime _ModifiedOn;
+		
+		private string _ModifiedBy;
+		
+		private bool _IsDeleted;
+		
+		private EntityRef<Event> _Event;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnRoomNameChanging(string value);
+    partial void OnRoomNameChanged();
+    partial void OnEventIdChanging(int value);
+    partial void OnEventIdChanged();
+    partial void OnCreatedOnChanging(System.DateTime value);
+    partial void OnCreatedOnChanged();
+    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedOnChanging(System.DateTime value);
+    partial void OnModifiedOnChanged();
+    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanged();
+    partial void OnIsDeletedChanging(bool value);
+    partial void OnIsDeletedChanged();
+    #endregion
+		
+		public Room()
+		{
+			this._Event = default(EntityRef<Event>);
+			OnCreated();
+		}
+		
+		[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_RoomName", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string RoomName
+		{
+			get
+			{
+				return this._RoomName;
+			}
+			set
+			{
+				if ((this._RoomName != value))
+				{
+					this.OnRoomNameChanging(value);
+					this.SendPropertyChanging();
+					this._RoomName = value;
+					this.SendPropertyChanged("RoomName");
+					this.OnRoomNameChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_EventId", DbType="Int NOT NULL")]
+		public int EventId
+		{
+			get
+			{
+				return this._EventId;
+			}
+			set
+			{
+				if ((this._EventId != value))
+				{
+					if (this._Event.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnEventIdChanging(value);
+					this.SendPropertyChanging();
+					this._EventId = value;
+					this.SendPropertyChanged("EventId");
+					this.OnEventIdChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
+		public System.DateTime CreatedOn
+		{
+			get
+			{
+				return this._CreatedOn;
+			}
+			set
+			{
+				if ((this._CreatedOn != value))
+				{
+					this.OnCreatedOnChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedOn = value;
+					this.SendPropertyChanged("CreatedOn");
+					this.OnCreatedOnChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
+		public System.DateTime ModifiedOn
+		{
+			get
+			{
+				return this._ModifiedOn;
+			}
+			set
+			{
+				if ((this._ModifiedOn != value))
+				{
+					this.OnModifiedOnChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedOn = value;
+					this.SendPropertyChanged("ModifiedOn");
+					this.OnModifiedOnChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+		public bool IsDeleted
+		{
+			get
+			{
+				return this._IsDeleted;
+			}
+			set
+			{
+				if ((this._IsDeleted != value))
+				{
+					this.OnIsDeletedChanging(value);
+					this.SendPropertyChanging();
+					this._IsDeleted = value;
+					this.SendPropertyChanged("IsDeleted");
+					this.OnIsDeletedChanged();
+				}
+			}
+		}
+		
+		[Association(Name="Event_Room", Storage="_Event", ThisKey="EventId", IsForeignKey=true)]
+		public Event Event
+		{
+			get
+			{
+				return this._Event.Entity;
+			}
+			set
+			{
+				Event previousValue = this._Event.Entity;
+				if (((previousValue != value) 
+							|| (this._Event.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Event.Entity = null;
+						previousValue.Rooms.Remove(this);
+					}
+					this._Event.Entity = value;
+					if ((value != null))
+					{
+						value.Rooms.Add(this);
+						this._EventId = value.Id;
+					}
+					else
+					{
+						this._EventId = default(int);
+					}
+					this.SendPropertyChanged("Event");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[Table(Name="dbo.UserEvents")]
+	public partial class UserEvent : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private int _UserId;
+		
+		private int _EventId;
+		
+		private System.DateTime _CreatedOn;
+		
+		private string _CreatedBy;
+		
+		private System.DateTime _ModifiedOn;
+		
+		private string _ModifiedBy;
+		
+		private bool _IsDeleted;
+		
+		private EntityRef<Event> _Event;
+		
+		private EntityRef<User> _User;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnUserIdChanging(int value);
+    partial void OnUserIdChanged();
+    partial void OnEventIdChanging(int value);
+    partial void OnEventIdChanged();
+    partial void OnCreatedOnChanging(System.DateTime value);
+    partial void OnCreatedOnChanged();
+    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanged();
+    partial void OnModifiedOnChanging(System.DateTime value);
+    partial void OnModifiedOnChanged();
+    partial void OnModifiedByChanging(string value);
+    partial void OnModifiedByChanged();
+    partial void OnIsDeletedChanging(bool value);
+    partial void OnIsDeletedChanged();
+    #endregion
+		
+		public UserEvent()
+		{
+			this._Event = default(EntityRef<Event>);
+			this._User = default(EntityRef<User>);
+			OnCreated();
+		}
+		
+		[Column(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_UserId", DbType="Int NOT NULL")]
+		public int UserId
+		{
+			get
+			{
+				return this._UserId;
+			}
+			set
+			{
+				if ((this._UserId != value))
+				{
+					if (this._User.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnUserIdChanging(value);
+					this.SendPropertyChanging();
+					this._UserId = value;
+					this.SendPropertyChanged("UserId");
+					this.OnUserIdChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_EventId", DbType="Int NOT NULL")]
+		public int EventId
+		{
+			get
+			{
+				return this._EventId;
+			}
+			set
+			{
+				if ((this._EventId != value))
+				{
+					if (this._Event.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnEventIdChanging(value);
+					this.SendPropertyChanging();
+					this._EventId = value;
+					this.SendPropertyChanged("EventId");
+					this.OnEventIdChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_CreatedOn", DbType="DateTime NOT NULL")]
+		public System.DateTime CreatedOn
+		{
+			get
+			{
+				return this._CreatedOn;
+			}
+			set
+			{
+				if ((this._CreatedOn != value))
+				{
+					this.OnCreatedOnChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedOn = value;
+					this.SendPropertyChanged("CreatedOn");
+					this.OnCreatedOnChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_CreatedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string CreatedBy
+		{
+			get
+			{
+				return this._CreatedBy;
+			}
+			set
+			{
+				if ((this._CreatedBy != value))
+				{
+					this.OnCreatedByChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedBy = value;
+					this.SendPropertyChanged("CreatedBy");
+					this.OnCreatedByChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_ModifiedOn", DbType="DateTime NOT NULL")]
+		public System.DateTime ModifiedOn
+		{
+			get
+			{
+				return this._ModifiedOn;
+			}
+			set
+			{
+				if ((this._ModifiedOn != value))
+				{
+					this.OnModifiedOnChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedOn = value;
+					this.SendPropertyChanged("ModifiedOn");
+					this.OnModifiedOnChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_ModifiedBy", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string ModifiedBy
+		{
+			get
+			{
+				return this._ModifiedBy;
+			}
+			set
+			{
+				if ((this._ModifiedBy != value))
+				{
+					this.OnModifiedByChanging(value);
+					this.SendPropertyChanging();
+					this._ModifiedBy = value;
+					this.SendPropertyChanged("ModifiedBy");
+					this.OnModifiedByChanged();
+				}
+			}
+		}
+		
+		[Column(Storage="_IsDeleted", DbType="Bit NOT NULL")]
+		public bool IsDeleted
+		{
+			get
+			{
+				return this._IsDeleted;
+			}
+			set
+			{
+				if ((this._IsDeleted != value))
+				{
+					this.OnIsDeletedChanging(value);
+					this.SendPropertyChanging();
+					this._IsDeleted = value;
+					this.SendPropertyChanged("IsDeleted");
+					this.OnIsDeletedChanged();
+				}
+			}
+		}
+		
+		[Association(Name="Event_UserEvent", Storage="_Event", ThisKey="EventId", IsForeignKey=true)]
+		public Event Event
+		{
+			get
+			{
+				return this._Event.Entity;
+			}
+			set
+			{
+				Event previousValue = this._Event.Entity;
+				if (((previousValue != value) 
+							|| (this._Event.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Event.Entity = null;
+						previousValue.UserEvents.Remove(this);
+					}
+					this._Event.Entity = value;
+					if ((value != null))
+					{
+						value.UserEvents.Add(this);
+						this._EventId = value.Id;
+					}
+					else
+					{
+						this._EventId = default(int);
+					}
+					this.SendPropertyChanged("Event");
+				}
+			}
+		}
+		
+		[Association(Name="User_UserEvent", Storage="_User", ThisKey="UserId", IsForeignKey=true)]
 		public User User
 		{
 			get
@@ -2500,12 +3629,12 @@ namespace Models
 					if ((previousValue != null))
 					{
 						this._User.Entity = null;
-						previousValue.Attendees.Remove(this);
+						previousValue.UserEvents.Remove(this);
 					}
 					this._User.Entity = value;
 					if ((value != null))
 					{
-						value.Attendees.Add(this);
+						value.UserEvents.Add(this);
 						this._UserId = value.Id;
 					}
 					else
@@ -2513,40 +3642,6 @@ namespace Models
 						this._UserId = default(int);
 					}
 					this.SendPropertyChanged("User");
-				}
-			}
-		}
-		
-		[Association(Name="Session_Attendee", Storage="_Session", ThisKey="SessionId", IsForeignKey=true)]
-		public Session Session
-		{
-			get
-			{
-				return this._Session.Entity;
-			}
-			set
-			{
-				Session previousValue = this._Session.Entity;
-				if (((previousValue != value) 
-							|| (this._Session.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Session.Entity = null;
-						previousValue.Attendees.Remove(this);
-					}
-					this._Session.Entity = value;
-					if ((value != null))
-					{
-						value.Attendees.Add(this);
-						this._SessionId = value.Id;
-					}
-					else
-					{
-						this._SessionId = default(int);
-					}
-					this.SendPropertyChanged("Session");
 				}
 			}
 		}
@@ -2596,9 +3691,9 @@ namespace Models
 		
 		private bool _IsDeleted;
 		
-		private EntitySet<Speaker> _Speakers;
-		
 		private EntitySet<Attendee> _Attendees;
+		
+		private EntitySet<Speaker> _Speakers;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -2626,8 +3721,8 @@ namespace Models
 		
 		public Session()
 		{
-			this._Speakers = new EntitySet<Speaker>(new Action<Speaker>(this.attach_Speakers), new Action<Speaker>(this.detach_Speakers));
 			this._Attendees = new EntitySet<Attendee>(new Action<Attendee>(this.attach_Attendees), new Action<Attendee>(this.detach_Attendees));
+			this._Speakers = new EntitySet<Speaker>(new Action<Speaker>(this.attach_Speakers), new Action<Speaker>(this.detach_Speakers));
 			OnCreated();
 		}
 		
@@ -2811,19 +3906,6 @@ namespace Models
 			}
 		}
 		
-		[Association(Name="Session_Speaker", Storage="_Speakers", OtherKey="SessionId")]
-		public EntitySet<Speaker> Speakers
-		{
-			get
-			{
-				return this._Speakers;
-			}
-			set
-			{
-				this._Speakers.Assign(value);
-			}
-		}
-		
 		[Association(Name="Session_Attendee", Storage="_Attendees", OtherKey="SessionId")]
 		public EntitySet<Attendee> Attendees
 		{
@@ -2834,6 +3916,19 @@ namespace Models
 			set
 			{
 				this._Attendees.Assign(value);
+			}
+		}
+		
+		[Association(Name="Session_Speaker", Storage="_Speakers", OtherKey="SessionId")]
+		public EntitySet<Speaker> Speakers
+		{
+			get
+			{
+				return this._Speakers;
+			}
+			set
+			{
+				this._Speakers.Assign(value);
 			}
 		}
 		
@@ -2857,18 +3952,6 @@ namespace Models
 			}
 		}
 		
-		private void attach_Speakers(Speaker entity)
-		{
-			this.SendPropertyChanging();
-			entity.Session = this;
-		}
-		
-		private void detach_Speakers(Speaker entity)
-		{
-			this.SendPropertyChanging();
-			entity.Session = null;
-		}
-		
 		private void attach_Attendees(Attendee entity)
 		{
 			this.SendPropertyChanging();
@@ -2876,6 +3959,18 @@ namespace Models
 		}
 		
 		private void detach_Attendees(Attendee entity)
+		{
+			this.SendPropertyChanging();
+			entity.Session = null;
+		}
+		
+		private void attach_Speakers(Speaker entity)
+		{
+			this.SendPropertyChanging();
+			entity.Session = this;
+		}
+		
+		private void detach_Speakers(Speaker entity)
 		{
 			this.SendPropertyChanging();
 			entity.Session = null;
