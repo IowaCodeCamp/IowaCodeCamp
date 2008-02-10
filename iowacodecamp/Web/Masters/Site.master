@@ -122,26 +122,37 @@
 		        <div id="secondarycontent">
 			        <!-- Secondary content area start -->
                     
-                    <asp:LoginView ID="LoginView1" runat="server">
-                    <LoggedInTemplate>
-                        <div class="box">
-                            <a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a>
-                            <br /><br />
-                            <h4>Admin</h4>
-                            <ul style="padding-left:20px;">
-                                <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/AddEditNews.aspx") %>'>Post News</a></li>
-                                <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ViewUsers.aspx") %>'>View Users</a></li>
-                                <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ChangePassword.aspx") %>'>Change Password</a></li>
-                            </ul>
-                        </div>
-                    </LoggedInTemplate>
-                    <AnonymousTemplate>
-                        <div class="box">
-		                    <a href='<%=ResolveUrl("~/SignIn.aspx") %>' style="text-decoration:none;">Sign In</a>
-                         </div>
-                    </AnonymousTemplate>
-                    </asp:LoginView>
-                    
+                    <div class="box">
+                        <asp:LoginView ID="LoginView1" runat="server">
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="Leaders">
+                                    <ContentTemplate>
+                                        <h4>Admin</h4>
+                                        <ul style="padding-left:20px;">
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a></li>
+                                            <br /><br />
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/AddEditNews.aspx") %>'>Post News</a></li>
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ViewUsers.aspx") %>'>View Users</a></li>
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ChangePassword.aspx") %>'>Change Password</a></li>
+                                        </ul>                        
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                                <asp:RoleGroup Roles="Attendees">
+                                    <ContentTemplate>
+                                        <ul style="padding-left:20px;">
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a></li>
+                                            <br /><br />
+                                        </ul>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                            <AnonymousTemplate>
+                                <div class="box">
+		                            <a href='<%=ResolveUrl("~/SignIn.aspx") %>' style="text-decoration:none;">Sign In</a>
+                                 </div>
+                            </AnonymousTemplate>
+                        </asp:LoginView>
+                    </div>
                     
 			        <asp:ContentPlaceHolder id="secondaryPH" runat="server">
 			        
@@ -208,7 +219,17 @@
             <div class="right">Design by <a href="http://www.nodethirtythree.com/" target="_blank">NodeThirtyThree Design</a></div>
         </div>
     	
-    </div> <!--end outer-->   
+    </div> <!--end outer-->
+    
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-3117992-1");
+        pageTracker._initData();
+        pageTracker._trackPageview();
+    </script>
 
 </body>
 </html>
