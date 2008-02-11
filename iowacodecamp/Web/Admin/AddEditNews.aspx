@@ -22,6 +22,4 @@
         onclick="UpdateEvent_Click" />
 </asp:Content>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
-</asp:Content>
 
