@@ -6,8 +6,8 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Iowa Code Camp</title>
-    <meta name="keywords" content="Iowa, Cedar Rapids, Iowa, Chris Sutton, Coralville, Des Moines, Iowa City" />
-    <meta name="description" content="Site for Code Camps across Iowa" />
+    <meta name="keywords" content="Iowa, Cedar Rapids, Iowa, Chris Sutton, Javier Lozano, Coralville Des Moines, Iowa City" />
+    <meta name="description" content="Site for code camps across Iowa" />
     <link rel="stylesheet" type="text/css" href="../Styles/Default.css" />
     
     <script src='<%=ResolveUrl("~/Scripts/jquery-1.2.3.pack.js")%>' type="text/javascript"></script>
@@ -63,7 +63,7 @@
 			    <li><a id="location" href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
 			    <li><a id="about" href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
 		    </ul>
-		    <div style="float:right;"><br /><b><%=Models.Event.NumberOfDaysLeft%></b> days left</div>
+		    <div style="float:right;"><br /><b><%=Models.Event.DaysTillNextEvent%></b> days left</div>
 	    </div>
 	    <div id="menubottom"></div>
 

@@ -18,15 +18,24 @@ namespace Models
     /// </summary>
     public partial class Event
     {
-        public static int? NumberOfDaysLeft
+        public static int? DaysTillNextEvent
         {
             get
             {
                 DateTime today = DateTime.Now;
-                int days = (DateTime.Parse("5/3/2008 8:00 AM") - today).Days;
+                int days = (Event.GetNextEvent().StartOn - today).Days;
                 if (days < 0) return null;
                 return days;
             }
+        }
+
+        public static Event GetNextEvent()
+        {
+            var data = new ICCData();
+            var nextevent = data.Events.Where(e => e.StartOn.Date >= DateTime.Today)
+                .OrderBy(e=>e.StartOn).FirstOrDefault();
+
+            return nextevent;
         }
     }
 }
