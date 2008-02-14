@@ -36,8 +36,8 @@ namespace Models
             return passwordHash == matches.First().Password;
         }
 
-        public static bool Create(string FirstName, string LastName, string Password, string Email, string Site, 
-            string Comments, string City, string Region, string Country)
+        public static bool Create(string FirstName, string LastName, string Password, string Email, 
+            string DisplayName, string Site, string Organization, string Comments, string City, string Region, string Country)
         {
             if (!IsEmailUnique(Email))
                 return false;
@@ -45,7 +45,9 @@ namespace Models
             var u = new User()
             {
                 FirstName = FirstName, LastName = LastName,
+                DisplayName = DisplayName,
                 Email = Email, Site = Site,
+                Organization = Organization,
                 City = City, Region = Region, Country = Country,
                 Comments = Comments,
                 IsValidated = false
