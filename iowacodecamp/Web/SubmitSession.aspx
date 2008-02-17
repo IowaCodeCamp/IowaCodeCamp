@@ -5,6 +5,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+
+    Current Event: <b><%=Models.Event.GetNextEvent().EventName %></b>
+    <br /><br />
+
     <asp:TextBox ID="SessionTitle" runat="server" Width="500px"></asp:TextBox>
     <br /><br />
     
@@ -13,7 +17,7 @@
     
     <br />
     
-    <asp:Button ID="Submit" runat="server" Text="Submit" />
+    <asp:LinkButton ID="Submit" runat="server" Text="Submit Session" OnClick="Submit_Click" />
 </asp:Content>
 
 

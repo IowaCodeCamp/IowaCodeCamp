@@ -17,4 +17,9 @@ public partial class SubmitSession : System.Web.UI.Page
     {
 
     }
+
+    protected void Submit_Click(object sender, EventArgs e)
+    {
+        Models.Session.Create(SessionTitle.Text, Abstract.Value, "");
+    }
 }
