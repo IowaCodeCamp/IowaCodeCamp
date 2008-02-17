@@ -61,6 +61,7 @@
       <Association Name="Event_Timeslot" Member="Timeslots" OtherKey="EventId" Type="Timeslot" />
       <Association Name="Event_Room" Member="Rooms" OtherKey="EventId" Type="Room" />
       <Association Name="Event_UserEvent" Member="UserEvents" OtherKey="EventId" Type="UserEvent" />
+      <Association Name="Event_Session" Member="Sessions" OtherKey="EventId" Type="Session" />
     </Type>
   </Table>
   <Table Name="dbo.Attendees" Member="Attendees">
@@ -167,6 +168,7 @@
       <Column Name="Title" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
       <Column Name="Abstract" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
       <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EventId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
@@ -174,6 +176,7 @@
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="Session_Attendee" Member="Attendees" OtherKey="SessionId" Type="Attendee" />
       <Association Name="Session_Speaker" Member="Speakers" OtherKey="SessionId" Type="Speaker" />
+      <Association Name="Event_Session" Member="Event" ThisKey="EventId" Type="Event" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
