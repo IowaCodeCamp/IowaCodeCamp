@@ -24,7 +24,7 @@ public partial class Register : System.Web.UI.Page
             if (Models.User.Create(FirstName.Text, LastName.Text, Password.Text, Email.Text,
                 DisplayName.Text, Site.Text, Organization.Text, Comments.Value, City.Text, Region.Text, Country.Text))
             {
-                //Models.Email.SendValidationEmail();
+                Models.Email.SendValidationEmail();
                 Response.Redirect("~/SignIn.aspx");
             }
             

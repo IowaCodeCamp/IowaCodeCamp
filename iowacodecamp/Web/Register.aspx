@@ -41,23 +41,23 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
         <tr>
             <td>*Last Name<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
                     ErrorMessage="Last Name is required" ControlToValidate="LastName" 
-                    Display="Dynamic">*</asp:RequiredFieldValidator>
+                    Display="Dynamic" ValidationGroup="reg">*</asp:RequiredFieldValidator>
                                             </td>
             <td><asp:TextBox ID="LastName" runat="server" Width="300px"></asp:TextBox></td>
         </tr>
 
         <tr>
             <td>*Email<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-                    ErrorMessage="Email is required" ControlToValidate="Email" Display="Dynamic">*</asp:RequiredFieldValidator>
+                    ErrorMessage="Email is required" ControlToValidate="Email" Display="Dynamic" ValidationGroup="reg">*</asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
                     ErrorMessage="Enter a valid Email" ControlToValidate="Email" Display="Dynamic" 
-                    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
+                    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="reg">*</asp:RegularExpressionValidator>
             </td>
             <td><asp:TextBox ID="Email" runat="server" Width="300px"></asp:TextBox></td>
         </tr>
         <tr>
             <td>*Password<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
-                    ErrorMessage="Password is required" ControlToValidate="Password" Display="Dynamic">*</asp:RequiredFieldValidator></td>
+                    ErrorMessage="Password is required" ControlToValidate="Password" Display="Dynamic" ValidationGroup="reg">*</asp:RequiredFieldValidator></td>
             <td><asp:TextBox ID="Password" runat="server" Width="300px" TextMode="Password"></asp:TextBox></td>
         </tr>
         
@@ -70,6 +70,15 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
             </td>
             <td><asp:TextBox ID="ConfirmPassword" runat="server" Width="300px" TextMode="Password"></asp:TextBox></td>
         </tr>
+        
+        <tr>
+            <td>Bio/Comments </td>
+            <td>
+                <fck:FCKeditor ID="Comments" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">
+                </fck:FCKeditor>
+            </td>
+        </tr> 
+        
         <tr>
             <td colspan="2" style="text-align:center;">
             <br />
@@ -103,13 +112,7 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
             <td>Country</td>
             <td><asp:TextBox ID="Country" runat="server" Width="300px"></asp:TextBox></td>
         </tr>
-        <tr>
-            <td>Bio/Comments </td>
-            <td>
-                <fck:FCKeditor ID="Comments" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">
-                </fck:FCKeditor>
-            </td>
-        </tr>        
+       
         <tr>
             <td>
 

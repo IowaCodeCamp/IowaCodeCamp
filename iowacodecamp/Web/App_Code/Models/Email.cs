@@ -22,18 +22,20 @@ namespace Models
     {
         public static void SendValidationEmail()
         {
-            SmtpClient client = new SmtpClient("smtp.server");
-            client.Port = 25;
+            SmtpClient client = new SmtpClient("smtp.iowacodecamp.com");
+            //client.Port = 25;
 
-            MailMessage message = new MailMessage("from", "someemail");
+            MailMessage message = new MailMessage("info@iowacodecamp.com", "bdsutton@gmail.com");
             message.Subject = "Iowa Code Camp Email Verification";
             message.SubjectEncoding = Encoding.UTF8;
             message.Body = "You need to confirm your email";
             message.BodyEncoding = Encoding.UTF8;
 
-            NetworkCredential cred = new NetworkCredential("user", "*******");
+            message.Priority = MailPriority.Normal;
 
-            client.Credentials = cred;
+            //NetworkCredential cred = new NetworkCredential("info@iowacodecamp.com", "may3rdevent");
+
+            //client.Credentials = cred;
 
             client.Send(message);
         }
