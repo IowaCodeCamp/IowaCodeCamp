@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="About.aspx.cs" Inherits="About" Title="Iowa Code Camp - About Us" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="About.aspx.cs" Inherits="About" Title="Iowa Code Camp - About" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 
@@ -48,7 +48,7 @@ If you are interested in the philosopy behind Code Camps read
 <br />
 <div>
     The hosting is at <a href="http://discountasp.net">DiscountASP.net</a> and the domain names are 
-    through <a href="http://godaddy.com">Go Daddy</a>.
+    registered through <a href="http://godaddy.com">Go Daddy</a>.
 </div>
 <br />
 <div>
