@@ -21,10 +21,11 @@ public partial class Register : System.Web.UI.Page
     {
         if (Page.IsValid)
         {
-            if (Models.User.Create(FirstName.Text, LastName.Text, Password.Text, Email.Text,
-                DisplayName.Text, Site.Text, Organization.Text, Comments.Value, City.Text, Region.Text, Country.Text))
+            Models.User u = Models.User.Create(FirstName.Text, LastName.Text, Password.Text, Email.Text, DisplayName.Text,
+                 Site.Text, Organization.Text, Comments.Value, City.Text, Region.Text, Country.Text);
+            if (u.Id > 0)
             {
-                Models.Email.SendValidationEmail();
+                Models.Email.SendValidationEmail(u);
                 Response.Redirect("~/SignIn.aspx");
             }
             
