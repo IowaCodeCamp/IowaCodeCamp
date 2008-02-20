@@ -36,13 +36,29 @@ namespace Models
             return passwordHash == matches.First().Password;
         }
 
-        public static bool Create(string FirstName, string LastName, string Password, string Email, 
+        public static bool ValidateUserAccount(string code)
+        {
+            ICCData ctx = new ICCData();
+            var userMatch = (from u in ctx.Users
+                            where u.ValidationCode == code
+                            select u).FirstOrDefault();
+            if (userMatch.Id > 0)
+            {
+                userMatch.IsValidated = true;
+                ctx.SubmitChanges();
+                return true;
+            }
+
+            return false;
+        }
+
+        public static User Create(string FirstName, string LastName, string Password, string Email, 
             string DisplayName, string Site, string Organization, string Comments, string City, string Region, string Country)
         {
             if (!IsEmailUnique(Email))
-                return false;
+                return new User();
 
-            var u = new User()
+            var newUser = new User()
             {
                 FirstName = FirstName, LastName = LastName,
                 DisplayName = DisplayName,
@@ -50,16 +66,17 @@ namespace Models
                 Organization = Organization,
                 City = City, Region = Region, Country = Country,
                 Comments = Comments,
+                ValidationCode = Guid.NewGuid().ToString(),
                 IsValidated = false
             };
 
-            SetPassword(u, Password);
+            SetPassword(newUser, Password);
 
             var ctx = new ICCData();
-            ctx.Users.InsertOnSubmit(u);
+            ctx.Users.InsertOnSubmit(newUser);
             ctx.SubmitChanges();
 
-            return true;
+            return newUser;
         }
 
         # region Extensibility Partials
