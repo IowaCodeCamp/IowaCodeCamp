@@ -27,7 +27,7 @@ namespace Models
 
             ICCData ctx = new ICCData();
             var matches = from u in ctx.Users
-                          where u.Email == email
+                          where u.Email == email && u.IsValidated
                           select u;
             if (matches.Count() < 1)
                 return false;

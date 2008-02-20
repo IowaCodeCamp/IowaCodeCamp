@@ -20,24 +20,41 @@ namespace Models
     /// </summary>
     public class Email
     {
-        public static void SendValidationEmail()
+        public static bool SendValidationEmail(User u)
         {
-            SmtpClient client = new SmtpClient("smtp.iowacodecamp.com");
-            //client.Port = 25;
+            bool ReturnValue = true;
+            try
+            {
+                string smtpServer = ConfigurationManager.AppSettings["smtpserver"];
 
-            MailMessage message = new MailMessage("info@iowacodecamp.com", "someone@somewhere.com");
-            message.Subject = "Iowa Code Camp Email Verification";
-            message.SubjectEncoding = Encoding.UTF8;
-            message.Body = "You need to confirm your email";
-            message.BodyEncoding = Encoding.UTF8;
+                SmtpClient client = new SmtpClient(smtpServer);
 
-            message.Priority = MailPriority.Normal;
+                string baseUrl = ConfigurationManager.AppSettings["baseurl"];
+                string messageFrom = ConfigurationManager.AppSettings["messagefrom"];
 
-            //NetworkCredential cred = new NetworkCredential("info@iowacodecamp.com", "password");
+                MailMessage message = new MailMessage(messageFrom, u.Email);
+                message.Subject = "Iowa Code Camp - Email Validation";
+                message.SubjectEncoding = Encoding.UTF8;
+                message.Body = string.Format("<p>You need to confirm your email</p>"+
+                    "<p><a href='"+ baseUrl +"ValidateUser.aspx?code={0}'>"+
+                    "Click here to confirm</a></p>", u.ValidationCode);
+                message.BodyEncoding = Encoding.UTF8;
+                message.IsBodyHtml = true;
 
-            //client.Credentials = cred;
+                message.Priority = MailPriority.Normal;
 
-            client.Send(message);
+                string smtpUser = ConfigurationManager.AppSettings["smtpuser"];
+                string smtpPassword = ConfigurationManager.AppSettings["smtppassword"];
+
+                NetworkCredential cred = new NetworkCredential(smtpUser, smtpPassword);
+
+                client.Credentials = cred;
+
+                client.Send(message);
+            }
+            catch { ReturnValue = false; }
+
+            return ReturnValue;
         }
     }
 }
