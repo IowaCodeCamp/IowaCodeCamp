@@ -26,7 +26,8 @@ public partial class Register : System.Web.UI.Page
             if (u.Id > 0)
             {
                 Models.Email.SendValidationEmail(u);
-                Response.Redirect("~/SignIn.aspx");
+                VerificationMessage.Visible = true;
+                //Response.Redirect("~/SignIn.aspx");
             }
             
         }

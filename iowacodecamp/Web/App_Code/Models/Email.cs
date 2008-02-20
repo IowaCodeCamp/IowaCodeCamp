@@ -12,6 +12,7 @@ using System.Xml.Linq;
 using System.Net.Mail;
 using System.Text;
 using System.Net;
+using System.IO;
 
 namespace Models
 {
@@ -31,13 +32,18 @@ namespace Models
 
                 string baseUrl = ConfigurationManager.AppSettings["baseurl"];
                 string messageFrom = ConfigurationManager.AppSettings["messagefrom"];
+                string bccEmail = ConfigurationManager.AppSettings["bccemail"];
 
                 MailMessage message = new MailMessage(messageFrom, u.Email);
-                message.Subject = "Iowa Code Camp - Email Validation";
+
+                if (!string.IsNullOrEmpty(bccEmail))
+                    bccEmail.Split(',').ToList().ForEach(e => message.Bcc.Add(new MailAddress(e)));
+                
+                message.Subject = "Iowa Code Camp - Email Verification";
                 message.SubjectEncoding = Encoding.UTF8;
-                message.Body = string.Format("<p>You need to confirm your email</p>"+
-                    "<p><a href='"+ baseUrl +"ValidateUser.aspx?code={0}'>"+
-                    "Click here to confirm</a></p>", u.ValidationCode);
+
+                message.Body = GetVerificationMessageTemplate();
+                message.Body = string.Format(message.Body, u.FirstName, u.LastName, baseUrl, u.ValidationCode);
                 message.BodyEncoding = Encoding.UTF8;
                 message.IsBodyHtml = true;
 
@@ -55,6 +61,11 @@ namespace Models
             catch { ReturnValue = false; }
 
             return ReturnValue;
+        }
+
+        private static string GetVerificationMessageTemplate()
+        {
+            return File.ReadAllText(HttpContext.Current.Server.MapPath("~/templates/emailverification.htm"));
         }
     }
 }
