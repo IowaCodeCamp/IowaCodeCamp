@@ -13,6 +13,9 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
     
     Passwords are <b>salted</b> and <b>hashed</b>.<br />
     We'll only use your email to let you know about developer events.
+    <br />
+    <asp:Label ID="VerificationMessage" runat="server" Visible="False" Font-Size="Large" 
+            ForeColor="Red">Please check your email to verify your account.</asp:Label>
     </p>
     <table cellpadding="1" cellspacing="4">
         <tr>
