@@ -2,8 +2,11 @@
 Inherits="Register" Title="Iowa Code Camp - Register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
+    <asp:ScriptManager runat="server">
+    </asp:ScriptManager>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="box" style="margin-left:40px;">
@@ -13,25 +16,15 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
     
     Passwords are <b>salted</b> and <b>hashed</b>.<br />
     We'll only use your email to let you know about developer events.
-    <br />
+    <br /><br />
     <asp:Label ID="VerificationMessage" runat="server" Visible="False" Font-Size="Large" 
-            ForeColor="Red">Please check your email to verify your account.</asp:Label>
+            ForeColor="Red">Please check your email to verify your account.
+            <br />It could be up to 30 minutes for the email to come through.</asp:Label>
     </p>
     <table cellpadding="1" cellspacing="4">
         <tr>
             <td style="width:140px;"></td>
             <td></td>
-        </tr>
-        
-        <tr>
-            <td>
-
-            </td>
-            <td>
-                <asp:LinkButton ID="LinkButton1" runat="server" onclick="RegisterLink_Click" 
-                    ValidationGroup="reg">Register</asp:LinkButton>
-                    <br /><br />
-            </td>
         </tr>
         
         <tr>
@@ -75,58 +68,75 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
         </tr>
         
         <tr>
-            <td>Bio/Comments </td>
-            <td>
-                <fck:FCKeditor ID="Comments" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">
-                </fck:FCKeditor>
-            </td>
-        </tr> 
-        
-        <tr>
-            <td colspan="2" style="text-align:center;">
-            <br />
-            <hr />
-            Purely optional but useful information
-            <br />
-            <br />
-            </td>
-        </tr>
-        <tr>
-            <td>Display Name</td>
-            <td><asp:TextBox ID="DisplayName" runat="server" Width="300px"></asp:TextBox></td>
-        </tr>
-        <tr>
-            <td>Personal Site</td>
-            <td><asp:TextBox ID="Site" runat="server" Width="300px"></asp:TextBox></td>
-        </tr>
-        <tr>
-            <td>Organization</td>
-            <td><asp:TextBox ID="Organization" runat="server" Width="300px"></asp:TextBox></td>
-        </tr>
-        <tr>
-            <td>City</td>
-            <td><asp:TextBox ID="City" runat="server" Width="300px"></asp:TextBox></td>
-        </tr>
-        <tr>
-            <td>Region</td>
-            <td><asp:TextBox ID="Region" runat="server" Width="300px"></asp:TextBox></td>
-        </tr>
-        <tr>
-            <td>Country</td>
-            <td><asp:TextBox ID="Country" runat="server" Width="300px"></asp:TextBox></td>
-        </tr>
-       
-        <tr>
             <td>
 
             </td>
-            <td>
+            <td align="right">
                 <br />
-                <asp:LinkButton ID="RegisterLink" runat="server" onclick="RegisterLink_Click" 
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="RegisterLink_Click" 
                     ValidationGroup="reg">Register</asp:LinkButton>
+                    <br /><br />
             </td>
         </tr>
+        
     </table>
+        <ajax:CollapsiblePanelExtender ID="CollapsiblePanelExtender1" runat="server" 
+        TargetControlID="OptionalData" ExpandControlID="ToggleOptional" CollapseControlID="ToggleOptional"
+        Collapsed="true">
+        
+        </ajax:CollapsiblePanelExtender>
+        <br />
+        <asp:LinkButton ID="ToggleOptional" runat="server" CausesValidation="False">Optional Info</asp:LinkButton>
+        
+            <asp:Panel ID="OptionalData" runat="server">
+            
+        <table cellpadding="1" cellspacing="4">
+            
+            <tr>
+                <td style="width:140px;">Display Name</td>
+                <td><asp:TextBox ID="DisplayName" runat="server" Width="300px"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Personal Site</td>
+                <td><asp:TextBox ID="Site" runat="server" Width="300px"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Organization</td>
+                <td><asp:TextBox ID="Organization" runat="server" Width="300px"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><asp:TextBox ID="City" runat="server" Width="300px"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Region</td>
+                <td><asp:TextBox ID="Region" runat="server" Width="300px"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><asp:TextBox ID="Country" runat="server" Width="300px"></asp:TextBox></td>
+            </tr>
+            
+            <tr>
+                <td>Comments </td>
+                <td>
+                    <fck:FCKeditor ID="Comments" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">
+                    </fck:FCKeditor>
+                </td>
+            </tr> 
+            
+            <tr>
+                <td>
+
+                </td>
+                <td align="right">
+                    <br />
+                    <asp:LinkButton ID="RegisterLink" runat="server" onclick="RegisterLink_Click" 
+                        ValidationGroup="reg">Register</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+        </asp:Panel>
 
     <br /><br />
     

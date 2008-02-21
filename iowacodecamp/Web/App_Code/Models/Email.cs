@@ -47,7 +47,7 @@ namespace Models
                 message.BodyEncoding = Encoding.UTF8;
                 message.IsBodyHtml = true;
 
-                message.Priority = MailPriority.Normal;
+                message.Priority = MailPriority.High;
 
                 string smtpUser = ConfigurationManager.AppSettings["smtpuser"];
                 string smtpPassword = ConfigurationManager.AppSettings["smtppassword"];
