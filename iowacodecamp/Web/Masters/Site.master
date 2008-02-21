@@ -124,21 +124,18 @@
                     
                     <div class="box">
                         <asp:LoginView ID="LoginView1" runat="server">
-                            <LoggedInTemplate>
-                                <ul style="padding-left:20px;">
-                                    <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a></li>
-                                    <br /><br />
-                                </ul>
-                            </LoggedInTemplate>
                             <RoleGroups>
                                 <asp:RoleGroup Roles="Leaders">
                                     <ContentTemplate>
-                                        <h4>Admin</h4>
+                                        <h4>Admin</h4><br /><br />
+
                                         <ul style="padding-left:20px;">
+
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/AddEditNews.aspx") %>'>Post News</a></li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ViewUsers.aspx") %>'>View Users</a></li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ChangePassword.aspx") %>'>Change Password</a></li>
-                                        </ul>                        
+                                        </ul>   
+                                        <a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a>                     
                                     </ContentTemplate>
                                 </asp:RoleGroup>
                                 <asp:RoleGroup Roles="Attendees">

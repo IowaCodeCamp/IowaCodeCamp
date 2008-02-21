@@ -58,7 +58,7 @@ public class ICCRoles : RoleProvider
         email = email ?? "";
         Models.ICCData ctx = new Models.ICCData();
         //get userid
-        int MyUserID = ctx.Users.Where(u => u.Email == email).First().Id;
+        int MyUserID = ctx.Users.Where(u => u.Email == email).FirstOrDefault().Id;
 
         //get user roles
         var UserRoles = ctx.UserRoles.Where(ur => ur.UserId == MyUserID);

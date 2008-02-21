@@ -27,6 +27,20 @@ public partial class Register : System.Web.UI.Page
             {
                 Models.Email.SendValidationEmail(u);
                 VerificationMessage.Visible = true;
+                FirstName.Text = "";
+                LastName.Text = "";
+                Email.Text = "";
+                Password.Text = "";
+                ConfirmPassword.Text = "";
+
+                DisplayName.Text = "";
+                Site.Text = "";
+                Organization.Text = "";
+                Comments.Value = ""; 
+                City.Text = "";
+                Region.Text = "";
+                Country.Text = "";
+
                 //Response.Redirect("~/SignIn.aspx");
             }
             
