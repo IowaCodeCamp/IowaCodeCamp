@@ -21,7 +21,9 @@ public partial class ValidateUser : System.Web.UI.Page
             return;
 
         if (Models.User.ValidateUserAccount(code))
+        {
             Response.Redirect("~/SignIn.aspx");
+        }
         else
             Message.Text = "User email validation failed, please contact a Code Camp Leader for help.";
     }

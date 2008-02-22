@@ -127,22 +127,24 @@
                             <RoleGroups>
                                 <asp:RoleGroup Roles="Leaders">
                                     <ContentTemplate>
-                                        <h4>Admin</h4><br /><br />
+                                        <h4>Admin Links</h4><br /><br />
 
                                         <ul style="padding-left:20px;">
-
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a> <%=this.Page.User.Identity.Name %></li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/AddEditNews.aspx") %>'>Post News</a></li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ViewUsers.aspx") %>'>View Users</a></li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ChangePassword.aspx") %>'>Change Password</a></li>
                                         </ul>   
-                                        <a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a>                     
+                                                             
                                     </ContentTemplate>
                                 </asp:RoleGroup>
                                 <asp:RoleGroup Roles="Attendees">
                                     <ContentTemplate>
+                                        <h4><%=this.Page.User.Identity.Name %></h4><br /><br />
+                                        
                                         <ul style="padding-left:20px;">
-                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a></li>
-                                            <br /><br />
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a> </li>
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/MyProfile.aspx") %>'>My Profile</a></li>
                                         </ul>
                                     </ContentTemplate>
                                 </asp:RoleGroup>

@@ -73,7 +73,7 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
             </td>
             <td align="right">
                 <br />
-                <asp:LinkButton ID="LinkButton1" runat="server" onclick="RegisterLink_Click" 
+                <asp:LinkButton ID="UpperRegisterLink" runat="server" onclick="RegisterLink_Click" 
                     ValidationGroup="reg">Register</asp:LinkButton>
                     <br /><br />
             </td>
@@ -109,7 +109,7 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
                 <td><asp:TextBox ID="City" runat="server" Width="300px"></asp:TextBox></td>
             </tr>
             <tr>
-                <td>Region</td>
+                <td>Region<br />(State/Province)</td>
                 <td><asp:TextBox ID="Region" runat="server" Width="300px"></asp:TextBox></td>
             </tr>
             <tr>
@@ -131,7 +131,7 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
                 </td>
                 <td align="right">
                     <br />
-                    <asp:LinkButton ID="RegisterLink" runat="server" onclick="RegisterLink_Click" 
+                    <asp:LinkButton ID="LowerRegisterLink" runat="server" onclick="RegisterLink_Click" 
                         ValidationGroup="reg">Register</asp:LinkButton>
                 </td>
             </tr>

@@ -17,9 +17,30 @@ namespace Models
     /// </summary>
     public partial class UserRole
     {
-        public static void AddUserToRole()
-        {
 
+        # region Extensibility Partials
+
+        partial void OnValidate(System.Data.Linq.ChangeAction action)
+        {
+            //existing
+            if (Id > 1)
+                SetModified();
+            else//new
+                SetCreated(); SetModified();
         }
+
+        private void SetCreated()
+        {
+            this.CreatedOn = DateTime.Now;
+            this.CreatedBy = HttpContext.Current.User.Identity.Name;
+        }
+
+        private void SetModified()
+        {
+            this.ModifiedOn = DateTime.Now;
+            this.ModifiedBy = HttpContext.Current.User.Identity.Name;
+        }
+
+        #endregion
     }
 }
