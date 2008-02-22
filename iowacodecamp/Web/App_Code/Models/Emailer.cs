@@ -19,7 +19,7 @@ namespace Models
     /// <summary>
     /// Summary description for Emailer
     /// </summary>
-    public class Email
+    public class Emailer
     {
         public static bool SendValidationEmail(User u)
         {

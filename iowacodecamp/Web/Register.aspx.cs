@@ -15,7 +15,7 @@ public partial class Register : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        this.Form.DefaultButton = UpperRegisterLink.UniqueID;
     }
     protected void RegisterLink_Click(object sender, EventArgs e)
     {
@@ -25,8 +25,10 @@ public partial class Register : System.Web.UI.Page
                  Site.Text, Organization.Text, Comments.Value, City.Text, Region.Text, Country.Text);
             if (u.Id > 0)
             {
-                Models.Email.SendValidationEmail(u);
+                Models.Emailer.SendValidationEmail(u);
                 VerificationMessage.Visible = true;
+
+                //reset fields
                 FirstName.Text = "";
                 LastName.Text = "";
                 Email.Text = "";

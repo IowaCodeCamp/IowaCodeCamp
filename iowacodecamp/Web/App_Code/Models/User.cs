@@ -20,6 +20,36 @@ namespace Models
     /// </summary>
     public partial class User
     {
+        public static User Get(string email)
+        {
+            email = email ?? "";
+            var ctx = new ICCData();
+
+            return (from u in ctx.Users where string.Compare(u.Email, email, true) == 0 select u).FirstOrDefault();
+        }
+
+        public static void Update(string email, string firstname, string lastname, string password, 
+            string displayname, string site, string organization, string city, 
+            string region, string country, string comments)
+        {
+            var ctx = new ICCData();
+
+            var user = ctx.Users.Where(u => string.Compare(u.Email, email, true) == 0).FirstOrDefault();
+            user.FirstName = firstname;
+            user.LastName = lastname;
+            if (password.Trim().Length > 0)
+                SetPassword(user, password);
+            user.DisplayName = displayname;
+            user.Site = site;
+            user.Organization = organization;
+            user.City = city;
+            user.Region = region;
+            user.Country = country;
+            user.Comments = comments;
+
+            ctx.SubmitChanges();
+        }
+
         public static bool Validate(string email, string password)
         {
             email = email ?? "";
@@ -46,6 +76,9 @@ namespace Models
             {
                 userMatch.IsValidated = true;
                 ctx.SubmitChanges();
+
+                AddUserToRole(userMatch.Email, "attendees");
+
                 return true;
             }
 
@@ -153,5 +186,23 @@ namespace Models
 
             return true;
         }
+
+        public static bool AddUserToRole(string UserName, string RoleName)
+        {
+            ICCData ctx = new ICCData();
+            var user = (from u in ctx.Users where string.Compare(u.Email, UserName, true) == 0 select u).FirstOrDefault();
+            var role = (from r in ctx.Roles where string.Compare(r.Name, RoleName, true) == 0 select r).FirstOrDefault();
+
+            if (user.Id > 0 && role.Id > 0)
+            {
+                var ur = new UserRole() { UserId = user.Id, RoleId = role.Id };
+                ctx.UserRoles.InsertOnSubmit(ur);
+                ctx.SubmitChanges();
+                return true;
+            }
+            return false;
+        }
+
+
     }
 }
