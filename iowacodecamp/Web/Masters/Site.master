@@ -10,11 +10,11 @@
     <meta name="description" content="Site for code camps across Iowa" />
     <link rel="stylesheet" type="text/css" href="../Styles/Default.css" />
     
-    <script src='<%=ResolveUrl("~/jquery/jquery.pack.js")%>' type="text/javascript"></script>
-    <script src='<%=ResolveUrl("~/js/utils.js")%>' type="text/javascript"></script>
+    <script src='<%=ResolveUrl("~/Scripts/jquery/jquery.min.js")%>' type="text/javascript"></script>
+    <script src='<%=ResolveUrl("~/Scripts/Utils.js")%>' type="text/javascript"></script>
     
     <script type="text/javascript">
-        //var $j = jQuery.noConflict();
+
     </script>
     
     <asp:ContentPlaceHolder id="headPH" runat="server">
