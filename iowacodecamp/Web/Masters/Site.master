@@ -144,7 +144,9 @@
                                         
                                         <ul style="padding-left:20px;">
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a> </li>
-                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/MyProfile.aspx") %>'>My Profile</a></li>
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Attendee/MyProfile.aspx") %>'>My Profile</a></li>
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Attendee/ProposeSession.aspx") %>'>Propose a Session</a></li>
+                                            
                                         </ul>
                                     </ContentTemplate>
                                 </asp:RoleGroup>

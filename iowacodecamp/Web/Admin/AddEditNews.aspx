@@ -18,8 +18,7 @@
     
     <br />
     
-    <asp:Button ID ="UpdateEvent" runat="server" Text="Submit" 
-        onclick="UpdateEvent_Click" />
+    <asp:Button ID ="UpdateEvent" runat="server" Text="Submit" onclick="UpdateEvent_Click" />
 </asp:Content>
 
 

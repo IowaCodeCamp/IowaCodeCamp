@@ -11,15 +11,19 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-public partial class SubmitSession : System.Web.UI.Page
+public partial class Attendee_ProposeSession : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
 
-    protected void Submit_Click(object sender, EventArgs e)
+    protected void ProposeSession_Click(object sender, EventArgs e)
     {
-        Models.Session.Create(SessionTitle.Text, Abstract.Value, "");
+        if (!Page.IsValid)
+            return;
+
+        Models.Session.Propose(this.Page.User.Identity.Name, SessionTitle.Text, SessionAbstract.Value);
+        Response.Redirect("~/Sessions.aspx");
     }
 }

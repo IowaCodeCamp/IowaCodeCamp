@@ -17,20 +17,11 @@ namespace Models
     /// </summary>
     public partial class Session
     {
-        //public static void Create(string Title, string Abstract)
-        //{
-        //    var session = new Session() { Title = Title, Abstract = Abstract };
-
-        //    var ctx = new ICCData();
-        //    ctx.Sessions.InsertOnSubmit(session);
-        //    ctx.SubmitChanges();
-        //}
-
-        public static void Create(string Title, string Abstract, string Email)
+        public static void Propose(string Email, string SessionTitle, string SessionAbstract)
         {
             var ctx = new ICCData();
             
-            var session = new Session() { Title = Title, Abstract = Abstract };
+            var session = new Session() { Title = SessionTitle, Abstract = SessionAbstract };
             
             ctx.Sessions.InsertOnSubmit(session);
             ctx.SubmitChanges();
