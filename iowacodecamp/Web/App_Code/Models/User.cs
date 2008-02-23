@@ -103,6 +103,9 @@ namespace Models
                 IsValidated = false
             };
 
+            if (newUser.DisplayName.Trim().Length < 1)
+                DisplayName = FirstName + " " + LastName;
+
             SetPassword(newUser, Password);
 
             var ctx = new ICCData();
