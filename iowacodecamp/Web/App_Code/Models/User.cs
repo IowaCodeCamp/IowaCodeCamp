@@ -12,6 +12,7 @@ using System.Xml.Linq;
 using System.Security;
 using System.Security.Cryptography;
 using System.Text;
+using System.Collections.Generic;
 
 namespace Models
 {
@@ -48,6 +49,15 @@ namespace Models
             user.Comments = comments;
 
             ctx.SubmitChanges();
+        }
+
+        public static List<User> GetCurrentEventAttendees()
+        {
+            var ctx = new ICCData();
+            //HACK clearly unfinished
+            return (from u in ctx.Users 
+                        where u.IsValidated == true
+                        select u).ToList();
         }
 
         public static bool Validate(string email, string password)
@@ -205,7 +215,6 @@ namespace Models
             }
             return false;
         }
-
 
     }
 }

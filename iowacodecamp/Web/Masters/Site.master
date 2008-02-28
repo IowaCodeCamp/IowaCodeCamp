@@ -31,7 +31,7 @@
 	    <div id="header">
 		    <div id="headercontent">
 			    <h1><a href='<%=ResolveUrl("~/") %>' style="text-decoration:none;">Iowa Code Camp</a></h1>
-			    <h2>Code Camps for Iowa</h2>
+			    <h2>for developers - by developers</h2>
 			    <br />
 		    </div>
 	    </div>
@@ -73,7 +73,7 @@
 
 		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
 		        <div id="normalcontent">
-			        <h3>May 3<sup>rd</sup>, 2008 - Iowa's First Code Camp</h3>
+			        <h3>May 3, 2008 - Iowa's First Code Camp</h3>
 			        <div class="contentarea">
 			        
 				        <!-- Normal content area start -->
