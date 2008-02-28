@@ -43,7 +43,7 @@ If you are interested in the philosopy behind Code Camps read
 <br />
 <div>
     Viewstate is disabled as much as possible for the project and we stick with the ListView to keep 
-    closer to the HTML.
+    closer to the HTML.  This site will move to the ASP.Net MVC framework as soon as possible.
 </div>
 <br />
 <div>

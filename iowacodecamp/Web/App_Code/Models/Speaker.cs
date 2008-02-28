@@ -13,31 +13,10 @@ using System.Xml.Linq;
 namespace Models
 {
     /// <summary>
-    /// Summary description for Session
+    /// Summary description for Speaker
     /// </summary>
-    public partial class Session
+    public partial class Speaker
     {
-        public static void Propose(string Email, string SessionTitle, string SessionAbstract)
-        {
-            var ctx = new ICCData();
-
-            int eId = Event.GetNextEvent().Id;
-            
-            var session = new Session() 
-            { Title = SessionTitle, Abstract = SessionAbstract, EventId = eId };
-            
-            ctx.Sessions.InsertOnSubmit(session);
-            ctx.SubmitChanges();
-            
-            var user = ctx.Users.Where(u => string.Compare(u.Email, Email, true) == 0).FirstOrDefault();
-
-            Speaker speak = new Speaker()
-            { SessionId = session.Id, UserId = user.Id };
-
-            ctx.Speakers.InsertOnSubmit(speak);
-            ctx.SubmitChanges();
-        }
-
         # region Extensibility Partials
 
         partial void OnValidate(System.Data.Linq.ChangeAction action)
@@ -62,5 +41,6 @@ namespace Models
         }
 
         #endregion
+
     }
 }
