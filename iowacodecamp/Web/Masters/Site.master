@@ -154,7 +154,7 @@
                             <AnonymousTemplate>
                                 <ul style="padding-left:20px;">
                                     <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignIn.aspx") %>' style="text-decoration:none;">Sign In</a></li>
-		                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Register.aspx") %>' style="text-decoration:none;">Register new user</a></li>
+		                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Register.aspx") %>' style="text-decoration:none;">New user Registration</a></li>
 		                        </ul>
                             </AnonymousTemplate>
                         </asp:LoginView>
