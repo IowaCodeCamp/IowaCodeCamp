@@ -23,7 +23,11 @@
             <td style="width:140px;"></td>
             <td></td>
         </tr>
-        
+        <tr>
+            <td>*Email
+            </td>
+            <td><asp:Label ID="Email" runat="server" Width="300px"></asp:Label></td>
+        </tr>        
         <tr>
             <td>*First Name<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
                     ErrorMessage="First Name is required" ControlToValidate="FirstName" 
@@ -39,11 +43,7 @@
             <td><asp:TextBox ID="LastName" runat="server" Width="300px"></asp:TextBox></td>
         </tr>
 
-        <tr>
-            <td>*Email
-            </td>
-            <td><asp:Label ID="Email" runat="server" Width="300px"></asp:Label></td>
-        </tr>
+
         <tr>
             <td>*Password</td>
             <td><asp:TextBox ID="Password" runat="server" Width="300px" TextMode="Password"></asp:TextBox></td>
