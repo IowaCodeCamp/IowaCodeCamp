@@ -9,6 +9,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using System.Collections.Generic;
 
 namespace Models
 {
@@ -17,6 +18,16 @@ namespace Models
     /// </summary>
     public partial class Speaker
     {
+        //public static Dictionary<int, string> Test()
+        //{
+        //    //var ctx = new ICCData();
+        //    //var x = from s in ctx.Speakers
+        //    //        select new Dictionary<int,string>(){new KeyValuePair<int,string>(s.Id, s.User.FirstName)};
+
+        //    //return x;
+            
+        //}
+
         # region Extensibility Partials
 
         partial void OnValidate(System.Data.Linq.ChangeAction action)

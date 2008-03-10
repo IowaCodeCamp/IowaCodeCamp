@@ -6,7 +6,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Iowa Code Camp</title>
-    <meta name="keywords" content="Iowa, Iowa City, Chris Sutton, Javier Lozano, Coralville, Des Moines, Cedar Rapids" />
+    <meta name="keywords" content="Iowa, Iowa City, Chris Sutton, Javier Lozano, Bryan Sampica, Greg Wilson, Greg Sohl, Coralville, Des Moines, Cedar Rapids" />
     <meta name="description" content="Site for code camps across Iowa" />
     <link rel="stylesheet" type="text/css" href="../Styles/Default.css" />
     
@@ -73,7 +73,8 @@
 
 		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
 		        <div id="normalcontent">
-			        <h3>May 3, 2008 - Iowa's First Code Camp</h3>
+			        <h3>May 3, 2008 - Iowa's First Code Camp</h3><br />
+			        <%=this.Page.User.Identity.Name %>
 			        <div class="contentarea">
 			        
 				        <!-- Normal content area start -->
@@ -81,7 +82,9 @@
 				        <asp:ContentPlaceHolder id="normalPH" runat="server">
 
 				            <img src="images/pic1.jpg" class="left" alt="A chinese lion statue" />
-            								            <p>Zenlike<sup>1.0</sup> is a free, lightweight, tableless, fluid W3C-compliant website design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design</a>. All photos came from <a href="http://www.pdphoto.org/">PDPhoto</a> and the background texture is from <a href="http://www.mayang.com/textures/">Mayang's texture site</a>. You're free to dissect, manipulate and use it to your heart's content. We only ask that you link back to <a href="http://www.nodethirtythree.com/">our site</a> in some way. If you find this design useful, feel free to let us know :)</p>				            <p>You can find more of our free work at this site or <a href="http://www.nodethirtythree.com/">our site</a>, or some of our commercial work on <a href="http://www.4templates.com/?aff=n33">4Templates.com</a>, a commercial website template site.</p>
+            				
+				            <p>Zenlike<sup>1.0</sup> is a free, lightweight, tableless, fluid W3C-compliant website design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design</a>. All photos came from <a href="http://www.pdphoto.org/">PDPhoto</a> and the background texture is from <a href="http://www.mayang.com/textures/">Mayang's texture site</a>. You're free to dissect, manipulate and use it to your heart's content. We only ask that you link back to <a href="http://www.nodethirtythree.com/">our site</a> in some way. If you find this design useful, feel free to let us know :)</p>
+				            <p>You can find more of our free work at this site or <a href="http://www.nodethirtythree.com/">our site</a>, or some of our commercial work on <a href="http://www.4templates.com/?aff=n33">4Templates.com</a>, a commercial website template site.</p>
 
                         </asp:ContentPlaceHolder>
 				        <!-- Normal content area end -->
@@ -130,12 +133,14 @@
                                         <h4>Admin Links</h4><br /><br />
 
                                         <ul style="padding-left:20px;">
-                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a> <%=this.Page.User.Identity.Name %></li>
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a></li>
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ValidateSessions.aspx") %>'>Validate Sessions</a></li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/AddEditNews.aspx") %>'>Post News</a></li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ViewUsers.aspx") %>'>View Users</a></li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Admin/ChangePassword.aspx") %>'>Change Password</a></li>
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Attendee/Attendees.aspx") %>'>View Attendees</a></li>
                                         </ul>   
-                                                             
+                                    
                                     </ContentTemplate>
                                 </asp:RoleGroup>
                                 <asp:RoleGroup Roles="Attendees">
@@ -146,15 +151,16 @@
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignOut.aspx") %>'>Sign Out</a> </li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Attendee/MyProfile.aspx") %>'>My Profile</a></li>
                                             <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Attendee/ProposeSession.aspx") %>'>Propose a Session</a></li>
-                                            
+                                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Attendee/Attendees.aspx") %>'>View Attendees</a></li>
                                         </ul>
+                                         
                                     </ContentTemplate>
                                 </asp:RoleGroup>
                             </RoleGroups>
                             <AnonymousTemplate>
                                 <ul style="padding-left:20px;">
-                                    <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignIn.aspx") %>' style="text-decoration:none;">Sign In</a></li>
-		                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Register.aspx") %>' style="text-decoration:none;">New user Registration</a></li>
+                                    <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignIn.aspx") %>'>Sign In</a></li>
+		                            <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Register.aspx") %>'>New user Registration</a></li>
 		                        </ul>
                             </AnonymousTemplate>
                         </asp:LoginView>
@@ -197,7 +203,8 @@
 				            <ul class="linklist">
 				                <li><a href="http://www.its.uiowa.edu" target="_blank">University of Iowa : ITS</a></li>
 				                <li><a href="http://crineta.org" target="_blank">CRIneta</a></li>
-				                <li><a href="http://iadnug.org" target="_blank">Iowa .Net User Group</a></li>				            </ul>
+				                <li><a href="http://iadnug.org" target="_blank">Iowa .Net User Group</a></li>
+				            </ul>
 				            <br />
 			            </div>
 		            </div>        			
