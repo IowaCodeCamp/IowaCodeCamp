@@ -21,6 +21,14 @@ namespace Models
     /// </summary>
     public partial class User
     {
+        public string FullName 
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
+
         public static User Get(string email)
         {
             email = email ?? "";
@@ -123,6 +131,17 @@ namespace Models
             ctx.SubmitChanges();
 
             return newUser;
+        }
+
+        public static List<User> GetAttendees()
+        {
+            var ctx = new ICCData();
+            var speakers = (from u in ctx.Users
+                            where u.IsValidated == true
+                            orderby u.LastName, u.FirstName
+                            select u).ToList();
+
+            return speakers;
         }
 
         # region Extensibility Partials

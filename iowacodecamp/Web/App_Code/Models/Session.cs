@@ -9,6 +9,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using System.Collections.Generic;
 
 namespace Models
 {
@@ -36,6 +37,74 @@ namespace Models
 
             ctx.Speakers.InsertOnSubmit(speak);
             ctx.SubmitChanges();
+        }
+
+        public static List<Session> GetProposedSessions()
+        {
+            var ctx = new ICCData();
+
+            int eId = Event.GetNextEvent().Id;
+
+            var sessions = from s in ctx.Sessions
+                           where s.IsApproved == false && s.EventId == eId
+                           //let SpeakerName = s.Speakers.
+                           select s;
+
+            return sessions.ToList();
+        }
+
+        public static List<Session> GetAcceptedSessions()
+        {
+            var ctx = new ICCData();
+
+            int eId = Event.GetNextEvent().Id;
+
+            var sessions = from s in ctx.Sessions
+                           where s.IsApproved && s.EventId == eId
+                           //let SpeakerName = s.Speakers.
+                           select s;
+
+            return sessions.ToList();
+        }
+
+        public static List<Session> GetAllSessions()
+        {
+            var ctx = new ICCData();
+            
+
+            int eId = Event.GetNextEvent().Id;
+            
+            
+
+            var sessions = from s in ctx.Sessions
+                           where s.EventId == eId && s.IsApproved
+                           select s;
+
+            var sessions1 = ctx.Sessions.Where(sess => sess.EventId == eId);
+
+            return sessions.ToList();
+        }
+
+        public static bool Update(int SessionId, string Title, string Abstract, bool IsApproved, int SpeakerID)
+        {
+            var ctx = new ICCData();
+
+            var session = (from s in ctx.Sessions
+                          where s.Id == SessionId
+                          select s).First();
+            session.Title = Title;
+            session.Abstract = Abstract;
+            session.IsApproved = IsApproved;
+
+            var speakers = (from s in ctx.Speakers
+                          where s.SessionId == SessionId
+                          select s).First();
+
+            
+
+            ctx.SubmitChanges();
+
+            return true;
         }
 
         # region Extensibility Partials

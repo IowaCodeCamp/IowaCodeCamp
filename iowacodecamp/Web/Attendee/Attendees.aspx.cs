@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-public partial class Attendees : System.Web.UI.Page
+public partial class Attendee_Attendees : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -21,7 +21,7 @@ public partial class Attendees : System.Web.UI.Page
 
     private void LoadData()
     {
-        listAttendees.DataSource = Models.User.GetCurrentEventAttendees();
-        listAttendees.DataBind();
+        ShowAttendees.DataSource = Models.User.GetCurrentEventAttendees();
+        ShowAttendees.DataBind();
     }
 }
