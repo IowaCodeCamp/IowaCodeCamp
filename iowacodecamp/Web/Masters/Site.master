@@ -28,7 +28,10 @@
 
     <div id="outer">
 
-	    <div id="header"><img src='<%=ResolveUrl("~/Images/icc_logo.jpg")%>' alt="Iowa Code Camp Logo" />
+	    <div id="header">
+	        <a href='<%=ResolveUrl("~/") %>'>
+	            <img src='<%=ResolveUrl("~/Images/icc_logo.jpg")%>' alt="Iowa Code Camp Logo" />
+	        </a>
 		    <div id="headercontent">
 		        
 			    <!--h1><a href='<%=ResolveUrl("~/") %>' style="text-decoration:none;">Iowa Code Camp</a></h1>
@@ -40,13 +43,6 @@
 	    <div id="headercontentright">
 	        <h1>Spring '08</h1>
 	    </div>
-
-	    <!--form method="post" action="">
-		    <div id="search">
-			    <input type="text" class="text" maxlength="64" name="keywords" value="No search yet" style="color:Gray;" />
-			    <input type="submit" class="submit" value="Search" />
-		    </div>
-	    </form-->
 
         <!--uncomment this to show a picture banner-->
 	    <!--div id="headerpic"></div-->
