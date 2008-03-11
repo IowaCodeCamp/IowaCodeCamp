@@ -28,11 +28,12 @@
 
     <div id="outer">
 
-	    <div id="header">
+	    <div id="header"><img src='<%=ResolveUrl("~/Images/icc_logo.jpg")%>' alt="Iowa Code Camp Logo" />
 		    <div id="headercontent">
-			    <h1><a href='<%=ResolveUrl("~/") %>' style="text-decoration:none;">Iowa Code Camp</a></h1>
+		        
+			    <!--h1><a href='<%=ResolveUrl("~/") %>' style="text-decoration:none;">Iowa Code Camp</a></h1>
 			    <h2>for developers - by developers</h2>
-			    <br />
+			    <br /-->
 		    </div>
 	    </div>
 	    
