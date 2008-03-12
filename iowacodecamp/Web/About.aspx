@@ -36,7 +36,8 @@ If you are interested in the philosopy behind Code Camps read
     This web site is built with <a href="http://msdn2.microsoft.com/en-us/netframework/aa904594.aspx">Linq</a>, 
     <a href="http://msdn2.microsoft.com/en-us/library/bb384429.aspx">Linq to SQL</a>, 
     <a href="http://msdn2.microsoft.com/en-us/vcsharp/aa336745.aspx">C# 3.0</a>,
-    <a href="http://www.microsoft.com/express/vwd">VWD Express 2008</a>, 
+    <a href="http://msdn2.microsoft.com/en-us/vstudio/products/default.aspx">
+        Visual Web Developer 2008</a>, 
     <a href="http://www.fckeditor.net/">FCKeditor</a>
     <a href="http://www.asp.net/">ASP.Net 3.5</a> and <a href="http://jquery.com/">jQuery</a>.
 </div>
