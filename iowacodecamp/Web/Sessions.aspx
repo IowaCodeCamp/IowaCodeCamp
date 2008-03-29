@@ -2,6 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
+    
+</script>
+<script type="text/javascript">
     $(document).ready(function()
     {$("#sessions").addClass("active");});
 </script>
@@ -11,7 +14,7 @@ We have 4 tracks, each track will have 5 timeslots giving us a total of 20 sessi
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
    
-    <asp:Repeater ID="repeatOfficialSessions" runat="server">
+    <asp:Repeater ID="repeatOfficialSessions" runat="server" Visible="false">
         <HeaderTemplate>
         <h3>Accepted Sessions</h3><br />
         <hr />
@@ -32,7 +35,7 @@ We have 4 tracks, each track will have 5 timeslots giving us a total of 20 sessi
         </FooterTemplate>
     </asp:Repeater>
     <br /><br />
-    <asp:Repeater ID="repeatSessions" runat="server">
+    <asp:Repeater ID="repeatSessions" runat="server" Visible="false">
         <HeaderTemplate>
         <h4>Proposed Sessions</h4><br />
         <hr />

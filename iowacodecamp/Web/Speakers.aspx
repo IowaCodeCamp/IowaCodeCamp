@@ -26,6 +26,20 @@
 	<div class="divider2"></div>
 	
 	
+    <div class="post">
+		<h4>Brian Hartin</h4>
+		<div class="contentarea">
+
+			<p>
+                "Writing Extensible Software" An introduction for beginner and intermediate object-oriented programmers to Inversion of Control and related design patterns.  This is a common and powerful strategy that can help you write software which is more extensible, robust and testable.  Among the patterns covered will be Dependency Injection, Strategy, Registry and Service Locator.  I will provide examples using the Ruby Needle and Java Spring frameworks.
+			</p>
+			
+		</div>
+	</div>
+
+	<div class="divider2"></div>
+	
+	
 	<div class="post">
 		<h4>Todd Bleeker</h4>
 		<div class="contentarea">
@@ -82,8 +96,15 @@ ASP.Net Performance and Optimization - So, you’ve created a slick ASP.NET web 
 	<div class="post">
 		<h4>Chris Sutton</h4>
 		<div class="contentarea">
-
-			<p>MVC Framework</p>
+            <b>
+                More advanced ASP.Net MVC
+            </b>
+			<p>
+                So you’ve worked with the basics of ASP.Net MVC and you are ready to delve into more advanced topics. Chris will give quick overview of the ASP.Net MVC framework and why it is important. Then we will jump right in to integrating the jQuery javascript library with ASP.Net MVC. We’ll show how to do partial postbacks and how to make use of other advanced jQuery capabilities and effects. One of the benefits of ASP.Net MVC is that unit testing your page actions becomes much easier than in the current ASP.Net model. So we’ll look a look at the basics of unit testing your MVC sites. Last, we’ll talk about MVC deployment issues you may run into with IIS and how you can work around them.
+			</p>
+			<p>
+                Chris Sutton is a consultant and technical trainer in Eastern Iowa and has been working with ASP.Net since the November beta in 2002. He helped start SouthColorado.net, the Ineta group in Colorado Springs, CO, and has been involved running CRineta.org, the Ineta group in Cedar Rapids, IA, over the last three years. Chris has the MCPD:Enterprise certification and is working toward his MCITP: Business Intelligence certification. Getting to spend time with his wife and kids makes his tech work worthwhile. He also enjoys hiking and biking in the summer and snowshoeing in the winter.
+			</p>
 
 		</div>
 	</div>
@@ -181,8 +202,11 @@ ASP.Net Performance and Optimization - So, you’ve created a slick ASP.NET web 
 			
 		</div>
 	</div>
-
+	
+	
 	<div class="divider2"></div>
+
+
 	
 
 
