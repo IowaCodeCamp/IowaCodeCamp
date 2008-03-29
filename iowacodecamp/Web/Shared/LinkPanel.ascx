@@ -24,7 +24,7 @@
 <% if (!Page.User.Identity.IsAuthenticated){ %>
 
     <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignIn.aspx") %>'>Sign In</a></li>
-    <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Register.aspx") %>'>New user Registration</a></li>
+    <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Register.aspx") %>'>New User Registration</a></li>
     
 <% }
    else
