@@ -111,6 +111,12 @@
     <Content Include="Views\Layouts\Default.Master" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Model\IowaCodeCamp.Model.csproj">
+      <Project>{A18B0D8D-F16D-4751-9A8A-05727457411E}</Project>
+      <Name>IowaCodeCamp.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
