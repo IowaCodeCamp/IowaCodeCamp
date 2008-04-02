@@ -80,7 +80,7 @@
         				
 				        <asp:ContentPlaceHolder id="normalPH" runat="server">
 
-				            <img src="images/pic1.jpg" class="left" alt="A chinese lion statue" />
+				            <img src="/images/pic1.jpg" class="left" alt="A chinese lion statue" />
             				
 				            <p>Zenlike<sup>1.0</sup> is a free, lightweight, tableless, fluid W3C-compliant website design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design</a>. All photos came from <a href="http://www.pdphoto.org/">PDPhoto</a> and the background texture is from <a href="http://www.mayang.com/textures/">Mayang's texture site</a>. You're free to dissect, manipulate and use it to your heart's content. We only ask that you link back to <a href="http://www.nodethirtythree.com/">our site</a> in some way. If you find this design useful, feel free to let us know :)</p>
 				            <p>You can find more of our free work at this site or <a href="http://www.nodethirtythree.com/">our site</a>, or some of our commercial work on <a href="http://www.4templates.com/?aff=n33">4Templates.com</a>, a commercial website template site.</p>
@@ -136,7 +136,8 @@
                         <h4>Details</h4>
                         <ul style="padding-left:20px;">
                             <li>Saturday, May 3<sup>rd</sup></li>
-                            <li>Free</li>
+                            <li>8:00am - 5:30pm</li>
+                            <li>No cost</li>
                             <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>'>Want to sponsor</a>?</li>
                         </ul>
                     </div>
@@ -147,16 +148,14 @@
 
                         <h4>Where</h4>
                         <ul style="padding-left:20px;">
-                        <li>
-                        Conference Center at the <br />Old Capitol Mall
-                        </li>
+                        <li><a href='<%=ResolveUrl("~/Location.aspx") %>'>Conference Center at the <br />Old Capitol Mall</a></li>
                         <li>Iowa City, Iowa</li>
                         <li>
                             <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
-                            Map it
+                            Map
                             </a>
                         </li>
-                        <li><a href='<%=ResolveUrl("~/Location.aspx") %>'> More Information?</a></li>
+                        <li><a href='<%=ResolveUrl("~/Directions.aspx") %>'>Directions</a></li>
                         </ul>
                     </div>
                     
