@@ -55,7 +55,7 @@
 		    <ul>
 		        <li><a id="news" href='<%=ResolveUrl("~/News.aspx") %>'>News</a></li>
 			    <li><a id="sessions" href='<%=ResolveUrl("~/Sessions.aspx") %>'>Sessions</a></li>
-			    <li><a id="speakers" href='<%=ResolveUrl("~/Speakers.aspx") %>'>Speakers</a></li>
+			    <!--li><a id="speakers" href='<%=ResolveUrl("~/Speakers.aspx") %>'>Speakers</a></li-->
 			    <li><a id="schedule" href='<%=ResolveUrl("~/Schedule.aspx") %>'>Schedule</a></li>
 			    <li><a id="contributors" href='<%=ResolveUrl("~/Contributors.aspx") %>'>Contributors</a></li>
 			    <!--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li-->
@@ -72,7 +72,7 @@
 
 		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
 		        <div id="normalcontent">
-			        <h3>May 3, 2008 - Iowa's First Code Camp</h3><br />
+			        <!--h3>May 3, 2008 - Iowa's First Code Camp</h3><br /-->
 			        <%=this.Page.User.Identity.Name %>
 			        <div class="contentarea">
 			        
