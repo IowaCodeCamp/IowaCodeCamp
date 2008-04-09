@@ -3,33 +3,70 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h3>Iowa's First Code Camp</h3>
+
+            <div class="box">
+            <h2> Would you like to attend? Register here.</h2><br />
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                            ControlToValidate="Name" Display="Dynamic" TabIndex="1">*</asp:RequiredFieldValidator>
+                        <asp:TextBox ID="Name" runat="server"></asp:TextBox></td>
+                    <td rowspan="2" style="vertical-align:middle;padding-left:40px;"><br />Comments</td>
+                    <td style="vertical-align:middle;" rowspan="2">
+                        &nbsp;&nbsp;<asp:TextBox ID="Comments" Width="300px" runat="server" Rows="3" 
+                            TextMode="MultiLine" TabIndex="3"></asp:TextBox>
+                    </td>
+                    <td rowspan="2" style="padding-left:25px;">
+                        <br />
+                        <asp:Button ID="RegisterButton" runat="server" Text="Register" 
+                            onclick="RegisterButton_Click" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                            ControlToValidate="Email" Display="Dynamic">*</asp:RequiredFieldValidator>
+                        
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                            ControlToValidate="Email" Display="Dynamic"
+                            ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
+                        
+                        <asp:TextBox ID="Email" runat="server" TabIndex="2"></asp:TextBox>
+                        
+                    </td>
+                    
+                </tr>
+            </table>
+            *This is is how we will get our numbers for food and t-shirts, so please register 
+            to let us know you are coming.
+            </div>
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="primaryPH" Runat="Server">
 
     <div class="post">
-        <h4>Iowa Code Camp - Spring '08</h4>
+
         <div class="contentarea">
-        
-        
-            <p>
-            That's right! The ITS department at the University of Iowa, 
-            CRIneta and Iowa .NET user groups are joining forces to bring 
-            the first code camp to Iowa on May 3, 2008 at the University of 
-            Iowa Conference Center in Iowa City, IA!!
-            </p>
 
             <p>
-            You might be asking, <strong>what is a code camp</strong>? Well, here are some of the basic ideas:
+                That&#39;s right! <a href="http://crineta.org">CRIneta.org</a>, <a href="http://iadnug.org">Iowa .NET</a> and the ITS department at the University of Iowa are joining forces to bring the first code camp to Iowa on May 
+                3, 2008 at the University of Iowa Conference Center in Iowa City, IA!</p>
+
+            <p>
+                You might be asking, <strong>what's a code camp</strong>? Well, here are some of the basic ideas:
             </p>
             <ul style="padding-left:30px;">
                 <li>Community driven</li>
+                <li>High quality</li>
                 <li>Its for and by developers</li>
                 <li>No cost (for attendees)</li>
                 <li>All about code, not PowerPoint presentations</li>
-                <li>What you present on should be available to share with people who attend</li>
-                <li>Never during work hours, hence usually on Saturday</li>
+                <li>Source code and slides must be available to share with people who attend</li>
+                <li>Never during work hours - usually on Saturday</li>
             </ul>
             <br />
             <p>
@@ -45,7 +82,7 @@
             We are looking for developers who want to tell other developers about cool things they are doing. Topics they really care about.  If you are working with .Net, Ruby, PHP, Java, Rails, Python, &lt;fill in the blank&gt; and you want to tell other people about it, then consider submitting a speaking proposal.
             </p>
             <p>
-            If you want to be a speaker, Greg Wilson is who you need to talk to greg-at-solidrockstable-dot-com.  Just so you know we are already almost full for speakers already.
+            If you want to be a speaker, Greg Wilson is who you need to talk to greg-at-solidrockstable-dot-com.  Our speaker roster is <strong>full</strong>, you can submit a session, but it will go on the waitlist.
             </p>
             <p>
             If you want to help sponsor, contact Javier at javier-at-lozanotek-com.

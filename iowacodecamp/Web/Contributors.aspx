@@ -16,19 +16,20 @@
     <h4>Organizations</h4>
     <br />
     <ul style="padding-left:20px;">
-        <li><a href="http://www.its.uiowa.edu" target="_blank">University of Iowa: ITS</a></li>
+        
         <li><a href="http://www.microsoft.com" target="_blank">Microsoft</a></li>
         <li><a href="http://www.qci.com/" target="_blank">QCI</a></li>
-        <li>Tek Systems</li>
+        <li>Robert Half</li>
+        <li><a href="http://www.its.uiowa.edu" target="_blank">University of Iowa: ITS</a></li>
     </ul>
     <br />
 
     <h4>Individuals</h4>
     <br />
     <ul style="padding-left:20px;">
+        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Marketing</li>
         <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors</li>
         <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
-        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Marketing</li>
         <li>Greg Sohl - Event Planning</li>
         <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility/Website/Logistics</li>
     </ul>

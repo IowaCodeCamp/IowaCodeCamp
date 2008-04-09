@@ -11,7 +11,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     
     <iframe src="http://spreadsheets.google.com/pub?key=pIV2jdfPjsyply-UP1s0zGw" 
-    width="100%" height="450px">
+    width="100%" height="700px">
     </iframe>
     
 </asp:Content>
