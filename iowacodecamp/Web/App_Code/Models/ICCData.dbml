@@ -180,4 +180,13 @@
       <Association Name="User_UserEvent" Member="UserEvents" OtherKey="UserId" Type="UserEvent" />
     </Type>
   </Table>
+  <Table Name="dbo.CurrentAttendees" Member="CurrentAttendees">
+    <Type Name="CurrentAttendee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="MakeEmailPublic" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
 </Database>

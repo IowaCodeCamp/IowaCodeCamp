@@ -11,10 +11,14 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-public partial class Directions : System.Web.UI.Page
+public partial class ShowAttendees : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        if (!IsPostBack)
+        {
+            ShowAttendeesList.DataSource = Models.CurrentAttendee.List();
+            ShowAttendeesList.DataBind();
+        }
     }
 }
