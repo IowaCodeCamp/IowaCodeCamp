@@ -15,11 +15,17 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <h4>Organizations</h4>
     <br />
+       <!-- ASI Computer Systems<br />
+        <a href="http://www.asicomp.com">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/asi_comp.gif") %>' alt="ASI" />
+        </a>-->
     <ul style="padding-left:20px;">
-        
+
+        <li><a href="http://www.asicomp.com" target="_blank">ASI Computer Systems</a></li>
         <li><a href="http://www.microsoft.com" target="_blank">Microsoft</a></li>
         <li><a href="http://www.qci.com/" target="_blank">QCI</a></li>
         <li>Robert Half</li>
+        <li>Red Gate</li>
         <li><a href="http://www.its.uiowa.edu" target="_blank">University of Iowa: ITS</a></li>
     </ul>
     <br />
