@@ -53,8 +53,12 @@
         <div class="contentarea">
 
             <p>
-                That&#39;s right! <a href="http://crineta.org">CRIneta.org</a>, <a href="http://iadnug.org">Iowa .NET</a> and the ITS department at the University of Iowa are joining forces to bring the first code camp to Iowa on May 
-                3, 2008 at the University of Iowa Conference Center in Iowa City, IA!</p>
+                That&#39;s right! <a href="http://crineta.org" target="_blank">CRIneta.org</a>, 
+                <a href="http://iadnug.org" target="_blank">Iowa .NET</a> and 
+                the ITS department at the University of Iowa are joining forces 
+                to bring the first code camp to Iowa on May 3, 2008 
+                at the University of Iowa Conference Center in Iowa City, IA!
+            </p>
 
             <p>
                 You might be asking, <strong>what's a code camp</strong>? Well, here are some of the basic ideas:
