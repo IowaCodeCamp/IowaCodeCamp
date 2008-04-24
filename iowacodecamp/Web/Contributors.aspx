@@ -13,31 +13,52 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-    <h4>Organizations</h4>
-    <br />
-       <!-- ASI Computer Systems<br />
-        <a href="http://www.asicomp.com">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/asi_comp.gif") %>' alt="ASI" />
-        </a>-->
-    <ul style="padding-left:20px;">
+    <h3>Organizations</h3>
+    <br /><br />
+        <br />
+        <a href="http://www.asicomp.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/asi_logo.gif") %>' alt="ASI Computers" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.qci.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.rhi.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/rhi_logo.gif") %>' alt="Robert Half International" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.red-gate.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/redgate_logo.gif") %>' alt="Red Gate" />
+        </a>
+        <br /><br />
+        
+         <br />
+        <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" />
+        </a>
+        <br /><br />
+        
+        <strong>Thanks to <a href="http://www.its.uiowa.edu" target="_blank">ITS</a> at theUniversity of Iowa
+        for the use of the Old Capitol Mall Conference Center</strong>
+        <br />
+        
+    <br /><br />
 
-        <li><a href="http://www.asicomp.com" target="_blank">ASI Computer Systems</a></li>
-        <li><a href="http://www.microsoft.com" target="_blank">Microsoft</a></li>
-        <li><a href="http://www.qci.com/" target="_blank">QCI</a></li>
-        <li>Robert Half</li>
-        <li>Red Gate</li>
-        <li><a href="http://www.its.uiowa.edu" target="_blank">University of Iowa: ITS</a></li>
-    </ul>
+    <h3>Individuals</h3>
     <br />
-
-    <h4>Individuals</h4>
-    <br />
-    <ul style="padding-left:20px;">
+    <ul style="padding-left:20px;"> 
+        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
+        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility, Website and Logistics</li>
         <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Marketing</li>
         <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors</li>
-        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
-        <li>Greg Sohl - Event Planning</li>
-        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility/Website/Logistics</li>
+        <li>Greg Sohl - Event Planning and Logistics</li>
     </ul>
     <br />
 </asp:Content>
