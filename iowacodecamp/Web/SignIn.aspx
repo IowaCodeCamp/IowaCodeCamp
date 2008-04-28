@@ -7,7 +7,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <asp:Login ID="MainSignIn" runat="server" onload="MainSignIn_Load" UserNameRequiredErrorMessage="Email is required." UserNameLabelText="Email:">
     </asp:Login>
-    Need to <a href='<%=ResolveUrl("~/Register.aspx") %>'>Register</a>?
+    <!--Need to <a href='<%=ResolveUrl("~/Register.aspx") %>'>Register</a>?-->
+    Please <a href='<%=ResolveUrl("~/") %>'>Register</a> on the home page.
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
