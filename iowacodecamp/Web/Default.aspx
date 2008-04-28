@@ -26,7 +26,7 @@
                 </tr>
                 <tr>
                     <td>Email</td>
-                    <td>
+                    <td>&nbsp;
                         
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                             ControlToValidate="Email" Display="Dynamic">*</asp:RequiredFieldValidator>
@@ -44,6 +44,11 @@
             *This is is how we will get our numbers for food and t-shirts, so please register 
             to let us know you are coming.
             </div>
+            
+            <strong>
+	        Help spread the word.<br />
+	        <a href='<%=ResolveUrl("~/docs/flyer.pdf") %>' target="_blank">Download and print the flyer for your office or organization.</a> 
+            </strong>
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="primaryPH" Runat="Server">
@@ -126,8 +131,6 @@
     </asp:ListView>
 	
 	Want More <a href='<%=ResolveUrl("~/News.aspx") %>'>News</a>?
-	<br /><br />
-	Help spread the word and <a href='<%=ResolveUrl("~/Files/IowaCodeCampFlyer.pdf") %>' target="_blank">download the flyer</a> 
 	
 </asp:Content>
 
