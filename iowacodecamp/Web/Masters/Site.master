@@ -151,11 +151,11 @@
                         <ul style="padding-left:20px;">
                         <li><a href='<%=ResolveUrl("~/Location.aspx") %>'>Conference Center at the <br />Old Capitol Mall</a></li>
                         <li>Iowa City, Iowa</li>
-                        <li>
+                        <!--li>
                             <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
                             Map
                             </a>
-                        </li>
+                        </li-->
                         <li><a href='<%=ResolveUrl("~/Directions.aspx") %>'>Directions</a></li>
                         </ul>
                     </div>
