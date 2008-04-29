@@ -58,6 +58,12 @@
         <br /><br />
         
         <br />
+        <a href="http://www.jetbrains.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/jetbrains_logo.gif") %>' alt="Jet Brains" />
+        </a>
+        <br /><br />
+        
+        <br />
         <a href="http://www.magenic.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/magenic_logo.jpg") %>' alt="Magenic" />
         </a>
