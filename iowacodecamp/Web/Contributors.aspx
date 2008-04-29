@@ -29,7 +29,7 @@
         
         <br />
         <a href="http://www.rhi.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/rhi_logo.gif") %>' alt="Robert Half International" />
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/rhi_logo.jpg") %>' alt="Robert Half International" />
         </a>
         <br /><br />
         
@@ -39,9 +39,33 @@
         </a>
         <br /><br />
         
-         <br />
+        <br />
+        <a href="http://www.teksystems.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek SystemsS" />
+        </a>
+        <br /><br />
+        
+        <br />
         <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.infragistics.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.magenic.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/magenic_logo.jpg") %>' alt="Magenic" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.telerik.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/telerik_logo.gif") %>' alt="Telerik" />
         </a>
         <br /><br />
         
