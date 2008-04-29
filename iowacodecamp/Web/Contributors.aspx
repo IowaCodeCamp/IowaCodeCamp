@@ -13,6 +13,19 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+    <h3>Individuals</h3>
+    <br />
+    <ul style="padding-left:20px;"> 
+        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
+        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility, Website and Logistics</li>
+        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Marketing</li>
+        <li>Greg Sohl - Event Planning and Logistics</li>
+        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors</li>
+        <li>Tom Burns - Facility and Logistics</li>
+    </ul>
+    
+    <br /><br />
+
     <h3>Organizations</h3>
     <br /><br />
         <br />
@@ -40,14 +53,14 @@
         <br /><br />
         
         <br />
-        <a href="http://www.teksystems.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek SystemsS" />
+        <a href="http://www.mindsharp.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/mindsharp_logo.gif") %>' alt="MindSharp" />
         </a>
         <br /><br />
         
         <br />
-        <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" />
+        <a href="http://www.teksystems.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek SystemsS" />
         </a>
         <br /><br />
         
@@ -60,6 +73,12 @@
         <br />
         <a href="http://www.jetbrains.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/jetbrains_logo.gif") %>' alt="Jet Brains" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" />
         </a>
         <br /><br />
         
@@ -79,18 +98,7 @@
         for the use of the Old Capitol Mall Conference Center</strong>
         <br />
         
-    <br /><br />
 
-    <h3>Individuals</h3>
-    <br />
-    <ul style="padding-left:20px;"> 
-        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
-        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility, Website and Logistics</li>
-        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Marketing</li>
-        <li>Greg Sohl - Event Planning and Logistics</li>
-        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors</li>
-        <li>Tom Burns - Facility and Logistics</li>
-    </ul>
     <br />
 </asp:Content>
 
