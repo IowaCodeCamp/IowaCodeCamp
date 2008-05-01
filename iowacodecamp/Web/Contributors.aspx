@@ -59,6 +59,12 @@
         <br /><br />
         
         <br />
+        <a href="http://www.pearson.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/pearson_logo.jpg") %>' alt="Pearson" />
+        </a>
+        <br /><br />
+        
+        <br />
         <a href="http://www.cizer.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/cizer_logo.jpg") %>' alt="Cizer" />
         </a>
@@ -100,7 +106,7 @@
         </a>
         <br /><br />
         
-        <strong>Thanks to <a href="http://www.its.uiowa.edu" target="_blank">ITS</a> at theUniversity of Iowa
+        <strong>Thanks to <a href="http://www.its.uiowa.edu" target="_blank">ITS</a> at the University of Iowa
         for the use of the Old Capitol Mall Conference Center</strong>
         <br />
         

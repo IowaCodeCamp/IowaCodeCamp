@@ -63,7 +63,7 @@
 			    <li><a id="directions" href='<%=ResolveUrl("~/Directions.aspx") %>'>Directions</a></li>
 			    <li><a id="about" href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
 		    </ul>
-		    <div style="float:right;"><br /><b><%=Models.Event.DaysTillNextEvent%></b> days left</div>
+		    <div style="float:right;"><br /><b><%=Models.Event.DaysLeftMessage%></b></div>
 	    </div>
 	    <div id="menubottom"></div>
 
