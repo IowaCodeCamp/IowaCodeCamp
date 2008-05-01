@@ -59,6 +59,12 @@
         <br /><br />
         
         <br />
+        <a href="http://www.cizer.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/cizer_logo.jpg") %>' alt="Cizer" />
+        </a>
+        <br /><br />
+        
+        <br />
         <a href="http://www.teksystems.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek SystemsS" />
         </a>
