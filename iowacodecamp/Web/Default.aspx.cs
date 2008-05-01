@@ -21,12 +21,12 @@ public partial class _Default : System.Web.UI.Page
             viewNews.DataBind();
         }
     }
-    protected void RegisterButton_Click(object sender, EventArgs e)
-    {
-        if (!Page.IsValid)
-            return;
+    //protected void RegisterButton_Click(object sender, EventArgs e)
+    //{
+    //    if (!Page.IsValid)
+    //        return;
 
-        if (Models.CurrentAttendee.Add(Name.Text, Email.Text, Comments.Text))
-            Response.Redirect("~/ShowAttendees.aspx");
-    }
+    //    if (Models.CurrentAttendee.Add(Name.Text, Email.Text, Comments.Text))
+    //        Response.Redirect("~/ShowAttendees.aspx");
+    //}
 }
