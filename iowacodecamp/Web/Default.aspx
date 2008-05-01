@@ -15,8 +15,8 @@
         </div>
         
         <strong>
-        Help spread the word.<br />
-        <a href='<%=ResolveUrl("~/docs/flyer.pdf") %>' target="_blank">Download and print the flyer for your office or organization.</a> 
+            <a href='<%=ResolveUrl("~/contributors.aspx") %>'>Check out</a> 
+            all of the companies who are <a href='<%=ResolveUrl("~/contributors.aspx") %>'>contributing</a> to make this event happen.
         </strong>
 </asp:Content>
 

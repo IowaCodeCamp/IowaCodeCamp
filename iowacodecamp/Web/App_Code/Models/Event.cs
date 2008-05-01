@@ -23,9 +23,25 @@ namespace Models
             get
             {
                 DateTime today = DateTime.Now;
-                int days = (Event.GetNextEvent().StartOn - today).Days;
+                int days = (Event.GetNextEvent().EndOn.Date.AddDays(1) - today).Days;
                 if (days < 0) return null;
                 return days;
+            }
+        }
+
+        public static string DaysLeftMessage
+        {
+            get
+            {
+                string sMessage = "{0} {1} left";
+                if (DaysTillNextEvent.GetValueOrDefault() == 1)
+                    return string.Format(sMessage, DaysTillNextEvent.GetValueOrDefault(), "day");
+                else if (DaysTillNextEvent.GetValueOrDefault() == 0)
+                    return "Iowa Code Camp is Today!";
+                else if (DaysTillNextEvent.GetValueOrDefault() < 0)
+                    return "We're planning the next event!";
+                else
+                    return string.Format(sMessage, DaysTillNextEvent.GetValueOrDefault(), "days");
             }
         }
 
