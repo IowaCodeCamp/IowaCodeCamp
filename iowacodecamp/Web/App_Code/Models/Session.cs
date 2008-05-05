@@ -43,7 +43,11 @@ namespace Models
         {
             var ctx = new ICCData();
 
-            int eId = Event.GetNextEvent().Id;
+            int eId = 0;
+            Event ev = Event.GetNextEvent();
+            if (ev != null)
+                eId = ev.Id;
+
 
             var sessions = from s in ctx.Sessions
                            where s.IsApproved == false && s.EventId == eId
@@ -57,7 +61,11 @@ namespace Models
         {
             var ctx = new ICCData();
 
-            int eId = Event.GetNextEvent().Id;
+            int eId = 0;
+            Event ev = Event.GetNextEvent();
+            if (ev != null)
+                eId = ev.Id;           
+            
 
             var sessions = from s in ctx.Sessions
                            where s.IsApproved && s.EventId == eId
