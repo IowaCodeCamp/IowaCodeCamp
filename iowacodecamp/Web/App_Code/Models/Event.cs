@@ -23,8 +23,11 @@ namespace Models
             get
             {
                 DateTime today = DateTime.Now;
-                int days = (Event.GetNextEvent().EndOn.Date.AddDays(1) - today).Days;
-                if (days < 0) return null;
+                Event CurrEvent = Event.GetNextEvent();
+                int days = -1;
+                if (CurrEvent != null)
+                    days = (Event.GetNextEvent().EndOn.Date.AddDays(1) - today).Days;
+                //if (days < 0) return -1;
                 return days;
             }
         }
@@ -33,12 +36,14 @@ namespace Models
         {
             get
             {
+                int NumberOfDays = DaysTillNextEvent.GetValueOrDefault();
+
                 string sMessage = "{0} {1} left";
-                if (DaysTillNextEvent.GetValueOrDefault() == 1)
+                if (NumberOfDays == 1)
                     return string.Format(sMessage, DaysTillNextEvent.GetValueOrDefault(), "day");
-                else if (DaysTillNextEvent.GetValueOrDefault() == 0)
+                else if (NumberOfDays == 0)
                     return "Iowa Code Camp is Today!";
-                else if (DaysTillNextEvent.GetValueOrDefault() < 0)
+                else if (NumberOfDays < 0)
                     return "We're planning the next event!";
                 else
                     return string.Format(sMessage, DaysTillNextEvent.GetValueOrDefault(), "days");
