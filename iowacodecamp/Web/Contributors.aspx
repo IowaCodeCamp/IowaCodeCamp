@@ -16,12 +16,13 @@
     <h3>Individuals</h3>
     <br />
     <ul style="padding-left:20px;"> 
+        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors and MC</li>
+        <li>Tom Burns - Facility and Logistics</li> 
         <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
         <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility, Website and Logistics</li>
         <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Marketing</li>
         <li>Greg Sohl - Event Planning and Logistics</li>
-        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors</li>
-        <li>Tom Burns - Facility and Logistics</li>
+
     </ul>
     
     <br /><br />
@@ -79,6 +80,12 @@
         <br />
         <a href="http://www.infragistics.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" />
+        </a>
+        <br /><br 
+        
+        <br />
+        <a href="http://www.neocomputers.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/neo_logo.jpg") %>' alt="Neo Computers" />
         </a>
         <br /><br />
         
