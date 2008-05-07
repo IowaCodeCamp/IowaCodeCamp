@@ -85,7 +85,7 @@
         
         <br />
         <a href="http://www.neocomputers.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/neo_logo.jpg") %>' alt="Neo Computers" />
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/neo_logo.png") %>' alt="Neo Computers" />
         </a>
         <br /><br />
         
