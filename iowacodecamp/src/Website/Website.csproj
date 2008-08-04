@@ -131,6 +131,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\js\jquery-1.2.6.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
