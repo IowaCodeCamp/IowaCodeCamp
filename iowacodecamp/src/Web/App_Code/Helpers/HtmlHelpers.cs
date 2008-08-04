@@ -1,23 +1,13 @@
 ﻿using System;
-using System.Data;
-using System.Configuration;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.HtmlControls;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Xml.Linq;
 
 /// <summary>
 /// Html Helper/Extension methods
 /// </summary>
 public static class HtmlHelpers
 {
-	public static string ToHumanOrdinalized(this DateTime Curr, bool IsHtml)
-	{
-        int num = int.Parse(Curr.Day.ToString()[Curr.Day.ToString().Length-1].ToString());
+    public static string ToHumanOrdinalized(this DateTime Curr, bool IsHtml)
+    {
+        int num = int.Parse(Curr.Day.ToString()[Curr.Day.ToString().Length - 1].ToString());
         string ord = "";
         switch (num)
         {
@@ -41,10 +31,10 @@ public static class HtmlHelpers
                 break;
         }
 
-        ord = (IsHtml) ? string.Format("<sup>{0}</sup>", ord): ord;
+        ord = (IsHtml) ? string.Format("<sup>{0}</sup>", ord) : ord;
 
         return Curr.ToString("MMMM d") + GetOrdinal(Curr.Day) + Curr.ToString(", yyyy");
-	}
+    }
 
     public static string ToHumanOrdinalized(this DateTime Curr)
     {
@@ -65,9 +55,9 @@ public static class HtmlHelpers
     private static string GetOrdinal(int iNumber)
     {
         string suf = "th";
-        if (((iNumber % 100) / 10) != 1) //Handles 11, 12 & 13.  Only equals one if iNumber has a one in the ten digit.
+        if (((iNumber%100)/10) != 1) //Handles 11, 12 & 13.  Only equals one if iNumber has a one in the ten digit.
         {
-            switch (iNumber % 10) //Returns digit in the 1 column to evaluate.
+            switch (iNumber%10) //Returns digit in the 1 column to evaluate.
             {
                 case 1:
                     suf = "st";
@@ -82,5 +72,4 @@ public static class HtmlHelpers
         }
         return /*iNumber.ToString() +*/ suf;
     }
-
 }

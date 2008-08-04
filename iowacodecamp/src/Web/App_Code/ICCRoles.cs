@@ -1,36 +1,23 @@
 ﻿using System;
-using System.Data;
-using System.Configuration;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.HtmlControls;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Xml.Linq;
 using System.Collections;
+using System.Linq;
+using System.Web.Security;
+using Models;
 
 /// <summary>
 /// Summary description for ICCRoles
 /// </summary>
 public class ICCRoles : RoleProvider
 {
+    public override string ApplicationName
+    {
+        get { throw new NotImplementedException(); }
+        set { throw new NotImplementedException(); }
+    }
+
     public override void AddUsersToRoles(string[] usernames, string[] roleNames)
     {
         throw new NotImplementedException();
-    }
-
-    public override string ApplicationName
-    {
-        get
-        {
-            throw new NotImplementedException();
-        }
-        set
-        {
-            throw new NotImplementedException();
-        }
     }
 
     public override void CreateRole(string roleName)
@@ -56,27 +43,24 @@ public class ICCRoles : RoleProvider
     public override string[] GetRolesForUser(string email)
     {
         email = email ?? "";
-        Models.ICCData ctx = new Models.ICCData();
+        var ctx = new ICCData();
         //get userid
         int MyUserID = ctx.Users.Where(u => u.Email == email).FirstOrDefault().Id;
 
         //get user roles
-        var UserRoles = ctx.UserRoles.Where(ur => ur.UserId == MyUserID);
+        IQueryable<UserRole> UserRoles = ctx.UserRoles.Where(ur => ur.UserId == MyUserID);
 
         //load role ids into arraylist
-        ArrayList alUserRoles = new ArrayList(UserRoles.Count());
+        var alUserRoles = new ArrayList(UserRoles.Count());
         UserRoles.ToList().ForEach(ur => { alUserRoles.Add(ur.RoleId); });
 
         //get roles for user based on id
-        var roles = (from r in ctx.Roles select r).AsQueryable();
-        ArrayList alRoles = new ArrayList();
-        roles.ToList().ForEach(r=>
-        {
-            if (alUserRoles.Contains(r.Id)) alRoles.Add(r.Name);
-        });
+        IQueryable<Role> roles = (from r in ctx.Roles select r).AsQueryable();
+        var alRoles = new ArrayList();
+        roles.ToList().ForEach(r => { if (alUserRoles.Contains(r.Id)) alRoles.Add(r.Name); });
 
         //convert roles to string array
-        return alRoles.ToArray(typeof(string)) as string[];
+        return alRoles.ToArray(typeof (string)) as string[];
     }
 
     public override string[] GetUsersInRole(string roleName)
