@@ -45,7 +45,7 @@ public class UrlModule : IHttpModule
 	{
 		string rule = ConfigurationManager.AppSettings.Get("WwwRule");
 
-		HttpContext context = (sender as HttpApplication).Context;
+		var context = (sender as HttpApplication).Context;
 		if (context.Request.HttpMethod != "GET" || context.Request.IsLocal)
 			return;
 
