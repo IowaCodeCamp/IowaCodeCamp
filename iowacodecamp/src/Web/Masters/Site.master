@@ -8,7 +8,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Iowa Code Camp</title>
-    <meta name="keywords" content="Iowa, Iowa City, Chris Sutton, Javier Lozano, Bryan Sampica, Greg Wilson, Greg Sohl, Coralville, Des Moines, Cedar Rapids" />
+    <meta name="keywords" content="Iowa, Iowa City, Chris Sutton, Javier Lozano, Bryan Sampica, Greg Wilson, Greg Sohl, Thomas Burns, Coralville, Des Moines, Cedar Rapids" />
     <meta name="description" content="Site for code camps across Iowa" />
     <link rel="stylesheet" type="text/css" href="../Styles/Default.css" />
     
@@ -43,7 +43,7 @@
 	    </div>
 	    
 	    <div id="headercontentright">
-	        <h1>Spring '08</h1>
+	        <h1>Fall 2008</h1>
 	    </div>
 
         <!--uncomment this to show a picture banner-->
@@ -74,7 +74,7 @@
 		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
 		        <div id="normalcontent">
 			        <!--h3>May 3, 2008 - Iowa's First Code Camp</h3><br /-->
-			        <%=this.Page.User.Identity.Name %>
+			        <%=Page.User.Identity.Name %>
 			        <div class="contentarea">
 			        
 				        <!-- Normal content area start -->
@@ -136,7 +136,7 @@
                     <div class="box">
                         <h4>Details</h4>
                         <ul style="padding-left:20px;">
-                            <li>Saturday, May 3<sup>rd</sup></li>
+                            <li>Saturday, November 8<sup>th</sup></li>
                             <li>8:00am - 5:30pm</li>
                             <li>No cost</li>
                             <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>'>Want to sponsor</a>?</li>
@@ -149,8 +149,8 @@
 
                         <h4>Where</h4>
                         <ul style="padding-left:20px;">
-                        <li><a href='<%=ResolveUrl("~/Location.aspx") %>'>Conference Center at the <br />Old Capitol Mall</a></li>
-                        <li>Iowa City, Iowa</li>
+                        <li>DMACC<a href='<%=ResolveUrl("~/Location.aspx") %>'></a></li>
+                        <li>Des Moines, Iowa</li>
                         <!--li>
                             <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
                             Map
@@ -164,9 +164,8 @@
 			            <h4>Links</h4>
 			            <div class="contentarea">
 				            <ul class="linklist">
-				                <li><a href="http://www.its.uiowa.edu" target="_blank">University of Iowa : ITS</a></li>
-				                <li><a href="http://crineta.org" target="_blank">CRIneta</a></li>
 				                <li><a href="http://iadnug.org" target="_blank">Iowa .Net User Group</a></li>
+				                <li><a href="http://crineta.org" target="_blank">CRIneta</a></li>
 				            </ul>
 				            <br />
 			            </div>
