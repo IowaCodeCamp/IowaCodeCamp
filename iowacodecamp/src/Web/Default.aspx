@@ -5,13 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
         <div class="box">
-            <h2> Registration is full!</h2><br />
-            If you want to be added to the waiting list please 
-            send an email to <strong>gregsohl [a-t] gmail d0t com</strong> 
-            and copy/cc <strong>christophersutton [a-t] yahoo d0t com</strong> saying you would like to attend.
+            <h2> Registration will open September 1st</h2><br />
+            Check back soon.
             <br /><br />
-            If you registered with the original registration system, your name won't show up on the main 
-            attendee page, but you are still fully registered for the event. 
         </div>
         
         <strong>
