@@ -5,8 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
         <div class="box">
-            <h2> Registration will open September 1st</h2><br />
-            Check back soon.
+            <h2> Registration will open September 15th</h2><br />
             <br /><br />
         </div>
         
