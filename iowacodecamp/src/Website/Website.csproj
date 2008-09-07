@@ -126,7 +126,6 @@
     </Compile>
     <Compile Include="Views\Shared\Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Shared\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -149,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\js\jquery-1.2.6.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Layouts\Default.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
