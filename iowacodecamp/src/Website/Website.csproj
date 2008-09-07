@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D2F9F501-C4B8-4C30-9E94-7F9908919207}</ProjectGuid>
     <ProjectTypeGuids>{603c0e0b-db56-11dc-be95-000d561079b0};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -32,7 +32,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.Web.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\aspnetmvc\Microsoft.Web.Mvc.dll</HintPath>
+      <HintPath>..\..\lib\aspnetmvc\Microsoft.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -42,17 +42,19 @@
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Web.Abstractions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Abstractions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\aspnetmvc\System.Web.Abstractions.dll</HintPath>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.Abstractions.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\aspnetmvc\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Routing, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Routing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\aspnetmvc\System.Web.Routing.dll</HintPath>
+      <HintPath>..\..\lib\aspnetmvc\System.Web.Routing.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -131,14 +133,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\js\jquery-1.2.6.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\MicrosoftAjax.js" />
-    <Content Include="Content\MicrosoftAjax.debug.js" />
-    <Content Include="Content\MicrosoftMvcAjax.debug.js" />
     <Content Include="Views\Account\ChangePassword.aspx" />
     <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
     <Content Include="Views\Account\Login.aspx" />
@@ -148,6 +146,9 @@
     <Content Include="Views\Shared\Error.aspx" />
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\js\jquery-1.2.6.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -172,6 +173,9 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
