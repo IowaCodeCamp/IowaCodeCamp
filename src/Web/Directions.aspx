@@ -9,31 +9,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-    <h3>Directions to Iowa Code Camp</h3>
+    <h3>Directions to Iowa Code Camp - DMACC West</h3>
     <br /><br />
     
-    Click <a href='<%=ResolveUrl("~/docs/Directions_to_Iowa_Code_Camp.doc") %>' target="_blank">here</a> 
-    for directions to the Code Camp. Warning, this is a 3 meg file. 
-    <br /><br />
-    Thanks to Tom Burns for putting these excellent directions together.
+    Click <a href='http://www.dmacc.cc.ia.us/west/map.asp' target="_blank">here</a> 
+    for directions to the Code Camp at the DMACC West Campus. 
     <br /><br /><br />
 
     
     <h3>Parking and Street Address</h3><br /><br />
-    Using the parking garage that is attached to the Old Capitol Mall will be the easiest way to park.  
-    If you <strong>park on the second level</strong> you can walk right over to the Conference Center in the
-    attached building.
+    Parking is freely available at the DMACC West facility.
     <br /><br />
-    Here is the address and a map link:<br /><br />
-    <div style="padding-left:40px;">
-    <a target="_blank" href="http://maps.google.com/maps?q=260+S+Capitol+St,+Iowa+City,+IA+52240,+USA">
-    260 S Capitol Dr
-    </a>
-    <br /> Iowa City, IA
-    </div>
-    <br /><br />
-    If you park downtown Iowa City and are walking over to the Old Capitol Mall then go to 
-    the main entrance on South Clinton Street.
     
 </asp:Content>
 

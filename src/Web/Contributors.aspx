@@ -17,7 +17,6 @@
     <br />
     <ul style="padding-left:20px;"> 
         <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors and MC</li>
-        <li>Tom Burns - Facility and Logistics</li> 
         <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
         <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility, Website and Logistics</li>
         <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Marketing</li>
@@ -29,6 +28,7 @@
 
     <h3>Organizations</h3>
     <br /><br />
+        <!--
         <br />
         <a href="http://www.asicomp.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/asi_logo.gif") %>' alt="ASI Computers" />
@@ -112,6 +112,8 @@
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/telerik_logo.gif") %>' alt="Telerik" />
         </a>
         <br /><br />
+        
+        -->
         
         <strong>Thanks to <a href="http://www.its.uiowa.edu" target="_blank">ITS</a> at the University of Iowa
         for the use of the Old Capitol Mall Conference Center</strong>
