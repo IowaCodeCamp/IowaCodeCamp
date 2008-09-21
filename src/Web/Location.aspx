@@ -24,51 +24,53 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
+<div id="VirtualTour">
+<a href="http://www.dmacc.cc.ia.us/west/campus.asp" target="_blank">DMACC West Virtual Tour</a>
+<br />
+
+<div align="center" style="margin:10px 0px 10px 20px;">
+<OBJECT codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+								height="507" hspace="0" width="533" align="left" vspace="6" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT ID="Object1">
+								<PARAM NAME="_cx" VALUE="4424">
+								<PARAM NAME="_cy" VALUE="4233">
+								<PARAM NAME="FlashVars" VALUE="4424">
+								<PARAM NAME="Movie" VALUE="campus.swf">
+								<PARAM NAME="Src" VALUE="http://www.dmacc.cc.ia.us/west/flash/campus.swf">
+								<PARAM NAME="WMode" VALUE="Transparent">
+
+								<PARAM NAME="Play" VALUE="-1">
+								<PARAM NAME="Loop" VALUE="-1">
+								<PARAM NAME="Quality" VALUE="High">
+								<PARAM NAME="SAlign" VALUE="">
+								<PARAM NAME="Menu" VALUE="-1">
+								<PARAM NAME="Base" VALUE="">
+								<PARAM NAME="AllowScriptAccess" VALUE="always">
+								<PARAM NAME="Scale" VALUE="ShowAll">
+								<PARAM NAME="DeviceFont" VALUE="0">
+
+								<PARAM NAME="EmbedMovie" VALUE="0">
+								<PARAM NAME="BGColor" VALUE="">
+								<PARAM NAME="SWRemote" VALUE="">
+								<embed src="flash/campus.swf" width="533" height="507" hspace="0" vspace="6" align="left" quality="high"
+									wmode="transparent" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
+									type="application/x-shockwave-flash"> </embed>
+							</OBJECT>
+							<script type="text/javascript" src="includes/ieupdate.js"></script>
+</div>
+</div>
+
+
+
+
 <div id="OutsidePhotos">
     
-    <h4>Here are a couple of pictures our facility</h4>
-    <br /><br />
-    
-    <div>
-        <img src='<%=ResolveUrl("~/Images/conf_outside_upclose.jpg") %>' alt="Upclose of Conference Facility Sign" />
-        <div>The University of Iowa ITS department is letting us use their conference center.</div>
-    </div>
 
-    <br />
-    
-    <div>
-        <img src='<%=ResolveUrl("~/Images/conf_outside_palm.jpg") %>' alt="Outside of Conference Facility" />
-        <div>The conference center is on the 2nd floor of the Old Capitol Mall downtown Iowa City.</div>
-    </div>
  
 </div>
 
 <div id="InsidePhotos">
     <br />
-    <h4>Here is what it looks like inside</h4>
-    <br />
-    <br />
-    
-    <div>
-        <img src='<%=ResolveUrl("~/Images/conf_common_area.jpg") %>' alt="Common Area" />
-        <div>This is the common area between the four meeting rooms.</div>
-    </div>
-    
-    <br />
-    
-    <div>
-        <img src='<%=ResolveUrl("~/Images/conf_seminar_room.jpg") %>' alt="Seminar Room" />
-        <div>The Seminar Room</div>
-    </div>
-    
-    <br />
-    
-    <br />
-    
-    <div>
-        <img src='<%=ResolveUrl("~/Images/conf_common_area_other_side.jpg") %>' alt="Common Area Other Direction" />
-        <div>Another shot of the common area</div>
-    </div>
+
     
     
 </div>
