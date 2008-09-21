@@ -5,8 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
         <div class="box">
-            <h2> Registration will open September 15th</h2><br />
-            <br /><br />
+            <h2> Registration will open soon</h2>
+            
         </div>
         
         <strong>
@@ -22,11 +22,11 @@
         <div class="contentarea">
 
             <p>
-                That&#39;s right! <a href="http://crineta.org" target="_blank">CRIneta.org</a>, 
                 <a href="http://iadnug.org" target="_blank">Iowa .NET</a> and 
-                the ITS department at the University of Iowa are joining forces 
-                to bring the first code camp to Iowa on May 3, 2008 
-                at the University of Iowa Conference Center in Iowa City, IA!
+                <a href="http://crineta.org" target="_blank">CRIneta.org</a> 
+                are hosting the second code camp to Iowa on November 8, 2008 
+                at <a href="http://www.dmacc.cc.ia.us/west/" target="_blank">DMACC West</a> 
+                in <a href="http://www.dmacc.cc.ia.us/west/map.asp" target="_blank">West Des Moines</a>.
             </p>
 
             <p>
@@ -55,13 +55,13 @@
             We are looking for developers who want to tell other developers about cool things they are doing. Topics they really care about.  If you are working with .Net, Ruby, PHP, Java, Rails, Python, &lt;fill in the blank&gt; and you want to tell other people about it, then consider submitting a speaking proposal.
             </p>
             <p>
-            If you want to be a speaker, Greg Wilson is who you need to talk to greg-at-solidrockstable-dot-com.  Our speaker roster is <strong>full</strong>, you can submit a session, but it will go on the waitlist.
+            If you want to be a speaker, Greg Wilson is who you need to talk to greg-at-solidrockstable-dot-com.
             </p>
             <p>
             If you want to help sponsor, contact Javier at javier-at-lozanotek-com.
             </p>
             <p>
-            Let Chris know if you have any other questions at christophersutton-at-yahoo-dot-com.
+            Let Chris know if you have any other questions at bdsutton-at-gmail-dot-com.
             </p>
             <p>
             Remember this an event FOR developers BY developers, so we need you to help us make it succeed!
@@ -74,7 +74,7 @@
 
     <div class="divider2"></div>
 
-    <asp:ListView ID="viewNews" runat="server">
+    <asp:ListView ID="viewNews" runat="server" Visible="false">
         <LayoutTemplate>
         <div id="itemPlaceholder" runat="server" />
         </LayoutTemplate>
