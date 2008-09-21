@@ -94,7 +94,7 @@
         </ItemTemplate>
     </asp:ListView>
 	
-	Want More <a href='<%=ResolveUrl("~/News.aspx") %>'>News</a>?
+	<!-- Want More <a href='<%=ResolveUrl("~/News.aspx") %>'>News</a>? -->
 	
 </asp:Content>
 
