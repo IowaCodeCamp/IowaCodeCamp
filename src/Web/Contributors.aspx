@@ -115,8 +115,8 @@
         
         -->
         
-        <strong>Thanks to <a href="http://www.its.uiowa.edu" target="_blank">ITS</a> at the University of Iowa
-        for the use of the Old Capitol Mall Conference Center</strong>
+        <strong>Thanks to <a href="http://www.dmacc.cc.ia.us/west/" target="_blank">DMACC West</a>
+        for the use of their facility</strong>
         <br />
         
 
