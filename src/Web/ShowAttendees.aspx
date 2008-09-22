@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
     $(document).ready(function()
-    {$("#attendess").addClass("active");});
+    {$("#attendees").addClass("active");});
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
