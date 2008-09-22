@@ -30,7 +30,7 @@
 
 <div>
     This is just for fun, but if you are into Facebook 
-    you can <a href="http://www.facebook.com/event.php?eid=6513503655">join the group</a>.
+    you can <a href="http://www.new.facebook.com/event.php?eid=31407918833">join the group</a>.
 </div>
 
 <br />
@@ -55,7 +55,7 @@ If you are interested in the philosopy behind Code Camps read
 </div>
 <br />
 <div>
-    The hosting is at <a href="http://discountasp.net">DiscountASP.net</a> and the domain names are 
+    The hosting is at <a href="http://webhost4life.com">Web Host 4 Life</a> and the domain names are 
     registered through <a href="http://godaddy.com">Go Daddy</a>.
 </div>
 <br />
