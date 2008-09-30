@@ -4147,9 +4147,9 @@ namespace Models
 		
 		private string _Comments;
 		
-		private bool _MakeEmailPublic;
+		private bool _MakePrivate;
 		
-		private System.Nullable<int> _EventID;
+		private int _EventID;
 		
 		private EntityRef<Event> _Event;
 		
@@ -4165,9 +4165,9 @@ namespace Models
     partial void OnEmailChanged();
     partial void OnCommentsChanging(string value);
     partial void OnCommentsChanged();
-    partial void OnMakeEmailPublicChanging(bool value);
-    partial void OnMakeEmailPublicChanged();
-    partial void OnEventIDChanging(System.Nullable<int> value);
+    partial void OnMakePrivateChanging(bool value);
+    partial void OnMakePrivateChanged();
+    partial void OnEventIDChanging(int value);
     partial void OnEventIDChanged();
     #endregion
 		
@@ -4257,28 +4257,28 @@ namespace Models
 			}
 		}
 		
-		[Column(Storage="_MakeEmailPublic", DbType="Bit NOT NULL")]
-		public bool MakeEmailPublic
+		[Column(Storage="_MakePrivate", DbType="Bit NOT NULL")]
+		public bool MakePrivate
 		{
 			get
 			{
-				return this._MakeEmailPublic;
+				return this._MakePrivate;
 			}
 			set
 			{
-				if ((this._MakeEmailPublic != value))
+				if ((this._MakePrivate != value))
 				{
-					this.OnMakeEmailPublicChanging(value);
+					this.OnMakePrivateChanging(value);
 					this.SendPropertyChanging();
-					this._MakeEmailPublic = value;
-					this.SendPropertyChanged("MakeEmailPublic");
-					this.OnMakeEmailPublicChanged();
+					this._MakePrivate = value;
+					this.SendPropertyChanged("MakePrivate");
+					this.OnMakePrivateChanged();
 				}
 			}
 		}
 		
-		[Column(Storage="_EventID", DbType="Int")]
-		public System.Nullable<int> EventID
+		[Column(Storage="_EventID", DbType="Int NOT NULL")]
+		public int EventID
 		{
 			get
 			{
@@ -4328,7 +4328,7 @@ namespace Models
 					}
 					else
 					{
-						this._EventID = default(Nullable<int>);
+						this._EventID = default(int);
 					}
 					this.SendPropertyChanged("Event");
 				}
