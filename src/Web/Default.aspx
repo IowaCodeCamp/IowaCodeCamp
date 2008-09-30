@@ -55,17 +55,16 @@
             We are looking for developers who want to tell other developers about cool things they are doing. Topics they really care about.  If you are working with .Net, Ruby, PHP, Java, Rails, Python, &lt;fill in the blank&gt; and you want to tell other people about it, then consider submitting a speaking proposal.
             </p>
             <p>
-            If you want to be a speaker, Greg Wilson is who you need to talk to greg-at-solidrockstable-dot-com.
+            If you want to be a speaker, contact Greg Wilson at <strong>speakers [at] iowacodecamp d0t com</strong>.
             </p>
             <p>
-            If you want to help sponsor, contact Javier at javier-at-lozanotek-com.
+            If you want to help sponsor, contact Bryan Sampica at <strong>sponsors [at] iowacodecamp d0t com</strong>.
             </p>
             <p>
-            Let Chris know if you have any other questions at bdsutton-at-gmail-dot-com.
+            Let Chris Sutton know if you have any other questions at <strong>info at iowacodecamp dot com</strong>.
             </p>
             <p>
             Remember this an event FOR developers BY developers, so we need you to help us make it succeed!
-            Our site is IowaCodeCamp.com if you want to keep up with what happens.
             </p>
             
         </div>
