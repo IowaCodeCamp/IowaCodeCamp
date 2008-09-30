@@ -12,7 +12,7 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="User_NewsItem" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="User_NewsItem" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.UserRoles" Member="UserRoles">
@@ -25,8 +25,8 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Role_UserRole" Member="Role" ThisKey="RoleId" Type="Role" IsForeignKey="true" />
-      <Association Name="User_UserRole" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="Role_UserRole" Member="Role" ThisKey="RoleId" OtherKey="Id" Type="Role" IsForeignKey="true" />
+      <Association Name="User_UserRole" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Roles" Member="Roles">
@@ -39,7 +39,7 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Role_UserRole" Member="UserRoles" OtherKey="RoleId" Type="UserRole" />
+      <Association Name="Role_UserRole" Member="UserRoles" ThisKey="Id" OtherKey="RoleId" Type="UserRole" />
     </Type>
   </Table>
   <Table Name="dbo.Events" Member="Events">
@@ -58,10 +58,11 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Event_Timeslot" Member="Timeslots" OtherKey="EventId" Type="Timeslot" />
-      <Association Name="Event_Room" Member="Rooms" OtherKey="EventId" Type="Room" />
-      <Association Name="Event_UserEvent" Member="UserEvents" OtherKey="EventId" Type="UserEvent" />
-      <Association Name="Event_Session" Member="Sessions" OtherKey="EventId" Type="Session" />
+      <Association Name="Event_Timeslot" Member="Timeslots" ThisKey="Id" OtherKey="EventId" Type="Timeslot" />
+      <Association Name="Event_Room" Member="Rooms" ThisKey="Id" OtherKey="EventId" Type="Room" />
+      <Association Name="Event_UserEvent" Member="UserEvents" ThisKey="Id" OtherKey="EventId" Type="UserEvent" />
+      <Association Name="Event_Session" Member="Sessions" ThisKey="Id" OtherKey="EventId" Type="Session" />
+      <Association Name="Event_CurrentAttendee" Member="CurrentAttendees" ThisKey="Id" OtherKey="EventID" Type="CurrentAttendee" />
     </Type>
   </Table>
   <Table Name="dbo.Attendees" Member="Attendees">
@@ -74,8 +75,8 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Session_Attendee" Member="Session" ThisKey="SessionId" Type="Session" IsForeignKey="true" />
-      <Association Name="User_Attendee" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="Session_Attendee" Member="Session" ThisKey="SessionId" OtherKey="Id" Type="Session" IsForeignKey="true" />
+      <Association Name="User_Attendee" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Speakers" Member="Speakers">
@@ -88,8 +89,8 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Session_Speaker" Member="Session" ThisKey="SessionId" Type="Session" IsForeignKey="true" />
-      <Association Name="User_Speaker" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="Session_Speaker" Member="Session" ThisKey="SessionId" OtherKey="Id" Type="Session" IsForeignKey="true" />
+      <Association Name="User_Speaker" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Timeslots" Member="Timeslots">
@@ -104,7 +105,7 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Event_Timeslot" Member="Event" ThisKey="EventId" Type="Event" IsForeignKey="true" />
+      <Association Name="Event_Timeslot" Member="Event" ThisKey="EventId" OtherKey="Id" Type="Event" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Rooms" Member="Rooms">
@@ -117,7 +118,7 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Event_Room" Member="Event" ThisKey="EventId" Type="Event" IsForeignKey="true" />
+      <Association Name="Event_Room" Member="Event" ThisKey="EventId" OtherKey="Id" Type="Event" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.UserEvents" Member="UserEvents">
@@ -130,8 +131,8 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Event_UserEvent" Member="Event" ThisKey="EventId" Type="Event" IsForeignKey="true" />
-      <Association Name="User_UserEvent" Member="User" ThisKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="Event_UserEvent" Member="Event" ThisKey="EventId" OtherKey="Id" Type="Event" IsForeignKey="true" />
+      <Association Name="User_UserEvent" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Sessions" Member="Sessions">
@@ -146,9 +147,9 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Session_Attendee" Member="Attendees" OtherKey="SessionId" Type="Attendee" />
-      <Association Name="Session_Speaker" Member="Speakers" OtherKey="SessionId" Type="Speaker" />
-      <Association Name="Event_Session" Member="Event" ThisKey="EventId" Type="Event" IsForeignKey="true" />
+      <Association Name="Session_Attendee" Member="Attendees" ThisKey="Id" OtherKey="SessionId" Type="Attendee" />
+      <Association Name="Session_Speaker" Member="Speakers" ThisKey="Id" OtherKey="SessionId" Type="Speaker" />
+      <Association Name="Event_Session" Member="Event" ThisKey="EventId" OtherKey="Id" Type="Event" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Users" Member="Users">
@@ -173,11 +174,11 @@
       <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="User_NewsItem" Member="NewsItems" OtherKey="UserId" Type="NewsItem" />
-      <Association Name="User_UserRole" Member="UserRoles" OtherKey="UserId" Type="UserRole" />
-      <Association Name="User_Attendee" Member="Attendees" OtherKey="UserId" Type="Attendee" />
-      <Association Name="User_Speaker" Member="Speakers" OtherKey="UserId" Type="Speaker" />
-      <Association Name="User_UserEvent" Member="UserEvents" OtherKey="UserId" Type="UserEvent" />
+      <Association Name="User_NewsItem" Member="NewsItems" ThisKey="Id" OtherKey="UserId" Type="NewsItem" />
+      <Association Name="User_UserRole" Member="UserRoles" ThisKey="Id" OtherKey="UserId" Type="UserRole" />
+      <Association Name="User_Attendee" Member="Attendees" ThisKey="Id" OtherKey="UserId" Type="Attendee" />
+      <Association Name="User_Speaker" Member="Speakers" ThisKey="Id" OtherKey="UserId" Type="Speaker" />
+      <Association Name="User_UserEvent" Member="UserEvents" ThisKey="Id" OtherKey="UserId" Type="UserEvent" />
     </Type>
   </Table>
   <Table Name="dbo.CurrentAttendees" Member="CurrentAttendees">
@@ -187,6 +188,8 @@
       <Column Name="Email" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
       <Column Name="Comments" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
       <Column Name="MakeEmailPublic" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EventID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Event_CurrentAttendee" Member="Event" ThisKey="EventID" OtherKey="Id" Type="Event" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
