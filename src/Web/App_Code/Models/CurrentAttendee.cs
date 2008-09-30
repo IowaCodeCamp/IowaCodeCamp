@@ -27,16 +27,17 @@ namespace Models
             if (Name.Length < 2 || Email.Length < 2)
                 return false;
 
-            var a = new CurrentAttendee()
+            var att = new CurrentAttendee
             {
                 Name = Name,
                 Email = Email,
                 Comments = Comments,
-                MakeEmailPublic = false
+                MakePrivate = false,
+                EventID = 3 //how's that for hard coding?
             };
 
             var ctx = new ICCData();
-            ctx.CurrentAttendees.InsertOnSubmit(a);
+            ctx.CurrentAttendees.InsertOnSubmit(att);
             ctx.SubmitChanges();
 
             return true;
@@ -46,7 +47,7 @@ namespace Models
         {
             var ctx = new ICCData();
 
-            return ctx.CurrentAttendees.ToList();
+            return ctx.CurrentAttendees.Where(a => a.EventID == 3).ToList();
         }
     }
 }

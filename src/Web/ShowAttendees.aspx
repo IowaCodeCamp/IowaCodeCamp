@@ -9,7 +9,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-    <asp:Repeater ID="ShowAttendeesList" runat="server" Visible="false">
+    <asp:Repeater ID="ShowAttendeesList" runat="server">
         <HeaderTemplate>
             <div>
         </HeaderTemplate>

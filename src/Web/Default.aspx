@@ -4,15 +4,53 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
-        <div class="box">
-            <h2> Registration will open soon</h2>
-            
-        </div>
-        
-        <strong>
-            <a href='<%=ResolveUrl("~/contributors.aspx") %>'>Check out</a> 
-            all of the companies who are <a href='<%=ResolveUrl("~/contributors.aspx") %>'>contributing</a> to make this event happen.
-        </strong>
+    <div class="box">
+        <h2> Would you like to attend? Register here.</h2><br />
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                        ControlToValidate="Name" Display="Dynamic" TabIndex="1">*</asp:RequiredFieldValidator>
+                    <asp:TextBox ID="Name" runat="server"></asp:TextBox></td>
+                <td rowspan="2" style="vertical-align:middle;padding-left:40px;"><br />Comments</td>
+                <td style="vertical-align:middle;" rowspan="2">
+                    &nbsp;&nbsp;<asp:TextBox ID="Comments" Width="300px" runat="server" Rows="3" 
+                        TextMode="MultiLine" TabIndex="3"></asp:TextBox>
+                </td>
+                <td rowspan="2" style="padding-left:25px;">
+                    <br />
+                    <asp:Button ID="RegisterButton" runat="server" Text="Register" 
+                        onclick="RegisterButton_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                        ControlToValidate="Email" Display="Dynamic">*</asp:RequiredFieldValidator>
+                    
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                        ControlToValidate="Email" Display="Dynamic"
+                        ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
+                    
+                    <asp:TextBox ID="Email" runat="server" TabIndex="2"></asp:TextBox>
+                    <br /> 
+                    
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Your email is never shown on the website.
+                    <br /><br />
+                </td>
+            </tr>
+        </table>
+        *This is is how we will get our numbers for food and prizes, so please register 
+        to let us know you are coming.
+    </div>
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="primaryPH" Runat="Server">
