@@ -45,7 +45,7 @@
         <br />
         <br />
         <a href="http://www.iowacomputergurus.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.gif") %>' 
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.jpg") %>' 
         alt="Iowa Computer Gurus" />
         </a>
         
