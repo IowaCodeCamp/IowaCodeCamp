@@ -8,26 +8,65 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <p>
-    Want your organization on here?  Email Javier Lozano for more information at javier [a-t] lozanotek d0t com
+    Want your organization on here?  Email Bryan Sampica at sponsors [at] iowacodecamp d0t com
 </p>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-    <h3>Individuals</h3>
+    <h3 style="text-decoration:underline;">Individuals</h3>
     <br />
     <ul style="padding-left:20px;"> 
-        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Sponsors and MC</li>
+        
         <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
-        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a> - Facility, Website and Logistics</li>
-        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Marketing</li>
+        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Facility</li>
         <li>Greg Sohl - Event Planning and Logistics</li>
-
+        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>Website, Sponsors</li>
+        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Sponsors, Marketing</li>
+        <li>Levi Rosol - Facility, Finances</li>
+        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a></li>
     </ul>
     
-    <br /><br />
+    <br /><br /><br /><br />
 
-    <h3>Organizations</h3>
+    <h3 style="text-decoration:underline;">Premier Contributors</h3>
     <br /><br />
+        <br />
+        <br />
+        <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" />
+        </a>
+        
+        
+        <br /><br /><br /><br /><br />
+        
+        <h3 style="text-decoration:underline;">Contributors</h3>
+        <br />
+        
+        <br />
+        <br />
+        <a href="http://www.iowacomputergurus.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.gif") %>' 
+        alt="Iowa Computer Gurus" />
+        </a>
+        
+        
+        <br /><br /><br /><br /><br />
+        
+        <h3 style="text-decoration:underline;">Awesome Prizes and Giveaways</h3>
+        <br />
+        
+        <br />
+        <a href="http://www.jetbrains.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/jetbrains_logo.gif") %>' alt="Jet Brains" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.red-gate.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/redgate_logo.gif") %>' alt="Red Gate" />
+        </a>
+        <br /><br />
+        
         <!--
         <br />
         <a href="http://www.asicomp.com" target="_blank">
@@ -47,11 +86,6 @@
         </a>
         <br /><br />
         
-        <br />
-        <a href="http://www.red-gate.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/redgate_logo.gif") %>' alt="Red Gate" />
-        </a>
-        <br /><br />
         
         <br />
         <a href="http://www.mindsharp.com" target="_blank">
@@ -73,7 +107,7 @@
         
         <br />
         <a href="http://www.teksystems.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek SystemsS" />
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek Systems" />
         </a>
         <br /><br />
         
@@ -89,17 +123,9 @@
         </a>
         <br /><br />
         
-        <br />
-        <a href="http://www.jetbrains.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/jetbrains_logo.gif") %>' alt="Jet Brains" />
-        </a>
-        <br /><br />
+
         
-        <br />
-        <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" />
-        </a>
-        <br /><br />
+
         
         <br />
         <a href="http://www.magenic.com" target="_blank">
