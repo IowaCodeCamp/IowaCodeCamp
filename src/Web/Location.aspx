@@ -20,7 +20,7 @@
     </style-->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h2>University Conference Center - Facility Photos</h2>
+<h2>DMACC Facility</h2>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 

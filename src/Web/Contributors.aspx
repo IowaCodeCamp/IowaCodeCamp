@@ -8,7 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <p>
-    Want your organization on here?  Email Bryan Sampica at sponsors [at] iowacodecamp d0t com
+    Want your organization on here?  Email Chris Sutton at sponsors [at] iowacodecamp d0t com
 </p>
 
 </asp:Content>
@@ -18,11 +18,12 @@
     <ul style="padding-left:20px;"> 
         
         <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
-        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Facility</li>
-        <li>Greg Sohl - Event Planning and Logistics</li>
-        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>Website, Sponsors</li>
-        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Sponsors, Marketing</li>
         <li>Levi Rosol - Facility, Finances</li>
+        <li>Greg Sohl - Event Planning and Logistics</li>
+        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Facility</li>
+        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>Website, Sponsors</li>
+        
+        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Sponsors, Marketing</li>
         <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a></li>
     </ul>
     
