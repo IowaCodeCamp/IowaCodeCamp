@@ -32,6 +32,13 @@
     <h2 style="text-decoration:underline;">Premier Contributors</h2>
     <br /><br />
     
+    
+        <br />
+        <a href="http://www.qci.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" />
+        </a>
+        <br /><br />
+    
         <br />
         <a href="http://www.infragistics.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" />
@@ -55,13 +62,28 @@
         <a href="http://www.iowacomputergurus.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.jpg") %>' 
         alt="Iowa Computer Gurus" />
+        </a> 
+               
+        <br />
+        <br />
+        <a href="http://www.iadnug.org" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iadnug_logo.gif") %>' 
+        alt="Iowa .NET User Group - Des Moines" />
         </a>
+        
+
         
         
         <br /><br /><br /><br /><br />
         
         <h2 style="text-decoration:underline;">Awesome Prizes and Giveaways</h2>
         <br />
+        
+        <br />
+        <a href="http://www.magenic.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/magenic_logo.jpg") %>' alt="Magenic" />
+        </a>
+        <br /><br />
         
         <br />
         <a href="http://www.jetbrains.com" target="_blank">
@@ -91,11 +113,7 @@
         </a>
         <br /><br />
         
-        <br />
-        <a href="http://www.qci.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" />
-        </a>
-        <br /><br />
+
         
         <br />
         <a href="http://www.rhi.com" target="_blank">
@@ -138,11 +156,7 @@
         
 
         
-        <br />
-        <a href="http://www.magenic.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/magenic_logo.jpg") %>' alt="Magenic" />
-        </a>
-        <br /><br />
+
         
         <br />
         <a href="http://www.telerik.com" target="_blank">
