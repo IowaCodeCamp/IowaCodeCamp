@@ -13,7 +13,7 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-    <h3 style="text-decoration:underline;">Individuals</h3>
+    <h2 style="text-decoration:underline;">Individuals</h2>
     <br />
     <ul style="padding-left:20px;"> 
         
@@ -29,8 +29,15 @@
     
     <br /><br /><br /><br />
 
-    <h3 style="text-decoration:underline;">Premier Contributors</h3>
+    <h2 style="text-decoration:underline;">Premier Contributors</h2>
     <br /><br />
+    
+        <br />
+        <a href="http://www.infragistics.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" />
+        </a>
+        <br /><br /> 
+    
         <br />
         <br />
         <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
@@ -38,9 +45,9 @@
         </a>
         
         
-        <br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br />
         
-        <h3 style="text-decoration:underline;">Contributors</h3>
+        <h2 style="text-decoration:underline;">Contributors</h2>
         <br />
         
         <br />
@@ -53,20 +60,29 @@
         
         <br /><br /><br /><br /><br />
         
-        <h3 style="text-decoration:underline;">Awesome Prizes and Giveaways</h3>
+        <h2 style="text-decoration:underline;">Awesome Prizes and Giveaways</h2>
         <br />
         
         <br />
         <a href="http://www.jetbrains.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/jetbrains_logo.gif") %>' alt="Jet Brains" />
+        <img style="border-width:0px" src='http://www.jetbrains.com/resharper/img/rs179x67.gif' alt="Jet Brains" />
         </a>
         <br /><br />
         
         <br />
+        <a href="http://www.code-magazine.com" target="_blank">
+        <img style="border-width:0px" src='http://www.code-magazine.com/images/code_logo_white.gif' 
+            alt="CoDe Magazine" />
+        </a>
+        <br /><br />
+        
+        
+        
+        <!--br />
         <a href="http://www.red-gate.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/redgate_logo.gif") %>' alt="Red Gate" />
         </a>
-        <br /><br />
+        <br /><br /-->
         
         <!--
         <br />
@@ -111,12 +127,6 @@
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek Systems" />
         </a>
         <br /><br />
-        
-        <br />
-        <a href="http://www.infragistics.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" />
-        </a>
-        <br /><br 
         
         <br />
         <a href="http://www.neocomputers.com" target="_blank">

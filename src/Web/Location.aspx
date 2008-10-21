@@ -29,32 +29,32 @@
 <br />
 
 <div align="center" style="margin:10px 0px 10px 20px;">
-<OBJECT codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
 								height="507" hspace="0" width="533" align="left" vspace="6" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT ID="Object1">
-								<PARAM NAME="_cx" VALUE="4424">
-								<PARAM NAME="_cy" VALUE="4233">
-								<PARAM NAME="FlashVars" VALUE="4424">
-								<PARAM NAME="Movie" VALUE="campus.swf">
-								<PARAM NAME="Src" VALUE="http://www.dmacc.cc.ia.us/west/flash/campus.swf">
-								<PARAM NAME="WMode" VALUE="Transparent">
+								<param name="_cx" value="4424" />
+								<param name="_cy" value="4233" />
+								<param name="FlashVars" value="4424" />
+								<param name="Movie" value="campus.swf" />
+								<param name="Src" value="http://www.dmacc.cc.ia.us/west/flash/campus.swf" />
+								<param name="WMode" value="Transparent" />
 
-								<PARAM NAME="Play" VALUE="-1">
-								<PARAM NAME="Loop" VALUE="-1">
-								<PARAM NAME="Quality" VALUE="High">
-								<PARAM NAME="SAlign" VALUE="">
-								<PARAM NAME="Menu" VALUE="-1">
-								<PARAM NAME="Base" VALUE="">
-								<PARAM NAME="AllowScriptAccess" VALUE="always">
-								<PARAM NAME="Scale" VALUE="ShowAll">
-								<PARAM NAME="DeviceFont" VALUE="0">
+								<param name="Play" value="-1" />
+								<param name="Loop" value="-1" />
+								<param name="Quality" value="High" />
+								<param name="SAlign" value="" />
+								<param name="Menu" value="-1" />
+								<param name="Base" value="" />
+								<param name="AllowScriptAccess" value="always" />
+								<param name="Scale" value="ShowAll" />
+								<param name="DeviceFont" value="0" />
 
-								<PARAM NAME="EmbedMovie" VALUE="0">
-								<PARAM NAME="BGColor" VALUE="">
-								<PARAM NAME="SWRemote" VALUE="">
+								<param name="EmbedMovie" value="0" />
+								<param name="BGColor" value="" />
+								<param name="SWRemote" value="" />
 								<embed src="flash/campus.swf" width="533" height="507" hspace="0" vspace="6" align="left" quality="high"
 									wmode="transparent" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
 									type="application/x-shockwave-flash"> </embed>
-							</OBJECT>
+							</object>
 							<script type="text/javascript" src="includes/ieupdate.js"></script>
 </div>
 </div>
