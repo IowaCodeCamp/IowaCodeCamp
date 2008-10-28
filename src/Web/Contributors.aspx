@@ -21,7 +21,7 @@
         <li>Levi Rosol - Facility, Finances</li>
         <li>Greg Sohl - Event Planning and Logistics</li>
         <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Facility</li>
-        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>Website, Sponsors</li>
+        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>Website, Sponsors, Logistics, General planning</li>
         
         <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Sponsors, Marketing</li>
         <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a></li>
@@ -36,6 +36,12 @@
         <br />
         <a href="http://www.qci.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.teksystems.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek Systems" />
         </a>
         <br /><br />
     
@@ -80,6 +86,19 @@
         <br />
         
         <br />
+        <a href="http://www.oreilly.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/oreilly_logo.gif") %>' 
+            alt="O'Reilly" />
+        </a>
+        <br /><br />
+        
+        <br />
+        <a href="http://www.pearson.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/pearson_logo.jpg") %>' alt="Pearson" />
+        </a>
+        <br /><br />
+        
+        <br />
         <a href="http://www.magenic.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/magenic_logo.jpg") %>' alt="Magenic" />
         </a>
@@ -92,13 +111,19 @@
         <br /><br />
         
         <br />
+        <a href="http://mvp.support.microsoft.com/" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/mvp_logo.gif") %>' alt="MVP Program" />
+        </a>
+        <br /><br />
+        
+        <br />
         <a href="http://www.code-magazine.com" target="_blank">
         <img style="border-width:0px" src='http://www.code-magazine.com/images/code_logo_white.gif' 
             alt="CoDe Magazine" />
         </a>
         <br /><br />
         
-        
+
         
         <!--br />
         <a href="http://www.red-gate.com" target="_blank">
@@ -128,11 +153,7 @@
         </a>
         <br /><br />
         
-        <br />
-        <a href="http://www.pearson.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/pearson_logo.jpg") %>' alt="Pearson" />
-        </a>
-        <br /><br />
+
         
         <br />
         <a href="http://www.cizer.com" target="_blank">
