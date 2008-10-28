@@ -190,7 +190,7 @@
         </form>
 
         <div id="footer">
-            <div class="left">&copy; 2008 Iowa Code Camp. All rights reserved.</div>
+            <div class="left">&copy; <% =DateTime.Now.Year %> Iowa Code Camp. All rights reserved.</div>
             <div class="right">Design by <a href="http://www.nodethirtythree.com/" target="_blank">NodeThirtyThree Design</a></div>
         </div>
     	
