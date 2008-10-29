@@ -5,6 +5,12 @@
     $(document).ready(function()
     {$("#contributors").addClass("active");});
 </script>
+<style type="text/css">
+    .sponsors
+    {
+    	padding:20px 20px 20px 20px,
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <p>
@@ -13,52 +19,53 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-    <h2 style="text-decoration:underline;">Individuals</h2>
-    <br />
-    <ul style="padding-left:20px;"> 
-        
-        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
-        <li>Levi Rosol - Facility, Finances</li>
-        <li>Greg Sohl - Event Planning and Logistics</li>
-        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Facility</li>
-        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>Website, Sponsors, Logistics, General planning</li>
-        
-        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Sponsors, Marketing</li>
-        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a></li>
-    </ul>
     
-    <br /><br /><br /><br />
-
+    
     <h2 style="text-decoration:underline;">Premier Contributors</h2>
     <br /><br />
     
     
         <br />
-        <a href="http://www.qci.com" target="_blank">
+        <a href="http://www.qci.com" target="_blank" class="sponsors">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" />
         </a>
-        <br /><br />
-        
-        <br />
-        <a href="http://www.teksystems.com" target="_blank">
+
+        <a href="http://www.teksystems.com" target="_blank" class="sponsors">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek Systems" />
         </a>
-        <br /><br />
+        
     
         <br />
-        <a href="http://www.infragistics.com" target="_blank">
+        <a href="http://www.infragistics.com" target="_blank" class="sponsors">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" />
         </a>
-        <br /><br /> 
-    
-        <br />
-        <br />
-        <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
+
+        <a class="sponsors" href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" />
         </a>
         
         
         <br /><br /><br /><br /><br /><br /><br />
+    
+    
+    <h2 style="text-decoration:underline;">Individuals</h2>
+    <br />
+    <ul style="padding-left:20px;"> 
+        
+        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
+        <li>Levi Rosol - Finances, Facility</li>
+        <li>Greg Sohl - Event Planning, Logistics and Volunteers</li>
+        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Facility</li>
+        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>
+            Website, Sponsors, Logistics, Event Planning and Coordinating</li>
+        
+        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Sponsors, Marketing</li>
+        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano- Sponsors</a></li>
+    </ul>
+    
+    <br /><br /><br /><br />
+
+
         
         <h2 style="text-decoration:underline;">Contributors</h2>
         <br />
