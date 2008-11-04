@@ -98,7 +98,7 @@
             If you want to be a speaker, contact Greg Wilson at <strong>speakers [at] iowacodecamp d0t com</strong>.
             </p>
             <p>
-            If you want to help sponsor, contact Bryan Sampica at <strong>sponsors [at] iowacodecamp d0t com</strong>.
+            If you want to help sponsor, contact Chris Sutton at <strong>sponsors [at] iowacodecamp d0t com</strong>.
             </p>
             <p>
             Let Chris Sutton know if you have any other questions at <strong>info at iowacodecamp dot com</strong>.
