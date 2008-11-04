@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="Contributors.aspx.cs" Inherits="Contributors" Title="Iowa Code Camp - Contributors" %>
+<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="Contributors.aspx.cs" Inherits="Contributors" Title="Iowa Code Camp - Contributors" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
@@ -6,9 +6,10 @@
     {$("#contributors").addClass("active");});
 </script>
 <style type="text/css">
+    
     .sponsors
     {
-    	padding:20px 20px 20px 20px,
+        margin: 30px 30px 30px 30px;
     }
 </style>
 </asp:Content>
@@ -26,22 +27,21 @@
     
     
         <br />
-        <a href="http://www.qci.com" target="_blank" class="sponsors">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" />
+        <a href="http://www.qci.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" class="sponsors" />
         </a>
 
-        <a href="http://www.teksystems.com" target="_blank" class="sponsors">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek Systems" />
+        <a href="http://www.teksystems.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek Systems" class="sponsors" />
         </a>
         
     
-        <br />
-        <a href="http://www.infragistics.com" target="_blank" class="sponsors">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" />
+        <a href="http://www.infragistics.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" class="sponsors" />
         </a>
 
-        <a class="sponsors" href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" />
+        <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
         </a>
         
         
@@ -74,14 +74,17 @@
         <br />
         <a href="http://www.iowacomputergurus.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.jpg") %>' 
-        alt="Iowa Computer Gurus" />
+        alt="Iowa Computer Gurus" class="sponsors" />
         </a> 
                
-        <br />
-        <br />
         <a href="http://www.iadnug.org" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iadnug_logo.gif") %>' 
-        alt="Iowa .NET User Group - Des Moines" />
+        alt="Iowa .NET User Group - Des Moines" class="sponsors" />
+        </a>
+        
+        <a href="http://www.crineta.org" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/crineta_logo.png") %>' 
+        alt="Cedar Rapids .NET User Group" class="sponsors" />
         </a>
         
 
@@ -95,38 +98,28 @@
         <br />
         <a href="http://www.oreilly.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/oreilly_logo.gif") %>' 
-            alt="O'Reilly" />
+            alt="O'Reilly" class="sponsors" />
         </a>
-        <br /><br />
-        
-        <br />
+
         <a href="http://www.pearson.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/pearson_logo.jpg") %>' alt="Pearson" />
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/pearson_logo.jpg") %>' alt="Pearson" class="sponsors" />
         </a>
-        <br /><br />
-        
-        <br />
+
         <a href="http://www.magenic.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/magenic_logo.jpg") %>' alt="Magenic" />
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/magenic_logo.jpg") %>' alt="Magenic" class="sponsors" />
         </a>
-        <br /><br />
-        
-        <br />
+
         <a href="http://www.jetbrains.com" target="_blank">
-        <img style="border-width:0px" src='http://www.jetbrains.com/resharper/img/rs179x67.gif' alt="Jet Brains" />
+        <img style="border-width:0px" src='http://www.jetbrains.com/resharper/img/rs179x67.gif' alt="Jet Brains" class="sponsors" />
         </a>
-        <br /><br />
-        
-        <br />
+
         <a href="http://mvp.support.microsoft.com/" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/mvp_logo.gif") %>' alt="MVP Program" />
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/mvp_logo.gif") %>' alt="MVP Program" class="sponsors" />
         </a>
-        <br /><br />
-        
-        <br />
+
         <a href="http://www.code-magazine.com" target="_blank">
         <img style="border-width:0px" src='http://www.code-magazine.com/images/code_logo_white.gif' 
-            alt="CoDe Magazine" />
+            alt="CoDe Magazine" class="sponsors" />
         </a>
         <br /><br />
         
