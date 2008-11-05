@@ -121,6 +121,12 @@
         <img style="border-width:0px" src='http://www.code-magazine.com/images/code_logo_white.gif' 
             alt="CoDe Magazine" class="sponsors" />
         </a>
+        
+        <a href="http://www.dmacc.cc.ia.us/west/" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/dmacc_logo.gif") %>' 
+            alt="DMACC" class="sponsors" />
+        </a>
+        
         <br /><br />
         
 
