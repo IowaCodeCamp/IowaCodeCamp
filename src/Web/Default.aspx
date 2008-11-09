@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
     <div class="box">
-        <h2> Would you like to attend? Register here.</h2><br />
+        <!--h2> Would you like to attend? Register here.</h2><br />
         <table>
             <tr>
                 <td>Name</td>
@@ -50,9 +50,11 @@
         </table>
         *This is is how we will get our numbers for food and prizes, so please register 
         to let us know you are coming.
+        -->
+        Thanks to everyone who attended and made our November Iowa Code Camp happen!
     </div>
     
-    <a href='<%=ResolveUrl("~/directions.aspx") %>'>Do you need <strong>hotel</strong> recommendations?</a>
+    <!--a href='<%=ResolveUrl("~/directions.aspx") %>'>Do you need <strong>hotel</strong> recommendations?</a-->
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="primaryPH" Runat="Server">
