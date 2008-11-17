@@ -1,18 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
+using System.Security.Principal;
 using System.Web.Mvc;
 using System.Web.Security;
+using System.Web.UI;
 
 namespace IowaCodeCamp.Website.Controllers
 {
     [HandleError]
+    [OutputCache(Location = OutputCacheLocation.None)]
     public class AccountController : Controller
     {
-        public AccountController()
-            : this(null, null)
+        // This constructor is used by the MVC framework to instantiate the controller using
+        // the default forms authentication and membership providers.
+
+        public AccountController() : this(null, null)
         {
         }
+
+        // This constructor is not used by the MVC framework but is instead provided for ease
+        // of unit testing this type. See the comments at the end of this file for more
+        // information.
 
         public AccountController(IFormsAuthentication formsAuth, MembershipProvider provider)
         {
@@ -25,36 +33,39 @@ namespace IowaCodeCamp.Website.Controllers
         public MembershipProvider Provider { get; private set; }
 
         [Authorize]
+        public ActionResult ChangePassword()
+        {
+            ViewData["Title"] = "Change Password";
+            ViewData["PasswordLength"] = Provider.MinRequiredPasswordLength;
+
+            return View();
+        }
+
+        [Authorize]
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult ChangePassword(string currentPassword, string newPassword, string confirmPassword)
         {
             ViewData["Title"] = "Change Password";
             ViewData["PasswordLength"] = Provider.MinRequiredPasswordLength;
 
-            // Non-POST requests should just display the ChangePassword form 
-            if (Request.HttpMethod != "POST")
-            {
-                return View();
-            }
-
             // Basic parameter validation
-            var errors = new List<string>();
-
             if (String.IsNullOrEmpty(currentPassword))
             {
-                errors.Add("You must specify a current password.");
+                ModelState.AddModelError("currentPassword", "You must specify a current password.");
             }
             if (newPassword == null || newPassword.Length < Provider.MinRequiredPasswordLength)
             {
-                errors.Add(String.Format(CultureInfo.InvariantCulture,
-                                         "You must specify a new password of {0} or more characters.",
-                                         Provider.MinRequiredPasswordLength));
+                ModelState.AddModelError("newPassword",
+                                         String.Format(CultureInfo.CurrentCulture,
+                                                       "You must specify a new password of {0} or more characters.",
+                                                       Provider.MinRequiredPasswordLength));
             }
             if (!String.Equals(newPassword, confirmPassword, StringComparison.Ordinal))
             {
-                errors.Add("The new password and confirmation password do not match.");
+                ModelState.AddModelError("_FORM", "The new password and confirmation password do not match.");
             }
 
-            if (errors.Count == 0)
+            if (ModelState.IsValid)
             {
                 // Attempt to change password
                 MembershipUser currentUser = Provider.GetUser(User.Identity.Name, true /* userIsOnline */);
@@ -74,12 +85,12 @@ namespace IowaCodeCamp.Website.Controllers
                 }
                 else
                 {
-                    errors.Add("The current password is incorrect or the new password is invalid.");
+                    ModelState.AddModelError("_FORM",
+                                             "The current password is incorrect or the new password is invalid.");
                 }
             }
 
             // If we got this far, something failed, redisplay form
-            ViewData["errors"] = errors;
             return View();
         }
 
@@ -90,86 +101,107 @@ namespace IowaCodeCamp.Website.Controllers
             return View();
         }
 
-        public ActionResult Login(string username, string password, bool? rememberMe)
+        public ActionResult Login()
         {
             ViewData["Title"] = "Login";
 
-            // Non-POST requests should just display the Login form 
-            if (Request.HttpMethod != "POST")
-            {
-                return View();
-            }
+            return View();
+        }
+
+        [AcceptVerbs(HttpVerbs.Post)]
+        public ActionResult Login(string username, string password, bool rememberMe, string returnUrl)
+        {
+            ViewData["Title"] = "Login";
 
             // Basic parameter validation
-            var errors = new List<string>();
-
             if (String.IsNullOrEmpty(username))
             {
-                errors.Add("You must specify a username.");
+                ModelState.AddModelError("username", "You must specify a username.");
+            }
+            if (String.IsNullOrEmpty(password))
+            {
+                ModelState.AddModelError("password", "You must specify a password.");
             }
 
-            if (errors.Count == 0)
+            if (ViewData.ModelState.IsValid)
             {
                 // Attempt to login
                 bool loginSuccessful = Provider.ValidateUser(username, password);
 
                 if (loginSuccessful)
                 {
-                    FormsAuth.SetAuthCookie(username, rememberMe ?? false);
-                    return RedirectToAction("Index", "Home");
+                    FormsAuth.SetAuthCookie(username, rememberMe);
+                    if (!String.IsNullOrEmpty(returnUrl))
+                    {
+                        return Redirect(returnUrl);
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
                 else
                 {
-                    errors.Add("The username or password provided is incorrect.");
+                    ModelState.AddModelError("_FORM", "The username or password provided is incorrect.");
                 }
             }
 
             // If we got this far, something failed, redisplay form
-            ViewData["errors"] = errors;
-            ViewData["username"] = username;
+            ViewData["rememberMe"] = rememberMe;
             return View();
         }
 
         public ActionResult Logout()
         {
             FormsAuth.SignOut();
+
             return RedirectToAction("Index", "Home");
         }
 
+        protected override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            if (filterContext.HttpContext.User.Identity is WindowsIdentity)
+            {
+                throw new InvalidOperationException("Windows authentication is not supported.");
+            }
+        }
+
+        public ActionResult Register()
+        {
+            ViewData["Title"] = "Register";
+            ViewData["PasswordLength"] = Provider.MinRequiredPasswordLength;
+
+            return View();
+        }
+
+        [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Register(string username, string email, string password, string confirmPassword)
         {
             ViewData["Title"] = "Register";
             ViewData["PasswordLength"] = Provider.MinRequiredPasswordLength;
 
-            // Non-POST requests should just display the Register form 
-            if (Request.HttpMethod != "POST")
-            {
-                return View();
-            }
-
             // Basic parameter validation
-            var errors = new List<string>();
-
             if (String.IsNullOrEmpty(username))
             {
-                errors.Add("You must specify a username.");
+                ModelState.AddModelError("username", "You must specify a username.");
             }
             if (String.IsNullOrEmpty(email))
             {
-                errors.Add("You must specify an email address.");
+                ModelState.AddModelError("email", "You must specify an email address.");
             }
             if (password == null || password.Length < Provider.MinRequiredPasswordLength)
             {
-                errors.Add(String.Format(CultureInfo.InvariantCulture,
-                                         "You must specify a password of {0} or more characters.",
-                                         Provider.MinRequiredPasswordLength));
+                ModelState.AddModelError("password",
+                                         String.Format(CultureInfo.CurrentCulture,
+                                                       "You must specify a password of {0} or more characters.",
+                                                       Provider.MinRequiredPasswordLength));
             }
             if (!String.Equals(password, confirmPassword, StringComparison.Ordinal))
             {
-                errors.Add("The password and confirmation do not match.");
+                ModelState.AddModelError("_FORM", "The new password and confirmation password do not match.");
             }
 
-            if (errors.Count == 0)
+            if (ViewData.ModelState.IsValid)
             {
                 // Attempt to register the user
                 MembershipCreateStatus createStatus;
@@ -183,18 +215,15 @@ namespace IowaCodeCamp.Website.Controllers
                 }
                 else
                 {
-                    errors.Add(ErrorCodeToString(createStatus));
+                    ModelState.AddModelError("_FORM", ErrorCodeToString(createStatus));
                 }
             }
 
             // If we got this far, something failed, redisplay form
-            ViewData["errors"] = errors;
-            ViewData["username"] = username;
-            ViewData["email"] = email;
             return View();
         }
 
-        public static string ErrorCodeToString(MembershipCreateStatus createStatus)
+        private static string ErrorCodeToString(MembershipCreateStatus createStatus)
         {
             // See http://msdn.microsoft.com/en-us/library/system.web.security.membershipcreatestatus.aspx for
             // a full list of status codes.
@@ -235,6 +264,11 @@ namespace IowaCodeCamp.Website.Controllers
             }
         }
     }
+
+    // The FormsAuthentication type is sealed and contains static members, so it is difficult to
+    // unit test code that calls its members. The interface and helper class below demonstrate
+    // how to create an abstract wrapper around such a type in order to make the AccountController
+    // code unit testable.
 
     public interface IFormsAuthentication
     {
