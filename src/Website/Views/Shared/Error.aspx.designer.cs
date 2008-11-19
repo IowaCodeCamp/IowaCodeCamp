@@ -10,6 +10,8 @@
 
 namespace IowaCodeCamp.Website.Views.Shared
 {
+
+
     public partial class Error
     {
     }

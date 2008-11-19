@@ -120,6 +120,13 @@
     <Compile Include="Views\Shared\Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Shared\LoginUserControl.ascx.cs">
+      <DependentUpon>LoginUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\LoginUserControl.ascx.designer.cs">
+      <DependentUpon>LoginUserControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Shared\Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,6 +158,7 @@
     <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
     <Content Include="Scripts\MicrosoftMvcAjax.js" />
     <Content Include="Views\Layouts\Default.Master" />
+    <Content Include="Views\Shared\LoginUserControl.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
