@@ -16,20 +16,8 @@
                 <h1>My Sample MVC Application</h1>
             </div>
               
-             <div id="logindisplay">
-                    <%
-                        if (Request.IsAuthenticated) {
-                    %>
-                            Welcome <b><%= Html.Encode(Page.User.Identity.Name) %></b>!
-                            [ <%=Html.ActionLink("Logout", "Logout", "Account") %> ]
-                    <%
-                        }
-                        else {
-                    %> 
-                            [ <%=Html.ActionLink("Login", "Login", "Account") %> ]
-                    <%
-                        }
-                    %>
+            <div id="logindisplay">
+                <% Html.RenderPartial("LoginUserControl"); %>
             </div> 
             
             <div id="menucontainer">
