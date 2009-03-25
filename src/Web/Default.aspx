@@ -64,11 +64,12 @@
         <div class="contentarea">
 
             <p>
+                <a href="http://crineta.org" target="_blank">CRIneta.org</a>, 
                 <a href="http://iadnug.org" target="_blank">Iowa .NET</a> and 
-                <a href="http://crineta.org" target="_blank">CRIneta.org</a> 
-                are hosting the second code camp to Iowa on November 8, 2008 
-                at <a href="http://www.dmacc.cc.ia.us/west/" target="_blank">DMACC West</a> 
-                in <a href="http://www.dmacc.cc.ia.us/west/map.asp" target="_blank">West Des Moines</a>.
+                <a href="http://cvineta.org" target="_blank">CVIneta.org</a>
+                are hosting the third code camp to Iowa on May 2, 2008 
+                at <a href="http://www.dmacc.cc.ia.us/west/" target="_blank">Kirkwood</a> 
+                in <a href="http://www.dmacc.cc.ia.us/west/map.asp" target="_blank">Cedar Rapids</a>.
             </p>
 
             <p>

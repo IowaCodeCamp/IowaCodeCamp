@@ -8,7 +8,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Iowa Code Camp</title>
-    <meta name="keywords" content="Iowa, Iowa City, Chris Sutton, Javier Lozano, Bryan Sampica, Greg Wilson, Greg Sohl, Thomas Burns, Coralville, Des Moines, Cedar Rapids" />
+    <meta name="keywords" content="Iowa, Iowa City, Chris Sutton, Javier Lozano, Bryan Sampica, Greg Wilson, Greg Sohl, Thomas Burns, Tim Barcz Coralville, Des Moines, Cedar Rapids" />
     <meta name="description" content="Site for code camps across Iowa" />
     <link rel="stylesheet" type="text/css" href="../Styles/Default.css" />
     
@@ -43,7 +43,7 @@
 	    </div>
 	    
 	    <div id="headercontentright">
-	        <h1>November 8, 2008</h1>
+	        <h1>May 2, 2009</h1>
 	    </div>
 
         <!--uncomment this to show a picture banner-->
@@ -136,7 +136,7 @@
                     <div class="box">
                         <h4>Details</h4>
                         <ul style="padding-left:20px;">
-                            <li>Saturday, November 8<sup>th</sup></li>
+                            <li>Saturday, May 2<sup>nd</sup></li>
                             <li>8:00am - 5:30pm</li>
                             <li>No cost</li>
                             <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>'>Want to sponsor</a>?</li>
@@ -149,8 +149,8 @@
 
                         <h4>Where</h4>
                         <ul style="padding-left:20px;">
-                        <li>DMACC West<a href='<%=ResolveUrl("~/Location.aspx") %>'></a></li>
-                        <li>West Des Moines, Iowa</li>
+                        <li>Kirkwood<a href='<%=ResolveUrl("~/Location.aspx") %>'></a></li>
+                        <li>Cedar Rapids, Iowa</li>
                         <!--li>
                             <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
                             Map
