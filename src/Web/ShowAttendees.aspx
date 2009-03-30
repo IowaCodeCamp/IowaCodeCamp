@@ -16,7 +16,7 @@
         <ItemTemplate>
             <span style="font-size:x-large;"><%# Eval("Name") %></span>
             <br />
-            Comments: <span style="font-size:large;"><%# Eval("Comments") %></span>
+            Organization: <span style="font-size:large;"><%# Eval("Organization") %></span>
             <br /><br />
         </ItemTemplate>
         <FooterTemplate>
