@@ -54,13 +54,14 @@
         
         <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
         <li>Levi Rosol - Finances, Facility</li>
-        <li>Greg Sohl - Event Planning, Logistics and Volunteers</li>
-        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Facility</li>
+        <li><a href="http://gregsohl.wordpress.com/">Greg Sohl</a> - Event Planning, Finances, Logistics and Volunteers</li>
+        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Open Spaces</li>
         <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>
-            Website, Sponsors, Logistics, Event Planning and Coordinating</li>
+            Sponsors, Event Planning, Media</li>
         
         <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Sponsors, Marketing</li>
-        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano- Sponsors</a></li>
+        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Website, Sponsors</li>
+        <li><a href="http://devlicio.us/blogs/tim_barcz/" target="_blank">Tim Barcz</a> - Facility, Open Spaces</li>
     </ul>
     
     <br /><br /><br /><br />

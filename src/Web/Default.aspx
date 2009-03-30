@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
     <div class="box">
-        <!--h2> Would you like to attend? Register here.</h2><br />
+        <h2> Would you like to attend? Register here.</h2><br />
         <table>
             <tr>
                 <td>Name</td>
@@ -13,10 +13,10 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                         ControlToValidate="Name" Display="Dynamic" TabIndex="1">*</asp:RequiredFieldValidator>
                     <asp:TextBox ID="Name" runat="server"></asp:TextBox></td>
-                <td rowspan="2" style="vertical-align:middle;padding-left:40px;"><br />Comments</td>
+                <td rowspan="2" style="vertical-align:middle;padding-left:40px;"><br />Organization</td>
                 <td style="vertical-align:middle;" rowspan="2">
-                    &nbsp;&nbsp;<asp:TextBox ID="Comments" Width="300px" runat="server" Rows="3" 
-                        TextMode="MultiLine" TabIndex="3"></asp:TextBox>
+                    &nbsp;&nbsp;<asp:TextBox ID="Organization" Width="300px" runat="server" Rows="3" 
+                        TextMode="SingleLine" TabIndex="3"></asp:TextBox>
                 </td>
                 <td rowspan="2" style="padding-left:25px;">
                     <br />
@@ -50,7 +50,7 @@
         </table>
         *This is is how we will get our numbers for food and prizes, so please register 
         to let us know you are coming.
-        -->
+        
         Thanks to everyone who attended and made our November Iowa Code Camp happen!
     </div>
     
@@ -67,9 +67,9 @@
                 <a href="http://crineta.org" target="_blank">CRIneta.org</a>, 
                 <a href="http://iadnug.org" target="_blank">Iowa .NET</a> and 
                 <a href="http://cvineta.org" target="_blank">CVIneta.org</a>
-                are hosting the third code camp to Iowa on May 2, 2008 
-                at <a href="http://www.dmacc.cc.ia.us/west/" target="_blank">Kirkwood</a> 
-                in <a href="http://www.dmacc.cc.ia.us/west/map.asp" target="_blank">Cedar Rapids</a>.
+                are hosting the third code camp to Iowa on May 2, 2009
+                at <a href="http://www.kirkwood.edu" target="_blank">Kirkwood</a> 
+                in <a href="http://www.kirkwood.edu/maincampus" target="_blank">Cedar Rapids</a>.
             </p>
 
             <p>

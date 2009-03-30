@@ -18,11 +18,11 @@ namespace Models
     /// </summary>
     public partial class CurrentAttendee
     {
-        public static bool Add(string Name, string Email, string Comments)
+        public static bool Add(string Name, string Email, string Organization)
         {
             Name = Name ?? "";
             Email = Email ?? "";
-            Comments = Comments ?? "";
+            Organization = Organization ?? "";
 
             if (Name.Length < 2 || Email.Length < 2)
                 return false;
@@ -31,9 +31,10 @@ namespace Models
             {
                 Name = Name,
                 Email = Email,
-                Comments = Comments,
+                Organization = Organization,
+                Comments = "",
                 MakePrivate = false,
-                EventID = 3 //how's that for hard coding?
+                EventID = 4 //how's that for hard coding?
             };
 
             var ctx = new ICCData();
@@ -47,7 +48,7 @@ namespace Models
         {
             var ctx = new ICCData();
 
-            return ctx.CurrentAttendees.Where(a => a.EventID == 3).ToList();
+            return ctx.CurrentAttendees.Where(a => a.EventID == 4).ToList();
         }
     }
 }
