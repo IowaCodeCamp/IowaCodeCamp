@@ -2,11 +2,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
-    $(document).ready(function()
-    {$("#contributors").addClass("active");});
+    $(document).ready(function() {
+        $("#contributors").addClass("active");
+    });
 </script>
 <style type="text/css">
-    
     .sponsors
     {
         margin: 30px 30px 30px 30px;
@@ -27,7 +27,25 @@
     
     
         <br />
-        <a href="http://www.qci.com" target="_blank">
+        
+        <a href="http://www.lostechies.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/lostechies_logo.png") %>' alt="Los Techies" class="sponsors" />
+        </a>
+        
+        <a href="http://www.geonetric.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/geonetric_logo.gif") %>' alt="Geonetric" class="sponsors" />
+        </a>
+        
+        <a href="http://www.devlicio.us" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/devlicious_logo.png") %>' alt="Geonetric" class="sponsors" />
+        </a>
+        
+        <a href="http://www.iowacomputergurus.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.jpg") %>' 
+        alt="Iowa Computer Gurus" class="sponsors" />
+        </a> 
+        
+        <!--a href="http://www.qci.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" class="sponsors" />
         </a>
 
@@ -42,7 +60,7 @@
 
         <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
-        </a>
+        </a-->
         
         
         <br /><br /><br /><br /><br /><br /><br />
@@ -57,7 +75,7 @@
         <li><a href="http://gregsohl.wordpress.com/">Greg Sohl</a> - Event Planning, Finances, Logistics and Volunteers</li>
         <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Open Spaces</li>
         <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>
-            Sponsors, Event Planning, Media</li>
+            Event Planning, Sponsors, Media</li>
         
         <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Sponsors, Marketing</li>
         <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Website, Sponsors</li>
@@ -68,15 +86,11 @@
 
 
         
-        <h2 style="text-decoration:underline;">Contributors</h2>
+        <h2 style="text-decoration:underline;">Contributing Organizations</h2>
         <br />
         
         <br />
         <br />
-        <a href="http://www.iowacomputergurus.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.jpg") %>' 
-        alt="Iowa Computer Gurus" class="sponsors" />
-        </a> 
                
         <a href="http://www.iadnug.org" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iadnug_logo.gif") %>' 
@@ -86,6 +100,11 @@
         <a href="http://www.crineta.org" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/crineta_logo.png") %>' 
         alt="Cedar Rapids .NET User Group" class="sponsors" />
+        </a>
+        
+        <a href="http://www.cvineta.org/home" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/cvineta_logo.png") %>' 
+        alt="Cedar Valley .NET User Group" class="sponsors" />
         </a>
         
 
@@ -123,10 +142,10 @@
             alt="CoDe Magazine" class="sponsors" />
         </a>
         
-        <a href="http://www.dmacc.cc.ia.us/west/" target="_blank">
+        <!--a href="http://www.dmacc.cc.ia.us/west/" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/dmacc_logo.gif") %>' 
             alt="DMACC" class="sponsors" />
-        </a>
+        </a-->
         
         <br /><br />
         
@@ -194,9 +213,9 @@
         
         -->
         
-        <strong>Thanks to <a href="http://www.dmacc.cc.ia.us/west/" target="_blank">DMACC West</a>
+        <!--strong>Thanks to <a href="http://www.dmacc.cc.ia.us/west/" target="_blank">DMACC West</a>
         for the use of their facility</strong>
-        <br />
+        <br /-->
         
 
     <br />
