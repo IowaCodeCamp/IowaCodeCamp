@@ -18,8 +18,18 @@
     <h3>Directions to Iowa Code Camp - Kirkwood</h3>
     <br /><br />
     
-    Click <a href='http://www.dmacc.cc.ia.us/west/map.asp' target="_blank">here</a> 
-    for directions to the Code Camp at the DMACC West Campus. 
+     <h4>Directions to Campus from Interstate 380</h4>
+     <ol style="padding-left:25px;">
+        <li>Take the Kirkwood/Highway 30 exit.</li>
+        <li>Take the Kirkwood Boulevard exit.</li>
+        <li>Go south on Kirkwood Boulevard approximately 1 mile.</li>
+        <li>The Main Entrance is on the left.</li>
+     </ol>
+     <br />
+        For more information or more specific directions please call 1-800-363-2220.
+    
+    Click <a href='http://www.kirkwood.edu/maincampus' target="_blank">here</a> 
+    for a map of the main Kirkwood Cedar Rapids Campus. 
     <br /><br /><br />
 
     
