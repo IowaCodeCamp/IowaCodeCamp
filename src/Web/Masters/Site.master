@@ -164,14 +164,26 @@
 			            <h4>Links</h4>
 			            <div class="contentarea">
 				            <ul class="linklist">
-				                <li><a href="http://www.iadnug.org" target="_blank">
-                                <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iadnug_logo.gif") %>' 
-                                alt="Iowa .NET User Group - Des Moines" />
-                                </a></li>
-				                <li><a href="http://www.crineta.org" target="_blank">
-                                <img style="border-width:0px" src='<%=ResolveUrl("~/Images/crineta_logo.png") %>' 
-                                alt="Cedar Rapids .NET User Group" />
-                                </a></li>
+				                <li>
+				                    <a href="http://www.iadnug.org" target="_blank">
+                                    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iadnug_logo.gif") %>' 
+                                    alt="Iowa .NET User Group - Des Moines" />
+                                    </a>
+                                </li>
+				                <li>
+				                    <br />
+				                    <a href="http://www.crineta.org" target="_blank">
+                                    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/crineta_logo.png") %>' 
+                                    alt="Cedar Rapids .NET User Group" />
+                                    </a>
+                                </li>
+				                <li>
+				                    <br />
+				                    <a href="http://www.cvineta.org/home" target="_blank">
+                                    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/cvineta_logo.png") %>' 
+                                    alt="Cedar Valley .NET User Group" />
+                                    </a>
+                                </li>
 				                
 				            </ul>
 				            <br />

@@ -95,7 +95,7 @@
             </ul>
             <br />
             <p>
-            We are looking for developers who want to tell other developers about cool things they are doing. Topics they really care about.  If you are working with .Net, Ruby, PHP, Java, Rails, Python, &lt;fill in the blank&gt; and you want to tell other people about it, then consider submitting a speaking proposal.
+            We are looking for developers who want to tell other developers about cool things they are doing. Topics they really care about.  If you are working with .Net, Ruby, PHP, Java, Rails, Python, SQL, &lt;fill in the blank&gt; and you want to tell other people about it, then consider submitting a speaking proposal.
             </p>
             <p>
             If you want to be a speaker, contact Greg Wilson at <strong>speakers [at] iowacodecamp d0t com</strong>.
