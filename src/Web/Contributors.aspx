@@ -28,6 +28,10 @@
     
         <br />
         
+                <a href="http://www.farreachinc.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/far_logo.jpg") %>' alt="Far Reach" class="sponsors" />
+        </a>
+        
         <a href="http://www.lostechies.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/lostechies_logo.png") %>' alt="Los Techies" class="sponsors" />
         </a>
@@ -125,17 +129,17 @@
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/pearson_logo.jpg") %>' alt="Pearson" class="sponsors" />
         </a>
 
-        <a href="http://www.magenic.com" target="_blank">
+        <!--a href="http://www.magenic.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/magenic_logo.jpg") %>' alt="Magenic" class="sponsors" />
-        </a>
+        </a-->
 
         <a href="http://www.jetbrains.com" target="_blank">
         <img style="border-width:0px" src='http://www.jetbrains.com/resharper/img/rs179x67.gif' alt="Jet Brains" class="sponsors" />
         </a>
 
-        <a href="http://mvp.support.microsoft.com/" target="_blank">
+        <!--a href="http://mvp.support.microsoft.com/" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/mvp_logo.gif") %>' alt="MVP Program" class="sponsors" />
-        </a>
+        </a-->
 
         <a href="http://www.code-magazine.com" target="_blank">
         <img style="border-width:0px" src='http://www.code-magazine.com/images/code_logo_white.gif' 
