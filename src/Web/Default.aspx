@@ -50,8 +50,6 @@
         </table>
         *This is is how we will get our numbers for food and prizes, so please register 
         to let us know you are coming.
-        
-        Thanks to everyone who attended and made our November Iowa Code Camp happen!
     </div>
     
     <!--a href='<%=ResolveUrl("~/directions.aspx") %>'>Do you need <strong>hotel</strong> recommendations?</a-->

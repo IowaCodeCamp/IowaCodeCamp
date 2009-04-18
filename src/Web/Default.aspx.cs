@@ -18,6 +18,9 @@ public partial class _Default : Page
         if (!Page.IsValid)
             return;
 
+        if (Name.Text.Trim().ToLower() == Organization.Text.Trim().ToLower())
+            Response.Redirect("~/ShowAttendees.aspx");
+
         if (CurrentAttendee.Add(Name.Text, Email.Text, Organization.Text))
             Response.Redirect("~/ShowAttendees.aspx");
     }
