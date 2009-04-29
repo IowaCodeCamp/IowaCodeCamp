@@ -55,17 +55,10 @@
 
         <a href="http://www.teksystems.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/teksystems_logo.gif") %>' alt="Tek Systems" class="sponsors" />
-        </a>
-        
-    
-        <a href="http://www.infragistics.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" class="sponsors" />
-        </a>
-
-        <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
         </a-->
         
+    
+       
         
         <br /><br /><br /><br /><br /><br /><br />
     
@@ -118,6 +111,14 @@
         
         <h2 style="text-decoration:underline;">Awesome Prizes and Giveaways</h2>
         <br />
+        
+        <a href="http://www.infragistics.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/infragistics_logo.gif") %>' alt="Infragistics" class="sponsors" />
+        </a>
+
+        <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
+        </a>
         
         <br />
         <a href="http://www.oreilly.com" target="_blank">
