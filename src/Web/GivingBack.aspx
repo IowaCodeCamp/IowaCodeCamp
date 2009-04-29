@@ -17,10 +17,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <h2>Habit for Humanity</h2>
+<br />
+<h4>Email Arian Kulp at giving [at] iowacodecamp d0t com if you are interested in participating.</h4>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 <div>
+    Please email 
 
     At this Iowa Code Camp, developers will have a chance to make a difference in the community. 
     Building code for non-profit organizations is a way to take part in something bigger than ourselves. 
