@@ -123,7 +123,7 @@
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
         </a>
         
-        <br />
+        <!--br />
         <a href="http://www.oreilly.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/oreilly_logo.gif") %>' 
             alt="O'Reilly" class="sponsors" />
@@ -133,9 +133,13 @@
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/pearson_logo.jpg") %>' alt="Pearson" class="sponsors" />
         </a>
 
-        <!--a href="http://www.magenic.com" target="_blank">
+        <a href="http://www.magenic.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/magenic_logo.jpg") %>' alt="Magenic" class="sponsors" />
         </a-->
+        
+        <a href="http://www.manning.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/manning_logo.jpg") %>' alt="Manning" class="sponsors" />
+        </a>
 
         <a href="http://www.jetbrains.com" target="_blank">
         <img style="border-width:0px" src='http://www.jetbrains.com/resharper/img/rs179x67.gif' alt="Jet Brains" class="sponsors" />
