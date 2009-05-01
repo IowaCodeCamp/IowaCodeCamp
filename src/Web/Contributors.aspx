@@ -29,11 +29,15 @@
         <br />
         
         <a href="http://www.imagetek.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/imagetek_logo.gif") %>' alt="imagetek" class="sponsors" />
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/imagetek_logo.gif") %>' alt="Imagetek" class="sponsors" />
         </a>
         
         <a href="http://www.farreachinc.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/far_logo.jpg") %>' alt="Far Reach" class="sponsors" />
+        </a>
+        
+        <a href="http://www.meta-comm.com" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/meta_logo.jpg") %>' alt="MetaCommunications" class="sponsors" />
         </a>
         
         <a href="http://www.lostechies.com" target="_blank">
