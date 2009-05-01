@@ -158,6 +158,16 @@
             alt="CoDe Magazine" class="sponsors" />
         </a>
         
+        <a href="http://www.us.sogeti.com/" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/sogeti_logo.bmp") %>' 
+            alt="Sogeti" class="sponsors" />
+        </a>
+        
+        <a href="http://www.godaddy.com/" target="_blank">
+        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/godaddy_logo.jpg") %>' 
+            alt="GoDaddy" class="sponsors" />
+        </a>
+        
         <!--a href="http://www.dmacc.cc.ia.us/west/" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/dmacc_logo.gif") %>' 
             alt="DMACC" class="sponsors" />
