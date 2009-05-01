@@ -9,6 +9,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+    <span style="float:right;">
+        <asp:Literal runat="server" ID="CountOfAttendees"></asp:Literal> Attendees Registered
+    </span>
+    
     <asp:Repeater ID="ShowAttendeesList" runat="server">
         <HeaderTemplate>
             <div>

@@ -17,7 +17,10 @@ public partial class ShowAttendees : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            ShowAttendeesList.DataSource = Models.CurrentAttendee.List();
+            var attendees = Models.CurrentAttendee.List();
+            CountOfAttendees.Text = attendees.Count().ToString();
+
+            ShowAttendeesList.DataSource = attendees;
             ShowAttendeesList.DataBind();
         }
     }
