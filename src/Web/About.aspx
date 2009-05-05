@@ -11,7 +11,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-    This is our third Code Camp in Iowa. <br />
+    This is our fourth Code Camp in Iowa. <br />
     Check out our user groups: <a href="http://www.crineta.org">CRIneta.org</a>, 
     <a href="http://iadnug.org">Iowa .Net User Group</a> and <a href="http://cvineta.org/home"> CVINETA</a>.
 </asp:Content>
@@ -42,11 +42,6 @@ If you are interested in the philosopy behind Code Camps read
 </div>
 <br />
 
-<br />
-<div>
-    The hosting is at <a href="http://webhost4life.com">Web Host 4 Life</a> and the domain names are 
-    registered through <a href="http://godaddy.com">Go Daddy</a>.
-</div>
 <br />
 
 

@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
-    <div class="box">
+<%--    <div class="box">
         <h2> Would you like to attend? Register here.</h2><br />
         <table>
             <tr>
@@ -50,7 +50,7 @@
         </table>
         *This is is how we will get our numbers for food and prizes, so please register 
         to let us know you are coming.
-    </div>
+    </div>--%>
     
     <!--a href='<%=ResolveUrl("~/directions.aspx") %>'>Do you need <strong>hotel</strong> recommendations?</a-->
 </asp:Content>
@@ -65,9 +65,9 @@
                 <a href="http://crineta.org" target="_blank">CRIneta.org</a>, 
                 <a href="http://iadnug.org" target="_blank">Iowa .NET</a> and 
                 <a href="http://cvineta.org" target="_blank">CVIneta.org</a>
-                are hosting the third code camp to Iowa on May 2, 2009
-                at <a href="http://www.kirkwood.edu" target="_blank">Kirkwood</a> 
-                in <a href="http://www.kirkwood.edu/maincampus" target="_blank">Cedar Rapids</a>.
+                are hosting the fourth code camp to Iowa on November 7, 2009
+                at <a href="http://www.dmacc.edu" target="_blank">DMACC</a> 
+                in West Des Moines.
             </p>
 
             <p>
@@ -80,7 +80,7 @@
                 <li>No cost (for attendees)</li>
                 <li>All about code, not PowerPoint presentations</li>
                 <li>Source code and slides must be available to share with people who attend</li>
-                <li>Never during work hours - usually on Saturday</li>
+                <li>Never during work hours - usually on a Saturday</li>
             </ul>
             <br />
             <p>
