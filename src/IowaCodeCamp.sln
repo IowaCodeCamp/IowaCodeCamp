@@ -21,8 +21,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web", "{87838AB7-35F
 		VWDPort = "52633"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{7F6D613C-6357-4EBA-B759-4F7D88F4F770}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{78BF887F-AB5E-47FD-BF65-7974A3F3F978}"
 EndProject
 Global
@@ -45,16 +43,6 @@ Global
 		{87838AB7-35F6-4EEF-90A8-3B2142BDE007}.Release|Any CPU.ActiveCfg = Debug|.NET
 		{87838AB7-35F6-4EEF-90A8-3B2142BDE007}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
 		{87838AB7-35F6-4EEF-90A8-3B2142BDE007}.Release|Mixed Platforms.Build.0 = Debug|.NET
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Debug|.NET.ActiveCfg = Debug|Any CPU
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Release|.NET.ActiveCfg = Release|Any CPU
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{7F6D613C-6357-4EBA-B759-4F7D88F4F770}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{78BF887F-AB5E-47FD-BF65-7974A3F3F978}.Debug|.NET.ActiveCfg = Debug|Any CPU
 		{78BF887F-AB5E-47FD-BF65-7974A3F3F978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{78BF887F-AB5E-47FD-BF65-7974A3F3F978}.Debug|Any CPU.Build.0 = Debug|Any CPU
