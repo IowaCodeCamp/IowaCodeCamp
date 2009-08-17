@@ -89,7 +89,7 @@
             <ul style="padding-left:30px;">
                 <li>Corporate product placement</li>
                 <li>Marketing</li>
-                <li>Powerpoint centric</li>
+                <li>Slidedeck centric</li>
             </ul>
             <br />
             <p>
