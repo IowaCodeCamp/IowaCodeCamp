@@ -29,8 +29,7 @@
 <p>
 You'll get an email verification from Greg Wilson or Tim Barcz that your submission was received within 24 hours.</p>
 
-
-We'll be sending <strong>notices of acceptance by October 14<sup>th</sup></strong> if not sooner. 
+The Call For Speakers will be open until <strong> September 30<sup>th</sup></strong>. 
 
 <br /><br />
 Thanks for participating in the Iowa Code Camp!
