@@ -11,7 +11,7 @@
         <a href="http://iadnug.org" target="_blank">Iowa .NET</a>, 
         <a href="http://crineta.org" target="_blank">CRineta</a> and 
         <a href="http://cvineta.org" target="_blank">CVINETA</a>
-        are hosting the fourth code camp to Iowa on November 7, 2009
+        are hosting the fourth code camp in Iowa on November 7, 2009
         at <a href="http://www.dmacc.edu" target="_blank">DMACC</a> 
         in West Des Moines.
     </p>
