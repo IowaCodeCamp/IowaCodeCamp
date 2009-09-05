@@ -34,7 +34,7 @@ namespace Models
                 Organization = Organization,
                 Comments = "",
                 MakePrivate = false,
-                EventID = 4 //how's that for hard coding?
+                EventID = 5 //how's that for hard coding?
             };
 
             var ctx = new ICCData();
@@ -48,7 +48,7 @@ namespace Models
         {
             var ctx = new ICCData();
 
-            return ctx.CurrentAttendees.Where(a => a.EventID == 4).ToList();
+            return ctx.CurrentAttendees.Where(a => a.EventID == 5).ToList();
         }
     }
 }
