@@ -29,7 +29,7 @@
 <p>
 You'll get an email verification from Greg Wilson or Tim Barcz that your submission was received within 24 hours.</p>
 
-The Call For Speakers will be open until <strong> September 30<sup>th</sup></strong>. 
+The Call For Speakers will be open until <strong> September 23<sup>rd</sup></strong>. 
 
 <br /><br />
 Thanks for participating in the Iowa Code Camp!
