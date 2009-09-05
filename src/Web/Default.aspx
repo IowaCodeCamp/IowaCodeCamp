@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
-<%--    <div class="box">
+        <div class="box">
         <h2> Would you like to attend? Register here.</h2><br />
         <table>
             <tr>
@@ -50,7 +50,7 @@
         </table>
         *This is is how we will get our numbers for food and prizes, so please register 
         to let us know you are coming.
-    </div>--%>
+    </div>
     
     <!--a href='<%=ResolveUrl("~/directions.aspx") %>'>Do you need <strong>hotel</strong> recommendations?</a-->
 </asp:Content>
