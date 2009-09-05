@@ -62,7 +62,7 @@
         <div class="contentarea">
 
             <p>
-                <a href="http://crineta.org" target="_blank">CRIneta.org</a>, 
+                <a href="http://crineta.org" target="_blank">CRineta.org</a>, 
                 <a href="http://iadnug.org" target="_blank">Iowa .NET</a> and 
                 <a href="http://cvineta.org" target="_blank">CVIneta.org</a>
                 are hosting the fourth code camp to Iowa on November 7, 2009
