@@ -14,12 +14,12 @@
     
     
     
-    <a style="font-size:large;" href="http://spreadsheets.google.com/pub?key=pIV2jdfPjsyofVS9tQ5rpew" target="_blank">
-    Print this schedule (print in landscape)
-    </a>
-    <iframe src="http://spreadsheets.google.com/pub?key=pIV2jdfPjsyofVS9tQ5rpew" 
-    width="100%" height="700px">
-    </iframe>
+<%--    <a style="font-size:large;" href="http://spreadsheets.google.com/pub?key=pIV2jdfPjsyofVS9tQ5rpew" target="_blank">--%>
+<%--    Print this schedule (print in landscape)--%>
+<%--    </a>--%>
+<%--    <iframe src="http://spreadsheets.google.com/pub?key=pIV2jdfPjsyofVS9tQ5rpew" --%>
+<%--    width="100%" height="700px">--%>
+<%--    </iframe>--%>
     
 </asp:Content>
 
