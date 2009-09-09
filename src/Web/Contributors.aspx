@@ -72,17 +72,22 @@
     <h2 style="text-decoration:underline;">Individuals</h2>
     <br />
     <ul style="padding-left:20px;"> 
-        
-        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
-        <li>Levi Rosol - Finances, Facility</li>
+
+        <li><a href="http://devlicio.us/blogs/tim_barcz/" target="_blank">Tim Barcz</a> - Speakers</li>
+        <li><a href="mailto:levi.rosol@gmail.com">Levi Rosol</a> - Finances, Facility</li>
         <li><a href="http://gregsohl.wordpress.com/">Greg Sohl</a> - Event Planning, Finances, Logistics and Volunteers</li>
-        <li><a href="http://devlicio.us/blogs/tim_barcz/" target="_blank">Tim Barcz</a> - Facility, Open Spaces</li>
-        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a> - Sponsors, Marketing</li>
-        <li><a href="http://subjunctive.wordpress.com" target="_blank">Chris Sutton</a>
-            Event Planning, Sponsors, Media</li>
-        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - Sponsors, Open Spaces</li>
+
+        <li><a href="http://chrismissal.lostechies.com">Chris Missal</a> - Sponsors</li>
+
+        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
         
-        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - Photography, Media, Website</li>
+        <li><a href="http://twitter.com/chrissutton" target="_blank">Chris Sutton</a> - 
+            Event Planning, Sponsors, Media, Website</li>
+        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a></li>
+        
+        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a></li>
+        
+        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a></li>
         
     </ul>
     
