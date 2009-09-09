@@ -15,7 +15,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
-    <iframe src="http://docs.google.com/Doc?id=dgf3c6dq_0dk5ksrgk"
+    <iframe src="https://docs.google.com/Doc?docid=0AVqqUe1OJzJ9ZGdmM2M2ZHFfMmRiajZ0c2hr&hl=en"
     width="100%" height="7500px"></iframe>
    
     <asp:Repeater ID="repeatOfficialSessions" runat="server" Visible="false">

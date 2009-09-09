@@ -15,7 +15,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <p>
-    Want your organization on here?  Email Chris Sutton at sponsors [at] iowacodecamp d0t com
+    Want your organization on here? Contact Chris Missal and Levi Rosol at sponsors [at] iowacodecamp d0t com.
 </p>
 
 </asp:Content>
