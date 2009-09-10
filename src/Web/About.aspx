@@ -11,12 +11,12 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-    This is our fourth Code Camp in Iowa. <br />
+    <h4>This is the 4th Iowa Code Camp.</h4> <br /><br />
     Check out our user groups: <a href="http://www.crineta.org">CRIneta.org</a>, 
     <a href="http://iadnug.org">Iowa .Net User Group</a> and <a href="http://cvineta.org/home"> CVINETA</a>.
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-    <h4>Main ideas</h4>
+    <h4>Core Values</h4>
 <br /><br />
 <ul style="padding-left:20px;">
     <li>By developers for developers</li>
