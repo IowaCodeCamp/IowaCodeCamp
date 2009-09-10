@@ -15,7 +15,8 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-    <h2>Call For Speakers - Fall 2009 - West Des Moines</h2>
+    <h2>Call For Speakers - Fall 2009</h2>
+    <h4>DMACC - West Des Moines, Iowa</h4>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 <strong>Are you interested in speaking at the Iowa Code Camp?</strong>
