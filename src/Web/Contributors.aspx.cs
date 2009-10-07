@@ -15,6 +15,6 @@ public partial class Contributors : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Response.Redirect("Sponsors.aspx");
     }
 }
