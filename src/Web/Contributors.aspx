@@ -48,10 +48,7 @@
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/devlicious_logo.png") %>' alt="Geonetric" class="sponsors" />
         </a>
         
-        <a href="http://www.iowacomputergurus.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.jpg") %>' 
-        alt="Iowa Computer Gurus" class="sponsors" />
-        </a> 
+
         
         <!--a href="http://www.qci.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" class="sponsors" />
