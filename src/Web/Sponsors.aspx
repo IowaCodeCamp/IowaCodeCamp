@@ -20,14 +20,44 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
+    <a name="platinum"></a>
     <h2 style="text-decoration:underline;">Platinum Sponsors</h2>
-    <br /><br />
+    <br />
     
     <br />
 
     <a href="http://discountasp.net" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
     </a>
+    <br />
+    
+    
+    <a name="gold"></a>
+    <h2 style="text-decoration:underline;">Gold Sponsors</h2>
+    <br />
+    
+    <a href="http://www.codebetter.com/" target="_blank">
+    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/codebetter_logo.png") %>' alt="CodeBetter" class="sponsors" />
+    </a>
+        
+    <a href="http://www.microsoft.com/about/companyinformation/usaoffices/northcentral/default.mspx" target="_blank">
+    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
+    </a>
+    
+    <a href="http://www.telerik.com" target="_blank">
+    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
+    </a>
+    
+    
+    <a name="silver"></a>
+    <h2 style="text-decoration:underline;">Silver Sponsors</h2>
+    <br />
+    
+<%--    <a href="http://www.lostechies.com" target="_blank">--%>
+<%--    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/lostechies_logo.png") %>' alt="Los Techies" class="sponsors" />--%>
+<%--    </a>--%>
+    
+    <br />
 
 </asp:Content>
 
