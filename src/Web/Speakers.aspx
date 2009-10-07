@@ -19,19 +19,23 @@
     <h4>DMACC - West Des Moines, Iowa</h4>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-<strong>Are you interested in speaking at the Iowa Code Camp?</strong>
+<strong>Speaker submissions are closed.</strong>
 <br /><br />
-<ol>
-    <li>Download the <a href="files/Speaker_Submission_Form.doc" target="_blank">Speaker Submission Form</a></li>
-    <li>Fill out the form and save it to a local disk for backup</li>
-    <li>Email <strong>speakers [a-t] iowacodecamp d0t com</strong> and <strong>attach</strong> the completed <a href="files/Speaker_Submission_Form.doc" target="_blank">Speaker Submission Form</a></li>
-</ol>
-<br />
 <p>
-You'll get an email verification from Greg Wilson or Tim Barcz that your submission was received within 24 hours.</p>
-
-The Call For Speakers will be open until <strong> September 23<sup>rd</sup></strong>.  
-Speaker selection will happen by the end of September.
+    <br />
+    Email <strong>speakers [a-t] iowacodecamp d0t com</strong> if you have questions.    
+</p>
+<%--<ol>--%>
+<%--    <li>Download the <a href="files/Speaker_Submission_Form.doc" target="_blank">Speaker Submission Form</a></li>--%>
+<%--    <li>Fill out the form and save it to a local disk for backup</li>--%>
+<%--    <li>Email <strong>speakers [a-t] iowacodecamp d0t com</strong> and <strong>attach</strong> the completed <a href="files/Speaker_Submission_Form.doc" target="_blank">Speaker Submission Form</a></li>--%>
+<%--</ol>--%>
+<%--<br />--%>
+<%--<p>--%>
+<%--You'll get an email verification from Greg Wilson or Tim Barcz that your submission was received within 24 hours.</p>--%>
+<%----%>
+<%--The Call For Speakers will be open until <strong> September 23<sup>rd</sup></strong>.  --%>
+<%--Speaker selection will happen by the end of September.--%>
 
 <br /><br />
 Thanks for participating in the Iowa Code Camp!

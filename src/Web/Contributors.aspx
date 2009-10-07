@@ -22,16 +22,12 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     
     
-    <h2 style="text-decoration:underline;">Premier Contributors</h2>
+    <h2 style="text-decoration:underline;">Platinum Sponsors</h2>
     <br /><br />
     
     
         <br />
-        
-        <a href="http://www.imagetek.com" target="_blank">
-        <img style="border-width:0px" src='<%=ResolveUrl("~/Images/imagetek_logo.gif") %>' alt="Imagetek" class="sponsors" />
-        </a>
-        
+  
         <a href="http://www.farreachinc.com" target="_blank">
         <img style="border-width:0px" src='<%=ResolveUrl("~/Images/far_logo.jpg") %>' alt="Far Reach" class="sponsors" />
         </a>
