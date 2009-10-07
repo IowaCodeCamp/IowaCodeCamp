@@ -58,7 +58,7 @@
 			    <li><a id="attendees" href='<%=ResolveUrl("~/ShowAttendees.aspx") %>'>Attendees</a></li>
 			    <li><a id="schedule" href='<%=ResolveUrl("~/Schedule.aspx") %>'>Schedule</a></li>
 			    <li><a id="speakers" href='<%=ResolveUrl("~/Speakers.aspx") %>'>Speakers</a></li>
-			    <li><a id="sponsors" href='<%=ResolveUrl("~/Sponsors.aspx") %>'>Contributors</a></li>
+			    <li><a id="sponsors" href='<%=ResolveUrl("~/Sponsors.aspx") %>'>Sponsors</a></li>
 			    <!--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li-->
 			    <li><a id="location" href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
 			    <li><a id="directions" href='<%=ResolveUrl("~/Directions.aspx") %>'>Directions</a></li>
