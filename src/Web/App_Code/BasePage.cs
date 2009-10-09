@@ -1,10 +1,8 @@
-namespace ASP.App_Code
+
+public class BasePage : System.Web.Mvc.ViewPage
 {
-    public class BasePage : System.Web.UI.Page
+    public virtual string SpeakerImageUrl(string fileName)
     {
-        public virtual string SpeakerImageUrl(string fileName)
-        {
-            return ResolveUrl("~/images/speakers/fall2009/{0}".FormatWith(fileName));
-        }
+        return ResolveUrl("~/images/speakers/fall2009/{0}".FormatWith(fileName));
     }
 }

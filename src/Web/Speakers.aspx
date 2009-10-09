@@ -1,5 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true"
-    CodeFile="Speakers.aspx.cs" Inherits="Speakers" Title="Iowa Code Camp - Speakers" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true"
+     Inherits="BasePage" Title="Speakers | Iowa Code Camp" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" runat="Server">
     <style type="text/css">
