@@ -1,6 +1,6 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LinkPanel.ascx.cs" Inherits="Shared_LinkPanel" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.UserControl" %>
 
-<h4>Manage</h4><br /><br />
+<h4>Attendees</h4><br /><br />
 
 <ul style="padding-left:20px;">
 
@@ -23,7 +23,7 @@
 
 <% if (!Page.User.Identity.IsAuthenticated){ %>
 
-    <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/SignIn.aspx") %>'>Sign In</a></li>
+    <li><a style="text-decoration:none;" href='<%=ResolveUrl("~/attendee/register") %>'>Register</a></li>
     <!--li><a style="text-decoration:none;" href='<%=ResolveUrl("~/Register.aspx") %>'>New User</a></li-->
     
 <% }
