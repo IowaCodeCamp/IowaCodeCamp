@@ -16,7 +16,7 @@
         #speakers h3 {
             display: block;
             clear:left;
-            margin-top:20px;
+            padding-top:20px;
         }
         #speakers img{
         	margin-right:10px;
