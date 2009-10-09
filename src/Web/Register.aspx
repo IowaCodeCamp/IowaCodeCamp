@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="Register.aspx.cs" 
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" CodeFile="Register.aspx.cs" 
 Inherits="Register" Title="Iowa Code Camp - Register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">

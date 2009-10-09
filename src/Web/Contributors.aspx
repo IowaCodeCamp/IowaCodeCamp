@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" Inherits="BasePage" Title="Contributors | Iowa Code Camp" %>
+<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" Inherits="BasePage" Title="Contributors | Iowa Code Camp" %>
 
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)

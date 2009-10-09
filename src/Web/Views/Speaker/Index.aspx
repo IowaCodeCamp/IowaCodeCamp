@@ -1,4 +1,4 @@
-﻿<%@ Page Inherits="System.Web.Mvc.ViewPage" Language="C#" MasterPageFile="~/Masters/Site.master" %>
+﻿<%@ Page Inherits="System.Web.Mvc.ViewPage" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <script runat="server">
 
@@ -7,7 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-speaker
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 </asp:Content>

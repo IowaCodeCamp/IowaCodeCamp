@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" EnableViewState="true" AutoEventWireup="true" CodeFile="ValidateSessions.aspx.cs" Inherits="Admin_ValidateSessions" Title="ICC - Validate Sessions" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" EnableViewState="true" AutoEventWireup="true" CodeFile="ValidateSessions.aspx.cs" Inherits="Admin_ValidateSessions" Title="ICC - Validate Sessions" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 </asp:Content>
