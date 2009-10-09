@@ -20,9 +20,9 @@
             
             <br />
             <b>Summary</b> 
-            <fck:FCKeditor ID="SessionAbstract" runat="server" BasePath="~/FckEditor/" 
-                Height="300px" ToolbarStartExpanded="false" Value='<%#Eval("Abstract") %>'>
-	        </fck:FCKeditor>
+<%--            <fck:FCKeditor ID="SessionAbstract" runat="server" BasePath="~/FckEditor/" --%>
+<%--                Height="300px" ToolbarStartExpanded="false" Value='<%#Eval("Abstract") %>'>--%>
+<%--	        </fck:FCKeditor>--%>
 	        
             <asp:CheckBox ID="IsApproved" runat="server" Checked='<%#Eval("IsApproved") %>' 
             Text=" Is Approved" />

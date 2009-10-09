@@ -10,7 +10,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-using FredCK.FCKeditorV2;
+
 
 public partial class Admin_ValidateSessions : System.Web.UI.Page
 {
@@ -37,11 +37,11 @@ public partial class Admin_ValidateSessions : System.Web.UI.Page
         {
             int SessionId = Convert.ToInt32(e.CommandArgument ?? "0");
             string SessionTitle = (e.Item.FindControl("SessionTitle") as TextBox).Text;
-            string Abstract = (e.Item.FindControl("SessionAbstract") as FCKeditor).Value;
+            //string Abstract = (e.Item.FindControl("SessionAbstract") as FCKeditor).Value;
             bool IsApproved = (e.Item.FindControl("IsApproved") as CheckBox).Checked;
             int SpeakerID = int.Parse((e.Item.FindControl("SpeakerList") as DropDownList).SelectedValue);
 
-            Models.Session.Update(SessionId, SessionTitle, Abstract, IsApproved, SpeakerID);
+            //Models.Session.Update(SessionId, SessionTitle, Abstract, IsApproved, SpeakerID);
 
             //LoadData();
         }

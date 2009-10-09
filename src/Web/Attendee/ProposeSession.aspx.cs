@@ -23,7 +23,7 @@ public partial class Attendee_ProposeSession : System.Web.UI.Page
         if (!Page.IsValid)
             return;
 
-        Models.Session.Propose(this.Page.User.Identity.Name, SessionTitle.Text, SessionAbstract.Value);
-        Response.Redirect("~/Sessions.aspx");
+//        Models.Session.Propose(this.Page.User.Identity.Name, SessionTitle.Text, SessionAbstract.Value);
+//        Response.Redirect("~/Sessions.aspx");
     }
 }

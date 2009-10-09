@@ -20,10 +20,10 @@ public partial class Admin_AddEditNews : System.Web.UI.Page
 
     protected void UpdateEvent_Click(object sender, EventArgs e)
     {
-        if (Models.NewsItem.CreatePost(NewsTitle.Text, PostContentEditor.Value, 1, DateTime.Now))
-        {
-            NewsTitle.Text = "";
-            PostContentEditor.Value = "";
-        }
+//        if (Models.NewsItem.CreatePost(NewsTitle.Text, PostContentEditor.Value, 1, DateTime.Now))
+//        {
+//            NewsTitle.Text = "";
+//            PostContentEditor.Value = "";
+//        }
     }
 }

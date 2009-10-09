@@ -13,8 +13,8 @@
     <asp:TextBox ID="NewsTitle" runat="server" Width="200px"></asp:TextBox>
     <br /><br />
     
-    <fck:FCKeditor ID="PostContentEditor" runat="server" BasePath="~/FckEditor/" Height="500px" ToolbarStartExpanded="false">
-	</fck:FCKeditor>
+<%--    <fck:FCKeditor ID="PostContentEditor" runat="server" BasePath="~/FckEditor/" Height="500px" ToolbarStartExpanded="false">--%>
+<%--	</fck:FCKeditor>--%>
     
     <br />
     

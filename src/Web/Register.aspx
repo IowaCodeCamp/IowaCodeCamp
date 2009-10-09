@@ -80,11 +80,11 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
         </tr>
         
     </table>
-        <ajax:CollapsiblePanelExtender ID="CollapsiblePanelExtender1" runat="server" 
-        TargetControlID="OptionalData" ExpandControlID="ToggleOptional" CollapseControlID="ToggleOptional"
-        Collapsed="true">
-        
-        </ajax:CollapsiblePanelExtender>
+<%--        <ajax:CollapsiblePanelExtender ID="CollapsiblePanelExtender1" runat="server" --%>
+<%--        TargetControlID="OptionalData" ExpandControlID="ToggleOptional" CollapseControlID="ToggleOptional"--%>
+<%--        Collapsed="true">--%>
+<%--        --%>
+<%--        </ajax:CollapsiblePanelExtender>--%>
         <br />
         <asp:LinkButton ID="ToggleOptional" runat="server" CausesValidation="False">Optional Info</asp:LinkButton>
         
@@ -120,8 +120,8 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
             <tr>
                 <td>Comments </td>
                 <td>
-                    <fck:FCKeditor ID="Comments" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">
-                    </fck:FCKeditor>
+<%--                    <fck:FCKeditor ID="Comments" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">--%>
+<%--                    </fck:FCKeditor>--%>
                 </td>
             </tr> 
             
