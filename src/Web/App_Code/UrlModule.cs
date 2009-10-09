@@ -1,11 +1,9 @@
-#region Using
 
 using System;
 using System.Web;
 using System.Configuration;
 using System.Text.RegularExpressions;
 
-#endregion
 
 /// <summary>
 /// Removes or adds the www subdomain from all requests
