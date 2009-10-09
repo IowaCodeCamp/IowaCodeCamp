@@ -9,6 +9,7 @@
         #speakers ul {
             list-style-type: none;
         }
+        
         #speakers h3 {
             display: block;
             clear:left;
@@ -22,6 +23,7 @@
         {
         	margin:0 0;
         	padding:0;
+        	
         }
     </style>
 
@@ -32,8 +34,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" runat="Server">
-    <h2>
-        Fall 2009 Speakers</h2>
+    <h2>Fall 2009 Speakers</h2>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" runat="Server">
     <div id="speakers">
