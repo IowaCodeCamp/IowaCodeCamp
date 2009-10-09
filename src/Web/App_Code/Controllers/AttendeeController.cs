@@ -13,4 +13,9 @@ public class AttendeeController : Controller
     {
         return View();
     }
+
+    public ActionResult Register()
+    {
+        return View();
+    }
 }
