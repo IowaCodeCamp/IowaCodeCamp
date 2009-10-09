@@ -10,8 +10,9 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using ASP.App_Code;
 
-public partial class Speakers : System.Web.UI.Page
+public partial class Speakers : BasePage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
