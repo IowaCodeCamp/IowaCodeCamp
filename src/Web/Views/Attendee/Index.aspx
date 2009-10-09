@@ -1,4 +1,4 @@
-﻿<%@ Page Inherits="System.Web.Mvc.ViewPage" Language="C#" MasterPageFile="~/Masters/Site.master" %>
+﻿<%@ Page Inherits="System.Web.Mvc.ViewPage" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <script runat="server">
 
