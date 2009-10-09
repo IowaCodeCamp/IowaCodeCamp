@@ -1,0 +1,230 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Masters_Site" %>
+
+<%@ Register src="../Shared/LinkPanel.ascx" tagname="LinkPanel" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Iowa Code Camp</title>
+    <meta name="keywords" content="Iowa, Iowa City, West Des Moines, Cedar Rapids, Chris Sutton, Javier Lozano, Bryan Sampica, Greg Wilson, Greg Sohl, Tim Barcz, Levi Rosol, Nick Parker" />
+    <meta name="description" content="Site for code camps across Iowa" />
+    <link rel="stylesheet" type="text/css" href="../Styles/Default.css" />
+    
+    <script src='<%=ResolveUrl("~/Scripts/jquery/jquery-1.3.2.min.js")%>' type="text/javascript"></script>
+    <script src='<%=ResolveUrl("~/Scripts/Utils.js")%>' type="text/javascript"></script>
+    
+    <script type="text/javascript">
+
+    </script>
+    
+    <asp:ContentPlaceHolder id="headPH" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>   
+    
+    <!--actual content from index.html-->
+    <div id="upbg"></div>
+
+    <div id="outer">
+
+	    <div id="header">
+	        <a href='<%=ResolveUrl("~/") %>'>
+	            <img src='<%=ResolveUrl("~/Images/icc_logo.jpg")%>' alt="Iowa Code Camp Logo" />
+	        </a>
+		    <div id="headercontent">
+		        
+			    <!--h1><a href='<%=ResolveUrl("~/") %>' style="text-decoration:none;">Iowa Code Camp</a></h1>
+			    <h2>for developers - by developers</h2>
+			    <br /-->
+		    </div>
+	    </div>
+	    
+	    <div id="headercontentright">
+	        <h1>November 7, 2009</h1>
+	    </div>
+
+        <!--uncomment this to show a picture banner-->
+	    <!--div id="headerpic"></div-->
+    	
+	    <div id="menu">
+		    <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
+		    <!-- class="active" use this for the active menu item-->
+		    <ul>
+		        <!--li><a id="news" href='<%=ResolveUrl("~/News.aspx") %>'>News</a></li-->
+			    <li><a id="sessions" href='<%=ResolveUrl("~/Sessions.aspx") %>'>Sessions</a></li>
+			    <li><a id="attendees" href='<%=ResolveUrl("~/ShowAttendees.aspx") %>'>Attendees</a></li>
+			    <li><a id="schedule" href='<%=ResolveUrl("~/Schedule.aspx") %>'>Schedule</a></li>
+			    <li><a id="speakers" href='<%=ResolveUrl("~/Speakers.aspx") %>'>Speakers</a></li>
+			    <li><a id="sponsors" href='<%=ResolveUrl("~/Sponsors.aspx") %>'>Sponsors</a></li>
+			    <!--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li-->
+			    <li><a id="location" href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
+			    <li><a id="directions" href='<%=ResolveUrl("~/Directions.aspx") %>'>Directions</a></li>
+			    <li><a id="about" href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
+		    </ul>
+		    <div style="float:right;"><br /><b><%=Models.Event.DaysLeftMessage%></b></div>
+	    </div>
+	    <div id="menubottom"></div>
+
+        <form id="form1" runat="server">
+        	
+	        <div id="content">
+
+		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
+		        <div id="normalcontent">
+			        <!--h3>May 3, 2008 - Iowa's First Code Camp</h3><br /-->
+			        <%=Page.User.Identity.Name %>
+			        <div class="contentarea">
+			        
+				        <!-- Normal content area start -->
+        				
+				        <asp:ContentPlaceHolder id="normalPH" runat="server">
+
+				            <img src="/images/pic1.jpg" class="left" alt="A chinese lion statue" />
+            				
+				            <p>Zenlike<sup>1.0</sup> is a free, lightweight, tableless, fluid W3C-compliant website design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design</a>. All photos came from <a href="http://www.pdphoto.org/">PDPhoto</a> and the background texture is from <a href="http://www.mayang.com/textures/">Mayang's texture site</a>. You're free to dissect, manipulate and use it to your heart's content. We only ask that you link back to <a href="http://www.nodethirtythree.com/">our site</a> in some way. If you find this design useful, feel free to let us know :)</p>
+				            <p>You can find more of our free work at this site or <a href="http://www.nodethirtythree.com/">our site</a>, or some of our commercial work on <a href="http://www.4templates.com/?aff=n33">4Templates.com</a>, a commercial website template site.</p>
+
+                        </asp:ContentPlaceHolder>
+				        <!-- Normal content area end -->
+			        </div>
+		        </div>
+
+        	
+		        <div class="divider1"></div>
+
+
+		        <!-- Primary content: Stuff that goes in the primary content column (by default, the left column) -->
+		        <div id="primarycontainer">
+			        <div id="primarycontent">
+				        <!-- Primary content area start -->
+				        <asp:ContentPlaceHolder id="primaryPH" runat="server">
+        		
+				        <div class="post">
+					        <h4>Lorem Ipsum Veroeros</h4>
+					        <div class="contentarea">
+						        <div class="details">Posted by <a href="#">Jane Doe</a> on September 25, 2006</div>	
+						        <p>Volutpat at varius sed sollicitudin et, arcu. Vivamus viverra. Nullam turpis. Vestibulum sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros. Cras lobortis commodo metus. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Quisque augue tortor, facilisis sit amet, aliquam, suscipit vitae, cursus sed, arcu lorem ipsum dolor sit amet.</p>
+						        <ul class="controls">
+							        <li><a href="#" class="printerfriendly">Printer Friendly</a></li>
+							        <li><a href="#" class="comments">Comments (18)</a></li>
+							        <li><a href="#" class="more">Read More</a></li>				
+						        </ul>
+					        </div>
+				        </div>
+        		
+				        <div class="divider2"></div>
+        		
+                        </asp:ContentPlaceHolder>
+				        <!-- Primary content area end -->
+			        </div>
+		        </div>
+
+		        <!-- Secondary content: Stuff that goes in the secondary content column (by default, the narrower right column) -->
+		        <div id="secondarycontent">
+			        <!-- Secondary content area start -->
+                    
+                    <div class="box">
+                        <uc1:LinkPanel ID="LinkPanel1" runat="server" />
+
+                    </div>
+                    
+			        <asp:ContentPlaceHolder id="secondaryPH" runat="server">
+			        
+        			
+                    <div class="box">
+                        <h4>Details</h4>
+                        <ul style="padding-left:20px;">
+                            <li>Saturday, November 7<sup>th</sup></li>
+                            <li>8:00am - 5:30pm</li>
+                            <li>No cost</li>
+                            <li><a href='<%=ResolveUrl("~/Contributors.aspx") %>'>Want to sponsor</a>?</li>
+                        </ul>
+                    </div>
+                    
+           			
+                    <div class="box">
+                    <!--University Capitol Centre, Conference Center, 2nd floor (Old Capitol Mall-downtown Iowa City)-->
+
+                        <h4>Where</h4>
+                        <ul style="padding-left:20px;">
+                        <li>DMACC<a href='<%=ResolveUrl("~/Location.aspx") %>'></a></li>
+                        <li>West Des Moines, Iowa</li>
+                        <!--li>
+                            <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
+                            Map
+                            </a>
+                        </li-->
+                        <li><a href='<%=ResolveUrl("~/Directions.aspx") %>'>Directions</a></li>
+                        </ul>
+                    </div>
+                    
+		            <div>
+			            <h4>Links</h4>
+			            <div class="contentarea">
+				            <ul class="linklist">
+				                <li>
+				                    <a href="http://www.iadnug.org" target="_blank">
+                                    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iadnug_logo.gif") %>' 
+                                    alt="Iowa .NET User Group - Des Moines" />
+                                    </a>
+                                </li>
+				                <li>
+				                    <br />
+				                    <a href="http://www.crineta.org" target="_blank">
+                                    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/crineta_logo.png") %>' 
+                                    alt="Cedar Rapids .NET User Group" />
+                                    </a>
+                                </li>
+				                <li>
+				                    <br />
+				                    <a href="http://www.cvineta.org/home" target="_blank">
+                                    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/cvineta_logo.png") %>' 
+                                    alt="Cedar Valley .NET User Group" />
+                                    </a>
+                                </li>
+				                
+				            </ul>
+				            <br />
+			            </div>
+		            </div>        			
+    		        
+		            <!--div class="box">
+			            <h4>Blandit Veroeros</h4>
+			            <div class="contentarea">
+				            <img src="images/pic2.jpg" class="left" alt="Random foliage" />
+				            <p>Sed etiam et lorem ipsum nulla vero et lobortis felis sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros etiam <a href="#">sed commodo</a>.</p>
+			            </div>
+		            </div-->
+        		
+
+
+                    </asp:ContentPlaceHolder>
+			        <!-- Secondary content area end -->
+		        </div>
+
+	        </div><!--end content-->
+
+        </form>
+
+        <div id="footer">
+            <div class="left">&copy; <% =DateTime.Now.Year %> Iowa Code Camp. All rights reserved.</div>
+            <div class="right">Design by <a href="http://www.nodethirtythree.com/" target="_blank">NodeThirtyThree Design</a></div>
+        </div>
+    	
+    </div> <!--end outer-->
+    
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-3117992-1");
+        pageTracker._initData();
+        pageTracker._trackPageview();
+    </script>
+
+</body>
+</html>
