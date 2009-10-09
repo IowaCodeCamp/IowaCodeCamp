@@ -15,6 +15,7 @@
     Check out our user groups: <a href="http://www.crineta.org">CRIneta.org</a>, 
     <a href="http://iadnug.org">Iowa .Net User Group</a> and <a href="http://cvineta.org/home"> CVINETA</a>.
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <h4>Core Values</h4>
 <br /><br />
@@ -28,8 +29,38 @@
 </ul>
 <br />
 
+<br />
+    
+    
+    <h2 style="text-decoration:underline;">Individuals</h2>
+    <br />
+    <ul style="padding-left:20px;"> 
+
+        <li><a href="http://devlicio.us/blogs/tim_barcz/" target="_blank">Tim Barcz</a> - Speakers</li>
+        <li><a href="mailto:levi.rosol@gmail.com">Levi Rosol</a> - Finances, Sponsors, Facility</li>
+        <li><a href="http://gregsohl.wordpress.com/">Greg Sohl</a> - Event Planning, Finances, Logistics and Volunteers</li>
+
+        <li><a href="http://chrismissal.lostechies.com">Chris Missal</a> - Sponsors</li>
+
+        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
+        
+        <li><a href="http://twitter.com/chrissutton" target="_blank">Chris Sutton</a> - 
+            Event Planning, Sponsors, Media, Website</li>
+        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - 
+            Party Planning</li>
+        
+        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - 
+            Photographer</li>
+        
+    </ul>
+    
+    <br /><br />
+    
+    <h2 style="text-decoration:underline;">General Details</h2>
+    <br />
+
 <div>
-    Here is the <a href="http://www.linkedin.com/groups?gid=1857235"> Linkedin site</a>.
+    Here is the <a href="http://www.linkedin.com/groups?gid=1857235"> LinkedIn site</a>.
     <br />
     This is just for fun, but if you are into Facebook 
     you can <a href="http://www.facebook.com/group.php?gid=38776603251">join the group</a>.

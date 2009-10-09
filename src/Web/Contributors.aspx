@@ -80,8 +80,6 @@
         
         <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a></li>
         
-        <li><a href="http://weblogs.asp.net/bryansampica/" target="_blank">Bryan Sampica</a></li>
-        
     </ul>
     
     <br /><br /><br /><br />
