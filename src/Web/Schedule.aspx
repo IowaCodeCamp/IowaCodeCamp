@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" CodeFile="Schedule.aspx.cs" Inherits="Schedule" Title="Iowa Code Camp - Schedule" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Masters/Site.master" AutoEventWireup="true" Inherits="BasePage" Title="Schedule | Iowa Code Camp" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
