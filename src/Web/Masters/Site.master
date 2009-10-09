@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Masters_Site" %>
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.MasterPage" %>
 
 <%@ Register src="../Shared/LinkPanel.ascx" tagname="LinkPanel" tagprefix="uc1" %>
 
