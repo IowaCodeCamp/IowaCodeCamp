@@ -21,30 +21,30 @@ public partial class Register : System.Web.UI.Page
     {
         if (Page.IsValid)
         {
-            Models.User u = Models.User.Create(FirstName.Text, LastName.Text, Password.Text, Email.Text, DisplayName.Text,
-                 Site.Text, Organization.Text, Comments.Value, City.Text, Region.Text, Country.Text);
-            if (u.Id > 0)
-            {
-                Models.Emailer.SendValidationEmail(u);
-                VerificationMessage.Visible = true;
-
-                //reset fields
-                FirstName.Text = "";
-                LastName.Text = "";
-                Email.Text = "";
-                Password.Text = "";
-                ConfirmPassword.Text = "";
-
-                DisplayName.Text = "";
-                Site.Text = "";
-                Organization.Text = "";
-                Comments.Value = ""; 
-                City.Text = "";
-                Region.Text = "";
-                Country.Text = "";
-
-                //Response.Redirect("~/SignIn.aspx");
-            }
+//            Models.User u = Models.User.Create(FirstName.Text, LastName.Text, Password.Text, Email.Text, DisplayName.Text,
+//                 Site.Text, Organization.Text, Comments.Value, City.Text, Region.Text, Country.Text);
+//            if (u.Id > 0)
+//            {
+//                Models.Emailer.SendValidationEmail(u);
+//                VerificationMessage.Visible = true;
+//
+//                //reset fields
+//                FirstName.Text = "";
+//                LastName.Text = "";
+//                Email.Text = "";
+//                Password.Text = "";
+//                ConfirmPassword.Text = "";
+//
+//                DisplayName.Text = "";
+//                Site.Text = "";
+//                Organization.Text = "";
+//                Comments.Value = ""; 
+//                City.Text = "";
+//                Region.Text = "";
+//                Country.Text = "";
+//
+//                //Response.Redirect("~/SignIn.aspx");
+//            }
             
         }
     }

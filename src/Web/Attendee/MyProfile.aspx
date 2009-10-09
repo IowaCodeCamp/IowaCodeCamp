@@ -105,8 +105,8 @@
         <tr>
             <td>Comments </td>
             <td>
-                <fck:FCKeditor ID="Comments" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">
-                </fck:FCKeditor>
+<%--                <fck:FCKeditor ID="Comments" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">--%>
+<%--                </fck:FCKeditor>--%>
             </td>
         </tr> 
         

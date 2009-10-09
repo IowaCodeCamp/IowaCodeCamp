@@ -19,8 +19,8 @@
     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="SessionAbstract" runat="server"
         ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
     <br />
-    <fck:FCKeditor ID="SessionAbstract" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">
-	</fck:FCKeditor>
+<%--    <fck:FCKeditor ID="SessionAbstract" runat="server" BasePath="~/FckEditor/" Height="300px" ToolbarStartExpanded="false">--%>
+<%--	</fck:FCKeditor>--%>
     
     <br />
     

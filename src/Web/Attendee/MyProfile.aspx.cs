@@ -32,7 +32,7 @@ public partial class MyProfile : System.Web.UI.Page
         City.Text = u.City;
         Region.Text = u.Region;
         Country.Text = u.Country;
-        Comments.Value = u.Comments;
+//        Comments.Value = u.Comments;
     }
 
     protected void UpdateProfile_Click(object sender, EventArgs e)
@@ -42,9 +42,9 @@ public partial class MyProfile : System.Web.UI.Page
 
         string CurrentIdentity = this.Page.User.Identity.Name;
 
-        Models.User.Update(CurrentIdentity, FirstName.Text, LastName.Text,
-            Password.Text, DisplayName.Text, Site.Text, Organization.Text,
-            City.Text, Region.Text, Country.Text, Comments.Value);
+//        Models.User.Update(CurrentIdentity, FirstName.Text, LastName.Text,
+//            Password.Text, DisplayName.Text, Site.Text, Organization.Text,
+//            City.Text, Region.Text, Country.Text, Comments.Value);
 
         VerificationMessage.Visible = true;
     }
