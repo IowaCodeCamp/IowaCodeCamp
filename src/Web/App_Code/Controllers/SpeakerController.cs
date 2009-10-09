@@ -10,4 +10,9 @@ public class SpeakerController : Controller
     {
         return View();
     }
+
+    public ActionResult List()
+    {
+        return View();
+    }
 }
