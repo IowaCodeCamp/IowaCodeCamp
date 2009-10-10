@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" Inherits="System.Web.Mvc.ViewPage<RegisterPageModel>" MasterPageFile="~/Views/Layouts/Site.master" %>
+<%@ Import Namespace="xVal.Rules"%>
+<%@ Import Namespace="xVal.RuleProviders"%>
 
 <script runat="server">
 
@@ -32,31 +34,50 @@
 <form id="feedback" action="/attendee/register" method="post">
 <fieldset class="box">
 
-    <label for="FirstName">First Name</label><br />
-    <%=Html.TextBox("FirstName") %> (Public)<br /><br />
+    <label for="Register_FirstName">First Name</label>
+    <br />
+    <%=Html.TextBox("Register.FirstName") %> (Public)<br />
+    <br />
     
-    <label for="LastName">Last Name</label><br />
-    <%=Html.TextBox("LastName") %> (Public)<br /><br />
+    <label for="Register_LastName">Last Name</label><br />
+    <%=Html.TextBox("Register.LastName")%> (Public)<br /><br />
     
-    <label for="City">City</label><br />
-    <%=Html.TextBox("City") %><br /><br />
+    <label for="Register_Email">Email</label><br />
+    <%=Html.TextBox("Register.Email") %><br /><br />
     
-    <label for="Region">State/Province</label><br />
-    <%=Html.TextBox("Region") %> (Public)<br /><br />
+    <label for="Register_City">City</label><br />
+    <%=Html.TextBox("Register.City")%><br /><br />
     
-    <label for="Organization">Organization</label><br />
-    <%=Html.TextBox("Organization") %> <br /><br />
+    <label for="Register_Region">State/Province</label><br />
+    <%=Html.TextBox("Register.Region")%> (Public)<br /><br />
     
-    <label for="Website">Your Website</label><br />
-    <%=Html.TextBox("Website") %> <br /><br />
+    <label for="Register_Organization">Organization</label><br />
+    <%=Html.TextBox("Register.Organization")%> <br /><br />
     
-    <label for="Comments">Comments</label><br />
-    <%=Html.TextArea("Comments", new {rows=4}) %> <br /><br />
+    <label for="Register_Website">Your Website</label><br />
+    <%=Html.TextBox("Register.Website")%> <br /><br />
+    
+    <label for="Register_Comments">Comments</label><br />
+    <%=Html.TextArea("Register.Comments", new { rows = 4 })%> <br /><br />
     
     <input type="submit" value="Register" />
     
 </fieldset>
 </form>
+
+<%= Html.ClientSideValidation<RegisterPageModel>("Register") %>
+
+<%--    <%--%>
+<%--    var rules = Html.ClientSideValidationRules(RuleSet.Empty);--%>
+<%--    rules.AddRule( "FirstName", new RequiredRule() );--%>
+<%--    rules.AddRule( "LastName", new RequiredRule());--%>
+<%--    rules.AddRule( "Email", new RequiredRule());    --%>
+<%--    rules.AddRule( "Email", new DataTypeRule( DataTypeRule.DataType.EmailAddress ) );--%>
+<%--        --%>
+<%--    %>--%>
+<%----%>
+<%--    <script type="text/javascript">xVal.AttachValidator( null, <%= rules %> );</script>--%>
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
