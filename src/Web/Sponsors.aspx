@@ -34,8 +34,8 @@
     <h2 style="text-decoration:underline;">Gold Sponsors</h2>
     <br />
     
-    <a href="http://www.codebetter.com/" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/codebetter_logo.png") %>' alt="CodeBetter" class="sponsors" />
+    <a href="http://www.devlicio.us/" target="_blank">
+    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/devlicious_logo.png") %>' alt="Devlicious" class="sponsors" />
     </a>
         
     <a href="http://www.microsoft.com/" target="_blank">
