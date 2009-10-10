@@ -14,8 +14,17 @@ public class AttendeeController : Controller
         return View();
     }
 
+    [AcceptVerbs(HttpVerbs.Get)]
     public ActionResult Register()
     {
         return View();
+    }
+
+    [AcceptVerbs(HttpVerbs.Post)]
+    public ActionResult Register(RegisterPageModel model)
+    {
+
+
+        return Redirect("~/ShowAttendees.aspx");
     }
 }

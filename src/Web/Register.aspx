@@ -5,8 +5,7 @@ Inherits="Register" Title="Iowa Code Camp - Register" %>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-    <asp:ScriptManager runat="server">
-    </asp:ScriptManager>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="box" style="margin-left:40px;">
