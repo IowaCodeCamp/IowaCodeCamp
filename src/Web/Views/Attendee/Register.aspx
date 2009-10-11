@@ -24,6 +24,23 @@
     {
         width:85px;
     }
+    
+    .input-validation-error
+    {
+        color:Red;
+    }
+    
+    .field-validation-error
+    {
+        color:Red;
+        display:block;
+    }
+    
+    label
+    {
+        font-size:12pt;
+        font-weight:bold;
+    }
 </style>
 
 </asp:Content>
@@ -31,41 +48,40 @@
 <h1>Register for Iowa Code Camp</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-<form id="feedback" action="/attendee/register" method="post">
+<form action="/attendee/register" method="post">
 <fieldset class="box">
 
-    <label for="Register_FirstName">First Name</label>
+    <label for="FirstName">First Name</label> (Public)<br />
+    <%=Html.TextBox("FirstName") %><br />
     <br />
-    <%=Html.TextBox("Register.FirstName") %> (Public)<br />
-    <br />
     
-    <label for="Register_LastName">Last Name</label><br />
-    <%=Html.TextBox("Register.LastName")%> (Public)<br /><br />
+    <label for="LastName">Last Name</label> (Public)<br />
+    <%=Html.TextBox("LastName")%><br /><br />
     
-    <label for="Register_Email">Email</label><br />
-    <%=Html.TextBox("Register.Email") %><br /><br />
+    <label for="Email">Email</label><br />
+    <%=Html.TextBox("Email") %><br /><br />
     
-    <label for="Register_City">City</label><br />
-    <%=Html.TextBox("Register.City")%><br /><br />
+    <label for="City">City</label><br />
+    <%=Html.TextBox("City")%><br /><br />
     
-    <label for="Register_Region">State/Province</label><br />
-    <%=Html.TextBox("Register.Region")%> (Public)<br /><br />
+    <label for="Region">State/Province</label> (Public)<br />
+    <%=Html.TextBox("Region")%><br /><br />
     
-    <label for="Register_Organization">Organization</label><br />
-    <%=Html.TextBox("Register.Organization")%> <br /><br />
+    <label for="Organization">Organization</label><br />
+    <%=Html.TextBox("Organization")%> <br /><br />
     
-    <label for="Register_Website">Your Website</label><br />
-    <%=Html.TextBox("Register.Website")%> <br /><br />
+    <label for="Website">Your Website</label><br />
+    <%=Html.TextBox("Website")%> <br /><br />
     
-    <label for="Register_Comments">Comments</label><br />
-    <%=Html.TextArea("Register.Comments", new { rows = 4 })%> <br /><br />
+    <label for="Comments">Comments</label> (Public)<br />
+    <%=Html.TextArea("Comments", new { rows = 4 })%> <br /><br />
     
     <input type="submit" value="Register" />
     
 </fieldset>
 </form>
 
-<%= Html.ClientSideValidation<RegisterPageModel>("Register") %>
+<%= Html.ClientSideValidation<RegisterPageModel>() %>
 
 <%--    <%--%>
 <%--    var rules = Html.ClientSideValidationRules(RuleSet.Empty);--%>
