@@ -1,60 +1,17 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" Title="Iowa Code Camp" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" Inherits="System.Web.Mvc.ViewPage" Title="Iowa Code Camp" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
         <div class="box">
-        <h2> Would you like to attend? Register here.</h2><br />
-        <table>
-            <tr>
-                <td>Name</td>
-                <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-                        ControlToValidate="Name" Display="Dynamic" TabIndex="1">*</asp:RequiredFieldValidator>
-                    <asp:TextBox ID="Name" runat="server"></asp:TextBox></td>
-                <td rowspan="2" style="vertical-align:middle;padding-left:40px;"><br />Organization</td>
-                <td style="vertical-align:middle;" rowspan="2">
-                    &nbsp;&nbsp;<asp:TextBox ID="Organization" Width="300px" runat="server" Rows="3" 
-                        TextMode="SingleLine" TabIndex="3"></asp:TextBox>
-                </td>
-                <td rowspan="2" style="padding-left:25px;">
-                    <br />
-                    <asp:Button ID="RegisterButton" runat="server" Text="Register" 
-                        onclick="RegisterButton_Click" />
-                </td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>
-                    
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                        ControlToValidate="Email" Display="Dynamic">*</asp:RequiredFieldValidator>
-                    
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
-                        ControlToValidate="Email" Display="Dynamic"
-                        ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
-                    
-                    <asp:TextBox ID="Email" runat="server" TabIndex="2"></asp:TextBox>
-                    <br /> 
-                    
-                </td>
-                
-            </tr>
-            <tr>
-                <td colspan="3">
-                    Your email is never shown on the website.
-                    <br /><br />
-                </td>
-            </tr>
-        </table>
-        *This is is how we will get our numbers for food and prizes, so please register 
-        to let us know you are coming.
+        <h1><a href="attendee/register">Register here</a> if you would you like to attend?</h1>
+
     </div>
-    
     Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp;
     
     <a href='<%=ResolveUrl("~/directions.aspx") %>'>Do you need <strong>hotel</strong> recommendations?</a>
+    
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="primaryPH" Runat="Server">

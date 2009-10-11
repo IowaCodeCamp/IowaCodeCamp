@@ -66,6 +66,8 @@
 		    <!-- class="active" use this for the active menu item-->
 		    <ul>
 		        <!--li><a id="news" href='<%=ResolveUrl("~/News.aspx") %>'>News</a></li-->
+			    <li><a id="register" href='<%=ResolveUrl("~/attendee/register") %>'>Register</a></li>
+
 			    <li><a id="sessions" href='<%=ResolveUrl("~/Sessions.aspx") %>'>Sessions</a></li>
 			    <li><a id="attendees" href='<%=ResolveUrl("~/ShowAttendees.aspx") %>'>Attendees</a></li>
 			    <li><a id="schedule" href='<%=ResolveUrl("~/Schedule.aspx") %>'>Schedule</a></li>

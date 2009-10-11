@@ -2,12 +2,14 @@
 <%@ Import Namespace="xVal.Rules"%>
 <%@ Import Namespace="xVal.RuleProviders"%>
 
-<script runat="server">
 
-</script>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
-
+<script type="text/javascript">    
+    $(document).ready(function() {
+        $("#register").addClass("active");
+    });
+</script>
 <style type="text/css">
     .box
     {
