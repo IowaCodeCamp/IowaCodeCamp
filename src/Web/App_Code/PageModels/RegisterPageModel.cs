@@ -9,10 +9,10 @@ using System.Web;
 /// </summary>
 public class RegisterPageModel
 {
-    [Required,StringLength(50)]
+    [Required(ErrorMessage = "Enter your First Name"),StringLength(50)]
     public string FirstName { get; set; }
 
-    [Required,StringLength(50)]
+    [Required(ErrorMessage = "Enter your Last Name"), StringLength(50)]
     public string LastName { get; set; }
 
     [Required,StringLength(50),DataType(DataType.EmailAddress)]
