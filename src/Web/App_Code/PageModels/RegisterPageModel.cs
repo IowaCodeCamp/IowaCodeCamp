@@ -27,7 +27,9 @@ public class RegisterPageModel
     [Required, StringLength(50)]
     public string Organization { get; set; }
 
+    [DataType(DataType.Url), StringLength(100)]
     public string Website { get; set; }
 
+    [StringLength(512)]
     public string Comments { get; set; }
 }

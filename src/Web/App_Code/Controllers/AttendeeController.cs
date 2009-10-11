@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Models;
 
 /// <summary>
 /// Summary description for AttendeeController
@@ -23,7 +24,11 @@ public class AttendeeController : Controller
     [AcceptVerbs(HttpVerbs.Post)]
     public ActionResult Register(RegisterPageModel model)
     {
+        //run server validation
 
+        var attendee = Map.RegisterToCurrentAttendee(model);
+
+        CurrentAttendee.Add(attendee);
 
         return Redirect("~/ShowAttendees.aspx");
     }

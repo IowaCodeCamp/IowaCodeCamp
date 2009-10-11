@@ -1,14 +1,4 @@
-﻿using System;
-using System.Data;
-using System.Configuration;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.HtmlControls;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Xml.Linq;
+﻿using System.Linq;
 using System.Collections.Generic;
 
 namespace Models
@@ -18,6 +8,7 @@ namespace Models
     /// </summary>
     public partial class CurrentAttendee
     {
+
         public static bool Add(string Name, string Email, string Organization)
         {
             Name = Name ?? "";
@@ -44,11 +35,30 @@ namespace Models
             return true;
         }
 
+        public static bool Add(CurrentAttendee attendee)
+        {
+            attendee.EventID = 5;
+
+            var ctx = new ICCData();
+            ctx.CurrentAttendees.InsertOnSubmit(attendee);
+            ctx.SubmitChanges();
+
+            return true;
+        }
+
         public static List<CurrentAttendee> List()
         {
             var ctx = new ICCData();
 
             return ctx.CurrentAttendees.Where(a => a.EventID == 5).ToList();
         }
+
+//        public List<Rule> GetRules()
+//        {
+//            var y = Lookup.Create();
+//            var x = new RuleSet();
+//            var rules = new List<Rule>();
+//            rules.Add(new xVal.Rules.RequiredRule{});
+//        }
     }
 }
