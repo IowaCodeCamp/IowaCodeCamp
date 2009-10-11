@@ -2,8 +2,6 @@
 <%@ Import Namespace="xVal.Rules"%>
 <%@ Import Namespace="xVal.RuleProviders"%>
 
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">    
     $(document).ready(function() {

@@ -88,7 +88,6 @@
 
 		        <!-- Normal content: Stuff that's not going to be put in the left or right column. -->
 		        <div id="normalcontent">
-			        <!--h3>May 3, 2008 - Iowa's First Code Camp</h3><br /-->
 			        <%=Page.User.Identity.Name %>
 			        <div class="contentarea">
 			        

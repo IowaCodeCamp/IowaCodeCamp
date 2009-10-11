@@ -7,6 +7,7 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
+<%--<h1>Directions and Hotel Recommendations</h1>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <h3>Hotel recommendations</h3>

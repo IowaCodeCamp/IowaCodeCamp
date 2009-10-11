@@ -12,7 +12,6 @@
     public static void register_routes(RouteCollection routes)
     {
         routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-        
 
         routes.MapRoute(
             "default_route",                                        // Route name
