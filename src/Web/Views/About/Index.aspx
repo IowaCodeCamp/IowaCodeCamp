@@ -1,21 +1,17 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" CodeFile="About.aspx.cs" Inherits="About" Title="Iowa Code Camp - About" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $("#about").addClass("active");
-    });
-
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#about").addClass("active");
+});
 </script>
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
     <h4>This is the 4th Iowa Code Camp.</h4> <br /><br />
-    Check out our user groups: <a href="http://www.crineta.org">CRIneta.org</a>, 
+    Check out our user groups: <a href="http://www.crineta.org">CRineta.org</a>, 
     <a href="http://iadnug.org">Iowa .Net User Group</a> and <a href="http://cvineta.org/home"> CVINETA</a>.
 </asp:Content>
-
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <h4>Core Values</h4>
 <br /><br />
@@ -61,7 +57,7 @@
 
 <div>
     Here is the <a href="http://www.linkedin.com/groups?gid=1857235"> LinkedIn site</a>.
-    <br />
+    <br /><br />
     This is just for fun, but if you are into Facebook 
     you can <a href="http://www.facebook.com/group.php?gid=38776603251">join the group</a>.
 </div>
@@ -72,9 +68,6 @@ If you are interested in the philosopy behind Code Camps read
 <a href="http://en.wikipedia.org/wiki/Code_Camp" target="_blank">the Wikipedia page</a> about it.
 </div>
 <br />
-
-<br />
-
 
 </asp:Content>
 

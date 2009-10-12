@@ -76,7 +76,7 @@
 			    <!--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li-->
 			    <li><a id="location" href='<%=ResolveUrl("~/Location.aspx") %>'>Location</a></li>
 			    <li><a id="directions" href='<%=ResolveUrl("~/Directions.aspx") %>'>Directions</a></li>
-			    <li><a id="about" href='<%=ResolveUrl("~/About.aspx") %>'>About</a></li>
+			    <li><a id="about" href='<%=ResolveUrl("~/about") %>'>About</a></li>
 		    </ul>
 		    <div style="float:right;"><br /><b><%=Models.Event.DaysLeftMessage%></b></div>
 	    </div>
@@ -224,7 +224,7 @@
 
         <div id="footer">
             <div class="left">&copy; <% =DateTime.Now.Year %> Iowa Code Camp. All rights reserved.</div>
-            <div class="right">Design by <a href="http://www.nodethirtythree.com/" target="_blank">NodeThirtyThree Design</a></div>
+            <div class="right">Hosting by <a href="http://www.discountasp.net" target="_blank">DiscountASP.NET</a></div>
         </div>
     	
     </div> <!--end outer-->
