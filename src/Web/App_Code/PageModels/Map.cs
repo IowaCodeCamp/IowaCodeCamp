@@ -1,10 +1,10 @@
 ﻿using Models;
 
 public class Map
-{
+{   //think I need a better mapping system :)
 	public static CurrentAttendee RegisterToCurrentAttendee(RegisterPageModel from)
 	{
-        //think I need a better mapping system :)
+        
 	    return new CurrentAttendee
 	               {
                         FirstName = from.FirstName,
@@ -18,4 +18,5 @@ public class Map
                         Comments = from.Comments
                     };
 	}
+
 }

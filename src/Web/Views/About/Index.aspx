@@ -22,6 +22,7 @@ $(document).ready(function() {
     <li>All about the code</li>
     <li>Community ownership of code</li>
     <li>Never during work hours</li>
+    <li>High quality</li>
 </ul>
 <br />
 
