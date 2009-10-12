@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.Mvc.ViewMasterPage" %>
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
 
 <%@ Register src="../Shared/LinkPanel.ascx" tagname="LinkPanel" tagprefix="uc1" %>
 
@@ -8,10 +8,9 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Iowa Code Camp</title>
-    
-    <meta name="keywords" content="Iowa, Iowa City, West Des Moines, Des Moines, Cedar Rapids, 
-    Iowa City, Cedar Falls, Waterloo, Chris Sutton, Javier Lozano, Greg Wilson, Greg Sohl, 
-    Tim Barcz, Levi Rosol, Nick Parker" />
+    <meta name="keywords" content="Iowa, Iowa City, West Des Moines, Des Moines, 
+    Cedar Rapids, Iowa City, Cedar Falls, Waterloo, Chris Sutton, Javier Lozano, 
+    Greg Wilson, Greg Sohl, Tim Barcz, Levi Rosol, Nick Parker" />
     <meta name="description" content="Site for all things Iowa Code Camp" />
     <link rel="stylesheet" type="text/css" href="../../Styles/Default.css" />
     
@@ -67,9 +66,8 @@
 		    <ul>
 		        <!--li><a id="news" href='<%=ResolveUrl("~/News.aspx") %>'>News</a></li-->
 			    <li><a id="register" href='<%=ResolveUrl("~/attendee/register") %>'>Register</a></li>
-
 			    <li><a id="sessions" href='<%=ResolveUrl("~/Sessions.aspx") %>'>Sessions</a></li>
-			    <li><a id="attendees" href='<%=ResolveUrl("~/ShowAttendees.aspx") %>'>Attendees</a></li>
+			    <li><a id="attendees" href='<%=ResolveUrl("~/attendee/list") %>'>Attendees</a></li>
 			    <li><a id="schedule" href='<%=ResolveUrl("~/Schedule.aspx") %>'>Schedule</a></li>
 			    <li><a id="speakers" href='<%=ResolveUrl("~/speaker/list") %>'>Speakers</a></li>
 			    <li><a id="sponsors" href='<%=ResolveUrl("~/Sponsors.aspx") %>'>Sponsors</a></li>
@@ -228,16 +226,16 @@
         </div>
     	
     </div> <!--end outer-->
-    
+
     <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
+       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
         var pageTracker = _gat._getTracker("UA-3117992-1");
         pageTracker._initData();
         pageTracker._trackPageview();
     </script>
-
+ 
 </body>
 </html>

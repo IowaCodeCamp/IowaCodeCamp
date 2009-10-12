@@ -4,10 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-/// <summary>
-/// Summary description for RegisterPageModel
-/// </summary>
-public class RegisterPageModel
+public class RegisterPageModel : BasePageModel
 {
     [Required(ErrorMessage = "Enter your First Name"),StringLength(50)]
     public string FirstName { get; set; }

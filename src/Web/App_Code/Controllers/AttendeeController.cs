@@ -12,7 +12,7 @@ public class AttendeeController : Controller
 {
     public ActionResult Index()
     {
-        return View();
+        return View("list");
     }
 
     [AcceptVerbs(HttpVerbs.Get)]
@@ -30,6 +30,19 @@ public class AttendeeController : Controller
 
         CurrentAttendee.Add(attendee);
 
-        return Redirect("~/ShowAttendees.aspx");
+        return Redirect("~/attendee/list");
+    }
+
+    public ActionResult List()
+    {
+        var model = new AttendeeListPageModel();
+
+        var attendees = Models.CurrentAttendee.List();
+
+        model.Attendees = attendees;
+
+        model.AttendeeCount = attendees.Count();
+
+        return View(model);
     }
 }
