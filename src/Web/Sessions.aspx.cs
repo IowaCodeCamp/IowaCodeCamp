@@ -15,13 +15,6 @@ public partial class Sessions : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
-        {
-            repeatOfficialSessions.DataSource = Models.Session.GetAcceptedSessions();
-            repeatOfficialSessions.DataBind();
-
-            repeatSessions.DataSource = Models.Session.GetProposedSessions();
-            repeatSessions.DataBind();
-        }
+        
     }
 }
