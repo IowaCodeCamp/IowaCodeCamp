@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
+﻿<%@ Page Title="Giving | Iowa Code Camp" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 
 

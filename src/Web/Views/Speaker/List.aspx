@@ -1,8 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="BasePage" Title="Speakers | Iowa Code Camp" MasterPageFile="~/Views/Layouts/Site.master" %>
-
-<script runat="server">
-
-</script>
+﻿<%@ Page Title="Speaker List | Iowa Code Camp" Language="C#" Inherits="BasePage" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
     <style type="text/css">
