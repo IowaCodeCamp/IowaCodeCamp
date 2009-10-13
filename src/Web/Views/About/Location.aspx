@@ -1,28 +1,17 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" Inherits="BasePage" Title="Location | Iowa Code Camp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
     $(document).ready(function()
     { $("#location").addClass("active"); });
 </script>
-    <!--script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script-->
 
-    <!--style type="text/css">
-        .map
-        {
-            position: relative;
-            top: 20;
-            left: 10;
-            width: 600px;
-            height: 400px;
-            border:#555555 2px solid;
-        }
-    </style-->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h2>DMACC Facility</h2>
+<h1>DMACC Facility</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+
 
 <div id="VirtualTour">
 <a href="http://www.dmacc.cc.ia.us/west/campus.asp" target="_blank">DMACC West Virtual Tour</a>
@@ -59,27 +48,15 @@
 </div>
 </div>
 
-
-
-
 <div id="OutsidePhotos">
     
-
- 
 </div>
 
 <div id="InsidePhotos">
     <br />
-
-    
     
 </div>
 
-    <!--div id="map" class="map"></div>
-    <script type="text/javascript">
-        //var map = new VEMap('map');
-        //map.LoadMap(new VELatLong(41.659018,-91.53483, 10, VEAltitudeMode.RelativeToGround), 10, VEMapStyle.Road, false, VEMapMode.Mode2D, true, 1);
-    </script-->
 </asp:Content>
 
 

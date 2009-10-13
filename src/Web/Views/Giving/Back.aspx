@@ -1,7 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" Inherits="BasePage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
-
     <style type="text/css">
         div ul
         {
@@ -21,7 +20,6 @@
 <h4>Contact Arian Kulp [ giving [at] iowacodecamp d0t com ] if you are interested in participating.</h4>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-
 <div>
     Please email 
 
@@ -78,6 +76,5 @@
 </div>
 
 </asp:Content>
-
 
 

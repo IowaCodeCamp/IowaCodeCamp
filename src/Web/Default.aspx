@@ -1,5 +1,4 @@
 ﻿<%@ Page Language="C#" %>
-<%@ Import Namespace="System.Web.Mvc"%>
 
 <script runat="server">
     public void Page_Load(object sender, EventArgs e)
