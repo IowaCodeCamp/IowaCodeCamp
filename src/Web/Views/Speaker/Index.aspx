@@ -1,4 +1,4 @@
-﻿<%@ Page Inherits="System.Web.Mvc.ViewPage" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
+﻿<%@ Page Title="Speakers | Iowa Code Camp" Inherits="System.Web.Mvc.ViewPage" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <script runat="server">
 
