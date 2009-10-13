@@ -97,7 +97,7 @@ margin: 0em 0em 1.8em 1.8em;
 .divider1
 {
 position: relative;
-background: #fff url('../Images/border2.gif') repeat-x;
+background: #fff url('../../Images/border2.gif') repeat-x;
 height: 14px;
 margin: 2.0em 0em 1.5em 0em;
 clear: both;
@@ -139,23 +139,23 @@ padding: 0em 1.0em 0em 20px;
 
 .post ul.controls li a.printerfriendly
 {
-background-image: url('../Images/icon-printerfriendly.gif');
+background-image: url('../../Images/icon-printerfriendly.gif');
 }
 
 .post ul.controls li a.comments
 {
-background-image: url('../Images/icon-comments.gif');
+background-image: url('../../Images/icon-comments.gif');
 }
 
 .post ul.controls li a.more
 {
-background-image: url('../Images/icon-more.gif');
+background-image: url('../../Images/icon-more.gif');
 }
 
 .box
 {
 position: relative;
-background: #FDFCF6 url('../Images/boxbg.gif') repeat-x;
+background: #FDFCF6 url('../../Images/boxbg.gif') repeat-x;
 left: -1.5em;
 top: -1.5em;
 padding: 1.5em;
@@ -204,7 +204,7 @@ margin: 0 auto;
 position: relative;
 width: 100%;
 height: 9.0em;
-background: #2B2B2B url('../Images/topbg.gif') repeat-x;
+background: #2B2B2B url('../../Images/topbg.gif') repeat-x;
 margin-bottom: 2px;
 }
 
@@ -279,14 +279,14 @@ vertical-align: middle;
 {
 position: relative;
 height: 109px;
-background: #fff url('../Images/hdrpic.jpg') no-repeat top left;
+background: #fff url('../../Images/hdrpic.jpg') no-repeat top left;
 margin-bottom: 2px;
 }
 
 #menu
 {
 position: relative;
-background: #7F8400 url('../Images/menubg.gif') repeat-x top left;
+background: #7F8400 url('../../Images/menubg.gif') repeat-x top left;
 height: 3.5em;
 padding: 0em 1.0em 0em 1.0em;
 margin-bottom: 2px;
@@ -319,12 +319,12 @@ text-decoration: underline;
 
 #menu ul li a.active
 {
-background: #7F8400 url('../Images/menuactive.gif') repeat-x top left;
+background: #7F8400 url('../../Images/menuactive.gif') repeat-x top left;
 }
 
 #menubottom
 {
-background: #fff url('../Images/border1.gif') repeat-x;
+background: #fff url('../../Images/border1.gif') repeat-x;
 height: 14px;
 margin-bottom: 1.5em;
 }
@@ -359,7 +359,7 @@ position: relative;
 height: 2.0em;
 clear: both;
 padding-top: 5.0em;
-background: #fff url('../Images/border2.gif') repeat-x 0em 2.5em;
+background: #fff url('../../Images/border2.gif') repeat-x 0em 2.5em;
 font-size: 0.8em;
 }
 
