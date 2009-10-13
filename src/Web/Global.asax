@@ -13,12 +13,8 @@
     {
         routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
         
-        routes.MapRoute("list_attendees", "showattendees.aspx",
-                        new {controller = "attendee", action = "list"});
+        OldRedirects(routes);
 
-        routes.MapRoute("list_sessions", "sessions.aspx",
-                new { controller = "session", action = "list" });
-        
         routes.MapRoute(
             "default_route",                                        // Route name
             "{controller}/{action}/{id}",                           // URL with parameters
@@ -26,7 +22,19 @@
         );
 
     }
-    
+
+    private static void OldRedirects(RouteCollection routes)
+    {
+        routes.MapRoute("list_attendees", "showattendees.aspx",
+                        new {controller = "attendee", action = "list"});
+
+        routes.MapRoute("list_sessions", "sessions.aspx",
+                        new { controller = "session", action = "list" });
+
+        routes.MapRoute("list_speakers", "speakers.aspx",
+                new { controller = "speaker", action = "list" });
+    }
+
     void Application_End(object sender, EventArgs e) 
     {
         //  Code that runs on application shutdown
