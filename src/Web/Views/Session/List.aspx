@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" CodeFile="Sessions.aspx.cs" Inherits="Sessions" Title="Iowa Code Camp - Sessions" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
-
     <script type="text/javascript">
         $(document).ready(function() {
             $("#sessions").addClass("active");
         });
     </script>
+    
     <style type="text/css">
         div ol {
             padding-left: 25px;
@@ -27,6 +27,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
+<h1>Accepted Sessions for November 7th</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div id="sessions">
@@ -73,6 +74,7 @@
             <li><h3>Windows Communication Foundation Diagnostics</h3><p>WCF might seem like a black box, but the WCF team put a lot of effort into making things as transparent as possible. Scott was part of the team that added tracing, message logging, WMI,  diagnostic integration with IIS, and other diagnostic/manageability features to v3.0 of WCF. Spend an hour with him as he shows you how to use the diagnostics in ways you didn’t even know were possible.</p><dl><dt>level</dt><dd>200</dd><dt>speaker</dt><dd>Scott Seely</dd></dl></li>
         </ul>
     </div>
+
 </asp:Content>
 
 
