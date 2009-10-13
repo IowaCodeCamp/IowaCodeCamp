@@ -33,6 +33,9 @@
 
         routes.MapRoute("list_speakers", "speakers.aspx",
                 new { controller = "speaker", action = "list" });
+
+        routes.MapRoute("list_sponsors", "sponsors.aspx",
+                new { controller = "sponsor", action = "list" });
     }
 
     void Application_End(object sender, EventArgs e) 

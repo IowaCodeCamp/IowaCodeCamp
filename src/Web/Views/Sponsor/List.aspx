@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Sponsors | Iowa Code Camp" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" Inherits="BasePage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">    
@@ -63,5 +63,6 @@
     <br />
 
 </asp:Content>
-
+<asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
+</asp:Content>
 
