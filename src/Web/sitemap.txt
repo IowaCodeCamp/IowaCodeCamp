@@ -1,9 +1,0 @@
-﻿http://iowacodecamp.com/
-http://iowacodecamp.com/News.aspx
-http://iowacodecamp.com/Sessions.aspx
-http://iowacodecamp.com/Speakers.aspx
-http://iowacodecamp.com/Schedule.aspx
-http://iowacodecamp.com/Contributors.aspx
-http://iowacodecamp.com/Location.aspx
-http://iowacodecamp.com/About.aspx
-http://iowacodecamp.com/SignIn.aspx

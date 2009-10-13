@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Layouts/Site.master" AutoEventWireup="true" Inherits="BasePage" Title="Directions | Iowa Code Camp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
@@ -7,15 +7,19 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<%--<h1>Directions and Hotel Recommendations</h1>--%>
+<h1>Directions and Hotel Recommendations</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-    <h3>Hotel recommendations</h3>
+    <h3>Hotel recommendation</h3>
     <br /><br />
-    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>
-    <br /><br />
+    <strong>
     <a href="http://www.heartofamericahotels.com/HolidayInn&Suites/index.html" target="_blank">Holiday Inn and Suites</a>
-    <br /><br />
+    </strong>
+    <br /><br /><br />
+    
+<%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
+<%--    <br /><br />--%>
+
     
     <h3><a href="http://www.dmacc.cc.ia.us/west/map.asp" target="_blank">Directions to Iowa Code Camp - DMACC West Campus</a></h3>
     <br /><br />
@@ -51,7 +55,7 @@
     Proceed on Grand Avenue towards the West continuing past the I-35 interchange. The DMACC West Campus are located approximately 1/2 mile West of I-35 at 5959 Grand Avenue.
     </p>
     
-    <img src="Images/DMACC_West.gif" alt="DMACC West" />
+    <img runat="server" src="~/Images/DMACC_West.gif" alt="DMACC West" />
     
     <br /><br />
 
@@ -67,7 +71,7 @@
     <h3>Parking and Street Address</h3><br /><br />
     Parking is freely available at the DMACC West facility.
     <br /><br />
-    
+
 </asp:Content>
 
 

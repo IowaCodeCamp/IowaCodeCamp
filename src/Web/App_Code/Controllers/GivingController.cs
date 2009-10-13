@@ -5,21 +5,16 @@ using System.Web;
 using System.Web.Mvc;
 
 /// <summary>
-/// Summary description for SessionController
+/// Summary description for GivingController
 /// </summary>
-public class SessionController : Controller
+public class GivingController : Controller
 {
     public ActionResult Index()
-    {
-        return View("list");
-    }
-
-    public ActionResult List()
     {
         return View();
     }
 
-    public ActionResult Schedule()
+    public ActionResult Back()
     {
         return View();
     }

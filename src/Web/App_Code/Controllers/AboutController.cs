@@ -6,4 +6,14 @@ public class AboutController : Controller
     {
         return View();
     }
+
+    public ActionResult Directions()
+    {
+        return View();
+    }
+
+    public ActionResult Location()
+    {
+        return View();
+    }
 }
