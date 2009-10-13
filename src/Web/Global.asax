@@ -12,12 +12,19 @@
     public static void register_routes(RouteCollection routes)
     {
         routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+        
+        routes.MapRoute("list_attendees", "showattendees.aspx",
+                        new {controller = "attendee", action = "list"});
 
+        routes.MapRoute("list_sessions", "sessions.aspx",
+                new { controller = "session", action = "list" });
+        
         routes.MapRoute(
             "default_route",                                        // Route name
             "{controller}/{action}/{id}",                           // URL with parameters
             new { controller = "home", action = "index", id = "" }  // Parameter defaults
         );
+
     }
     
     void Application_End(object sender, EventArgs e) 
