@@ -37,7 +37,8 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div id="speakers">
-        <ul>
+        
+        <ul><a name="adam-grocholski"></a>
             <li>
                 <h3>Adam Grocholski</h3>
                 <p><img src="<%= SpeakerImageUrl("AdamGrocholski.jpg") %>" align="left" />
@@ -61,6 +62,7 @@
                 My name is Chris Missal, currently I’m a software developer in Cedar Rapids, Iowa. I have a passion for creating software that works well. I have a very strong opinion that testing software is the most important piece of delivering quality projects, and delivering them on time. I spend most of my time working with C# in ASP.NET MVC and jQuery.
                 </p>
             </li>
+            <a name="chris-sutton"></a>
             <li>
                 <h3>Chris Sutton</h3>
                 <p><img src="<%= SpeakerImageUrl("ChrisSutton.jpg") %>" align="left" />
@@ -198,7 +200,8 @@
                 Scott Seely is a Senior Technical Architect for SAVO Group (http://www.savogroup.com). He has written four books, most recently Effective REST Services via .NET. When not sitting behind a keyboard, Scott can be found in northern Illinois spending time with his wonderful wife, three kids, two dogs, two frogs, and whatever other animals happen to be in the house.
                 </p>
             </li>
-            <li>
+            
+            <li><a name="sergio-pereira"></a>
                 <h3>Sergio Pereira</h3>
                 <p><img src="<%= SpeakerImageUrl("SergioPereira.jpg") %>" align="left" />
                 Sergio Pereira has been developing software professionally since the mid 90's. After a short period of desktop application development, Sergio changed his focus to web development and never looked back. He's a strong believer in continuous improvement of himself, the processes, and the tools he uses in the software craft.
