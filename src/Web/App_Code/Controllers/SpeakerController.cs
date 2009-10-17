@@ -8,7 +8,7 @@ public class SpeakerController : Controller
 {
     public ActionResult Index()
     {
-        return View();
+        return View("list");
     }
 
     public ActionResult List()
