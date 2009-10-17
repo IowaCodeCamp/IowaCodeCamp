@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Text.RegularExpressions;
+using System.Web.Mvc;
+using Microsoft.Web.Mvc;
 
 /// <summary>
 /// Html Helper/Extension methods
@@ -71,5 +74,14 @@ public static class HtmlHelpers
             }
         }
         return /*iNumber.ToString() +*/ suf;
+    }
+
+    public static string SpeakerLink(this HtmlHelper @this, string name)
+    {
+        var link = @this.ActionLink<SpeakerController>(x => x.List(), name);
+        var bookmark = name.Replace(" ", "");
+        const string matchPattern = "${link}";
+        link = Regex.Replace(link, "(?<link>href=\".*?)\"", "{0}#{1}\"".FormatWith(matchPattern,bookmark));
+        return link;
     }
 }
