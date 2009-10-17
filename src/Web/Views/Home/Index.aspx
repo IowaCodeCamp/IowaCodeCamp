@@ -8,7 +8,7 @@
     </div>
     Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <a href='<%=ResolveUrl("~/directions.aspx") %>'>Do you need <strong>hotel</strong> recommendations?</a>
+    <a href='<%=ResolveUrl("~/about/directions") %>'>Do you need <strong>hotel</strong> recommendations?</a>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">

@@ -24,12 +24,12 @@
     <h2 style="text-decoration:underline;">Platinum Sponsors</h2>
     <br />
     
-    <a href="http://discountasp.net" target="_blank">
+    <a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" class="sponsors" />
     </a>
     <br /><br />
     
-    <a href="http://qci.com" target="_blank">
+    <a href="http://discountasp.net" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
     </a>
     <br /><br />
