@@ -51,23 +51,23 @@
 <form action="/attendee/register" method="post">
 <fieldset class="box">
 
-    <label for="FirstName">First Name</label> (Public)<br />
+    <label for="FirstName">*First Name</label> (Public)<br />
     <%=Html.TextBox("FirstName") %><br />
     <br />
     
-    <label for="LastName">Last Name</label> (Public)<br />
+    <label for="LastName">*Last Name</label> (Public)<br />
     <%=Html.TextBox("LastName")%><br /><br />
     
-    <label for="Email">Email</label><br />
+    <label for="Email">*Email</label><br />
     <%=Html.TextBox("Email") %><br /><br />
     
-    <label for="City">City</label><br />
+    <label for="City">*City</label><br />
     <%=Html.TextBox("City")%><br /><br />
     
-    <label for="Region">State/Province</label> (Public)<br />
+    <label for="Region">*State/Province</label> (Public)<br />
     <%=Html.TextBox("Region")%><br /><br />
     
-    <label for="Organization">Organization</label><br />
+    <label for="Organization">*Organization</label><br />
     <%=Html.TextBox("Organization")%> <br /><br />
     
     <label for="Website">Your Website</label><br />
