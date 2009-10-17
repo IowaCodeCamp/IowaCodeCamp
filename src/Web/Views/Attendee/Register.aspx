@@ -67,7 +67,7 @@
     <label for="Region">*State/Province</label> (Public)<br />
     <%=Html.TextBox("Region")%><br /><br />
     
-    <label for="Organization">*Organization</label><br />
+    <label for="Organization">*Organization (Public)</label><br />
     <%=Html.TextBox("Organization")%> <br /><br />
     
     <label for="Website">Your Website</label><br />
