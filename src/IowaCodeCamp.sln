@@ -4,6 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web", "{87838AB7-35F6-4EEF-90A8-3B2142BDE007}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFramework = "3.5"
+		ProjectReferences = "{6CFAC488-D838-4740-BCED-7AE46B7787C4}|IowaCodeCamp.Core.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Web"
 		Debug.AspNetCompiler.PhysicalPath = "Web\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
@@ -20,6 +21,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web", "{87838AB7-35F
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "52633"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IowaCodeCamp.Core", "Core\IowaCodeCamp.Core.csproj", "{6CFAC488-D838-4740-BCED-7AE46B7787C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +44,16 @@ Global
 		{87838AB7-35F6-4EEF-90A8-3B2142BDE007}.Release|Any CPU.ActiveCfg = Debug|.NET
 		{87838AB7-35F6-4EEF-90A8-3B2142BDE007}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
 		{87838AB7-35F6-4EEF-90A8-3B2142BDE007}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Release|.NET.ActiveCfg = Release|Any CPU
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6CFAC488-D838-4740-BCED-7AE46B7787C4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
