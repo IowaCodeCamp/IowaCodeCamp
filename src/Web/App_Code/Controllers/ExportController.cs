@@ -1,7 +1,6 @@
-using System;
-using System.Reflection;
 using System.Text;
 using System.Web.Mvc;
+using App_Code.Helpers;
 using Models;
 
 namespace ASP.App_Code.Controllers
@@ -21,27 +20,6 @@ namespace ASP.App_Code.Controllers
             var result = new FileContentResult(Encoding.ASCII.GetBytes(builder.ToString()), "text/csv")
                              {FileDownloadName = "Attendees.csv"};
             return result;
-        }
-    }
-
-    public class CSVSerializer
-    {
-        public string Header(object obj)
-        {
-            var builder = new StringBuilder();
-            Array.ForEach(obj.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance),
-                          x => builder.Append(x.Name).Append(","));
-
-            return builder.ToString();
-        }
-
-        public string Serialize(object obj)
-        {
-            var builder = new StringBuilder();
-            Array.ForEach(obj.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance),
-                          x => builder.AppendFormat("\"{0}\"",x.GetValue(obj, null)).Append(","));
-
-            return builder.ToString();
         }
     }
 }
