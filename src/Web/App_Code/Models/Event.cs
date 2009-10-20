@@ -32,6 +32,14 @@ namespace Models
             }
         }
 
+        public static int? AvailableSpots
+        {
+            get
+            {
+                return 200 - CurrentAttendee.List().Count();
+            }
+        }
+
         public static string DaysLeftMessage
         {
             get
