@@ -45,7 +45,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h1>Register for Iowa Code Camp</h1>
+<h1>Register for Iowa Code Camp <%= (Model.CurrentAttendeeCount >= Config.MaxAttendees)? "*Waitlist*":"" %></h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 <form action="/attendee/register" method="post">

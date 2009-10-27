@@ -76,7 +76,7 @@
 			    <li><a id="directions" href='<%=ResolveUrl("~/about/directions") %>'>Directions</a></li>
 			    <li><a id="about" href='<%=ResolveUrl("~/about") %>'>About</a></li>
 		    </ul>
-		    <div style="float:right;"><br /><b><%=Models.Event.DaysLeftMessage%></b> (Only <%=Models.Event.AvailableSpots%> spots remaining!!)</div>
+		    <div style="float:right;"><br /><b><%=Models.Event.DaysLeftMessage%></b> (<%=Models.CurrentAttendee.AvailableSpotsMessage %>)</div>
 	    </div>
 	    <div id="menubottom"></div>
 

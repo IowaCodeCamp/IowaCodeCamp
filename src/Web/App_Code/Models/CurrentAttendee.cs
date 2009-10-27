@@ -20,6 +20,24 @@ namespace Models
             return true;
         }
 
+        public static string AvailableSpotsMessage
+        {
+            get
+            {
+                int count = GetTotalCount();
+                if (count < Config.MaxAttendees)
+                    return "Only {0} spot{1} remaining!".FormatWith(Config.MaxAttendees - count, (Config.MaxAttendees - count)> 1 ? "s": "");
+                return "Register for wait list";
+            }
+        }
+
+        public static int GetTotalCount()
+        {
+            var ctx = new ICCData();
+
+            return ctx.CurrentAttendees.Where(a => a.EventID == 5).Count();
+        }
+
         public static List<CurrentAttendee> List()
         {
             var ctx = new ICCData();
