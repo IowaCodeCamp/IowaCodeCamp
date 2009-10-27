@@ -36,7 +36,7 @@ namespace Models
         {
             get
             {
-                return 250 - CurrentAttendee.List().Count();
+                return Config.MaxAttendees - CurrentAttendee.List().Count();
             }
         }
 

@@ -67,8 +67,8 @@
 		        <!--li><a id="news" href='<%=ResolveUrl("~/News.aspx") %>'>News</a></li-->
 			    <li><a id="register" href='<%=ResolveUrl("~/attendee/register") %>'>Register</a></li>
 			    <li><a id="sessions" href='<%=ResolveUrl("~/session/list") %>'>Sessions</a></li>
-			    <li><a id="attendees" href='<%=ResolveUrl("~/attendee/list") %>'>Attendees</a></li>
 			    <li><a id="schedule" href='<%=ResolveUrl("~/session/schedule") %>'>Schedule</a></li>
+			    <li><a id="attendees" href='<%=ResolveUrl("~/attendee/list") %>'>Attendees</a></li>
 			    <li><a id="speakers" href='<%=ResolveUrl("~/speaker/list") %>'>Speakers</a></li>
 			    <li><a id="sponsors" href='<%=ResolveUrl("~/sponsor/list") %>'>Sponsors</a></li>
 			    <!--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li-->

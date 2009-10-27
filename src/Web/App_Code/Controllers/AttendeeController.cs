@@ -45,8 +45,10 @@ public class AttendeeController : Controller
         var model = new AttendeeListPageModel();
 
         var attendees = Models.CurrentAttendee.List();
+        var waitList = Models.CurrentAttendee.WaitList();
 
         model.Attendees = attendees;
+        model.WaitList = waitList;
 
         model.AttendeeCount = attendees.Count();
 
