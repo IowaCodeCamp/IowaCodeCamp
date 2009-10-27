@@ -211,6 +211,18 @@
                     problems that occur within a dynamic web interface.</p>
                 <dl>
                     <dt>level</dt><dd>200</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Chris Missal")%></dd></dl>
+            </li>            
+            <li>
+                <h3>
+                    Introduction to Ruby on Rails</h3>
+                <p>
+                    Ruby on Rails is a open source web framework with an emphasis on uninterrupted productivity.
+                </p>
+                <p>
+                    A hands on tutorial for the Ruby on Rails. A little knowledge of Ruby is a prerequisite. (See David Body’s Introduction to Ruby talk)
+                </p>
+                <dl>
+                    <dt>level</dt><dd>100</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Luke Amdor")%></dd></dl>
             </li>
             <li>
                 <h3>
@@ -283,7 +295,6 @@
                 <dl>
                     <dt>level</dt><dd>200</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Chris Sutton")%></dd></dl>
             </li>
-            "
             <li>
                 <h3>
                     Load testing your Web application</h3>
@@ -332,20 +343,6 @@
                 <dl>
                     <dt>level</dt><dd>100</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Dustin Thostenson")%></dd></dl>
             </li>
-            "
-            <li>
-                <h3>
-                    Ruby on Rails for .NET/Java Developers</h3>
-                <p>
-                    Ruby on Rails is an increasingly popular framework for building database-backed
-                    web applications. This presentation provides an overview of the Rails framework,
-                    the Ruby language, and what makes Ruby on Rails so exciting for developers. We'll
-                    see what all the fuss is about and why Ruby on Rails is worth learning for .NET
-                    and Java developers. Finally, we'll look at some working code together and discuss
-                    how Ruby on Rails stacks up against other web frameworks.</p>
-                <dl>
-                    <dt>level</dt><dd>200</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Brad Tutterow")%></dd></dl>
-            </li>
             <li>
                 <h3>
                     SharePoint 2010: A Developer's Odyssey</h3>
@@ -363,7 +360,7 @@
                     existing WPF knowledge will ease your transition to Silverlight. In this session
                     we will start with a basic WPF application and end with a Silverlight app!</p>
                 <dl>
-                    <dt>level</dt><dd>100</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Kirsten Juhl")%></dd></dl>
+                    <dt>level</dt><dd>100</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Kirstin Juhl")%></dd></dl>
             </li>
             <li>
                 <h3>
