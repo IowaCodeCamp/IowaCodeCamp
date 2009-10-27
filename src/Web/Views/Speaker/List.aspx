@@ -49,12 +49,6 @@
                 Becky Isserman has been a SharePoint Developer, since 2005 when she attended the Portal University with Levi, Ray, and Shoup in Springfield, IL. She is an Microsoft Certified Professional (MCP) and a Microsoft Certified Application Developer (MCAD). She has been a web designer/developer since she was fifteen hand coding HTML 3.0 websites in NotePad. She enjoys working with SharePoint 2007, because she can perform the roles of administrator, developer, designer, and architect. She has presented at seven code camps, two conferences, and three user groups in the past two years. She currently lives in Olathe, Kansas working remotely for B&R Solutions. She lives with her two cats, Gambit and Rogue, plus her boyfriend, Johnny. If you would like to contact her you can e-mail her at rebecca.isserman@gmail.com or fill out the contact form at her blog http://www.mosslover.com
                 </p>
             </li>
-            <li id="BradTutterow">
-                <h3>Brad Tutterow</h3>
-                <p><img src="<%= SpeakerImageUrl("BradTutterow.jpg") %>" align="left" />
-                Brad Tutterow is a senior consultant and application architect with Daugherty Business Solutions in St Louis.  He has 12 years of experience developing web sites and Windows applications using a variety of technologies.  Brad's experience is mostly in the Microsoft world, but he has also dabbled in Ruby on Rails, Python, and PHP.   He is most happy when developing web sites using Microsoft technologies in an agile environment with open-source tools such as CruiseControl.NET, Nunit, NMock, NAnt, and Subversion. In years past, Brad has been a licensed pharmacist and a college professor.  He is currently most excited about ASP.NET MVC, Silverlight, IronPython, and Windows Azure.
-                </p>
-            </li>
             <li id="ChrisMissal">
                 <h3>Chris Missal</h3>
                 <p><img src="<%= SpeakerImageUrl("ChrisMissal.jpg") %>" align="left" />
@@ -147,7 +141,10 @@
             <li id="KirstinJuhl">
                 <h3>Kirstin Juhl</h3>
                 <p><img src="<%= SpeakerImageUrl("KirstinJuhl.jpg") %>" align="left" />
-                
+                Kirstin Juhl has been developing software since 1996 when she started a career in engineering. She has been full-time in software development since 1999. Her passion has migrated from the art and science of product and process development to the art and science of software development, and she continues to find parallels as she continues her journey. Always up for a new learning challenge, she has been known to say, “Technology is my crack” and loves to collaborate on and evangelize all aspects of software development.
+                </p>
+                <p>
+                Kirstin holds a B.S in Chemical Engineering from the University of Minnesota and an M.S.in Software Engineering from the University of St. Thomas. She lives in St. Paul, Minnesota with her husband and two children, and when not speaking at software events enjoys mountain biking all over the Midwest, and the places out West that are not “too knarly” (i.e. “scary”). In her spare time she contributes her talent to Digital Missions as part of the LifeChurch.tv Digerati.
                 </p>
             </li>
             <li id="LeeBrandt">
