@@ -36,7 +36,7 @@ namespace Models
         {
             get
             {
-                return 200 - CurrentAttendee.List().Count();
+                return 250 - CurrentAttendee.List().Count();
             }
         }
 
