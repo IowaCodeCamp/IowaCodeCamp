@@ -19,16 +19,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <span style="float:right;">
-        <%=Model.AttendeeCount %> Attendees Registered
+        <strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />
+        <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>
     </span>
-    
-    <%
-        foreach (var attendee in Model.Attendees)
-        {%>
-        
-        
-            
-        <%} %>
     
     <asp:Repeater ID="ShowAttendeesList" runat="server">
         <HeaderTemplate>
@@ -46,6 +39,19 @@
             </div>
         </FooterTemplate>
     </asp:Repeater>
+    <br />
+    
+    <a name="waitlist"></a>
+    <h2>Wait List</h2>
+    <ul>
+        <%
+        foreach (var wait in Model.WaitList)
+        {%>
+        
+        <li><%="{0} {1}".FormatWith(wait.FirstName, wait.LastName) %></li>
+            
+        <%} %>
+    </ul>
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
