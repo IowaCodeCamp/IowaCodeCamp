@@ -21,7 +21,9 @@ public class AttendeeController : Controller
     [AcceptVerbs(HttpVerbs.Get)]
     public ActionResult Register()
     {
-        return View();
+        var model = new RegisterPageModel();
+        model.CurrentAttendeeCount = CurrentAttendee.GetTotalCount();
+        return View(model);
     }
 
     [AcceptVerbs(HttpVerbs.Post)]

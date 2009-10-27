@@ -29,4 +29,6 @@ public class RegisterPageModel : BasePageModel
 
     [StringLength(512)]
     public string Comments { get; set; }
+
+    public int CurrentAttendeeCount { get; set; }
 }
