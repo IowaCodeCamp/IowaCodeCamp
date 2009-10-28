@@ -43,12 +43,6 @@
                 <p><img src="<%= SpeakerImageUrl("AdamGrocholski.jpg") %>" align="left" />
                 Adam Grocholski has a great job at RBA Consulting in Minneapolis, MN where he has been working since 2006. Lately he has been diving into the latest and greatest UI technologies such as Silverlight and WPF and showing his clients how they can leverage these technologies to create compelling line of business applications. Adam also has a strong commitment to the local developer community. From co-founding the Twin Cities Cloud Computing user group, to hosting nerd dinners, to speaking at the .NET and Silverlight user groups and code camps. When not working he enjoys spending time with his two awesome daughters and amazing wife. You can catch up with his latest projects and thoughts on technology at http://thinkfirstcodelater.com , or if that's a bit too verbose for your liking you can always follow him on twitter at http://twitter.com/agrocholski</p>
             </li>
-            <li id="BeckyIsserman">
-                <h3>Becky Isserman</h3>
-                <p><img src="<%= SpeakerImageUrl("BeckyIsserman.jpg") %>" align="left" />
-                Becky Isserman has been a SharePoint Developer, since 2005 when she attended the Portal University with Levi, Ray, and Shoup in Springfield, IL. She is an Microsoft Certified Professional (MCP) and a Microsoft Certified Application Developer (MCAD). She has been a web designer/developer since she was fifteen hand coding HTML 3.0 websites in NotePad. She enjoys working with SharePoint 2007, because she can perform the roles of administrator, developer, designer, and architect. She has presented at seven code camps, two conferences, and three user groups in the past two years. She currently lives in Olathe, Kansas working remotely for B&R Solutions. She lives with her two cats, Gambit and Rogue, plus her boyfriend, Johnny. If you would like to contact her you can e-mail her at rebecca.isserman@gmail.com or fill out the contact form at her blog http://www.mosslover.com
-                </p>
-            </li>
             <li id="ChrisMissal">
                 <h3>Chris Missal</h3>
                 <p><img src="<%= SpeakerImageUrl("ChrisMissal.jpg") %>" align="left" />

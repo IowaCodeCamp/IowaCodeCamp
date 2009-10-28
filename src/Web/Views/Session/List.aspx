@@ -345,15 +345,6 @@
             </li>
             <li>
                 <h3>
-                    SharePoint 2010: A Developer's Odyssey</h3>
-                <p>
-                    In this session we will discuss beginning development in SharePoint 2010. We will
-                    also discuss the differences between development in 2010 vs. 2007.</p>
-                <dl>
-                    <dt>level</dt><dd>100/200</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Becky Isserman")%></dd></dl>
-            </li>
-            <li>
-                <h3>
                     Silverlight for the WPF developer</h3>
                 <p>
                     if you are a WPF developer, you are also a Silverlight developer!! Learn how your
