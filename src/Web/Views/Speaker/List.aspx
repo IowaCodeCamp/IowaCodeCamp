@@ -22,7 +22,7 @@
         {
         	margin:0 0;
         	padding:0;
-        	
+        	margin-bottom:10px;
         }
     </style>
 
@@ -55,6 +55,18 @@
                 Chris Sutton is a software developer and technical trainer in Eastern Iowa and has been working with ASP.NET since 2002. He helps run CRineta.org in Cedar Rapids, Iowa and he co-founded the Iowa Code Camp in 2008. Chris is a Microsoft MVP, a Microsoft Certified Trainer (MCT) and holds the MCPD:Enterprise certification. He has been consulting and speaking on software development topics since the beginning of 2008 and loves developing for the web. 
                 </p>
                 <p>Getting to spend time with his wife and kids makes his tech work worthwhile. He also enjoys hiking and biking in the summer and snowshoeing in the winter.
+                </p>
+            </li>
+            <li id="ChrisLeonard">
+                <h3>Chris Leonard</h3>
+                <p><img src="<%= SpeakerImageUrl("ChrisLeonard.jpg") %>" align="left" />
+                Chris Leonard has been working with programming since the 1980s.  Along the way, he has worked as an application developer, a system DBA, and a database developer, but his work has always been database-centric.  As a consultant (http://www.databaseguy.com), Chris has presented hundreds of training classes, contributed to many practice certification exams for Transcender, Meausure Up, Brain Bench, and Microsoft, and worked on an occasional book or two.  He holds several Microsoft certifications, and was named a official subject matter expert in SQL Server 2005 and 2008 by Microsoft Learning, which allowed him to work on many aspects of Microsoft's certification products for SQL Server.
+                </p>
+                <p>
+                Chris's full-time job is that of database team lead at GoDaddy.com, the world's largest domain name registrar and paid hosting provider.  In that position, Chris leads a three-person team that is responsible for the data tier used by all of Go Daddy's core registrar systems.
+                </p>
+                <p>
+                A perpetual insomniac, Chris probably wrote his presentation sometime between midnight and 3am.  When he's not busy being a database guy, he is usually doing something with his wonderful wife and the four kids they've been blessed with.  As a co-founder of the 380 PASS SQL Server Users' Group (http://www.380pass.org), he also suspects that he's been invited to speak at the Iowa Code Camp in part as payback for the good-natured ribbing that the CRINETA folks put up at our inaugural SQL Saturday event.
                 </p>
             </li>
             <li id="DavidBody">

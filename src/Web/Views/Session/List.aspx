@@ -307,6 +307,18 @@
             </li>
             <li>
                 <h3>
+                    Lost in translation: What really happens when you run that query?</h3>
+                <p>
+                    Ever wonder what happens after a request leaves your application and heads to the database server 
+                    and before the results come back?  This chalk talk will walk you through the basics performed by a 
+                    database server to service a request.  Along the way, we'll also touch on why your DBA says some of 
+                    those frustrating and inscrutable things that sometimes contribute to a love/hate relationship between 
+                    developers and DBAs.</p>
+                <dl>
+                    <dt>level</dt><dd>200</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Chris Leonard")%></dd></dl>
+            </li>
+            <li>
+                <h3>
                     My experience learning NHibernate</h3>
                 <p>
                     This session will be centered around the learning experience I had w/ NHibernate
