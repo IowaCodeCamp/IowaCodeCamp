@@ -11,7 +11,7 @@ public class Config
 {
     public static int MaxAttendees
     {
-        get { return int.Parse(Get("MaxAttendees", "250")); }
+        get { return int.Parse(Get("MaxAttendees", "280")); }
     }
 
     private static string Get(string key, string @default)
