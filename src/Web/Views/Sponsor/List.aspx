@@ -39,6 +39,10 @@
     <h2 style="text-decoration:underline;">Gold Sponsors</h2>
     <br />
     
+    <a href="http://www.telerik.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
+    </a>
+    
     <a href="http://www.stoneriver.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />
     </a>
