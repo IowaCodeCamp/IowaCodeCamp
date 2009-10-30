@@ -86,9 +86,9 @@
     alt="Pearson Education" class="sponsors" />
     </a> 
     
-<%--    <a href="http://www.lostechies.com" target="_blank">--%>
-<%--    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/lostechies_logo.png") %>' alt="Los Techies" class="sponsors" />--%>
-<%--    </a>--%>
+    <a href="http://www.jetbrains.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
+    </a>
     
     <br />
 

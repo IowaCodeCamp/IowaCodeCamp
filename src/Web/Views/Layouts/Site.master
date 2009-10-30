@@ -70,7 +70,7 @@
 			    <li><a id="schedule" href='<%=ResolveUrl("~/session/schedule") %>'>Schedule</a></li>
 			    <li><a id="attendees" href='<%=ResolveUrl("~/attendee/list") %>'>Attendees</a></li>
 			    <li><a id="speakers" href='<%=ResolveUrl("~/speaker/list") %>'>Speakers</a></li>
-			    <li><a id="sponsors" href='<%=ResolveUrl("~/sponsor/list") %>'>Sponsors</a></li>
+			    <li><a id="sponsors" href='<%=ResolveUrl("~/sponsor") %>'>Sponsors</a></li>
 			    <!--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li-->
 			    <li><a id="location" href='<%=ResolveUrl("~/about/location") %>'>Location</a></li>
 			    <li><a id="directions" href='<%=ResolveUrl("~/about/directions") %>'>Directions</a></li>
