@@ -94,6 +94,10 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
     </a>
     
+    <a href="http://www.sqlsets.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("sqlsets_logo.png") %>' alt="SQL Sets" class="sponsors" />
+    </a>
+    
     <br />
 
 </asp:Content>
