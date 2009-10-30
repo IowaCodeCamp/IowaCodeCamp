@@ -21,24 +21,32 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
     <a name="platinum"></a>
-    <h2 style="text-decoration:underline;">Platinum Sponsors</h2>
-    <br />
+    <h2>Platinum Sponsors</h2>
+    <hr />
     
+    <table><tr>
+    <td>
+    <a href="http://discountasp.net" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
+    </a>     
+    </td>
+    <td>
     <a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" class="sponsors" />
-    </a>
-    <br /><br />
-    
-    <a href="http://discountasp.net" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
-    </a>
-    <br /><br />
+    </a>    
+    </td>
+    </tr></table>
     
     
     <a name="gold"></a>
-    <h2 style="text-decoration:underline;">Gold Sponsors</h2>
+    <h2>Gold Sponsors</h2>
+    <hr />
     <br />
     
+    <a href="http://www.devlicio.us/" target="_blank">
+    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/devlicious_logo.png") %>' alt="Devlicious" class="sponsors" />
+    </a> <br />
+       
     <a href="http://www.telerik.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
     </a>
@@ -52,23 +60,18 @@
     </a>
     <br /><br />
     
-    <a href="http://www.devlicio.us/" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/devlicious_logo.png") %>' alt="Devlicious" class="sponsors" />
-    </a>
+
         
     <a href="http://www.microsoft.com/" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
     </a>
     
-    <a href="http://www.telerik.com" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
-    </a>
     <br /><br />
     
     
     <a name="silver"></a>
-    <h2 style="text-decoration:underline;">Silver Sponsors</h2>
-    <br />
+    <h2 >Silver Sponsors</h2>
+    <hr />
     
     <a href="http://www.iowacomputergurus.com" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.jpg") %>' 
