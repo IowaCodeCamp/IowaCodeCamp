@@ -114,22 +114,6 @@
             </li>
             <li>
                 <h3>
-                    Developing Navigation Applications with Silverlight 3</h3>
-                <p>
-                    Silverlight 3 introduces a new navigation framework that you can use to partition
-                    your views into separate XAML files and navigate to each view as simple as you would
-                    previously with a web page. The navigation framework also integrates with the browsers'
-                    history journal to provide back/forward capabilities. By enabling this framework
-                    you can implement deep linking support in your Silverlight application easily. This
-                    will help also with enabling certain SEO enhancements for your Silverlight application.
-                    In this session we'll look at how to build navigation applications and what we can
-                    do to ensure a consistent user experience within our applications for both in and
-                    out of browser scenarios.</p>
-                <dl>
-                    <dt>level</dt><dd>100</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Adam Grocholski")%></dd></dl>
-            </li>
-            <li>
-                <h3>
                     Developing Peer to Peer Applications with .NET</h3>
                 <p>
                     Explore the world of Peer-to-Peer programming. In this session, attendees will be
@@ -297,6 +281,14 @@
             </li>
             <li>
                 <h3>
+                    Leveraging Social Networking / Social Media tools in your applications</h3>
+                <p>
+                Social networking sites, such as LinkedIn, BrightKite, Facebook & Twitter are growing at an incredible rate. In this talk, we'll take a brief look at some various forms of social networking tools and their respective APIs. I'll also demo building a Twitter client app using VB .NET, WPF and the Twitter API.</p>
+                <dl>
+                    <dt>level</dt><dd>200</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Chris Williams")%></dd></dl>
+            </li>
+            <li>
+                <h3>
                     Load testing your Web application</h3>
                 <p>
                     In this session you’ll learn how to answer the following questions: How many concurrent
@@ -335,7 +327,7 @@
                     want to hack along. This is a discussion/experimentation session for adults who
                     want to introduce programming to kids they know, but kids are welcome as well.</p>
                 <dl>
-                    <dt>level</dt><dd></dd><dt>speaker</dt><dd><%= Html.SpeakerLink("David Mitchell")%></dd></dl>
+                    <dt>level</dt><dd>100</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("David Mitchell")%></dd></dl>
             </li>
             <li>
                 <h3>

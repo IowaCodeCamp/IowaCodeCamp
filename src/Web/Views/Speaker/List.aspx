@@ -38,11 +38,6 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div id="speakers">
         <ul>
-            <li id="AdamGrocholski">
-                <h3>Adam Grocholski</h3>
-                <p><img src="<%= SpeakerImageUrl("AdamGrocholski.jpg") %>" align="left" />
-                Adam Grocholski has a great job at RBA Consulting in Minneapolis, MN where he has been working since 2006. Lately he has been diving into the latest and greatest UI technologies such as Silverlight and WPF and showing his clients how they can leverage these technologies to create compelling line of business applications. Adam also has a strong commitment to the local developer community. From co-founding the Twin Cities Cloud Computing user group, to hosting nerd dinners, to speaking at the .NET and Silverlight user groups and code camps. When not working he enjoys spending time with his two awesome daughters and amazing wife. You can catch up with his latest projects and thoughts on technology at http://thinkfirstcodelater.com , or if that's a bit too verbose for your liking you can always follow him on twitter at http://twitter.com/agrocholski</p>
-            </li>
             <li id="ChrisMissal">
                 <h3>Chris Missal</h3>
                 <p><img src="<%= SpeakerImageUrl("ChrisMissal.jpg") %>" align="left" />
@@ -67,6 +62,15 @@
                 </p>
                 <p>
                 A perpetual insomniac, Chris probably wrote his presentation sometime between midnight and 3am.  When he's not busy being a database guy, he is usually doing something with his wonderful wife and the four kids they've been blessed with.  As a co-founder of the 380 PASS SQL Server Users' Group (http://www.380pass.org), he also suspects that he's been invited to speak at the Iowa Code Camp in part as payback for the good-natured ribbing that the CRINETA folks put up at our inaugural SQL Saturday event.
+                </p>
+            </li>
+            <li id="ChrisWilliams">
+                <h3>Chris Williams</h3>
+                <p><img src="<%= SpeakerImageUrl("ChrisWilliams.jpg") %>" align="left" />
+                Chris Williams is a Technology Evangelist for Magenic.He's also a Visual Basic .NET MVP, MCT, MCSD (.NET) Early Adopter, MCAD, INETA Speaker, freelance game developer, occasional author, tech editor, conference speaker, vintage arcade game collector and INETA Community Champion. He also plays a pretty mean guitar in Rock Band.
+                </p>    
+                <p>
+                Lastly, yes, the rumors are true, he loves Visual Basic so much he even named his dog VB.
                 </p>
             </li>
             <li id="DavidBody">
