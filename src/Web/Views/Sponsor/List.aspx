@@ -60,11 +60,14 @@
     </a>
     <br /><br />
     
-
-        
     <a href="http://www.microsoft.com/" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
     </a>
+    
+    <a href="http://www.devexpress.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("devexpress_logo.png") %>' alt="DevExpress" class="sponsors" />
+    </a>
+
     
     <br /><br />
     
