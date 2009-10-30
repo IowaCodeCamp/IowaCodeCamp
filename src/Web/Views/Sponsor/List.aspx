@@ -39,6 +39,10 @@
     <h2 style="text-decoration:underline;">Gold Sponsors</h2>
     <br />
     
+    <a href="http://www.stoneriver.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />
+    </a>
+    
     <a href="http://www.visionary.com" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/visionary_logo.jpg") %>' alt="Visionary Services" class="sponsors" />
     </a>
@@ -52,12 +56,11 @@
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
     </a>
     
-
-    
     <a href="http://www.telerik.com" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
     </a>
     <br /><br />
+    
     
     <a name="silver"></a>
     <h2 style="text-decoration:underline;">Silver Sponsors</h2>
