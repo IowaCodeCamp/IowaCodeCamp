@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Sponsors | Iowa Code Camp" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
+﻿<%@ Page Title="Sponsors | Iowa Code Camp" Language="C#" Inherits="BasePage" MasterPageFile="~/Views/Layouts/Site.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">    
@@ -76,6 +76,11 @@
     <a href="http://www.lostechies.com" target="_blank">
     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/lostechies_logo.png") %>' 
     alt="Los Techies" class="sponsors" />
+    </a> 
+    
+    <a href="http://www.pearsoned.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("pearsoned_ug_logo.jpg") %>' 
+    alt="Pearson Education" class="sponsors" />
     </a> 
     
 <%--    <a href="http://www.lostechies.com" target="_blank">--%>

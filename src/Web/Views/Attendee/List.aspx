@@ -1,13 +1,5 @@
 ﻿<%@ Page Title="Attendees | Iowa Code Camp" Language="C#" Inherits="System.Web.Mvc.ViewPage<AttendeeListPageModel>" %>
 
-<script runat="server">
-    public void Page_Load(object sender, EventArgs e)
-    {
-        ShowAttendeesList.DataSource = Model.Attendees;
-        ShowAttendeesList.DataBind();
-    }
-</script>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
     $(document).ready(function()
@@ -23,27 +15,30 @@
         <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>
     </span>
     
-    <asp:Repeater ID="ShowAttendeesList" runat="server">
-        <HeaderTemplate>
-            <div>
-        </HeaderTemplate>
-        <ItemTemplate>
-            <span style="font-size:x-large;"><%# Eval("Name") %></span>
+    <div>
+
+            <%
+            foreach (var attendee in Model.Attendees)
+            {%>
+            
+            <span style="font-size:x-large;">
+                <%=attendee.Name%>
+            </span>
             <br />
-            Organization: <span style="font-size:large;"><%# Eval("Organization") %></span>
+            Organization: <span style="font-size:large;"><%=attendee.Organization %></span>
             <br /><br />
-            <span style="font-size:large;"><%# Eval("Comments") %></span>
+            <span style="font-size:large;"><%=attendee.Comments %></span>
             <br /><br />
-        </ItemTemplate>
-        <FooterTemplate>
-            </div>
-        </FooterTemplate>
-    </asp:Repeater>
+                
+            <%} %>
+
+    </div>
+
     <br />
     
     <a name="waitlist"></a>
     <h2>Wait List</h2>
-    <ul>
+    <ul style="padding-left:30px">
         <%
         foreach (var wait in Model.WaitList)
         {%>
