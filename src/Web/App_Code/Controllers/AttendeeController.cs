@@ -15,32 +15,33 @@ public class AttendeeController : Controller
 {
     public ActionResult Index()
     {
-        return View("list");
+        return RedirectToAction("list");
     }
 
     [AcceptVerbs(HttpVerbs.Get)]
     public ActionResult Register()
     {
-        var model = new RegisterPageModel();
-        model.CurrentAttendeeCount = CurrentAttendee.GetTotalCount();
-        return View(model);
+        return RedirectToAction("List");
+//        var model = new RegisterPageModel();
+//        model.CurrentAttendeeCount = CurrentAttendee.GetTotalCount();
+//        return View(model);
     }
-
-    [AcceptVerbs(HttpVerbs.Post)]
-    public ActionResult Register(RegisterPageModel model)
-    {
-        //run server validation
-        var errors = DataAnnotationsValidationRunner.GetErrors(model);
-
-        if (errors.Any())
-            return View(model);
-
-        var attendee = Map.RegisterToCurrentAttendee(model);
-
-        CurrentAttendee.Add(attendee);
-
-        return Redirect("~/attendee/list");
-    }
+//
+//    [AcceptVerbs(HttpVerbs.Post)]
+//    public ActionResult Register(RegisterPageModel model)
+//    {
+//        //run server validation
+//        var errors = DataAnnotationsValidationRunner.GetErrors(model);
+//
+//        if (errors.Any())
+//            return View(model);
+//
+//        var attendee = Map.RegisterToCurrentAttendee(model);
+//
+//        CurrentAttendee.Add(attendee);
+//
+//        return Redirect("~/attendee/list");
+//    }
 
     public ActionResult List()
     {

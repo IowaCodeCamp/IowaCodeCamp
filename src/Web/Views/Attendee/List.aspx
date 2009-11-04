@@ -8,6 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <h1>Registered Attendees</h1>
+<h2>(Registration is now closed)</h2>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <span style="float:right;">
