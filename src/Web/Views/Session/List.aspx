@@ -266,16 +266,17 @@
             <a name="chris-sutton"></a>
             <li>
                 <h3>
-                    IronPython with ASP.NET</h3>
+                    An Introduction to ASP.NET MVC</h3>
                 <p>
-                    IronPython is Microsoft’s implementation of the Python language and it was one of
-                    the first dynamic language implementations for the CLR. It is currently nearing
-                    full release for the 2.6 implementation.</p>
+                    ASP.NET MVC is Microsoft's implementation of an old design pattern, 
+                    which fits web development better than ASP.NET does. It simplifies 
+                    multiple aspects of web development that were complex in ASP.NET. 
+                    It also gives ASP.NET developers a better and more accurate 
+                    abstraction layer over the web. For example it doesn't use the 
+                    problematic ViewState object. It removes most of the overly complex 
+                    page lifecycle and it simplifies the ability to unit test web requests.</p>
                 <p>
-                    We’ll start this session with a (very) brief introduction to Python, then we’ll
-                    go right into how to make an ASP.NET site play well with Python. Throughout this
-                    presentation we’ll discuss what benefits we get by using a dynamic language and
-                    what potential pitfalls you may encounter.</p>
+                    In this presentation we'll explain the MVC terminology and then we'll explore how to work with Controllers, Actions, Views and your Model. Then we'll walk though a real but simple ASP.NET MVC site so you can leave this session with enough knowledge to start a new ASP.NET MVC project.</p>
                 <dl>
                     <dt>level</dt><dd>200</dd><dt>speaker</dt><dd><%= Html.SpeakerLink("Chris Sutton")%></dd></dl>
             </li>
