@@ -4,11 +4,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
     <div class="box">
-        <h1><a href="attendee/register">Register here</a> if you would you like to attend?</h1>
+        <h2><a href="http://picasaweb.google.com/iowacodecamp/Fall2009#" target="_blank">Photos</a> from Iowa Code Camp 4</h2>
     </div>
     Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <a href='<%=ResolveUrl("~/about/directions") %>'>Do you need <strong>hotel</strong> recommendations?</a>
+    
+    <div class="box">
+        <h3>Presentation links</h3><br /><br />
+        
+        <a href="http://devlicio.us/blogs/sergio_pereira/archive/2009/11/10/talk-stop-programming-javascript-by-luck.aspx"  target="_blank">Sergio Pereira - Stop Programming Javascript by luck</a>
+    </div>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
@@ -30,11 +34,11 @@
             </p>
             <ul style="padding-left:30px;">
                 <li>Community driven</li>
-                <li>High quality</li>
+                <li>Sessions are high quality</li>
                 <li>Its for and by developers</li>
-                <li>No cost (for attendees)</li>
-                <li>All about code, not PowerPoint presentations</li>
-                <li>Source code and slides must be available to share with people who attend</li>
+                <li>No cost for attendees</li>
+                <li>Developer relevant content</li>
+                <li>Source code and slides should be available to share with people who attend</li>
                 <li>Never during work hours - usually on a Saturday</li>
             </ul>
             <br />
@@ -42,9 +46,8 @@
             What a code camp is <strong>not</strong>:
             </p>
             <ul style="padding-left:30px;">
-                <li>Corporate product placement</li>
-                <li>Marketing</li>
-                <li>Slidedeck centric</li>
+                <li>Product placement</li>
+                <li>Corporate marketing</li>
             </ul>
             <br />
             <p>

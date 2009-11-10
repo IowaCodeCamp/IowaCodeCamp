@@ -54,7 +54,7 @@
 	    </div>
 	    
 	    <div id="headercontentright">
-	        <h1>November 7, 2009</h1>
+	        <h1>May 1, 2010</h1>
 	    </div>
 
         <!--uncomment this to show a picture banner-->
@@ -75,7 +75,7 @@
 			    <li><a id="directions" href='<%=ResolveUrl("~/about/directions") %>'>Directions</a></li>
 			    <li><a id="about" href='<%=ResolveUrl("~/about") %>'>About</a></li>
 		    </ul>
-		    <div style="float:right;"><br /><b><%=Models.Event.DaysLeftMessage%></b> (<%=Models.CurrentAttendee.AvailableSpotsMessage %>)</div>
+		    <div style="float:right;"><br /><b><%=Models.Event.DaysLeftMessage%></b> </div>
 	    </div>
 	    <div id="menubottom"></div>
 

@@ -11,7 +11,7 @@ namespace Models
 
         public static bool Add(CurrentAttendee attendee)
         {
-            attendee.EventID = 5;
+            attendee.EventID = 6;
 
             var ctx = new ICCData();
             ctx.CurrentAttendees.InsertOnSubmit(attendee);
@@ -35,14 +35,14 @@ namespace Models
         {
             var ctx = new ICCData();
 
-            return ctx.CurrentAttendees.Where(a => a.EventID == 5).Count();
+            return ctx.CurrentAttendees.Where(a => a.EventID == 6).Count();
         }
 
         public static List<CurrentAttendee> List()
         {
             var ctx = new ICCData();
 
-            return ctx.CurrentAttendees.Where(a => a.EventID == 5)
+            return ctx.CurrentAttendees.Where(a => a.EventID == 6)
                 .Take(Config.MaxAttendees).ToList();
         }
 
@@ -50,7 +50,7 @@ namespace Models
         {
             var ctx = new ICCData();
 
-            return ctx.CurrentAttendees.Where(a => a.EventID == 5)
+            return ctx.CurrentAttendees.Where(a => a.EventID == 6)
                 .Skip(Config.MaxAttendees).ToList();
         }
 
