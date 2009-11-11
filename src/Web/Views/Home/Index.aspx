@@ -12,6 +12,22 @@
         <h3>Presentation links</h3><br /><br />
         
         <a href="http://devlicio.us/blogs/sergio_pereira/archive/2009/11/10/talk-stop-programming-javascript-by-luck.aspx"  target="_blank">Sergio Pereira - Stop Programming Javascript by luck</a>
+        <br /><br />
+        <a href="http://just3ws.wordpress.com/2009/11/07/iowa-code-camp/" target="_blank">Michael Hall - AOP with PostSharp</a>
+        <br /><br />
+        <a href="http://www.scottseely.com/blog/09-11-07/Iowa_Code_Camp_November_2009_Slides_Up.aspx" target="_blank">Scott Seely - WCF Diagnostics & WinDBG</a>
+
+    </div>
+    
+    <div class="box">
+        <h3>Iowa Code Camp writeups</h3><br /><br />
+        
+        <a href="http://randomactsofcoding.blogspot.com/2009/11/iowa-code-camp-session-overview.html"  target="_blank">James Eggers</a>
+        <br /><br />
+        <a href="http://chrismissal.com/2009/11/08/iowa-code-camp-iv-a-love-story/" target="_blank">Chris Missal</a>
+        <br /><br />
+        <a href="http://www.truewill.net/myblog/index.php/2009/11/07/back_from_iowa_code_camp_2009" target="_blank">Bill Sorensen</a>
+        
     </div>
 
 </asp:Content>
