@@ -16,7 +16,8 @@
         <a href="http://just3ws.wordpress.com/2009/11/07/iowa-code-camp/" target="_blank">Michael Hall - AOP with PostSharp</a>
         <br /><br />
         <a href="http://www.scottseely.com/blog/09-11-07/Iowa_Code_Camp_November_2009_Slides_Up.aspx" target="_blank">Scott Seely - WCF Diagnostics & WinDBG</a>
-
+        <br /><br />
+        <a href="http://www.databaseguy.com/presentations/IowaCodeCamp-04-Lost-In-Translation.zip" target="_blank">Chris Leonard - Lost in Translation</a>
     </div>
     
     <div class="box">
