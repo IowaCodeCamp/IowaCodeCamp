@@ -15,9 +15,14 @@
         <br /><br />
         <a href="http://just3ws.wordpress.com/2009/11/07/iowa-code-camp/" target="_blank">Michael Hall - AOP with PostSharp</a>
         <br /><br />
-        <a href="http://www.scottseely.com/blog/09-11-07/Iowa_Code_Camp_November_2009_Slides_Up.aspx" target="_blank">Scott Seely - WCF Diagnostics & WinDBG</a>
+        <a href="http://devlicio.us/blogs/scott_seely/archive/2009/11/12/slides-and-code-from-chicago-alt-net-meeting.aspx" target="_blank">Scott Seely - WCF Diagnostics & WinDBG</a>
         <br /><br />
         <a href="http://www.databaseguy.com/presentations/IowaCodeCamp-04-Lost-In-Translation.zip" target="_blank">Chris Leonard - Lost in Translation</a>
+        <br /><br />
+        <a href="http://blog.webosschool.com/2009/11/11/webos-videos-and-source-available-from-iowa-code-camp/" target="_blank">webOS sessions - Justin Musgrove and Torey Maerz</a>
+        <br /><br />
+        <a href="http://ferventcoder.com/archive/2009/11/10/afterthoughts-from-iowa-code-camp-and-uppercut-talk.aspx" target="_blank">Rob Reynolds - UppercuT</a>
+    
     </div>
     
     <div class="box">
