@@ -22,12 +22,17 @@
         <a href="http://blog.webosschool.com/2009/11/11/webos-videos-and-source-available-from-iowa-code-camp/" target="_blank">webOS sessions - Justin Musgrove and Torey Maerz</a>
         <br /><br />
         <a href="http://ferventcoder.com/archive/2009/11/10/afterthoughts-from-iowa-code-camp-and-uppercut-talk.aspx" target="_blank">Rob Reynolds - UppercuT</a>
-    
-    </div>
+        <br /><br />
+        <a href="http://www.architectnow.net/Resources/VS.NET%20Tips%20and%20Tricks.pptx" target="_blank">Kevin Grossnicklaus - Visual Studio Tips and Tricks</a>
+        <br /><br />
+        
+        </div>
     
     <div class="box">
         <h3>Iowa Code Camp writeups</h3><br /><br />
-        
+       
+        <a href="http://geekswithblogs.net/kgrossnicklaus/archive/2009/11/13/iowa-code-camp.aspx"  target="_blank">Kevin Grossnicklaus</a>
+        <br /><br /> 
         <a href="http://randomactsofcoding.blogspot.com/2009/11/iowa-code-camp-session-overview.html"  target="_blank">James Eggers</a>
         <br /><br />
         <a href="http://chrismissal.com/2009/11/08/iowa-code-camp-iv-a-love-story/" target="_blank">Chris Missal</a>
