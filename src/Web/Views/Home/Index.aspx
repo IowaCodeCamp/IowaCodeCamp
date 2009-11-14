@@ -25,6 +25,11 @@
         <br /><br />
         <a href="http://www.architectnow.net/Resources/VS.NET%20Tips%20and%20Tricks.pptx" target="_blank">Kevin Grossnicklaus - Visual Studio Tips and Tricks</a>
         <br /><br />
+        <a href="http://www.withaguide.com/2009/11/new-environment-for-programming-with.html" target="_blank">David Mitchell - Programming with Kids</a>
+        <br /><br />
+        <a href="http://tinyurl.com/RageAgainstTheManagement-ICC" target="_blank">Dustin Thostensen - Rage against the Management</a>
+        <br /><br />
+        
         
         </div>
     
