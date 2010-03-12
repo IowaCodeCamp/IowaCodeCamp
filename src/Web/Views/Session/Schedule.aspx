@@ -8,15 +8,15 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h1>Draft of Session Schedule</h1>
+<h1>Session Schedule</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
-<a target="_blank" href="http://spreadsheets.google.com/pub?key=t5PqWg6sr-UD6YGXCyzI1Fw&single=true&gid=1&output=html">Open in a separate window</a>
-<br /><br />
-
-<iframe src="http://spreadsheets.google.com/pub?key=t5PqWg6sr-UD6YGXCyzI1Fw&single=true&gid=1&output=html"
- width="100%" height="1000px"></iframe>
+<%--<a target="_blank" href="http://spreadsheets.google.com/pub?key=t5PqWg6sr-UD6YGXCyzI1Fw&single=true&gid=1&output=html">Open in a separate window</a>--%>
+<%--<br /><br />--%>
+<%----%>
+<%--<iframe src="http://spreadsheets.google.com/pub?key=t5PqWg6sr-UD6YGXCyzI1Fw&single=true&gid=1&output=html"--%>
+<%-- width="100%" height="1000px"></iframe>--%>
 
 </asp:Content>
 

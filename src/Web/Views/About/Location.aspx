@@ -8,13 +8,13 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h1>DMACC Facility</h1>
+<h1>Iowa Memorial Union at the University of Iowa</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 
 <div id="VirtualTour">
-<a href="http://www.dmacc.cc.ia.us/west/campus.asp" target="_blank">DMACC West Virtual Tour</a>
+<a href="http://imu.uiowa.edu/maps-directions/" target="_blank">Maps and Directions</a>
 <br />
 
 <div align="center" style="margin:10px 0px 10px 20px;">
