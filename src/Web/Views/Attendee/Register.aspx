@@ -1,6 +1,4 @@
 ﻿<%@ Page Title="Register | Iowa Code Camp" Language="C#" Inherits="System.Web.Mvc.ViewPage<RegisterPageModel>" MasterPageFile="~/Views/Layouts/Site.master" %>
-<%@ Import Namespace="xVal.Rules"%>
-<%@ Import Namespace="xVal.RuleProviders"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">    
@@ -45,7 +43,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h1>Register for Iowa Code Camp <%= (Model.CurrentAttendeeCount >= Config.MaxAttendees)? "*Waitlist*":"" %></h1>
+<%--<h1>Register for Iowa Code Camp <%= (Model.CurrentAttendeeCount >= Config.MaxAttendees)? "*Waitlist*":"" %></h1>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 <form action="/attendee/register" method="post">
@@ -82,17 +80,6 @@
 </form>
 
 <%= Html.ClientSideValidation<RegisterPageModel>() %>
-
-<%--    <%--%>
-<%--    var rules = Html.ClientSideValidationRules(RuleSet.Empty);--%>
-<%--    rules.AddRule( "FirstName", new RequiredRule() );--%>
-<%--    rules.AddRule( "LastName", new RequiredRule());--%>
-<%--    rules.AddRule( "Email", new RequiredRule());    --%>
-<%--    rules.AddRule( "Email", new DataTypeRule( DataTypeRule.DataType.EmailAddress ) );--%>
-<%--        --%>
-<%--    %>--%>
-<%----%>
-<%--    <script type="text/javascript">xVal.AttachValidator( null, <%= rules %> );</script>--%>
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">

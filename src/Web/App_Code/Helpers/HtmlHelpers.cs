@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using System.Web.Mvc;
-using Microsoft.Web.Mvc;
+using System.Web.Mvc.Html;
+
 
 /// <summary>
 /// Html Helper/Extension methods
@@ -78,10 +79,11 @@ public static class HtmlHelpers
 
     public static string SpeakerLink(this HtmlHelper @this, string name)
     {
-        var link = @this.ActionLink<SpeakerController>(x => x.List(), name);
-        var bookmark = name.Replace(" ", "");
-        const string matchPattern = "${link}";
-        link = Regex.Replace(link, "(?<link>href=\".*?)\"", "{0}#{1}\"".FormatWith(matchPattern,bookmark));
-        return link;
+        //var link = @this.ActionLink(name, "list","speaker");
+        
+        //var bookmark = name.Replace(" ", "");
+        //const string matchPattern = "${link}";
+        //link = Regex.Replace(link, "(?<link>href=\".*?)\"", "{0}#{1}\"".FormatWith(matchPattern,bookmark));
+        return "";// link;
     }
 }

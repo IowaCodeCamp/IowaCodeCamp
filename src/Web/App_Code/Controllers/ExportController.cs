@@ -7,7 +7,7 @@ namespace ASP.App_Code.Controllers
 {
     public class ExportController : Controller
     {
-        public FileResult Attendees()
+        public ActionResult Attendees()
         {
             var attendeeList = CurrentAttendee.List();
             var serializer = new CSVSerializer();
@@ -19,7 +19,7 @@ namespace ASP.App_Code.Controllers
 
             var result = new FileContentResult(Encoding.ASCII.GetBytes(builder.ToString()), "text/csv")
                              {FileDownloadName = "Attendees.csv"};
-            return result;
+            return new EmptyResult();
         }
     }
 }
