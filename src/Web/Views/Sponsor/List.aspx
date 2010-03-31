@@ -26,7 +26,7 @@
     
     <table><tr>
     <td>
-    <a href="http://www.skywalkgroup.com/" target="_blank">
+    <a href="http://www.skywalkgroup.com/it-staffing/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("skywalk_logo.png") %>' alt="Skywalk Group" class="sponsors" />
     </a>     
     </td>
