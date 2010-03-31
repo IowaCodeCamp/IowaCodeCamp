@@ -24,18 +24,18 @@
     <h2>Platinum Sponsors</h2>
     <hr /><br />
     
-<%--    <table><tr>--%>
-<%--    <td>--%>
-<%--    <a href="http://discountasp.net" target="_blank">--%>
-<%--    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />--%>
-<%--    </a>     --%>
-<%--    </td>--%>
+    <table><tr>
+    <td>
+    <a href="http://www.skywalkgroup.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("skywalk_logo.png") %>' alt="Skywalk Group" class="sponsors" />
+    </a>     
+    </td>
 <%--    <td>--%>
 <%--    <a href="http://www.qci.com" target="_blank">--%>
 <%--    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/qci_logo.gif") %>' alt="QCI" class="sponsors" />--%>
 <%--    </a>    --%>
 <%--    </td>--%>
-<%--    </tr></table>--%>
+    </tr></table>
     
     
     <a name="gold"></a>
