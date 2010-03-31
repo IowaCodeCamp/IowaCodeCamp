@@ -50,11 +50,7 @@
 <%--    <a href="http://www.devlicio.us/" target="_blank">--%>
 <%--    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/devlicious_logo.png") %>' alt="Devlicious" class="sponsors" />--%>
 <%--    </a> <br />--%>
-<%--       --%>
-<%--    <a href="http://www.telerik.com/" target="_blank">--%>
-<%--    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />--%>
-<%--    </a>--%>
-<%--    --%>
+
 <%--    <a href="http://www.stoneriver.com/" target="_blank">--%>
 <%--    <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />--%>
 <%--    </a>--%>
@@ -75,6 +71,12 @@
     <a name="silver"></a>
     <h2 >Silver Sponsors</h2>
     <hr />
+    
+       
+    <a href="http://www.telerik.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
+    </a>
+    
     
 <%--    <a href="http://www.iowacomputergurus.com" target="_blank">--%>
 <%--    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.jpg") %>' --%>
