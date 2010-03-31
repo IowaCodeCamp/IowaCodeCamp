@@ -43,6 +43,10 @@
     <hr />
     <br />
     
+        <a href="http://www.microsoft.com/" target="_blank">
+        <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
+        </a>
+        
 <%--    <a href="http://www.devlicio.us/" target="_blank">--%>
 <%--    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/devlicious_logo.png") %>' alt="Devlicious" class="sponsors" />--%>
 <%--    </a> <br />--%>
@@ -59,11 +63,7 @@
 <%--    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/visionary_logo.jpg") %>' alt="Visionary Services" class="sponsors" />--%>
 <%--    </a>--%>
 <%--    <br /><br />--%>
-<%--    --%>
-<%--    <a href="http://www.microsoft.com/" target="_blank">--%>
-<%--    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />--%>
-<%--    </a>--%>
-<%--    --%>
+
 <%--    <a href="http://www.devexpress.com/" target="_blank">--%>
 <%--    <img style="border-width:0px" src='<%=SponsorImageUrl("devexpress_logo.png") %>' alt="DevExpress" class="sponsors" />--%>
 <%--    </a>--%>
