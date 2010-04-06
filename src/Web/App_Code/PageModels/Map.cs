@@ -15,7 +15,7 @@ public class Map
                         Region = from.Region,
                         Organization = from.Organization,
                         Website = from.Website,
-                        Comments = from.Comments
+                        Comments = from.Comments ?? ""
                     };
 	}
 
