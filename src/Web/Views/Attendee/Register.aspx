@@ -62,10 +62,10 @@
     <label for="City">*City</label><br />
     <%=Html.TextBox("City")%><br /><br />
     
-    <label for="Region">*State/Province</label> (Public)<br />
+    <label for="Region">*State/Province</label><br />
     <%=Html.TextBox("Region")%><br /><br />
     
-    <label for="Organization">*Organization (Public)</label><br />
+    <label for="Organization">*Organization </label>(Public)<br />
     <%=Html.TextBox("Organization")%> <br /><br />
     
     <label for="Website">Your Website</label><br />

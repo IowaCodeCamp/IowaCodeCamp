@@ -60,10 +60,10 @@
 		    <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
 		    <!-- class="active" use this for the active menu item-->
 		    <ul>
-<%--			    <li><a id="register" href='<%=ResolveUrl("~/attendee/register") %>'>Register</a></li>--%>
+			    <li><a id="register" href='<%=ResolveUrl("~/attendee/register") %>'>Register</a></li>
 			    <li><a id="sessions" href='<%=ResolveUrl("~/session/list") %>'>Sessions</a></li>
 			    <li><a id="schedule" href='<%=ResolveUrl("~/session/schedule") %>'>Schedule</a></li>
-<%--			    <li><a id="attendees" href='<%=ResolveUrl("~/attendee/list") %>'>Attendees</a></li>--%>
+			    <li><a id="attendees" href='<%=ResolveUrl("~/attendee/list") %>'>Attendees</a></li>
 			    <li><a id="speakers" href='<%=ResolveUrl("~/speaker/list") %>'>Speakers</a></li>
 			    <li><a id="sponsors" href='<%=ResolveUrl("~/sponsor") %>'>Sponsors</a></li>
 			    <!--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li-->
