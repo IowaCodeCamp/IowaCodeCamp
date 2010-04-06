@@ -26,22 +26,22 @@ public class AttendeeController : Controller
         model.CurrentAttendeeCount = CurrentAttendee.GetTotalCount();
         return View(model);
     }
-//
-//    [AcceptVerbs(HttpVerbs.Post)]
-//    public ActionResult Register(RegisterPageModel model)
-//    {
-//        //run server validation
-//        var errors = DataAnnotationsValidationRunner.GetErrors(model);
-//
-//        if (errors.Any())
-//            return View(model);
-//
-//        var attendee = Map.RegisterToCurrentAttendee(model);
-//
-//        CurrentAttendee.Add(attendee);
-//
-//        return Redirect("~/attendee/list");
-//    }
+
+    [HttpPost]
+    public ActionResult Register(RegisterPageModel model)
+    {
+        //run server validation
+        var errors = DataAnnotationsValidationRunner.GetErrors(model);
+
+        if (errors.Any())
+            return View(model);
+
+        var attendee = Map.RegisterToCurrentAttendee(model);
+
+        CurrentAttendee.Add(attendee);
+
+        return Redirect("~/attendee/list");
+    }
 
     public ActionResult List()
     {
