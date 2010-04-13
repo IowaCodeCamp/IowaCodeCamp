@@ -12,11 +12,10 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
-<%--<a target="_blank" href="http://spreadsheets.google.com/pub?key=t5PqWg6sr-UD6YGXCyzI1Fw&single=true&gid=1&output=html">Open in a separate window</a>--%>
-<%--<br /><br />--%>
-<%----%>
-<%--<iframe src="http://spreadsheets.google.com/pub?key=t5PqWg6sr-UD6YGXCyzI1Fw&single=true&gid=1&output=html"--%>
-<%-- width="100%" height="1000px"></iframe>--%>
+<a target="_blank" href="http://spreadsheets.google.com/pub?key=tgqpHj-AagmGNYDrM7bPe9w&single=true&gid=1&output=html&widget=true">Open in a separate window</a>
+<br /><br />
+
+<iframe src="http://spreadsheets.google.com/pub?key=tgqpHj-AagmGNYDrM7bPe9w&single=true&gid=1&output=html&widget=true" width="100%" height="1000px"></iframe>
 
 </asp:Content>
 
