@@ -15,7 +15,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <p>
-    Want your organization on here? Contact Chris Missal or Chris Sutton at sponsors [at] iowacodecamp d0t com.
+    Want your organization on here? Contact Levi Rosol or Chris Missal at sponsors [at] iowacodecamp d0t com.
 </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
@@ -25,6 +25,11 @@
     <hr /><br />
     
     <table><tr>
+    <td>
+    <a href="http://sigconsult.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("signature_logo.jpg") %>' alt="Signature Consulting" class="sponsors" />
+    </a>     
+    </td>
     <td>
     <a href="http://www.skywalkgroup.com/it-staffing/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("skywalk_logo.png") %>' alt="Skywalk Group" class="sponsors" />
