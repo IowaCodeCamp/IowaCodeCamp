@@ -94,7 +94,10 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 <h3>Aaron Erickson</h3>
                 (Chicago, IL)
                 <p><img src="<%= SpeakerImageUrl("AaronErickson.jpg") %>" align="left" />
-                My name is Chris Missal, currently I’m a software developer in Cedar Rapids, Iowa. I have a passion for creating software that works well. I have a very strong opinion that testing software is the most important piece of delivering quality projects, and delivering them on time. I spend most of my time working with C# in ASP.NET MVC and jQuery.
+                Aaron Erickson is a software developer/technology writer/agilist for ThoughtWorks, based out of Chicago, IL. His life's work is to help convert the human intellectual capital into results for companies that empower both the knowledge workers who produce software, and the people for whom that software is designed to serve. He frequently speaks at events such as TechEd, DevTeach, Code Camps, and .NET user groups.
+                </p>
+                <p>
+                He is the author of the book, The Nomadic Developer, a career guide for technology consultants. He is a co-author of the upcoming Professional F#.  In his spare time he likes to buy random ingredients at the store and have "iron chef" night with his wife, play video games with his kids, and occasionally, log on to World of Warcraft where he has a level 80 Rogue named EffSharper on the Bloodscalp server.
                 </p>
             </li>
             <li id="BradTutterow">
