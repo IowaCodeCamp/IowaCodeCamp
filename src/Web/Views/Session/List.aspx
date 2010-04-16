@@ -33,6 +33,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" runat="Server">
     <div id="sessions">
+<%-- 2010 Sessions --%>
+
+<%-- 2009 Sessions --%>
 <%--        <ul>--%>
 <%--            <li>--%>
 <%--                <h3>--%>
