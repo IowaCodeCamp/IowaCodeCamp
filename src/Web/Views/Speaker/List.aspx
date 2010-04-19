@@ -100,6 +100,13 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 He is the author of the book, The Nomadic Developer, a career guide for technology consultants. He is a co-author of the upcoming Professional F#.  In his spare time he likes to buy random ingredients at the store and have "iron chef" night with his wife, play video games with his kids, and occasionally, log on to World of Warcraft where he has a level 80 Rogue named EffSharper on the Bloodscalp server.
                 </p>
             </li>
+            <li id="AndyBrudtkuhl">
+                <h3>Andy Brudtkuhl</h3>
+                (Des Moines, IA)
+                <p><img src="<%= SpeakerImageUrl("AndyBrudtkuhl.jpg") %>" align="left" />
+                Andy has been building websites and web applications for over ten years.  With a background as an ASP.Net (C#) developer Andy has recently become obsessed with the open source WordPress platform (ironic,  I know). When Andy isn’t kayaking or Frisbee golfing he works day to day at his company 48Web helping businesses do business online.
+                </p>
+            </li>
             <li id="BradTutterow">
                 <h3>Brad Tutterow</h3>
                 (St. Louis, MO)
@@ -212,7 +219,7 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 <h3>John Sheehan</h3>
                 (Minneapolis, MN)
                 <p><img src="<%= SpeakerImageUrl("JohnSheehan.jpg") %>" align="left" />
-                John has been a full-time developer since 2005 is currently working primarily with ASP.NET MVC, SQL Server, SubSonic, jQuery and more. He's been making a living with computers in some fashion (computer repair, desktop support, sysadmin, developer) since 1996.
+                @johnsheehan is the creator of RestSharp (restsharp.org), a .NET REST client library that makes a valiant attempt not to suck. Because open source doesn't pay the bills he also works at Twilio helping developers get the most out of their cloud telephony tools.
                 </p>
             </li>
             <li id="JohnTeague">
@@ -237,6 +244,16 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 (Cedar Rapids, IA)
                 <p><img src="<%= SpeakerImageUrl("KeithDahlby.jpg") %>" align="left" />
                 Keith Dahlby is a .NET developer and language geek from Cedar Rapids, IA. He works as a software guru at J&P Cycles and blogs about various software development topics at Los Techies. Keith has spoken at community events around the midwest and studied Human-Computer Interaction at Iowa State University.
+                </p>
+            </li>
+            <li id="KennethYounger">
+                <h3>Kenneth Younger</h3>
+                (Des Moines, IA)
+                <p><img src="<%= SpeakerImageUrl("KennethYounger.jpg") %>" align="left" />
+                Kenny has been helping companies establish their online presence for nearly 8 years, including clients such as The Marines, McDonald's, and International Truck Company. In 2009 he founded Sheer Focus Inc., a software company specializing in database and web development.
+                </p>
+                <p>
+                For nearly 2 years, Kenny has been using and developing personal and client sites in WordPress. After becoming a part of the great community built around the platform, he decided to organize the first WordCamp Iowa this summer.
                 </p>
             </li>
             <li id="KevinGisi">
