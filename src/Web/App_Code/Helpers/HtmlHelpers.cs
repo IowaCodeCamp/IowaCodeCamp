@@ -79,11 +79,10 @@ public static class HtmlHelpers
 
     public static string SpeakerLink(this HtmlHelper @this, string name)
     {
-        //var link = @this.ActionLink(name, "list","speaker");
+        var link = @this.ActionLink(name, "list","speaker");
         
-        //var bookmark = name.Replace(" ", "");
-        //const string matchPattern = "${link}";
-        //link = Regex.Replace(link, "(?<link>href=\".*?)\"", "{0}#{1}\"".FormatWith(matchPattern,bookmark));
-        return "";// link;
+        var bookmark = name.Replace(" ", "");
+        const string matchPattern = "${link}";
+        return Regex.Replace(link.ToHtmlString(), "(?<link>href=\".*?)\"", "{0}#{1}\"".FormatWith(matchPattern,bookmark));
     }
 }
