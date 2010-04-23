@@ -77,6 +77,9 @@
     <h2 >Silver Sponsors</h2>
     <hr />
     
+    <a href="http://www.devexpress.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("devexpress_logo.png") %>' alt="DevExpress" class="sponsors" />
+    </a>
        
     <a href="http://www.telerik.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
