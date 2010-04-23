@@ -73,7 +73,7 @@
             <li><h3>Intro to Android Development</h3><p>In this session, Donn will delve into the basic requirements for you to get started with Android development. We will cover the architecture of the Android operating system as well as some ins-and-outs of Android mobile development. Starting from a clean machine, an actual Android Application will be created during this session that will be published to the Android Marketplace in real time. A general understanding of the Java language is advised but not required.</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Donn Felker") %></dd></dl></li>
 				
-            <li><h3>Intro to WordPress' architecture and plugin/theme development</h3><p>Abstract coming soon…</p>
+            <li><h3>Intro to WordPress' architecture and plugin/theme development</h3><p>You probably already know what WordPress is and what it's used for, but what do the guts of one of the most popular open-source web site frameworks look like? In this session we'll explore the WordPress file system structure and its purpose; URL rewrite system; database schema; Core and Custom Post Types, Posts, Post Meta, and the Loop; Taxonomies; the user/role system; what "hooks" are and how WordPress uses them; and the basics of plugin and theme development. We'll also touch on the Core development cycle and its versioning, the upcoming 3.0 release, and some of the best references and learning resources on WordPress development.</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Kenny Younger & Andy Brudtkuhl") %></dd></dl></li>
 				
             <li><h3>Introducing IronRuby in your Development Environment</h3><p>Abstract coming soon…</p>
