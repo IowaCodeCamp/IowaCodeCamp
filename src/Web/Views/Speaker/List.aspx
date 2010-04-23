@@ -226,7 +226,13 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 <h3>John Teague</h3>
                 (Austin, TX)
                 <p><img src="<%= SpeakerImageUrl("JohnTeague.jpg") %>" align="left" />
-                John is from Texas. He is neat. See John run. Hear John talk.
+                John Teague has been developing .Net applications since version 1.0. While most of his work has been developing web applications, he tries not focus his attention on specific frameworks or applications stacks. Instead, he focuses on building applications using solid object oriented design principles and patterns with a behavior driven approach.
+				</p>
+				<p>
+				John is the owner and principle consultant of Avenida Software, a software development,  Agile coaching and training firm.  He has worked for Fortune 500 companies and small 3 person startups, in a variety of industries including e-commerce/retail, medical and financial. He has worked on building scalable high performance e-commerce websites and international B2B web applications. 
+				</p>
+				<p>
+				He is very active in the .Net and Agile community in Austin, TX. He has organized the Austin Code Camp Conference for the past 3 years and presented several sessions as well. John has also presented private and public training courses on Ajax, Object Oriented Design Principles, and Test Driven Development.
                 </p>
             </li>
             <li id="JonVonGillern">
