@@ -146,6 +146,7 @@
                             <li>Saturday, May 1<sup>st</sup></li>
                             <li>8:00am - 5:30pm</li>
                             <li>No cost</li>
+                            <li><%=Html.ActionLink("Register to attend", "register", "attendee")%></li>
                             <li><%=Html.ActionLink("Want to sponsor?", "list", "sponsor")%></li>
                         </ul>
                     </div>
