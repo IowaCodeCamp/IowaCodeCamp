@@ -75,6 +75,7 @@
     <%=Html.TextArea("Comments", new { rows = 4 })%> <br /><br />
     
     <input type="submit" value="Register" />
+	<span style="color:#f00;">Registrants after April 27th may not receive a ticket for lunch</span><br />
     
 </fieldset>
 </form>
