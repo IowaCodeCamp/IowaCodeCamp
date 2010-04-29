@@ -88,7 +88,7 @@
             <li><h3>It's Chess, Not Checkers</h3><p>Are you currently challenged with leading your department into new directions? To set down a path to the future that sets your company up for success. Do your years of Agile training espousing YAGNI and saying no to BDUF tripping you up now that you are being asked to derive a five year plan? Well its been tripping me up, this session will be about architecting not only your application but your enterprise. Consider this a Forrester style topic without the hype.</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Dru Sellers") %></dd></dl></li>
 				
-            <li><h3>TDD Dojo</h3><p>Abstract coming soon…</p>
+            <li><h3>TDD Dojo</h3><p>Ever tried to start TDD but couldn't get going? This will be hands on presentation where audience members will pair with an experienced TDD practitioner and see what happens live! We'll show to use the tools in most TDD toolboxes, NUnit, Moq, Mspec (hopefully) and Resharper.</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("John Teague") %></dd></dl></li>
 				
             <li><h3>Kanban to Cash: Stolen Ideas Make a Beautiful Process</h3><p>This is an "Open Kimono" type discussion about the process I've been using/adapting for the last few years. We take the Kanban ideas of Limited WIP and cumulative flow diagrams and add Arlo Belshee's Naked Planning, modified a very little for integrating with TDD/BDD and meld some XP practices and Agile practices together to make a development process that is easy to do and easy to change as we feel friction.</p>
