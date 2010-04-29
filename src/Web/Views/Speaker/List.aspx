@@ -173,6 +173,13 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 I've been programming for over twenty years in a wide variety of industries including telecommunications, financial, industrial assessment, and even computerized sewing. I've contributed to a number of open source projects and written various libraries just to "scratch an itch" that I happen to have. In short, I write code.
                 </p>
             </li>
+            <li id="EdHill">
+                <h3>Ed Hill</h3>
+                (Iowa City, IA)
+                <p><img src="<%= SpeakerImageUrl("EdHill.jpg") %>" align="left" />
+                Ed Hill is a software architect at The University of Iowa, focusing on administrative student systems for the university.  He is currently one of the developers on Project MAUI, a multi-year project to re-engineer all of Iowa’s student information systems (admissions, registration, billing, financial aid).  He is a Java developer (boo… hiss…) that occasionally dabbles in Ruby, and is going to try to learn Attic Greek next year.  He is still trying to make sense of twitter.
+                </p>
+            </li>
             <li id="ErikLane">
                 <h3>Erik Lane</h3>
                 (Monument, CO)
