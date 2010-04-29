@@ -276,22 +276,6 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 Lee Brandt has been programming professionally for more than a decade and currently works as a Project Lead Consultant with AdventureTech. He speaks regionally about software development practices and has mentored teams on improving their approach to lean software development though achieving technical proficiency. He is a Microsoft Most Valuable Professional, one of the leaders of the Kansas City .Net User Group, and serves as the Regional Mentor for .Net user groups in Kansas and Missouri.
                 </p>
             </li>
-            <li id="MitchelSellers">
-                <h3>Mitchel Sellers</h3>
-                (Des Moines, IA)
-                <p><img src="<%= SpeakerImageUrl("MitchelSellers.jpg") %>" align="left" />
-                Mitchel Sellers, Microsoft C# MVP, Microsoft Certified Professional, is the CEO of IowaComputerGurus Inc.  He has many years of experience in the software development industry and specializes in development using Microsoft technologies.  Over the course of his career he has completed work for many organizations across the world of varying sizes and structures.  This experience as a consultant has provided him with a deep understanding of software development and has lead to a focus on proper architecture, performance, stability, and overall cost effectiveness of delivered solutions. 
-                </p>
-                <p> 
-                Mitchel is also a regular public speaker, presenting topics at user groups and conferences as time permits.  He is the author of "Professional DotNetNuke Module Programming" which was published by Wrox Press in 2009.  He has also written many technical articles, which you will find in various online and print publications including SQL Server magazine. 
-                </p>
-                <p> 
-                Mitchel is a firm believer in development community involvement. He is an active participant in the .NET and DotNetNuke development communities, has been added as a DotNetNuke Core Team member, and has been awarded Microsoft MVP status for his strong commitment to the development community.  Mitchel frequently spends time answering questions on community forums such as StackOverflow, and MSDN. 
-                </p>
-                <p>
-                For full information on Mitchel and his professional experience, certifications, and publications please refer to his resume which is available at MitchelSellers.com.
-                </p>
-            </li>
             <li id="NateAdams">
                 <h3>Nate Adams</h3>
                 (North Liberty, IA)

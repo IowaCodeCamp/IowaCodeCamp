@@ -121,9 +121,6 @@
             <li><h3>Use Git Like a Boss</h3><p>Move out Subversion; there's a new man in town. Learn how a decentralized version control system can help make your workflow easier, regardless of what language you use. We'll walk through how to manage a project using Git, and use some branching, tagging, recovery, and a host of other features along the way. Come see how easy it is to branch and merge without the usual headaches.</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Kevin Gisi") %></dd></dl></li>
 				
-            <li><h3>What’s New in Visual Studio 2010 and .NET 4.0</h3><p>This session will talk about 4 areas of change with the new .NET release.  Starting with changes to Visual Studio and the overall developer experience, ways that Visual Studio has been improved to make development faster/easier.  The discussion will then turn to the languages and quickly cover new features in VB.NET and C#.  Lastly the session will finish with an overview of new features introduced with ASP.NET 4.0.</p>
-				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Mitchel Sellers") %></dd></dl></li>
-				
             <li><h3>WPF with MVVM from the Trenches</h3><p>MVVM is gaining popularity, especially in the WPF world.  An MVVM approach will give you a lot of benefits if you know how to leverage it.  In this session, we will discuss the benefits and pitfalls of implementing MVVM with WPF using examples based on real world situations encountered during development of an application leveraging MVVM.  With topics ranging from data templates to event handlers to testable navigation, the goal will be to beef up your arsenal with tips and tricks that you can use in the great battle.</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Brent Edwards") %></dd></dl></li>
 				
