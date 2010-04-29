@@ -121,6 +121,9 @@
             <li><h3>Use Git Like a Boss</h3><p>Move out Subversion; there's a new man in town. Learn how a decentralized version control system can help make your workflow easier, regardless of what language you use. We'll walk through how to manage a project using Git, and use some branching, tagging, recovery, and a host of other features along the way. Come see how easy it is to branch and merge without the usual headaches.</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Kevin Gisi") %></dd></dl></li>
 				
+			<li><h3>Weekends with Cassandra, a brief spring romance</h3><p>After day after day of working with the same relational database tables, and being told how I’m not normalizing my data in the correct way, I started to stray. At first it was just the feeling that there might be other ways of managing my data, and then I started looking at blog posts. Soon I was following twitter feeds. CouchDB, MongoDB, BigTable, Hbase, Redis, Tokyo Cabinet, and Dynamo – so many options, all fresh with new ideas! This talk will discuss my weekends spent with Cassandra and lessons learned from this brief fling.</p>
+				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Ed Hill") %></dd></dl></li>
+				
             <li><h3>WPF with MVVM from the Trenches</h3><p>MVVM is gaining popularity, especially in the WPF world.  An MVVM approach will give you a lot of benefits if you know how to leverage it.  In this session, we will discuss the benefits and pitfalls of implementing MVVM with WPF using examples based on real world situations encountered during development of an application leveraging MVVM.  With topics ranging from data templates to event handlers to testable navigation, the goal will be to beef up your arsenal with tips and tricks that you can use in the great battle.</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Brent Edwards") %></dd></dl></li>
 				
