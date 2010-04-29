@@ -215,13 +215,6 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 Jeff Brand got his start as a super double secret agent with the CIA, which he then left to make a fortune in cold fusion research. Later, he finished his doctorate thesis on the use of vegetable oil and saran wrap in the fashion industry.  Today, Jeff is “living the dream” as a .NET Developer in Microsoft's Developer and Platform Group. Jeff assists customers in evaluating, developing and deploying applications built on the .NET Framework and the Microsoft platform. He has been with Microsoft for thirteen years and has served in variety of roles including infrastructure consultant, e-commerce technology specialist, and enterprise technology advisor.
                 </p>
             </li>
-            <li id="JohnSheehan">
-                <h3>John Sheehan</h3>
-                (Minneapolis, MN)
-                <p><img src="<%= SpeakerImageUrl("JohnSheehan.jpg") %>" align="left" />
-                @johnsheehan is the creator of RestSharp (restsharp.org), a .NET REST client library that makes a valiant attempt not to suck. Because open source doesn't pay the bills he also works at Twilio helping developers get the most out of their cloud telephony tools.
-                </p>
-            </li>
             <li id="JohnTeague">
                 <h3>John Teague</h3>
                 (Austin, TX)
