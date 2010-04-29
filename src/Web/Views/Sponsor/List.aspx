@@ -52,6 +52,7 @@
         <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
         </a>
         
+
 <%--    <a href="http://www.devlicio.us/" target="_blank">--%>
 <%--    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/devlicious_logo.png") %>' alt="Devlicious" class="sponsors" />--%>
 <%--    </a> <br />--%>
@@ -77,6 +78,39 @@
     <h2 >Silver Sponsors</h2>
     <hr />
     
+	<a href="http://nitriq.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("nitriq.png") %>' 
+    alt="Nitriq Code Analysis for .Net" class="sponsors" />
+    </a> 
+    
+	<a href="http://www.lostechies.com" target="_blank">
+    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/lostechies_logo.png") %>' 
+    alt="Los Techies" class="sponsors" />
+    </a> 
+    
+	<a href="http://www.codebetter.com" target="_blank">
+    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/codebetter_logo.png") %>' 
+    alt="CodeBetter.com" class="sponsors" />
+    </a> 
+    
+	<a href="http://www.stoneriver.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />
+    </a>
+
+    <a href="http://www.pearsoned.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("pearsoned_ug_logo.jpg") %>' 
+    alt="Pearson Education" class="sponsors" />
+    </a> 
+    
+    <a href="http://oreilly.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' 
+    alt="O'Reilly" class="sponsors" />
+    </a> 
+    
+    <a href="http://www.jetbrains.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
+    </a>
+
     <a href="http://www.devexpress.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("devexpress_logo.png") %>' alt="DevExpress" class="sponsors" />
     </a>
