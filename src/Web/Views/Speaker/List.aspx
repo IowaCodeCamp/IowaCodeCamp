@@ -180,6 +180,13 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 Ed Hill is a software architect at The University of Iowa, focusing on administrative student systems for the university.  He is currently one of the developers on Project MAUI, a multi-year project to re-engineer all of Iowa’s student information systems (admissions, registration, billing, financial aid).  He is a Java developer (boo… hiss…) that occasionally dabbles in Ruby, and is going to try to learn Attic Greek next year.  He is still trying to make sense of twitter.
                 </p>
             </li>
+            <li id="EduardoBottcher">
+                <h3>Eduardo Bottcher</h3>
+                (Davenport, IA)
+                <p><img src="<%= SpeakerImageUrl("EduardoBottcher.jpg") %>" align="left" />
+                Eduardo Bottcher works at Stefanini International/HNI Corporation as a .NET Software Architect. He has over 10 years of experince in the software industry as a developer, consultant and trainer.Right now, he is digging into Team Foundation Sever, Sharepoint and automated testing.
+                </p>
+            </li>
             <li id="ErikLane">
                 <h3>Erik Lane</h3>
                 (Monument, CO)
@@ -189,7 +196,7 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
             </li>
             <li id="GlennLeifheit">
                 <h3>Glenn Leifheit</h3>
-                (Monument, CO)
+                (Minneapolis, MN)
                 <p><img src="<%= SpeakerImageUrl("GlennLeifheit.jpg") %>" align="left" />
                 Glenn Leifheit, CSSLP is a Lead information Security Consultant at FICO (Formerly Fair Isaac Corporation)  based in the Twin Cities.  His responsibilities include Application Security, Architecture and Secure Software Development.  He is also an active member IASA (International Association of Software Architects).
                 </p>
