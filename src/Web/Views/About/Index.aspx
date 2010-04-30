@@ -22,23 +22,21 @@ $(document).ready(function() {
     <br />
     <ul style="padding-left:20px;"> 
 
-        <li><a href="mailto:levi.rosol@gmail.com">Levi Rosol</a> - Event Planning, Finances, Sponsors</li>
-        <li><a href="http://devlicio.us/blogs/tim_barcz/" target="_blank">Tim Barcz</a> - Speakers</li>
-        
-        <li><a href="http://gregsohl.wordpress.com/">Greg Sohl</a> - Event Planning, Finances, Logistics and Volunteers</li>
+        <li><a href="http://gregsohl.wordpress.com/">Greg Sohl</a> - Finances, Logistics and Volunteers</li>
 
-        <li><a href="http://chrismissal.lostechies.com">Chris Missal</a> - Sponsors</li>
+        <li><a href="http://www.levirosol.com/">Levi Rosol</a> - Lead Planner, Finances, Sponsors</li>
+        <li><a href="http://devlicio.us/blogs/tim_barcz/" target="_blank">Tim Barcz</a> - Emails & Communication, Speakers</li>
+        
+        <li><a href="http://chrismissal.lostechies.com">Chris Missal</a> - Sponsors, Party planner</li>
 
         
         <li><a href="http://twitter.com/chrissutton" target="_blank">Chris Sutton</a> - 
-            Event Planning, Sponsors, Media, Website</li>
-        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - 
-            Party Planning</li>
+            Sponsors, Website</li>
+        <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a></li>
         
-        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a> - 
-            Photographer</li>
+        <li><a href="http://blog.lozanotek.com" target="_blank">Javier Lozano</a></li>
             
-        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>
+<%--        <li><a href="http://www.solidrockstable.com/blogs/PragmaticTSQL" target="_blank">Greg Wilson</a> - Speakers</li>--%>
 
         
     </ul>
@@ -54,7 +52,6 @@ $(document).ready(function() {
     <li>Community driven</li>
     <li>No cost (for attendees)</li>
     <li>All about the code</li>
-    <li>Community ownership of code</li>
     <li>Never during work hours</li>
     <li>High quality</li>
 </ul>
