@@ -19,16 +19,16 @@
 
         <div class="contentarea">
             <h3>Spring 2010 Links To Slides</h3>
-            <ul>
-                <li><a href="http://www.ignitionpointsolutions.com/Default.aspx?tabid=56&EntryID=31">Being a Tech Entrepreneur"</a></li>
-                <li><a href="http://www.gusemery.com/post/2010/05/01/Iowa-Code-Camp-Aftermath!.aspx">RESTing on ASP.Net MVC</a></li>
-                <li><a href="http://toranbillups.com/blog.aspx/archive/2010/05/02/Iowa-Code-Camp-Slide-Deck-And-Video">How Test First Development Changed My Life</a></li>
-                <li><a href="http://randomactsofcoding.blogspot.com/2010/04/my-managed-extensibility-framework-mef.html">Extending Your Applications with MEF</a></li>
-                <li><a href="http://mfgames.com/presentations/zen-coding-standards">Zen and Art of Coding Standards</a></li>
-                <li><a href="http://glennleifheit.com/?p=15">I Need to Secure my Software, Now What?</a></li>
-                <li><a href="http://www.davidsturtz.com/weblog/archives/000598.php">Guerrilla Usability: Insight on a Shoestring</a></li>
+            <ul style="padding-left:30px;">
+                <li><a href="http://www.ignitionpointsolutions.com/Default.aspx?tabid=56&EntryID=31">Being a Tech Entrepreneur</a>&nbsp;(Scott Davis)</li>
+                <li><a href="http://www.gusemery.com/post/2010/05/01/Iowa-Code-Camp-Aftermath!.aspx">RESTing on ASP.Net MVC</a>&nbsp;(Gus Emery)</li>
+                <li><a href="http://toranbillups.com/blog.aspx/archive/2010/05/02/Iowa-Code-Camp-Slide-Deck-And-Video">How Test First Development Changed My Life</a>&nbsp;(Toran Billups)</li>
+                <li><a href="http://randomactsofcoding.blogspot.com/2010/04/my-managed-extensibility-framework-mef.html">Extending Your Applications with MEF</a>&nbsp;(James Eggers)</li>
+                <li><a href="http://mfgames.com/presentations/zen-coding-standards">Zen and Art of Coding Standards</a>&nbsp;(Dylan Moonfire)</li>
+                <li><a href="http://glennleifheit.com/?p=15">I Need to Secure my Software, Now What?</a>&nbsp;(Glenn Leifheit)</li>
+                <li><a href="http://www.davidsturtz.com/weblog/archives/000598.php">Guerrilla Usability: Insight on a Shoestring</a>&nbsp;(David Sturtz)</li>
             </ul>
-
+            <br />
             <strong>
             Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>
             </strong><br /><br />
