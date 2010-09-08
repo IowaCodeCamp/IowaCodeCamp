@@ -29,11 +29,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" runat="Server">
         <h1>
-        Sessions for May 1</h1>
+        Sessions for Nov 6th (TBA)</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" runat="Server">
     <div id="sessions">
-        <ul>
+        <em>Coming soon...</em>
+        <%--<ul>
             <li><h3>A Primer in Object Oriented Concepts Using Examples</h3><p>Do you keep hearing about things like Encapsulation or Inheritance but wonder what they're really all about?  This talk will go through the basic Object Oriented concepts using real-world examples in C# .NET.<br />Topics include: Encapsulation, Aggregation, Inheritance, Polymorphism, Abstract and virtual classes</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Nate Adams") %></dd></dl></li>
 				
@@ -135,7 +136,6 @@
 				
             <li><h3>Zen and the Art of Coding Standards</h3><p>Standards are one of the many tools used by teams to reduce the effort to bring on a new developer. Consistent formatting, naming conventions, and even commenting become ways of teaching code and reducing the time before someone is productive. In large teams and open-source projects, this is critical, but even with personal projects, standards reduce the effort to maintain code.</p>
 				<dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Dylan Moonfire") %></dd></dl></li>
-				
-        </ul>
+        </ul>--%>
     </div>
 </asp:Content>
