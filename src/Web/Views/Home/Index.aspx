@@ -8,9 +8,9 @@
     <p style="font-size:larger;">
         <a href="http://crineta.org" target="_blank">CRineta.org</a> and  
         <a href="http://iadnug.org" target="_blank">Iowa .NET</a> 
-        are hosting the fifth code camp in Iowa on May 1, 2010
-        at the <a href="http://imu.uiowa.edu" target="_blank">Iowa Memorial Union</a> 
-        at the University of Iowa in Iowa City.
+        are hosting the sixth code camp in Iowa on November 6, 2010
+        at <a href="http://www.dmacc.edu" target="_blank">DMACC</a> 
+        in West Des Moines, Iowa.
     </p>
 
 </asp:Content>
@@ -18,7 +18,8 @@
     <div class="post">
 
         <div class="contentarea">
-            <h3>Spring 2010 Links To Slides</h3>
+            <%--
+	    <h3>Spring 2010 Links To Slides</h3>
             <ul style="padding-left:30px;">
                 <li><a href="http://www.ignitionpointsolutions.com/Default.aspx?tabid=56&EntryID=31">Being a Tech Entrepreneur</a>&nbsp;(Scott Davis)</li>
                 <li><a href="http://www.gusemery.com/post/2010/05/01/Iowa-Code-Camp-Aftermath!.aspx">RESTing on ASP.Net MVC</a>&nbsp;(Gus Emery)</li>
@@ -29,6 +30,7 @@
                 <li><a href="http://www.davidsturtz.com/weblog/archives/000598.php">Guerrilla Usability: Insight on a Shoestring</a>&nbsp;(David Sturtz)</li>
             </ul>
             <br />
+	    --%>
             <strong>
             Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>
             </strong><br /><br />
@@ -56,13 +58,13 @@
             We are looking for developers who want to tell other developers about cool things they are doing. Topics they really care about.  If you are working with .Net, Ruby, PHP, Java, Rails, Python, SQL, &lt;fill in the blank&gt; and you want to tell other people about it, then consider submitting a speaking proposal.
             </p>
             <p>
-            If you want to be a speaker, contact Tim Barcz and Greg Wilson at <strong>speakers [at] iowacodecamp d0t com</strong>.
+            If you want to be a speaker, contact Tim Barcz at <strong>speakers [at] iowacodecamp d0t com</strong>.
             </p>
             <p>
-            If you want to help sponsor, contact Chris Missal and Chris Sutton at <strong>sponsors [at] iowacodecamp d0t com</strong>.
+            If you want to help sponsor, contact Chris Missal and Zac Harlan at <strong>sponsors [at] iowacodecamp d0t com</strong>.
             </p>
             <p>
-            Let Levi Rosol know if you have any other questions at <strong>levi.rosol [at] gmail dot com</strong>.
+            Let Levi Rosol know if you have any other questions at <strong>levi.rosol [at] gmail d0t com</strong>.
             </p>
             <p>
             Remember this an event FOR developers BY developers, so we need you to help us make it succeed!
