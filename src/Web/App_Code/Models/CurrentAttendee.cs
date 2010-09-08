@@ -8,10 +8,11 @@ namespace Models
     /// </summary>
     public partial class CurrentAttendee
     {
+        public static int NextEventId = 7;
 
         public static bool Add(CurrentAttendee attendee)
         {
-            attendee.EventID = 6;
+            attendee.EventID = NextEventId;
 
             var ctx = new ICCData();
             ctx.CurrentAttendees.InsertOnSubmit(attendee);
@@ -35,14 +36,14 @@ namespace Models
         {
             var ctx = new ICCData();
 
-            return ctx.CurrentAttendees.Where(a => a.EventID == 6).Count();
+            return ctx.CurrentAttendees.Where(a => a.EventID == NextEventId).Count();
         }
 
         public static List<CurrentAttendee> List()
         {
             var ctx = new ICCData();
 
-            return ctx.CurrentAttendees.Where(a => a.EventID == 6)
+            return ctx.CurrentAttendees.Where(a => a.EventID == NextEventId)
                 .Take(Config.MaxAttendees).ToList();
         }
 
@@ -50,7 +51,7 @@ namespace Models
         {
             var ctx = new ICCData();
 
-            return ctx.CurrentAttendees.Where(a => a.EventID == 6)
+            return ctx.CurrentAttendees.Where(a => a.EventID == NextEventId)
                 .Skip(Config.MaxAttendees).ToList();
         }
 
