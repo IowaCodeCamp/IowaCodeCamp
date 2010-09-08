@@ -28,7 +28,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h2>Iowa Code Camp Spring 2010 Speakers</h2>
+<h2>Iowa Code Camp Fall 2010 Speakers</h2>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 <%--
@@ -89,7 +89,8 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
 </p>
 --%>
     <div id="speakers">
-        <ul>
+    <em>Coming soon...</em>
+    <%--    <ul>
             <li id="AaronErickson">
                 <h3>Aaron Erickson</h3>
                 (Chicago, IL)
@@ -325,7 +326,7 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
                 </p>
             </li>
         </ul>
-    </div>
+--%>    </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
