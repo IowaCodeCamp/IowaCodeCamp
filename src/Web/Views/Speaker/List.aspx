@@ -89,7 +89,8 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
 </p>
 --%>
     <div id="speakers">
-    <em>Coming soon...</em>
+    <p style="font-weight:bold;"><em>Coming soon...</em></p>
+    <p>If you want to be a speaker, contact Tim Barcz at speakers [at] iowacodecamp d0t com.</p>
     <%--    <ul>
             <li id="AaronErickson">
                 <h3>Aaron Erickson</h3>

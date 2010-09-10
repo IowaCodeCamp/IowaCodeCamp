@@ -19,7 +19,8 @@
 </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-<em>Coming soon...</em>
+<p style="font-weight:bold;"><em>Coming soon...</em></p>
+<p>If you want to help sponsor, contact Chris Missal and Zac Harlan at sponsors [at] iowacodecamp d0t com.</p>
 <%--
     <a name="platinum"></a>
     <h2>Platinum Sponsors</h2>
