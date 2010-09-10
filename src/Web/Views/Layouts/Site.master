@@ -143,7 +143,7 @@
                     <div class="box">
                         <h4>Details</h4>
                         <ul style="padding-left:20px;">
-                            <li>Saturday, May 1<sup>st</sup></li>
+                            <li><%=Models.Event.GetNextEvent().StartOn.ToHumanOrdinalized() %></li>
                             <li>8:00am - 5:30pm</li>
                             <li>No cost</li>
                             <li><%=Html.ActionLink("Register to attend", "register", "attendee")%></li>
@@ -157,8 +157,8 @@
 
                         <h4>Where</h4>
                         <ul style="padding-left:20px;">
-                        <li><%=Html.ActionLink("Iowa Memorial Union", "location", "about") %></li>
-                        <li>Iowa City, Iowa</li>
+                        <li><%=Html.ActionLink("DMACC", "location", "about") %></li>
+                        <li>West Des Moines, Iowa</li>
                         <!--li>
                             <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
                             Map
