@@ -6,9 +6,6 @@ using System.Web.Mvc;
 using Models;
 using xVal.ServerSide;
 
-/// <summary>
-/// Summary description for AttendeeController
-/// </summary>
 public class AttendeeController : Controller 
 {
     public ActionResult Index()
@@ -44,8 +41,8 @@ public class AttendeeController : Controller
     {
         var model = new AttendeeListPageModel();
 
-        var attendees = Models.CurrentAttendee.List();
-        var waitList = Models.CurrentAttendee.WaitList();
+        var attendees = CurrentAttendee.List();
+        var waitList = CurrentAttendee.WaitList();
 
         model.Attendees = attendees;
         model.WaitList = waitList;
