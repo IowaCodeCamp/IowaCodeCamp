@@ -1,4 +1,3 @@
-
 public class BasePage : System.Web.Mvc.ViewPage
 {
     public virtual string SpeakerImageUrl(string fileName)
