@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Attendees | Iowa Code Camp" Language="C#" Inherits="System.Web.Mvc.ViewPage<AttendeeListPageModel>" %>
+<%@ Import Namespace="System.Linq" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
@@ -15,29 +16,24 @@
         <strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />
 <%--        <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>--%>
     </span>
-    
     <div>
-
-            <%
-            foreach (var attendee in Model.Attendees)
-            {%>
-            
+      <p style="font-size:medium;">Here's what others are saying about Iowa Code Camp:</p>
+      <p style="font-size:medium;">Don't miss out, <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too!</p>
+      
+        <% foreach (var attendee in Model.Attendees.Where(a => !string.IsNullOrEmpty(a.Comments))) { %>
+            <%--
             <span style="font-size:x-large;">
                 <%=attendee.Name%>
             </span>
             <br />
             Organization: <span style="font-size:large;"><%=attendee.Organization %></span>
             <br /><br />
-            <span style="font-size:large;"><%=attendee.Comments %></span>
-            <br /><br />
-                
-            <%} %>
-
+            --%>
+            <p><strong><%= attendee.FirstName %>&mdash;</strong>&nbsp;<%=attendee.Comments %></p>
+        <% } %>
     </div>
-
-    <br />
     
-    <a name="waitlist"></a>
+<%--    <a name="waitlist"></a>--%>
 <%--    <h2>Wait List</h2>--%>
 <%--    <ul style="padding-left:30px">--%>
 <%--        <%--%>

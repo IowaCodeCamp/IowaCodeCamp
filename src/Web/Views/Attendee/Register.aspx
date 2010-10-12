@@ -46,6 +46,10 @@
 <%--<h1>Register for Iowa Code Camp <%= (Model.CurrentAttendeeCount >= Config.MaxAttendees)? "*Waitlist*":"" %></h1>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+
+<p>So you're signing up for Iowa Code Camp? You know it's free right? If you'd like to leave
+a message on the attendees page, add your comments last and they'll show up with your first name.</p>
+<br />
 <form action="/attendee/register" method="post">
 <fieldset class="box">
 
@@ -53,7 +57,7 @@
     <%=Html.TextBox("FirstName") %><br />
     <br />
     
-    <label for="LastName">*Last Name</label> (Public)<br />
+    <label for="LastName">*Last Name</label><br />
     <%=Html.TextBox("LastName")%><br /><br />
     
     <label for="Email">*Email</label><br />
@@ -65,17 +69,16 @@
     <label for="Region">*State/Province</label><br />
     <%=Html.TextBox("Region")%><br /><br />
     
-    <label for="Organization">*Organization </label>(Public)<br />
+    <label for="Organization">*Organization </label><br />
     <%=Html.TextBox("Organization")%> <br /><br />
     
     <label for="Website">Your Website</label><br />
     <%=Html.TextBox("Website")%> <br /><br />
     
-    <label for="Comments">Comments</label> (Public)<br />
+    <label for="Comments">Comments</label> (Optional, but public)<br />
     <%=Html.TextArea("Comments", new { rows = 4 })%> <br /><br />
     
     <input type="submit" value="Register" />
-	<span style="color:#f00;">Registrants after April 27th may not receive a ticket for lunch</span><br />
     
 </fieldset>
 </form>
