@@ -16,7 +16,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
-
+        <p class="box" style="margin:0;padding:1ex;font-size:large;text-align:center;"><a href="<%= ResolveUrl("~/attendee/register") %>">Registration is open!</a></p>
         <div class="contentarea">
             <%--
 	    <h3>Spring 2010 Links To Slides</h3>

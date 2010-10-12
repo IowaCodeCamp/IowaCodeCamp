@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Models;
 using xVal.ServerSide;
@@ -21,10 +19,9 @@ public class AttendeeController : Controller
     [AcceptVerbs(HttpVerbs.Get)]
     public ActionResult Register()
     {
-        return RedirectToAction("List");
-        //var model = new RegisterPageModel();
-        //model.CurrentAttendeeCount = CurrentAttendee.GetTotalCount();
-        //return View(model);
+        //return RedirectToAction("List");
+        var model = new RegisterPageModel { CurrentAttendeeCount = CurrentAttendee.GetTotalCount() };
+        return View(model);
     }
 
     [HttpPost]
