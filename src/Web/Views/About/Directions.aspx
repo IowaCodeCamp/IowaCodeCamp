@@ -17,7 +17,7 @@
 <%--    <br /><br />--%>
 
     
-    <h3><a href="http://www.dmacc.cc.ia.us/west/map.asp" target="_blank">Directions to Iowa Code Camp - DMACC West Campus</a></h3>
+    <h3><a href="https://go.dmacc.edu/west/Pages/map.aspx" target="_blank">Directions to Iowa Code Camp - DMACC West Campus</a></h3>
     <br /><br />
     
     
