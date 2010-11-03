@@ -14,7 +14,7 @@
 
 
 <div id="VirtualTour">
-<a href="http://www.dmacc.cc.ia.us/west/campus.asp" target="_blank">DMACC West Virtual Tour</a>
+<a href="https://go.dmacc.edu/west/Pages/campus.aspx" target="_blank">DMACC West Virtual Tour</a>
 <br />
 
 <div align="center" style="margin:10px 0px 10px 20px;">
