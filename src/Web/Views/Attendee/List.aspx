@@ -12,12 +12,12 @@
 <h2></h2>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-    <span style="float:right;">
+    <div style="font-size:28px;">
         <strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />
 <%--        <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>--%>
-    </span>
+    </div>
     <div>
-      <p style="font-size:medium;">Here's what others are saying about Iowa Code Camp:</p>
+      <p style="font-size:medium;">Here's what some attendees are saying about Iowa Code Camp:</p>
       <p style="font-size:medium;">Don't miss out, <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too!</p>
       
         <% foreach (var attendee in Model.Attendees.Where(a => !string.IsNullOrEmpty(a.Comments))) { %>
