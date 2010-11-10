@@ -65,10 +65,12 @@
 		    </div>
 	    </div>
 	    
+	    <% var @event = Models.Event.GetNextEvent(); %>
+	    <% if (@event != null) { %>
 	    <div id="headercontentright">
-	        <h1><%=Models.Event.GetNextEvent().StartOn.ToHumanOrdinalized() %></h1>
+	        <h1><%=@event.StartOn.ToHumanOrdinalized()%></h1>
 	    </div>
-
+      <% } %>
         <!--uncomment this to show a picture banner-->
 	    <!--div id="headerpic"></div-->
     	
@@ -155,18 +157,19 @@
                     
 			        <asp:ContentPlaceHolder id="secondaryPH" runat="server">
 			        
-        			
+                    <% var @event = Models.Event.GetNextEvent(); %>        			
+                    <% if (@event != null) { %>
                     <div class="box">
                         <h4>Details</h4>
                         <ul style="padding-left:20px;">
-                            <li><%=Models.Event.GetNextEvent().StartOn.ToHumanOrdinalized() %></li>
+                            <li><%=@event.StartOn.ToHumanOrdinalized()%></li>
                             <li>8:00am - 5:30pm</li>
                             <li>No cost</li>
                             <li><%=Html.ActionLink("Register to attend", "register", "attendee")%></li>
                             <li><%=Html.ActionLink("Want to sponsor?", "list", "sponsor")%></li>
                         </ul>
                     </div>
-                    
+                    <% } %>
                     <div class="box">
                     <!--University Capitol Centre, Conference Center, 2nd floor (Old Capitol Mall-downtown Iowa City)-->
 

@@ -11,12 +11,17 @@
 <h1>Session Schedule</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-<em>Coming soon...</em>
+
+<h2>Like what you see here?...<a href="/attendee/register" title="Register">Register Now</a></h2>
+<br />
+
 <%--
+<em>Coming soon...</em>
+
 <a target="_blank" href="http://spreadsheets.google.com/pub?key=tgqpHj-AagmGNYDrM7bPe9w&single=true&gid=1&output=html&widget=true">Open in a separate window</a>
 <br /><br />
-
-<iframe src="http://spreadsheets.google.com/pub?key=tgqpHj-AagmGNYDrM7bPe9w&single=true&gid=1&output=html&widget=true" width="100%" height="1000px"></iframe>
 --%>
+<iframe src="https://spreadsheets.google.com/pub?key=0AlXBGt2yyjRJdGQxVUpYNVFhTlB6T0JrVENvdjRjamc&hl=en&single=true&gid=1&output=html&widget=true" width="100%" height="1000px"></iframe>
+
 </asp:Content>
 
