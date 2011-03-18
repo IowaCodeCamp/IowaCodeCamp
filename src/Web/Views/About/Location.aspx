@@ -8,12 +8,12 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h1>DMACC Facility</h1>
+<h1>Kirkwood Community College</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 
-<div id="VirtualTour">
+<%--<div id="VirtualTour">
 <a href="https://go.dmacc.edu/west/Pages/campus.aspx" target="_blank">DMACC West Virtual Tour</a>
 <br />
 
@@ -56,7 +56,7 @@
     <br />
     
 </div>
-
+--%>
 </asp:Content>
 
 

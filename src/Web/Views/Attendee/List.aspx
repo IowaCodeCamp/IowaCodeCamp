@@ -12,6 +12,9 @@
 <h2></h2>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+    <div style="font-size:125%;padding:1ex;border:1px solid red;margin-bottom:1ex;">
+      <strong>Registration is not yet open. We will be opening it soon!</strong>
+    </div>
     <div style="font-size:28px;">
         <strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />
 <%--        <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>--%>
