@@ -11,63 +11,26 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
-    <br /><br /><br />
+    <h3>Directions to Campus from Interstate 380:</h3>
     
-<%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
-<%--    <br /><br />--%>
-
-    
-    <h3><a href="https://go.dmacc.edu/west/Pages/map.aspx" target="_blank">Directions to Iowa Code Camp - DMACC West Campus</a></h3>
-    <br /><br />
-    
-    
-    <h4>From the North/South on I-35</h4>
-
     <p>
-    Proceed on I-35 into West Des Moines and Exit Grand Avenue West — from north–69B, from south–69A. The DMACC West Campus is located approximately 1/2 mile West of I-35 at 5959 Grand Avenue.
-    
+      <ol style="margin-left:2em;">
+        <li>Take the Kirkwood/Highway 30 exit.</li>
+        <li>Take the Kirkwood Boulevard exit.</li>
+        <li>Go south on Kirkwood Boulevard approximately 1 mile.</li>
+        <li>The Main Entrance is on the left.</li>
+      </ol>
     </p>
     
-    <h4>
-    From the East on I-235
-    </h4>
+    <p>For more information or more specific directions please call 1-800-363-2220.</p>
 
-    <p>
-    Proceed on I-235 into West Des Moines and Exit on I-35 South. Proceed on I-35 and Exit 69B, Grand Avenue West. The DMACC West Campus is located approximately 1/2 mile West of I-35 at 5959 Grand Avenue.
-    </p>
-
-    <h4>From the West on I-80</h4>
-
-    <p>
-    Proceed on I-80 into West Des Moines and Exit on I-35 South. Proceed on I-35 and Exit 69B, Grand Avenue West. The DMACC West Campus are located approximately 1/2 mile West of I-35 at 5959 Grand Avenue.
-    
-    </p>
-    
-    <h4>
-    From the East on Grand Avenue
-    </h4>
-
-    <p>
-    Proceed on Grand Avenue towards the West continuing past the I-35 interchange. The DMACC West Campus are located approximately 1/2 mile West of I-35 at 5959 Grand Avenue.
-    </p>
-    
-    <img runat="server" src="~/Images/DMACC_West.gif" alt="DMACC West" />
-    
-    <br /><br />
+    <p>Click here for a printable map: <a href="http://www.kirkwood.edu/pdf/uploaded/139/campus_map.pdf">Main Campus Map (pdf)</a></p>
 
     <address>
-    5959 Grand Avenue<br />
-    West Des Moines, Iowa 50266<br />
-    (515) 633-2407
+    6301 Kirkwood Blvd. SW<br />
+    Cedar Rapids, IA 52404<br />
+    319-398-5517 &bull; 800-363-2220
     </address>
-
-    
-    <br /><br /><br />
-
-    <h3>Parking and Street Address</h3><br /><br />
-    Parking is freely available at the DMACC West facility.
-    There is paid parking directly across from the Iowa Memorial Union.
-    <br /><br />
 
 </asp:Content>
 

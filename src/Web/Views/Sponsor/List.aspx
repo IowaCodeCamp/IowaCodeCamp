@@ -20,167 +20,29 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
+<%--
     <a name="platinum"></a>
     <h2>Platinum Sponsors</h2>
     <hr /><br />
-    
-    <table><tr>
-<%--
-    <td>
-    <a href="http://sigconsult.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("signature_logo.jpg") %>' alt="Signature Consulting" class="sponsors" />
-    </a>     
-    </td>
-    <td>
-    <a href="http://www.skywalkgroup.com/it-staffing/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("skywalk_logo.png") %>' alt="Skywalk Group" class="sponsors" />
-    </a>     
-    </td>--%>
-    <td>
-    <a href="http://www.qci.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("qci_logo.gif") %>' alt="QCI" class="sponsors" />
-    </a>    
-    </td>
-    <td>
-    <a href="http://www.godaddy.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" />
-    </a>    
-    </td>
-    </tr></table>
     
     <a name="gold"></a>
     <h2>Gold Sponsors</h2>
     <hr />
     <br />
     
-        <a href="http://http://www.roberthalftechnology.com/" target="_blank">
-        <img style="border-width:0px" src='<%=SponsorImageUrl("rht.jpg") %>' alt="Robert Half Technology" class="sponsors" />
-        </a>
-<%--
-        <a href="http://www.microsoft.com/" target="_blank">
-        <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
-        </a>
-        
-
-    <a href="http://www.devlicio.us/" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/devlicious_logo.png") %>' alt="Devlicious" class="sponsors" />
-    </a> <br />
-
-    <a href="http://www.stoneriver.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />
-    </a>
-    
-    <a href="http://www.visionary.com" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/visionary_logo.jpg") %>' alt="Visionary Services" class="sponsors" />
-    </a>
-    <br /><br />
-
-    --%>
-    <br /><br />
-    
-    
     <a name="silver"></a>
-    <h2 >Silver Sponsors</h2>
+    <h2>Silver Sponsors</h2>
     <hr />
-    
-    <%--
-	<a href="http://www.lostechies.com" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/lostechies_logo.png") %>' 
-    alt="Los Techies" class="sponsors" />
-    </a> 
-    
-	<a href="http://www.codebetter.com" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/codebetter_logo.png") %>' 
-    alt="CodeBetter.com" class="sponsors" />
-    </a> 
-    
-	<a href="http://www.stoneriver.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />
-    </a>
-
-    <a href="http://www.pearsoned.com/" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("pearsoned_ug_logo.jpg") %>' 
-    alt="Pearson Education" class="sponsors" />
-    </a> 
-    
-    <a href="http://oreilly.com/" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' 
-    alt="O'Reilly" class="sponsors" />
-    </a> 
-    
-    <a href="http://www.devexpress.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("devexpress_logo.png") %>' alt="DevExpress" class="sponsors" />
-    </a>
-       --%>
-
-    <a href="http://www.microsoft.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
-    </a>
-
-    <a href="http://www.telerik.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
-    </a>
-    
-    <a href="http://www.devexpress.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("devexpress_logo.png") %>' alt="DevExpress" class="sponsors" />
-    </a>
-
-	<a href="http://nitriq.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("nitriq.png") %>' 
-    alt="Nitriq Code Analysis for .Net" class="sponsors" />
-    </a> 
-
-    <a href="http://www.jetbrains.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
-    </a>
-    
-    <%--
-    <a href="http://www.iowacomputergurus.com" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/iowacomputergurus_logo.jpg") %>' 
-    alt="Iowa Computer Gurus" class="sponsors" />
-    </a> 
-    
-    <a href="http://www.forbin.com" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/vgmforbin_logo.jpg") %>' 
-    alt="VGM Forbin" class="sponsors" />
-    </a> 
-    
-    <a href="http://www.lostechies.com" target="_blank">
-    <img style="border-width:0px" src='<%=ResolveUrl("~/Images/lostechies_logo.png") %>' 
-    alt="Los Techies" class="sponsors" />
-    </a> 
-    
-    <a href="http://www.pearsoned.com/" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("pearsoned_ug_logo.jpg") %>' 
-    alt="Pearson Education" class="sponsors" />
-    </a> 
-    
-    <a href="http://www.sqlsets.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("sqlsets_logo.png") %>' alt="SQL Sets" class="sponsors" />
-    </a>
-    
     <br />--%>
-
+    
     <a name="supporters"></a>
-    <h2 >Supporters</h2>
+    <h2>Supporters</h2>
     <hr />
-
-    <a href="http://tekpub.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("tekpub.png") %>' alt="Tek Pub" class="sponsors" />
-    </a>
-
-    <a href="http://www.red-gate.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("redgate.png") %>' alt="Red Gate" class="sponsors" />
-    </a>
 
     <a href="http://www.scootersoftware.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
     </a>
     
-    <a href="http://http://www.learnvisualstudio.net/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("learnvisualstudio_logo.png") %>" alt="LearnVisualStudio.Net" class="sponsors" />
-    </a>
-
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
