@@ -90,7 +90,7 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
 --%>
     <div id="speakers">
     <p style="font-weight:bold;"><em>Coming soon...</em></p>
-    <p>If you want to be a speaker, contact Tim Barcz at speakers [at] iowacodecamp d0t com.</p>
+    <p>If you want to be a speaker, fill out our <a href="https://spreadsheets.google.com/viewform?hl=en&formkey=dHVrMnJuQ1E0dG5mRU5KSTExeEZ1bUE6MA">speaker submission form</a>.</p>
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
