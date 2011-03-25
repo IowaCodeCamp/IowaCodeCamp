@@ -20,16 +20,27 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
-<%--
     <a name="platinum"></a>
     <h2>Platinum Sponsors</h2>
-    <hr /><br />
+    <hr />
+
+    <a href="http://www.microsoft.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
+    </a>
     
+    <br />
+
+
     <a name="gold"></a>
     <h2>Gold Sponsors</h2>
     <hr />
-    <br />
     
+    <a href="http://www.jetbrains.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
+    </a>
+
+    <br />
+<%--
     <a name="silver"></a>
     <h2>Silver Sponsors</h2>
     <hr />
@@ -42,6 +53,8 @@
     <a href="http://www.scootersoftware.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
     </a>
+    
+    <img style="border-width:0px" src='<%=SponsorImageUrl("dotnetvideos.png") %>' alt="dotNetVideos.net" class="sponsors" />
     
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
