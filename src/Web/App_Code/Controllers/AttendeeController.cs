@@ -16,9 +16,12 @@ public class AttendeeController : Controller
     [AcceptVerbs(HttpVerbs.Get)]
     public ActionResult Register()
     {
-        return RedirectToAction("List");
-        //var model = new RegisterPageModel { CurrentAttendeeCount = CurrentAttendee.GetTotalCount() };
-        //return View(model);
+        // When registration is off
+        //return RedirectToAction("List");
+
+        // When registration is on
+        var model = new RegisterPageModel { CurrentAttendeeCount = CurrentAttendee.GetTotalCount() };
+        return View(model);
     }
 
     [HttpPost]
