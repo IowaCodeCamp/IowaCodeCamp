@@ -6,16 +6,16 @@
         <a href="http://crineta.org" target="_blank">CRineta.org</a> and  
         <a href="http://iadnug.org" target="_blank">Iowa .NET</a> 
         are hosting the seventh code camp in Iowa on April 30th, 2011
-        <!--at <a href="http://www.kirkwood.edu" target="_blank">Kirkwood</a> -->
+        at <a href="http://www.kirkwood.edu" target="_blank">Kirkwood</a> 
         in Cedar Rapids, Iowa.
     </p>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
-        <%-- <p class="box" style="margin:0;padding:1ex;font-size:large;text-align:center;">
+        <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         <a href="<%= ResolveUrl("~/attendee/register") %>">Registration is open!</a>
-        </p> --%>
+        </p>
         <div class="contentarea">
             <%--
 	    <h3>Spring 2010 Links To Slides</h3>

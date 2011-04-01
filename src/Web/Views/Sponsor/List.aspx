@@ -28,6 +28,10 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
     </a>
     
+    <a href="http://www.modis.com/itrecruitment/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
+    </a>
+    
     <br />
 
 
@@ -39,12 +43,21 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
     </a>
 
+    <a href="http://www.telerik.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
+    </a>
+    
     <br />
-<%--
+
     <a name="silver"></a>
     <h2>Silver Sponsors</h2>
     <hr />
-    <br />--%>
+    <br />
+    
+    <a href="http://www.qci.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("qci_logo.gif") %>' alt="QCI" class="sponsors" />
+    </a>    
+
     
     <a name="supporters"></a>
     <h2>Supporters</h2>
@@ -56,6 +69,10 @@
     
     <img style="border-width:0px" src='<%=SponsorImageUrl("dotnetvideos.png") %>' alt="dotNetVideos.net" class="sponsors" />
     
+    <a href="http://http://www.learnvisualstudio.net/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("learnvisualstudio_logo.png") %>" alt="LearnVisualStudio.Net" class="sponsors" />
+    </a>
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
