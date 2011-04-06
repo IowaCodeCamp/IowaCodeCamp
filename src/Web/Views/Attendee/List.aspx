@@ -2,6 +2,14 @@
 <%@ Import Namespace="System.Linq" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
+<style type="text/css">
+#tweet-this { display:block;float:right; padding:10px;background-color:#2B2B2B;color:#eee;margin:0 0 1em;width:400px;font-size: 175%;font-style:oblique;font-family:Sans-Serif;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  }
+#tweet-this iframe { display: block; float: left; margin-right:1em; }
+</style>
 <script type="text/javascript">
     $(document).ready(function()
     { $("#attendees").addClass("active"); });
@@ -12,6 +20,10 @@
 <h2></h2>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+    <div id="tweet-this">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://iowacodecamp.com" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!" data-count="vertical" data-via="IowaCodeCamp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!
+    </div>
     <div style="font-size:28px;">
         <strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />
 <%--        <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>--%>
