@@ -12,6 +12,8 @@
     Cedar Rapids, Iowa City, Cedar Falls, Waterloo, 
     Jon Von Gillern, Greg Sohl, Tim Barcz, Levi Rosol, Nick Parker, Chris Missal, Zac Harlan" />
     <meta name="description" content="Site for all things Iowa Code Camp" />
+
+    <meta property="og:title" content="Iowa Code Camp"/>    <meta property="og:site_name" content="IowaCodeCamp.com"/>    <meta property="og:image" content="<%=ResolveUrl("~/Public/Images/icc_logo_huge.jpg")%>"/>
     <link rel="stylesheet" type="text/css" href="../../Public/Stylesheets/Default.css" />
     
     <script src='<%=ResolveUrl("~/Scripts/jquery/jquery-1.3.2.min.js")%>' type="text/javascript"></script>
@@ -39,7 +41,8 @@
                 auto_join_text_reply: "we replied to",
                 auto_join_text_url: "we were checking out",
                 loading_text: "loading tweets..."
-            });
+              });
+              $("#facebook-like").attr("src", "http://www.facebook.com/plugins/like.php?href=http://iowacodecamp.com&layout=standard&show_faces=false&width=190&action=like&font=arial&colorscheme=light&height=25");
         });
     </script>
     <asp:ContentPlaceHolder id="headPH" runat="server">
@@ -168,7 +171,9 @@
                             <li><%=Html.ActionLink("Register to attend", "register", "attendee")%></li>
                             <li><%=Html.ActionLink("Want to sponsor?", "list", "sponsor")%></li>
                         </ul>
-                    </div>
+                        <div style="margin:1em 1ex;">
+	                        <noscript>                            <iframe src="http://www.facebook.com/plugins/like.php?href=http://iowacodecamp.com&layout=standard&show_faces=false&width=190&action=like&font=arial&colorscheme=light&height=25" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:190px; height:25px;" allowTransparency="true"></iframe>                          </noscript>
+                          <iframe scrolling="no" frameborder="0" id="facebook-like" style="border:none; overflow:hidden; width:190px; height:25px;" allowTransparency="true"></iframe>                        </div>                    </div>
                     <% } %>
                     <div class="box">
                     <!--University Capitol Centre, Conference Center, 2nd floor (Old Capitol Mall-downtown Iowa City)-->
