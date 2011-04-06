@@ -73,6 +73,21 @@
     <img style="border-width:0px" src="<%=SponsorImageUrl("learnvisualstudio_logo.png") %>" alt="LearnVisualStudio.Net" class="sponsors" />
     </a>
 
+    <a href="http://www.componentone.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("component-one.png") %>' 
+    alt="Component One" class="sponsors" />
+    </a> 
+
+    <a href="http://oreilly.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' 
+    alt="O'Reilly" class="sponsors" />
+    </a> 
+
+    <a href="http://www.pearsoned.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("pearsoned_ug_logo.jpg") %>' 
+    alt="Pearson Education" class="sponsors" />
+    </a> 
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
