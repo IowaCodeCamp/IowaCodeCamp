@@ -47,6 +47,10 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
     </a>
     
+    <a href="http://discountasp.net" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.jpg") %>' alt="DiscountASP.NET" class="sponsors" />
+    </a>     
+
     <br />
 
     <a name="silver"></a>
@@ -58,6 +62,9 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("qci_logo.gif") %>' alt="QCI" class="sponsors" />
     </a>    
 
+    <a href="http://www.godaddy.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" />
+    </a>    
     
     <a name="supporters"></a>
     <h2>Supporters</h2>
@@ -86,6 +93,11 @@
     <a href="http://www.pearsoned.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("pearsoned_ug_logo.jpg") %>' 
     alt="Pearson Education" class="sponsors" />
+    </a> 
+
+    <a href="http://www.wiley.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("wiley.jpg") %>' 
+    alt="Wiley" class="sponsors" />
     </a> 
 
 </asp:Content>

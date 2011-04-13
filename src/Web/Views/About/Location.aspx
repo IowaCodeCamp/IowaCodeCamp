@@ -8,9 +8,16 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<h1>Kirkwood Community College</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+
+<h1>Kirkwood Community College</h1>
+<ul style="margin:1em 2em;">
+  <li>Enter between Iowa Hall and Mansfield Center</li>
+  <li>Breakfast and lunch will be on the main level from this entrance.</li>
+  <li>To get to the sessions, take open stairs up 1 level to the 3rd floor</li>
+  <li>Take a right and follow the wall until you see Iowa rooms A-D. This is where our opening and closing announcements will be located.</li>
+</ul>
 
 
 <%--<div id="VirtualTour">
