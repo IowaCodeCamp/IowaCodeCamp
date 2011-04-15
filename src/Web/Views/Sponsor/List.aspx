@@ -66,6 +66,10 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" />
     </a>    
     
+    <a href="http://www.stoneriver.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />
+    </a>
+
     <a name="supporters"></a>
     <h2>Supporters</h2>
     <hr />
@@ -99,7 +103,12 @@
     <img style="border-width:0px" src='<%= SponsorImageUrl("wiley.jpg") %>' 
     alt="Wiley" class="sponsors" />
     </a> 
-
+    
+    <a href="http://www.pluralsight-training.net" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("pluralsight.jpg") %>' 
+    alt="pluralsight" class="sponsors" />
+    </a> 
+    
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
