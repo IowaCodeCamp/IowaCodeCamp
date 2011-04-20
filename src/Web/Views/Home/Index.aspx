@@ -14,7 +14,9 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
-        <a href="<%= ResolveUrl("~/attendee/register") %>">Registration is open!</a>
+        <a href="<%= ResolveUrl("~/attendee/register") %>">Registration is open!</a>&nbsp;&bull;&nbsp;
+        <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
+        <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
         </p>
         <div class="contentarea">
             <%--
