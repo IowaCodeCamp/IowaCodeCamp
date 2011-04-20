@@ -47,7 +47,7 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
     </a>
     
-    <a href="http://discountasp.net" target="_blank">
+    <a href="http://www.discountasp.net/cedarrapids" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.jpg") %>' alt="DiscountASP.NET" class="sponsors" />
     </a>     
 
