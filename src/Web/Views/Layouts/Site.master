@@ -81,7 +81,7 @@
 		    <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
 		    <!-- class="active" use this for the active menu item-->
 		    <ul>
-			    <li><a id="register" href='<%=ResolveUrl("~/attendee/register") %>'>Register</a></li>
+			    <%--<li><a id="register" href='<%=ResolveUrl("~/attendee/register") %>'>Register</a></li>--%>
 			    <li><a id="sessions" href='<%=ResolveUrl("~/session/list") %>'>Sessions</a></li>
 			    <li><a id="schedule" href='<%=ResolveUrl("~/session/schedule") %>'>Schedule</a></li>
 			    <li><a id="attendees" href='<%=ResolveUrl("~/attendee/list") %>'>Attendees</a></li>
@@ -168,7 +168,7 @@
                             <li><%=@event.StartOn.ToHumanOrdinalized()%></li>
                             <li>8:00am - 5:30pm</li>
                             <li>No cost</li>
-                            <li><%=Html.ActionLink("Register to attend", "register", "attendee")%></li>
+                            <%--<li><%=Html.ActionLink("Register to attend", "register", "attendee")%></li>--%>
                             <li><%=Html.ActionLink("Want to sponsor?", "list", "sponsor")%></li>
                         </ul>
                         <div style="margin:1em 1ex;">

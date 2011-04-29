@@ -30,7 +30,7 @@
     </div>
     <div>
       <p style="font-size:medium;">Here's what some attendees are saying about Iowa Code Camp:</p>
-      <p style="font-size:medium;">Don't miss out, <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too!</p>
+      <%--<p style="font-size:medium;">Don't miss out, <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too!</p>--%>
       
         <% foreach (var attendee in Model.Attendees.Where(a => !string.IsNullOrEmpty(a.Comments))) { %>
             <%--

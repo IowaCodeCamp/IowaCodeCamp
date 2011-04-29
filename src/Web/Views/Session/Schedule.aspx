@@ -16,6 +16,7 @@
 <br />
 
 
+<a target="_blank" href="https://spreadsheets1.google.com/spreadsheet/pub?hl=en&hl=en&key=0ApP5ekZgdxegdEFsbkJHWWZjdXl4SlZPQTJfdENDcWc&single=true&gid=1&output=pdf">Download PDF version of schedule</a><br />
 <a target="_blank" href="https://spreadsheets0.google.com/spreadsheet/pub?hl=en&hl=en&key=0ApP5ekZgdxegdEFsbkJHWWZjdXl4SlZPQTJfdENDcWc&single=true&gid=1&output=html&widget=true">Open in a separate window</a>
 <br /><br />
 <iframe src="https://spreadsheets0.google.com/spreadsheet/pub?hl=en&hl=en&key=0ApP5ekZgdxegdEFsbkJHWWZjdXl4SlZPQTJfdENDcWc&single=true&gid=1&output=html&widget=true" width="100%" height="1000px"></iframe>
