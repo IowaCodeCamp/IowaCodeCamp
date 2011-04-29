@@ -58,7 +58,7 @@
               <p>Interested in writing a simple iPhone app like I was just a few months ago? If this app does anything of interest it will no doubt communicate over http. In this session I'll be showing the basics required to do an http request and response in objective-c from the view point of a beginner / intermediate iPhone developer. This talk will feature a deep technical look at how you create an http GET request, POST request with data, parse JSON, parse simple HTML to find view state (webforms), store cookies for authentication and much more!</p>
     				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Toran Billups") %></dd></dl>
     				</li>
-            <li>
+            <%--<li>
               <h3>Common access patterns in column oriented data stores</h3>
               <p>Using Apache HBase we will examine common schema designs for column-oriented table structures. Each access pattern will be reviewed with multiple use cases and include code examples for efficiently putting and getting maps from the data store. After studying key design topics to be covered are:
                 <ul>
@@ -71,7 +71,7 @@
                 </ul>
               </p>
     				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Wade Arnold") %></dd></dl>
-    				</li>
+    				</li>--%>
             <li>
               <h3>Better Today: Your First Unit Tests</h3>
               <p>Everybody tests the code they write in some way or another. If you think there has to be a better way to ensure quality and prevent bugs, you're right! I'll show you how to get unit tests into your applications right away and head down a path of development that made me a better developer.</p>
@@ -123,12 +123,17 @@
               <p>This session will look at the new features developers will be interested in with the upcoming release of Silverlight 5.</p>
     				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Jeff Brand")%></dd></dl>
     				</li>
-            <li>
+            <%--<li>
               <h3>Get your hands on Haskell</h3>
               <p>Scala was my gateway drug to Haskell but C# should have been.  It turns out that Haskell has been a highly influential force in languages such as C# and Scala (and others to be sure).  Microsoft employs many of the worlds best Haskell minds (see Simon Peyton Jones, Erik Meijer), and a lot of ideas from Haskell have bled through .NET languages and libraries.<br />
               In this session we will do a short introduction to the language do some simple exercises and then we'll write a basic Haskell program, from scratch, using intermediate functional programming techniques (higher order functions, combinators, etc).<br />
               If you're up for it and want to follow along with the session, simply install the Glasgow Haskell Compiler (GHC)(google is your friend) and bring your favorite text editor.</p>
     				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Benjamin Metz")%></dd></dl>
+    				</li>--%>
+    				<li>
+              <h3>NHibernate, FluentNHibernate and the Repository Pattern in 1 Hour or Less</h3>
+              <p>In this session we will discuss ORMs, how and why they are becoming so popular, and how to use them effectively. I will show you how to set up NHibernate, use FluentNHibernate to create mappings in code and use the Repository pattern to create a robust, easily maintainable data access layer.</p>
+    				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Lee Brandt")%></dd></dl>
     				</li>
             <li>
               <h3>Using Html5 Today</h3>

@@ -104,9 +104,9 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
       <img src="<%= SpeakerImageUrl("billups.gif") %>" width="90" alt="" />
       <p>Toran Billups is a software professional with a personal interest in all types of code. He recently left the .NET world to learn about the JVM and along the way found this interesting language "objective-c" and the rest is history. When he isn't writing software you can find him playing legos with his son or generating hype around the latest buzz word.</p>
       
-      <h3 id="WadeArnold">Wade Arnold</h3>
+      <%--<h3 id="WadeArnold">Wade Arnold</h3>
       <img src="<%= SpeakerImageUrl("arnold.jpg") %>" width="90" alt="" />
-      <p>Wade Arnold is the Founder / CEO of T8 Webware a SAAS based application development firm that caters specifically to financial institutions. T8 Webware utilizes several OSS software offerings in there product offerings such as MongoDB, Hadoop,  Hbase, Scala, AKKA, and Lift. </p>
+      <p>Wade Arnold is the Founder / CEO of T8 Webware a SAAS based application development firm that caters specifically to financial institutions. T8 Webware utilizes several OSS software offerings in there product offerings such as MongoDB, Hadoop,  Hbase, Scala, AKKA, and Lift. </p>--%>
       
       <h3 id="ChrisMissal">Chris Missal</h3>
       <img src="<%= SpeakerImageUrl("missal.jpg") %>" width="90" alt="" />
@@ -152,9 +152,9 @@ We're looking forward to working with you all to build the best Iowa Code Camp y
       <img src="<%= SpeakerImageUrl("brand.jpg") %>" width="90" alt="" />
       <p>Jeff Brand is a .NET Developer in Microsoft's Developer and Platform Group. Jeff assists customers in evaluating, developing and deploying applications built on the .NET Framework and the Microsoft platform. He has been with Microsoft for eleven years and has served in variety of roles including infrastructure consultant, e-commerce technology specialist, and enterprise technology advisor.</p>
       
-      <h3 id="BenjaminMetz">Benjamin Metz</h3>
+      <%--<h3 id="BenjaminMetz">Benjamin Metz</h3>
       <img src="<%= SpeakerImageUrl("metz.jpg") %>" width="90" alt="" />
-      <p>Ben currently leads a team @ T8Webware developing scalable distributed systems for the financial services industry.  He has been working in software startups in the state of IA for 9 years holding a variety of positions.  He is currently working in Scala on the JVM, and is interested in all things Functional and Distributed.</p>
+      <p>Ben currently leads a team @ T8Webware developing scalable distributed systems for the financial services industry.  He has been working in software startups in the state of IA for 9 years holding a variety of positions.  He is currently working in Scala on the JVM, and is interested in all things Functional and Distributed.</p>--%>
       
       <h3 id="JamesEggers">James Eggers</h3>
       <img src="<%= SpeakerImageUrl("eggers.jpg") %>" width="90" alt="" />

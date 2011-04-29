@@ -17,11 +17,11 @@ public class AttendeeController : Controller
     public ActionResult Register()
     {
         // When registration is off
-        //return RedirectToAction("List");
+        return RedirectToAction("List");
 
         // When registration is on
-        var model = new RegisterPageModel { CurrentAttendeeCount = CurrentAttendee.GetTotalCount() };
-        return View(model);
+        //var model = new RegisterPageModel { CurrentAttendeeCount = CurrentAttendee.GetTotalCount() };
+        //return View(model);
     }
 
     [HttpPost]
