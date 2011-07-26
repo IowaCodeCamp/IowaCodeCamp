@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Location | Iowa Code Camp" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
+<%@ Register src="../Shared/ComingSoon.ascx" tagname="ComingSoon" tagprefix="cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
@@ -11,6 +12,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
+<cs:ComingSoon runat="server" />
+
+<%--
 <h1>Kirkwood Community College</h1>
 <ul style="margin:1em 2em;">
   <li>Enter between Iowa Hall and Mansfield Center</li>
@@ -20,7 +24,7 @@
 </ul>
 
 
-<%--<div id="VirtualTour">
+<div id="VirtualTour">
 <a href="https://go.dmacc.edu/west/Pages/campus.aspx" target="_blank">DMACC West Virtual Tour</a>
 <br />
 

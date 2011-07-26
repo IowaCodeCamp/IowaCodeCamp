@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Sponsors | Iowa Code Camp" Language="C#" Inherits="BasePage" MasterPageFile="~/Views/Layouts/Site.master" %>
+<%@ Register src="../Shared/ComingSoon.ascx" tagname="ComingSoon" tagprefix="cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">    
@@ -19,7 +20,8 @@
 </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-
+<cs:ComingSoon ID="ComingSoon1" runat="server" />
+<%--
     <a name="platinum"></a>
     <h2>Platinum Sponsors</h2>
     <hr />
@@ -108,7 +110,7 @@
     <img style="border-width:0px" src='<%= SponsorImageUrl("pluralsight.jpg") %>' 
     alt="pluralsight" class="sponsors" />
     </a> 
-    
+--%>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>

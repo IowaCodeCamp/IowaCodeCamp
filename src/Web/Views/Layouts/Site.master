@@ -180,8 +180,8 @@
 
                         <h4>Where</h4>
                         <ul style="padding-left:20px;">
-                        <li><%=Html.ActionLink("Kirkwood Community College", "location", "about") %></li>
-                        <li>Cedar Rapids, Iowa</li>
+                        <li><%=Html.ActionLink("DMACC", "location", "about") %></li>
+                        <li>West Des Moines, Iowa</li>
                         <!--li>
                             <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
                             Map

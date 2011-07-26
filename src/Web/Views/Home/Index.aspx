@@ -5,9 +5,9 @@
     <p style="font-size:larger;">
         <a href="http://crineta.org" target="_blank">CRineta.org</a> and  
         <a href="http://iadnug.org" target="_blank">Iowa .NET</a> 
-        are hosting the seventh code camp in Iowa on April 30th, 2011
-        at <a href="http://www.kirkwood.edu" target="_blank">Kirkwood</a> 
-        in Cedar Rapids, Iowa.
+        are hosting the eighth code camp in Iowa on October 29th, 2011
+        at <a href="http://www.dmacc.edu" target="_blank">DMACC</a> 
+        in West Des Moines, Iowa.
     </p>
 
 </asp:Content>
