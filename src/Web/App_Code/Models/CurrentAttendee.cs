@@ -8,7 +8,7 @@ namespace Models
     /// </summary>
     public partial class CurrentAttendee
     {
-        public static int NextEventId = 8;
+        public static int NextEventId = Event.NextEventId;
 
         public static bool Add(CurrentAttendee attendee)
         {

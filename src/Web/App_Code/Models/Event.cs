@@ -26,9 +26,25 @@ namespace Models
                 Event CurrEvent = Event.GetNextEvent();
                 int days = -1;
                 if (CurrEvent != null)
-                    days = (Event.GetNextEvent().EndOn.Date.AddDays(1) - today).Days;
+                    days = (CurrEvent.EndOn.Date.AddDays(1) - today).Days;
                 //if (days < 0) return -1;
                 return days;
+            }
+        }
+
+        public static string NextEventName {
+            get {
+                var @event = GetNextEvent();
+                return @event != null ? @event.EventName : "Iowa Code Camp";
+            }
+        }
+
+        public static int NextEventId
+        {
+            get
+            {
+                var @event = GetNextEvent();
+                return @event != null ? @event.Id : 0;
             }
         }
 

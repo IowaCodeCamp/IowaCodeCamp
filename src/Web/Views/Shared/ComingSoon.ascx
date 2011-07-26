@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
+<strong>Coming soon! Please check back or follow us on Twitter! <a href="http://twitter.com/IowaCodeCamp">@IowaCodeCamp</a></strong>
