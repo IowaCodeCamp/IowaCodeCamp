@@ -26,15 +26,15 @@
     <hr />
 	
 	<a href="http://www.qci.com" target="_blank">
-    <img style="border-width:0px" src="/public/images/sponsors/fall2011/qci_logo.gif" alt="QCI" class="sponsors" />
+    <img style="border-width:0px" src="<%=SponsorImageUrl("qci_logo.gif")%>" alt="QCI" class="sponsors" />
     </a>    
 	
 	<a href="http://www.metacommunications.com/" target="_blank">
-    <img style="border-width:0px" src="/public/images/sponsors/fall2011/meta_logo.png" alt="Meta Communications" class="sponsors" />
+    <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo.png")%>" alt="Meta Communications" class="sponsors" />
     </a>    
 	
 	<a href="http://aspect.com" target="_blank">
-    <img style="border-width:0px" src="/public/images/sponsors/fall2011/aspect-logo.jpg" alt="Aspect" class="sponsors" />
+    <img style="border-width:0px" src="<%=SponsorImageUrl("aspect-logo.jpg")%>" alt="Aspect" class="sponsors" />
     </a>    
 
 <%--
@@ -74,11 +74,11 @@
     <br />
     
     <a href="http://www.red-gate.com/" target="_blank">
-    <img style="border-width:0px" src="/public/images/sponsors/fall2011/redgate.png" alt="Red Gate" class="sponsors" />
+    <img style="border-width:0px" src="<%=SponsorImageUrl("redgate.png")%>" alt="Red Gate" class="sponsors" />
     </a>
 
     <a href="http://www.devexpress.com/" target="_blank">
-    <img style="border-width:0px" src="/public/images/sponsors/fall2011/devexpress_logo.png" alt="DevExpress" class="sponsors" />
+    <img style="border-width:0px" src="<%=SponsorImageUrl("devexpress_logo.png")%>" alt="DevExpress" class="sponsors" />
     </a>
 
 <%--
