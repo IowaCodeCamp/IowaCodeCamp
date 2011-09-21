@@ -11,7 +11,14 @@
 
 	<h3>Upcoming Events and Conferences</h3>
 	<ul>
-		
+<!--
+Chicago Idea Week - Oct 10 - 16
+TEDx MidWest - Oct 13 - 14
+ThincIowa - Oct 20 - 21
+Ruby Midwest - Nov 4 - 5
+BarCampDSM - Dec 3
+StartupWeekendIC - Sept 30 - Oct 2
+-->		
 	</ul>
 	
 	<h3>Recurring Events and Groups</h3>
