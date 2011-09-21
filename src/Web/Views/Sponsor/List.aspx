@@ -52,7 +52,8 @@
     <a name="gold"></a>
     <h2>Gold Sponsors</h2>
     <hr />
-<%-- %>    
+
+<%--
     <a href="http://www.jetbrains.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
     </a>
@@ -68,6 +69,12 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
     </a>     
 
+	<a href="http://http://www.roberthalftechnology.com/" target="_blank">
+	<img style="border-width:0px" src='<%=SponsorImageUrl("rht.jpg") %>' alt="Robert Half Technology" class="sponsors" />
+	</a>
+
+	<br />
+	
     <a name="silver"></a>
     <h2>Silver Sponsors</h2>
     <hr />
