@@ -1,0 +1,578 @@
+{
+    "d" : {
+        "success" : true,
+        "msg" : null,
+        "data" : [{
+            "session" : "Registration/Breakfast",
+            "time" : "8:00 AM - 8:40 AM",
+            "desc" : "",
+            "room" : "Cafeteria/Atrium",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "Welcome and Announcements",
+            "time" : "8:40 AM - 9:00 AM",
+            "desc" : "",
+            "room" : "Auditorium",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "Using MVVM Frameworks",
+            "time" : "9:00 AM - 10:15 AM",
+            "desc" : "You're smart.  You've heard that the MVVM pattern is the way to go for WPF and Silverlight applications - maybe you've even rolled your own helper classes for implementing MVVM in your apps.  But now you understand how the pattern works, and you want to simply trust a 3rd party framework to handle the details of MVVM for you.  Luckily, several frameworks exist, and will do this for you - but it isn't always obvious how to get started.  In this session, we'll take a look at a couple of the more popular options and how to get your app off on the right foot with a MVVM framework.",
+            "room" : "Auditorium",
+            "speaker" : {
+                "web" : "http://www.adambarney.com",
+                "location" : "Lincoln, NE",
+                "name" : "Adam Barney",
+                "bio" : "Adam Barney is a lifelong computer nerd living in Lincoln, NE. He bought his first computer in the fourth grade (a Commodore 64), and has been figuring out how to bend these machines to his will ever since. He started programming professionally in 2000, picking up with the .NET Framework 1.1 a couple years later. In 2008, he co-founded and continues to lead the Lincoln .NET Users Group, which now puts on the annual Nebraska code Camp. By day, Adam is a senior consultant with Sogeti USA out of Omaha, NE.",
+                "img" : "adam.png"
+            }
+        },
+        {
+            "session" : "Create Compelling User Experiences Easily with KnockoutJS",
+            "time" : "9:00 AM - 10:15 AM",
+            "desc" : "Ever since JQuery hit the scene JavaScript has been easier and easier to use to create stunning user experiences on the web. But when UIs get complicated and lots of things need to happen simultaneously after a user action has occurred, the JQuery can be quite involved. Steve Sanderson has released a JavaScript framework that can give great user experiences, while taking advantage of a simple application pattern known as MVVM within JavaScript to handle all of the UI updating. I will go through the reasons why KnockoutJS is a must-have tool in every developer's toolkit, and how you can create a compelling user experience easily with KnockoutJS.",
+            "room" : "118E",
+            "speaker" : {
+                "web" : "http://disruptivetheory.com/",
+                "location" : "Merriam, KS",
+                "name" : "Lee Brandt",
+                "bio" : "Lee has been programming professionally for more than a decade and currently works as a Project Lead Consultant with AdventureTech. He speaks regionally about software development practices and has mentored teams on improving their approach to lean software development through achieving technical proficiency. He is a Microsoft Most Valuable Professional, one of the leaders of the Kansas City .Net User Group, and serves as the Regional Mentor for .Net user groups in Kansas and Missouri.",
+                "img" : "lee_brandt_90x117.jpg"
+            }
+        },
+        {
+            "session" : "",
+            "time" : "9:00 AM - 10:15 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "9:00 AM - 10:15 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "9:00 AM - 10:15 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "9:00 AM - 10:15 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "9:00 AM - 10:15 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "9:00 AM - 10:15 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "Break",
+            "time" : "10:15 AM - 10:30 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "10:30 AM - 11:45 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "10:30 AM - 11:45 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "10:30 AM - 11:45 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "10:30 AM - 11:45 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "10:30 AM - 11:45 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "10:30 AM - 11:45 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "10:30 AM - 11:45 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "10:30 AM - 11:45 AM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "Lunch",
+            "time" : "11:45 AM - 12:45 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "12:45 PM - 2:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "12:45 PM - 2:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "12:45 PM - 2:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "12:45 PM - 2:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "12:45 PM - 2:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "12:45 PM - 2:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "12:45 PM - 2:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "Break",
+            "time" : "2:00 PM - 2:15 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "2:15 PM - 3:30 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "2:15 PM - 3:30 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "2:15 PM - 3:30 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "2:15 PM - 3:30 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "2:15 PM - 3:30 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "2:15 PM - 3:30 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "2:15 PM - 3:30 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "Break",
+            "time" : "3:30 PM - 3:45 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "3:45 PM - 5:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "3:45 PM - 5:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "3:45 PM - 5:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "3:45 PM - 5:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "3:45 PM - 5:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "3:45 PM - 5:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "",
+            "time" : "3:45 PM - 5:00 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        },
+        {
+            "session" : "Closing and Prizes",
+            "time" : "5:00 PM - 5:30 PM",
+            "desc" : "",
+            "room" : "",
+            "speaker" : {
+                "web" : "",
+                "location" : "",
+                "name" : "",
+                "bio" : "",
+                "img" : ""
+            }
+        }]
+    }
+}
