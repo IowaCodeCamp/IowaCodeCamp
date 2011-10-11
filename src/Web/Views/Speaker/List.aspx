@@ -68,7 +68,7 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 <p>Chris has been a developer in the Des Moines area for over 10 years, having worked with a wide variety of languages and environments. He tries to spend his spare time with his wife and two small kids, but manages to get in some time with programming books from time to time.
 </p>
 
-<h3 id="Ralph Bunker">Ralph Bunker</h3>
+<h3 id="RalphBunker">Ralph Bunker</h3>
 <img src="<%= SpeakerImageUrl("rbunker.jpg") %>" width="90" alt="" />
 <p>Programming since 1968. Fortran-->BAL360-->PL/I-->C-->C++-->Java-->C#->Javascript
 </p>
@@ -143,7 +143,7 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 <p>Scott is a seasoned consultant with over a decade of consulting experience on both the Microsoft and Java platforms, involving mostly web application development. Scott began working with Silverlight in the 1.1 Alpha, and continues to focus on Silverlight and Windows Phone 7 as his primary developer focus. Scott is also the leader of the Twin Cities Silverlight User Group. Recent projects for Scott include writing Silverlight 4.0, Surface, WinMo6 and WP7 applications, as well as performing executive-level IT strategy and planning consulting. Scott is currently the owner and principal consultant for his consulting firm Ignition Point Solutions, as well as COO of QONQR, a tech startup in the mobile gaming industry.
 </p>
 
-<h3 id="LwinMinMaung">Lwin / Min Maung</h3>
+<h3 id="LwinandMinMaung">Lwin &amp; Min Maung</h3>
 <img src="<%= SpeakerImageUrl("min_lwin_tallsmall.png") %>" width="90" alt="" />
 <p>Lwin Maung is a developer and principal at Accolade Systems, a Chicagoland IT consulting startup. He is a developer of mobile applications. He also secures servers, enable VOIP and SIP solutions, and designs networks for small businesses. In his free time, Lwin plays with microcontrollers. Lwin teamed up with his brother, Min, to win several hackathons. Together, they've developed multiple cross-platform mobile apps. <br />
 In his "spare" time, Min Maung is a skilled, cross-platform mobile developer, aggressive hackathon competitor and presenter. Enamored with the Window Phone UI, Min co-created the first Metro UI launcher for Android, featured on Engadget. He's soon to publish ""Accolade Navigator,"" a turn-by-turn, visually compelling GPS navigation system for the Windows Phone 7. When he's not coding, he's building robots. Monday through Friday, you'll find Min at a leading, privately-held payroll and HR sofware solutions company, cranking out .Net code and writing apps in ASP.Net, Silverlight, and other .Net solutions.<br />
@@ -209,6 +209,7 @@ In his "spare" time, Min Maung is a skilled, cross-platform mobile developer, ag
 
     
     </div>
+    <div style="height:800px;">&nbsp;</div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
