@@ -85,7 +85,7 @@
 
             <li>
               <h3>Designing For Your Peers</h3>
-              <p></p>
+              <p>This half day workshop will have participant design a solution based on the needs of their team and other peers. Attendees will be provided an overview of various design topics and then will be asked to work together to develop a solution based on a given scenario. Throughout the process, attendees will go through exercises in brainstorming, persona and mental model development, user interviews, information architecture, and prototyping. This workshop is available to anyone who wants to join though attendees are expected to stay throughout the duration.</p>
     				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("James Eggers")%></dd></dl>
     				</li>
 
