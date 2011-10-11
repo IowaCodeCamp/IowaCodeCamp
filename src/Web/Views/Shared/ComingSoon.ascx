@@ -7,4 +7,4 @@
   </a>
 </p>
 --%>
-<strong>Registration is now open! <a href="/attendee/register">Register now!</a> </strong>
+<strong>Registration is now open! <%= Html.ActionLink("Register now!", "register", "attendee")%> </strong>
