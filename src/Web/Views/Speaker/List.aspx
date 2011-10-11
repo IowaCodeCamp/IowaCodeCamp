@@ -33,6 +33,8 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
+<cs:ComingSoon runat="server" />
+
     <div id="speakers">
 
 <h3 id="SergioPereira">Sergio Pereira</h3>
@@ -103,7 +105,7 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 
 <h3 id="BrandonWeber">Brandon Weber</h3>
 <img src="<%= SpeakerImageUrl("brandon-weber.jpg") %>" width="90" alt="" />
-<p>Software developer at Dwolla.
+<p>Software developer at Dwolla. I am mainly a .NET developer who likes to play in Rails. I aspire for world domination. I enjoy reading and tinkering with technology. 6-year Air Force veteran who worked in networking and cryptography. Computer Engineering graduate from Iowa State University with focus on Information Assurance and Network Security. I also enjoy a good rum ham at the beach.
 </p>
 
 <h3 id="DustinThostenson">Dustin Thostenson</h3>
