@@ -96,11 +96,6 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 <p>I'm a computer scientist with a passion for education. I worked on several independent programming projects, programmed for the University of Maryland, and interned at Microsoft before leaving the profession to teach high school for five years.  Now I'm the programmer for a new ed-software startup, ActiveGrade, based in Iowa City.
 </p>
 
-<h3 id="MikeBenkovich">Mike Benkovich</h3>
-<img src="<%= SpeakerImageUrl("Mike3.jpg") %>" width="90" alt="" />
-<p>Mike Benkovich delivers technical presentations around the U.S. as a developer evangelist at Microsoft. He has worked in a variety of professional roles, including architect, project manager, developer, and technical writer. Mike is also an author of two books, published by WROX Press and APress, that show developers how to get the most from their SQL databases. Since appearing in the 1994 Microsoft DevCast, Mike has presented technical information at seminars, conferences, and corporate boardrooms across America.
-</p>
-
 <h3 id="JeffBrand">Jeff Brand</h3>
 <img src="<%= SpeakerImageUrl("jbrand.jpg") %>" width="90" alt="" />
 <p>Jeff Brand is a .NET Developer in Microsoft’s Developer and Platform Group. Jeff assists customers in evaluating, developing and deploying applications built on the .NET Framework and the Microsoft platform. He has been with Microsoft for fifteen years and has served in variety of roles including infrastructure consultant, e-commerce technology specialist, and enterprise technology advisor.
