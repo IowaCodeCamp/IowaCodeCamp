@@ -39,6 +39,8 @@
 <cs:ComingSoon runat="server" />
 
     <div id="sessions">
+    <br />
+    <p>Details to be added soon, please check the <%= Html.ActionLink("schedule", "schedule", "session") %> for session details in the meantime.</p>
         <%--<ul>
             <li>
               <h3>Developing with Objective-C 2.0 for Mac OS X and iPhone OS</h3>
