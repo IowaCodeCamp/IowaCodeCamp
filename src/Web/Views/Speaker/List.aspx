@@ -168,7 +168,7 @@ In his "spare" time, Min Maung is a skilled, cross-platform mobile developer, ag
 </p>
 
 <h3 id="DavidWBody">David W. Body</h3>
-<img src="http://placekitten.com/90/117" width="90" alt="" />
+<img src="<%= SpeakerImageUrl("david_reasonably_small.jpg") %>" width="90" alt="" />
 <p>David W. Body is president of Big Creek Software, LLC, a software consulting firm located in Polk City, Iowa. He is also the founder and leader of the Iowa Ruby Brigade.
 </p>
 
