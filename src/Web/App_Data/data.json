@@ -3,7 +3,7 @@
         "success" : true,
         "msg" : null,
         "data" : [{
-            "session" : "Registration/Breakfast",
+            "session" : "Breakfast",
             "time" : "8:00 AM - 8:40 AM",
             "desc" : "",
             "room" : "Cafeteria/Atrium",
@@ -64,7 +64,7 @@
                 "location" : "St. Louis, MO",
                 "name" : "Brad Tutterow",
                 "bio" : "Brad is a Christian, Father, Husband, and .NET Developer. He leads the best looking web development team in the St. Louis metropolitan area at Swank Motion Pictures. He's into ASP.NET MVC3, JavaScript, and Entity Framework.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/Brad-Tutterow-1.jpg"
+                "img" : "Brad-Tutterow-1.jpg"
             }
         },
         {
@@ -77,7 +77,7 @@
                 "location" : "Ankeny, Iowa",
                 "name" : "Skylar Watson",
                 "bio" : "Skylar is a passionate software developer who's interests expand several platforms. Some of his current personal projects have him playing with solr/lucene, gradle, and android game development.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/skylar.jpg"
+                "img" : "skylar.jpg"
             }
         },
         {
@@ -90,7 +90,7 @@
                 "location" : "Urbandale, Iowa",
                 "name" : "Christopher Freeman",
                 "bio" : "Chris has been a developer in the Des Moines area for over 10 years, having worked with a wide variety of languages and environments. He tries to spend his spare time with his wife and two small kids, but manages to get in some time with programming books from time to time.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/chris.jpg"
+                "img" : "chris.jpg"
             }
         },
         {
@@ -103,7 +103,7 @@
                 "location" : "Grayslake, IL",
                 "name" : "Sergio Pereira",
                 "bio" : "Sergio Pereira has been developing software professionally since the mid 90's. After a short period of desktop application development, Sergio changed his focus to web development and never looked back. He's a strong believer in continuous improvement of himself, the processes, and the tools he uses in the software craft. If you don't see Sergio in front of his computer screen, you will probably find him in front of an even bigger screen watching some live sports or a silly movie. You can find out more about Sergio on his blog or by following @sergiopereira on Twitter.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/sergio-profile_90_117.jpg"
+                "img" : "sergio-profile_90_117.jpg"
             }
         },
         {
@@ -116,7 +116,7 @@
                 "location" : "Kansas City, MO",
                 "name" : "Jonathan Mills",
                 "bio" : "Jon is the development manager at UMB in Kansas City, MO. He is tasked with bringing lean principles and processes into the rigid world of financial institutions.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/jon-mills.jpg"
+                "img" : "jon-mills.jpg"
             }
         },
         {
@@ -129,7 +129,7 @@
                 "location" : "Overland Park, KS",
                 "name" : "James Eggers",
                 "bio" : "Web designer, developer, and speaker who is always willing to talk about his experiences over his 10+ year career.  An active speaker, he strives to focus on keeping up with the latest industry news and trends while improving or broadening his skills.  Lately, he's focused on a number of different topics including Testable JavaScript, User Experience design, and HTML5.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/james-eggers.jpg"
+                "img" : "james-eggers.jpg"
             }
         },
         {
@@ -154,8 +154,8 @@
                 "web" : "http://www.jasonbock.net",
                 "location" : "Shakopee, MN",
                 "name" : "Jason Bock",
-                "bio" : "Jason Bock is a Principal Consultant for Magenic (http://www.magenic.com), a Microsoft MVP (C#), and an INETA (http://www.ineta.org) speaker. He has worked on a number of business applications using a diverse set of substrates and languages such as C#, .NET, and Java. He is the author of "Applied .NET Attributes", "CIL Programming: Under the Hood of .NET", ".NET Security", and "Visual Basic 6 Win32 API Tutorial". He has written numerous articles on software development issues and has presented at a number of conferences and user groups. He is a leader of the Twin Cities Code Camp (http://www.twincitiescodecamp.com) and runs the Twin Cities Languages User Group (http://www.twincitieslanguagesusergroup.com). Jason holds a Master's degree in Electrical Engineering from Marquette University.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/JasonSmallHeadShot.jpg"
+                "bio" : "Jason Bock is a Principal Consultant for Magenic (http://www.magenic.com), a Microsoft MVP (C#), and an INETA (http://www.ineta.org) speaker. He has worked on a number of business applications using a diverse set of substrates and languages such as C#, .NET, and Java. He is the author of \"Applied .NET Attributes\", \"CIL Programming: Under the Hood of .NET\", \".NET Security\", and \"Visual Basic 6 Win32 API Tutorial\". He has written numerous articles on software development issues and has presented at a number of conferences and user groups. He is a leader of the Twin Cities Code Camp (http://www.twincitiescodecamp.com) and runs the Twin Cities Languages User Group (http://www.twincitieslanguagesusergroup.com). Jason holds a Master's degree in Electrical Engineering from Marquette University.",
+                "img" : "JasonSmallHeadShot.jpg"
             }
         },
         {
@@ -168,7 +168,7 @@
                 "location" : "Cedar Rapids, IA",
                 "name" : "Bryan Forbes",
                 "bio" : "Bryan Forbes is a Senior Software Engineer at SitePen, Inc where he has worked for 5 years. While there, he has developed web applications and provided JavaScript support for companies like Sun, Cisco, ESRI, and JP Morgan Chase. In addition to this, Bryan has been a Dojo committer for over 5 years, has over 10 years of JavaScript development experience, and over 15 years experience developing websites. He currently maintains the DojoX DataGrid and a synthetic events library, EventD, for unit testing user interaction with web applications.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/bryan.jpg"
+                "img" : "bryan.jpg"
             }
         },
         {
@@ -181,7 +181,7 @@
                 "location" : "Cedar Rapids, IA",
                 "name" : "Zac Harlan",
                 "bio" : "Zac Harlan is an accidental SQL DBA/Developer and .NET developer from Seaton, IL. He works at J&P Cycles and blogs about various development related topics with Geeks with Blogs. Zac has spoken at various community events including the first BarCamp in Iowa City as well as CRineta. His talks have been described as \"Amazing!\", \"Fantastic!\", and \"Life Changing!\"... though those comments were all from Zac.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/Harlan_Zachary-101116.jpg"
+                "img" : "Harlan_Zachary-101116.jpg"
             }
         },
         {
@@ -207,7 +207,7 @@
                 "location" : "Des Moines, IA",
                 "name" : "Levi Rosol",
                 "bio" : "In addition to being CTO of Eliason Media, Levi Rosol is a Co-Founder of both Craftly and ScoreYard. Prior to joining Eliason Media Levi was a Senior Software Consultant for QCI for an industry leading chemical company. In addition, Levi has worked for Two Rivers Marketing as a Solutions Architect working with clients such as Ingersoll Rand, ClubCar, JLG, Ruan and The Principal. After spending 10+ years building solutions with Microsoft technologies, he made the leap to the Ruby on Rails world and isn't looking back. Levi also helps organize community groups like StartupWeekendDSM, BarCampDSM, and the Iowa Code Camp.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/levi.jpg"
+                "img" : "levi.jpg"
             }
         },
         {
@@ -219,8 +219,8 @@
                 "web" : "http://www.maungs.com",
                 "location" : "Northbrook, IL",
                 "name" : "Lwin And Min Maung",
-                "bio" : "Lwin Maung is a developer and principal at Accolade Systems, a Chicagoland IT consulting startup. He is a developer of mobile applications. He also secures servers, enable VOIP and SIP solutions, and designs networks for small businesses. In his free time, Lwin plays with microcontrollers. Lwin teamed up with his brother, Min, to win several hackathons. Together, they've developed multiple cross-platform mobile apps. \n\nIn his "spare" time, Min Maung is a skilled, cross-platform mobile developer, aggressive hackathon competitor and presenter. Enamored with the Window Phone UI, Min co-created the first Metro UI launcher for Android, featured on Engadget. He's soon to publish ""Accolade Navigator,"" a turn-by-turn, visually compelling GPS navigation system for the Windows Phone 7. When he's not coding, he's building robots. Monday through Friday, you'll find Min at a leading, privately-held payroll and HR sofware solutions company, cranking out .Net code and writing apps in ASP.Net, Silverlight, and other .Net solutions.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/min_lwin_tallsmall.png"
+                "bio" : "Lwin Maung is a developer and principal at Accolade Systems, a Chicagoland IT consulting startup. He is a developer of mobile applications. He also secures servers, enable VOIP and SIP solutions, and designs networks for small businesses. In his free time, Lwin plays with microcontrollers. Lwin teamed up with his brother, Min, to win several hackathons. Together, they've developed multiple cross-platform mobile apps. \n\nIn his \"spare\" time, Min Maung is a skilled, cross-platform mobile developer, aggressive hackathon competitor and presenter. Enamored with the Window Phone UI, Min co-created the first Metro UI launcher for Android, featured on Engadget. He's soon to publish \"Accolade Navigator,\" a turn-by-turn, visually compelling GPS navigation system for the Windows Phone 7. When he's not coding, he's building robots. Monday through Friday, you'll find Min at a leading, privately-held payroll and HR sofware solutions company, cranking out .Net code and writing apps in ASP.Net, Silverlight, and other .Net solutions.",
+                "img" : "min_lwin_tallsmall.png"
             }
         },
         {
@@ -233,7 +233,7 @@
                 "location" : "Madrid, IA",
                 "name" : "Brandon Carlson",
                 "bio" : "Brandon is an IT Nerd for Lean TECHniques, a company specializing in Lean and Agile software development and coaching. Brandon has over 15 years of experience in software with experience in both management and development. He is a speaker and on the conference committee for the Agile 20xx series of conferences. In his spare time he likes to read, eat, and sleep.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/brandon-carlson.jpg"
+                "img" : "brandon-carlson.jpg"
             }
         },
         {
@@ -246,7 +246,7 @@
                 "location" : "Overland Park, KS",
                 "name" : "James Eggers",
                 "bio" : "Web designer, developer, and speaker who is always willing to talk about his experiences over his 10+ year career.  An active speaker, he strives to focus on keeping up with the latest industry news and trends while improving or broadening his skills.  Lately, he's focused on a number of different topics including Testable JavaScript, User Experience design, and HTML5.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/james-eggers.jpg"
+                "img" : "james-eggers.jpg"
             }
         },
         {
@@ -285,7 +285,7 @@
                 "location" : "Iowa City, IA",
                 "name" : "Riley Lark",
                 "bio" : "I'm a computer scientist with a passion for education. I worked on several independent programming projects, programmed for the University of Maryland, and interned at Microsoft before leaving the profession to teach high school for five years. Now I'm the programmer for a new ed-software startup, ActiveGrade, based in Iowa City.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/riley.jpg"
+                "img" : "riley.jpg"
             }
         },
         {
@@ -298,7 +298,7 @@
                 "location" : "West Des Moines, IA",
                 "name" : "Brandon Weber",
                 "bio" : "Software developer at Dwolla. I am mainly a .NET developer who likes to play in Rails. I aspire for world domination. I enjoy reading and tinkering with technology. 6-year Air Force veteran who worked in networking and cryptography. Computer Engineering graduate from Iowa State University with focus on Information Assurance and Network Security. I also enjoy a good rum ham at the beach.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/brandon-weber.jpg"
+                "img" : "brandon-weber.jpg"
             }
         },
         {
@@ -311,7 +311,7 @@
                 "location" : "Des Moines, IA",
                 "name" : "Toran Billups",
                 "bio" : "Toran Billups is an ex-web developer turned aspiring mobile developer. When he isn't writing c#, java or objective-c you can find him spending time with his family as he attempts the mythical \"work-life balance\"",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/toranb.jpg"
+                "img" : "toranb.jpg"
             }
         },
         {
@@ -324,20 +324,20 @@
                 "location" : "Polk City, IA",
                 "name" : "David W. Body",
                 "bio" : "David W. Body is president of Big Creek Software, LLC, a software consulting firm located in Polk City, Iowa. He is also the founder and leader of the Iowa Ruby Brigade.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/david_reasonably_small.jpg"
+                "img" : "david_reasonably_small.jpg"
             }
         },
         {
             "session" : "F# > C# - What F# does that you can't (easily) do in C#",
             "time" : "12:45 PM - 2:00 PM",
-            "desc" : "You have heard the arguments. When you get down to it, it is all IL, right? Doesn't that make C# and F# the same? Hogwash!\n\nIn this talk, we will explore those areas where F# has distinct advantages over F#, including:\n\n* Immutability by default\n* Domain on a page\n* Pattern matching\n* Computation expressions\n* The eradication of null\n\nUse what you learn from this talk to be able to, very confidently, make the case for F# to your friends, your colleagues, and greater ""powers-that-be"". Or at least understand why you should stop putting off that nagging ""finally learn F#"" to-do item that has been in the back of your head all these years.",
+            "desc" : "You have heard the arguments. When you get down to it, it is all IL, right? Doesn't that make C# and F# the same? Hogwash!\n\nIn this talk, we will explore those areas where F# has distinct advantages over F#, including:\n\n* Immutability by default\n* Domain on a page\n* Pattern matching\n* Computation expressions\n* The eradication of null\n\nUse what you learn from this talk to be able to, very confidently, make the case for F# to your friends, your colleagues, and greater \"powers-that-be\". Or at least understand why you should stop putting off that nagging \"finally learn F#\" to-do item that has been in the back of your head all these years.",
             "room" : "126E",
             "speaker" : {
                 "web" : "http://nomadic-developer.com",
                 "location" : "Romeoville, IL",
                 "name" : "Aaron Erickson",
-                "bio" : "Aaron is a veteran technology consultant, writer, and developer at ThoughtWorks. He is the author of ""The Nomadic Developer"" and most recently a co-author of ""Professional F# 2.0"". His life's work is helping organizations better leverage technology by contributing to solutions that have substantial positive economic impact for his clients. He is an enthusiast of agile software development and continuous delivery. He is also an \"armchair economist\" with lots of unfounded opinions on the topic, a deeply mediocre skier, and has an XBOX 360 GamerScore well approaching 15,000.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/aarone.jpg"
+                "bio" : "Aaron is a veteran technology consultant, writer, and developer at ThoughtWorks. He is the author of \"The Nomadic Developer\" and most recently a co-author of \"Professional F# 2.0\". His life's work is helping organizations better leverage technology by contributing to solutions that have substantial positive economic impact for his clients. He is an enthusiast of agile software development and continuous delivery. He is also an \"armchair economist\" with lots of unfounded opinions on the topic, a deeply mediocre skier, and has an XBOX 360 GamerScore well approaching 15,000.",
+                "img" : "aarone.jpg"
             }
         },
         {
@@ -350,7 +350,7 @@
                 "location" : "Des Moines, IA",
                 "name" : "Neil Roberts",
                 "bio" : "Neil is a Dojo master (unrelated to Kung-Fu) and an accomplished programmer, educator, and author. He's recently developed projects for iOS, Android, and the web. Neil freqeuntly runs JavaScript and iOS training programs for enterprise-level development teams, and has taught at Sun's JavaOne Conference.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/neil.png"
+                "img" : "neil.png"
             }
         },
         {
@@ -389,7 +389,7 @@
                 "location" : "Des Moines, IA",
                 "name" : "Dan Shipton",
                 "bio" : "Dan is an established leader of Des Moines’ emerging technology culture – building relationships with events like Ignite Des Moines, Whuffaoke, and the Movement Bash and encouraging others in his support of user groups, tech conferences, hack nights, start-up weekends, and arts events.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/DanShipton-Avatar90x117.png"
+                "img" : "DanShipton-Avatar90x117.png"
             }
         },
         {
@@ -402,7 +402,7 @@
                 "location" : "Des Moines, IA",
                 "name" : "Zach Cox",
                 "bio" : "Makes things work. Co-founder & geek at Pongr.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/zach3.jpg"
+                "img" : "zach3.jpg"
             }
         },
         {
@@ -415,7 +415,7 @@
                 "location" : "Fairfield, IA",
                 "name" : "Ralph Bunker",
                 "bio" : "Programming since 1968. Fortran-->BAL360-->PL/I-->C-->C++-->Java-->C#->Javascript",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/rbunker.jpg"
+                "img" : "rbunker.jpg"
             }
         },
         {
@@ -428,20 +428,20 @@
                 "location" : "Olathe, KS",
                 "name" : "Darren Cauthon",
                 "bio" : "Darren Cauthon is a programmer who uses C# and ASP.Net MVC to build websites. He is a proponent of TDD, BDD, and SOLID. In his spare time, he studies Ruby, works on OSS projects, and sometimes plays the tuba.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/darren.jpg"
+                "img" : "darren.jpg"
             }
         },
         {
             "session" : "LINQtroduction",
             "time" : "2:15 PM - 3:30 PM",
-            "desc" : "Language Integrated Query (LINQ, pronounced "link") is a Microsoft .NET Framework component that adds native data querying capabilities to .NET languages. Think of LINQ as the SQL you write in your .Net code against almost anything that holds data.\n\nThis presentation will introduce the LINQ syntax and concepts. We will cover LINQ to SQL, LINQ to Objects, Standard Query Operators for LINQ as well as Extension Methods. Developers can return to work tomorrow and start implementing what they learn in VisualStudio 2008 or 2010.",
+            "desc" : "Language Integrated Query (LINQ, pronounced \"link\") is a Microsoft .NET Framework component that adds native data querying capabilities to .NET languages. Think of LINQ as the SQL you write in your .Net code against almost anything that holds data.\n\nThis presentation will introduce the LINQ syntax and concepts. We will cover LINQ to SQL, LINQ to Objects, Standard Query Operators for LINQ as well as Extension Methods. Developers can return to work tomorrow and start implementing what they learn in VisualStudio 2008 or 2010.",
             "room" : "126E",
             "speaker" : {
                 "web" : "http://www.delta3consulting.com",
                 "location" : "Altoona, IA",
                 "name" : "Dustin Thostenson",
                 "bio" : "Dustin Thostenson is an independent .Net consultant, leading Delta 3 Consulting. He has been a developer and trainer in the Des Moines, Iowa area for the last dozen years. His focus has been on Microsoft technologies (ASP, VB, C#) with an emphasis on web development. Experiences span from developer to architecture and mentoring roles. To keep it interesting he teaches a couple of evening classes in programming at Des Moines Area Community College, helps lead the Iowa Dot Net User’s Group and volunteers in Central Iowa. To keep it real he spends time with his wife and 4 kids.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/dustin-thostenson.jpg"
+                "img" : "dustin-thostenson.jpg"
             }
         },
         {
@@ -453,8 +453,8 @@
                 "web" : "http://www.jasonbock.net",
                 "location" : "Shakopee, MN",
                 "name" : "Jason Bock",
-                "bio" : "Jason Bock is a Principal Consultant for Magenic (http://www.magenic.com), a Microsoft MVP (C#), and an INETA (http://www.ineta.org) speaker. He has worked on a number of business applications using a diverse set of substrates and languages such as C#, .NET, and Java. He is the author of "Applied .NET Attributes", "CIL Programming: Under the Hood of .NET", ".NET Security", and "Visual Basic 6 Win32 API Tutorial". He has written numerous articles on software development issues and has presented at a number of conferences and user groups. He is a leader of the Twin Cities Code Camp (http://www.twincitiescodecamp.com) and runs the Twin Cities Languages User Group (http://www.twincitieslanguagesusergroup.com). Jason holds a Master's degree in Electrical Engineering from Marquette University.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/JasonSmallHeadShot.jpg"
+                "bio" : "Jason Bock is a Principal Consultant for Magenic (http://www.magenic.com), a Microsoft MVP (C#), and an INETA (http://www.ineta.org) speaker. He has worked on a number of business applications using a diverse set of substrates and languages such as C#, .NET, and Java. He is the author of \"Applied .NET Attributes\", \"CIL Programming: Under the Hood of .NET\", \".NET Security\", and \"Visual Basic 6 Win32 API Tutorial\". He has written numerous articles on software development issues and has presented at a number of conferences and user groups. He is a leader of the Twin Cities Code Camp (http://www.twincitiescodecamp.com) and runs the Twin Cities Languages User Group (http://www.twincitieslanguagesusergroup.com). Jason holds a Master's degree in Electrical Engineering from Marquette University.",
+                "img" : "JasonSmallHeadShot.jpg"
             }
         },
         {
@@ -480,7 +480,7 @@
                 "location" : "Minneapolis, MN",
                 "name" : "Scott K. Davis",
                 "bio" : "Scott is a seasoned consultant with over a decade of consulting experience on both the Microsoft and Java platforms, involving mostly web application development. Scott began working with Silverlight in the 1.1 Alpha, and continues to focus on Silverlight and Windows Phone 7 as his primary developer focus. Scott is also the leader of the Twin Cities Silverlight User Group. Recent projects for Scott include writing Silverlight 4.0, Surface, WinMo6 and WP7 applications, as well as performing executive-level IT strategy and planning consulting. Scott is currently the owner and principal consultant for his consulting firm Ignition Point Solutions, as well as COO of QONQR, a tech startup in the mobile gaming industry.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/scottkdavis.jpg"
+                "img" : "scottkdavis.jpg"
             }
         },
         {
@@ -493,7 +493,7 @@
                 "location" : "Cedar Rapids, IA",
                 "name" : "Keith Dahlby",
                 "bio" : "Keith Dahlby is a new father, .NET developer, language geek and C# MVP from Cedar Rapids, IA. He works as the technical lead at J&P Cycles and blogs about various software development topics with Los Techies. Keith has spoken at community events around the Midwest and studied Human-Computer Interaction at Iowa State University. His talks have been described as \"terrific!\", \"very interactive!\", and \"the best I've seen all hour!\".",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/dahlby.jpg"
+                "img" : "dahlby.jpg"
             }
         },
         {
@@ -506,7 +506,7 @@
                 "location" : "Olathe, KS",
                 "name" : "Darren Cauthon",
                 "bio" : "Darren Cauthon is a programmer who uses C# and ASP.Net MVC to build websites. He is a proponent of TDD, BDD, and SOLID. In his spare time, he studies Ruby, works on OSS projects, and sometimes plays the tuba.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/darren.jpg"
+                "img" : "darren.jpg"
             }
         },
         {
@@ -519,7 +519,7 @@
                 "location" : "Mount Vernon, IA",
                 "name" : "Luke Korth",
                 "bio" : "Luke Korth is a senior computer science student at Cornell College. He specializes in Web Applications and Computer Security.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/luke-korth.jpg"
+                "img" : "luke-korth.jpg"
             }
         },
         {
@@ -532,20 +532,20 @@
                 "location" : "Des Moines, IA",
                 "name" : "Nate Buwalda",
                 "bio" : "Is currently a Senior Software Analyst at Iowa Student Loan in Des Moines, IA.  Has been a JVM coder for 8 years.  Has presented at CIJUG and will present at the Iowa Scala Enthusiasts group in October.  Currently is championing the transition from Java to Scala at ISL.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/nate-buwalda.jpg"
+                "img" : "nate-buwalda.jpg"
             }
         },
         {
             "session" : ".NET Performance Diagnostics - Where to Start",
             "time" : "3:45 PM - 5:00 PM",
-            "desc" : "Everyone has been plagued by that one page of an application that "used to work" that is now running slow as molasses. Well this session is for you, by taking a methodical approach and using the appropriate tools for diagnosis the problem can be solved quickly; and that is what this session is about, a walk through of the processes and tools to get you going!",
+            "desc" : "Everyone has been plagued by that one page of an application that \"used to work\" that is now running slow as molasses. Well this session is for you, by taking a methodical approach and using the appropriate tools for diagnosis the problem can be solved quickly; and that is what this session is about, a walk through of the processes and tools to get you going!",
             "room" : "126E",
             "speaker" : {
                 "web" : "http://www.mitchelsellers.com/blogs.aspx",
                 "location" : "Urbandale, IA",
                 "name" : "Mitchel Sellers",
                 "bio" : "Mitchel Sellers, Microsoft C# MVP, is the CEO of IowaComputerGurus Inc and a regular public speaker and published author on .NET development topics. Mitchel enjoys interacting with the development community sharing information and learning from others. He has placed additional additions and contributions in and around the DotNetNuke Open Source application development platform as well as performance optimization and resolution.",
-                "img" : "http://www.iowacodecamp.com/public/images/speakers/fall2011/MitchelSmall.jpg"
+                "img" : "MitchelSmall.jpg"
             }
         },
         {
