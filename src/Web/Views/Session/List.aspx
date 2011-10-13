@@ -78,12 +78,6 @@
     				</li>
 
             <li>
-              <h3>Intro to Kanban</h3>
-              <p>In this talk we will introduce the principles of lean development. We will also discuss how to use Kanban to view your production pipeline. Once you understand your workstream, we will discuss how to improve it over time.</p>
-    				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Jonathan Mills")%></dd></dl>
-    				</li>
-
-            <li>
               <h3>Designing For Your Peers</h3>
               <p>This half day workshop will have participant design a solution based on the needs of their team and other peers. Attendees will be provided an overview of various design topics and then will be asked to work together to develop a solution based on a given scenario. Throughout the process, attendees will go through exercises in brainstorming, persona and mental model development, user interviews, information architecture, and prototyping. This workshop is available to anyone who wants to join though attendees are expected to stay throughout the duration.</p>
     				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("James Eggers")%></dd></dl>
@@ -108,9 +102,9 @@
     				</li>
 
             <li>
-              <h3></h3>
+              <h3>Windows 8 Development</h3>
               <p></p>
-    				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("TBD")%></dd></dl>
+    				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Jon von Gillern")%></dd></dl>
     				</li>
 
             <li>
