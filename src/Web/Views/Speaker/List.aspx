@@ -196,7 +196,7 @@ In his "spare" time, Min Maung is a skilled, cross-platform mobile developer, ag
 
 <h3 id="DanShipton">Dan Shipton</h3>
 <img src="<%= SpeakerImageUrl("DanShipton-Avatar90x117.png") %>" width="90" alt="" />
-<p>
+<p>Dan is an established leader of Des Moines’ emerging technology culture – building relationships with events like Ignite Des Moines, Whuffaoke, and the Movement Bash and encouraging others in his support of user groups, tech conferences, hack nights, start-up weekends, and arts events.
 </p>
 
 <%--
