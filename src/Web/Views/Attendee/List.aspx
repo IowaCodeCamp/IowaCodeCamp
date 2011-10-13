@@ -25,14 +25,13 @@
       <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://iowacodecamp.com" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!" data-count="vertical" data-via="IowaCodeCamp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!
     </div>
-  <p><cs:ComingSoon runat="server" /></p>
     <div style="font-size:28px;">
         <strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />
 <%--        <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>--%>
     </div>
     <div>
-      <%--<p style="font-size:medium;">Here's what some attendees are saying about Iowa Code Camp:</p>
-      <p style="font-size:medium;">Don't miss out, <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too!</p>--%>
+      <p style="font-size:medium;">Here's what some attendees are saying about Iowa Code Camp:</p>
+      <p style="font-size:medium;">Don't miss out, <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too!</p>
       
         <% foreach (var attendee in Model.Attendees.Where(a => !string.IsNullOrEmpty(a.Comments))) { %>
             <%--
