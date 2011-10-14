@@ -38,7 +38,7 @@
                 "location" : "Lincoln, NE",
                 "name" : "Adam Barney",
                 "bio" : "Adam Barney is a lifelong computer nerd living in Lincoln, NE. He bought his first computer in the fourth grade (a Commodore 64), and has been figuring out how to bend these machines to his will ever since. He started programming professionally in 2000, picking up with the .NET Framework 1.1 a couple years later. In 2008, he co-founded and continues to lead the Lincoln .NET Users Group, which now puts on the annual Nebraska code Camp. By day, Adam is a senior consultant with Sogeti USA out of Omaha, NE.",
-                "img" : "adam.png"
+                "img" : "adam.jpg"
             }
         },
         {
@@ -81,16 +81,16 @@
             }
         },
         {
-            "session" : "Language Shootout",
+            "session" : "Building webapps for the Cloud with Python and Google App Engine",
             "time" : "9:00 AM - 10:15 AM",
-            "desc" : "In this session, see multiple languages and platforms used to solve the same common problem. Chris will present a solution in Clojure. Additionally, Nate Buwalda will present a solution in Scala and Sean Freitag will present a solution in F#.",
+            "desc" : "Geared toward Python beginners or people wanting to explore Python. It will include good chunks of Python code but explained at a high level, so no previous knowledge is required. The idea is to get people excited so that they go out and learn Python or if they already do, then start building web applications leveraging the power of Google App Engine.",
             "room" : "125E",
             "speaker" : {
-                "web" : "http://thinkoftheepsilons.blogspot.com/",
-                "location" : "Urbandale, Iowa",
-                "name" : "Christopher Freeman",
-                "bio" : "Chris has been a developer in the Des Moines area for over 10 years, having worked with a wide variety of languages and environments. He tries to spend his spare time with his wife and two small kids, but manages to get in some time with programming books from time to time.",
-                "img" : "chris.jpg"
+                "web" : "",
+                "location" : "Kansas City, KS",
+                "name" : "Juan Gomez",
+                "bio" : "I'm extremely passionate about all things Python and heavily involved on the Python community. I'm the co-founder of PythonKC and a member of the PyCon US Program Committee. By day I work as Lead Systems Architect for a big IT Services company called CSC out of their Overland park offices",
+                "img" : "juan-gomez.jpg"
             }
         },
         {
@@ -107,16 +107,16 @@
             }
         },
         {
-            "session" : "Intro to Kanban",
+            "session" : "OAuth - Open Authentication for your API",
             "time" : "9:00 AM - 10:15 AM",
-            "desc" : "In this talk we will introduce the principles of lean development. We will also discuss how to use Kanban to view your production pipeline. Once you understand your workstream, we will discuss how to improve it over time.",
+            "desc" : "Describe OAuth 1 and 2 standards, workflows, when to use each, and real world implementation examples of each.",
             "room" : "132E",
             "speaker" : {
-                "web" : "http://jonathanfmills.com/blog",
-                "location" : "Kansas City, MO",
-                "name" : "Jonathan Mills",
-                "bio" : "Jon is the development manager at UMB in Kansas City, MO. He is tasked with bringing lean principles and processes into the rigid world of financial institutions.",
-                "img" : "jon-mills.jpg"
+                "web" : "",
+                "location" : "West Des Moines, IA",
+                "name" : "Brandon Weber",
+                "bio" : "Software developer at Dwolla. I am mainly a .NET developer who likes to play in Rails. I aspire for world domination. I enjoy reading and tinkering with technology. 6-year Air Force veteran who worked in networking and cryptography. Computer Engineering graduate from Iowa State University with focus on Information Assurance and Network Security. I also enjoy a good rum ham at the beach.",
+                "img" : "brandon-weber.jpg"
             }
         },
         {
@@ -220,7 +220,7 @@
                 "location" : "Northbrook, IL",
                 "name" : "Lwin And Min Maung",
                 "bio" : "Lwin Maung is a developer and principal at Accolade Systems, a Chicagoland IT consulting startup. He is a developer of mobile applications. He also secures servers, enable VOIP and SIP solutions, and designs networks for small businesses. In his free time, Lwin plays with microcontrollers. Lwin teamed up with his brother, Min, to win several hackathons. Together, they've developed multiple cross-platform mobile apps. \n\nIn his \"spare\" time, Min Maung is a skilled, cross-platform mobile developer, aggressive hackathon competitor and presenter. Enamored with the Window Phone UI, Min co-created the first Metro UI launcher for Android, featured on Engadget. He's soon to publish \"Accolade Navigator,\" a turn-by-turn, visually compelling GPS navigation system for the Windows Phone 7. When he's not coding, he's building robots. Monday through Friday, you'll find Min at a leading, privately-held payroll and HR sofware solutions company, cranking out .Net code and writing apps in ASP.Net, Silverlight, and other .Net solutions.",
-                "img" : "min_lwin_tallsmall.png"
+                "img" : "min_lwin_tallsmall.jpg"
             }
         },
         {
@@ -268,11 +268,11 @@
             "desc" : "",
             "room" : "Auditorium",
             "speaker" : {
-                "web" : "",
+                "web" : "http://blog.nitriq.com/",
                 "location" : "",
                 "name" : "Jon von Gillern",
                 "bio" : "",
-                "img" : ""
+                "img" : "vongillern.jpg"
             }
         },
         {
@@ -350,7 +350,7 @@
                 "location" : "Des Moines, IA",
                 "name" : "Neil Roberts",
                 "bio" : "Neil is a Dojo master (unrelated to Kung-Fu) and an accomplished programmer, educator, and author. He's recently developed projects for iOS, Android, and the web. Neil freqeuntly runs JavaScript and iOS training programs for enterprise-level development teams, and has taught at Sun's JavaOne Conference.",
-                "img" : "neil.png"
+                "img" : "neil.jpg"
             }
         },
         {
@@ -367,29 +367,29 @@
             }
         },
         {
-            "session" : "Win 8 Part 2",
-            "time" : "2:15 PM - 3:30 PM",
-            "desc" : "",
-            "room" : "Auditorium",
-            "speaker" : {
-                "web" : "",
-                "location" : "",
-                "name" : "Jon von Gillern",
-                "bio" : "",
-                "img" : ""
-            }
-        },
-        {
             "session" : "Twenty Ways to Make Your Site Faster (and Easier to Work With) on the Cheap!",
             "time" : "2:15 PM - 3:30 PM",
             "desc" : "Scaling websites and making them perform better under load can fall under \"dark magic\" to most but it doesn't have to be that way. Tools and best practices are waiting to be used and followed to make your website scream but few take the time to capture the low hanging fruit. Avoiding the complex and focusing on the simple, this talk will focus on how to make your website scale and be better performant on a limited budget. We'll look at tools such as nginx, memcached, CDNs, Beanstalk as well as some industry best practices that will improve your workflow, how you manage sites, and your user's experience with your site.",
-            "room" : "118E",
+            "room" : "Auditorium",
             "speaker" : {
                 "web" : "http://bitmethod.com/",
                 "location" : "Des Moines, IA",
                 "name" : "Dan Shipton",
                 "bio" : "Dan is an established leader of Des Moines’ emerging technology culture – building relationships with events like Ignite Des Moines, Whuffaoke, and the Movement Bash and encouraging others in his support of user groups, tech conferences, hack nights, start-up weekends, and arts events.",
-                "img" : "DanShipton-Avatar90x117.png"
+                "img" : "DanShipton-Avatar90x117.jpg"
+            }
+        },
+        {
+            "session" : "Fish Bowl",
+            "time" : "2:15 PM - 3:30 PM",
+            "desc" : "A fishbowl conversation is a form of dialog that can be used when discussing topics within large groups. Fishbowl conversations are usually used in participatory events like Open Space Technology and Unconferences. The advantage of Fishbowl is that it allows the entire group to participate in a conversation.",
+            "room" : "118E",
+            "speaker" : {
+                "web" : "http://en.wikipedia.org/wiki/Fishbowl_(conversation)",
+                "location" : "",
+                "name" : "Nick Parker",
+                "bio" : "Nick is an Iowa Code Camp organizer, he will facilitate this fish bowl conversation.",
+                "img" : ""
             }
         },
         {
