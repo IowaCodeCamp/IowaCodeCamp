@@ -63,9 +63,9 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 <p>Brad is a Christian, Father, Husband, and .NET Developer.  He leads the best looking web development team in the St. Louis metropolitan area at Swank Motion Pictures.  He's into ASP.NET MVC3, JavaScript, and Entity Framework.
 </p>
 
-<h3 id="ChristopherFreeman">Christopher Freeman</h3>
-<img src="<%= SpeakerImageUrl("chris.jpg") %>" width="90" alt="" />
-<p>Chris has been a developer in the Des Moines area for over 10 years, having worked with a wide variety of languages and environments. He tries to spend his spare time with his wife and two small kids, but manages to get in some time with programming books from time to time.
+<h3 id="JuanGomez">Juan Gomez</h3>
+<%--<img src="<%= SpeakerImageUrl("juan.jpg") %>" width="90" alt="" />--%>
+<p>I'm extremely passionate about all things Python and heavily involved on the Python community. I'm the co-founder of PythonKC and a member of the PyCon US Program Committee. By day I work as Lead Systems Architect for a big IT Services company called CSC out of their Overland park offices.
 </p>
 
 <h3 id="RalphBunker">Ralph Bunker</h3>
@@ -116,11 +116,6 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 <h3 id="BrandonCarlson">Brandon Carlson</h3>
 <img src="<%= SpeakerImageUrl("brandon-carlson.jpg") %>" width="90" alt="" />
 <p>Brandon is an IT Nerd for Lean TECHniques, a company specializing in Lean and Agile software development and coaching. Brandon has over 15 years of experience in software with experience in both management and development. He is a speaker and on the conference committee for the Agile 20xx series of conferences. In his spare time he likes to read, eat, and sleep.
-</p>
-
-<h3 id="JonathanMills">Jonathan Mills</h3>
-<img src="<%= SpeakerImageUrl("jon-mills.jpg") %>" width="90" alt="" />
-<p>Jon is the development manager at UMB in Kansas City, MO. He is tasked with bringing lean principles and processes into the rigid world of financial institutions. 
 </p>
 
 <h3 id="SkylarWatson">Skylar Watson</h3>

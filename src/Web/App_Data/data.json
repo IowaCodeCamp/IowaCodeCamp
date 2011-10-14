@@ -81,16 +81,16 @@
             }
         },
         {
-            "session" : "Language Shootout",
+            "session" : "Building webapps for the Cloud with Python and Google App Engine",
             "time" : "9:00 AM - 10:15 AM",
-            "desc" : "In this session, see multiple languages and platforms used to solve the same common problem. Chris will present a solution in Clojure. Additionally, Nate Buwalda will present a solution in Scala and Sean Freitag will present a solution in F#.",
+            "desc" : "Geared toward Python beginners or people wanting to explore Python. It will include good chunks of Python code but explained at a high level, so no previous knowledge is required. The idea is to get people excited so that they go out and learn Python or if they already do, then start building web applications leveraging the power of Google App Engine.",
             "room" : "125E",
             "speaker" : {
-                "web" : "http://thinkoftheepsilons.blogspot.com/",
-                "location" : "Urbandale, Iowa",
-                "name" : "Christopher Freeman",
-                "bio" : "Chris has been a developer in the Des Moines area for over 10 years, having worked with a wide variety of languages and environments. He tries to spend his spare time with his wife and two small kids, but manages to get in some time with programming books from time to time.",
-                "img" : "chris.jpg"
+                "web" : "",
+                "location" : "Kansas City, KS",
+                "name" : "Juan Gomez",
+                "bio" : "I'm extremely passionate about all things Python and heavily involved on the Python community. I'm the co-founder of PythonKC and a member of the PyCon US Program Committee. By day I work as Lead Systems Architect for a big IT Services company called CSC out of their Overland park offices",
+                "img" : "juan-gomez.jpg"
             }
         },
         {
@@ -107,16 +107,16 @@
             }
         },
         {
-            "session" : "Intro to Kanban",
+            "session" : "OAuth - Open Authentication for your API",
             "time" : "9:00 AM - 10:15 AM",
-            "desc" : "In this talk we will introduce the principles of lean development. We will also discuss how to use Kanban to view your production pipeline. Once you understand your workstream, we will discuss how to improve it over time.",
+            "desc" : "Describe OAuth 1 and 2 standards, workflows, when to use each, and real world implementation examples of each.",
             "room" : "132E",
             "speaker" : {
-                "web" : "http://jonathanfmills.com/blog",
-                "location" : "Kansas City, MO",
-                "name" : "Jonathan Mills",
-                "bio" : "Jon is the development manager at UMB in Kansas City, MO. He is tasked with bringing lean principles and processes into the rigid world of financial institutions.",
-                "img" : "jon-mills.jpg"
+                "web" : "",
+                "location" : "West Des Moines, IA",
+                "name" : "Brandon Weber",
+                "bio" : "Software developer at Dwolla. I am mainly a .NET developer who likes to play in Rails. I aspire for world domination. I enjoy reading and tinkering with technology. 6-year Air Force veteran who worked in networking and cryptography. Computer Engineering graduate from Iowa State University with focus on Information Assurance and Network Security. I also enjoy a good rum ham at the beach.",
+                "img" : "brandon-weber.jpg"
             }
         },
         {
