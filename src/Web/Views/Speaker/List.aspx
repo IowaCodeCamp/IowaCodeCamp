@@ -64,7 +64,7 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 </p>
 
 <h3 id="JuanGomez">Juan Gomez</h3>
-<%--<img src="<%= SpeakerImageUrl("juan.jpg") %>" width="90" alt="" />--%>
+<img src="<%= SpeakerImageUrl("juan-gomez.jpg") %>" width="90" alt="" />
 <p>I'm extremely passionate about all things Python and heavily involved on the Python community. I'm the co-founder of PythonKC and a member of the PyCon US Program Committee. By day I work as Lead Systems Architect for a big IT Services company called CSC out of their Overland park offices.
 </p>
 
