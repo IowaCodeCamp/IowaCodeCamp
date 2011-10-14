@@ -38,7 +38,7 @@
                 "location" : "Lincoln, NE",
                 "name" : "Adam Barney",
                 "bio" : "Adam Barney is a lifelong computer nerd living in Lincoln, NE. He bought his first computer in the fourth grade (a Commodore 64), and has been figuring out how to bend these machines to his will ever since. He started programming professionally in 2000, picking up with the .NET Framework 1.1 a couple years later. In 2008, he co-founded and continues to lead the Lincoln .NET Users Group, which now puts on the annual Nebraska code Camp. By day, Adam is a senior consultant with Sogeti USA out of Omaha, NE.",
-                "img" : "adam.png"
+                "img" : "adam.jpg"
             }
         },
         {
@@ -220,7 +220,7 @@
                 "location" : "Northbrook, IL",
                 "name" : "Lwin And Min Maung",
                 "bio" : "Lwin Maung is a developer and principal at Accolade Systems, a Chicagoland IT consulting startup. He is a developer of mobile applications. He also secures servers, enable VOIP and SIP solutions, and designs networks for small businesses. In his free time, Lwin plays with microcontrollers. Lwin teamed up with his brother, Min, to win several hackathons. Together, they've developed multiple cross-platform mobile apps. \n\nIn his \"spare\" time, Min Maung is a skilled, cross-platform mobile developer, aggressive hackathon competitor and presenter. Enamored with the Window Phone UI, Min co-created the first Metro UI launcher for Android, featured on Engadget. He's soon to publish \"Accolade Navigator,\" a turn-by-turn, visually compelling GPS navigation system for the Windows Phone 7. When he's not coding, he's building robots. Monday through Friday, you'll find Min at a leading, privately-held payroll and HR sofware solutions company, cranking out .Net code and writing apps in ASP.Net, Silverlight, and other .Net solutions.",
-                "img" : "min_lwin_tallsmall.png"
+                "img" : "min_lwin_tallsmall.jpg"
             }
         },
         {
@@ -350,7 +350,7 @@
                 "location" : "Des Moines, IA",
                 "name" : "Neil Roberts",
                 "bio" : "Neil is a Dojo master (unrelated to Kung-Fu) and an accomplished programmer, educator, and author. He's recently developed projects for iOS, Android, and the web. Neil freqeuntly runs JavaScript and iOS training programs for enterprise-level development teams, and has taught at Sun's JavaOne Conference.",
-                "img" : "neil.png"
+                "img" : "neil.jpg"
             }
         },
         {
@@ -389,7 +389,7 @@
                 "location" : "Des Moines, IA",
                 "name" : "Dan Shipton",
                 "bio" : "Dan is an established leader of Des Moines’ emerging technology culture – building relationships with events like Ignite Des Moines, Whuffaoke, and the Movement Bash and encouraging others in his support of user groups, tech conferences, hack nights, start-up weekends, and arts events.",
-                "img" : "DanShipton-Avatar90x117.png"
+                "img" : "DanShipton-Avatar90x117.jpg"
             }
         },
         {
