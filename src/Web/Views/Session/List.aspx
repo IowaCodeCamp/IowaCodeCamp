@@ -66,15 +66,21 @@
     				</li>
 
             <li>
-              <h3>Language Shootout</h3>
-              <p>In this session, see multiple languages and platforms used to solve the same common problem. Chris will present a solution in Clojure. Additionally, <%= Html.SpeakerLink("Nate Buwalda") %> will present a solution in Scala and Sean Freitag will present a solution in F#.</p>
-    				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Christopher Freeman")%></dd></dl>
+              <h3>Building webapps for the Cloud with Python and Google App Engine</h3>
+              <p>Geared toward Python beginners or people wanting to explore Python. It will include good chunks of Python code but explained at a high level, so no previous knowledge is required. The idea is to get people excited so that they go out and learn Python or if they already do, then start building web applications leveraging the power of Google App Engine.</p>
+    				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Juan Gomez")%></dd></dl>
     				</li>
 
             <li>
               <h3>Programming with the .NET Async CTP</h3>
               <p>I'll give you a better talk description later but suffice to say I'd like to present the VS2010 Async CTP, showing what's likely to become part of .NET 5. I'll try to contrast the CTP features with the existing ways of writing async code (callbacks, TPL).</p>
     				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Sergio Pereira")%></dd></dl>
+    				</li>
+
+            <li>
+              <h3>OAuth &ndash; Open Authentication for your API</h3>
+              <p>Describe OAuth 1 and 2 standards, workflows, when to use each, and real world implementation examples of each.</p>
+    				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Brandon Weber")%></dd></dl>
     				</li>
 
             <li>
