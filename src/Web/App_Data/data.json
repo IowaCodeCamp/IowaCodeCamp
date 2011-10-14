@@ -268,11 +268,11 @@
             "desc" : "",
             "room" : "Auditorium",
             "speaker" : {
-                "web" : "",
+                "web" : "http://blog.nitriq.com/",
                 "location" : "",
                 "name" : "Jon von Gillern",
                 "bio" : "",
-                "img" : ""
+                "img" : "vongillern.jpg"
             }
         },
         {
@@ -367,29 +367,29 @@
             }
         },
         {
-            "session" : "Win 8 Part 2",
-            "time" : "2:15 PM - 3:30 PM",
-            "desc" : "",
-            "room" : "Auditorium",
-            "speaker" : {
-                "web" : "",
-                "location" : "",
-                "name" : "Jon von Gillern",
-                "bio" : "",
-                "img" : ""
-            }
-        },
-        {
             "session" : "Twenty Ways to Make Your Site Faster (and Easier to Work With) on the Cheap!",
             "time" : "2:15 PM - 3:30 PM",
             "desc" : "Scaling websites and making them perform better under load can fall under \"dark magic\" to most but it doesn't have to be that way. Tools and best practices are waiting to be used and followed to make your website scream but few take the time to capture the low hanging fruit. Avoiding the complex and focusing on the simple, this talk will focus on how to make your website scale and be better performant on a limited budget. We'll look at tools such as nginx, memcached, CDNs, Beanstalk as well as some industry best practices that will improve your workflow, how you manage sites, and your user's experience with your site.",
-            "room" : "118E",
+            "room" : "Auditorium",
             "speaker" : {
                 "web" : "http://bitmethod.com/",
                 "location" : "Des Moines, IA",
                 "name" : "Dan Shipton",
                 "bio" : "Dan is an established leader of Des Moines’ emerging technology culture – building relationships with events like Ignite Des Moines, Whuffaoke, and the Movement Bash and encouraging others in his support of user groups, tech conferences, hack nights, start-up weekends, and arts events.",
                 "img" : "DanShipton-Avatar90x117.jpg"
+            }
+        },
+        {
+            "session" : "Fish Bowl",
+            "time" : "2:15 PM - 3:30 PM",
+            "desc" : "A fishbowl conversation is a form of dialog that can be used when discussing topics within large groups. Fishbowl conversations are usually used in participatory events like Open Space Technology and Unconferences. The advantage of Fishbowl is that it allows the entire group to participate in a conversation.",
+            "room" : "118E",
+            "speaker" : {
+                "web" : "http://en.wikipedia.org/wiki/Fishbowl_(conversation)",
+                "location" : "",
+                "name" : "Nick Parker",
+                "bio" : "Nick is an Iowa Code Camp organizer, he will facilitate this fish bowl conversation.",
+                "img" : ""
             }
         },
         {
