@@ -50,7 +50,7 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 
 <h3 id="ToranBillups">Toran Billups</h3>
 <img src="<%= SpeakerImageUrl("toranb.jpg") %>" width="90" alt="" />
-<p>Toran Billups is an ex-web developer turned aspiring mobile developer. When he isn't writing c#, java or objective-c you can find him spending time with his family as he attempts the mythical "work-life balance"
+<p>Toran Billups is a python web developer by day and mobile developer by night. When he isn't writing c#, java or objective-c you can find him spending time with his family as he attempts the mythical "work-life balance"
 </p>
 
 <h3 id="LeviRosol">Levi Rosol</h3>
@@ -125,7 +125,12 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 
 <h3 id="ZacHarlan">Zac Harlan</h3>
 <img src="<%= SpeakerImageUrl("Harlan_Zachary-101116.jpg") %>" width="90" alt="" />
-<p>Zac Harlan is an accidental SQL DBA/Developer and .NET developer from Seaton, IL. He works at J&P Cycles and blogs about various development related topics with Geeks with Blogs. Zac has spoken at various community events including the first BarCamp in Iowa City as well as CRineta. His talks have been described as "Amazing!", "Fantastic!", and "Life Changing!"... though those comments were all from Zac.
+<p>Zac Harlan is an accidental SQL DBA/Developer and .NET developer from Seaton, IL. He works at J&amp;P Cycles and blogs about various development related topics with Geeks with Blogs. Zac has spoken at various community events including the first BarCamp in Iowa City as well as CRineta. His talks have been described as "Amazing!", "Fantastic!", and "Life Changing!"... though those comments were all from Zac.
+</p>
+
+<h3 id="CesarMendoza">Cesar Mendoza</h3>
+<img src="<%= SpeakerImageUrl("mendoza_cesar.jpg") %>" width="90" alt="" />
+<p>Cesar was bitten by the programming bug since he got his hands on a HP-11C calculator. He has worked on several areas over the years like embedded systems, web development, software architecture. He currently works for Pioneer Hi-Bred INT. in Johnston, Iowa.  His latest passion is functional programming.
 </p>
 
 <h3 id="NathanTotten">Nathan Totten</h3>
