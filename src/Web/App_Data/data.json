@@ -185,16 +185,16 @@
             }
         },
         {
-            "session" : "TBD",
+            "session" : "Is F# the new Perl?",
             "time" : "10:30 AM - 11:45 AM",
-            "desc" : "",
+            "desc" : "You know that F# is a new .Net language. You know that is a functional language. But do you know that you can create F# scripts? In this session you will learn:\n\nHow to create and run F# scripts. \nHow to use the \"F# interactive\" to do exploratory development.now solve some common problems the F# way.",
             "room" : "121E",
             "speaker" : {
                 "web" : "",
-                "location" : "",
-                "name" : "",
-                "bio" : "",
-                "img" : ""
+                "location" : "Des Moines, IA",
+                "name" : "Cesar Mendoza",
+                "bio" : "Cesar was bitten by the programming bug since he got his hands on a HP-11C calculator. He has worked on several areas over the years like embedded systems, web development, software architecture. He currently works for Pioneer Hi-Bred INT. in Johnston, Iowa.  His latest passion is functional programming.",
+                "img" : "mendoza_cesar.jpg"
             }
         },
         {
@@ -276,7 +276,7 @@
             }
         },
         {
-            "session" : "Writing Optimized Web Applications with the Google Web Toolkit",
+            "session" : "Writing Web Applications with the Google Web Toolkit",
             "time" : "12:45 PM - 2:00 PM",
             "desc" : "This session is about structuring web applications with a mind for security, stateless/RESTful behavior, small, chunked downloads, and speedy reaction times, given through the lens of GWT - the Google Web Toolkit. I'll share the strategies I analyzed and implemented in the development of the full-scale web application I've been working on for the 14 months.",
             "room" : "118E",
@@ -310,7 +310,7 @@
                 "web" : "http://toranbillups.com",
                 "location" : "Des Moines, IA",
                 "name" : "Toran Billups",
-                "bio" : "Toran Billups is an ex-web developer turned aspiring mobile developer. When he isn't writing c#, java or objective-c you can find him spending time with his family as he attempts the mythical \"work-life balance\"",
+                "bio" : "Toran Billups is a python web developer by day and mobile developer by night. When he isn't writing c#, java or objective-c you can find him spending time with his family as he attempts the mythical \"work-life balance\"",
                 "img" : "toranb.jpg"
             }
         },

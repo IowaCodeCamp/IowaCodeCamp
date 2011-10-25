@@ -37,6 +37,10 @@
     <img style="border-width:0px" src="<%=SponsorImageUrl("aspect-logo.jpg")%>" alt="Aspect" class="sponsors" />
     </a>    
 
+	<a href="http://executiveresources.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("ERLogo.gif")%>" alt="Executive Resources" class="sponsors" />
+    </a>    
+
 <%--
     <a href="http://www.microsoft.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />

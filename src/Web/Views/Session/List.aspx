@@ -108,6 +108,16 @@
     				</li>
 
             <li>
+              <h3>Is F# the new Perl?</h3>
+              <p>You know that F# is a new .Net language. You know that is a functional language. But do you know that you can create F# scripts? In this session you will learn:<br />
+                <br />
+                How to create and run F#  scripts. <br />
+                How to use the "F# interactive" to do exploratory development.<br />
+                How solve some common problems the F# way.</p>
+    				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Cesar Mendoza")%></dd></dl>
+    				</li>
+
+            <li>
               <h3>Windows 8 Development</h3>
               <p></p>
     				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Jon von Gillern")%></dd></dl>
@@ -147,13 +157,7 @@ This topic will primarily appeal to beginning Rubyists or developers thinking ab
     				</li>
 
             <li>
-              <h3></h3>
-              <p></p>
-    				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("TBD")%></dd></dl>
-    				</li>
-
-            <li>
-              <h3>Writing Optimized Web Applications with the Google Web Toolkit</h3>
+              <h3>Writing Web Applications with the Google Web Toolkit</h3>
               <p>This session is about structuring web applications with a mind for security, stateless/RESTful behavior,  small, chunked downloads, and speedy reaction times, given through the lens of GWT - the Google Web Toolkit. I'll share the strategies I analyzed and implemented in the development of the full-scale web application I've been working on for the 14 months.<br />
 <br />
 Code examples will be in Java.</p>
