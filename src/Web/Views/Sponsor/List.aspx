@@ -73,16 +73,13 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
     </a>     
 
-	<a href="http://http://www.roberthalftechnology.com/" target="_blank">
+	<a href="http://www.roberthalftechnology.com/" target="_blank">
 	<img style="border-width:0px" src='<%=SponsorImageUrl("rht.jpg") %>' alt="Robert Half Technology" class="sponsors" />
 	</a>
 
-	<br />
-	
-    <a name="silver"></a>
-    <h2>Silver Sponsors</h2>
-    <hr />
-    <br />
+    <a href="http://www.telerik.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
+    </a>
     
     <a href="http://www.red-gate.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("redgate.png")%>" alt="Red Gate" class="sponsors" />
@@ -92,6 +89,13 @@
     <img style="border-width:0px" src="<%=SponsorImageUrl("devexpress_logo.png")%>" alt="DevExpress" class="sponsors" />
     </a>
 
+	<br />
+	
+    <a name="silver"></a>
+    <h2>Silver Sponsors</h2>
+    <hr />
+    <br />
+    
     <a href="http://www.componentone.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("component-one.png") %>' alt="Component One" class="sponsors" />
     </a> 
@@ -124,7 +128,7 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
     </a>
     
-    <a href="http://http://www.learnvisualstudio.net/" target="_blank">
+    <a href="http://www.learnvisualstudio.net/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("learnvisualstudio_logo.png") %>" alt="LearnVisualStudio.Net" class="sponsors" />
     </a>
 
@@ -140,10 +144,6 @@
     <img style="border-width:0px" src='<%= SponsorImageUrl("pluralsight.jpg") %>' alt="pluralsight" class="sponsors" />
     </a> 
 
-    <a href="http://www.telerik.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
-    </a>
-    
     <a href="" target="_blank">
     <img style="border-width:0px" src="<%= SponsorImageUrl("DevelopMentor-Logo.jpg") %>" alt="DevelopMentor" class="sponsors" />
     </a>
@@ -157,6 +157,8 @@
     <a href="http://www.manning.com/" target="_blank">Manning Publications</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
     <a href="http://www.linqpad.net/" target="_blank">LINQPad</a><br />
+
+    <a href="http://www.newhorizonscr.com" target="_blank">New Horizons Cedar Rapids</a><br />
 
   </p>
 <%--
