@@ -110,7 +110,7 @@
             "session" : "OAuth - Open Authentication for your API",
             "time" : "9:00 AM - 10:15 AM",
             "desc" : "Describe OAuth 1 and 2 standards, workflows, when to use each, and real world implementation examples of each.",
-            "room" : "132E",
+            "room" : "123E",
             "speaker" : {
                 "web" : "",
                 "location" : "West Des Moines, IA",
@@ -123,7 +123,7 @@
             "session" : "Designing For Your Peers - Part 1",
             "time" : "9:00 AM - 10:15 AM",
             "desc" : "This half day workshop will have participant design a solution based on the needs of their team and other peers. Attendees will be provided an overview of various design topics and then will be asked to work together to develop a solution based on a given scenario. Throughout the process, attendees will go through exercises in brainstorming, persona and mental model development, user interviews, information architecture, and prototyping. This workshop is available to anyone who wants to join though attendees are expected to stay throughout the duration.",
-            "room" : "210E",
+            "room" : "126",
             "speaker" : {
                 "web" : "http://www.jamesreggers.com",
                 "location" : "Overland Park, KS",
@@ -185,16 +185,16 @@
             }
         },
         {
-            "session" : "TBD",
+            "session" : "Is F# the new Perl?",
             "time" : "10:30 AM - 11:45 AM",
-            "desc" : "",
+            "desc" : "You know that F# is a new .Net language. You know that is a functional language. But do you know that you can create F# scripts? In this session you will learn:\n\nHow to create and run F# scripts. \nHow to use the \"F# interactive\" to do exploratory development.now solve some common problems the F# way.",
             "room" : "121E",
             "speaker" : {
                 "web" : "",
-                "location" : "",
-                "name" : "",
-                "bio" : "",
-                "img" : ""
+                "location" : "Des Moines, IA",
+                "name" : "Cesar Mendoza",
+                "bio" : "Cesar was bitten by the programming bug since he got his hands on a HP-11C calculator. He has worked on several areas over the years like embedded systems, web development, software architecture. He currently works for Pioneer Hi-Bred INT. in Johnston, Iowa.  His latest passion is functional programming.",
+                "img" : "mendoza_cesar.jpg"
             }
         },
         {
@@ -227,7 +227,7 @@
             "session" : "Amateur, Pro, or somewhere in between?",
             "time" : "10:30 AM - 11:45 AM",
             "desc" : "What's the definition of an amateur? What about a professional? In this session we will discuss the differences between these classifications within the world of sports and how those definitions intersect with those we use in the world of software development and, maybe more interestingly, how they don't.",
-            "room" : "132E",
+            "room" : "123E",
             "speaker" : {
                 "web" : "",
                 "location" : "Madrid, IA",
@@ -276,7 +276,7 @@
             }
         },
         {
-            "session" : "Writing Optimized Web Applications with the Google Web Toolkit",
+            "session" : "Writing Web Applications with the Google Web Toolkit",
             "time" : "12:45 PM - 2:00 PM",
             "desc" : "This session is about structuring web applications with a mind for security, stateless/RESTful behavior, small, chunked downloads, and speedy reaction times, given through the lens of GWT - the Google Web Toolkit. I'll share the strategies I analyzed and implemented in the development of the full-scale web application I've been working on for the 14 months.",
             "room" : "118E",
@@ -310,7 +310,7 @@
                 "web" : "http://toranbillups.com",
                 "location" : "Des Moines, IA",
                 "name" : "Toran Billups",
-                "bio" : "Toran Billups is an ex-web developer turned aspiring mobile developer. When he isn't writing c#, java or objective-c you can find him spending time with his family as he attempts the mythical \"work-life balance\"",
+                "bio" : "Toran Billups is a python web developer by day and mobile developer by night. When he isn't writing c#, java or objective-c you can find him spending time with his family as he attempts the mythical \"work-life balance\"",
                 "img" : "toranb.jpg"
             }
         },
@@ -344,7 +344,7 @@
             "session" : "Programming for Reuse",
             "time" : "12:45 PM - 2:00 PM",
             "desc" : "As programmers, we spend more time than we would like to admit programming around the shortcomings of the languages and SDKs we are forced to deal with. The SDKs we use (whether for iOS, Android, Ajax, or server-side) provide as much code as they can, but they can't do everything. And sometimes they have bugs. So we create objects and functions that can be used to patch up these problematic areas.\n\nThis session will go into detail about the type of problems that should be handled with reusable code, how to write objects and functions that are extensible and configurable, and what is required to effectively share this code with other developers. Fundamentals of framework and API design will be discussed. Examples will be used from a number of languages showing the distinct ways they allow us to write reusable code. Base objects from SDKs like iOS and Android will be used examples of how others have approached code reusability and how we can extend these objects.",
-            "room" : "132E",
+            "room" : "123E",
             "speaker" : {
                 "web" : "http://bitmethod.com/",
                 "location" : "Des Moines, IA",
@@ -448,7 +448,7 @@
             "session" : "Esoteric Programming Languages",
             "time" : "2:15 PM - 3:30 PM",
             "desc" : "Most of the time we program in modern languages like Ruby or C#. However, there are a plethora of languages out there that are strange, odd, and/or just plain funny. In this talk, I'll go over a number of esoteric programming languages such as Whenever and Befunge. Come with a sense of humor!",
-            "room" : "132E",
+            "room" : "123E",
             "speaker" : {
                 "web" : "http://www.jasonbock.net",
                 "location" : "Shakopee, MN",
@@ -552,7 +552,7 @@
             "session" : "Behavior Driven Development from the Trenches",
             "time" : "3:45 PM - 5:00 PM",
             "desc" : "There has been a lot of talk about test-driven, acceptance-test-driven, behavior-driven, anything-you-can-think-of-driven development lately. I will talk about behavior-driven development, how it relates to and encompasses some of these practices. I will show you the tools related to BDD, and how they help you code and design always with the customer's requirements in mind. Then I will actually show you how to get started with BDD on the .Net (specifically C#) platform. You should walk away from this session armed with enough information to get you started towards tested code that really nails what the customer needs.",
-            "room" : "132E",
+            "room" : "123E",
             "speaker" : {
                 "web" : "http://disruptivetheory.com/",
                 "location" : "Merriam, KS",
