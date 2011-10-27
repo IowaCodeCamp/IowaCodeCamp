@@ -61,7 +61,7 @@
                 <li>Product placement</li>
                 <li>Corporate marketing</li>
             </ul>
-            <br />
+            <br /><!--
             <p>
             We are looking for developers who want to tell other developers about cool things they are doing. Topics they really care about.  If you are working with .Net, Ruby, PHP, Java, Rails, Python, SQL, &lt;fill in the blank&gt; and you want to tell other people about it, then consider submitting a speaking proposal.
             </p>
@@ -70,7 +70,7 @@
             </p>
             <p>
             If you want to help sponsor, contact Chris Missal and Zac Harlan at <strong>sponsors [at] iowacodecamp d0t com</strong>.
-            </p>
+            </p>-->
             <p>
             Let Levi Rosol know if you have any other questions at <strong>levi.rosol [at] gmail d0t com</strong>.
             </p>
