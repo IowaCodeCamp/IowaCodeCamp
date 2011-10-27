@@ -98,11 +98,6 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 <p>I'm a computer scientist with a passion for education. I worked on several independent programming projects, programmed for the University of Maryland, and interned at Microsoft before leaving the profession to teach high school for five years.  Now I'm the programmer for a new ed-software startup, ActiveGrade, based in Iowa City.
 </p>
 
-<h3 id="JeffBrand">Jeff Brand</h3>
-<img src="<%= SpeakerImageUrl("jbrand.jpg") %>" width="90" alt="" />
-<p>Jeff Brand is a .NET Developer in Microsoft’s Developer and Platform Group. Jeff assists customers in evaluating, developing and deploying applications built on the .NET Framework and the Microsoft platform. He has been with Microsoft for fifteen years and has served in variety of roles including infrastructure consultant, e-commerce technology specialist, and enterprise technology advisor.
-</p>
-
 <h3 id="BrandonWeber">Brandon Weber</h3>
 <img src="<%= SpeakerImageUrl("brandon-weber.jpg") %>" width="90" alt="" />
 <p>Software developer at Dwolla. I am mainly a .NET developer who likes to play in Rails. I aspire for world domination. I enjoy reading and tinkering with technology. 6-year Air Force veteran who worked in networking and cryptography. Computer Engineering graduate from Iowa State University with focus on Information Assurance and Network Security. I also enjoy a good rum ham at the beach.
