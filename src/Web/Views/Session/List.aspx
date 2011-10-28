@@ -73,7 +73,11 @@
 
             <li>
               <h3>Programming with the .NET Async CTP</h3>
-              <p>I'll give you a better talk description later but suffice to say I'd like to present the VS2010 Async CTP, showing what's likely to become part of .NET 5. I'll try to contrast the CTP features with the existing ways of writing async code (callbacks, TPL).</p>
+              <p>The .NET Framework doesn't lack support for asynchronous programming. There are several ways to accomplish it. What we don't have yet is a way that doesn't obscures the intent of the code. <br />
+<br />
+Consider the following question: What is more important, what the code is trying to do or the fact that it was written asynchronously? If your answer was the former, you'll probably like what you'll find in the Async CTP for Visual Studio.<br />
+<br />
+Come to this presentation to see the new language features added to C# (and Visual Basic) that pretty much take asynchronism out of your way while still embracing it. Find out how a couple new keywords can make your code asynchronous and help you eliminate blocking calls without spawning new threads.</p>
     				  <dl><dt>Speaker</dt><dd><%= Html.SpeakerLink("Sergio Pereira")%></dd></dl>
     				</li>
 
