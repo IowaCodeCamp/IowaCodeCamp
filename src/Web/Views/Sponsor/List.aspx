@@ -25,6 +25,7 @@
     <h2>Platinum Sponsors</h2>
     <hr />
 	
+<%--
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("qci_logo.gif")%>" alt="QCI" class="sponsors" />
     </a>    
@@ -41,7 +42,6 @@
     <img style="border-width:0px" src="<%=SponsorImageUrl("ERLogo.gif")%>" alt="Executive Resources" class="sponsors" />
     </a>    
 
-<%--
     <a href="http://www.microsoft.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
     </a>
@@ -50,9 +50,9 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
     </a>
     
+--%>
     <br />
 
---%>
     <a name="gold"></a>
     <h2>Gold Sponsors</h2>
     <hr />
@@ -67,7 +67,6 @@
     </a>
     
     <br />
---%>
 
     <a href="http://www.discountasp.net/cedarrapids" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
@@ -89,6 +88,8 @@
     <img style="border-width:0px" src="<%=SponsorImageUrl("devexpress_logo.png")%>" alt="DevExpress" class="sponsors" />
     </a>
 
+--%>
+
 	<br />
 	
     <a name="silver"></a>
@@ -96,6 +97,7 @@
     <hr />
     <br />
     
+<%--
     <a href="http://www.componentone.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("component-one.png") %>' alt="Component One" class="sponsors" />
     </a> 
@@ -111,7 +113,6 @@
     <a href="http://www.modis.com/itrecruitment/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
     </a>    
-<%--
     <a href="http://www.godaddy.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" />
     </a>    
@@ -124,6 +125,7 @@
     <h2>Supporters</h2>
     <hr />
 	
+<%--
     <a href="http://www.scootersoftware.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
     </a>
@@ -161,7 +163,6 @@
     <a href="http://www.newhorizonscr.com" target="_blank">New Horizons Cedar Rapids</a><br />
 
   </p>
-<%--
     <img style="border-width:0px" src='<%=SponsorImageUrl("dotnetvideos.png") %>' alt="dotNetVideos.net" class="sponsors" />
     
     <a href="http://www.componentone.com/" target="_blank">

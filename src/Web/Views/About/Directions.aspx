@@ -14,9 +14,8 @@
     <br /><br /><br />
     
 <%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
-<%--    <br /><br />--%>
 
-    
+<%--
     <h3><a href="https://go.dmacc.edu/west/Pages/map.aspx" target="_blank">Directions to Iowa Code Camp - DMACC West Campus</a></h3>
     <br /><br />
     
@@ -68,6 +67,6 @@
     Parking is freely available at the DMACC West facility.
     There is paid parking directly across from the Iowa Memorial Union.
     <br /><br />
-
+ --%>    
 </asp:Content>
 
