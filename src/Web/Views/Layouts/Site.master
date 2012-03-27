@@ -10,7 +10,7 @@
     <title>Iowa Code Camp</title>
     <meta name="keywords" content="Iowa, Iowa City, West Des Moines, Des Moines, 
     Cedar Rapids, Iowa City, Cedar Falls, Waterloo, 
-    Jon Von Gillern, Greg Sohl, Tim Barcz, Levi Rosol, Nick Parker, Chris Missal, Zac Harlan" />
+    Jon Von Gillern, Greg Sohl, Tim Barcz, Levi Rosol, Nick Parker, Zac Harlan" />
     <meta name="description" content="Site for all things Iowa Code Camp" />
 
     <meta property="og:title" content="Iowa Code Camp"/>    <meta property="og:site_name" content="IowaCodeCamp.com"/>    <meta property="og:image" content="http://iowacodecamp.com/Public/Images/icc_logo_huge.jpg"/>
@@ -86,11 +86,11 @@
 			    <li><a id="schedule" href='<%=ResolveUrl("~/session/schedule") %>'>Schedule</a></li>
 			    <li><a id="attendees" href='<%=ResolveUrl("~/attendee/list") %>'>Attendees</a></li>
 			    <li><a id="speakers" href='<%=ResolveUrl("~/speaker/list") %>'>Speakers</a></li>
-			    <li><a id="sponsors" href='<%=ResolveUrl("~/sponsor") %>'>Sponsors</a></li>
+			    <li><a id="sponsors" href='<%=ResolveUrl("~/sponsor/list") %>'>Sponsors</a></li>
 			    <%--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li>
 			    <li--><a id="location" href='<%=ResolveUrl("~/about/location") %>'>Location</a></li--%>
 			    <li><a id="directions" href='<%=ResolveUrl("~/about/directions") %>'>Directions</a></li>
-			    <li><a id="about" href='<%=ResolveUrl("~/about") %>'>About</a></li>
+			    <li><a id="about" href='<%=ResolveUrl("~/about/index") %>'>About</a></li>
 		    </ul>
 		    <div style="float:right;"><br /><b><%=Models.Event.DaysLeftMessage%></b> </div>
 	    </div>
@@ -180,8 +180,8 @@
 
                         <h4>Where</h4>
                         <ul style="padding-left:20px;">
-                        <li><%=Html.ActionLink("DMACC", "location", "about") %></li>
-                        <li>West Des Moines, Iowa</li>
+                        <li><%=Html.ActionLink("The Hotel at Kirkwood", "location", "about") %></li>
+                        <li>Cedar Rapids, Iowa</li>
                         <!--li>
                             <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
                             Map
