@@ -12,6 +12,15 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
     <br /><br /><br />
+    <h3>Event Location</h3><br />
+    <h4><a target="_blank" href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a></h4><br />
+    7725 Kirkwood Boulevard S.W.<br />
+    Cedar Rapids, Iowa 52404<br />
+    319-848-8700 or 877-751-5111<br /><br />
+    The Hotel is located just minutes from the Eastern Iowa Airport (CID), Interstates 80 and 380, and U.S. Highway 30.
+    <br /><br />
+    <h3>Recommended Hotel</h3><br />
+    Is the same hotel as the event is at. Rate for Iowa Code Camp is $99 per night.
     
 <%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
 
