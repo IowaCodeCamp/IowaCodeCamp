@@ -31,7 +31,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" runat="Server">
   <% var @event = Event.GetNextEvent(); %>
-        <% if (@event != null) { %><h1>Sessions for <%= @event.StartOn.ToString("MMM dd, yyyy") %></h1> <% } %>
+        <% if (@event != null) { %><h1><%= Event.NextEventName %> - Sessions</h1> <% } %>
         <% else { %> <h1>Sessions</h1> <% } %>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" runat="Server">
