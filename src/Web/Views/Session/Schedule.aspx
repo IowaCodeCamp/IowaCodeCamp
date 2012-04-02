@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Session Schedule | Iowa Code Camp" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 <%@ Register src="../Shared/ComingSoon.ascx" tagname="ComingSoon" tagprefix="cs" %>
+<%@ Import Namespace="Models" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">
@@ -11,8 +12,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 
-<h1>Session Schedule</h1>
-
+<h2><%= Event.NextEventName %> - Schedule</h2>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">

@@ -14,40 +14,32 @@
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:App_Code/d:Models/f:CurrentAttendee.cs" caret="270" fromTop="6" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:App_Code/d:Controllers/f:AttendeeController.cs" caret="1216" fromTop="13" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:App_Code/d:PageModels/f:AttendeeListPageModel.cs" caret="176" fromTop="8" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Speaker/f:List.aspx" caret="249" fromTop="3" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Sponsor/f:List.aspx" caret="0" fromTop="0" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Shared/f:ComingSoon.ascx" caret="4" fromTop="0" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Shared/f:LinkPanel.ascx" caret="161" fromTop="4" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:About/f:Index.aspx" caret="0" fromTop="0" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Layouts/f:Site.master" caret="0" fromTop="0" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Attendee/f:Register.aspx" caret="867" fromTop="0" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Attendee/f:List.aspx" caret="2005" fromTop="17" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:App_Code/f:Config.cs" caret="0" fromTop="0" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:App_Code/d:Models/f:Event.cs" caret="2336" fromTop="9" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:App_Code/d:Models/f:ICCData.designer.cs" caret="4145" fromTop="10" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:About/f:Location.aspx" caret="407" fromTop="9" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:About/f:Directions.aspx" caret="0" fromTop="0" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="368" fromTop="6" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:List.aspx" caret="1371" fromTop="13" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="679" fromTop="21" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:App_Data/f:data.json" caret="3868" fromTop="17" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:App_Code/d:Controllers/f:DataController.cs" caret="146" fromTop="6" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/f:Web.config" caret="0" fromTop="0" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Attendee/f:List.aspx" caret="0" fromTop="0" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Speaker/f:List.aspx" caret="1228" fromTop="14" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="0" fromTop="0" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Shared/f:ComingSoon.ascx" caret="0" fromTop="0" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:List.aspx" caret="0" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Sponsor/f:List.aspx" caret="2075" fromTop="23" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Speaker/f:List.aspx" caret="1129" fromTop="9" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Speaker/f:List.aspx" caret="1771" fromTop="14" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="533" fromTop="15" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="0" fromTop="0" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="501" fromTop="8" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="1256" fromTop="18" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="2955" fromTop="13" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="3447" fromTop="20" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="4239" fromTop="8" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="4679" fromTop="13" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="5133" fromTop="22" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:List.aspx" caret="1337" fromTop="11" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:List.aspx" caret="1315" fromTop="11" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:About/f:Directions.aspx" caret="679" fromTop="17" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:About/f:Directions.aspx" caret="2401" fromTop="26" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Shared/f:ComingSoon.ascx" caret="576" fromTop="11" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Layouts/f:Site.master" caret="10477" fromTop="14" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Layouts/f:Site.master" caret="677" fromTop="12" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:About/f:Index.aspx" caret="0" fromTop="0" />
@@ -59,9 +51,20 @@
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="1041" fromTop="18" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="1256" fromTop="23" />
       <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Home/f:Index.aspx" caret="1451" fromTop="23" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="662" fromTop="19" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="1085" fromTop="24" />
-      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="891" fromTop="23" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="715" fromTop="19" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="1138" fromTop="24" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="944" fromTop="23" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:App_Code/d:Controllers/f:DataController.cs" caret="0" fromTop="0" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="233" fromTop="3" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:Schedule.aspx" caret="542" fromTop="14" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Attendee/f:List.aspx" caret="977" fromTop="19" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Attendee/f:List.aspx" caret="278" fromTop="4" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:List.aspx" caret="16" fromTop="0" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Session/f:List.aspx" caret="1099" fromTop="14" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Attendee/f:List.aspx" caret="1863" fromTop="16" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Attendee/f:List.aspx" caret="1837" fromTop="15" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Attendee/f:List.aspx" caret="2132" fromTop="19" />
+      <File id="87838AB7-35F6-4EEF-90A8-3B2142BDE007/d:Views/d:Shared/f:ComingSoon.ascx" caret="568" fromTop="11" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
