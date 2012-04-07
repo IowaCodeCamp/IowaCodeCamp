@@ -2,7 +2,7 @@ public class BasePage : System.Web.Mvc.ViewPage
 {
     public virtual string SpeakerImageUrl(string fileName)
     {
-        return ResolveUrl("~/public/images/speakers/fall2011/{0}".FormatWith(fileName));
+		return ResolveUrl("~/public/images/speakers/{1}/{0}".FormatWith(fileName, Config.EventFolder));
     }
 
     public virtual string BaseImageUrl(string fileName)
@@ -12,6 +12,6 @@ public class BasePage : System.Web.Mvc.ViewPage
 
     public virtual string SponsorImageUrl(string fileName)
     {
-        return ResolveUrl("~/public/images/sponsors/fall2011/{0}".FormatWith(fileName));
+		return ResolveUrl("~/public/images/sponsors/{1}/{0}".FormatWith(fileName, Config.EventFolder));
     }
 }

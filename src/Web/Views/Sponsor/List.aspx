@@ -26,51 +26,40 @@
     <hr />
 	
 <%--
-	<a href="http://www.qci.com" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("qci_logo.gif")%>" alt="QCI" class="sponsors" />
-    </a>    
-	
-	<a href="http://www.metacommunications.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo.png")%>" alt="Meta Communications" class="sponsors" />
-    </a>    
-	
 	<a href="http://aspect.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("aspect-logo.jpg")%>" alt="Aspect" class="sponsors" />
     </a>    
 
-	<a href="http://executiveresources.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("ERLogo.gif")%>" alt="Executive Resources" class="sponsors" />
-    </a>    
-
-    <a href="http://www.microsoft.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
-    </a>
-    
     <a href="http://www.modis.com/itrecruitment/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
     </a>
     
 --%>
+	<a href="http://www.metacommunications.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo.png")%>" alt="Meta Communications" class="sponsors" />
+    </a>    
+	
+    <a href="http://www.microsoft.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" />
+    </a>
+    
     <br />
 
     <a name="gold"></a>
     <h2>Gold Sponsors</h2>
     <hr />
 
+    <a href="http://www.discountasp.net/cedarrapids" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
+    </a>     
+
+
 <%--
     <a href="http://www.jetbrains.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
     </a>
 
-    <a href="http://www.telerik.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
-    </a>
-    
     <br />
-
-    <a href="http://www.discountasp.net/cedarrapids" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
-    </a>     
 
 	<a href="http://www.roberthalftechnology.com/" target="_blank">
 	<img style="border-width:0px" src='<%=SponsorImageUrl("rht.jpg") %>' alt="Robert Half Technology" class="sponsors" />
@@ -80,10 +69,6 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
     </a>
     
-    <a href="http://www.red-gate.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("redgate.png")%>" alt="Red Gate" class="sponsors" />
-    </a>
-
     <a href="http://www.devexpress.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("devexpress_logo.png")%>" alt="DevExpress" class="sponsors" />
     </a>
@@ -97,6 +82,31 @@
     <hr />
     <br />
     
+    <a href="http://www.godaddy.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" />
+    </a>    
+    
+    <a href="http://www.infragistics.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("infragistics_logo.gif") %>' alt="Jet Brains" class="sponsors" />
+    </a>    
+
+    <a href="http://www.jetbrains.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
+    </a>    
+    
+	<a href="http://www.qci.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("qci_logo.gif")%>" alt="QCI" class="sponsors" />
+    </a>    
+	
+    <a href="http://www.red-gate.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("redgate_logo.gif")%>" alt="Red Gate" class="sponsors" />
+    </a>
+
+    <a href="http://www.telerik.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
+    </a>
+    
+
 <%--
     <a href="http://www.componentone.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("component-one.png") %>' alt="Component One" class="sponsors" />
@@ -106,17 +116,9 @@
     <img style="border-width:0px" src='<%= SponsorImageUrl("logo-iapps24.jpg") %>' alt="iApps24" class="sponsors" />
     </a> 
     
-    <a href="http://www.jetbrains.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" />
-    </a>    
-    
     <a href="http://www.modis.com/itrecruitment/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
     </a>    
-    <a href="http://www.godaddy.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" />
-    </a>    
-    
     <a href="http://www.stoneriver.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />
     </a>
@@ -125,11 +127,10 @@
     <h2>Supporters</h2>
     <hr />
 	
-<%--
-    <a href="http://www.scootersoftware.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
-    </a>
-    
+	<a href="http://executiveresources.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("ERLogo.gif")%>" alt="Executive Resources" class="sponsors" />
+    </a>    
+
     <a href="http://www.learnvisualstudio.net/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("learnvisualstudio_logo.png") %>" alt="LearnVisualStudio.Net" class="sponsors" />
     </a>
@@ -138,14 +139,23 @@
     <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" />
     </a> 
 
-    <a href="http://www.wiley.com/" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("wiley.jpg") %>' alt="Wiley" class="sponsors" />
-    </a> 
-    
     <a href="http://www.pluralsight-training.net" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("pluralsight.jpg") %>' alt="pluralsight" class="sponsors" />
     </a> 
 
+    <a href="http://www.scootersoftware.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
+    </a>
+    
+    <a href="http://www.tekpub.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("tekpub.png") %>' alt="Tekpub" class="sponsors" />
+    </a>
+    
+<%--
+    <a href="http://www.wiley.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("wiley.jpg") %>' alt="Wiley" class="sponsors" />
+    </a> 
+    
     <a href="" target="_blank">
     <img style="border-width:0px" src="<%= SponsorImageUrl("DevelopMentor-Logo.jpg") %>" alt="DevelopMentor" class="sponsors" />
     </a>
