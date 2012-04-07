@@ -14,13 +14,13 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
+    <%--
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         Call for speakers is open. Submit your talks <a href="https://docs.google.com/spreadsheet/viewform?formkey=dGtJOGNBSVpFbVZhMERqY0x5eEk4N1E6MA#gid=0" target="_blank">here</a>.
-    <%--
         <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
-    --%>
         </p>
+    --%>
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         Registration is now open. Register <a href="http://www.iowacodecamp.com/attendee/register">here</a>.
         </p>
