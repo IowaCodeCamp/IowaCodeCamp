@@ -35,6 +35,10 @@
     </a>
     
 --%>
+	<a href="http://www.dice.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("dice.png")%>" alt="Dice" class="sponsors" />
+    </a>    
+	
 	<a href="http://www.metacommunications.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo.png")%>" alt="Meta Communications" class="sponsors" />
     </a>    
@@ -133,6 +137,14 @@
 
     <a href="http://www.learnvisualstudio.net/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("learnvisualstudio_logo.png") %>" alt="LearnVisualStudio.Net" class="sponsors" />
+    </a>
+
+    <a href="http://www.linqpad.net/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("linqpad.png") %>" alt="LinqPad" class="sponsors" />
+    </a>
+
+    <a href="http://www.ssware.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" />
     </a>
 
     <a href="http://oreilly.com/" target="_blank">
