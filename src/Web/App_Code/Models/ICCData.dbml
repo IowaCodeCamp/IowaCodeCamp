@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Database Name="IowaCodeCamp" Class="ICCData" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=(local);Initial Catalog=IowaCodeCamp;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="IowaCodeCampConnectionString" Provider="System.Data.SqlClient" />
+<Database Name="iowacodecamp" Class="ICCData" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sohl-mobile1\sql2008;Initial Catalog=iowacodecamp;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="IowaCodeCampConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.NewsItems" Member="NewsItems">
     <Type Name="NewsItem">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -196,6 +196,27 @@
       <Column Name="Region" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="Website" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
       <Association Name="Event_CurrentAttendee" Member="Event" ThisKey="EventID" OtherKey="Id" Type="Event" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CurrentSessions" Member="CurrentSessions">
+    <Type Name="CurrentSession">
+      <Column Name="SpeakerKey" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SessionKey" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Room" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="SessionTime" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="SessionLevel" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SessionTimeOrdinal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CurrentSpeakers" Member="CurrentSpeakers">
+    <Type Name="CurrentSpeaker">
+      <Column Name="SpeakerKey" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SpeakerName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CityState" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HeadshotFile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SpeakerBio" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
