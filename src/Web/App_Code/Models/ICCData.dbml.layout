@@ -20,7 +20,7 @@
         <elementListCompartment Id="f6962527-3f78-4638-ab7e-077499ee233e" absoluteBounds="5.39, 6.7100000000000009, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.375 : 7.23640055338542); (5.234375 : 7.23640055338542 : JumpStart); (5.06770833333333 : 7.23640055338542 : JumpEnd); (4.875 : 7.23640055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(5.375 : 7.23640055338542); (5.234375 : 7.23640055338542 : JumpStart); (5.06770833333334 : 7.23640055338542 : JumpEnd); (4.875 : 7.23640055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/Role/Role_UserRole" />
       <nodes>
         <classShapeMoniker Id="a8ed2313-7f4d-4412-8ba9-d10b79a4f35c" />
@@ -51,7 +51,7 @@
         <elementListCompartment Id="97ef0e1e-04ed-4c4b-ac05-69718a5228b9" absoluteBounds="8.89, 2.835, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(11.375 : 2.97166056315104); (10.875 : 2.97166056315104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(11.375 : 2.97166056315104); (10.875 : 2.97166056315104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/Event/Event_Timeslot" />
       <nodes>
         <classShapeMoniker Id="cf00a190-5e6d-47aa-801d-a420fcb3c6af" />
@@ -64,7 +64,7 @@
         <elementListCompartment Id="1fbe32a2-fb5b-4b0f-b6ae-81b70f7a4cdc" absoluteBounds="11.015, 5.835, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(12.1640625 : 3.56832112630208); (12.1640625 : 5.375)]" fixedFrom="Caller" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(12.1640625 : 3.56832112630208); (12.1640625 : 5.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/Event/Event_Room" />
       <nodes>
         <classShapeMoniker Id="cf00a190-5e6d-47aa-801d-a420fcb3c6af" />
@@ -90,21 +90,21 @@
         <elementListCompartment Id="4a5c947f-c2ae-4631-ae02-9f3085593647" absoluteBounds="8.765, 6.71, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(8.75 : 8.52783447265625); (5.15104166666667 : 8.52783447265625); (5.15104166666667 : 5.33223714192708)]" fixedFrom="Algorithm" fixedTo="Caller">
+    <associationConnector edgePoints="[(8.75 : 8.52783447265625); (5.15104166666667 : 8.52783447265625); (5.15104166666667 : 5.33223714192708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/Session/Session_Attendee" />
       <nodes>
         <classShapeMoniker Id="47121542-6ee1-48f9-8e96-cf33beb130c8" />
         <classShapeMoniker Id="f9a1c47f-7d60-49db-ab9a-e2b4c18f0d66" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(9.75 : 6.25); (9.75 : 6.08223714192708); (8.296875 : 6.08223714192708); (8.296875 : 5.83223714192708)]" fixedFrom="Algorithm" fixedTo="Caller">
+    <associationConnector edgePoints="[(9.75 : 6.25); (9.75 : 6.08223714192708); (8.296875 : 6.08223714192708); (8.296875 : 5.83223714192708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/Session/Session_Speaker" />
       <nodes>
         <classShapeMoniker Id="47121542-6ee1-48f9-8e96-cf33beb130c8" />
         <classShapeMoniker Id="e66e479a-c7e8-4789-bbc8-a6819a975184" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(13.2057291666667 : 3.56832112630208); (13.2057291666667 : 8.09033447265625); (10.75 : 8.09033447265625)]" fixedFrom="Caller" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(13.2057291666667 : 3.56832112630208); (13.2057291666667 : 8.09033447265625); (10.75 : 8.09033447265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/Event/Event_Session" />
       <nodes>
         <classShapeMoniker Id="cf00a190-5e6d-47aa-801d-a420fcb3c6af" />
@@ -124,28 +124,28 @@
         <classShapeMoniker Id="10280214-99b2-4c4a-8e68-2bb8984a3459" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.5 : 2.91611857096354); (3.21875 : 2.91611857096354); (3.21875 : 5.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.5 : 2.91611857096354); (3.21875 : 2.91611857096354); (3.21875 : 5.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/User/User_UserRole" />
       <nodes>
         <classShapeMoniker Id="cc6b5958-fbf0-4720-b360-03d14e877eb8" />
         <classShapeMoniker Id="a10950b6-779c-4d23-8d09-082ad42b0b47" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.5 : 4.20270914713542); (3.13541666666667 : 4.20270914713542 : JumpStart); (3.30208333333333 : 4.20270914713542 : JumpEnd); (3.625 : 4.20270914713542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(2.5 : 4.20270914713542); (3.625 : 4.20270914713542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/User/User_Attendee" />
       <nodes>
         <classShapeMoniker Id="cc6b5958-fbf0-4720-b360-03d14e877eb8" />
         <classShapeMoniker Id="f9a1c47f-7d60-49db-ab9a-e2b4c18f0d66" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.5 : 1.67680728548177); (3.5 : 1.67680728548177); (3.5 : 2.83223714192708); (6.375 : 2.83223714192708); (6.375 : 3.48962646484375); (7.5 : 3.48962646484375); (7.5 : 3.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.5 : 1.67680728548177); (3.5 : 1.67680728548177); (3.5 : 2.83223714192708); (6.375 : 2.83223714192708); (6.375 : 3.48962646484375); (7.5 : 3.48962646484375); (7.5 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/User/User_Speaker" />
       <nodes>
         <classShapeMoniker Id="cc6b5958-fbf0-4720-b360-03d14e877eb8" />
         <classShapeMoniker Id="e66e479a-c7e8-4789-bbc8-a6819a975184" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.5 : 1.02590364274089); (3.75 : 1.02590364274089)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.5 : 1.02590364274089); (3.75 : 1.02590364274089)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/User/User_UserEvent" />
       <nodes>
         <classShapeMoniker Id="cc6b5958-fbf0-4720-b360-03d14e877eb8" />
@@ -158,7 +158,7 @@
         <elementListCompartment Id="e5a8ced5-6daf-4b0e-87a7-f6a0fb38958b" absoluteBounds="6.6400000000000006, 0.96, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(11.375 : 1.4375025); (8.625 : 1.4375025)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(11.375 : 1.4375025); (8.625 : 1.4375025)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ICCData/Event/Event_CurrentAttendee" />
       <nodes>
         <classShapeMoniker Id="cf00a190-5e6d-47aa-801d-a420fcb3c6af" />
@@ -171,10 +171,10 @@
         <elementListCompartment Id="4de8ed0e-6c43-4bf9-a670-c212ff494df4" absoluteBounds="14.015, 0.96, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="89396de7-ad59-4db2-8f6b-f06fcda6d0f3" absoluteBounds="14, 3, 2, 1.5891951497395831">
+    <classShape Id="89396de7-ad59-4db2-8f6b-f06fcda6d0f3" absoluteBounds="14, 3, 2, 1.7535424804687496">
       <DataClassMoniker Name="/ICCData/CurrentSpeaker" />
       <nestedChildShapes>
-        <elementListCompartment Id="d8894608-0a77-4b2f-87e3-0e08a0f4f644" absoluteBounds="14.015, 3.46, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d8894608-0a77-4b2f-87e3-0e08a0f4f644" absoluteBounds="14.015, 3.46, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

@@ -10,8 +10,8 @@ namespace Models
 			var ctx = new ICCData();
 
 			return ctx.CurrentSessions
-				.OrderBy(currentSession => currentSession._SessionTimeOrdinal)
-				.OrderBy(currentSession => currentSession._Room)
+				.OrderBy(currentSession => currentSession.Room)
+				.OrderBy(currentSession => currentSession.SessionTimeOrdinal)
 				.ToList();
 		}
 		

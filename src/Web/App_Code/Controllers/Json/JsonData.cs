@@ -13,7 +13,7 @@ namespace ASP.App_Code.Controllers.Json
 	public class d
 	{
 		[DataMember]
-		public bool success;
+		public bool success = true;
 		[DataMember]
 		public string message = null;
 		[DataMember]

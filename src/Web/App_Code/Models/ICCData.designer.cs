@@ -4683,6 +4683,8 @@ namespace Models
 		
 		private string _SpeakerBio;
 		
+		private string _WebSite;
+		
 		public CurrentSpeaker()
 		{
 		}
@@ -4763,6 +4765,22 @@ namespace Models
 				if ((this._SpeakerBio != value))
 				{
 					this._SpeakerBio = value;
+				}
+			}
+		}
+		
+		[Column(Storage="_WebSite", DbType="varchar(500)", CanBeNull=false)]
+		public string WebSite
+		{
+			get
+			{
+				return this._WebSite;
+			}
+			set
+			{
+				if ((this._WebSite != value))
+				{
+					this._WebSite = value;
 				}
 			}
 		}

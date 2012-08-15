@@ -24,6 +24,10 @@ namespace ASP.App_Code.Controllers
         public ContentResult Json()
         {
 			var speakers = CurrentSpeaker.List();
+			//var speakerCount = string.Format("Speakers={0}",
+			//                                 speakers.Count);
+			//return Content(speakerCount);
+
 			var sessions = CurrentSession.List();
 
         	List<Json.Session> sessionList = new List<Json.Session>();
@@ -70,10 +74,10 @@ namespace ASP.App_Code.Controllers
 			mySession.room = currentSession.Room;
 			mySession.speaker = new Json.Speaker();
 			mySession.speaker.name = currentSpeaker.SpeakerName;
-			mySession.speaker.location = string.Empty;
+			mySession.speaker.location = currentSpeaker.CityState;
 			mySession.speaker.bio = currentSpeaker.SpeakerBio;
 			mySession.speaker.img = currentSpeaker.HeadshotFile;
-			mySession.speaker.web = string.Empty;
+			mySession.speaker.web = currentSpeaker.WebSite;
 			return mySession;
 		}
     }

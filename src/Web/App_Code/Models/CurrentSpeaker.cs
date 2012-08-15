@@ -9,7 +9,7 @@ namespace Models
 		{
 			var ctx = new ICCData();
 
-			return ctx.CurrentSpeakers.OrderBy(currentSpeaker => currentSpeaker._SpeakerName).ToList();
+			return ctx.CurrentSpeakers.OrderBy(currentSpeaker => currentSpeaker.SpeakerName).ToList();
 		}
 	}
 }
