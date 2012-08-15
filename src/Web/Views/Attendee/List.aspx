@@ -30,13 +30,17 @@
 <%--        <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>--%>
     </div>
     <div>
+    <%--
       <p style="font-size:medium;">
         Don't miss out, 
         <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too! 
+      </p>
+      --%>
+
 <%--        <a href="<%= ResolveUrl("~/attendee/register") %>">
             <img src="/images/registernow.jpg" alt="Register Now!" border="0"/ width="100" height="100">
         </a>    --%>
-      </p>
+
 
       <p style="font-size:medium;">Here's what some attendees are saying about Iowa Code Camp:</p>
       

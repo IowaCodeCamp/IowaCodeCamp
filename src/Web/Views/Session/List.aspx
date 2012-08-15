@@ -30,16 +30,18 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" runat="Server">
-  <% var @event = Event.GetNextEvent(); %>
-        <% if (@event != null) { %><h1><%= Event.NextEventName %> - Sessions</h1> <% } %>
-        <% else { %> <h1>Sessions</h1> <% } %>
+<h2><%= Event.NextEventName %> - Sessions</h2>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" runat="Server">
 
+<%--
 <cs:ComingSoon runat="server" />
+ --%>
 
     <div id="sessions">
 
+<a href="https://docs.google.com/open?id=0B5P5ekZgdxegOHhGemVqVkxmNTg">Open in Google Docs</a>
+<iframe src="https://docs.google.com/viewer?authuser=0&srcid=0B5P5ekZgdxegOHhGemVqVkxmNTg&pid=explorer&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
         <%--<ul>
             <li>
               <h3>Developing with Objective-C 2.0 for Mac OS X and iPhone OS</h3>

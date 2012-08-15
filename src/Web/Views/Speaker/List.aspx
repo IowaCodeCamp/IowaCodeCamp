@@ -1,8 +1,14 @@
-﻿<%@ Page Title="Speaker List | Iowa Code Camp" Language="C#" Inherits="BasePage" MasterPageFile="~/Views/Layouts/Site.master" %>
+﻿<%@ Page Title="Speakers | Iowa Code Camp" Language="C#" Inherits="BasePage" MasterPageFile="~/Views/Layouts/Site.master" %>
 <%@ Register src="../Shared/ComingSoon.ascx" tagname="ComingSoon" tagprefix="cs" %>
 <%@ Import Namespace="Models" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#speakers").addClass("active");
+        });
+    </script>
+
     <style type="text/css">
         div ol {
             padding-left: 25px;
@@ -33,9 +39,15 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
+<%--
 <cs:ComingSoon runat="server" />
+--%>
 
     <div id="speakers">
+
+<a href="https://docs.google.com/open?id=0B5P5ekZgdxegQ1paT2l4MnAtYjg">Open in Google Docs</a>
+
+<iframe src="https://docs.google.com/viewer?authuser=0&srcid=0B5P5ekZgdxegQ1paT2l4MnAtYjg&pid=explorer&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
 
 <%--
 <h3 id="SergioPereira">Sergio Pereira</h3>
@@ -57,7 +69,5 @@ If you don't see Sergio in front of his computer screen, you will probably find 
     
     </div>
     <div style="height:800px;">&nbsp;</div>
-</asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
 

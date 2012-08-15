@@ -21,9 +21,11 @@
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
         </p>
     --%>
+    <%--
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         Registration is now open. Register <a href="http://www.iowacodecamp.com/attendee/register">here</a>.
         </p>
+    --%>
         <div class="contentarea">
             <%--
 	    <h3>Spring 2010 Links To Slides</h3>

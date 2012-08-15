@@ -57,6 +57,9 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors" />
     </a>     
 
+    <a href="http://www.telerik.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
+    </a>
 
 <%--
     <a href="http://www.jetbrains.com" target="_blank">
@@ -90,6 +93,10 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" />
     </a>    
     
+	<a href="http://hatchlings.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("hatchlingseggs.png")%>" alt="Hatchlings" class="sponsors" />
+    </a>    
+
     <a href="http://www.infragistics.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("infragistics_logo.gif") %>' alt="Jet Brains" class="sponsors" />
     </a>    
@@ -106,11 +113,6 @@
     <img style="border-width:0px" src="<%=SponsorImageUrl("redgate_logo.gif")%>" alt="Red Gate" class="sponsors" />
     </a>
 
-    <a href="http://www.telerik.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
-    </a>
-    
-
 <%--
     <a href="http://www.componentone.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("component-one.png") %>' alt="Component One" class="sponsors" />
@@ -123,9 +125,6 @@
     <a href="http://www.modis.com/itrecruitment/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
     </a>    
-    <a href="http://www.stoneriver.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />
-    </a>
 --%>
     <a name="supporters"></a>
     <h2>Supporters</h2>
@@ -147,6 +146,14 @@
     <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" />
     </a>
 
+    <a href="http://www.modis.com/itrecruitment/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
+    </a>
+    
+    <a href="http://www.newhorizonscr.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("newhorizons.gif") %>' alt="New Horizons" class="sponsors" />
+    </a>
+
     <a href="http://oreilly.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" />
     </a> 
@@ -159,15 +166,24 @@
     <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
     </a>
     
+    <a href="http://www.stoneriver.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" />
+    </a>
+
     <a href="http://www.tekpub.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("tekpub.png") %>' alt="Tekpub" class="sponsors" />
     </a>
-    
-<%--
+
+    <a href="http://www.typemock.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("typemock.jpg") %>' alt="TypeMock" class="sponsors" />
+    </a> 
+
     <a href="http://www.wiley.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("wiley.jpg") %>' alt="Wiley" class="sponsors" />
     </a> 
     
+    
+<%--
     <a href="" target="_blank">
     <img style="border-width:0px" src="<%= SponsorImageUrl("DevelopMentor-Logo.jpg") %>" alt="DevelopMentor" class="sponsors" />
     </a>
@@ -199,6 +215,3 @@
 
 --%>
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
-</asp:Content>
-

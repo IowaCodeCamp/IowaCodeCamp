@@ -8,4 +8,7 @@
 </p>
 --%>
 
+<%--
 <strong>Registration is now open! <%= Html.ActionLink("Register now!", "register", "attendee")%> </strong>
+--%>
+<strong>Registration is closed. See you Saturday!</strong>
