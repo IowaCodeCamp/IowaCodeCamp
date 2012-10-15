@@ -65,7 +65,7 @@
 		        
 			    <!--h1><a href='<%=ResolveUrl("~/") %>' style="text-decoration:none;">Iowa Code Camp</a></h1>
 			    <h2>for developers - by developers</h2>
-			    <br /-->
+			    <br/>-->
 		    </div>
 	    </div>
 	    
@@ -90,7 +90,7 @@
 			    <li><a id="sponsors" href='<%=ResolveUrl("~/sponsor/list") %>'>Sponsors</a></li>
 			    <%--li><a id="history" href='<%=ResolveUrl("~/History.aspx") %>'>History</a></li>
 			    <li--><a id="location" href='<%=ResolveUrl("~/about/location") %>'>Location</a></li--%>
-			    <li><a id="directions" href='<%=ResolveUrl("~/about/directions") %>'>Directions</a></li>
+			    <li><a id="directions" href='<%=ResolveUrl("~/about/directions") %>'>Directions/Hotels</a></li>
 			    <li><a id="about" href='<%=ResolveUrl("~/about/index") %>'>About</a></li>
 		    </ul>
 		    <div style="float:right;"><br /><b><%=Models.Event.DaysLeftMessage%></b> </div>
@@ -181,14 +181,14 @@
 
                         <h4>Where</h4>
                         <ul style="padding-left:20px;">
-                        <li><%=Html.ActionLink("The Hotel at Kirkwood", "location", "about") %></li>
-                        <li>Cedar Rapids, Iowa</li>
+                        <li><%=Html.ActionLink(@event.LocationName, "location", "about") %></li>
+                        <li>West Des Moines, Iowa</li>
                         <!--li>
                             <a target="_blank" href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=181+S+Clinton,+iowa+city,ia&sll=41.659046,-91.534771&sspn=0.002797,0.004485&ie=UTF8&ll=41.659062,-91.534663&spn=0.005595,0.008969&t=h&z=17&iwloc=addr&om=1">
                             Map
                             </a>
                         </li-->
-                        <li><%=Html.ActionLink("Directions", "directions", "about") %></li>
+                        <li><%=Html.ActionLink("Directions/Hotels", "directions", "about") %></li>
                         </ul>
                     </div>
                     
@@ -215,7 +215,7 @@
                                 </li>
 				                <li>
 				                    <br />
-				                    <a href="http://www.cvineta.org/home" target="_blank">
+				                    <a href="http://www.cvineta.org/" target="_blank">
                                     <img style="border-width:0px" src='<%=ResolveUrl("~/Images/cvineta_logo.png") %>' 
                                     alt="Cedar Valley .NET User Group" />
                                     </a>
@@ -226,13 +226,13 @@
 			            </div>
 		            </div>        			
     		        
-		            <!--div class="box">
+		            <!--<div class="box">
 			            <h4>Blandit Veroeros</h4>
 			            <div class="contentarea">
 				            <img src="images/pic2.jpg" class="left" alt="Random foliage" />
 				            <p>Sed etiam et lorem ipsum nulla vero et lobortis felis sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros etiam <a href="#">sed commodo</a>.</p>
 			            </div>
-		            </div-->
+		            </div>-->
         		
 
 

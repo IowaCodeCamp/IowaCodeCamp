@@ -5,10 +5,9 @@
     <p style="font-size:larger;">
         <a href="http://crineta.org" target="_blank">CRineta.org</a> and  
         <a href="http://iadnug.org" target="_blank">Iowa .NET</a> 
-        are hosting the nineth code camp in Iowa on May 5th, 2012
-        at <a href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a> in Cedar Rapids.
-        <%--<a href="http://www.dmacc.edu" target="_blank">DMACC</a> 
-        in West Des Moines, Iowa. --%>
+        are hosting the tenth code camp in Iowa on Oct 27th, 2012
+        <%--at <a href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a> in Cedar Rapids.--%>
+        at <a href="https://go.dmacc.edu/west/pages/welcome.aspx" target="_blank">DMACC West Campus</a> in West Des Moines, IA.
     </p>
 
 </asp:Content>
@@ -21,11 +20,9 @@
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
         </p>
     --%>
-    <%--
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         Registration is now open. Register <a href="http://www.iowacodecamp.com/attendee/register">here</a>.
         </p>
-    --%>
         <div class="contentarea">
             <%--
 	    <h3>Spring 2010 Links To Slides</h3>

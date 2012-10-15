@@ -36,12 +36,12 @@
 
 <%--
 <cs:ComingSoon runat="server" />
- --%>
-
+--%>
+ 
     <div id="sessions">
 
-<a href="https://docs.google.com/open?id=0B5P5ekZgdxegOHhGemVqVkxmNTg">Open in Google Docs</a>
-<iframe src="https://docs.google.com/viewer?authuser=0&srcid=0B5P5ekZgdxegOHhGemVqVkxmNTg&pid=explorer&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
+<a href="https://docs.google.com/open?id=0B5P5ekZgdxegaGlhVUNOeXk2TEU">Open in Google Docs</a>
+<iframe src="https://docs.google.com/open?id=0B5P5ekZgdxegaGlhVUNOeXk2TEU&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
         <%--<ul>
             <li>
               <h3>Developing with Objective-C 2.0 for Mac OS X and iPhone OS</h3>

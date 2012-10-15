@@ -16,7 +16,7 @@ $(document).ready(function() {
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-    <h4>This is the 9<sup>th</sup> Iowa Code Camp.</h4> <br /><br />
+    <h4>We are looking forward to the 10th<sup>th</sup> Iowa Code Camp!</h4> <br /><br />
     <p>
     Check out our user groups: <a href="http://www.crineta.org">CRineta.org</a> and  
     <a href="http://iadnug.org">Iowa .Net User Group</a>.

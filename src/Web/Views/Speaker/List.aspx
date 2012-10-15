@@ -45,9 +45,9 @@
 
     <div id="speakers">
 
-<a href="https://docs.google.com/open?id=0B5P5ekZgdxegQ1paT2l4MnAtYjg">Open in Google Docs</a>
+<a href="https://docs.google.com/open?id=0B5P5ekZgdxegUzg0bVBZZHh3Rk0">Open in Google Docs</a>
 
-<iframe src="https://docs.google.com/viewer?authuser=0&srcid=0B5P5ekZgdxegQ1paT2l4MnAtYjg&pid=explorer&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
+<iframe src="https://docs.google.com/open?id=0B5P5ekZgdxegUzg0bVBZZHh3Rk0&pid=explorer&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
 
 <%--
 <h3 id="SergioPereira">Sergio Pereira</h3>

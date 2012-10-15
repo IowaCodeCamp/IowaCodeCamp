@@ -11,6 +11,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
+<%--
     <br /><br /><br />
     <h3>Event Location</h3><br />
     <h4><a target="_blank" href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a></h4><br />
@@ -21,10 +22,10 @@
     <br /><br />
     <h3>Recommended Hotel</h3><br />
     Is the same hotel as the event is at. Rate for Iowa Code Camp is $99 per night.
+ --%>    
     
 <%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
 
-<%--
     <h3><a href="https://go.dmacc.edu/west/Pages/map.aspx" target="_blank">Directions to Iowa Code Camp - DMACC West Campus</a></h3>
     <br /><br />
     
@@ -76,6 +77,10 @@
     Parking is freely available at the DMACC West facility.
     There is paid parking directly across from the Iowa Memorial Union.
     <br /><br />
- --%>    
+    
+    <h3>Hotel Recommendations</h3><br /><br />
+    <h4><a target="_blank" href="http://www.holidayinn.com/hotels/us/en/west-des-moines/dsmwm/hoteldetail">Holiday Inn Express</a></h4><br />
+    <h4><a target="_blank" href="https://wwws.druryhotels.com/propertyoverview.aspx?property=0144">Drury Inn</a></h4><br />
+
 </asp:Content>
 

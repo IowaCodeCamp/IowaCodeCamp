@@ -13,7 +13,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 <cs:ComingSoon runat="server" />
-
+<%--
     <br /><br /><br />
     <h3>Event Location</h3><br />
     <h4><a target="_blank" href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a></h4><br />
@@ -24,7 +24,7 @@
     <br /><br />
     <h3>Recommended Hotel</h3><br />
     Is the same hotel as the event is at. Rate for Iowa Code Camp is $99 per night.
-
+ %>
 
 <%--
 <h1>Kirkwood Community College</h1>
@@ -34,8 +34,16 @@
   <li>To get to the sessions, take open stairs up 1 level to the 3rd floor</li>
   <li>Take a right and follow the wall until you see Iowa rooms A-D. This is where our opening and closing announcements will be located.</li>
 </ul>
+--%>
 
+    <br /><br /><br />
+    <h3>Event Location</h3><br />
+    <h4><a target="_blank" href="https://go.dmacc.edu/west/pages/welcome.aspx">DMACC West Campus</a></h4><br />
+    5959 Grand Avenue<br />
+    West Des Moines, IA 50266<br />
+    515-633-2407<br /><br />
 
+<%--
 <div id="VirtualTour">
 <a href="https://go.dmacc.edu/west/Pages/campus.aspx" target="_blank">DMACC West Virtual Tour</a>
 <br />
@@ -79,7 +87,7 @@
     <br />
     
 </div>
---%>
+ --%>
 </asp:Content>
 
 
