@@ -175,7 +175,6 @@
                         <div style="margin:1em 1ex;">
 	                        <noscript>                            <iframe src="http://www.facebook.com/plugins/like.php?href=http://iowacodecamp.com&layout=standard&show_faces=false&width=190&action=like&font=arial&colorscheme=light&height=25" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:190px; height:25px;" allowTransparency="true"></iframe>                          </noscript>
                           <iframe scrolling="no" frameborder="0" id="facebook-like" style="border:none; overflow:hidden; width:190px; height:25px;" allowTransparency="true"></iframe>                        </div>                    </div>
-                    <% } %>
                     <div class="box">
                     <!--University Capitol Centre, Conference Center, 2nd floor (Old Capitol Mall-downtown Iowa City)-->
 
@@ -191,6 +190,7 @@
                         <li><%=Html.ActionLink("Directions/Hotels", "directions", "about") %></li>
                         </ul>
                     </div>
+                    <% } %>
                     
            			<div class="box tweet">
            			    <h4>Recent Tweets</h4>
