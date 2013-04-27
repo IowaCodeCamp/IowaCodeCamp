@@ -1,5 +1,8 @@
 # ReSharper meta directory
 _ReSharper*
+*Resharper*.*
+_ReSharper*/
+*.[Rr]e[Ss]harper
 
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
 bin
@@ -8,6 +11,11 @@ obj
 #OS junk files
 [Tt]humbs.db
 *.DS_Store
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
 
 #Visual Studio files
 *.[Oo]bj
@@ -47,3 +55,7 @@ packages/
 #ncrunch
 *ncrunch*
 *crunch*.local.xml
+
+# Project specific
+*.7z
+*.zip
