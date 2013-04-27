@@ -16,11 +16,11 @@
         #speakers ul {
             list-style-type: none;
         }
-        
         #speakers h3 {
             display: block;
             clear:left;
             padding-top:20px;
+            font-family:Arial,Helvetica;
         }
         #speakers img{
         	margin-right:10px; float: left;
@@ -30,6 +30,7 @@
         	margin:0 0;
         	padding:0;
         	margin-bottom:10px;
+            font-family:Arial,Helvetica;
         }
     </style>
 
@@ -39,15 +40,35 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
-<%--
 <cs:ComingSoon runat="server" />
---%>
 
     <div id="speakers">
 
+<%--
 <a href="https://docs.google.com/open?id=0B5P5ekZgdxegUzg0bVBZZHh3Rk0">Open in Google Docs</a>
+--%>
 
+<%--
 <iframe src="https://docs.google.com/open?id=0B5P5ekZgdxegUzg0bVBZZHh3Rk0&pid=explorer&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
+--%>
+
+<% foreach (var speaker in CurrentSpeaker.List())
+   {%>
+   
+<h3 id="<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName%></h3>
+<img src="<%=SpeakerImageUrl(speaker.HeadshotFile)%>" width="90" alt="" />
+<p><%=speaker.SpeakerBio%>
+</p>
+<%
+   	foreach (var speakerSession in CurrentSession.SpeakerSessions(speaker.SpeakerKey))
+   	{
+%>
+<p>
+  <%=speakerSession.SessionTime%> : <%=speakerSession.Room %> : <%=speakerSession.Title %> (<%=speakerSession.SessionLevel %>)<br />
+</p>
+<%
+   }
+   } %>
 
 <%--
 <h3 id="SergioPereira">Sergio Pereira</h3>
@@ -57,16 +78,12 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 </p>
 --%>
 
-
 <%--
 <h3 id="_________">__________</h3>
 <img src="<%= SpeakerImageUrl("") %>" width="90" alt="" />
 <p>
 </p>
 --%>
-
-
-    
     </div>
     <div style="height:800px;">&nbsp;</div>
 </asp:Content>
