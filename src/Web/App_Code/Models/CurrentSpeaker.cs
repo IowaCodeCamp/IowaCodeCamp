@@ -11,5 +11,14 @@ namespace Models
 
 			return ctx.CurrentSpeakers.OrderBy(currentSpeaker => currentSpeaker.SpeakerName).ToList();
 		}
+
+		public static CurrentSpeaker Select(int speakerKey)
+		{
+			var ctx = new ICCData();
+
+			return ctx.CurrentSpeakers
+				.Where(currentSpeaker => currentSpeaker.SpeakerKey == speakerKey)
+				.First();
+		}
 	}
 }
