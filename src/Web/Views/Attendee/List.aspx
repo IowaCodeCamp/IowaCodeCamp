@@ -22,7 +22,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div id="tweet-this">
-      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://iowacodecamp.com" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others! #ICC10" data-count="vertical" data-via="IowaCodeCamp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://iowacodecamp.com" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others! #ICC11" data-count="vertical" data-via="IowaCodeCamp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!
     </div>
     <div style="font-size:28px;">
@@ -30,12 +30,10 @@
 <%--        <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>--%>
     </div>
     <div>
-    <%--
       <p style="font-size:medium;">
         Don't miss out, 
         <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too! 
       </p>
-      --%>
 
         <a href="<%= ResolveUrl("~/attendee/register") %>">
             <img src="/images/registernow.jpg" alt="Register Now!" border="0"/ width="100" height="100">

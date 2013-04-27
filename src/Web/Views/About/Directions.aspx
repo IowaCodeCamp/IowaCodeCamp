@@ -26,10 +26,10 @@
     
 <%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
 
-    <h3><a href="https://go.dmacc.edu/west/Pages/map.aspx" target="_blank">Directions to Iowa Code Camp - DMACC West Campus</a></h3>
+    <h3>Directions to the Coralville Marriott Hotel & Conference Center can be obtained from <a href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/" target="_blank">their web site.</a></h3>
     <br /><br />
     
-    
+<%--
     <h4>From the North/South on I-35</h4>
 
     <p>
@@ -81,6 +81,7 @@
     <h3>Hotel Recommendations</h3><br /><br />
     <h4><a target="_blank" href="http://www.holidayinn.com/hotels/us/en/west-des-moines/dsmwm/hoteldetail">Holiday Inn Express</a></h4><br />
     <h4><a target="_blank" href="https://wwws.druryhotels.com/propertyoverview.aspx?property=0144">Drury Inn</a></h4><br />
+--%>
 
 </asp:Content>
 
