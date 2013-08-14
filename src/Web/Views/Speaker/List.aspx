@@ -40,7 +40,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
+<%--
 <cs:ComingSoon runat="server" />
+--%>
 
     <div id="speakers">
 
@@ -56,7 +58,7 @@
    {%>
    
 <h3 id="<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName%></h3>
-<img src="<%=SpeakerImageUrl(speaker.HeadshotFile)%>" width="90" alt="" />
+<!--<img src="<%=SpeakerImageUrl(speaker.HeadshotFile)%>" width="90" alt="" />-->
 <p><%=speaker.SpeakerBio%>
 </p>
 <%
@@ -64,12 +66,29 @@
    	{
 %>
 <p>
-  <%=speakerSession.SessionTime%> : <%=speakerSession.Room %> : <%=speakerSession.Title %> (<%=speakerSession.SessionLevel %>)<br />
+  <%=speakerSession.SessionTime%> : <%=speakerSession.Room %> : <%=speakerSession.Title %> (Level: <%=speakerSession.SessionLevel %>)<br />
 </p>
 <%
    }
    } %>
 
+   
+<br>
+<h2>Session Levels</h2> (see <a href="http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx">http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx</a>)
+<br><br>
+<b>Level 100 Description:</b><br>
+Introductory and overview material. Assumes little or no expertise with topic and covers topic concepts, functions, features, and benefits.
+<br><br>
+<b>Level 200 Description:</b><br>
+Intermediate material. Assumes 100-level knowledge and provides specific details about the topic.
+<br><br>
+<b>Level 300 Description:</b><br>
+Advanced material. Assumes 200-level knowledge, in-depth understanding of features in a real-world environment, and strong coding skills. Provides a detailed technical overview of a subset of product/technology features, covering architecture, performance, migration, deployment, and development.
+<br><br>
+<b>Level 400 Description:</b><br>
+Expert material. Assumes a deep level of technical knowledge and experience and a detailed, thorough understanding of topic. Provides expert-to-expert interaction and coverage of specialized topics.
+
+   
 <%--
 <h3 id="SergioPereira">Sergio Pereira</h3>
 <img src="<%= SpeakerImageUrl("sergio-profile_90_117.jpg") %>" width="90" alt="" />
@@ -85,6 +104,5 @@ If you don't see Sergio in front of his computer screen, you will probably find 
 </p>
 --%>
     </div>
-    <div style="height:800px;">&nbsp;</div>
 </asp:Content>
 

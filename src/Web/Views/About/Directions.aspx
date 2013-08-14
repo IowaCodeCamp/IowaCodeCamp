@@ -26,8 +26,10 @@
     
 <%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
 
-    <h3>Directions to the Coralville Marriott Hotel & Conference Center can be obtained from <a href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/" target="_blank">their web site.</a></h3>
+    <h3>Directions to the Coralville Marriott Hotel & Conference Center</h3><br>Available at <a href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/" target="_blank">their web site.</a>
     <br /><br />
+	There are a number of other hotels in the immediate area.<br>
+	See <a href="https://www.google.com/maps/preview#!q=hotels&data=!4m10!1m9!4m8!1m3!1d10336!2d-91.5585167!3d41.6815581!3m2!1i1280!2i666!4f13.1">the map here.</a>
     
 <%--
     <h4>From the North/South on I-35</h4>

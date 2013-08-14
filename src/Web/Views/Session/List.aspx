@@ -37,7 +37,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" runat="Server">
 
+<%--
 <cs:ComingSoon runat="server" />
+--%>
  
     <div id="sessions">
 
@@ -59,7 +61,7 @@
   <h3><%=session.Title %></h3>
   <p><%=session.Description %></p>
   <p>
-  <%=session.SessionTime%> : <%=session.Room %> : <%=session.Title %> (<%=session.SessionLevel %>)<br />
+  <%=session.SessionTime%> : <%=session.Room %> : <%=session.Title %> (Level: <%=session.SessionLevel %>)<br />
   Speaker: <%=speaker.SpeakerName %>
   </p>
 </li>
@@ -69,6 +71,20 @@
 <% } %>
 
 </ul>
+<br>
+<h2>Session Levels</h2> (see <a href="http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx">http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx</a>)
+<br><br>
+<b>Level 100 Description:</b><br>
+Introductory and overview material. Assumes little or no expertise with topic and covers topic concepts, functions, features, and benefits.
+<br><br>
+<b>Level 200 Description:</b><br>
+Intermediate material. Assumes 100-level knowledge and provides specific details about the topic.
+<br><br>
+<b>Level 300 Description:</b><br>
+Advanced material. Assumes 200-level knowledge, in-depth understanding of features in a real-world environment, and strong coding skills. Provides a detailed technical overview of a subset of product/technology features, covering architecture, performance, migration, deployment, and development.
+<br><br>
+<b>Level 400 Description:</b><br>
+Expert material. Assumes a deep level of technical knowledge and experience and a detailed, thorough understanding of topic. Provides expert-to-expert interaction and coverage of specialized topics.
 
 <%--<ul>
     <li>
