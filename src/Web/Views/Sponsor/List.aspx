@@ -26,11 +26,11 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
 </p>
 <br />
 
-<%--
     <a name="platinum"></a>
     <h2>Platinum Sponsors</h2>
     <hr />
 
+<%--
 
 	<a href="http://www.dice.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("dice.png")%>" alt="Dice" class="sponsors" />
@@ -61,13 +61,19 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <br />
 --%>
 
-<%--
     <br />
 
     <a name="event"></a>
-    <h2>Post-Camp Event Sponsor</h2>
+    <h2>Food and Networking Sponsorship</h2>
     <hr />
 
+	<b>Lunch Sponsor (one sponsor only)</b><br/>
+	
+	<br/>
+	<b>Post Camp Networking (one sponsor only)</b><br/>
+	
+<%--
+	
     <a href="http://www.webfilings.com/" target="_blank">
         <img style="border-width:0px" src='<%=SponsorImageUrl("WebFilings.png") %>' alt="WebFilings" class="sponsors" width="300"/>
     </a>
@@ -80,6 +86,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <h2>Gold Sponsors</h2>
     <hr />
 
+<%--
     <a href="http://www.microsoft.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" width="300"/>
     </a>
@@ -87,8 +94,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <a href="http://www.ilmservice.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ilm_logo.png") %>' alt="ilm" class="sponsors" width="300"/>
     </a>
-	
-<%--
+
     <a href="http://www.stoneriver.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" width="300" />
     </a>
@@ -115,7 +121,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <h2>Silver Sponsors</h2>
     <hr />
 
-    <br />
+<%--
 
     <a href="http://www.discountasp.net/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="180"/>
@@ -136,9 +142,6 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <a href="http://www.stoneriver.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors"  width="220"/>
     </a>
-
-	
-<%--
 
     <a href="http://ajisoftware.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ajisoftware.png") %>' alt="ajisoftware" class="sponsors" width="180"/>
@@ -186,6 +189,9 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <h2>Supporters</h2>
     <hr />
 
+		
+<%--
+
     <a href="http://www.componentone.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("componentone_gc_logo_horizonal_black.png") %>' alt="Component One" class="sponsors" width="180"/>
     </a> 
@@ -231,8 +237,6 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <img style="border-width:0px" src='<%= SponsorImageUrl("Vuze_logo.jpg") %>' alt="Vuze" class="sponsors" width="150" />
     </a> 
 
-	
-<%--
     <a href="http://www.learnvisualstudio.net/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("learnvisualstudio_logo.png") %>" alt="LearnVisualStudio.Net" class="sponsors" />
     </a>
