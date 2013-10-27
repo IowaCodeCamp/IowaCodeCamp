@@ -23,9 +23,15 @@
 
     <div id="sessions">
 
+<%--
 <p><br />
 <a target="_blank" href="/public/Iowa Code Camp - Spring 2013 - Sponsors and Schedule.pdf">Click here for a PDF of the session schedule!</a><br />
 Note that this document will be included in your attendee packet on Saturday.
+</p>
+--%>
+
+<p><br />
+For the moment, see the <a href="/session/list">Sessions</a> and <a href="/speaker/list">Speakers</a> pages for session times.
 </p>
 
 

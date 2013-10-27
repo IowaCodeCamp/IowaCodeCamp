@@ -58,7 +58,7 @@
    {%>
    
 <h3 id="<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName%></h3>
-<!--<img src="<%=SpeakerImageUrl(speaker.HeadshotFile)%>" width="90" alt="" />-->
+<img src="<%=SpeakerImageUrl(speaker.HeadshotFile)%>" width="90" alt="" />
 <p><%=speaker.SpeakerBio%>
 </p>
 <%

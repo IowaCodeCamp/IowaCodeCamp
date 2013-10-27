@@ -88,5 +88,20 @@
     <h4><a target="_blank" href="https://wwws.druryhotels.com/propertyoverview.aspx?property=0144">Drury Inn</a></h4><br />
 --%>
 
+    <h3>Hotel Recommendations</h3><br /><br />
+<b><a href="http://www.americinn.com/hotels/IA/Ankeny">AmericInn Lodge & Suites</a></b><br/>
+    - 20 rooms @ $84.99/night - normally $99.99/night<br/>
+	- Room Block Code: Iowa Code Camp<br/>
+    - Free WiFi<br/>
+    - Free hot breakfast<br/>
+    - Indoor heated pool<br/>
+<br/>
+
+<b><a href="http://www.comfortinn.com/hotel-ankeny-iowa-IA109">Comfort Inn</a></b><br/>
+    - $74.99/night - normally $94.99/night<br/>
+    - Free WiFi<br/>
+    - Free hot breakfast<br/>
+    - Indoor heated pool<br/>
+
 </asp:Content>
 

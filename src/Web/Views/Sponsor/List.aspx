@@ -93,8 +93,16 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <img style="border-width:0px" src="<%=SponsorImageUrl("CRi.jpg")%>" alt="CRi" class="sponsors" width="200"/>
     </a>    
 
-	<a href="http://executiveresources.com/" target="_blank">
+	<a href="http://www.dice.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("dice.png")%>" alt="Dice" class="sponsors" width="200"/>
+    </a>    
+	
+	<a href="http://executiveresources.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("ERLogo.gif")%>" alt="Executive Resources" class="sponsors" width="200"/>
+    </a>    
+
+	<a href="http://www.hudl.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("hudl-logo.png")%>" alt="Executive Resources" class="sponsors" width="200"/>
     </a>    
 
 	<a href="http://www.uiowa.edu" target="_blank">
@@ -102,7 +110,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     </a>    
 
 <%--
-    <a href="http://www.microsoft.com/" target="_blank">
+    <a href="http://www.microsoft.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" width="300"/>
     </a>
 
@@ -143,6 +151,9 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" width="180"/>
     </a>
 
+    <a href="http://www.visionary.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("Visionary-4PMS.png") %>' alt="Visionary" class="sponsors" width="180"/>
+    </a>
 	
 <%--
 
@@ -202,11 +213,26 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <h2>Supporters</h2>
     <hr />
 
+    <a href="http://www.ssware.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
+    </a>
+
     <a href="http://oreilly.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" width="150" />
     </a> 
 
-		
+	<a href="http://www.pearsoned.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("pearsoned_ug_logo.jpg") %>' alt="Pearson Education" class="sponsors" />
+    </a> 
+
+    <a href="http://www.scootersoftware.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
+    </a>
+
+	<a href="http://serversilo.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("ServersiloLogo.png")%>" alt="Executive Resources" class="sponsors" width="150"/>
+    </a>    
+	
 <%--
 
     <a href="http://www.componentone.com/" target="_blank">
@@ -216,10 +242,6 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <a href="http://www.linqpad.net/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("linqpad.png") %>" alt="LinqPad" class="sponsors" width="75"/>
 	<!--<a href="http://www.linqpad.net/" target="_blank">LINQPad</a><br />-->
-    </a>
-
-    <a href="http://www.ssware.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
     </a>
 
     <a href="http://www.newhorizonscr.com" target="_blank">
@@ -258,9 +280,6 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
     </a>
     
-    <a href="http://www.scootersoftware.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
-    </a>
     
     <a href="http://www.tekpub.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("tekpub.png") %>' alt="Tekpub" class="sponsors" />
