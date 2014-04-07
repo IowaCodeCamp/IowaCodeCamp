@@ -7,7 +7,7 @@ public class Config
 {
     public static int MaxAttendees
     {
-        get { return int.Parse(Get("MaxAttendees", "335")); }
+        get { return int.Parse(Get("MaxAttendees", "300")); }
     }
 
 	public static string EventFolder

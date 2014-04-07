@@ -40,9 +40,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
-<%--
 <cs:ComingSoon runat="server" />
---%>
 
     <div id="speakers">
 

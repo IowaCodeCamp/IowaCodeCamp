@@ -29,6 +29,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <a name="platinum"></a>
     <h2>After Party and Platinum Sponsors</h2>
     <hr />
+<%--
 
 	<a href="http://www.metacommunications.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo.png")%>" alt="Meta Communications" class="sponsors" width="300"/>
@@ -37,9 +38,6 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
-	
-
-<%--
 
 	<a href="http://www.dice.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("dice.png")%>" alt="Dice" class="sponsors" />
@@ -88,6 +86,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <a name="gold"></a>
     <h2>Gold Sponsors</h2>
     <hr />
+<%--
 	
 	<a href="http://www.clientresourcesinc.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("CRi.jpg")%>" alt="CRi" class="sponsors" width="200"/>
@@ -109,7 +108,6 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <img style="border-width:0px" src="<%=SponsorImageUrl("DomeWdL-M.gif")%>" alt="University of Iowa" class="sponsors" width="200"/>
     </a>    
 
-<%--
     <a href="http://www.microsoft.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" width="300"/>
     </a>
@@ -142,6 +140,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <a name="silver"></a>
     <h2>Silver Sponsors</h2>
     <hr />
+<%--
 
     <a href="http://github.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("GitHub_Logo.gif") %>' alt="github" class="sponsors" width="180" />
@@ -155,8 +154,6 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <img style="border-width:0px" src='<%=SponsorImageUrl("Visionary-4PMS.png") %>' alt="Visionary" class="sponsors" width="180"/>
     </a>
 	
-<%--
-
     <a href="http://www.discountasp.net/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="180"/>
     </a>     
@@ -212,6 +209,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     <a name="supporters"></a>
     <h2>Supporters</h2>
     <hr />
+<%--
 
     <a href="http://www.ssware.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
@@ -232,8 +230,6 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
 	<a href="http://serversilo.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("ServersiloLogo.png")%>" alt="Executive Resources" class="sponsors" width="150"/>
     </a>    
-	
-<%--
 
     <a href="http://www.componentone.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("componentone_gc_logo_horizonal_black.png") %>' alt="Component One" class="sponsors" width="180"/>

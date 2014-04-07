@@ -40,15 +40,13 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
-<%--
 <cs:ComingSoon runat="server" /> 
---%>
 
     <div id="sessions">
 
 <%--
 <p><br />
-<a target="_blank" href="/public/Iowa Code Camp - Spring 2013 - Sponsors and Schedule.pdf">Click here for a PDF of the session schedule!</a><br />
+<a target="_blank" href="/public/Iowa Code Camp - Spring 2014 - Sponsors and Schedule.pdf">Click here for a PDF of the session schedule!</a><br />
 Note that this document will be included in your attendee packet on Saturday.
 </p>
 --%>

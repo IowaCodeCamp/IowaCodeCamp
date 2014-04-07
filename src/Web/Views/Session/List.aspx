@@ -37,9 +37,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" runat="Server">
 
-<%--
 <cs:ComingSoon runat="server" />
---%>
  
     <div id="sessions">
 

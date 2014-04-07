@@ -45,14 +45,13 @@
     515-633-2407<br /><br />
 --%>
 
-<%--
-    <br /><br /><br />
     <h3>Event Location</h3><br />
     <h4><a target="_blank" href="http://www.marriott.com/hotels/travel/cidic-coralville-marriott-hotel-and-conference-center/">Coralville Marriott Hotel & Conference Center</a></h4><br />
     300 East 9th St.<br />
     Coralville, Iowa 52241<br />
     (319) 688-4000<br /><br />
     
+<%--
     <h3>Recommended Hotel</h3><br />
     Is the same hotel as the event is at. Rate for Iowa Code Camp is $99 per night.
 --%>
