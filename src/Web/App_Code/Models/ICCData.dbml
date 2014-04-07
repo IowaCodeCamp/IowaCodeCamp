@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Database Name="iowacodecamp" Class="ICCData" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=sohl-mobile1\sql2008;Initial Catalog=iowacodecamp;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="IowaCodeCampConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="iowacodecamp" Class="ICCData" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=iowacodecamp;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="IowaCodeCampConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.NewsItems" Member="NewsItems">
     <Type Name="NewsItem">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -208,6 +207,7 @@
       <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="SessionTimeOrdinal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoomOrdinal" Type="System.Int32" DbType="int" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.CurrentSpeakers" Member="CurrentSpeakers">

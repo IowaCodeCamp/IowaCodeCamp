@@ -22,7 +22,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div id="tweet-this">
-      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://iowacodecamp.com" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others! #ICC11" data-count="vertical" data-via="IowaCodeCamp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://iowacodecamp.com" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others! #ICC12" data-count="vertical" data-via="IowaCodeCamp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!
     </div>
     <div style="font-size:28px;">

@@ -10,7 +10,7 @@ namespace Models
 			var ctx = new ICCData();
 
 			return ctx.CurrentSessions
-				.OrderBy(currentSession => currentSession.Room)
+				.OrderBy(currentSession => currentSession.RoomOrdinal)
 				.OrderBy(currentSession => currentSession.SessionTimeOrdinal)
 				.ToList();
 		}
@@ -29,11 +29,22 @@ namespace Models
 			var ctx = new ICCData();
 
 			return ctx.CurrentSessions
-				.OrderBy(currentSession => currentSession.Room)
+				.OrderBy(currentSession => currentSession.RoomOrdinal)
 				.OrderBy(currentSession => currentSession.SessionTimeOrdinal)
 				.Where(currentSession => currentSession.SpeakerKey == speakerKey)
 				.ToList();
 		}
+
+		public static List<CurrentSession> SessionSchedule()
+		{
+			var ctx = new ICCData();
+
+			return ctx.CurrentSessions
+				.OrderBy(currentSession => currentSession.RoomOrdinal)
+				.OrderBy(currentSession => currentSession.SessionTimeOrdinal)
+				.ToList();
+		}
+
 
 	}
 }

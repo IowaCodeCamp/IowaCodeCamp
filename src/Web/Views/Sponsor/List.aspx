@@ -27,7 +27,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
 <br />
 
     <a name="platinum"></a>
-    <h2>Platinum and After Party Sponsors</h2>
+    <h2>After Party and Platinum Sponsors</h2>
     <hr />
 
 	<a href="http://www.metacommunications.com/" target="_blank">
@@ -35,7 +35,7 @@ If you want to be a sponsor of our next event, contact Zac Harlan at <strong>spo
     </a>    
 	
 	<a href="http://www.qci.com" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("qci_logo.gif")%>" alt="QCI" class="sponsors" width="300"/>
+    <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
 	
 
