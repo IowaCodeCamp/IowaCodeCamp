@@ -22,7 +22,10 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 <p>
-If you want to be a sponsor of our next event, contact Zac Harlan at <strong>sponsors [at] iowacodecamp d0t com</strong>.
+If you want to be a sponsor of our next event, contact us at <strong>sponsors [at] iowacodecamp d0t com</strong>.
+</p>
+<p>
+Download <a href="http://iowacodecamp.com/public/Iowa%20Code%20Camp%20-%202014%20Sponsorship%20Levels.pdf">this document</a> to learn about our sponsorship programs.
 </p>
 <br />
 
