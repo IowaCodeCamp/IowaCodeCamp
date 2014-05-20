@@ -32,12 +32,16 @@ Download <a href="http://iowacodecamp.com/public/Iowa%20Code%20Camp%20-%202014%2
     <a name="platinum"></a>
     <h2>After Party and Platinum Sponsors</h2>
     <hr />
-<%--
 
-	<a href="http://www.metacommunications.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo.png")%>" alt="Meta Communications" class="sponsors" width="300"/>
+	<a href="http://www.iowajpec.org/entrepreneur-support/deviowa/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("UofIDevBootCamp.png")%>" alt="University of Iowa - Summer Developer Bootcamp" class="sponsors" width="200"/>
     </a>    
 	
+	<a href="http://www.metacommunications.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo-large.png")%>" alt="Meta Communications" class="sponsors" width="300"/>
+    </a>    
+
+<%--
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
@@ -143,6 +147,11 @@ Download <a href="http://iowacodecamp.com/public/Iowa%20Code%20Camp%20-%202014%2
     <a name="silver"></a>
     <h2>Silver Sponsors</h2>
     <hr />
+
+    <a href="http://www.visionary.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("Visionary-4PMS.png") %>' alt="Visionary" class="sponsors" width="180"/>
+    </a>
+	
 <%--
 
     <a href="http://github.com" target="_blank">
@@ -153,14 +162,9 @@ Download <a href="http://iowacodecamp.com/public/Iowa%20Code%20Camp%20-%202014%2
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" width="180"/>
     </a>
 
-    <a href="http://www.visionary.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("Visionary-4PMS.png") %>' alt="Visionary" class="sponsors" width="180"/>
-    </a>
-	
     <a href="http://www.discountasp.net/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="180"/>
     </a>     
-
 
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("qci_logo.gif")%>" alt="QCI" class="sponsors"  width="180"/>
@@ -212,11 +216,16 @@ Download <a href="http://iowacodecamp.com/public/Iowa%20Code%20Camp%20-%202014%2
     <a name="supporters"></a>
     <h2>Supporters</h2>
     <hr />
-<%--
 
     <a href="http://www.ssware.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
     </a>
+
+    <a href="http://www.wrox.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("WROXLogo_white.gif") %>' alt="Wrox" class="sponsors" width="150" />
+    </a> 
+
+<%--
 
     <a href="http://oreilly.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" width="150" />
@@ -261,10 +270,6 @@ Download <a href="http://iowacodecamp.com/public/Iowa%20Code%20Camp%20-%202014%2
 
     <a href="http://www.typemock.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("typemock.jpg") %>' alt="TypeMock" class="sponsors" width="150" />
-    </a> 
-
-    <a href="http://www.wiley.com/" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("wiley.jpg") %>' alt="Wiley" class="sponsors" width="150" />
     </a> 
 
     <a href="http://www.vuze.com" target="_blank">
