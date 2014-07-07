@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Speakers | Iowa Code Camp" Language="C#" Inherits="BasePage" MasterPageFile="~/Views/Layouts/Site.master" %>
 <%@ Register src="../Shared/ComingSoon.ascx" tagname="ComingSoon" tagprefix="cs" %>
+<%@ Register src="../Shared/ScheduleAppInfo.ascx" tagname="AppInfo" tagprefix="cs" %>
 <%@ Import Namespace="Models" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
@@ -41,6 +42,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 <cs:ComingSoon runat="server" />
+<cs:AppInfo runat="server" /> 
 
     <div id="speakers">
 
@@ -58,13 +60,13 @@
 <h3 id="<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName%></h3>
 <img src="<%=SpeakerImageUrl(speaker.HeadshotFile)%>" width="90" alt="" />
 <p><%=speaker.SpeakerBio%>
-</p>
+ - <a href="<%=speaker.WebSite%>"><%=speaker.WebSite%></a></p>
 <%
    	foreach (var speakerSession in CurrentSession.SpeakerSessions(speaker.SpeakerKey))
    	{
 %>
 <p>
-  <%=speakerSession.SessionTime%> : <%=speakerSession.Room %> : <%=speakerSession.Title %> (Level: <%=speakerSession.SessionLevel %>)<br />
+  <%=speakerSession.SessionTime%> : <%=speakerSession.Room %> : <a href="/session/list#<%=speakerSession.SessionKey %>"><%=speakerSession.Title %></a> (Level: <%=speakerSession.SessionLevel %>)<br />
 </p>
 <%
    }

@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Register | Iowa Code Camp" Language="C#" Inherits="System.Web.Mvc.ViewPage<RegisterPageModel>" MasterPageFile="~/Views/Layouts/Site.master" %>
+<%@ Register src="../Shared/ComingSoon.ascx" tagname="ComingSoon" tagprefix="cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
 <script type="text/javascript">    
@@ -42,16 +43,17 @@
 </style>
 
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <h1>Register for Iowa Code Camp <%= (Model.CurrentAttendeeCount >= Config.MaxAttendees)? "*Waitlist*":"" %></h1>
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 <cs:ComingSoon runat="server" />
 
 <%--
 <strong>Registration is closed. See you Saturday!</strong>
 --%>
-<%--
 
 <p>So you're signing up for Iowa Code Camp? You know it's free right? If you'd like to leave
 a message on the attendees page, add your comments last and they'll show up with your first name.</p>
@@ -87,11 +89,11 @@ a message on the attendees page, add your comments last and they'll show up with
     
 </fieldset>
 </form>
---%>
 
 <%= Html.ClientSideValidation<RegisterPageModel>() %>
 
 </asp:Content>
+
 <asp:Content ID="Content4" ContentPlaceHolderID="secondaryPH" Runat="Server">
 </asp:Content>
 

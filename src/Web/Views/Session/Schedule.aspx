@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Session Schedule | Iowa Code Camp" Language="C#" MasterPageFile="~/Views/Layouts/Site.master" %>
 <%@ Register src="../Shared/ComingSoon.ascx" tagname="ComingSoon" tagprefix="cs" %>
+<%@ Register src="../Shared/ScheduleAppInfo.ascx" tagname="AppInfo" tagprefix="cs" %>
 <%@ Import Namespace="Models" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
@@ -41,6 +42,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 <cs:ComingSoon runat="server" /> 
+<cs:AppInfo runat="server" /> 
 
     <div id="sessions">
 
@@ -86,8 +88,8 @@ For the moment, see the <a href="/list">Sessions</a> and <a href="/Speaker/list"
 
   <tr>
     <td style="white-space: nowrap;"><%=session.Room %></td>
-    <td><%=speaker.SpeakerName %></td>
-    <td><%=session.Title %></td>
+    <td><a href="/speaker/list#<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName %></a></td>
+    <td><a href="/session/list#<%=session.SessionKey %>"><%=session.Title %></a></td>
   </tr>
   
 <%  } %>

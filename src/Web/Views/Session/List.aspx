@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Sessions | Iowa Code Camp" Language="C#" Inherits="BasePage" MasterPageFile="~/Views/Layouts/Site.master" %>
 <%@ Register src="../Shared/ComingSoon.ascx" tagname="ComingSoon" tagprefix="cs" %>
+<%@ Register src="../Shared/ScheduleAppInfo.ascx" tagname="AppInfo" tagprefix="cs" %>
 <%@ Import Namespace="Models" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" runat="Server">
@@ -38,6 +39,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" runat="Server">
 
 <cs:ComingSoon runat="server" />
+<cs:AppInfo runat="server" /> 
  
     <div id="sessions">
 
@@ -56,11 +58,11 @@
 %>
   
 <li>
-  <h3><%=session.Title %></h3>
+  <h3 id="<%=session.SessionKey %>"><%=session.Title %></h3>
   <p><%=session.Description %></p>
   <p>
   <%=session.SessionTime%> : <%=session.Room %> : <%=session.Title %> (Level: <%=session.SessionLevel %>)<br />
-  Speaker: <%=speaker.SpeakerName %>
+  Speaker: <a href="/speaker/list#<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName %></a>
   </p>
 </li>
 

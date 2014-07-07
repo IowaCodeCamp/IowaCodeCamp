@@ -19,17 +19,16 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
-        Call for speakers is open. Submit your talks <a href="https://bit.ly/ICCSpring2014SpeakerSubmission" target="_blank">here</a>.
     <%--
+        Call for speakers is open. Submit your talks <a href="https://bit.ly/ICCSpring2014SpeakerSubmission" target="_blank">here</a>.
+    --%>
         <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
         </p>
-    --%>
-    <%--
+
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         Registration is now open. Register <a href="http://www.iowacodecamp.com/attendee/register">here</a>.
         </p>
-    --%>
 
 	<div class="contentarea">
 	<%--
@@ -48,14 +47,13 @@
             <strong>
             Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>
             </strong><br /><br />
-<%--
+
 			<h4>Download an App for our schedule!</h4>
 			<ul style="padding-left:30px;">
 				<li style="padding-top:3px;"><a href="https://market.android.com/details?id=com.iowacodecamp.android">Android</a></li>
 				<li style="padding-top:3px;"><a href="http://itunes.apple.com/us/app/iowacodecamp/id468254555?ls=1&mt=8">iPhone</a></li>
 				<li style="padding-top:3px;"><a href="http://www.windowsphone.com/en-US/apps/c163bff0-22f3-4d82-b63d-047c9e121b48">Windows Phone 7</a></li>
 			</ul>
---%>
 			<br /><br />
 			
             <p>
