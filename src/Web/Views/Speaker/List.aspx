@@ -45,11 +45,13 @@
 <cs:AppInfo runat="server" /> 
 
     <div id="speakers">
+<br/>
 
 <%--
-<a href="https://docs.google.com/open?id=0B5P5ekZgdxegUzg0bVBZZHh3Rk0">Open in Google Docs</a>
---%>
-
+<p style="margin:1ex">
+<a href="/docs/Iowa%20Code%20Camp%20-%20Spring%202014%20-%20Speakers.pdf">Speakers and Sessions in a PDF</a>
+</p>
+-->
 <%--
 <iframe src="https://docs.google.com/open?id=0B5P5ekZgdxegUzg0bVBZZHh3Rk0&pid=explorer&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
 --%>

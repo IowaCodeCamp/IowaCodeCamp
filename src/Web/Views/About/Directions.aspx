@@ -12,8 +12,12 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 	
-<%--
     <h3>Event Location</h3><br />
+    <h4><a target="_blank" href="http://www.ffaenrichmentcenter.com/">FFA Enrichment Center</a></h4><br />
+    1055 SW Prairie Trail Parkway<br />
+    Ankeny, Iowa 50023<br />
+
+<%--
     <h4><a target="_blank" href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a></h4><br />
     7725 Kirkwood Boulevard S.W.<br />
     Cedar Rapids, Iowa 52404<br />
@@ -27,10 +31,12 @@
 <%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
 
 
+<%--
     <h3>Directions to the Coralville Marriott Hotel & Conference Center</h3><br>Available at <a href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/" target="_blank">their web site.</a>
     <br /><br />
 	There are a number of other hotels in the immediate area.<br>
 	See <a href="https://www.google.com/maps/preview#!q=hotels&data=!4m10!1m9!4m8!1m3!1d10336!2d-91.5585167!3d41.6815581!3m2!1i1280!2i666!4f13.1">the map here.</a>
+ --%>    
     
 <%--
     <h4>From the North/South on I-35</h4>
@@ -86,8 +92,7 @@
     <h4><a target="_blank" href="https://wwws.druryhotels.com/propertyoverview.aspx?property=0144">Drury Inn</a></h4><br />
 --%>
 
-<%--
-	
+<br/>	
     <h3>Hotel Recommendations</h3><br /><br />
 <b><a href="http://www.americinn.com/hotels/IA/Ankeny">AmericInn Lodge & Suites</a></b><br/>
     - 20 rooms @ $84.99/night - normally $99.99/night<br/>
@@ -102,7 +107,6 @@
     - Free WiFi<br/>
     - Free hot breakfast<br/>
     - Indoor heated pool<br/>
---%>
 
 </asp:Content>
 

@@ -17,21 +17,23 @@
     { $("#attendees").addClass("active"); });
 </script>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
 <h2><%= Event.NextEventName %> - Registered Attendees</h2>
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 <cs:ComingSoon runat="server" />
 
+
+	<%--
     <div id="tweet-this">
 	  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.iowacodecamp.com/attendee/register" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!" data-via="iowacodecamp" data-count="none" data-hashtags="ICC13">Tweet</a>
 	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	  <%--	  
-      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://iowacodecamp.com" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!" data-count="vertical" data-via="IowaCodeCamp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	  --%>
       I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!
     </div>
+	--%>
 	
 	
 	<%--
@@ -40,7 +42,9 @@
         <a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a>
     </div>
 	--%>
+
     <div>
+		<%--
       <p style="font-size:medium;">
         Don't miss out, 
         <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too! 
@@ -48,7 +52,8 @@
         <a href="<%= ResolveUrl("~/attendee/register") %>">
             <img src="/images/registernow.jpg" alt="Register Now!" border="0"/ width="100" height="100">
         </a>
-
+		--%>
+		
       <p style="font-size:medium;">Here's what some attendees are saying about Iowa Code Camp:</p>
       
         <% foreach (var attendee in Model.Attendees.Where(a => !string.IsNullOrEmpty(a.Comments))) { %>

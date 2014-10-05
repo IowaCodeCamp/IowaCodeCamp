@@ -25,7 +25,7 @@
 If you want to be a sponsor of our next event, contact us at <strong>sponsors [at] iowacodecamp d0t com</strong>.
 </p>
 <p>
-Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship_Levels.pdf">this document</a> to learn about our sponsorship programs.
+Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_Levels.pdf">this document</a> to learn about our sponsorship programs.
 </p>
 <br />
 
@@ -33,6 +33,7 @@ Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship
     <h2>After Party and Platinum Sponsors</h2>
     <hr />
 
+<%--
 	<a href="http://www.iowajpec.org/entrepreneur-support/deviowa/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("UofIDevBootCamp.png")%>" alt="University of Iowa - Summer Developer Bootcamp" class="sponsors" width="200"/>
     </a>    
@@ -41,7 +42,6 @@ Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship
     <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo-large.png")%>" alt="Meta Communications" class="sponsors" width="300"/>
     </a>    
 
-<%--
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
@@ -50,10 +50,6 @@ Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship
     <img style="border-width:0px" src="<%=SponsorImageUrl("dice.png")%>" alt="Dice" class="sponsors" />
     </a>    
 	
-    <a href="http://www.infragistics.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("infragistics.jpg") %>' alt="Jet Brains" class="sponsors" />
-    </a>    
-
 	<a href="http://aspect.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("aspect-logo.jpg")%>" alt="Aspect" class="sponsors" />
     </a>    
@@ -94,12 +90,16 @@ Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship
     <h2>Gold Sponsors</h2>
     <hr />
 	
+<%--
+	
 	<a href="http://pltnm.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("PlatinumLogo.png")%>" alt="Dice" class="sponsors" width="220"/>
     </a>    
 
-<%--
-	
+	<a href="http://vml.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("vml-horz.png")%>" alt="VML" class="sponsors" width="220"/>
+    </a>    
+
 	<a href="http://www.clientresourcesinc.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("CRi.jpg")%>" alt="CRi" class="sponsors" width="200"/>
     </a>    
@@ -153,6 +153,12 @@ Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship
     <h2>Silver Sponsors</h2>
     <hr />
 
+<%--
+
+    <a href="http://www.newhorizonscr.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("newhorizons.gif") %>' alt="New Horizons" class="sponsors" width="180"/>
+    </a>
+
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="180"/>
     </a>    
@@ -161,8 +167,6 @@ Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship
     <img style="border-width:0px" src='<%=SponsorImageUrl("Visionary-4PMS.png") %>' alt="Visionary" class="sponsors" width="180"/>
     </a>
 	
-<%--
-
     <a href="http://github.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("GitHub_Logo.gif") %>' alt="github" class="sponsors" width="180" />
     </a>
@@ -214,6 +218,12 @@ Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship
     <h2>Supporters</h2>
     <hr />
 
+<%--
+
+    <a href="http://www.codemag.com/magazine" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("CODEMagazine.png") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
+    </a>     
+
     <a href="http://www.discountasp.net/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
     </a>     
@@ -222,18 +232,20 @@ Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" width="150"/>
     </a>
 
+    <a href="http://www.infragistics.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("infragistics_logo.gif") %>' alt="Infragistics" class="sponsors"  width="150"/>
+    </a>    
+
+    <a href="http://oreilly.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" width="150" />
+    </a> 
+
     <a href="http://www.ssware.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
     </a>
 
     <a href="http://www.wrox.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("WROXLogo_white.gif") %>' alt="Wrox" class="sponsors" width="150" />
-    </a> 
-
-<%--
-
-    <a href="http://oreilly.com/" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" width="150" />
     </a> 
 
 	<a href="http://www.pearsoned.com/" target="_blank">
@@ -255,10 +267,6 @@ Download <a href="http://iowacodecamp.com/public/Iowa_Code_Camp_2014_Sponsorship
     <a href="http://www.linqpad.net/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("linqpad.png") %>" alt="LinqPad" class="sponsors" width="75"/>
 	<!--<a href="http://www.linqpad.net/" target="_blank">LINQPad</a><br />-->
-    </a>
-
-    <a href="http://www.newhorizonscr.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("newhorizons.gif") %>' alt="New Horizons" class="sponsors" />
     </a>
 
     <a href="http://www.pluralsight-training.net" target="_blank">

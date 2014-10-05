@@ -5,11 +5,11 @@
     <p style="font-size:larger;">
         <a href="http://crineta.org" target="_blank">CRineta.org</a> and  
         <a href="http://iadnug.org" target="_blank">Iowa .NET</a> 
-        are hosting the thirteenth Iowa Code Camp on July 19, 2014
+        are hosting the thirteenth Iowa Code Camp on November 1, 2014
 
-        <%--at the <a href="http://www.ffaenrichmentcenter.com">FFA Enrichment Center on the Ankeny DMACC Campus</a>.--%>
+        at the <a href="http://www.ffaenrichmentcenter.com">FFA Enrichment Center on the Ankeny DMACC Campus</a>.
         <%--at <a href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a> in Cedar Rapids.--%>
-        at <a target="_blank" href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/">Coralville Marriott Hotel & Conference Center</a> in Coralville, IA.
+        <%--at <a target="_blank" href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/">Coralville Marriott Hotel & Conference Center</a> in Coralville, IA.--%>
     <%--
         at <a href="https://go.dmacc.edu/west/pages/welcome.aspx" target="_blank">DMACC West Campus</a> in West Des Moines, IA.
     </p>
