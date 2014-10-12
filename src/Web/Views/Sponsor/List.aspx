@@ -29,23 +29,40 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
 </p>
 <br />
 
-    <a name="platinum"></a>
-    <h2>After Party and Platinum Sponsors</h2>
+    <a name="afterparty"></a>
+    <h2>After Party Sponsor</h2>
     <hr />
 
-<%--
-	<a href="http://www.iowajpec.org/entrepreneur-support/deviowa/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("UofIDevBootCamp.png")%>" alt="University of Iowa - Summer Developer Bootcamp" class="sponsors" width="200"/>
-    </a>    
-	
 	<a href="http://www.metacommunications.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo-large.png")%>" alt="Meta Communications" class="sponsors" width="300"/>
+    </a>    
+
+    <a name="platinum"></a>
+    <h2>Platinum Sponsors</h2>
+    <hr />
+
+	<a href="http://www.beaconhillstaffing.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("BHStaffing_logo.jpg")%>" alt="Beacon Hill Staffing" class="sponsors" width="300"/>
+    </a>    
+
+	<a href="http://www.garmin.com/en-US/company/careers/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("garmin-logo_300.jpg")%>" alt="Garmin - Careers" class="sponsors" width="300"/>
+    </a>    
+
+	<a href="http://www.iowajpec.org/entrepreneur-support/deviowa/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("deviowa.png")%>" alt="University of Iowa - Dev/Iowa" class="sponsors" width="300"/>
     </a>    
 
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
 
+	<a href="http://www.workiva.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("Workiva.png")%>" alt="Workiva" class="sponsors" width="300"/>
+    </a>    
+	
+
+<%--
 	<a href="http://www.dice.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("dice.png")%>" alt="Dice" class="sponsors" />
     </a>    
