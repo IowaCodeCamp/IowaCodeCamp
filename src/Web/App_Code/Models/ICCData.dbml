@@ -218,6 +218,7 @@
       <Column Name="HeadshotFile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="SpeakerBio" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="WebSite" Type="System.String" DbType="varchar(500)" CanBeNull="false" />
+      <Column Name="Twitter" Type="System.String" DbType="varchar(50)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
