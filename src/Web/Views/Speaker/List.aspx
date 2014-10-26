@@ -47,11 +47,11 @@
     <div id="speakers">
 <br/>
 
-<%--
+
 <p style="margin:1ex">
-<a href="/docs/Iowa%20Code%20Camp%20-%20Spring%202014%20-%20Speakers.pdf">Speakers and Sessions in a PDF</a>
+<a href="/docs/Iowa%20Code%20Camp%20-%20Fall%202014%20-%20Speakers.pdf">Speakers and Sessions in a PDF</a>
 </p>
--->
+
 <%--
 <iframe src="https://docs.google.com/open?id=0B5P5ekZgdxegUzg0bVBZZHh3Rk0&pid=explorer&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
 --%>
@@ -62,7 +62,7 @@
 <h3 id="<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName%></h3>
 <img src="<%=SpeakerImageUrl(speaker.HeadshotFile)%>" width="90" alt="" />
 <p><%=speaker.SpeakerBio%>
- - <a href="<%=speaker.WebSite%>"><%=speaker.WebSite%></a></p>
+ - <a href="<%=speaker.WebSite%>"><%=speaker.WebSite%></a> <a href="http://www.twitter.com/<%=speaker.Twitter%>" target="_blank"><%=speaker.Twitter%></a></p>
 <%
    	foreach (var speakerSession in CurrentSession.SpeakerSessions(speaker.SpeakerKey))
    	{
@@ -74,8 +74,8 @@
    }
    } %>
 
-   
-<br>
+ 
+<br><br><br><br><br>
 <h2>Session Levels</h2> (see <a href="http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx">http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx</a>)
 <br><br>
 <b>Level 100 Description:</b><br>

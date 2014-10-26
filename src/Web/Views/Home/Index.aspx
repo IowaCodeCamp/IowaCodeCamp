@@ -8,7 +8,9 @@
         are hosting the thirteenth Iowa Code Camp on November 1, 2014
 
         at the <a href="http://www.ffaenrichmentcenter.com">FFA Enrichment Center on the Ankeny DMACC Campus</a>.
+
         <%--at <a href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a> in Cedar Rapids.--%>
+
         <%--at <a target="_blank" href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/">Coralville Marriott Hotel & Conference Center</a> in Coralville, IA.--%>
     <%--
         at <a href="https://go.dmacc.edu/west/pages/welcome.aspx" target="_blank">DMACC West Campus</a> in West Des Moines, IA.
@@ -18,13 +20,15 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
-        <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
     <%--
+        <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         Call for speakers is open. Submit your talks <a href="https://bit.ly/ICCSpring2014SpeakerSubmission" target="_blank">here</a>.
     --%>
+    <%--
         <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
         </p>
+    --%>
 
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         Registration is now open. Register <a href="http://www.iowacodecamp.com/attendee/register">here</a>.
@@ -65,14 +69,6 @@
                 <li>No cost for attendees</li>
                 <li>Developer relevant content</li>
                 <li>Never during work hours - usually on a Saturday</li>
-            </ul>
-            <br />
-            <p>
-            What a code camp is <strong>not</strong>:
-            </p>
-            <ul style="padding-left:30px;">
-                <li>Product placement</li>
-                <li>Corporate marketing</li>
             </ul>
             <br />
             <p>

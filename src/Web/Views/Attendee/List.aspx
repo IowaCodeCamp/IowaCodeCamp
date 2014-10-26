@@ -26,15 +26,16 @@
 
 <cs:ComingSoon runat="server" />
 
+<p><b><%=Model.AttendeeCount%> Registered!</b>
 
-	<%--
+
+<%--
     <div id="tweet-this">
-	  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.iowacodecamp.com/attendee/register" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!" data-via="iowacodecamp" data-count="none" data-hashtags="ICC13">Tweet</a>
+	  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.iowacodecamp.com/attendee/register" data-text="I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!" data-via="iowacodecamp" data-count="none" data-hashtags="ICC14">Tweet</a>
 	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!
     </div>
-	--%>
-	
+--%>
 	
 	<%--
     <div style="font-size:28px;">
@@ -44,15 +45,15 @@
 	--%>
 
     <div>
-		<%--
+	<%--
       <p style="font-size:medium;">
         Don't miss out, 
         <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too! 
       </p>
+	--%>
         <a href="<%= ResolveUrl("~/attendee/register") %>">
-            <img src="/images/registernow.jpg" alt="Register Now!" border="0"/ width="100" height="100">
+            <img src="/images/registernow.jpg" alt="Register Now!" border="0" width="100" height="100">
         </a>
-		--%>
 		
       <p style="font-size:medium;">Here's what some attendees are saying about Iowa Code Camp:</p>
       

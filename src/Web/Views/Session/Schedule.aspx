@@ -47,9 +47,11 @@
     <div id="sessions">
 
 <br/>
+<%--
 <p style="margin:1ex">
 <a href="/docs/Iowa%20Code%20Camp%20-%20Spring%202014%20-%20Sponsors%20and%20Schedule.pdf">Full schedule in a PDF</a>
 </p>
+--%>
 
 <%--
 <p><br />
@@ -88,7 +90,12 @@ For the moment, see the <a href="/list">Sessions</a> and <a href="/Speaker/list"
         {
             lastSessionTime = session.SessionTime;
 %>
-    <tr><td colspan="3"><br /><b><%=session.SessionTime%></b></td></tr>
+    <tr style="font-weight: bold">
+		<td colspan="3"><br /><%=session.SessionTime%></td>
+	</tr>
+	<tr style="font-weight: bold">
+		<td>Room</td><td>Speaker</td><td>Session Title</td>
+	</tr>
 <%      }  %>
 
   <tr>

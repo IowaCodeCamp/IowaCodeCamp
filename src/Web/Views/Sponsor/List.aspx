@@ -30,15 +30,19 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
 <br />
 
     <a name="afterparty"></a>
-    <h2>After Party Sponsor</h2>
+    <h2>After Party and Lunch Sponsors</h2>
     <hr />
 
 	<a href="http://www.metacommunications.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("meta_logo-large.png")%>" alt="Meta Communications" class="sponsors" width="300"/>
     </a>    
 
+	<a href="http://www.roberthalftechnology.com/" target="_blank">
+	<img style="border-width:0px" src='<%=SponsorImageUrl("RHT_logo_RGB.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
+	</a>
+
     <a name="platinum"></a>
-    <h2>Platinum Sponsors</h2>
+    <h2>Platinum and Breakfast Sponsors</h2>
     <hr />
 
 	<a href="http://www.beaconhillstaffing.com/" target="_blank">
@@ -60,7 +64,10 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
 	<a href="http://www.workiva.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("Workiva.png")%>" alt="Workiva" class="sponsors" width="300"/>
     </a>    
-	
+
+	<a href="http://www.PillarTechnology.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("pillar_logo.png")%>" alt="Pillar Technology" class="sponsors" width="300"/>
+    </a>    
 
 <%--
 	<a href="http://www.dice.com/" target="_blank">
@@ -149,10 +156,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
     <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors" width="300" />
     </a>
 
-	<a href="http://www.roberthalftechnology.com/" target="_blank">
-	<img style="border-width:0px" src='<%=SponsorImageUrl("rht.jpg") %>' alt="Robert Half Technology" class="sponsors" />
-	</a>
-
     <a href="http://www.telerik.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("telerik_logo.gif") %>' alt="Telerik" class="sponsors" />
     </a>
@@ -235,12 +238,14 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
     <h2>Supporters</h2>
     <hr />
 
-<%--
+    <a href="http://www.componentone.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("componentone_gc_logo_horizonal_black.png") %>' alt="Component One" class="sponsors" width="150"/>
+    </a> 
 
-    <a href="http://www.codemag.com/magazine" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("CODEMagazine.png") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
-    </a>     
-
+	<a href="http://www.dice.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("dice.png")%>" alt="Dice" class="sponsors" width="150"/>
+    </a>    
+	
     <a href="http://www.discountasp.net/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
     </a>     
@@ -249,6 +254,28 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" width="150"/>
     </a>
 
+    <a href="http://www.ssware.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
+    </a>
+
+    <a href="http://www.microsoft.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("microsoft_logo.gif") %>' alt="Microsoft" class="sponsors" width="150"/>
+    </a>
+
+    <a href="http://myitcareercoach.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("MyItCareerCoach.jpg") %>' alt="MyITCareerCoach" class="sponsors" width="150"/>
+    </a>
+
+    <a href="http://www.pluralsight.com" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("pluralsight.jpg") %>' alt="pluralsight" class="sponsors" width="150" />
+    </a> 
+
+<%--
+
+    <a href="http://www.discountasp.net/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
+    </a>     
+
     <a href="http://www.infragistics.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("infragistics_logo.gif") %>' alt="Infragistics" class="sponsors"  width="150"/>
     </a>    
@@ -256,10 +283,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
     <a href="http://oreilly.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" width="150" />
     </a> 
-
-    <a href="http://www.ssware.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
-    </a>
 
     <a href="http://www.wrox.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("WROXLogo_white.gif") %>' alt="Wrox" class="sponsors" width="150" />
@@ -285,10 +308,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
     <img style="border-width:0px" src="<%=SponsorImageUrl("linqpad.png") %>" alt="LinqPad" class="sponsors" width="75"/>
 	<!--<a href="http://www.linqpad.net/" target="_blank">LINQPad</a><br />-->
     </a>
-
-    <a href="http://www.pluralsight-training.net" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("pluralsight.jpg") %>' alt="pluralsight" class="sponsors" width="150" />
-    </a> 
 
     <a href="http://www.syncbak.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("syncbak_logo.png") %>' alt="Syncbak" class="sponsors" width="150"/>
