@@ -53,7 +53,6 @@
 
 <%--
 <strong>Registration is closed. See you Saturday!</strong>
---%>
 
 <p>So you're signing up for Iowa Code Camp? You know it's free right? If you'd like to leave
 a message on the attendees page, add your comments last and they'll show up with your first name.</p>
@@ -89,6 +88,7 @@ a message on the attendees page, add your comments last and they'll show up with
     
 </fieldset>
 </form>
+--%>
 
 <%= Html.ClientSideValidation<RegisterPageModel>() %>
 

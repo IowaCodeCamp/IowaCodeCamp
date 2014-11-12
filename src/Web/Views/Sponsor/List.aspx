@@ -65,7 +65,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
     <img style="border-width:0px" src="<%=SponsorImageUrl("Workiva.png")%>" alt="Workiva" class="sponsors" width="300"/>
     </a>    
 
-	<a href="http://www.PillarTechnology.com/" target="_blank">
+	<a href="http://bit.ly/1svt5Oa" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("pillar_logo.png")%>" alt="Pillar Technology" class="sponsors" width="300"/>
     </a>    
 
@@ -173,6 +173,10 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
     <h2>Silver Sponsors</h2>
     <hr />
 
+	<a href="http://www.thepalmergroup.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("Palmer_Logo_Color_Tag.png")%>" alt="Palmer Group" class="sponsors" width="180"/>
+    </a>    
+
 <%--
 
     <a href="http://www.newhorizonscr.com" target="_blank">
@@ -267,7 +271,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2014_Sponsorship_L
     </a>
 
     <a href="http://www.pluralsight.com" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("pluralsight.jpg") %>' alt="pluralsight" class="sponsors" width="150" />
+    <img style="border-width:0px" src='<%= SponsorImageUrl("pluralsight-logo-orange-250x78-v1.png") %>' alt="pluralsight" class="sponsors" width="150" />
     </a> 
 
 <%--
