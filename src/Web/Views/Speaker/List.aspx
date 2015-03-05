@@ -47,16 +47,22 @@
     <div id="speakers">
 <br/>
 
+<%
+	var speakers = CurrentSpeaker.List();
+	if (speakers.Count > 0) {
+%>
 
 <p style="margin:1ex">
 <a href="/docs/Iowa%20Code%20Camp%20-%20Fall%202014%20-%20Speakers.pdf">Speakers and Sessions in a PDF</a>
 </p>
 
+<% } %>
+
 <%--
 <iframe src="https://docs.google.com/open?id=0B5P5ekZgdxegUzg0bVBZZHh3Rk0&pid=explorer&a=v&chrome=false&embedded=true" width="640" height="480"></iframe>
 --%>
 
-<% foreach (var speaker in CurrentSpeaker.List())
+<% foreach (var speaker in speakers)
    {%>
    
 <h3 id="<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName%></h3>

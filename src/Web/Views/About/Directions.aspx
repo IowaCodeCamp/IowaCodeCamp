@@ -12,12 +12,13 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
 	
+<%--
     <h3>Event Location</h3><br />
     <h4><a target="_blank" href="http://www.ffaenrichmentcenter.com/">FFA Enrichment Center</a></h4><br />
     1055 SW Prairie Trail Parkway<br />
     Ankeny, Iowa 50023<br />
+ --%>    
 
-<%--
     <h4><a target="_blank" href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a></h4><br />
     7725 Kirkwood Boulevard S.W.<br />
     Cedar Rapids, Iowa 52404<br />
@@ -25,8 +26,7 @@
     The Hotel is located just minutes from the Eastern Iowa Airport (CID), Interstates 80 and 380, and U.S. Highway 30.
     <br /><br />
     <h3>Recommended Hotel</h3><br />
-    Is the same hotel as the event is at. Rate for Iowa Code Camp is $99 per night.
- --%>    
+    Is the same hotel as the event is at. Rate information pending...
     
 <%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
 
@@ -90,23 +90,23 @@
     <h3>Hotel Recommendations</h3><br /><br />
     <h4><a target="_blank" href="http://www.holidayinn.com/hotels/us/en/west-des-moines/dsmwm/hoteldetail">Holiday Inn Express</a></h4><br />
     <h4><a target="_blank" href="https://wwws.druryhotels.com/propertyoverview.aspx?property=0144">Drury Inn</a></h4><br />
---%>
 
 <br/>	
     <h3>Hotel Recommendations</h3><br /><br />
 <b><a href="http://www.americinn.com/hotels/IA/Ankeny">AmericInn Lodge & Suites</a></b><br/>
-<%--    - 20 rooms @ $84.99/night - normally $99.99/night<br/>
-	- Room Block Code: Iowa Code Camp<br/>	--%>
+    - 20 rooms @ $84.99/night - normally $99.99/night<br/>
+	- Room Block Code: Iowa Code Camp<br/>
     - Free WiFi<br/>
     - Free hot breakfast<br/>
     - Indoor heated pool<br/>
 <br/>
 
 <b><a href="http://www.comfortinn.com/hotel-ankeny-iowa-IA109">Comfort Inn</a></b><br/>
-<%--    - $74.99/night - normally $94.99/night<br/> --%>
+    - $74.99/night - normally $94.99/night<br/> 
     - Free WiFi<br/>
     - Free hot breakfast<br/>
     - Indoor heated pool<br/>
+--%>
 
 </asp:Content>
 

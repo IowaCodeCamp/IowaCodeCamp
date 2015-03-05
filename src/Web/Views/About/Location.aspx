@@ -12,7 +12,6 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
 
-<%--
 <cs:ComingSoon runat="server" />
     <br /><br /><br />
     <h3>Event Location</h3><br />
@@ -24,7 +23,6 @@
     <br /><br />
     <h3>Recommended Hotel</h3><br />
     Is the same hotel as the event is at. Rate for Iowa Code Camp is $99 per night.
- %>
 
 <%--
 <h1>Kirkwood Community College</h1>
@@ -36,10 +34,12 @@
 </ul>
 --%>
 
+<%--
     <h3>Event Location</h3><br />
     <h4><a target="_blank" href="http://www.ffaenrichmentcenter.com/">FFA Enrichment Center</a></h4><br />
     1055 SW Prairie Trail Parkway<br />
     Ankeny, Iowa 50023<br />
+ %>
 
 <%--
     <br /><br /><br />
