@@ -5,7 +5,7 @@
     <p style="font-size:larger;">
         <a href="http://crineta.org" target="_blank">CRineta.org</a> and  
         <a href="http://iadnug.org" target="_blank">Iowa .NET</a> 
-        are hosting the thirteenth Iowa Code Camp on November 1, 2014
+        are hosting the thirteenth Iowa Code Camp on May 9, 2015
 
         <%--at the <a href="http://www.ffaenrichmentcenter.com">FFA Enrichment Center on the Ankeny DMACC Campus</a>.--%>
 
@@ -21,7 +21,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
-        Call for speakers is open. Submit your talks <a href="https://bit.ly/ICCSpring2015SpringSpeakers" target="_blank">here</a>.
+        Call for speakers is open. Submit your talks <a href="https://bit.ly/ICCSpring2015Speakers" target="_blank">here</a>.
     <%--
         <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>

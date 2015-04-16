@@ -49,10 +49,12 @@
 	var sessions = CurrentSession.ListByTitle();
 	if (sessions.Count > 0) {
 %>
-
+<%--
 <p style="margin:1ex">
 <a href="/docs/Iowa%20Code%20Camp%20-%20Fall%202014%20-%20Sessions.pdf">Full session descriptions in a PDF</a>
 </p>
+--%>
+
 <% } %>
 
 
