@@ -53,7 +53,7 @@
 
 <%--
 <strong>Registration is closed. See you Saturday!</strong>
-
+--%>
 <p>So you're signing up for Iowa Code Camp? You know it's free right? If you'd like to leave
 a message on the attendees page, add your comments last and they'll show up with your first name.</p>
 <br />
@@ -84,11 +84,13 @@ a message on the attendees page, add your comments last and they'll show up with
     <label for="Comments">Comments</label> (Optional, but public)<br />
     <%=Html.TextArea("Comments", new { rows = 4 })%> <br /><br />
     
+    <label for="HumanValue">*Enter the sum of 3 and 9 to prove you are human.</label><br />
+    <%=Html.TextBox("HumanValue")%> <br /><br />
+    
     <input type="submit" value="Register" />
     
 </fieldset>
 </form>
---%>
 
 <%= Html.ClientSideValidation<RegisterPageModel>() %>
 

@@ -49,16 +49,16 @@
 <br/>
 <%--
 <p style="margin:1ex">
-<a href="/docs/Iowa%20Code%20Camp%20-%20Spring%202014%20-%20Sponsors%20and%20Schedule.pdf">Full schedule in a PDF</a>
+<a href="/docs/Iowa_Code_Camp_ Fall_2015_Sponsors_and_Schedule.pdf">Full schedule in a PDF</a>
 </p>
 --%>
 
-<%--
+
 <p><br />
-<a target="_blank" href="/public/Iowa Code Camp - Spring 2014 - Sponsors and Schedule.pdf">Click here for a PDF of the session schedule!</a><br />
+<a target="_blank" href="/docs/Iowa_Code_Camp_ Fall_2015_Sponsors_and_Schedule.pdf">Click here for a PDF of the session schedule!</a><br />
 Note that this document will be included in your attendee packet on Saturday.
 </p>
---%>
+
 
 <%--
 <p><br />

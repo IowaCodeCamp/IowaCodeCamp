@@ -19,7 +19,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{87838AB7-35
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "63364"
+		VWDPort = "14180"
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IowaCodeCamp.Core", "Core\IowaCodeCamp.Core.csproj", "{6CFAC488-D838-4740-BCED-7AE46B7787C4}"

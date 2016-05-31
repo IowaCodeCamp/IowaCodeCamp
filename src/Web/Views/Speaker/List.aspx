@@ -68,7 +68,14 @@
    {%>
    
 <h3 id="<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName%></h3>
+<%
+    if (!string.IsNullOrEmpty(speaker.HeadshotFile))
+    {
+%>
 <img src="<%=SpeakerImageUrl(speaker.HeadshotFile)%>" width="90" alt="" />
+<%
+    }
+%>
 <p><%=speaker.SpeakerBio%>
  - <a href="<%=speaker.WebSite%>"><%=speaker.WebSite%></a> <a href="http://www.twitter.com/<%=speaker.Twitter%>" target="_blank"><%=speaker.Twitter%></a></p>
 <%
