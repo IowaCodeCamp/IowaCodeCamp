@@ -33,9 +33,11 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2015_Sponsorship_L
     <h2>Lunch and After Party Sponsors</h2>
     <hr />
 
+<%--
 	<a href="http://www.pillartechnology.com/about" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("PillarBlueLogo.png")%>" alt="Pillar Technology" class="sponsors" width="300"/>
     </a>    
+--%>
 
 	<a href="http://www.metacommunications.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("Meta_logo_horiz_cyan-1.png")%>" alt="Meta Communications" class="sponsors" width="300"/>
@@ -52,6 +54,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2015_Sponsorship_L
     <h2>Platinum Sponsors</h2>
     <hr />
 
+<%--
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
@@ -63,8 +66,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2015_Sponsorship_L
 	<a href="http://www.workiva.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("Workiva.png")%>" alt="Workiva" class="sponsors" width="300"/>
     </a>    
-
-	<%--
 
     <a href="https://aboutus.godaddy.net/about-us/default.aspx" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" width="300" />
@@ -134,12 +135,12 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2015_Sponsorship_L
     <h2>Gold Sponsors</h2>
     <hr />
 
+<%--
 	<a href="http://www.thepalmergroup.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("Palmer_Logo_Color_Tag.png")%>" alt="Palmer Group" class="sponsors" width="220"/>
     </a>    
 
 
-<%--
 	<a href="http://www.sourceallies.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("sourceallies_rgb.png")%>" alt="Source Allies" class="sponsors" width="220"/>
     </a>    
@@ -201,11 +202,11 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2015_Sponsorship_L
     <h2>Silver Sponsors</h2>
     <hr />
 
+<%--
     <a href="http://www.visionary.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("Visionary-4PMS.png") %>' alt="Visionary" class="sponsors" width="180"/>
     </a>
 
-<%--
     <a href="http://www.newhorizonscr.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("newhorizons.gif") %>' alt="New Horizons" class="sponsors" width="180"/>
     </a>
@@ -253,6 +254,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2015_Sponsorship_L
     <h2>Supporters</h2>
     <hr />
 
+<%--
     <a href="http://www.jetbrains.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" width="150"/>
     </a>    
@@ -262,7 +264,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2015_Sponsorship_L
     </a>
 
 
-<%--
     <a href="http://www.componentone.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("componentone_gc_logo_horizonal_black.png") %>' alt="Component One" class="sponsors" width="150"/>
     </a> 

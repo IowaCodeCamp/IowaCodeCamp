@@ -36,10 +36,12 @@
 </ul>
 --%>
 
+<%--
     <h3>Event Location</h3><br />
     <h4><a target="_blank" href="http://www.ffaenrichmentcenter.com/">FFA Enrichment Center</a></h4><br />
     1055 SW Prairie Trail Parkway<br />
     Ankeny, Iowa 50023<br />
+--%>
 
 <%--
     <br /><br /><br />
@@ -50,13 +52,11 @@
     515-633-2407<br /><br />
 --%>
 
-<%--
     <h3>Event Location</h3><br />
     <h4><a target="_blank" href="http://www.marriott.com/hotels/travel/cidic-coralville-marriott-hotel-and-conference-center/">Coralville Marriott Hotel & Conference Center</a></h4><br />
     300 East 9th St.<br />
     Coralville, Iowa 52241<br />
     (319) 688-4000<br /><br />
---%>
     
 <%--
     <h3>Recommended Hotel</h3><br />
