@@ -25,7 +25,7 @@
 If you want to be a sponsor of our next event, contact us at <strong>sponsors [at] iowacodecamp d0t com</strong>.
 </p>
 <p>
-Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2015_Sponsorship_Levels.pdf">this document</a> to learn about our sponsorship programs.
+Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_Levels.pdf">this document</a> to learn about our sponsorship programs.
 </p>
 <br />
 
