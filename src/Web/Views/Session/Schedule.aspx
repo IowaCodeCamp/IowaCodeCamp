@@ -54,10 +54,12 @@
 --%>
 
 
+<%--
 <p><br />
 <a target="_blank" href="/docs/Iowa_Code_Camp_ Fall_2015_Sponsors_and_Schedule.pdf">Click here for a PDF of the session schedule!</a><br />
 Note that this document will be included in your attendee packet on Saturday.
 </p>
+--%>
 
 
 <%--

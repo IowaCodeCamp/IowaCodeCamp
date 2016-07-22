@@ -43,6 +43,10 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <img style="border-width:0px" src="<%=SponsorImageUrl("Meta_logo_horiz_cyan-1.png")%>" alt="Meta Communications" class="sponsors" width="300"/>
     </a>    
 
+	<a href="http://www.roberthalftechnology.com/" target="_blank">
+	<img style="border-width:0px" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
+	</a>
+
 <%--
 
 --%>
@@ -54,14 +58,14 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <h2>Platinum Sponsors</h2>
     <hr />
 
+	<a href="http://prairiecode.amegala.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("PrairieCode-logo-lg-white-bg.png")%>" alt="Workiva" class="sponsors" width="300"/>
+    </a>    
+
 <%--
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
-
-	<a href="http://www.roberthalftechnology.com/" target="_blank">
-	<img style="border-width:0px" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
-	</a>
 
 	<a href="http://www.workiva.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("Workiva.png")%>" alt="Workiva" class="sponsors" width="300"/>
@@ -202,6 +206,14 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <h2>Silver Sponsors</h2>
     <hr />
 
+    <a href="http://www.modis.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors"  width="180"/>
+    </a>
+
+    <a href="https://www.unitedfiregroup.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("ufg_RGB.jpg") %>' alt="United Fire Group" class="sponsors" width="180"/>
+    </a>
+
 <%--
     <a href="http://www.visionary.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("Visionary-4PMS.png") %>' alt="Visionary" class="sponsors" width="180"/>
@@ -254,6 +266,22 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <h2>Supporters</h2>
     <hr />
 
+    <a href="http://www.discountasp.net/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
+    </a>     
+
+    <a href="http://www.ssware.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
+    </a>
+
+    <a href="https://www.murach.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("MurachBooks.png") %>" alt="Murach Books" class="sponsors" width="150"/>
+    </a>
+
+    <a href="http://www.syncfusion.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("SF_Logo_Tagline_200x60_PNG.png") %>" alt="LogicNP" class="sponsors" width="150"/>
+    </a>
+
 <%--
     <a href="http://www.jetbrains.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" width="150"/>
@@ -268,18 +296,10 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <img style="border-width:0px" src='<%= SponsorImageUrl("componentone_gc_logo_horizonal_black.png") %>' alt="Component One" class="sponsors" width="150"/>
     </a> 
 
-    <a href="http://www.ssware.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
-    </a>
-
 	<a href="http://www.dice.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("dice.png")%>" alt="Dice" class="sponsors" width="150"/>
     </a>    
 	
-    <a href="http://www.discountasp.net/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
-    </a>     
-
     <a href="http://www.jetbrains.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("jetbrains_logo.gif") %>' alt="Jet Brains" class="sponsors" width="150"/>
     </a>
