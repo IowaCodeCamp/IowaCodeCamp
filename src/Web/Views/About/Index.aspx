@@ -34,8 +34,7 @@ $(document).ready(function() {
         <li><a href="http://www.levirosol.com/">Levi Rosol</a> - Treasurer - Finances, Sponsorship</li>
         <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - 
             Speakers, Emails &amp; Communication, Networking Events planning</li>
-        <li><a href="https://twitter.com/vongillern" target="_blank">Jon von Gillern - 
-            Speakers, Emails &amp; Communication, Networking Events planning</li>
+        <li>Jon von Gillern - Speakers, Emails &amp; Communication, Networking Events planning</li>
     </ul>
     
     <br /><br />
