@@ -21,13 +21,15 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
-<%--    
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
    
-        Call for speakers is open. Submit your talks <a href="http://bit.ly/ICCFall2016SpeakerSubmission" target="_blank">here</a>.
+        Call for speakers is open. Submit your talks <a href="http://bit.ly/IICC19Speakers" target="_blank">here</a>.
+<%--    
         <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
+--%>
         </p>
+<%--    
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         Registration is now open. Register <a href="http://www.iowacodecamp.com/attendee/register">here</a>.
         </p>
