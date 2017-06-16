@@ -30,7 +30,7 @@ $(document).ready(function() {
     <br />
         
     <ul style="padding-left:20px;"> 
-		<li><a href="http://www.cwi-websoft.com/">Greg Sohl</a> - President - Finances, Logistics and Volunteers</li>
+		<li><a href="https://www.linkedin.com/in/gregsohl/">Greg Sohl</a> - President - Finances, Logistics and Volunteers</li>
         <li><a href="http://www.levirosol.com/">Levi Rosol</a> - Treasurer - Finances, Sponsorship</li>
         <li><a href="http://www.developernotes.com" target="_blank">Nick Parker</a> - 
             Speakers, Emails &amp; Communication, Networking Events planning</li>
