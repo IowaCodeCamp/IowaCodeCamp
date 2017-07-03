@@ -21,10 +21,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
-        <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
-   
-        Call for speakers is open. Submit your talks <a href="http://bit.ly/IICC19Speakers" target="_blank">here</a>.
 <%--    
+        <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
+        Call for speakers is open. Submit your talks <a href="http://bit.ly/IICC19Speakers" target="_blank">here</a>.
         <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
 --%>
