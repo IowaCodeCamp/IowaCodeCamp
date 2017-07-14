@@ -32,6 +32,7 @@
         	padding:0;
         	margin-bottom:10px;
             font-family:Arial,Helvetica;
+			text-align: left;
         }
     </style>
 

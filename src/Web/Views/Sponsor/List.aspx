@@ -30,14 +30,18 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
 <br />
 
     <a name="afterparty"></a>
-    <h2>Lunch Sponsor</h2>
+    <h2>Breakfast and Lunch Sponsors</h2>
     <hr />
 
+	<a href="http://www.roberthalftechnology.com/" target="_blank">
+	<img style="border-width:0px" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
+	</a>
 
-<%--
 	<a href="http://www.workiva.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("Workiva.png")%>" alt="Workiva" class="sponsors" width="300"/>
     </a>    
+
+<%--
 	<a href="http://www.pillartechnology.com/about" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("PillarBlueLogo.png")%>" alt="Pillar Technology" class="sponsors" width="300"/>
     </a>    
@@ -63,11 +67,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
-
-	<a href="http://www.roberthalftechnology.com/" target="_blank">
-	<img style="border-width:0px" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
-	</a>
-
 
     <a href="https://aboutus.godaddy.net/about-us/default.aspx" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" width="300" />
@@ -265,19 +264,20 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <h2>Supporters</h2>
     <hr />
 
-<%--
-    <a href="http://www.devexpress.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("DevExpress-Logo-Large-Color.png") %>' alt="DevExpress" class="sponsors"  width="150"/>
+    <a href="http://www.discountasp.net/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
     </a>     
 
     <a href="http://www.everleap.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("logo_everleap.png") %>" alt="Everleap" class="sponsors" width="150"/>
     </a>
 
-
-    <a href="http://www.discountasp.net/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
+<%--
+    <a href="http://www.devexpress.com/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("DevExpress-Logo-Large-Color.png") %>' alt="DevExpress" class="sponsors"  width="150"/>
     </a>     
+
+
 
     <a href="http://www.ssware.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>

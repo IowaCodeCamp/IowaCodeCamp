@@ -31,13 +31,14 @@
     Is the same hotel as the event is at. Rate for Iowa Code Camp is $109 per night.
 --%>    
     
-<%--    <a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>--%>
-
+<%--    
+	<a href="http://www.westdesmoines.stayhgi.com" target="_blank"> Hilton Garden Inn</a>
+--%>
 
     <h3>Directions to the Coralville Marriott Hotel & Conference Center</h3><br>Available at <a href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/" target="_blank">their web site.</a>
     <br /><br />
 	There are a number of other hotels in the immediate area.<br>
-	See <a href="https://www.google.com/maps/preview#!q=hotels&data=!4m10!1m9!4m8!1m3!1d10336!2d-91.5585167!3d41.6815581!3m2!1i1280!2i666!4f13.1">the map here.</a>
+	See <a href="https://www.google.com/maps/place/Coralville+Marriott+Hotel+%26+Conference+Center,+East+9th+Street,+Coralville,+IA/@41.6798377,-91.5915523,13z/data=!4m5!3m4!1s0x87e44232bba02d93:0x4f953d19f9476ef7!8m2!3d41.681811!4d-91.558774">the map here.</a>
     
 <%--
     <h4>From the North/South on I-35</h4>
@@ -95,7 +96,11 @@
 	<br/>	
 --%>
 
-    <h3>Hotel Recommendations</h3><br /><br />
+
+<br/><br/>
+<h3>Hotel Recommendations</h3><br /><br />
+
+<%--
 <b><a href="http://www.americinn.com/hotels/IA/Ankeny">AmericInn Lodge & Suites</a></b><br/>
     - 20 rooms @ $84.99/night - normally $99.99/night<br/>
 	- Room Block Code: Iowa Code Camp<br/>
@@ -109,6 +114,13 @@
     - Free WiFi<br/>
     - Free hot breakfast<br/>
     - Indoor heated pool<br/>
+
+--%>
+
+<b><a href="https://www.wyndhamhotels.com/baymont/coralville-iowa/baymont-inn-and-suites-iowa-city-coralville/overview?CID=LC:BU::GGL:RIO:National:17785&iata=00065402">Baymont Inn & Suites</a></b>
+
+<br/>
+<b><a href="http://homewoodsuites3.hilton.com/en/hotels/iowa/homewood-suites-by-hilton-coralville-iowa-river-landing-ia-IOWCVHW/index.html">Homewood Suites by Hilton</a></b>
 
 </asp:Content>
 
