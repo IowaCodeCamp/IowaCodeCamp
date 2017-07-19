@@ -48,6 +48,8 @@ namespace ASP.App_Code.Controllers.Json
 		public string bio;
 		[DataMember]
 		public string img;
+		[DataMember]
+		public string imgLarge;
 	}
 
 }

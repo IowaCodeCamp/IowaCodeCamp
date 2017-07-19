@@ -77,6 +77,7 @@ namespace ASP.App_Code.Controllers
 			mySession.speaker.location = currentSpeaker.CityState;
 			mySession.speaker.bio = currentSpeaker.SpeakerBio;
 			mySession.speaker.img = currentSpeaker.HeadshotFile;
+			mySession.speaker.imgLarge = currentSpeaker.LargeHeadshotFile;
 			mySession.speaker.web = currentSpeaker.WebSite;
 			return mySession;
 		}

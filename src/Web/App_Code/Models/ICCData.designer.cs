@@ -4698,7 +4698,9 @@ namespace Models
 		private string _CityState;
 		
 		private string _HeadshotFile;
-		
+
+		private string _LargeHeadshotFile;
+
 		private string _SpeakerBio;
 		
 		private string _WebSite;
@@ -4772,7 +4774,23 @@ namespace Models
 				}
 			}
 		}
-		
+
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_LargeHeadshotFile", DbType = "VarChar(50)")]
+		public string LargeHeadshotFile
+		{
+			get
+			{
+				return this._LargeHeadshotFile;
+			}
+			set
+			{
+				if ((this._LargeHeadshotFile != value))
+				{
+					this._LargeHeadshotFile = value;
+				}
+			}
+		}
+
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SpeakerBio", DbType="VarChar(MAX)")]
 		public string SpeakerBio
 		{
