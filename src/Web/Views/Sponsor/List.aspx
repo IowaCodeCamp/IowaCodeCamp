@@ -265,7 +265,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <hr />
 
     <a href="http://www.discountasp.net/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
+    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.jpg") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
     </a>     
 
     <a href="http://www.everleap.com/" target="_blank">
