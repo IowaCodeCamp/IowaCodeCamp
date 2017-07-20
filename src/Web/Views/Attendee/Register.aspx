@@ -49,7 +49,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-<%--<cs:ComingSoon runat="server" />--%>
+<cs:ComingSoon runat="server" />
 
 <%--
 <strong>Registration is closed. See you Saturday!</strong>
@@ -58,6 +58,7 @@ a message on the attendees page, add your comments last and they'll show up with
 <br />
 --%>
 
+<%--
 <form action="/attendee/register" method="post">
 <fieldset class="box">
 
@@ -92,7 +93,7 @@ a message on the attendees page, add your comments last and they'll show up with
     
 </fieldset>
 </form>
-
+--%>
 
 <%= Html.ClientSideValidation<RegisterPageModel>() %>
 
