@@ -100,9 +100,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <img style="border-width:0px" src="<%=SponsorImageUrl("aspect-logo.jpg")%>" alt="Aspect" class="sponsors" />
     </a>    
 
-    <a href="http://www.modis.com/itrecruitment/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
-    </a>
     
     
     <br />
@@ -272,6 +269,14 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <img style="border-width:0px" src="<%=SponsorImageUrl("logo_everleap.png") %>" alt="Everleap" class="sponsors" width="150"/>
     </a>
 
+    <a href="http://www.ssware.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
+    </a>
+
+    <a href="http://www.modis.com/itrecruitment/" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors"  width="150"/>
+    </a>
+
 <%--
     <a href="http://www.devexpress.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("DevExpress-Logo-Large-Color.png") %>' alt="DevExpress" class="sponsors"  width="150"/>
@@ -279,9 +284,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
 
 
 
-    <a href="http://www.ssware.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
-    </a>
 
     <a href="https://www.murach.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("MurachBooks.png") %>" alt="Murach Books" class="sponsors" width="150"/>
