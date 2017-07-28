@@ -4537,6 +4537,8 @@ namespace Models
 		private System.Nullable<int> _SessionTimeOrdinal;
 		
 		private int _RoomOrdinal;
+
+		private string _SlidesUrl;
 		
 		public CurrentSession()
 		{
@@ -4685,8 +4687,26 @@ namespace Models
 				}
 			}
 		}
+
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_SlidesUrl", DbType = "VarChar(1024)")]
+		public string SlidesUrl
+		{
+			get
+			{
+				return this._SlidesUrl;
+			}
+			set
+			{
+				if ((this._SlidesUrl != value))
+				{
+					this._SlidesUrl = value;
+				}
+			}
+		}
+
 	}
-	
+
+
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CurrentSpeakers")]
 	public partial class CurrentSpeaker
 	{

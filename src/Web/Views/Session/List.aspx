@@ -74,6 +74,15 @@
   <p>
   <%=session.SessionTime%> : <%=session.Room %> : <%=session.Title %> (Level: <%=session.SessionLevel %>)<br />
   Speaker: <a href="/speaker/list#<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName %></a>
+  <%
+	  if (!string.IsNullOrEmpty(session.SlidesUrl))
+	  {
+  %>
+      <br/>
+      <a href="<%=session.SlidesUrl %>" target="_blank">Slides</a>
+  <%
+	  }
+  %>
   </p>
 </li>
 
