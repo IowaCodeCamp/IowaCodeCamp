@@ -6,14 +6,14 @@
     <p style="font-size:larger;">
         <a href="https://www.meetup.com/CRIneta-Cedar-Rapids-NET-User-Group/" target="_blank">CRineta.org</a> and  
         <a href="http://iadnug.org" target="_blank">Iowa .NET</a> 
-        are hosting the seventeenth Iowa Code Camp on July 22, 2017
+        are hosting the twentieth Iowa Code Camp on November 4, 2017
 
-        <%-- at the <a href="http://www.ffaenrichmentcenter.com">FFA Enrichment Center on the Ankeny DMACC Campus</a>.--%>
+        at the <a href="http://www.ffaenrichmentcenter.com">FFA Enrichment Center on the Ankeny DMACC Campus</a>.
 
         <%-- at <a href="http://www.thehotelatkirkwood.com">The Hotel at Kirkwood</a> in Cedar Rapids.--%>
 
-        at the <a target="_blank" href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/">Coralville Marriott Hotel & Conference Center</a> in Coralville, IA.
     <%--
+        at the <a target="_blank" href="http://www.marriott.com/hotels/maps/travel/cidic-coralville-marriott-hotel-and-conference-center/">Coralville Marriott Hotel & Conference Center</a> in Coralville, IA.
         at <a href="https://go.dmacc.edu/west/pages/welcome.aspx" target="_blank">DMACC West Campus</a> in West Des Moines, IA.
     </p>
     --%>
@@ -22,11 +22,13 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
     <div class="post">
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
+    
+        Call for speakers is open. Submit your talks <a href="http://bit.ly/ICC20Speakers" target="_blank">here</a>.
+
 <%--    
-        Call for speakers is open. Submit your talks <a href="http://bit.ly/IICC19Speakers" target="_blank">here</a>.
---%>
         <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
+--%>
         </p>
 <%--    
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">

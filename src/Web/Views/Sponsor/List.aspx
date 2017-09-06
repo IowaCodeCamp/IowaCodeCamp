@@ -14,13 +14,7 @@
     }
 </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
-<!--<p>
-    Want your organization on here? Contact Zac Harlan or Chris Missal at sponsors [at] iowacodecamp d0t com.
-</p>-->
-</asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-
 <p>
 If you want to be a sponsor of our next event, contact us at <strong>sponsors [at] iowacodecamp d0t com</strong>.
 </p>
@@ -33,6 +27,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <h2>Breakfast and Lunch Sponsors</h2>
     <hr />
 
+<%--
 	<a href="http://www.roberthalftechnology.com/" target="_blank">
 	<img style="border-width:0px" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
 	</a>
@@ -41,7 +36,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <img style="border-width:0px" src="<%=SponsorImageUrl("Workiva.png")%>" alt="Workiva" class="sponsors" width="300"/>
     </a>    
 
-<%--
 	<a href="http://www.pillartechnology.com/about" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("PillarBlueLogo.png")%>" alt="Pillar Technology" class="sponsors" width="300"/>
     </a>    
@@ -265,6 +259,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.jpg") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
     </a>     
 
+<%--
     <a href="http://www.everleap.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("logo_everleap.png") %>" alt="Everleap" class="sponsors" width="150"/>
     </a>
@@ -277,13 +272,9 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors"  width="150"/>
     </a>
 
-<%--
     <a href="http://www.devexpress.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("DevExpress-Logo-Large-Color.png") %>' alt="DevExpress" class="sponsors"  width="150"/>
     </a>     
-
-
-
 
     <a href="https://www.murach.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("MurachBooks.png") %>" alt="Murach Books" class="sponsors" width="150"/>
