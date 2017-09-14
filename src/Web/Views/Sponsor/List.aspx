@@ -14,7 +14,12 @@
     }
 </style>
 </asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="normalPH" Runat="Server">
+</asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+
 <p>
 If you want to be a sponsor of our next event, contact us at <strong>sponsors [at] iowacodecamp d0t com</strong>.
 </p>
@@ -28,10 +33,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <hr />
 
 <%--
-	<a href="http://www.roberthalftechnology.com/" target="_blank">
-	<img style="border-width:0px" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
-	</a>
-
 	<a href="http://www.workiva.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("Workiva.png")%>" alt="Workiva" class="sponsors" width="300"/>
     </a>    
@@ -57,10 +58,16 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <h2>Platinum Sponsors</h2>
     <hr />
 
-<%--
 	<a href="http://www.qci.com" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
+    <img style="border-width:0px;vertical-align:top" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
+
+	<a href="https://www.roberthalf.com/des-moines/technology-it" target="_blank">
+	<img style="border-width:0px;vertical-align:top" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
+	</a>
+
+
+<%--
 
     <a href="https://aboutus.godaddy.net/about-us/default.aspx" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" width="300" />
@@ -193,6 +200,10 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2016_Sponsorship_L
     <a name="silver"></a>
     <h2>Silver Sponsors</h2>
     <hr />
+
+    <a href="https://prairiecode.amegala.com//" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("PrairieCode-logo-lg-white-bg.png") %>' alt="Prairie.Code()" class="sponsors" width="180"/>
+    </a>
 
 <%--
     <a href="http://www.visionary.com/" target="_blank">
