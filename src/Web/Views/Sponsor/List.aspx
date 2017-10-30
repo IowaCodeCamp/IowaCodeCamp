@@ -134,6 +134,11 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2017_Sponsorship_L
     <h2>Gold Sponsors</h2>
     <hr />
 
+    <a href="http://www.scootersoftware.com" target="_blank">
+    <img style="border-width:0px" src='<%=SponsorImageUrl("media_ScooterHiRes.png") %>' alt="Scooter Software" class="sponsors"  width="220" />
+    </a>
+
+
 <%--
 	<a href="http://www.thepalmergroup.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("Palmer_Logo_Color_Tag.png")%>" alt="Palmer Group" class="sponsors" width="220"/>
@@ -266,19 +271,29 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2017_Sponsorship_L
     <h2>Supporters</h2>
     <hr />
 
-    <a href="http://www.discountasp.net/" target="_blank">
+    <a href="https://www.discountasp.net/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.jpg") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
     </a>     
 
-<%--
-    <a href="http://www.everleap.com/" target="_blank">
+    <a href="https://www.everleap.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("logo_everleap.png") %>" alt="Everleap" class="sponsors" width="150"/>
+    </a>
+
+    <a href="https://www.grapecity.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("GC-logo_purple_low-res.jpg") %>" alt="GrapeCity" class="sponsors" width="150"/>
     </a>
 
     <a href="http://www.ssware.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("logicnp.jpg") %>" alt="LogicNP" class="sponsors" width="150"/>
     </a>
 
+    <a href="http://oreilly.com/" target="_blank">
+    <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" width="150" />
+    </a> 
+
+	
+	
+<%--
     <a href="http://www.modis.com/itrecruitment/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors"  width="150"/>
     </a>
@@ -336,10 +351,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2017_Sponsorship_L
     <img style="border-width:0px" src='<%=SponsorImageUrl("infragistics_logo.gif") %>' alt="Infragistics" class="sponsors"  width="150"/>
     </a>    
 
-    <a href="http://oreilly.com/" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" width="150" />
-    </a> 
-
     <a href="http://www.wrox.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("WROXLogo_white.gif") %>' alt="Wrox" class="sponsors" width="150" />
     </a> 
@@ -347,10 +358,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2017_Sponsorship_L
 	<a href="http://www.pearsoned.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("pearsoned_ug_logo.jpg") %>' alt="Pearson Education" class="sponsors" />
     </a> 
-
-    <a href="http://www.scootersoftware.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("scooterlogo.png") %>' alt="Scooter Software" class="sponsors" />
-    </a>
 
 	<a href="http://serversilo.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("ServersiloLogo.png")%>" alt="Executive Resources" class="sponsors" width="150"/>
