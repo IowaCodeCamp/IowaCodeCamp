@@ -288,7 +288,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_2017_Sponsorship_L
     </a>
 
     <a href="http://oreilly.com/" target="_blank">
-    <img style="border-width:0px" src='<%= SponsorImageUrl("oreilly_logo.gif") %>' alt="O'Reilly" class="sponsors" width="150" />
+    <img style="border-width:0px" src='<%= SponsorImageUrl("OReilly_210x60.png") %>' alt="O'Reilly" class="sponsors" width="150" />
     </a> 
 
 	
