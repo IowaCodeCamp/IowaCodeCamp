@@ -79,7 +79,7 @@
 	  {
   %>
       <br/>
-      <a href="<%=session.SlidesUrl %>" target="_blank">Slides</a>
+      Session Materials: <a href="<%=session.SlidesUrl %>" target="_blank">Slides</a>
   <%
 	  }
   %>

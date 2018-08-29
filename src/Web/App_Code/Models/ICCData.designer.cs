@@ -4539,6 +4539,8 @@ namespace Models
 		private int _RoomOrdinal;
 
 		private string _SlidesUrl;
+
+		private int _ShowOnList;
 		
 		public CurrentSession()
 		{
@@ -4700,6 +4702,22 @@ namespace Models
 				if ((this._SlidesUrl != value))
 				{
 					this._SlidesUrl = value;
+				}
+			}
+		}
+
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_ShowOnList", DbType = "int")]
+		public int ShowOnList
+		{
+			get
+			{
+				return this._ShowOnList;
+			}
+			set
+			{
+				if ((this._ShowOnList != value))
+				{
+					this._ShowOnList = value;
 				}
 			}
 		}

@@ -20,6 +20,7 @@ namespace Models
 			var ctx = new ICCData();
 
 			return ctx.CurrentSessions
+				.Where(currentSession => currentSession.ShowOnList == 1)
 				.OrderBy(currentSession => currentSession.Title)
 				.ToList();
 		}
@@ -41,7 +42,7 @@ namespace Models
 
 			return ctx.CurrentSessions
 				.OrderBy(currentSession => currentSession.RoomOrdinal)
-				.OrderBy(currentSession => currentSession.SessionTimeOrdinal)
+				.ThenBy(currentSession => currentSession.SessionTimeOrdinal)
 				.ToList();
 		}
 

@@ -208,6 +208,7 @@
       <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="SessionTimeOrdinal" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="RoomOrdinal" Type="System.Int32" DbType="int" CanBeNull="false" />
+      <Column Name="ShowOnList" Type="System.Int32" DbType="int" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.CurrentSpeakers" Member="CurrentSpeakers">
