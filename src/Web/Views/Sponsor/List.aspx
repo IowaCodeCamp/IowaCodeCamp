@@ -58,6 +58,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <h2>Platinum Sponsors</h2>
     <hr />
 
+<%--
 	<a href="http://www.qci.com" target="_blank">
     <img style="border-width:0px;vertical-align:top" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
@@ -65,9 +66,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
 	<a href="https://www.roberthalf.com/des-moines/technology-it" target="_blank">
 	<img style="border-width:0px;vertical-align:top" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
 	</a>
-
-
-<%--
 
     <a href="https://aboutus.godaddy.net/about-us/default.aspx" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("go-daddy.png") %>' alt="Go Daddy!" class="sponsors" width="300" />
@@ -134,12 +132,12 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <h2>Gold Sponsors</h2>
     <hr />
 
+<%--
     <a href="http://www.scootersoftware.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("media_ScooterHiRes.png") %>' alt="Scooter Software" class="sponsors"  width="220" />
     </a>
 
 
-<%--
 	<a href="http://www.thepalmergroup.com" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("Palmer_Logo_Color_Tag.png")%>" alt="Palmer Group" class="sponsors" width="220"/>
     </a>    
@@ -206,11 +204,11 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <h2>Silver Sponsors</h2>
     <hr />
 
+<%--
     <a href="https://prairiecode.amegala.com//" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("PrairieCode-logo-lg-white-bg.png") %>' alt="Prairie.Code()" class="sponsors" width="180"/>
     </a>
 
-<%--
     <a href="http://www.visionary.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("Visionary-4PMS.png") %>' alt="Visionary" class="sponsors" width="180"/>
     </a>
@@ -271,6 +269,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <h2>Supporters</h2>
     <hr />
 
+<%--
     <a href="https://www.discountasp.net/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.jpg") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
     </a>     
@@ -291,9 +290,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <img style="border-width:0px" src='<%= SponsorImageUrl("OReilly_210x60.png") %>' alt="O'Reilly" class="sponsors" width="150" />
     </a> 
 
-	
-	
-<%--
     <a href="http://www.modis.com/itrecruitment/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors"  width="150"/>
     </a>

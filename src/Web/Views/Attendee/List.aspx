@@ -26,7 +26,10 @@
 
 <cs:ComingSoon runat="server" />
 
-<p><b><%=Model.AttendeeCount%> Registered!</b>
+<p>
+<%--
+<b><%=Model.AttendeeCount%> Registered!</b>
+--%>
 
 
 <%--
@@ -38,7 +41,7 @@
 --%>
 	
     <div style="font-size:28px;">
-        <strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />
+        <%--<strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />--%>
         <%--<a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a> --%>
     </div>
 
@@ -57,7 +60,9 @@
 --%>
 
 		
+<%--
       <p style="font-size:medium;">Here's what some attendees are saying about Iowa Code Camp:</p>
+--%>
       
         <% foreach (var attendee in Model.Attendees.Where(a => !string.IsNullOrEmpty(a.Comments))) { %>
             <%--

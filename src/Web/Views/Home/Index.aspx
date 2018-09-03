@@ -6,7 +6,7 @@
     <p style="font-size:larger;">
         <a href="https://www.meetup.com/CRIneta-Cedar-Rapids-NET-User-Group/" target="_blank">CRineta.org</a> and  
         <a href="http://iadnug.org" target="_blank">Iowa .NET</a> 
-        are hosting the twentieth Iowa Code Camp on November 4, 2017
+        are hosting the twenty-first Iowa Code Camp on December 8, 2018
 
         at the <a href="http://www.ffaenrichmentcenter.com">FFA Enrichment Center on the Ankeny DMACC Campus</a>.
 
@@ -27,8 +27,10 @@
         Call for speakers is open. Submit your talks <a href="http://bit.ly/ICC20Speakers" target="_blank">here</a>.
 --%>
 
+<%--    
         <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
+--%>
         </p>
 <%--    
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
