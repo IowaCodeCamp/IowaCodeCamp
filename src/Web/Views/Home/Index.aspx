@@ -23,9 +23,9 @@
     <div class="post">
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
     
-<%--    
-        Call for speakers is open. Submit your talks <a href="http://bit.ly/ICC20Speakers" target="_blank">here</a>.
---%>
+    
+        Call for speakers is open. Submit your talks <a href="http://bit.ly/ICC21Speakers" target="_blank">here</a>.
+
 
 <%--    
         <a href="<%= ResolveUrl("~/session/list") %>">Check out the Sessions!</a>&nbsp;&bull;&nbsp;
