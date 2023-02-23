@@ -54,6 +54,9 @@ ipch/
 *.sdf
 *.cachefile
 
+# Visual C++ cache files
+.vs/
+
 # Visual Studio profiler
 *.psess
 *.vsp
