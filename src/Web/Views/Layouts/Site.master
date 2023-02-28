@@ -208,6 +208,7 @@
                                     alt="Iowa .NET User Group - Des Moines" />
                                     </a>
                                 </li>
+								<%--
 				                <li>
 				                    <br />
 				                    <a href="http://www.crineta.org" target="_blank">
@@ -222,7 +223,7 @@
                                     alt="Cedar Valley .NET User Group" />
                                     </a>
                                 </li>
-				                
+				                --%>
 				            </ul>
 				            <br />
 			            </div>

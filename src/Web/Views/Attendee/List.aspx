@@ -26,7 +26,7 @@
 
 <cs:ComingSoon runat="server" />
 
-<p>
+<br/>
 <%--
 <b><%=Model.AttendeeCount%> Registered!</b>
 --%>
@@ -39,11 +39,13 @@
       I will be attending Iowa Code Camp along with <%=Model.AttendeeCount %> others!
     </div>
 --%>
+
 	
     <div style="font-size:28px;">
         <%--<strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />--%>
         <%--<a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a> --%>
     </div>
+
 
     <div>
 <%--
