@@ -268,8 +268,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <a name="supporters"></a>
     <h2>Supporters</h2>
     <hr />
-
-<%--
+    <br />
     <a href="https://www.discountasp.net/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.jpg") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
     </a>     
@@ -277,6 +276,7 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <a href="https://www.everleap.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("logo_everleap.png") %>" alt="Everleap" class="sponsors" width="150"/>
     </a>
+<%--
 
     <a href="https://www.grapecity.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("GC-logo_purple_low-res.jpg") %>" alt="GrapeCity" class="sponsors" width="150"/>
