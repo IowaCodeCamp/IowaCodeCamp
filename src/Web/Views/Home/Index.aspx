@@ -52,7 +52,7 @@
             <br />
 	--%>
             <strong>
-            Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>
+            Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>, and <a rel="me" href="https://mastodon.social/@iowacodecamp">Mastodon</a>.
             </strong><br /><br />
 
 			<h4>Download an App for our schedule!</h4>
