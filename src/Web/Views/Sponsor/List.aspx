@@ -58,11 +58,15 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <h2>Platinum Sponsors</h2>
     <hr />
 
-<%--
-	<a href="http://www.qci.com" target="_blank">
+	<a href="https://www.qci.com" target="_blank">
     <img style="border-width:0px;vertical-align:top" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
 
+	<a href="https://wewritecode.com/" target="_blank">
+    <img style="border-width:0px;vertical-align:top" src="<%=SponsorImageUrl("WeWriteCode.png")%>" alt="We Write Code" class="sponsors" width="300"/>
+    </a>    
+
+<%--
 	<a href="https://www.roberthalf.com/des-moines/technology-it" target="_blank">
 	<img style="border-width:0px;vertical-align:top" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>
 	</a>
@@ -73,10 +77,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     
 	<a href="http://www.profitstars.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("profitstars.png")%>" alt="Profit Stars" class="sponsors" width="300"/>
-    </a>    
-
-	<a href="http://www.beaconhillstaffing.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("BHStaffing_logo.jpg")%>" alt="Beacon Hill Staffing" class="sponsors" width="300"/>
     </a>    
 
 	<a href="http://www.garmin.com/en-US/company/careers/" target="_blank">
@@ -204,7 +204,20 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <h2>Silver Sponsors</h2>
     <hr />
 
+	<a href="https://www.beaconhillstaffing.com/" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("BHStaffing_logo.jpg")%>" alt="Beacon Hill Staffing" class="sponsors" width="180"/>
+    </a>    
+
+	<a href="https://leantechniques.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("LeanTechniques-Logo-01.png")%>" alt="Lean Techniques" class="sponsors" width="180"/>
+    </a>    
+
+	<a href="https://www.zirous.com" target="_blank">
+    <img style="border-width:0px" src="<%=SponsorImageUrl("zirous_logo.jpg")%>" alt="Zirous" class="sponsors" width="180"/>
+    </a>    
+
 <%--
+
     <a href="https://prairiecode.amegala.com//" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("PrairieCode-logo-lg-white-bg.png") %>' alt="Prairie.Code()" class="sponsors" width="180"/>
     </a>
@@ -213,10 +226,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <img style="border-width:0px" src='<%=SponsorImageUrl("Visionary-4PMS.png") %>' alt="Visionary" class="sponsors" width="180"/>
     </a>
 
-
-    <a href="http://www.modis.com" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors"  width="180"/>
-    </a>
 
     <a href="https://www.unitedfiregroup.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ufg_RGB.jpg") %>' alt="United Fire Group" class="sponsors" width="180"/>
@@ -238,10 +247,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <img style="border-width:0px" src="<%=SponsorImageUrl("qci_logo.gif")%>" alt="QCI" class="sponsors"  width="180"/>
     </a>    
 
-    <a href="http://www.stoneriver.com/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("stoneriver_logo.jpg") %>' alt="Stone River" class="sponsors"  width="220"/>
-    </a>
-
     <a href="http://ajisoftware.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ajisoftware.png") %>' alt="ajisoftware" class="sponsors" width="180"/>
     </a>
@@ -258,9 +263,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <img style="border-width:0px" src='<%= SponsorImageUrl("logo-iapps24.jpg") %>' alt="iApps24" class="sponsors" />
     </a> 
     
-    <a href="http://www.modis.com/itrecruitment/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
-    </a>    
 --%>
 	<br />
     <br />
@@ -290,10 +292,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <img style="border-width:0px" src='<%= SponsorImageUrl("OReilly_210x60.png") %>' alt="O'Reilly" class="sponsors" width="150" />
     </a> 
 
-    <a href="http://www.modis.com/itrecruitment/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors"  width="150"/>
-    </a>
-
     <a href="http://www.devexpress.com/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("DevExpress-Logo-Large-Color.png") %>' alt="DevExpress" class="sponsors"  width="150"/>
     </a>     
@@ -313,7 +311,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <a href="http://www.red-gate.com/" target="_blank">
     <img style="border-width:0px" src="<%=SponsorImageUrl("redgate.png")%>" alt="Red Gate" class="sponsors" width="150"/>
     </a>
-
 
     <a href="http://www.componentone.com/" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("componentone_gc_logo_horizonal_black.png") %>' alt="Component One" class="sponsors" width="150"/>
@@ -338,10 +335,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <a href="http://www.pluralsight.com" target="_blank">
     <img style="border-width:0px" src='<%= SponsorImageUrl("pluralsight-logo-orange-250x78-v1.png") %>' alt="pluralsight" class="sponsors" width="150" />
     </a> 
-
-    <a href="http://www.discountasp.net/" target="_blank">
-    <img style="border-width:0px" src='<%=SponsorImageUrl("discountasp_logo.gif") %>' alt="DiscountASP.NET" class="sponsors"  width="150"/>
-    </a>     
 
     <a href="http://www.infragistics.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("infragistics_logo.gif") %>' alt="Infragistics" class="sponsors"  width="150"/>
@@ -391,7 +384,6 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <a href="http://www.modis.com/itrecruitment/" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("ModisLogo.png") %>' alt="Modis" class="sponsors" />
     </a>
-    
     
     <a href="http://www.tekpub.com" target="_blank">
     <img style="border-width:0px" src='<%=SponsorImageUrl("tekpub.png") %>' alt="Tekpub" class="sponsors" />
