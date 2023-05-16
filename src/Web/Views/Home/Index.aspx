@@ -59,7 +59,6 @@
 			<ul style="padding-left:30px;">
 				<li style="padding-top:3px;"><a href="https://play.google.com/store/apps/details?id=com.iccmobile.android">Android</a></li>
 				<li style="padding-top:3px;"><a href="http://itunes.apple.com/us/app/iowacodecamp/id468254555?ls=1&mt=8">iPhone</a></li>
-				<li style="padding-top:3px;"><a href="http://www.windowsphone.com/en-US/apps/c163bff0-22f3-4d82-b63d-047c9e121b48">Windows Phone 7</a></li>
 			</ul>
 			<br /><br />
 			
