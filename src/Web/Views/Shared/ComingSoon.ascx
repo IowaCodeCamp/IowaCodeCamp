@@ -4,7 +4,7 @@
 <strong>Coming soon! Please check back or follow us on Twitter! <a href="http://twitter.com/IowaCodeCamp">@IowaCodeCamp</a></strong>
 --%>
 
-<p style="margin:1ex"><a href="https://bit.ly/ICCSpring2023Speakers" target="_blank">We are taking submissions for talks. Send us yours today!</a>
+<p style="margin:1ex"><a href="https://iowacodecamp.wufoo.com/forms/iowa-code-camp-spring-2023-speaker-submission" target="_blank">We are taking submissions for talks. Send us yours today!</a>
 </p>
 
 
