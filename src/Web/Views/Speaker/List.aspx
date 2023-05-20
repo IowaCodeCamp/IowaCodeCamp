@@ -84,7 +84,7 @@
    	{
 %>
 <p>
-  <%=speakerSession.SessionTime%> : <%=speakerSession.Room %> : <a href="/session/list#<%=speakerSession.SessionKey %>"><%=speakerSession.Title %></a> (Level: <%=speakerSession.SessionLevel %>)<br />
+  <a href="/session/list#<%=speakerSession.SessionKey %>"><%=speakerSession.Title %></a> (Level: <%=speakerSession.SessionLevel %>)<br />
 </p>
 <%
    }
@@ -92,7 +92,7 @@
 
  
 <br><br><br><br><br>
-<h2>Session Levels</h2> (see <a href="http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx">http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx</a>)
+<h2>Session Levels</h2>
 <br><br>
 <b>Level 100 Description:</b><br>
 Introductory and overview material. Assumes little or no expertise with topic and covers topic concepts, functions, features, and benefits.

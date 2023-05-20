@@ -72,7 +72,7 @@
   <h3 id="<%=session.SessionKey %>"><%=session.Title %></h3>
   <p><%=session.Description %></p>
   <p>
-  <%=session.SessionTime%> : <%=session.Room %> : <%=session.Title %> (Level: <%=session.SessionLevel %>)<br />
+  <%=session.Title %> (Level: <%=session.SessionLevel %>)<br />
   Speaker: <a href="/speaker/list#<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName %></a>
   <%
 	  if (!string.IsNullOrEmpty(session.SlidesUrl))
@@ -92,7 +92,7 @@
 
 </ul>
 <br>
-<h2>Session Levels</h2> (see <a href="http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx">http://blogs.technet.com/b/ieitpro/archive/2006/09/29/459944.aspx</a>)
+<h2>Session Levels</h2>
 <br><br>
 <b>Level 100 Description:</b><br>
 Introductory and overview material. Assumes little or no expertise with topic and covers topic concepts, functions, features, and benefits.

@@ -66,6 +66,12 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <img style="border-width:0px;vertical-align:top" src="<%=SponsorImageUrl("WeWriteCode.png")%>" alt="We Write Code" class="sponsors" width="300"/>
     </a>    
 
+	<a href="https://www.vgm.com/" target="_blank">
+    <img style="border-width:0px;vertical-align:top" src="<%=SponsorImageUrl("VGM_Logo_Blue.png")%>" alt="The VGM Group" class="sponsors" width="300"/>
+    </a>    
+
+
+
 <%--
 	<a href="https://www.roberthalf.com/des-moines/technology-it" target="_blank">
 	<img style="border-width:0px;vertical-align:top" src='<%=SponsorImageUrl("RHT.jpg") %>' alt="Robert Half Technology" class="sponsors" width="300"/>

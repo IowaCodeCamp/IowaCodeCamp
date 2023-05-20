@@ -23,13 +23,12 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
-
+<%--
 <cs:ComingSoon runat="server" />
+--%>
 
 <br/>
-<%--
 <b><%=Model.AttendeeCount%> Registered!</b>
---%>
 
 
 <%--
@@ -40,7 +39,7 @@
     </div>
 --%>
 
-	
+
     <div style="font-size:28px;">
         <%--<strong><%=Model.AttendeeCount %> Attendees registered</strong><br /><br />--%>
         <%--<a href="#waitlist"><%=Model.WaitList.Count %> Attendees on the wait list</a> --%>
@@ -50,22 +49,18 @@
     <div>
 <%--
       <p style="font-size:medium;">
-        Don't miss out, 
-        <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too! 
+        Don't miss out,
+        <a href="<%= ResolveUrl("~/attendee/register") %>">sign up</a> too!
       </p>
 --%>
 
-<%--
 		<a href="<%= ResolveUrl("~/attendee/register") %>">
 			<img src="/images/registernow.jpg" alt="Register Now!" border="0" width="100" height="100" />
 		</a>
---%>
 
-		
-<%--
+
       <p style="font-size:medium;">Here's what some attendees are saying about Iowa Code Camp:</p>
---%>
-      
+
         <% foreach (var attendee in Model.Attendees.Where(a => !string.IsNullOrEmpty(a.Comments))) { %>
             <%--
             <span style="font-size:x-large;">
@@ -78,7 +73,7 @@
             <p><strong><%= attendee.FirstName %>&mdash;</strong>&nbsp;<%=attendee.Comments %></p>
         <% } %>
     </div>
-    
+
 <%--    <a name="waitlist"></a>--%>
 <%--    <h2>Wait List</h2>--%>
 <%--    <ul style="padding-left:30px">--%>

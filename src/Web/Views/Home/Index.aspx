@@ -31,11 +31,9 @@
         <a href="<%= ResolveUrl("~/speaker/list") %>">See who is speaking!</a>
 --%>
         </p>
-<%--    
         <p class="box" style="margin-left:30px;padding:1ex;font-size:large;text-align:center;">
         Registration is now open. Register <a href="http://www.iowacodecamp.com/attendee/register">here</a>.
         </p>
---%>
 
 	<div class="contentarea">
 	<%--
@@ -52,7 +50,7 @@
             <br />
 	--%>
             <strong>
-            Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>, and <a rel="me" href="https://mastodon.social/@iowacodecamp">Mastodon</a>.
+            Follow us on <a href="http://twitter.com/iowacodecamp" target="_blank">Twitter</a>, and <a rel="me" href="https://mastodon.social/@iowacodecamp" target="_blank">Mastodon</a>.
             </strong><br /><br />
 
 			<h4>Download an App for our schedule!</h4>

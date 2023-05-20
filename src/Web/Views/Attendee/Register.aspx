@@ -2,7 +2,7 @@
 <%@ Register src="../Shared/ComingSoon.ascx" tagname="ComingSoon" tagprefix="cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headPH" Runat="Server">
-<script type="text/javascript">    
+<script type="text/javascript">
     $(document).ready(function() {
         $("#register").addClass("active");
     });
@@ -13,28 +13,28 @@
         margin-left:40px;
         border:none;
     }
-    
+
     .box input,textarea
     {
         width:300px;
     }
-    
+
     .box input[type='submit']
     {
         width:85px;
     }
-    
+
     .input-validation-error
     {
         color:Red;
     }
-    
+
     .field-validation-error
     {
         color:Red;
         display:block;
     }
-    
+
     label
     {
         font-size:12pt;
@@ -49,13 +49,14 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="primaryPH" Runat="Server">
+<%--
 <cs:ComingSoon runat="server" />
+--%>
 
 <%--
 <strong>Registration is closed. See you Saturday!</strong>
 --%>
 
-<%--
 <p>So you're signing up for Iowa Code Camp? You know it's free right? If you'd like to leave
 a message on the attendees page, add your comments last and they'll show up with your first name.</p>
 <br />
@@ -65,36 +66,36 @@ a message on the attendees page, add your comments last and they'll show up with
 
     <label for="FirstName">*First Name</label> (Public)<br />
     <%=Html.TextBox("FirstName") %><br /><br />
-    
+
     <label for="LastName">*Last Name</label><br />
     <%=Html.TextBox("LastName")%><br /><br />
-    
+
     <label for="Email">*Email</label><br />
     <%=Html.TextBox("Email") %><br /><br />
-    
+
     <label for="City">*City</label><br />
     <%=Html.TextBox("City")%><br /><br />
-    
+
     <label for="Region">*State/Province</label><br />
     <%=Html.TextBox("Region")%><br /><br />
-    
+
     <label for="Organization">*Organization </label><br />
     <%=Html.TextBox("Organization")%> <br /><br />
-    
+
     <label for="Website">Your Website</label><br />
     <%=Html.TextBox("Website")%> <br /><br />
-    
+
     <label for="Comments">Comments</label> (Optional, but public)<br />
     <%=Html.TextArea("Comments", new { rows = 4 })%> <br /><br />
-    
+
     <label for="HumanValue">*Enter the sum of 3 and 9 to prove you are human.</label><br />
     <%=Html.TextBox("HumanValue")%> <br /><br />
-    
+
     <input type="submit" value="Register" />
-    
+
 </fieldset>
 </form>
---%>
+
 
 
 <%= Html.ClientSideValidation<RegisterPageModel>() %>
