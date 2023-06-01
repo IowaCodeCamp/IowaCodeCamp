@@ -88,7 +88,7 @@ a message on the attendees page, add your comments last and they'll show up with
     <label for="Comments">Comments</label> (Optional, but public)<br />
     <%=Html.TextArea("Comments", new { rows = 4 })%> <br /><br />
 
-    <label for="HumanValue">*Enter the sum of 3 and 9 to prove you are human.</label><br />
+    <label for="HumanValue">*Enter the sum of three and 9 to prove you are human.</label><br />
     <%=Html.TextBox("HumanValue")%> <br /><br />
 
     <input type="submit" value="Register" />
