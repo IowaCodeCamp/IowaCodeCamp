@@ -61,10 +61,11 @@ Note that this document will be included in your attendee packet on Saturday.
 </p>
 --%>
 
-
+<%--
 <p><br />
 Schedule will be announced soon. See the <a href="/Session/list">Sessions</a> and <a href="/Speaker/list">Speakers</a> for information on the talks.
 </p>
+--%>
 
 
 <table>
@@ -75,6 +76,32 @@ Schedule will be announced soon. See the <a href="/Session/list">Sessions</a> an
         <th>Title</th>
     </tr>
  --%>
+
+<%
+    string lastSessionTime = string.Empty;
+    foreach (var session in CurrentSession.SessionSchedule())
+    {
+        CurrentSpeaker speaker = CurrentSpeaker.Select(session.SpeakerKey);
+
+        if (lastSessionTime != session.SessionTime)
+        {
+            lastSessionTime = session.SessionTime;
+%>
+    <tr style="font-weight: bold">
+		<td colspan="3"><br /><%=session.SessionTime%></td>
+	</tr>
+	<tr style="font-weight: bold">
+		<td>Room</td><td>Speaker</td><td>Session Title</td>
+	</tr>
+<%      }  %>
+
+  <tr>
+    <td style="white-space: nowrap;"><%=session.Room %></td>
+    <td><a href="/speaker/list#<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName %></a></td>
+    <td><a href="/session/list#<%=session.SessionKey %>"><%=session.Title %></a></td>
+  </tr>
+  
+<%  } %>
 
 </table>
     </div>

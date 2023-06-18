@@ -84,7 +84,7 @@
    	{
 %>
 <p>
-  <a href="/session/list#<%=speakerSession.SessionKey %>"><%=speakerSession.Title %></a> (Level: <%=speakerSession.SessionLevel %>)<br />
+  <%=speakerSession.SessionTime%> : <%=speakerSession.Room %> : <a href="/session/list#<%=speakerSession.SessionKey %>"><%=speakerSession.Title %></a> (Level: <%=speakerSession.SessionLevel %>)<br />
 </p>
 <%
    }

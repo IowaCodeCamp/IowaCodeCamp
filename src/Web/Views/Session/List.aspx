@@ -72,7 +72,7 @@
   <h3 id="<%=session.SessionKey %>"><%=session.Title %></h3>
   <p><%=session.Description %></p>
   <p>
-  <%=session.Title %> (Level: <%=session.SessionLevel %>)<br />
+  <%=session.SessionTime%> : <%=session.Room %> : <%=session.Title %> (Level: <%=session.SessionLevel %>)<br />
   Speaker: <a href="/speaker/list#<%=speaker.SpeakerKey %>"><%=speaker.SpeakerName %></a>
   <%
 	  if (!string.IsNullOrEmpty(session.SlidesUrl))

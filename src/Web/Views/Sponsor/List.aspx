@@ -59,17 +59,20 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <hr />
 
 	<a href="https://www.qci.com" target="_blank">
-    <img style="border-width:0px;vertical-align:top" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
+    <img style="border-width:0px;vertical-align:middle" src="<%=SponsorImageUrl("QCI_Color_logo.JPG")%>" alt="QCI" class="sponsors" width="300"/>
     </a>    
 
 	<a href="https://wewritecode.com/" target="_blank">
-    <img style="border-width:0px;vertical-align:top" src="<%=SponsorImageUrl("WeWriteCode.png")%>" alt="We Write Code" class="sponsors" width="300"/>
+    <img style="border-width:0px;vertical-align:middle" src="<%=SponsorImageUrl("WeWriteCode.png")%>" alt="We Write Code" class="sponsors" width="300"/>
     </a>    
 
 	<a href="https://www.vgm.com/" target="_blank">
-    <img style="border-width:0px;vertical-align:top" src="<%=SponsorImageUrl("VGM_Logo_Blue.png")%>" alt="The VGM Group" class="sponsors" width="300"/>
+    <img style="border-width:0px;vertical-align:middle" src="<%=SponsorImageUrl("VGM_Logo_Blue.png")%>" alt="The VGM Group" class="sponsors" width="300"/>
     </a>    
 
+	<a href="https://roboflow.com/?ref=icc23" target="_blank">
+    <img style="border-width:0px;vertical-align:middle" src="<%=SponsorImageUrl("RoboFlow_Web.png")%>" alt="RoboFlow" class="sponsors" width="300"/>
+    </a>    
 
 
 <%--
@@ -211,16 +214,21 @@ Download <a href="http://iowacodecamp.com/docs/Iowa_Code_Camp_Sponsorship_Progra
     <hr />
 
 	<a href="https://www.beaconhillstaffing.com/" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("BHStaffing_logo.jpg")%>" alt="Beacon Hill Staffing" class="sponsors" width="180"/>
+    <img style="border-width:0px;vertical-align:middle" src="<%=SponsorImageUrl("BHStaffing_logo.jpg")%>" alt="Beacon Hill Staffing" class="sponsors" width="180"/>
     </a>    
 
 	<a href="https://leantechniques.com" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("LeanTechniques-Logo-01.png")%>" alt="Lean Techniques" class="sponsors" width="180"/>
+    <img style="border-width:0px;vertical-align:middle" src="<%=SponsorImageUrl("LeanTechniques-Logo-01.png")%>" alt="Lean Techniques" class="sponsors" width="180"/>
     </a>    
 
 	<a href="https://www.zirous.com" target="_blank">
-    <img style="border-width:0px" src="<%=SponsorImageUrl("zirous_logo.jpg")%>" alt="Zirous" class="sponsors" width="180"/>
+    <img style="border-width:0px;vertical-align:middle" src="<%=SponsorImageUrl("zirous_logo.jpg")%>" alt="Zirous" class="sponsors" width="180"/>
     </a>    
+
+	<a href="https://www.roberthalf.com/des-moines/technology-it" target="_blank">
+	<img style="border-width:0px;vertical-align:middle" src='<%=SponsorImageUrl("RH.png") %>' alt="Robert Half Technology" class="sponsors" width="180"/>
+	</a>
+
 
 <%--
 
